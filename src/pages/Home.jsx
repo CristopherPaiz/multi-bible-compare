@@ -2,10 +2,15 @@ import { useContext } from "react";
 import LanguageContext from "../context/LanguageContext";
 
 const Home = () => {
-  const { idiomaNavegador } = useContext(LanguageContext);
+  const { idiomaNavegador, t, cambiarIdioma } = useContext(LanguageContext);
   return (
     <>
-      <h1 className="">Homepage: {idiomaNavegador}</h1>
+      <button onClick={() => cambiarIdioma()} className="bg-slate-400 p-5">
+        Español
+      </button>
+      <h1 className="">
+        {t("bienvenida")} {idiomaNavegador}
+      </h1>
     </>
   );
 };
