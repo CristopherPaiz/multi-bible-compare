@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-8" alt="Flowbite Logo" />
+            <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-8 dark:invert" alt="Flowbite Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{t("titulo")}</span>
           </Link>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
@@ -35,6 +35,11 @@ const Navbar = () => {
               <li>
                 <Link to="/about" className="text-gray-900 dark:text-white hover:underline">
                   {t("Informacion")}
+                </Link>
+              </li>
+              <li>
+                <Link to="/settings" className="text-gray-900 dark:text-white hover:underline">
+                  {t("Ajustes")}
                 </Link>
               </li>
             </ul>
