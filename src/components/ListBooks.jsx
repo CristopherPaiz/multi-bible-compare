@@ -42,6 +42,19 @@ const ListBooks = () => {
     closeModal();
   };
 
+  // Función para agregar las iniciales "N" y "O" según la existencia de las carpetas
+  const getInitials = (book) => {
+    let initials = "";
+    if (book.new && book.old) {
+      initials = "N O";
+    } else if (book.new) {
+      initials = "N";
+    } else if (book.old) {
+      initials = "O";
+    }
+    return initials;
+  };
+
   const BOOKS = {
     english: {
       "Tyndale 1537": { ruta: "../assets/bibles/18. English - Tyndale (1537)", new: true, old: true },
@@ -156,14 +169,14 @@ const ListBooks = () => {
                 <div key={language} className="mb-4">
                   <h2 className="text-lg font-bold mb-2">{language}</h2>
                   <ul>
-                    {Object.entries(books).map(([bookTitle, bookUrl]) => (
+                    {Object.entries(books).map(([bookTitle, book]) => (
                       <li key={bookTitle}>
                         <button
-                          className={`p-2 text-left w-full ${selectedBooks.includes(bookUrl) ? "bg-gray-300" : "bg-gray-100"}`}
-                          onClick={() => handleBookToggle(bookUrl)}
+                          className={`p-2 text-left w-full ${selectedBooks.includes(book.ruta) ? "bg-gray-300" : "bg-gray-100"}`}
+                          onClick={() => handleBookToggle(book.ruta)}
                         >
-                          {bookTitle}
-                          {selectedBooks.includes(bookUrl) && <span className="float-right">✔️</span>}
+                          {bookTitle} {getInitials(book)}
+                          {selectedBooks.includes(book.ruta) && <span className="float-right">✔️</span>}
                         </button>
                       </li>
                     ))}
