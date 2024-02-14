@@ -11,5 +11,19 @@
   "SobreProyecto": "About the project",
   "InfoSobreProyecto": "This web application was created by Cristopher Paiz, with the aim of facilitating the comparison of biblical texts. The application is open source and can be found on my GitHub https://github.com/CristopherPaiz/multi-bible-compare. However, the texts provided are not under my audit, but thanks to the collaboration of many entities that provide their work for free, they are now available to you in order to make comparisons of different passages for better understanding.",
   "MasInfoSobreProyeto": "This compiled information was thanks to 'Beblia', you can find more information on their GitHub page. I wholeheartedly appreciate their effort and also that of each of the entities that provided their work for free.",
-  "Colaboradores": "Acknowledgments"
+  "Colaboradores": "Acknowledgments",
+  "NuevoTestamentoInicial": "N",
+  "AntiguoTestamentoInicial": "O",
+  "NuevoTestamento": "New Testament",
+  "AntiguoTestamento": "Old Testament",
+  "SeleccionarLibro": "Select the books",
+  "Espanol": "Spanish",
+  "Griego": "Greek",
+  "Hebreo": "Hebrew",
+  "Ingles": "English",
+  "Esperanto": "Esperanto",
+  "Kiche": "K'iche'",
+  "Latin": "Latin",
+  "Nahuatl": "Nahuatl",
+  "Queqchi": "Q'eqchi'"
 }

@@ -1,9 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import LanguageContext from "../context/LanguageContext";
 
 const ListBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedBooks, setSelectedBooks] = useState([]);
   const modalRef = useRef(null);
+  const { t } = useContext(LanguageContext);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -42,43 +44,61 @@ const ListBooks = () => {
     closeModal();
   };
 
-  // Función para agregar las iniciales "N" y "O" según la existencia de las carpetas
   const getInitials = (book) => {
-    let initials = "";
     if (book.new && book.old) {
-      initials = "N O";
+      return (
+        <div className="flex gap-x-1 mx-2 pr-2">
+          <span className="p-2 bg-red-600 text-white text-[9px] h-7 justify-center text-center">{t("AntiguoTestamentoInicial")}</span>
+          <span className="p-2 bg-blue-600 text-white text-[9px] h-7 justify-center text-center">{t("NuevoTestamentoInicial")}</span>
+        </div>
+      );
     } else if (book.new) {
-      initials = "N";
+      return (
+        <div className="flex gap-x-1 mx-2 pr-2">
+          <span className="p-2 bg-transparent text-transparent text-[9px] h-7 justify-center text-center">{t("AntiguoTestamentoInicial")}</span>
+          <span className="p-2 bg-blue-600 text-white text-[9px] h-7 justify-center text-center">{t("NuevoTestamentoInicial")}</span>
+        </div>
+      );
     } else if (book.old) {
-      initials = "O";
+      return (
+        <div className="flex gap-x-1 mx-2 pr-2">
+          <span className="p-2 bg-red-600 text-white text-[9px] h-7 justify-center text-center">{t("AntiguoTestamentoInicial")}</span>
+          <span className="p-2 bg-transparent text-transparent text-[9px] h-7 justify-center text-center">{t("NuevoTestamentoInicial")}</span>
+        </div>
+      );
     }
-    return initials;
+    return (
+      <div className="flex gap-x-1 mx-2 pr-2">
+        <span className="p-2 bg-transparent text-transparent text-[9px] h-7 justify-center text-center">O</span>
+        <span className="p-2 bg-transparent text-transparent text-[9px] h-7 justify-center text-center">N</span>
+      </div>
+    );
+  };
+
+  const unmarkAll = () => {
+    setSelectedBooks([]);
   };
 
   const BOOKS = {
-    english: {
-      "Tyndale 1537": { ruta: "../assets/bibles/18. English - Tyndale (1537)", new: true, old: true },
-      "Darby Translation 1890": { ruta: "../assets/bibles/04. English - Darby (1890)", new: true, old: true },
-      "Young's Literal Translation 1898": { ruta: "../assets/bibles/19. English - Young's Literal Translation [YLT] (1898)", new: true, old: true },
-      "American Standard Version 1901": { ruta: "../assets/bibles/02. English - American Standard Version [ASV] (1901)", new: true, old: true },
-      "New American Standard Bible 1971": { ruta: "../assets/bibles/10. English - New American Standard Bible [NASB] (1971)", new: true, old: true },
-      "New International Version 1978": { ruta: "../assets/bibles/14. English - New International Version [NIV] (1978)", new: true, old: true },
-      "New King James Version 1982": { ruta: "../assets/bibles/15. English - New King James [NKJ] (1982)", new: true, old: true },
-      "New American Standard Bible Updated 1989": { ruta: "../assets/bibles/11. English - New American Standard Bible Updated [NASU] (1989)", new: true, old: true },
-      "New Revised Standard Version 1989": { ruta: "../assets/bibles/17. English - New Revised Standard Version [NRSV] (1989)", new: true, old: true },
-      "God's Word 1995": { ruta: "../assets/bibles/07. English - God's Word [GW] (1995)", new: true, old: true },
-      "New International Reader's Version 1996": { ruta: "../assets/bibles/13. English - New International Reader's Version [NIRV] (1996)", new: true, old: true },
-      "New Living Translation 1996": { ruta: "../assets/bibles/16. English - New Living Translation [NLT] (1996)", new: true, old: true },
-      "Easy to Read Version 2006": { ruta: "../assets/bibles/05. English - Easy-to-Read Version [ERV] (2006)", new: true, old: true },
-      "Holman Christian Standard Bible 2004": { ruta: "../assets/bibles/08. English - Holman Christian Standard Bible [HCSB] (2004)", new: true, old: true },
-      "King James Version 2004": { ruta: "../assets/bibles/09. English - King James Version [KJV] (1611)", new: true, old: true },
-      "New English Translation 2005": { ruta: "../assets/bibles/12. English - New English Translation [NET] (2005)", new: true, old: true },
-      "Amplified Version 2015": { ruta: "../assets/bibles/01. English - Amplified (2015)", new: true, old: true },
-      "English Standard Version 2016": { ruta: "../assets/bibles/06. English - English Standard Version [ESV] (2016)", new: true, old: true },
-      "Christian Standard Bible 2017": { ruta: "../assets/bibles/03. English - Christian Standard Bible [CSB] (2017)", new: true, old: true },
-    },
-    esperanto: {
-      "Esperanto Version 1926": { ruta: "../assets/bibles/20. Esperanto - Bible (1926)", new: true, old: true },
+    spanish: {
+      "Biblia Español 1569": { ruta: "../assets/bibles/61. Español - (1569)", new: true, old: true },
+      "Reina Valera Nueva Traducción 1858": { ruta: "../assets/bibles/62. Español - Reina Valera Nueva Traduccción [RVNT] (1858)", new: true, old: false },
+      "Reina Valera 1909": { ruta: "../assets/bibles/65. Español - Reina Valera (1909)", new: true, old: true },
+      "Reina Valera 1960": { ruta: "../assets/bibles/75. Español - Reina Valera [RV60] (1960)", new: true, old: true },
+      "Reina Valera Revisada 1960": { ruta: "../assets/bibles/72. Español - Reina Valera Revisada [RVR] (1960)", new: true, old: true },
+      "Biblia del Oso 1973": { ruta: "../assets/bibles/64. Español - Biblia del oso [BDO] (1973)", new: true, old: true },
+      "Biblia Español 1989": { ruta: "../assets/bibles/63. Español - (1989)", new: true, old: true },
+      "Reina Valera 1995": { ruta: "../assets/bibles/76. Español - Reina Valera [RV95] (1995)", new: true, old: true },
+      "Dios Habla Hoy 1996": { ruta: "../assets/bibles/69. Español - Dios Habla Hoy [DHH] (1996)", new: true, old: true },
+      "Biblia de la Américas 1997": { ruta: "../assets/bibles/70. Español - La Biblia de Las Américas [LBLA] (1997)", new: true, old: true },
+      "Nueva Versión Iternacional 1999": { ruta: "../assets/bibles/71. Español - Nueva Versión Internacional  [NVI] (1999)", new: true, old: true },
+      "Biblia Textual 1999": { ruta: "../assets/bibles/68. Español - La Biblia Textual (1999)", new: true, old: true },
+      "Traducción en lenguaje Actual 2000": { ruta: "../assets/bibles/77. Español - Traducción en lenguaje actual [TLA] (2000)", new: true, old: true },
+      "Reina Valera Gómez 2004": { ruta: "../assets/bibles/74. Español - Reina Valera Gómez [RVG] (2004)", new: true, old: true },
+      "Biblia Traducción Interconfesional 2008": { ruta: "../assets/bibles/67. Español - Biblia Traducción Interconfesional [BTI] (2008)", new: true, old: true },
+      "Biblia La Palabra 2010": { ruta: "../assets/bibles/66. Español - Biblia La Palabra [BLP] (2010)", new: true, old: true },
+      "Versión Biblia Gratis 2018": { ruta: "../assets/bibles/78. Español - Versión Biblia Gratis [VBG] (2018)", new: true, old: false },
+      "Reina Valera 2020": { ruta: "../assets/bibles/73. Español - Reina Valera [RV] (2020)", new: true, old: true },
     },
     greek: {
       "F35 1453": { ruta: "../assets/bibles/26. Greek - F35 (1453)", new: true, old: false },
@@ -110,6 +130,30 @@ const ListBooks = () => {
       "TD 2018": { ruta: "../assets/bibles/46. Hebrew - TD (2018)", new: true, old: true },
       "MHNT 2020": { ruta: "../assets/bibles/45. Hebrew - MHNT (2020)", new: true, old: false },
     },
+    english: {
+      "Tyndale 1537": { ruta: "../assets/bibles/18. English - Tyndale (1537)", new: true, old: true },
+      "Darby Translation 1890": { ruta: "../assets/bibles/04. English - Darby (1890)", new: true, old: true },
+      "Young's Literal Translation 1898": { ruta: "../assets/bibles/19. English - Young's Literal Translation [YLT] (1898)", new: true, old: true },
+      "American Standard Version 1901": { ruta: "../assets/bibles/02. English - American Standard Version [ASV] (1901)", new: true, old: true },
+      "New American Standard Bible 1971": { ruta: "../assets/bibles/10. English - New American Standard Bible [NASB] (1971)", new: true, old: true },
+      "New International Version 1978": { ruta: "../assets/bibles/14. English - New International Version [NIV] (1978)", new: true, old: true },
+      "New King James Version 1982": { ruta: "../assets/bibles/15. English - New King James [NKJ] (1982)", new: true, old: true },
+      "New American Standard Bible Updated 1989": { ruta: "../assets/bibles/11. English - New American Standard Bible Updated [NASU] (1989)", new: true, old: true },
+      "New Revised Standard Version 1989": { ruta: "../assets/bibles/17. English - New Revised Standard Version [NRSV] (1989)", new: true, old: true },
+      "God's Word 1995": { ruta: "../assets/bibles/07. English - God's Word [GW] (1995)", new: true, old: true },
+      "New International Reader's Version 1996": { ruta: "../assets/bibles/13. English - New International Reader's Version [NIRV] (1996)", new: true, old: true },
+      "New Living Translation 1996": { ruta: "../assets/bibles/16. English - New Living Translation [NLT] (1996)", new: true, old: true },
+      "Easy to Read Version 2006": { ruta: "../assets/bibles/05. English - Easy-to-Read Version [ERV] (2006)", new: true, old: true },
+      "Holman Christian Standard Bible 2004": { ruta: "../assets/bibles/08. English - Holman Christian Standard Bible [HCSB] (2004)", new: true, old: true },
+      "King James Version 2004": { ruta: "../assets/bibles/09. English - King James Version [KJV] (1611)", new: true, old: true },
+      "New English Translation 2005": { ruta: "../assets/bibles/12. English - New English Translation [NET] (2005)", new: true, old: true },
+      "Amplified Version 2015": { ruta: "../assets/bibles/01. English - Amplified (2015)", new: true, old: true },
+      "English Standard Version 2016": { ruta: "../assets/bibles/06. English - English Standard Version [ESV] (2016)", new: true, old: true },
+      "Christian Standard Bible 2017": { ruta: "../assets/bibles/03. English - Christian Standard Bible [CSB] (2017)", new: true, old: true },
+    },
+    esperanto: {
+      "Esperanto Version 1926": { ruta: "../assets/bibles/20. Esperanto - Bible (1926)", new: true, old: true },
+    },
     kiche: {
       "Quiché 1995": { ruta: "../assets/bibles/47. Quiché - (1995)", new: true, old: true },
       "Quiché 1997": { ruta: "../assets/bibles/49. Quiché - (1997)", new: true, old: false },
@@ -132,26 +176,31 @@ const ListBooks = () => {
     queqchi: {
       "Q'eqchi 2017": { ruta: "../assets/bibles/60. Q'eqchi - (2017)", new: true, old: true },
     },
-    spanish: {
-      "Biblia Español 1569": { ruta: "../assets/bibles/61. Español - (1569)", new: true, old: true },
-      "Reina Valera Nueva Traducción 1858": { ruta: "../assets/bibles/62. Español - Reina Valera Nueva Traduccción [RVNT] (1858)", new: true, old: false },
-      "Reina Valera 1909": { ruta: "../assets/bibles/65. Español - Reina Valera (1909)", new: true, old: true },
-      "Reina Valera 1960": { ruta: "../assets/bibles/75. Español - Reina Valera [RV60] (1960)", new: true, old: true },
-      "Reina Valera Revisada 1960": { ruta: "../assets/bibles/72. Español - Reina Valera Revisada [RVR] (1960)", new: true, old: true },
-      "Biblia del Oso 1973": { ruta: "../assets/bibles/64. Español - Biblia del oso [BDO] (1973)", new: true, old: true },
-      "Biblia Español 1989": { ruta: "../assets/bibles/63. Español - (1989)", new: true, old: true },
-      "Reina Valera 1995": { ruta: "../assets/bibles/76. Español - Reina Valera [RV95] (1995)", new: true, old: true },
-      "Dios Habla Hoy 1996": { ruta: "../assets/bibles/69. Español - Dios Habla Hoy [DHH] (1996)", new: true, old: true },
-      "Biblia de la Américas 1997": { ruta: "../assets/bibles/70. Español - La Biblia de Las Américas [LBLA] (1997)", new: true, old: true },
-      "Nueva Versión Iternacional 1999": { ruta: "../assets/bibles/71. Español - Nueva Versión Internacional  [NVI] (1999)", new: true, old: true },
-      "Biblia Textual 1999": { ruta: "../assets/bibles/68. Español - La Biblia Textual (1999)", new: true, old: true },
-      "Traducción en lenguaje Actual 2000": { ruta: "../assets/bibles/77. Español - Traducción en lenguaje actual [TLA] (2000)", new: true, old: true },
-      "Reina Valera Gómez 2004": { ruta: "../assets/bibles/74. Español - Reina Valera Gómez [RVG] (2004)", new: true, old: true },
-      "Biblia Traducción Interconfesional 2008": { ruta: "../assets/bibles/67. Español - Biblia Traducción Interconfesional [BTI] (2008)", new: true, old: true },
-      "Biblia La Palabra 2010": { ruta: "../assets/bibles/66. Español - Biblia La Palabra [BLP] (2010)", new: true, old: true },
-      "Versión Biblia Gratis 2018": { ruta: "../assets/bibles/78. Español - Versión Biblia Gratis [VBG] (2018)", new: true, old: false },
-      "Reina Valera 2020": { ruta: "../assets/bibles/73. Español - Reina Valera [RV] (2020)", new: true, old: true },
-    },
+  };
+
+  const translateLanguage = (language) => {
+    switch (language) {
+      case "spanish":
+        return t("Espanol");
+      case "greek":
+        return t("Griego");
+      case "hebrew":
+        return t("Hebreo");
+      case "english":
+        return t("Ingles");
+      case "esperanto":
+        return t("Esperanto");
+      case "kiche":
+        return t("Kiche");
+      case "latin":
+        return t("Latin");
+      case "nahuatl":
+        return t("Nahuatl");
+      case "queqchi":
+        return t("Queqchi");
+      default:
+        return language;
+    }
   };
 
   return (
@@ -159,24 +208,35 @@ const ListBooks = () => {
       <button onClick={openModal}>Abrir Modal</button>
       {isModalOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
-          <div ref={modalRef} className="bg-white p-4 rounded shadow-md w-80 h-3/5 overflow-y-scroll flex flex-col">
-            <button className="absolute top-2 right-2" onClick={closeModal}>
+          <div ref={modalRef} className="bg-white p-4 rounded shadow-md w-11/12 h-4/5 flex flex-col  dark:bg-black dark:text-white sm:w-[550px]">
+            <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
             </button>
-            <h1 className="text-xl font-bold mb-4">Selecciona libros</h1>
-            <div className="flex flex-col flex-1 overflow-y-auto">
+            <h1 className="text-xl font-bold mb-4">{t("SeleccionarLibro")}</h1>
+            <div className="flex gap-4 px-2 pb-5" style={{ alignItems: "center" }}>
+              <span className="p-2 bg-red-600 text-white text-[9px] h-7 justify-center text-center">{t("AntiguoTestamentoInicial")}</span>
+              <p className="text-[14px]">{t("AntiguoTestamento")}</p>
+              <span className="p-2 bg-blue-600 text-white text-[9px] h-7 justify-center text-center">{t("NuevoTestamentoInicial")}</span>
+              <p className="text-[14px]">{t("NuevoTestamento")}</p>
+            </div>
+            <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar">
               {Object.entries(BOOKS).map(([language, books]) => (
                 <div key={language} className="mb-4">
-                  <h2 className="text-lg font-bold mb-2">{language}</h2>
-                  <ul>
+                  <h2 className="text-lg font-bold mb-2">{translateLanguage(language)}</h2>
+                  <ul className="flex gap-1 flex-col">
                     {Object.entries(books).map(([bookTitle, book]) => (
                       <li key={bookTitle}>
                         <button
-                          className={`p-2 text-left w-full ${selectedBooks.includes(book.ruta) ? "bg-gray-300" : "bg-gray-100"}`}
+                          style={{ alignItems: "center" }}
+                          className={`flex w-full h-14 text-left pr-3 flex-row justify-between ${
+                            selectedBooks.includes(book.ruta) ? "bg-green-300 dark:bg-green-800" : "bg-gray-100 dark:bg-gray-800"
+                          }`}
                           onClick={() => handleBookToggle(book.ruta)}
                         >
-                          {bookTitle} {getInitials(book)}
-                          {selectedBooks.includes(book.ruta) && <span className="float-right">✔️</span>}
+                          <div className="flex flex-1 pr-2" style={{ alignItems: "center" }}>
+                            {getInitials(book)} {bookTitle}
+                          </div>
+                          <div className="w-5">{selectedBooks.includes(book.ruta) && <span>✔️</span>}</div>
                         </button>
                       </li>
                     ))}
@@ -184,9 +244,14 @@ const ListBooks = () => {
                 </div>
               ))}
             </div>
-            <button className="p-2 bg-blue-500 text-white rounded" onClick={handleConfirm}>
-              Confirmar selección
-            </button>
+            <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
+              <button className="p-2 bg-red-500 text-white rounded px-3 text-sm" onClick={unmarkAll}>
+                Desmarcar todo
+              </button>
+              <button className="p-2 bg-blue-500 text-white rounded px-3 text-sm" onClick={handleConfirm}>
+                Confirmar selección
+              </button>
+            </div>
           </div>
         </div>
       )}
