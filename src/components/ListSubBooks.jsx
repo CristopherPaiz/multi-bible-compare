@@ -4,7 +4,6 @@ import LanguageContext from "../context/LanguageContext";
 
 const ListSubBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedBook, setSelectedBook] = useState("");
   const { libros, setLibroSeleccionado } = useContext(DataContext);
   const { t } = useContext(LanguageContext);
 
@@ -21,7 +20,7 @@ const ListSubBooks = () => {
   const selectBook = (libroKey) => {
     console.log("Libro seleccionado:", libroKey);
     setLibroSeleccionado(libroKey);
-    closeModal(); // Cierra el modal después de seleccionar un libro
+    closeModal();
   };
 
   useEffect(() => {
@@ -56,9 +55,15 @@ const ListSubBooks = () => {
               X
             </button>
             <h1 className="text-xl font-bold mb-4">{t("SeleccionarLibro")}</h1>
-            <div className="grid grid-cols-2 gap-2 overflow-y-scroll">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2 overflow-y-scroll no-scrollbar">
               {Object.entries(libros).map(([key, value]) => (
-                <div key={key} onClick={() => selectBook(key)} className="rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 cursor-pointer">
+                <div
+                  key={key}
+                  onClick={() => selectBook(key)}
+                  className={`text-[12px] text-center rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 cursor-pointer ${
+                    value.length > 16 ? "col-span-3" : value.length > 11 ? "col-span-2" : "col-span-1"
+                  }`}
+                >
                   <p>{value}</p>
                 </div>
               ))}
