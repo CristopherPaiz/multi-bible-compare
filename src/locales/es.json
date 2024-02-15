@@ -16,7 +16,7 @@
   "AntiguoTestamentoInicial": "A",
   "NuevoTestamento": "Nuevo Testamento",
   "AntiguoTestamento": "Antiguo Testamento",
-  "SeleccionarLibro": "Seleccione los libros",
+  "SeleccionarLibro": "Seleccione las biblias",
   "Espanol": "Español",
   "Griego": "Griego",
   "Hebreo": "Hebreo",
@@ -91,5 +91,9 @@
   "book63": "2 Juan",
   "book64": "3 Juan",
   "book65": "Judas",
-  "book66": "Apocalipsis"
+  "book66": "Apocalipsis",
+  "SeleccioneLibro": "Seleccione un libro",
+  "SeleccionarBiblias": "Seleccione las biblias",
+  "SeleccionarLibroBoton": "Seleccione el libro",
+  "SeleccioneUnaBiblia": "Seleccione al menos una biblia para continuar"
 }
