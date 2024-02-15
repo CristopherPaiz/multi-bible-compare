@@ -1,9 +1,10 @@
 import { useState, useRef, useContext } from "react";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
+import LEFT_ICON from "/left.png";
 
 const ListSubBooks = () => {
-  const { libros, setLibroSeleccionado, libroSeleccionado, modalLibros, setModalLibros } = useContext(DataContext);
+  const { libros, setLibroSeleccionado, libroSeleccionado, modalLibros, setModalLibros, setModalChapters } = useContext(DataContext);
   const [selectedBook, setSelectedBook] = useState(libroSeleccionado);
   const { t } = useContext(LanguageContext);
 
@@ -11,11 +12,16 @@ const ListSubBooks = () => {
 
   const closeModal = () => {
     setModalLibros(false);
+    setSelectedBook("");
   };
 
   const selectBook = (key, index) => {
     setSelectedBook(key);
     setLibroSeleccionado(`book${index + 1}`);
+    setTimeout(() => {
+      setModalChapters(true);
+      setModalLibros(false);
+    }, 150);
   };
 
   return (
@@ -38,8 +44,9 @@ const ListSubBooks = () => {
                       key={key}
                       onClick={() => selectBook(key, index)}
                       className={`text-[12px] text-center rounded-xl border-2 border-slate-400/10 bg-neutral-100 py-4 px-2 dark:bg-neutral-900 cursor-pointer ${
-                        value.length > 16 ? "col-span-3" : value.length > 11 ? "col-span-2" : "col-span-1"
-                      } ${selectedBook === key ? "bg-green-200 border-green-500 dark:bg-green-500 dark:border-green-500" : ""}`}
+                        value.length > 14 ? "col-span-3" : value.length > 12 ? "col-span-2" : "col-span-1"
+                      }`}
+                      style={{ backgroundColor: selectedBook === key ? "#34D399" : "" }}
                     >
                       <p>{value}</p>
                     </div>
@@ -55,13 +62,20 @@ const ListSubBooks = () => {
                       key={key}
                       onClick={() => selectBook(key, index)}
                       className={`text-[12px] text-center rounded-xl border-2 border-slate-400/10 bg-neutral-100 py-4 px-2 dark:bg-neutral-900 cursor-pointer ${
-                        value.length > 16 ? "col-span-3" : value.length > 11 ? "col-span-2" : "col-span-1"
-                      } ${selectedBook === key ? "bg-green-200 border-green-500 dark:bg-green-500 dark:border-green-500" : ""}`}
+                        value.length > 14 ? "col-span-3" : value.length > 13 ? "col-span-2" : "col-span-1"
+                      }`}
+                      style={{ backgroundColor: selectedBook === key ? "#34D399" : "" }}
                     >
                       <p>{value}</p>
                     </div>
                   )
               )}
+            </div>
+            <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
+              <button className="p-2 bg-red-500 text-white rounded text-sm flex flex-row gap-2 px-7 py-3" onClick={closeModal}>
+                <img className="h-4 mt-1 invert" src={LEFT_ICON} />
+                Regresar
+              </button>
             </div>
           </div>
         </div>

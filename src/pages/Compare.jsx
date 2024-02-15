@@ -5,7 +5,7 @@ import ListSubBooks from "../components/ListSubBooks";
 import ListChapters from "../components/ListChapters";
 
 const Compare = () => {
-  const { bibliasSeleccionadas, flagLibros } = useContext(DataContext);
+  const { bibliasSeleccionadas, libroSeleccionado } = useContext(DataContext);
 
   useEffect(() => {}, []);
 
@@ -13,7 +13,7 @@ const Compare = () => {
     <div className="dark:text-white">
       <ListBooks />
       {bibliasSeleccionadas.length > 0 && <ListSubBooks />}
-      {flagLibros && <ListChapters />}
+      {libroSeleccionado.length > 0 && <ListChapters />}
     </div>
   );
 };
