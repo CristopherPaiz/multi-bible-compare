@@ -7,7 +7,7 @@ const ListBooks = () => {
   const modalRef = useRef(null);
   const [selectedBooks, setSelectedBooks] = useState([]);
   const { t } = useContext(LanguageContext);
-  const { setBibliasSeleccionadas, setModalLibros, setFlagBiblias } = useContext(DataContext);
+  const { setBibliasSeleccionadas, setModalLibros } = useContext(DataContext);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -45,7 +45,6 @@ const ListBooks = () => {
     if (selectedBooks.length === 0) return alert(t("SeleccioneUnaBiblia"));
     setBibliasSeleccionadas(selectedBooks);
     setTimeout(() => {
-      setFlagBiblias(true);
       setModalLibros(true);
       closeModal();
     }, 150);
@@ -83,7 +82,6 @@ const ListBooks = () => {
   };
 
   const unmarkAll = () => {
-    setFlagBiblias(false);
     setSelectedBooks([]);
   };
 

@@ -8,19 +8,21 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [bibliasSeleccionadas, setBibliasSeleccionadas] = useState([]);
   const [bibliasSeleccionadasDatos, setBibliasSeleccionadasDatos] = useState({});
+
   const [libroSeleccionado, setLibroSeleccionado] = useState("");
-  const [capituloSeleccionado, setCapituloSeleccionado] = useState(1);
+  const [capituloSeleccionado, setCapituloSeleccionado] = useState(0);
+  const [versiculoSeleccionado, setVersiculoSeleccionado] = useState(0);
+  const [versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero] = useState(0);
   const [libros, setLibros] = useState({});
   const { t } = useContext(LanguageContext);
 
-  //useStateFlags
-  const [flagBiblias, setFlagBiblias] = useState(false);
+  //useStateModals
   //----------------------------------------------------
   const [modalLibros, setModalLibros] = useState(false);
-  const [flagLibros, setFlagLibros] = useState(false);
   //----------------------------------------------------
   const [modalChapters, setModalChapters] = useState(false);
-  const [flagChapters, setFlagChapters] = useState(false);
+  //----------------------------------------------------
+  const [modalVerses, setModalVerses] = useState(false);
 
   //actualizar el idioma de los libros cuando cambia idioma
   useEffect(() => {
@@ -158,19 +160,20 @@ export const DataProvider = ({ children }) => {
         setCapituloSeleccionado,
         SubBook,
         Chapters,
-        //return flags
-        flagBiblias,
-        setFlagBiblias,
+        versiculoSeleccionado,
+        setVersiculoSeleccionado,
+        versiculoSeleccionadoNumero,
+        setVersiculoSeleccionadoNumero,
+        //return modals
         //------------
-        flagLibros,
-        setFlagLibros,
         modalLibros,
         setModalLibros,
         //------------
-        flagChapters,
-        setFlagChapters,
         modalChapters,
         setModalChapters,
+        //------------
+        modalVerses,
+        setModalVerses,
       }}
     >
       {children}
