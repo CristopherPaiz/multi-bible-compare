@@ -40,7 +40,10 @@ const VerseSingle = ({ texto }) => {
   }, [versiculoSeleccionadoNumero]);
 
   return (
-    <div ref={containerRef} className="h-[250px] overflow-y-auto no-scrollbar w-11/12 max-w-[400px] m-auto border-cyan-400 border p-4 align-middle">
+    <div
+      ref={containerRef}
+      className={`overflow-y-auto no-scrollbar w-11/12 max-w-[400px] m-auto border-cyan-400 border p-4 align-middle ${typeof texto === "string" ? "h-50" : "h-[250px]"}`}
+    >
       {typeof texto === "object" && texto !== null ? (
         Object.entries(texto)
           .sort(([keyA], [keyB]) => keyA - keyB)
@@ -60,7 +63,7 @@ const VerseSingle = ({ texto }) => {
             </p>
           ))
       ) : typeof texto === "string" ? (
-        <div style={{ color: "red" }}>{texto}</div>
+        <div style={{ color: "red", textAlign: "center" }}>{texto}</div>
       ) : (
         <p>El texto no es un objeto o un string válido.</p>
       )}
