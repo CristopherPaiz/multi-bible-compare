@@ -7,7 +7,6 @@ const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   const [bibliasSeleccionadas, setBibliasSeleccionadas] = useState([]);
-  const [bibliasSeleccionadasDatos, setBibliasSeleccionadasDatos] = useState({});
 
   const [libroSeleccionado, setLibroSeleccionado] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState(0);
@@ -97,28 +96,6 @@ export const DataProvider = ({ children }) => {
     });
   }, [t]);
 
-  //FUNCION QUE IMPORTA LOS DATA_JSON DE FORMA DINÁMICA
-  useEffect(() => {
-    setVersiculoSeleccionadoNumero(0);
-    const fetchBibles = async () => {
-      const bibles = {};
-
-      await Promise.all(
-        bibliasSeleccionadas.map(async (biblia) => {
-          try {
-            const response = await import(`../assets/bibles/JSON_DATA/${biblia}.json`);
-            bibles[biblia] = response.default;
-          } catch (error) {
-            console.error(`Error loading JSON file for ${biblia}:`, error);
-          }
-        })
-      );
-
-      setBibliasSeleccionadasDatos(bibles);
-    };
-
-    fetchBibles();
-  }, [bibliasSeleccionadas, setBibliasSeleccionadasDatos]);
 
   //USE EFFECT QUE SELECCIONA EL LIBRO Y SUS CAPITULOS COMO VERSÍCULOS
   const [SubBook, setSubBook] = useState(null);
@@ -152,8 +129,6 @@ export const DataProvider = ({ children }) => {
       value={{
         bibliasSeleccionadas,
         setBibliasSeleccionadas,
-        bibliasSeleccionadasDatos,
-        setBibliasSeleccionadasDatos,
         setLibros,
         libros,
         libroSeleccionado,
