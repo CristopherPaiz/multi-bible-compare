@@ -11,6 +11,7 @@ export const DataProvider = ({ children }) => {
 
   const [libroSeleccionado, setLibroSeleccionado] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState(0);
+  const [capituloSeleccionadoNumero, setCapituloSeleccionadoNumero] = useState(0);
   const [versiculoSeleccionado, setVersiculoSeleccionado] = useState(0);
   const [versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero] = useState(0);
   const [libros, setLibros] = useState({});
@@ -98,6 +99,7 @@ export const DataProvider = ({ children }) => {
 
   //FUNCION QUE IMPORTA LOS DATA_JSON DE FORMA DINÁMICA
   useEffect(() => {
+    setVersiculoSeleccionadoNumero(0);
     const fetchBibles = async () => {
       const bibles = {};
 
@@ -164,6 +166,8 @@ export const DataProvider = ({ children }) => {
         setVersiculoSeleccionado,
         versiculoSeleccionadoNumero,
         setVersiculoSeleccionadoNumero,
+        capituloSeleccionadoNumero,
+        setCapituloSeleccionadoNumero,
         //return modals
         //------------
         modalLibros,

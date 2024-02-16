@@ -4,7 +4,7 @@ import LanguageContext from "../context/LanguageContext";
 import LEFT_ICON from "/left.png";
 
 const ListChapters = () => {
-  const { modalChapters, setModalChapters, Chapters, setModalLibros, setModalVerses, setVersiculoSeleccionado } = useContext(DataContext);
+  const { modalChapters, setModalChapters, Chapters, setModalLibros, setModalVerses, setVersiculoSeleccionado, setCapituloSeleccionadoNumero } = useContext(DataContext);
   const [selectedChapter, setSelectedChapter] = useState("");
   const { t } = useContext(LanguageContext);
   const modalRef = useRef(null);
@@ -18,6 +18,7 @@ const ListChapters = () => {
   const selectChapter = (key) => {
     setSelectedChapter(key[0]);
     setVersiculoSeleccionado(key[1]);
+    setCapituloSeleccionadoNumero(key[0]);
     setTimeout(() => {
       setModalVerses(true);
       setModalChapters(false);
