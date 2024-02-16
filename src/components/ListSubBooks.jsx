@@ -74,7 +74,7 @@ const ListSubBooks = () => {
             <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
               <button className="p-2 bg-red-500 text-white rounded text-sm flex flex-row gap-2 px-7 py-3" onClick={closeModal}>
                 <img className="h-4 mt-1 invert" src={LEFT_ICON} />
-                Regresar
+                {t("Regresar")}
               </button>
             </div>
           </div>

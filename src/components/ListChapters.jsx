@@ -26,7 +26,7 @@ const ListChapters = () => {
             <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
             </button>
-            <h1 className="text-xl font-bold mb-4 text-center">{t("SeleccioneUnCapitulo")}</h1>
+            <h1 className="text-xl font-bold mb-4 text-center">{t("SeleccionarCapitulo")}</h1>
             <div className="flex flex-wrap gap-2 justify-center overflow-y-scroll no-scrollbar flex-1" style={{ alignContent: "flex-start" }}>
               {Object.entries(Chapters).map((key, index) => (
                 <div
@@ -42,7 +42,7 @@ const ListChapters = () => {
             <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
               <button className="p-2 bg-red-500 text-white rounded text-sm flex flex-row gap-2 px-7 py-3" onClick={closeModal}>
                 <img className="h-4 mt-1 invert" src={LEFT_ICON} />
-                Regresar
+                {t("Regresar")}
               </button>
             </div>
           </div>

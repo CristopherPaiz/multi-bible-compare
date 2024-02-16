@@ -215,7 +215,7 @@ const ListBooks = () => {
     <>
       <div className="flex w-full justify-center my-4">
         <button onClick={openModal} className="bg-yellow-300 dark:bg-blue-700 dark:text-white p-3 rounded-md hover:cursor-pointer m-auto">
-          Seleccionar biblias
+          {t("SeleccionarBiblias")}
         </button>
       </div>
       {isModalOpen && (
@@ -258,10 +258,10 @@ const ListBooks = () => {
             </div>
             <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
               <button className="p-2 bg-red-500 text-white rounded px-3 text-sm" onClick={unmarkAll}>
-                Desmarcar todo
+                {t("DesmarcarTodo")}
               </button>
               <button className="p-2 bg-blue-500 text-white rounded px-3 text-sm" onClick={handleConfirm}>
-                Confirmar selección
+                {t("Continuar")}
               </button>
             </div>
           </div>
