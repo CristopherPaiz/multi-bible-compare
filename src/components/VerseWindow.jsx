@@ -48,7 +48,7 @@ const VerseWindow = ({ biblia }) => {
 
   return (
     <>
-      <VerseSingle texto={capituloSeleccionado} versiculoNumero={versiculoSeleccionadoNumero} />
+      <VerseSingle texto={capituloSeleccionado} nombre={biblia} />
     </>
   );
 };

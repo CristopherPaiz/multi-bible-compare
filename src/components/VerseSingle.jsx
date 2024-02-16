@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import DataContext from "../context/DataContext";
 import { useContext } from "react";
 
-const VerseSingle = ({ texto }) => {
+const VerseSingle = ({ texto, nombre }) => {
   const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero } = useContext(DataContext);
 
   const containerRef = useRef(null);
@@ -40,39 +40,45 @@ const VerseSingle = ({ texto }) => {
   }, [versiculoSeleccionadoNumero]);
 
   return (
-    <div
-      ref={containerRef}
-      className={`overflow-y-auto no-scrollbar w-11/12 max-w-[400px] m-auto border-cyan-400 border p-4 align-middle ${typeof texto === "string" ? "h-50" : "h-[250px]"}`}
-    >
-      {typeof texto === "object" && texto !== null ? (
-        Object.entries(texto)
-          .sort(([keyA], [keyB]) => keyA - keyB)
-          .map(([versiculo, contenido], index) => (
-            <p
-              key={index}
-              data-verse={versiculo}
-              onClick={() => handleVerseClick(versiculo)}
-              style={{
-                cursor: "pointer",
-                marginBottom: "0.7rem",
-                color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? "yellow" : "inherit",
-                fontWeight: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? "bold" : "100",
-              }}
-            >
-              <span style={{ fontWeight: "bold" }}>{versiculo}: </span> {contenido}
-            </p>
-          ))
-      ) : typeof texto === "string" ? (
-        <div style={{ color: "red", textAlign: "center" }}>{texto}</div>
-      ) : (
-        <p>El texto no es un objeto o un string válido.</p>
-      )}
-    </div>
+    <>
+      <h1>{nombre}</h1>
+      <div
+        ref={containerRef}
+        className={`overflow-y-auto no-scrollbar w-11/12 max-w-[400px] m-auto border-cyan-400 border p-4 align-middle ${
+          typeof texto === "string" ? "h-50" : "h-[250px]"
+        }`}
+      >
+        {typeof texto === "object" && texto !== null ? (
+          Object.entries(texto)
+            .sort(([keyA], [keyB]) => keyA - keyB)
+            .map(([versiculo, contenido], index) => (
+              <p
+                key={index}
+                data-verse={versiculo}
+                onClick={() => handleVerseClick(versiculo)}
+                style={{
+                  cursor: "pointer",
+                  marginBottom: "0.7rem",
+                  color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? "yellow" : "inherit",
+                  fontWeight: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? "bold" : "100",
+                }}
+              >
+                <span style={{ fontWeight: "bold" }}>{versiculo}: </span> {contenido}
+              </p>
+            ))
+        ) : typeof texto === "string" ? (
+          <div style={{ color: "red", textAlign: "center" }}>{texto}</div>
+        ) : (
+          <p>El texto no es un objeto o un string válido.</p>
+        )}
+      </div>
+    </>
   );
 };
 
 VerseSingle.propTypes = {
   texto: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
+  nombre: PropTypes.string.isRequired,
 };
 
 export default VerseSingle;
