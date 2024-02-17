@@ -70,7 +70,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
   return (
     <>
       <div className="flex flex-col border-neutral-400 rounded-md border">
-        <div className="max-w-[390px] min-w-[300px] w-[390px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row">
+        <div className="max-w-[390px] min-w-[250px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row">
           <div className="flex flex-col">
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
@@ -83,10 +83,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             </div>
           )}
         </div>
-        <div
-          ref={containerRef}
-          className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[300px] w-[390px] ${typeof texto === "string" ? "h-[50px]" : "h-[260px]"}`}
-        >
+        <div ref={containerRef} className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${typeof texto === "string" ? "h-[50px]" : "h-[260px]"}`}>
           {typeof texto === "object" && texto !== null ? (
             Object.entries(texto)
               .sort(([keyA], [keyB]) => keyA - keyB)
@@ -106,7 +103,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                 </p>
               ))
           ) : typeof texto === "string" ? (
-            <div className="font-bold min-w-[390px] max-w-[390px] w-[390px] -ml-2 text-center text-[#ff0000] dark:text-orange-500">{texto}</div>
+            <div className="font-bold max-w-[390px] min-w-[250px] -ml-2 text-center text-[#ff0000] dark:text-orange-500">{texto}</div>
           ) : (
             <p>El texto no es un objeto o un string válido.</p>
           )}
