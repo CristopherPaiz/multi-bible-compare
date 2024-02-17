@@ -1,15 +1,19 @@
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useEffect, useCallback, useContext } from "react";
+import EasyGoogleTranslate from "free-google-translate";
 import PropTypes from "prop-types";
 import DataContext from "../context/DataContext";
-import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
+import LanguageContext from "../context/LanguageContext";
+import TRANSLATE from "/translation.png";
 
-const VerseSingle = ({ texto, nombre }) => {
+const VerseSingle = ({ texto, nombre, iso }) => {
   const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
+  const { idiomaNavegador } = useContext(LanguageContext);
 
   const containerRef = useRef(null);
 
+  //Cambiar posicion del texto al centro del div
   const handleVerseClick = useCallback(
     (versiculo) => {
       setVersiculoSeleccionadoNumero(versiculo);
@@ -41,12 +45,43 @@ const VerseSingle = ({ texto, nombre }) => {
     return () => clearTimeout(scrollTimeout);
   }, [versiculoSeleccionadoNumero]);
 
+  //Funcion para traducir solo el versiculo seleccionadoa
+  const handleTranslate = async (iso) => {
+    if (iso === "no" || !versiculoSeleccionadoNumero) {
+      return; // No hace nada si no hay iso o no hay versículo seleccionado
+    }
+
+    const idiomaVersoTranslate = iso.toString();
+    const idiomaNavegadorTranslate = idiomaNavegador.split("-")[0];
+    const verso = texto[versiculoSeleccionadoNumero]; // Obtener el verso seleccionado
+
+    const translator = new EasyGoogleTranslate(idiomaVersoTranslate, idiomaNavegadorTranslate, 10000);
+    try {
+      const result = await translator.translate(verso);
+      const newTexto = { ...texto }; // Clonar el objeto texto para no mutarlo directamente
+      newTexto[versiculoSeleccionadoNumero] = result; // Reemplazar el verso seleccionado con la traducción
+      console.log(newTexto);
+      return newTexto; // Devolver el texto actualizado
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
-      <div className="flex flex-col  border-neutral-400 rounded-md border">
-        <div className="max-w-[390px] min-w-[300px] w-[390px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md">
-          <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
-          <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
+      <div className="flex flex-col border-neutral-400 rounded-md border">
+        <div className="max-w-[390px] min-w-[300px] w-[390px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row">
+          <div className="flex flex-col">
+            <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
+            <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
+          </div>
+          {iso !== "no" && (
+            <div>
+              <button onClick={() => handleTranslate(iso)}>
+                <img className="mt-2 mr-1 w-6 h-6 dark:invert" src={TRANSLATE} alt="Translate"></img>
+              </button>
+            </div>
+          )}
         </div>
         <div
           ref={containerRef}
@@ -81,9 +116,10 @@ const VerseSingle = ({ texto, nombre }) => {
   );
 };
 
+export default VerseSingle;
+
 VerseSingle.propTypes = {
   texto: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   nombre: PropTypes.string.isRequired,
+  iso: PropTypes.string.isRequired,
 };
-
-export default VerseSingle;

@@ -86,6 +86,17 @@ const ListBooks = () => {
   };
 
   const BOOKS = {
+    recommended: {
+      "Biblia Español 1569": { ruta: "61. Español - (1569)", new: true, old: true },
+      "F35 1453": { ruta: "26. Greek - F35 (1453)", new: true, old: false },
+      "Aleppo Codex Bible 920": { ruta: "39. Hebrew - Aleppo Codex Bible (920)", new: false, old: true },
+      "Tyndale 1537": { ruta: "18. English - Tyndale (1537)", new: true, old: true },
+      "Esperanto Version 1926": { ruta: "20. Esperanto - Bible (1926)", new: true, old: true },
+      "Quiché 1995": { ruta: "47. Quiché - (1995)", new: true, old: true },
+      "Vulgate Version 405": { ruta: "51. Latin - Vulgate Version (405)", new: true, old: true },
+      "Náhuatl NHE 1985": { ruta: "59. Náhuatl - NHE (1985)", new: true, old: true },
+      "Q'eqchi 2017": { ruta: "60. Q'eqchi - (2017)", new: true, old: true },
+    },
     spanish: {
       "Biblia Español 1569": { ruta: "61. Español - (1569)", new: true, old: true },
       "Reina Valera Nueva Traducción 1858": { ruta: "62. Español - Reina Valera Nueva Traduccción [RVNT] (1858)", new: true, old: false },
@@ -223,7 +234,7 @@ const ListBooks = () => {
               X
             </button>
             <h1 className="text-xl font-bold mb-4">{t("SeleccionarLibro")}</h1>
-            <div className="flex gap-4 px-2 pb-5" style={{ alignItems: "center" }}>
+            <div className="flex gap-4 px-2 pb-5 m-auto" style={{ alignItems: "center" }}>
               <span className="p-2 bg-red-600 text-white text-[9px] h-7 justify-center text-center">{t("AntiguoTestamentoInicial")}</span>
               <p className="text-[14px]">{t("AntiguoTestamento")}</p>
               <span className="p-2 bg-blue-600 text-white text-[9px] h-7 justify-center text-center">{t("NuevoTestamentoInicial")}</span>
