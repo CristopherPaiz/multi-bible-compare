@@ -103,7 +103,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                 </p>
               ))
           ) : typeof texto === "string" ? (
-            <div className="font-bold max-w-[390px] min-w-[250px] -ml-2 text-center text-[#ff0000] dark:text-orange-500">{texto}</div>
+            <div className="font-bold max-w-[390px] min-w-[250px w-full -ml-2 text-center text-[#ff0000] dark:text-orange-500">{texto}</div>
           ) : (
             <p>El texto no es un objeto o un string válido.</p>
           )}
