@@ -47,9 +47,9 @@ const VerseWindow = ({ biblia }) => {
   }, [rutaFinal, versiculoSeleccionadoNumero]);
 
   return (
-    <>
+    <div>
       <VerseSingle texto={capituloSeleccionado} nombre={biblia} />
-    </>
+    </div>
   );
 };
 

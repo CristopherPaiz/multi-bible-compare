@@ -8,13 +8,13 @@ const Verses = () => {
   return (
     <>
       {bibliasSeleccionadas.length > 0 && (
-        <>
-          <div className="flex flex-wrap gap-y-10 gap-x-2">
+        <div className="w-11/12 m-auto my-10">
+          <div className="flex flex-wrap gap-y-10 gap-x-4 space-evenly">
             {bibliasSeleccionadas.map((biblia, index) => (
               <VerseWindow key={index} biblia={biblia} />
             ))}
           </div>
-        </>
+        </div>
       )}
     </>
   );
