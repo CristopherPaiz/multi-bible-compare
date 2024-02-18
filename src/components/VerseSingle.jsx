@@ -1,28 +1,39 @@
-import { useRef, useEffect, useCallback, useContext } from "react";
-import EasyGoogleTranslate from "free-google-translate";
+import { useRef, useEffect, useCallback, useContext, useState } from "react";
 import PropTypes from "prop-types";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
-import TRANSLATE from "/translation.png";
+import TRANSLATE from "/translationBeta.png";
+
+import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
   const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
-  const { idiomaNavegador } = useContext(LanguageContext);
+  const { idiomaNavegador, t } = useContext(LanguageContext);
+
+  const [textoTraducido, setTextoTraducido] = useState(texto);
+  const [textoOriginal, setTextoOriginal] = useState(texto);
+  const [isTranslating, setIsTranslating] = useState(false);
 
   const containerRef = useRef(null);
 
-  //Cambiar posicion del texto al centro del div
   const handleVerseClick = useCallback(
     (versiculo) => {
       setVersiculoSeleccionadoNumero(versiculo);
       setTimeout(() => {
         window.dispatchEvent(new Event("resize"));
-      }, 10);
+      }, 100);
     },
     [setVersiculoSeleccionadoNumero]
   );
+
+  useEffect(() => {
+    if (texto !== textoOriginal) {
+      setTextoOriginal(texto);
+      setTextoTraducido(texto);
+    }
+  }, [texto, textoOriginal]);
 
   useEffect(() => {
     const scrollTimeout = setTimeout(() => {
@@ -40,30 +51,42 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           containerRef.current.scrollTop = scrollTop;
         }
       }
-    }, 50);
+    }, 100);
 
     return () => clearTimeout(scrollTimeout);
   }, [versiculoSeleccionadoNumero]);
 
-  //Funcion para traducir solo el versiculo seleccionadoa
   const handleTranslate = async (iso) => {
     if (iso === "no" || !versiculoSeleccionadoNumero) {
-      return; // No hace nada si no hay iso o no hay versículo seleccionado
+      return;
     }
 
     const idiomaVersoTranslate = iso.toString();
-    const idiomaNavegadorTranslate = idiomaNavegador.split("-")[0];
-    const verso = texto[versiculoSeleccionadoNumero]; // Obtener el verso seleccionado
+    const idiomaNavegadorTranslate = idiomaNavegador;
+    const verso = textoOriginal[versiculoSeleccionadoNumero];
 
-    const translator = new EasyGoogleTranslate(idiomaVersoTranslate, idiomaNavegadorTranslate, 10000);
+    setIsTranslating(true);
+
+    const translator1 = new GoogleTranslator({
+      corsProxy: "https://corsproxy.io/",
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+      },
+    });
+    const translator2 = new GoogleTranslatorTokenFree({});
     try {
-      const result = await translator.translate(verso);
-      const newTexto = { ...texto }; // Clonar el objeto texto para no mutarlo directamente
-      newTexto[versiculoSeleccionadoNumero] = result; // Reemplazar el verso seleccionado con la traducción
-      console.log(newTexto);
-      return newTexto; // Devolver el texto actualizado
+      const resultado = await translator1.translate(encodeURIComponent(verso), idiomaVersoTranslate, idiomaNavegadorTranslate);
+      setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
     } catch (error) {
+      try {
+        const resultado = await translator2.translate(verso, idiomaVersoTranslate, idiomaNavegadorTranslate);
+        setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
+      } catch (error) {
+        console.error(error);
+      }
       console.error(error);
+    } finally {
+      setIsTranslating(false);
     }
   };
 
@@ -78,14 +101,23 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           {iso !== "no" && (
             <div>
               <button onClick={() => handleTranslate(iso)}>
-                <img className="mt-2 mr-1 w-6 h-6 dark:invert" src={TRANSLATE} alt="Translate"></img>
+                <img className="mt-2 mr-1 w-6 h-7 dark:invert" src={TRANSLATE} alt="Translate"></img>
               </button>
             </div>
           )}
         </div>
-        <div ref={containerRef} className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${typeof texto === "string" ? "h-[50px]" : "h-[260px]"}`}>
-          {typeof texto === "object" && texto !== null ? (
-            Object.entries(texto)
+        <div
+          ref={containerRef}
+          className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${typeof textoTraducido === "string" ? "h-fit" : "h-[260px]"}`}
+          style={{ position: "relative" }}
+        >
+          {isTranslating && (
+            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50">
+              <div className="text-white">{t("Traduciendo")}</div>
+            </div>
+          )}
+          {typeof textoTraducido === "object" && textoTraducido !== null ? (
+            Object.entries(textoTraducido)
               .sort(([keyA], [keyB]) => keyA - keyB)
               .map(([versiculo, contenido], index) => (
                 <p
@@ -102,10 +134,10 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                   <span style={{ fontWeight: "bold" }}>{versiculo}: </span> {contenido}
                 </p>
               ))
-          ) : typeof texto === "string" ? (
-            <div className="font-bold max-w-[390px] min-w-[250px w-full -ml-2 text-center text-[#ff0000] dark:text-orange-500">{texto}</div>
+          ) : typeof textoTraducido === "string" ? (
+            <div className="font-bold max-w-[390px] min-w-[230px] px-2 text-center text-[#ff0000] dark:text-orange-500">{textoTraducido}</div>
           ) : (
-            <p>El texto no es un objeto o un string válido.</p>
+            <p>{t("NoObjetoNoString")}</p>
           )}
         </div>
       </div>

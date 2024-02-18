@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import DataContext from "../context/DataContext";
 import PropTypes from "prop-types";
 import VerseSingle from "./VerseSingle";
+import LanguageContext from "../context/LanguageContext";
 
 const VerseWindow = ({ biblia }) => {
   const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } = useContext(DataContext);
@@ -9,6 +10,7 @@ const VerseWindow = ({ biblia }) => {
   const [rutaFinal, setRutaFinal] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
   const [idioma, setIdioma] = useState("");
+  const { t } = useContext(LanguageContext);
 
   //1. Determinar el tipo de testamento
   useEffect(() => {
@@ -41,13 +43,14 @@ const VerseWindow = ({ biblia }) => {
         const data = await response.json();
         setCapituloSeleccionado(data);
       } catch (error) {
-        setCapituloSeleccionado("No existe el Versículo seleccionado");
+        const tipoTestamentoVersiculo = tipoTestamento === "Old" ? t("AntiguoTestamento") : t("NuevoTestamento");
+        setCapituloSeleccionado(t("NoExisteVersiculoParte1") + tipoTestamentoVersiculo + t("NoExisteVersiculoParte2"));
       }
     };
     if (rutaFinal) {
       obtenerJSON();
     }
-  }, [rutaFinal, versiculoSeleccionadoNumero]);
+  }, [rutaFinal, versiculoSeleccionadoNumero, tipoTestamento, t]);
 
   // Retorna el ISO code del idioma
   const IdiomaAcodigo = async (idiomaVal) => {

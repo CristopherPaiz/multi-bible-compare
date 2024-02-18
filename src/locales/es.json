@@ -101,5 +101,9 @@
   "DesmarcarTodo": "Desmarcar todo",
   "Continuar": "Continuar",
   "SeleccionarCapitulo": "Seleccione el capítulo",
-  "SeleccioneElVersiculo": "Seleccione el versículo"
+  "SeleccioneElVersiculo": "Seleccione el versículo",
+  "NoExisteVersiculoParte1": "Esta biblia no contiene ",
+  "NoExisteVersiculoParte2": ", así que el versículo seleccionado no existe.",
+  "Traduciendo": "Traduciendo...",
+  "NoObjetoNoString": "El texto no es un objeto o un string válido."
 }
