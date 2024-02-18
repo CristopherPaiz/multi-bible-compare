@@ -4,7 +4,6 @@ import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import TRANSLATE from "/translationBeta.png";
-
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
@@ -21,9 +20,6 @@ const VerseSingle = ({ texto, nombre, iso }) => {
   const handleVerseClick = useCallback(
     (versiculo) => {
       setVersiculoSeleccionadoNumero(versiculo);
-      setTimeout(() => {
-        window.dispatchEvent(new Event("resize"));
-      }, 100);
     },
     [setVersiculoSeleccionadoNumero]
   );
@@ -35,26 +31,28 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     }
   }, [texto, textoOriginal]);
 
-  useEffect(() => {
-    const scrollTimeout = setTimeout(() => {
-      if (containerRef.current && versiculoSeleccionadoNumero) {
-        const highlightedVerse = containerRef.current.querySelector(`[data-verse="${versiculoSeleccionadoNumero}"]`);
+  const centerText = useCallback(() => {
+    if (containerRef.current && versiculoSeleccionadoNumero) {
+      const highlightedVerse = containerRef.current.querySelector(`[data-verse="${versiculoSeleccionadoNumero}"]`);
+      if (highlightedVerse) {
+        const containerHeight = containerRef.current.clientHeight;
+        const verseHeight = highlightedVerse.clientHeight;
 
-        if (highlightedVerse) {
-          const containerTop = containerRef.current.offsetTop;
-          const containerHeight = containerRef.current.offsetHeight;
-          const verseTop = highlightedVerse.offsetTop;
-          const verseHeight = highlightedVerse.offsetHeight;
+        const verseOffsetTop = highlightedVerse.offsetTop;
+        const scrollTop = verseOffsetTop - containerHeight / 2 + verseHeight / 2;
 
-          const scrollTop = Math.max(0, verseTop - containerTop - containerHeight / 2 + verseHeight / 2);
-
-          containerRef.current.scrollTop = scrollTop;
-        }
+        containerRef.current.scrollTop = scrollTop;
       }
-    }, 100);
-
-    return () => clearTimeout(scrollTimeout);
+    }
   }, [versiculoSeleccionadoNumero]);
+
+  useEffect(() => {
+    centerText(); // Centrar el texto en el primer renderizado
+  }, [centerText]);
+
+  useEffect(() => {
+    centerText(); // Centrar el texto cuando se selecciona un nuevo versículo
+  }, [versiculoSeleccionadoNumero, centerText]);
 
   const handleTranslate = async (iso) => {
     if (iso === "no" || !versiculoSeleccionadoNumero) {
@@ -98,7 +96,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
           </div>
-          {iso !== "no" && (
+          {iso !== "no" && typeof textoTraducido !== "string" && (
             <div>
               <button onClick={() => handleTranslate(iso)}>
                 <img className="mt-2 mr-1 w-6 h-7 dark:invert" src={TRANSLATE} alt="Translate"></img>
@@ -127,11 +125,15 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                   style={{
                     cursor: "pointer",
                     marginBottom: "0.7rem",
-                    color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#0690c6" : "yellow") : "inherit",
-                    fontWeight: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? "bold" : "100",
+                    color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
+                    backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#f3fda5" : "#0058e6") : "transparent",
+                    padding: "1rem",
+                    margin: "-1rem",
                   }}
                 >
-                  <span style={{ fontWeight: "bold" }}>{versiculo}: </span> {contenido}
+                  <span>
+                    <span style={{ fontWeight: "bold" }}>{versiculo}:</span> {contenido}
+                  </span>
                 </p>
               ))
           ) : typeof textoTraducido === "string" ? (
@@ -145,10 +147,10 @@ const VerseSingle = ({ texto, nombre, iso }) => {
   );
 };
 
-export default VerseSingle;
-
 VerseSingle.propTypes = {
   texto: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   nombre: PropTypes.string.isRequired,
   iso: PropTypes.string.isRequired,
 };
+
+export default VerseSingle;
