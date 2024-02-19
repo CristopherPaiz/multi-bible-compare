@@ -4,6 +4,7 @@ import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import TRANSLATE from "/translationBeta.png";
+import TRANSLATEGOOGLE from "/google.png";
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
@@ -16,6 +17,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
   const [isTranslating, setIsTranslating] = useState(false);
 
   const containerRef = useRef(null);
+  const translatingRef = useRef(null);
 
   const handleVerseClick = useCallback(
     (versiculo) => {
@@ -88,9 +90,20 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     }
   };
 
+  const handleGoogleTranslate = (iso) => {
+    if (iso === "no" || !versiculoSeleccionadoNumero) {
+      return;
+    }
+
+    const idiomaVersoTranslate = iso.toString();
+    const idiomaNavegadorTranslate = idiomaNavegador;
+    const verso = textoOriginal[versiculoSeleccionadoNumero];
+    return `https://translate.google.com/m?sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
+  };
+
   return (
     <>
-      <div className="flex flex-col border-neutral-400 rounded-md border">
+      <div className="flex flex-col border-neutral-400 rounded-md border relative">
         <div className="max-w-[390px] min-w-[250px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row">
           <div className="flex flex-col">
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
@@ -98,8 +111,13 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           </div>
           {iso !== "no" && typeof textoTraducido !== "string" && (
             <div>
+              <button>
+                <a href={handleGoogleTranslate(iso)} target="_blank">
+                  <img className="mt-2 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>
+                </a>
+              </button>
               <button onClick={() => handleTranslate(iso)}>
-                <img className="mt-2 mr-1 w-6 h-7 dark:invert" src={TRANSLATE} alt="Translate"></img>
+                <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt="Translate"></img>
               </button>
             </div>
           )}
@@ -109,11 +127,6 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${typeof textoTraducido === "string" ? "h-fit" : "h-[260px]"}`}
           style={{ position: "relative" }}
         >
-          {isTranslating && (
-            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50">
-              <div className="text-white">{t("Traduciendo")}</div>
-            </div>
-          )}
           {typeof textoTraducido === "object" && textoTraducido !== null ? (
             Object.entries(textoTraducido)
               .sort(([keyA], [keyB]) => keyA - keyB)
@@ -142,6 +155,15 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             <p>{t("NoObjetoNoString")}</p>
           )}
         </div>
+        {isTranslating && (
+          <div
+            ref={translatingRef}
+            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 z-50 flex justify-center items-center"
+            style={{ pointerEvents: "none" }}
+          >
+            <div className="text-white font-bold">{t("Traduciendo")}</div>
+          </div>
+        )}
       </div>
     </>
   );

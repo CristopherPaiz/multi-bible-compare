@@ -64,7 +64,7 @@ const VerseWindow = ({ biblia }) => {
       case "Greek":
         return "el";
       case "Hebrew":
-        return "he";
+        return "iw";
       case "Latin":
         return "la";
       default:
