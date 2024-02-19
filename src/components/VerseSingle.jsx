@@ -49,12 +49,15 @@ const VerseSingle = ({ texto, nombre, iso }) => {
   }, [versiculoSeleccionadoNumero]);
 
   useEffect(() => {
-    centerText(); // Centrar el texto en el primer renderizado
-  }, [centerText]);
+    if (texto !== textoOriginal) {
+      setTextoOriginal(texto);
+      setTextoTraducido(texto);
+    }
+  }, [texto, textoOriginal]);
 
   useEffect(() => {
-    centerText(); // Centrar el texto cuando se selecciona un nuevo versículo
-  }, [versiculoSeleccionadoNumero, centerText]);
+    centerText();
+  }, [textoTraducido, centerText]);
 
   const handleTranslate = async (iso) => {
     if (iso === "no" || !versiculoSeleccionadoNumero) {
@@ -77,6 +80,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     try {
       const resultado = await translator1.translate(encodeURIComponent(verso), idiomaVersoTranslate, idiomaNavegadorTranslate);
       setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
+      centerText();
     } catch (error) {
       try {
         const resultado = await translator2.translate(verso, idiomaVersoTranslate, idiomaNavegadorTranslate);
@@ -111,12 +115,12 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           </div>
           {iso !== "no" && typeof textoTraducido !== "string" && (
             <div>
-              <button>
+              <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank">
                   <img className="mt-2 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>
                 </a>
               </button>
-              <button onClick={() => handleTranslate(iso)}>
+              <button disabled={isTranslating ? true : false} onClick={() => handleTranslate(iso)}>
                 <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt="Translate"></img>
               </button>
             </div>
@@ -139,7 +143,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                     cursor: "pointer",
                     marginBottom: "0.7rem",
                     color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
-                    backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#f3fda5" : "#0058e6") : "transparent",
+                    backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#f3fda5" : "#3d5c8f") : "transparent",
                     padding: "1rem",
                     margin: "-1rem",
                   }}
@@ -158,10 +162,13 @@ const VerseSingle = ({ texto, nombre, iso }) => {
         {isTranslating && (
           <div
             ref={translatingRef}
-            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 z-50 flex justify-center items-center"
+            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-50 flex justify-center items-center"
             style={{ pointerEvents: "none" }}
           >
-            <div className="text-white font-bold">{t("Traduciendo")}</div>
+            <div className="text-white font-bold flex flex-col">
+              <div className="flex justify-center m-auto h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
+              <div>{t("Traduciendo")}</div>
+            </div>
           </div>
         )}
       </div>
