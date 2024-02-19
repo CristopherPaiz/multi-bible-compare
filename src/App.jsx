@@ -18,7 +18,8 @@ const App = () => {
   };
   return (
     <>
-      <div className="backgroundPattern w-full h-full fixed" style={styles}>
+      <div>
+        <div className="backgroundPattern w-full h-full fixed -z-50" style={styles}></div>
         <BrowserRouter>
           <Navbar />
           <Routes>

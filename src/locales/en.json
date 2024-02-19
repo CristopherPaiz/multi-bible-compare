@@ -1,13 +1,13 @@
 {
-  "bienvenida": "Hello World!",
-  "titulo": "Compare",
-  "IniciarSesion": "Login",
+  "Biblian": "Biblian",
+  "tituloComparar": "Compare biblical texts",
   "Inicio": "Home",
-  "Comparar": "Compare",
-  "Informacion": "About",
+  "Comparar": "Compare Bibles",
+  "Informacion": "Information",
   "Ajustes": "Settings",
-  "CambiarIdioma": "Change Language 🇺🇸 → 🇪🇸",
-  "CambiarTema": "Change Theme 🌚 or 🌞",
+  "CambiarIdioma": "Cambiar a español",
+  "CambiarTemaOscuro": "Switch to dark theme",
+  "CambiarTemaClaro": "Switch to light theme",
   "SobreProyecto": "About the project",
   "InfoSobreProyecto": "This web application was created by Cristopher Paiz, with the aim of facilitating the comparison of biblical texts. The application is open source and can be found on my GitHub https://github.com/CristopherPaiz/multi-bible-compare. However, the texts provided are not under my audit, but thanks to the collaboration of many entities that provide their work for free, they are now available to you in order to make comparisons of different passages for better understanding.",
   "MasInfoSobreProyeto": "This compiled information was thanks to 'Beblia', you can find more information on their GitHub page. I wholeheartedly appreciate their effort and also that of each of the entities that provided their work for free.",
@@ -101,5 +101,9 @@
   "DesmarcarTodo": "Uncheck all",
   "Continuar": "Continue",
   "SeleccionarCapitulo": "Select the chapter",
-  "SeleccioneElVersiculo": "Select the verse"
+  "SeleccioneElVersiculo": "Select the verse",
+  "NoExisteVersiculoParte1": "This Bible does not contain ",
+  "NoExisteVersiculoParte2": ", so the selected verse does not exist.",
+  "Traduciendo": "Translating...",
+  "NoObjetoNoString": "The text is not a valid object or string."
 }

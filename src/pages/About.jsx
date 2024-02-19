@@ -51,9 +51,9 @@ const About = () => {
     <>
       <article className="px-6 py-3 justify-center w-full sm:w-[700px] m-auto">
         <h1 className="text-2xl font-bold flex justify-center text-center mt-7 dark:text-white">{t("SobreProyecto")}</h1>
-        <p className="mt-4 dark:text-white text-left text-balance text-sm">{t("InfoSobreProyecto")}</p>
+        <p className="mt-4 dark:text-white text-left text-balance text-sm sm:text-balance sm:text-center">{t("InfoSobreProyecto")}</p>
         <br />
-        <p className="mt-4 dark:text-white text-left text-balance text-sm">{t("MasInfoSobreProyeto")}</p>
+        <p className="mt-4 dark:text-white text-left text-balance text-sm sm:text-balance sm:text-center">{t("MasInfoSobreProyeto")}</p>
         <h2 className="text-2xl text-center mt-10 dark:text-white font-bold">{t("Colaboradores")}</h2>
         <ul className="mt-4 dark:text-white text-center text-sm">
           {Object.keys(COLLABORATORS).map((collaborator) => (
