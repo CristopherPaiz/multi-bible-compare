@@ -9,7 +9,7 @@ const Navbar = () => {
   const { t } = useContext(LanguageContext);
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 flex justify-between">
+      <nav className="bg-[#FDD07A] border-white dark:bg-[#20123A] flex justify-between">
         <Link to="/" className="flex sm:hidden py-4 px-6 gap-2" style={{ alignItems: "center" }}>
           <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-14 dark:invert" />
           <div className="flex flex-col px-2 dark:text-white sm:flex sm:flex-wrap">
@@ -51,8 +51,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="flex bg-gray-50 dark:bg-gray-700 justify-center sm:hidden">
-        <div className="max-w-screen-xl px-4 py-3 mx-auto">
+      <nav className="flex bg-[#fbefda] dark:bg-[#693BCC] justify-center sm:hidden">
+        <div className="max-w-screen-xl px-4#ffeac7 py-3 mx-auto">
           <div className="flex items-center justify-center">
             <ul className="flex flex-row font-medium mt-0 space-x-8 text-sm">
               <li>
