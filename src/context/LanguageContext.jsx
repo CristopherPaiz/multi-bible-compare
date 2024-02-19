@@ -11,28 +11,31 @@ export const LanguageProvider = ({ children }) => {
   const [idiomaNavegador, setIdiomaNavegador] = useState("es");
 
   useEffect(() => {
-    let idiomaInicial;
-    if (localStorage.getItem("idioma")) {
-      idiomaInicial = localStorage.getItem("idioma");
-    } else {
-      idiomaInicial = navigator.language;
+    if (!localStorage.getItem("idioma")) {
+      localStorage.setItem("idioma", "es");
     }
+
+    let idiomaInicial = localStorage.getItem("idioma");
+
+    if (!lenguajes.includes(idiomaInicial)) {
+      idiomaInicial = "es";
+    }
+
     const indexIdioma = lenguajes.indexOf(idiomaInicial);
-    setIndiceArchivo(indexIdioma !== -1 ? indexIdioma : 0);
+    setIndiceArchivo(indexIdioma);
     setIdiomaNavegador(idiomaInicial);
   }, []);
 
-  // Funciones para el cambio de idioma
   const [indiceArchivo, setIndiceArchivo] = useState(0);
 
   const cambiarIdioma = () => {
     const nuevoIndice = (indiceArchivo + 1) % archivosIdioma.length;
     setIndiceArchivo(nuevoIndice);
 
-    const nuevoIdioma = archivosIdioma[nuevoIndice].idioma;
+    const nuevoIdioma = lenguajes[nuevoIndice];
     setIdiomaNavegador(nuevoIdioma);
 
-    localStorage.setItem("idioma", lenguajes[nuevoIndice]); // Actualizar el idioma en localStorage
+    localStorage.setItem("idioma", nuevoIdioma);
   };
 
   const t = (clave) => {
@@ -41,7 +44,6 @@ export const LanguageProvider = ({ children }) => {
     return traducciones[indiceArchivo] || clave;
   };
 
-  // funciones que retornamos para que puedan usarse en otros lados
   return <LanguageContext.Provider value={{ idiomaNavegador, cambiarIdioma, t }}>{children}</LanguageContext.Provider>;
 };
 

@@ -102,7 +102,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const idiomaVersoTranslate = iso.toString();
     const idiomaNavegadorTranslate = idiomaNavegador;
     const verso = textoOriginal[versiculoSeleccionadoNumero];
-    return `https://translate.google.com/m?sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
+    return `https://translate.google.com/m?sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
   };
 
   return (
@@ -113,7 +113,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
           </div>
-          {iso !== "no" && typeof textoTraducido !== "string" && (
+          {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso && (
             <div>
               <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank">
