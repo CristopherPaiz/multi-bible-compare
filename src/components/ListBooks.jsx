@@ -223,7 +223,7 @@ const ListBooks = () => {
   return (
     <>
       <div className="flex w-full justify-center my-4">
-        <button onClick={openModal} className="bg-yellow-300 dark:bg-blue-700 dark:text-white p-3 rounded-md hover:cursor-pointer m-auto">
+        <button onClick={openModal} className="bg-[#FDD07A] dark:bg-[#693BCC] dark:text-white p-3 rounded-md hover:cursor-pointer m-auto">
           {t("SeleccionarBiblias")}
         </button>
       </div>

@@ -107,7 +107,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
 
   return (
     <>
-      <div className="flex flex-col border-neutral-400 rounded-md border relative">
+      <div className="flex flex-col border-neutral-400 rounded-md border relative bg-white dark:bg-[#0f0f0f]">
         <div className="max-w-[390px] min-w-[250px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row">
           <div className="flex flex-col">
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>

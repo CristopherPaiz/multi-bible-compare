@@ -15,7 +15,7 @@ const Settings = () => {
       <div className="flex gap-3 mt-4 flex-col w-full justify-center">
         <button
           style={{ alignItems: "center" }}
-          className="justify-center gap-3 flex bg-yellow-300 font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-blue-700 dark:text-white"
+          className="justify-center gap-3 flex bg-[#FDD07A] font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-[#693BCC] dark:text-white"
           onClick={cambiarIdioma}
         >
           {t("CambiarIdioma")}
@@ -24,7 +24,7 @@ const Settings = () => {
         {theme === "light" ? (
           <button
             style={{ alignItems: "center" }}
-            className="justify-center gap-3 flex bg-yellow-300 font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-blue-700 dark:text-white"
+            className="justify-center gap-3 flex bg-[#FDD07A] font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-[#693BCC] dark:text-white"
             onClick={changeTheme}
           >
             {t("CambiarTemaOscuro")}
@@ -33,7 +33,7 @@ const Settings = () => {
         ) : (
           <button
             style={{ alignItems: "center" }}
-            className="justify-center gap-3 flex bg-yellow-300 font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-blue-700 dark:text-white"
+            className="justify-center gap-3 flex bg-[#FDD07A] font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-[#693BCC] dark:text-white"
             onClick={changeTheme}
           >
             {t("CambiarTemaClaro")}
