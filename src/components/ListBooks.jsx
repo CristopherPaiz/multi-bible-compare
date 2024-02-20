@@ -14,6 +14,41 @@ const ListBooks = () => {
   const { t, idiomaNavegador } = useContext(LanguageContext);
   const { setBibliasSeleccionadas, setModalLibros } = useContext(DataContext);
 
+  //ESTRELLA
+  const [favoriteBooks, setFavoriteBooks] = useState([]);
+
+  const handleBookToggle = (ruta) => {
+    const newSelectedBooks = selectedBooks.includes(ruta)
+      ? selectedBooks.filter((book) => book !== ruta)
+      : [...selectedBooks, ruta];
+    setSelectedBooks(newSelectedBooks);
+  };
+
+  const handleFavoriteToggle = (ruta) => {
+    const newFavoriteBooks = favoriteBooks.includes(ruta)
+      ? favoriteBooks.filter((book) => book !== ruta)
+      : [...favoriteBooks, ruta];
+    setFavoriteBooks(newFavoriteBooks);
+  };
+  // FIN ESTRELLA
+
+  useEffect(() => {
+    const selectedBooksString = localStorage.getItem("selectedBooks");
+    if (selectedBooksString) {
+      setSelectedBooks(JSON.parse(selectedBooksString));
+    }
+
+    const favoriteBooksString = localStorage.getItem("favoriteBooks");
+    if (favoriteBooksString) {
+      setFavoriteBooks(JSON.parse(favoriteBooksString));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("selectedBooks", JSON.stringify(selectedBooks));
+    localStorage.setItem("favoriteBooks", JSON.stringify(favoriteBooks));
+  }, [selectedBooks, favoriteBooks]);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -31,14 +66,6 @@ const ListBooks = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isModalOpen]);
-
-  const handleBookToggle = (bookUrl) => {
-    setSelectedBooks((prevSelectedBooks) =>
-      prevSelectedBooks.includes(bookUrl)
-        ? prevSelectedBooks.filter((selectedBook) => selectedBook !== bookUrl)
-        : [...prevSelectedBooks, bookUrl]
-    );
-  };
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -87,17 +114,6 @@ const ListBooks = () => {
   };
 
   const BOOKS = {
-    // recommended: {
-    //   "Biblia Español 1569": { ruta: "61. Español - (1569)", new: true, old: true },
-    //   "F35 1453": { ruta: "26. Greek - F35 (1453)", new: true, old: false },
-    //   "Aleppo Codex Bible 920": { ruta: "39. Hebrew - Aleppo Codex Bible (920)", new: false, old: true },
-    //   "Tyndale 1537": { ruta: "18. English - Tyndale (1537)", new: true, old: true },
-    //   "Esperanto Version 1926": { ruta: "20. Esperanto - Bible (1926)", new: true, old: true },
-    //   "Quiché 1995": { ruta: "47. Quiché - (1995)", new: true, old: true },
-    //   "Vulgate Version 405": { ruta: "51. Latin - Vulgate Version (405)", new: true, old: true },
-    //   "Náhuatl NHE 1985": { ruta: "59. Náhuatl - NHE (1985)", new: true, old: true },
-    //   "Q'eqchi 2017": { ruta: "60. Q'eqchi - (2017)", new: true, old: true },
-    // },
     spanish: {
       "Biblia Español": { ruta: "61. Español - (1569)", new: true, old: true, year: 1569 },
       "Reina Valera [RVNT]": {
@@ -375,17 +391,47 @@ const ListBooks = () => {
                       <li key={bookTitle}>
                         <button
                           style={{ alignItems: "center" }}
-                          className={`flex w-full h-14 text-left pr-3 flex-row justify-between ${
+                          className={`flex w-full h-14 rounded-lg text-left pl-2 flex-row justify-between ${
                             selectedBooks.includes(book.ruta)
                               ? "bg-green-300 dark:bg-green-800"
                               : "bg-gray-100 dark:bg-gray-800"
                           }`}
                           onClick={() => handleBookToggle(book.ruta)}
                         >
+                          <div className="w-5 relative">
+                            {!selectedBooks.includes(book.ruta) && (
+                              <div className="ml-1 w-4 h-4 border border-gray-400 rounded-sm" />
+                            )}
+                            {selectedBooks.includes(book.ruta) && <span>✅</span>}
+                          </div>
                           <div className="flex flex-1 pr-2" style={{ alignItems: "center" }}>
                             {getInitials(book, book.year)} {bookTitle}
                           </div>
-                          <div className="w-5">{selectedBooks.includes(book.ruta) && <span>✔️</span>}</div>
+                          {/* Estrella de favorito */}
+                          <div>
+                            <div
+                              className="flex items-center cursor-pointer"
+                              onClick={(e) => {
+                                e.stopPropagation(); // Evitar que el clic en la estrella active/desactive el libro
+                                handleFavoriteToggle(book.ruta);
+                              }}
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className={`h-5 w-5 ${
+                                  favoriteBooks.includes(book.ruta) ? "text-yellow-400" : "text-gray-400"
+                                }`}
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M10 17.897l-4.095 1.28.785-4.54-3.31-3.22 4.57-.665L10 7.305l2.04 4.467 4.57.665-3.31 3.22.785 4.54L10 17.897z"
+                                  clipRule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                          </div>
                         </button>
                       </li>
                     ))}
@@ -393,6 +439,7 @@ const ListBooks = () => {
                 </div>
               ))}
             </div>
+
             <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
               <button className="p-2 bg-red-500 text-white rounded px-3 text-sm" onClick={unmarkAll}>
                 {t("DesmarcarTodo")}

@@ -9,7 +9,7 @@ import DataContext from "../context/DataContext";
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
   const { t } = useContext(LanguageContext);
-  const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionado } = useContext(DataContext);
+  const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionadoNumero } = useContext(DataContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +27,9 @@ const Navbar = () => {
   const TipoTestamento = (libro) => {
     const tipo = libro.split("book")[1];
     if (tipo < 40) {
-      return t("AntiguoTestamento");
+      return t("shortAntiguoTestamento");
     } else {
-      return t("NuevoTestamento");
+      return t("shortNuevoTestamento");
     }
   };
 
@@ -56,19 +56,28 @@ const Navbar = () => {
           <div className="flex">
             <ul className="flex flex-row font-medium mt-0 space-x-8 text-sm">
               <li>
-                <Link to="/" className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline">
+                <Link
+                  to="/"
+                  className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
                   <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
                   {t("Comparar")}
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline">
+                <Link
+                  to="/about"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
                   <img src={INFO} className="w-6 h-6 dark:invert m-auto" alt="Info" />
                   {t("Informacion")}
                 </Link>
               </li>
               <li>
-                <Link to="/settings" className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline">
+                <Link
+                  to="/settings"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
                   <img src={SETTING} className="w-6 h-6 dark:invert m-auto" alt="Ajustes" />
                   {t("Ajustes")}
                 </Link>
@@ -82,19 +91,28 @@ const Navbar = () => {
           <div className="flex items-center justify-center">
             <ul className="flex flex-row font-medium mt-0 space-x-8 text-sm">
               <li>
-                <Link to="/" className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline">
+                <Link
+                  to="/"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
                   <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
                   {t("Comparar")}
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline">
+                <Link
+                  to="/about"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
                   <img src={INFO} className="w-6 h-6 dark:invert m-auto" alt="Info" />
                   {t("Informacion")}
                 </Link>
               </li>
               <li>
-                <Link to="/settings" className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline">
+                <Link
+                  to="/settings"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
                   <img src={SETTING} className="w-6 h-6 dark:invert m-auto" alt="Ajustes" />
                   {t("Ajustes")}
                 </Link>
@@ -104,23 +122,49 @@ const Navbar = () => {
         </div>
       </nav>
       {versiculoSeleccionadoNumero !== 0 && (
-        <nav className={`sticky ${isFixed ? "fixed top-0" : ""} z-50 gap-4 text-sm  text-center sm:text-base md:text-base lg:text-xl`}>
+        <nav className={`sticky ${isFixed ? "fixed top-0" : ""} z-50 gap-4 text-base lg:text-xl`}>
           <ol className="flex items-center w-full py-3 p-6 justify-center bg-[#fbefda] dark:text-white dark:bg-[#693BCC]">
             <li className="flex items-center text-black dark:text-white">
-              {t(libroSeleccionado)}
-              <svg className="w-3 h-3 ms-2 sm:ms-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+              {TipoTestamento(libroSeleccionado)}
+              <svg
+                className="w-3 h-3 ms-2 sm:ms-4 mr-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="m7 9 4-4-4-4M1 9l4-4-4-4"
+                />
               </svg>
             </li>
             <li className="flex items-center text-black dark:text-white">
-              {TipoTestamento(libroSeleccionado)}
-              <svg className="w-3 h-3 ms-2 sm:ms-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+              {t(libroSeleccionado)}
+              <svg
+                className="w-3 h-3 ms-2 sm:ms-4 mr-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 12 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="m7 9 4-4-4-4M1 9l4-4-4-4"
+                />
               </svg>
             </li>
             <li className="flex items-center text-black dark:text-white gap-2">
               {t("Capitulo")}
-              <span>{capituloSeleccionado + 1}</span>
+              <span>
+                {capituloSeleccionadoNumero}:{versiculoSeleccionadoNumero}
+              </span>
             </li>
           </ol>
         </nav>
