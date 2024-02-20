@@ -15,6 +15,7 @@ export const DataProvider = ({ children }) => {
   const [versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero] = useState(0);
   const [libros, setLibros] = useState({});
   const { t } = useContext(LanguageContext);
+  const [tipoTraductor, setTipoTraductor] = useState("m?");
 
   //useStateModals
   //----------------------------------------------------
@@ -96,7 +97,6 @@ export const DataProvider = ({ children }) => {
     });
   }, [t]);
 
-
   //USE EFFECT QUE SELECCIONA EL LIBRO Y SUS CAPITULOS COMO VERSÍCULOS
   const [SubBook, setSubBook] = useState(null);
   const [Chapters, setChapters] = useState(null);
@@ -123,6 +123,24 @@ export const DataProvider = ({ children }) => {
     findBookAndChapters(libroSeleccionado);
   }, [libroSeleccionado]);
 
+  //intercambiar tipoTraductor, guardar en localStorage y cargar al inicio
+  const handleTipoTraductor = () => {
+    if (tipoTraductor === "m?") {
+      setTipoTraductor("?");
+      localStorage.setItem("tipoTraductor", "?");
+    } else {
+      setTipoTraductor("m?");
+      localStorage.setItem("tipoTraductor", "m?");
+    }
+  };
+
+  useEffect(() => {
+    const tipoTraductorGuardado = localStorage.getItem("tipoTraductor");
+    if (tipoTraductorGuardado) {
+      setTipoTraductor(tipoTraductorGuardado);
+    }
+  }, []);
+
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
     <DataContext.Provider
@@ -143,6 +161,8 @@ export const DataProvider = ({ children }) => {
         setVersiculoSeleccionadoNumero,
         capituloSeleccionadoNumero,
         setCapituloSeleccionadoNumero,
+        tipoTraductor,
+        handleTipoTraductor,
         //return modals
         //------------
         modalLibros,

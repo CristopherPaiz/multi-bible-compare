@@ -8,7 +8,7 @@ import TRANSLATEGOOGLE from "/google.png";
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
-  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero } = useContext(DataContext);
+  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
 
@@ -102,7 +102,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const idiomaVersoTranslate = iso.toString();
     const idiomaNavegadorTranslate = idiomaNavegador;
     const verso = textoOriginal[versiculoSeleccionadoNumero];
-    return `https://translate.google.com/m?sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
+    return `https://translate.google.com/${tipoTraductor}sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
   };
 
   return (
