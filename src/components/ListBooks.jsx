@@ -34,11 +34,12 @@ const ListBooks = () => {
 
   useEffect(() => {
     const selectedBooksString = localStorage.getItem("selectedBooks");
+    const favoriteBooksString = localStorage.getItem("favoriteBooks");
+
     if (selectedBooksString) {
-      setSelectedBooks(JSON.parse(selectedBooksString));
+      setSelectedBooks(JSON.parse(favoriteBooksString));
     }
 
-    const favoriteBooksString = localStorage.getItem("favoriteBooks");
     if (favoriteBooksString) {
       setFavoriteBooks(JSON.parse(favoriteBooksString));
     }
@@ -87,21 +88,21 @@ const ListBooks = () => {
   const getInitials = (book, year) => {
     if (book.new && book.old) {
       return (
-        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2">
+        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
           <h4 className="text-[10px] font-bold">{year}</h4>
           {idiomaNavegador === "es" ? <img src={AN} className="size-8" /> : <img src={ON} className="size-8" />}
         </div>
       );
     } else if (book.new) {
       return (
-        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2">
+        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
           <h4 className="text-[10px] font-bold">{year}</h4>
           <img src={N} className="size-8" />
         </div>
       );
     } else if (book.old) {
       return (
-        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2">
+        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
           <h4 className="text-[10px] font-bold">{year}</h4>
           {idiomaNavegador === "es" ? <img src={A} className="size-8" /> : <img src={O} className="size-8" />}
         </div>
@@ -366,32 +367,39 @@ const ListBooks = () => {
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
           <div
             ref={modalRef}
-            className="bg-white p-4 rounded shadow-md w-11/12 h-4/5 flex flex-col  dark:bg-black dark:text-white sm:w-[550px]"
+            className="bg-white p-4 rounded shadow-md w-11/12 h-4/5 flex flex-col  dark:bg-neutral-950 dark:text-white sm:w-[550px]"
           >
             <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
             </button>
-            <h1 className="text-xl font-bold mb-4">{t("SeleccionarLibro")}</h1>
-            <div className="flex gap-4 px-2 pb-5 m-auto" style={{ alignItems: "center" }}>
-              <span className="p-2 bg-red-600 text-white text-[9px] h-7 justify-center text-center">
-                {t("AntiguoTestamentoInicial")}
-              </span>
-              <p className="text-[14px]">{t("AntiguoTestamento")}</p>
-              <span className="p-2 bg-blue-600 text-white text-[9px] h-7 justify-center text-center">
-                {t("NuevoTestamentoInicial")}
-              </span>
-              <p className="text-[14px]">{t("NuevoTestamento")}</p>
-            </div>
+            <h1 className="text-2xl text-center font-bold mb-4">{t("SeleccionarLibro")}</h1>
+
             <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar">
+              <div className="p-2 bg-slate-100 dark:bg-neutral-900 rounded-md mb-8">
+                <h3 className="font-bold text-center mb-3">{t("ANSignificado")}</h3>
+                <div className="flex gap-2 px-2 m-auto justify-center" style={{ alignItems: "center" }}>
+                  <span className="p-2 bg-red-600 text-white text-[10px] justify-center text-center">
+                    {t("AntiguoTestamentoInicial")}
+                  </span>
+                  <p className="text-[13px] font-semibold">{t("AntiguoTestamento")}</p>
+                  <span className="p-2 bg-blue-600 text-white text-[10px] justify-center text-center">
+                    {t("NuevoTestamentoInicial")}
+                  </span>
+                  <p className="text-[13px] font-semibold text-black dark:text-white">{t("NuevoTestamento")}</p>
+                </div>
+                <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black dark:text-white">
+                  {t("ANExplicacion")}
+                </h3>
+              </div>
               {Object.entries(BOOKS).map(([language, books]) => (
-                <div key={language} className="mb-4">
-                  <h2 className="text-lg font-bold mb-2">{translateLanguage(language)}</h2>
-                  <ul className="flex gap-1 flex-col">
+                <div key={language} className="mb-8">
+                  <h2 className="text-xl uppercase font-bold mb-2">{translateLanguage(language)}</h2>
+                  <ul className="flex gap-2 flex-col">
                     {Object.entries(books).map(([bookTitle, book]) => (
                       <li key={bookTitle}>
                         <button
                           style={{ alignItems: "center" }}
-                          className={`flex w-full h-14 rounded-lg text-left pl-2 flex-row justify-between ${
+                          className={`flex w-full items-center py-2 rounded-lg text-left pl-2 flex-row justify-between ${
                             selectedBooks.includes(book.ruta)
                               ? "bg-green-300 dark:bg-green-800"
                               : "bg-gray-100 dark:bg-gray-800"
@@ -402,35 +410,48 @@ const ListBooks = () => {
                             {!selectedBooks.includes(book.ruta) && (
                               <div className="ml-1 w-4 h-4 border border-gray-400 rounded-sm" />
                             )}
-                            {selectedBooks.includes(book.ruta) && <span>✅</span>}
+                            {selectedBooks.includes(book.ruta) && (
+                              <span>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                  className="w-6 h-6"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                              </span>
+                            )}
                           </div>
                           <div className="flex flex-1 pr-2" style={{ alignItems: "center" }}>
-                            {getInitials(book, book.year)} {bookTitle}
+                            {getInitials(book, book.year)} <span className="flex-1">{bookTitle}</span>
                           </div>
                           {/* Estrella de favorito */}
-                          <div>
-                            <div
-                              className="flex items-center cursor-pointer"
-                              onClick={(e) => {
-                                e.stopPropagation(); // Evitar que el clic en la estrella active/desactive el libro
-                                handleFavoriteToggle(book.ruta);
-                              }}
+                          <div
+                            className="flex items-center cursor-pointer mr-3"
+                            onClick={(e) => {
+                              e.stopPropagation(); // Evitar que el clic en la estrella active/desactive el libro
+                              handleFavoriteToggle(book.ruta);
+                            }}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className={`w-6 h-6 ${
+                                favoriteBooks.includes(book.ruta) ? "text-yellow-500" : "text-gray-400"
+                              }`}
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className={`h-5 w-5 ${
-                                  favoriteBooks.includes(book.ruta) ? "text-yellow-400" : "text-gray-400"
-                                }`}
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                              >
-                                <path
-                                  fillRule="evenodd"
-                                  d="M10 17.897l-4.095 1.28.785-4.54-3.31-3.22 4.57-.665L10 7.305l2.04 4.467 4.57.665-3.31 3.22.785 4.54L10 17.897z"
-                                  clipRule="evenodd"
-                                />
-                              </svg>
-                            </div>
+                              <path
+                                fillRule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
                           </div>
                         </button>
                       </li>
@@ -440,12 +461,38 @@ const ListBooks = () => {
               ))}
             </div>
 
-            <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
-              <button className="p-2 bg-red-500 text-white rounded px-3 text-sm" onClick={unmarkAll}>
+            <div className="bg-white justify-center flex pt-5 gap-3 dark:bg-neutral-950">
+              <button
+                className="p-2 bg-red-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
+                onClick={unmarkAll}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
                 {t("DesmarcarTodo")}
               </button>
-              <button className="p-2 bg-blue-500 text-white rounded px-3 text-sm" onClick={handleConfirm}>
+              <button
+                className="p-2 bg-blue-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
+                onClick={handleConfirm}
+              >
                 {t("Continuar")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
               </button>
             </div>
           </div>

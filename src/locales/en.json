@@ -16,7 +16,7 @@
   "AntiguoTestamentoInicial": "O",
   "NuevoTestamento": "New Testament",
   "AntiguoTestamento": "Old Testament",
-  "SeleccionarLibro": "Select the bibles",
+  "SeleccionarLibro": "Select one or more Bibles to continue",
   "Espanol": "Spanish",
   "Griego": "Greek",
   "Hebreo": "Hebrew",
@@ -109,5 +109,7 @@
   "Capitulo": "Chapter",
   "VersionTraductor": "Google Translate Version",
   "shortAntiguoTestamento": "OT",
-  "shortNuevoTestamento": "NT"
+  "shortNuevoTestamento": "NT",
+  "ANSignificado": "What does O and N mean?",
+  "ANExplicacion": "* Books with both letters have both testaments, while the others only have one."
 }

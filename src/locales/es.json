@@ -16,7 +16,7 @@
   "AntiguoTestamentoInicial": "A",
   "NuevoTestamento": "Nuevo Testamento",
   "AntiguoTestamento": "Antiguo Testamento",
-  "SeleccionarLibro": "Seleccione las biblias",
+  "SeleccionarLibro": "Seleccione una o más biblias para continuar",
   "Espanol": "Español",
   "Griego": "Griego",
   "Hebreo": "Hebreo",
@@ -93,7 +93,7 @@
   "book65": "Judas",
   "book66": "Apocalipsis",
   "SeleccioneLibro": "Seleccione un libro",
-  "SeleccionarBiblias": "Seleccione las biblias",
+  "SeleccionarBiblias": "Seleccionar Biblias",
   "SeleccionarLibroBoton": "Seleccione el libro",
   "SeleccioneUnaBiblia": "Seleccione al menos una biblia para continuar",
   "SeleccioneUnCapitulo": "Seleccione un capítulo",
@@ -109,5 +109,7 @@
   "Capitulo": "Capítulo",
   "VersionTraductor": "Versión del traductor de Google",
   "shortAntiguoTestamento": "AT",
-  "shortNuevoTestamento": "NT"
+  "shortNuevoTestamento": "NT",
+  "ANSignificado": "¿Qué significa A y N?",
+  "ANExplicacion": "* Los libros con ambas letras tienen los dos testamentos, mientras que los otros solo tienen uno."
 }
