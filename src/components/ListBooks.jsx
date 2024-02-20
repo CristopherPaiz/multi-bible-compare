@@ -283,30 +283,31 @@ const ListBooks = () => {
       "Esperanto Version": { ruta: "20. Esperanto - Bible (1926)", new: true, old: true, year: 1926 },
     },
     kiche: {
-      "Quiché 1995": { ruta: "47. Quiché - (1995)", new: true, old: true, year: 1995 },
-      "Quiché 1997": { ruta: "49. Quiché - (1997)", new: true, old: false, year: 1997 },
-      "Quiché QUCN 2011": { ruta: "50. Quiché - QUCN (2011)", new: true, old: false, year: 2011 },
-      "Quiché 2022": { ruta: "48. Quiché - (2022)", new: true, old: false, year: 2022 },
+      "Quiché [BK95]]": { ruta: "47. Quiché - (1995)", new: true, old: true, year: 1995 },
+      "Quiché [BK97]]": { ruta: "49. Quiché - (1997)", new: true, old: false, year: 1997 },
+      "Quiché QUCN": { ruta: "50. Quiché - QUCN (2011)", new: true, old: false, year: 2011 },
+      "Quiché [BK22]": { ruta: "48. Quiché - (2022)", new: true, old: false, year: 2022 },
     },
     latin: {
-      "Vulgate Version 405": { ruta: "51. Latin - Vulgate Version (405)", new: true, old: true },
-      "Vulgata Sistina 1590": { ruta: "55. Latin - Vulgata Sistina (1590)", new: true, old: true },
-      "Clementine Vulgata 1598": { ruta: "53. Latin - Clementine Vulgata (1598)", new: true, old: true },
-      "Vulgata Clementina Hetzenauer Editore 1914": {
+      "Vulgate Version": { ruta: "51. Latin - Vulgate Version (405)", new: true, old: true, year: 405 },
+      "Vulgata Sistina": { ruta: "55. Latin - Vulgata Sistina (1590)", new: true, old: true, year: 1590 },
+      "Clementine Vulgata": { ruta: "53. Latin - Clementine Vulgata (1598)", new: true, old: true, year: 1598 },
+      "Vulgata Clementina Hetzenauer Editore": {
         ruta: "52. Latin - Vulgata Clementina Hetzenauer Editore (1914)",
         new: true,
         old: true,
+        year: 1914,
       },
-      "Nova Vulgata 1979": { ruta: "54. Latin - Nova Vulgata (1979)", new: true, old: true },
+      "Nova Vulgata": { ruta: "54. Latin - Nova Vulgata (1979)", new: true, old: true, year: 1979 },
     },
     nahuatl: {
-      "Náhuatl NHE 1985": { ruta: "59. Náhuatl - NHE (1985)", new: true, old: true },
-      "Náhuatl 1987": { ruta: "58. Náhuatl - (1987)", new: true, old: false },
-      "Náhuatl 2012": { ruta: "56. Náhuatl - (2012)", new: true, old: false },
-      "Náhuatl 2017": { ruta: "57. Náhuatl - (2017)", new: true, old: false },
+      "Náhuatl NHE": { ruta: "59. Náhuatl - NHE (1985)", new: true, old: true, year: 1985 },
+      "Náhuatl [N87]": { ruta: "58. Náhuatl - (1987)", new: true, old: false, year: 1987 },
+      "Náhuatl [N12]": { ruta: "56. Náhuatl - (2012)", new: true, old: false, year: 2012 },
+      "Náhuatl [N17]": { ruta: "57. Náhuatl - (2017)", new: true, old: false, year: 2017 },
     },
     queqchi: {
-      "Q'eqchi 2017": { ruta: "60. Q'eqchi - (2017)", new: true, old: true },
+      "Q'eqchi": { ruta: "60. Q'eqchi - (2017)", new: true, old: true, year: 2017 },
     },
   };
 
