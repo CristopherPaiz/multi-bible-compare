@@ -1,15 +1,41 @@
 import { Link } from "react-router-dom";
 import LanguageContext from "../context/LanguageContext";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import INFO from "/info.png";
 import SETTING from "/setting.png";
 import COMPARE from "/compare.png";
+import DataContext from "../context/DataContext";
 
 const Navbar = () => {
+  const [isFixed, setIsFixed] = useState(false);
   const { t } = useContext(LanguageContext);
+  const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionado } = useContext(DataContext);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolledToTop = window.scrollY === 0;
+      setIsFixed(!isScrolledToTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const TipoTestamento = (libro) => {
+    const tipo = libro.split("book")[1];
+    if (tipo < 40) {
+      return t("AntiguoTestamento");
+    } else {
+      return t("NuevoTestamento");
+    }
+  };
+
   return (
     <>
-      <nav className="bg-[#FDD07A] border-white dark:bg-[#20123A] flex justify-between">
+      <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex justify-between">
         <Link to="/" className="flex sm:hidden py-4 px-6 gap-2" style={{ alignItems: "center" }}>
           <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-14 dark:invert" />
           <div className="flex flex-col px-2 dark:text-white sm:flex sm:flex-wrap">
@@ -77,6 +103,28 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      {versiculoSeleccionadoNumero !== 0 && (
+        <nav className={`sticky ${isFixed ? "fixed top-0" : ""} z-50 gap-4 text-sm  text-center sm:text-base md:text-base lg:text-xl`}>
+          <ol className="flex items-center w-full py-3 p-6 justify-center bg-[#fbefda] dark:text-white dark:bg-[#693BCC]">
+            <li className="flex items-center text-black dark:text-white">
+              {t(libroSeleccionado)}
+              <svg className="w-3 h-3 ms-2 sm:ms-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+              </svg>
+            </li>
+            <li className="flex items-center text-black dark:text-white">
+              {TipoTestamento(libroSeleccionado)}
+              <svg className="w-3 h-3 ms-2 sm:ms-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+              </svg>
+            </li>
+            <li className="flex items-center text-black dark:text-white gap-2">
+              {t("Capitulo")}
+              <span>{capituloSeleccionado + 1}</span>
+            </li>
+          </ol>
+        </nav>
+      )}
     </>
   );
 };
