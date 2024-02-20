@@ -242,7 +242,7 @@ const ListBooks = () => {
         old: true,
         year: 1978,
       },
-      "New King James Version": { ruta: "15. English - New King James [NKJ] (1982)", new: true, old: true },
+      "New King James Version": { ruta: "15. English - New King James [NKJ] (1982)", new: true, old: true, year: 1982 },
       "New American Standard Bible Updated": {
         ruta: "11. English - New American Standard Bible Updated [NASU] (1989)",
         new: true,
@@ -255,7 +255,7 @@ const ListBooks = () => {
         old: true,
         year: 1989,
       },
-      "God's Word": { ruta: "07. English - God's Word [GW] (1995)", new: true, old: true },
+      "God's Word": { ruta: "07. English - God's Word [GW] (1995)", new: true, old: true, year: 1995 },
       "New International Reader's Version": {
         ruta: "13. English - New International Reader's Version [NIRV] (1996)",
         new: true,
@@ -268,21 +268,26 @@ const ListBooks = () => {
         old: true,
         year: 1996,
       },
-      "Easy to Read Version": { ruta: "05. English - Easy to Read Version [ERV] (2006)", new: true, old: true },
+      "Easy to Read Version": {
+        ruta: "05. English - Easy to Read Version [ERV] (2006)",
+        new: true,
+        old: true,
+        year: 2006,
+      },
       "Holman Christian Standard Bible": {
         ruta: "08. English - Holman Christian Standard Bible [HCSB] (2004)",
         new: true,
         old: true,
         year: 2004,
       },
-      "King James Version": { ruta: "09. English - King James Version [KJV] (1611)", new: true, old: true },
+      "King James Version": { ruta: "09. English - King James Version [KJV] (1611)", new: true, old: true, year: 1611 },
       "New English Translation": {
         ruta: "12. English - New English Translation [NET] (2005)",
         new: true,
         old: true,
         year: 2005,
       },
-      "Amplified Version": { ruta: "01. English - Amplified (2015)", new: true, old: true },
+      "Amplified Version": { ruta: "01. English - Amplified (2015)", new: true, old: true, year: 2015 },
       "English Standard Version": {
         ruta: "06. English - English Standard Version [ESV] (2016)",
         new: true,
@@ -367,7 +372,7 @@ const ListBooks = () => {
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
           <div
             ref={modalRef}
-            className="bg-white p-4 rounded shadow-md w-11/12 h-4/5 flex flex-col  dark:bg-neutral-950 dark:text-white sm:w-[550px]"
+            className="bg-white p-4 rounded shadow-md w-11/12 h-[85%] sm:h-[95%] flex flex-col  dark:bg-neutral-950 dark:text-white sm:w-[500px]"
           >
             <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
@@ -387,7 +392,7 @@ const ListBooks = () => {
                   </span>
                   <p className="text-[13px] font-semibold text-black dark:text-white">{t("NuevoTestamento")}</p>
                 </div>
-                <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black dark:text-white">
+                <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black text-center dark:text-white">
                   {t("ANExplicacion")}
                 </h3>
               </div>

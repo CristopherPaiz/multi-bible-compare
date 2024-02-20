@@ -73,12 +73,17 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const translator1 = new GoogleTranslator({
       corsProxy: "https://corsproxy.io/",
       headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
       },
     });
     const translator2 = new GoogleTranslatorTokenFree({});
     try {
-      const resultado = await translator1.translate(encodeURIComponent(verso), idiomaVersoTranslate, idiomaNavegadorTranslate);
+      const resultado = await translator1.translate(
+        encodeURIComponent(verso),
+        idiomaVersoTranslate,
+        idiomaNavegadorTranslate
+      );
       setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
       centerText();
     } catch (error) {
@@ -102,7 +107,9 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const idiomaVersoTranslate = iso.toString();
     const idiomaNavegadorTranslate = idiomaNavegador;
     const verso = textoOriginal[versiculoSeleccionadoNumero];
-    return `https://translate.google.com/${tipoTraductor}sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
+    return `https://translate.google.com/${tipoTraductor}sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(
+      verso
+    )}`;
   };
 
   return (
@@ -114,10 +121,10 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
           </div>
           {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso && (
-            <div>
+            <div className="flex flex-nowrap items-center">
               <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank">
-                  <img className="mt-2 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>
+                  <img className="mt-1 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>
                 </a>
               </button>
               <button disabled={isTranslating ? true : false} onClick={() => handleTranslate(iso)}>
@@ -128,7 +135,9 @@ const VerseSingle = ({ texto, nombre, iso }) => {
         </div>
         <div
           ref={containerRef}
-          className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${typeof textoTraducido === "string" ? "h-fit" : "h-[260px]"}`}
+          className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${
+            typeof textoTraducido === "string" ? "h-fit" : "h-[260px]"
+          }`}
           style={{ position: "relative" }}
         >
           {typeof textoTraducido === "object" && textoTraducido !== null ? (
@@ -142,8 +151,18 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                   style={{
                     cursor: "pointer",
                     marginBottom: "0.7rem",
-                    color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
-                    backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#ffe4b3" : "#693BCC") : "transparent",
+                    color:
+                      parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero)
+                        ? theme === "light"
+                          ? "black"
+                          : "white"
+                        : "inherit",
+                    backgroundColor:
+                      parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero)
+                        ? theme === "light"
+                          ? "#ffe4b3"
+                          : "#693BCC"
+                        : "transparent",
                     padding: "1rem",
                     margin: "-1rem",
                   }}
@@ -154,7 +173,9 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                 </p>
               ))
           ) : typeof textoTraducido === "string" ? (
-            <div className="font-bold max-w-[390px] min-w-[230px] px-2 text-center text-[#ff0000] dark:text-orange-500">{textoTraducido}</div>
+            <div className="font-bold max-w-[390px] min-w-[230px] px-2 text-center text-[#ff0000] dark:text-orange-500">
+              {textoTraducido}
+            </div>
           ) : (
             <p>{t("NoObjetoNoString")}</p>
           )}
