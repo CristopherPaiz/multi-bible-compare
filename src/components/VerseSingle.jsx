@@ -143,7 +143,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                     cursor: "pointer",
                     marginBottom: "0.7rem",
                     color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
-                    backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#f3fda5" : "#3d5c8f") : "transparent",
+                    backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#ffe4b3" : "#693BCC") : "transparent",
                     padding: "1rem",
                     margin: "-1rem",
                   }}
