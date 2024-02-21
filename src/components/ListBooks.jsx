@@ -513,12 +513,12 @@ const ListBooks = () => {
               ))}
             </div>
             <div className="flex flex-col pt-5 gap-3 relative">
-              <div className="-mt-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="-mt-12 -ml-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Scroll />
               </div>
-              <div className="bg-white justify-center flex flex-row pt-5 gap-3 dark:bg-neutral-950">
+              <div className="bg-white justify-center flex flex-row pt-1 gap-3 dark:bg-neutral-950">
                 <button
-                  className="p-2 bg-red-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
+                  className="p-2 bg-red-500 w-1/2 text-white rounded px-3 text-[11px] flex items-center gap-1 justify-center"
                   onClick={unmarkAll}
                 >
                   <svg
@@ -534,7 +534,7 @@ const ListBooks = () => {
                   {t("DesmarcarTodo")}
                 </button>
                 <button
-                  className="p-2 bg-blue-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
+                  className="p-2 bg-blue-500 w-1/2 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
                   onClick={handleConfirm}
                 >
                   {t("Continuar")}
