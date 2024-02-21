@@ -123,7 +123,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso && (
             <div className="flex flex-nowrap items-center">
               <button disabled={isTranslating ? true : false}>
-                <a href={handleGoogleTranslate(iso)} target="_blank">
+                <a href={handleGoogleTranslate(iso)} target="_blank" rel="nofollow noopener noreferrer">
                   <img className="mt-1 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>
                 </a>
               </button>
