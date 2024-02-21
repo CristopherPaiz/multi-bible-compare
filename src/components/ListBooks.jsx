@@ -6,6 +6,7 @@ import AN from "/AN.webp";
 import N from "/N.webp";
 import O from "/O.webp";
 import ON from "/ON.webp";
+import Scroll from "./Scroll";
 
 const ListBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -511,40 +512,44 @@ const ListBooks = () => {
                 </div>
               ))}
             </div>
-
-            <div className="bg-white justify-center flex pt-5 gap-3 dark:bg-neutral-950">
-              <button
-                className="p-2 bg-red-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
-                onClick={unmarkAll}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5"
+            <div className="flex flex-col pt-5 gap-3 relative">
+              <div className="-mt-16 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <Scroll />
+              </div>
+              <div className="bg-white justify-center flex flex-row pt-5 gap-3 dark:bg-neutral-950">
+                <button
+                  className="p-2 bg-red-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
+                  onClick={unmarkAll}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-                {t("DesmarcarTodo")}
-              </button>
-              <button
-                className="p-2 bg-blue-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
-                onClick={handleConfirm}
-              >
-                {t("Continuar")}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-4 h-4"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                  {t("DesmarcarTodo")}
+                </button>
+                <button
+                  className="p-2 bg-blue-500 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
+                  onClick={handleConfirm}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </button>
+                  {t("Continuar")}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-4 h-4"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
