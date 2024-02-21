@@ -217,6 +217,7 @@ const ListBooks = () => {
     },
     english: {
       Tyndale: { ruta: "18. English - Tyndale (1537)", new: true, old: true, year: 1537 },
+      "King James Version": { ruta: "09. English - King James Version [KJV] (1611)", new: true, old: true, year: 1611 },
       "Darby Translation": { ruta: "04. English - Darby (1890)", new: true, old: true, year: 1890 },
       "Young's Literal Translation 1898": {
         ruta: "19. English - Young's Literal Translation [YLT] (1898)",
@@ -280,7 +281,6 @@ const ListBooks = () => {
         old: true,
         year: 2004,
       },
-      "King James Version": { ruta: "09. English - King James Version [KJV] (1611)", new: true, old: true, year: 1611 },
       "New English Translation": {
         ruta: "12. English - New English Translation [NET] (2005)",
         new: true,
@@ -305,8 +305,8 @@ const ListBooks = () => {
       "Esperanto Version": { ruta: "20. Esperanto - Bible (1926)", new: true, old: true, year: 1926 },
     },
     kiche: {
-      "Quiché [BK95]]": { ruta: "47. Quiché - (1995)", new: true, old: true, year: 1995 },
-      "Quiché [BK97]]": { ruta: "49. Quiché - (1997)", new: true, old: false, year: 1997 },
+      "Quiché [BK95]": { ruta: "47. Quiché - (1995)", new: true, old: true, year: 1995 },
+      "Quiché [BK97]": { ruta: "49. Quiché - (1997)", new: true, old: false, year: 1997 },
       "Quiché QUCN": { ruta: "50. Quiché - QUCN (2011)", new: true, old: false, year: 2011 },
       "Quiché [BK22]": { ruta: "48. Quiché - (2022)", new: true, old: false, year: 2022 },
     },
@@ -380,22 +380,69 @@ const ListBooks = () => {
             <h1 className="text-2xl text-center font-bold mb-4">{t("SeleccionarLibro")}</h1>
 
             <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar">
-              <div className="p-2 bg-slate-100 dark:bg-neutral-900 rounded-md mb-8">
-                <h3 className="font-bold text-center mb-3">{t("ANSignificado")}</h3>
-                <div className="flex gap-2 px-2 m-auto justify-center" style={{ alignItems: "center" }}>
-                  <span className="p-2 bg-red-600 text-white text-[10px] justify-center text-center">
-                    {t("AntiguoTestamentoInicial")}
-                  </span>
-                  <p className="text-[13px] font-semibold">{t("AntiguoTestamento")}</p>
-                  <span className="p-2 bg-blue-600 text-white text-[10px] justify-center text-center">
-                    {t("NuevoTestamentoInicial")}
-                  </span>
-                  <p className="text-[13px] font-semibold text-black dark:text-white">{t("NuevoTestamento")}</p>
-                </div>
-                <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black text-center dark:text-white">
-                  {t("ANExplicacion")}
-                </h3>
+              <div className="gap-2">
+                <details>
+                  <summary
+                    style={{ listStyle: "none" }}
+                    className="bg-yellow-500 dark:bg-yellow-700 px-4 py-2 w-[85%] sm:w-1/2 m-auto text-center mb-4 rounded-md cursor-pointer"
+                  >
+                    <span className="font-bold mb-3">{t("ANSignificado")}</span>
+                  </summary>
+                  <div className="p-2 bg-orange-100 dark:bg-yellow-950 rounded-md mb-4">
+                    <div className="flex gap-2 px-2 m-auto justify-center" style={{ alignItems: "center" }}>
+                      <span className="p-2 bg-red-600 text-white text-[10px] justify-center text-center">
+                        {t("AntiguoTestamentoInicial")}
+                      </span>
+                      <p className="text-[13px] font-semibold">{t("AntiguoTestamento")}</p>
+                      <span className="p-2 bg-blue-600 text-white text-[10px] justify-center text-center">
+                        {t("NuevoTestamentoInicial")}
+                      </span>
+                      <p className="text-[13px] font-semibold text-black dark:text-white">{t("NuevoTestamento")}</p>
+                    </div>
+                    <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black text-center dark:text-white">
+                      {t("ANExplicacion")}
+                    </h3>
+                  </div>
+                </details>
+                <details>
+                  <summary
+                    style={{ listStyle: "none" }}
+                    className="bg-cyan-500 dark:bg-cyan-700 px-4 py-2 w-[85%] sm:w-1/2 m-auto text-center mb-4 rounded-md cursor-pointer"
+                  >
+                    <span className="font-bold mb-3">{t("Recomendaciones")}</span>
+                  </summary>
+                  <article className="p-2 bg-cyan-100 dark:bg-cyan-950 rounded-md mb-8">
+                    <div className="flex flex-col sm:flex-row w-full px-2 m-auto gap-2">
+                      <div className="w-full sm:w-1/2 text-sm">
+                        <h3 className="text-base font-bold my-3 text-center sm:text-left">{t("PrecisionTeologica")}</h3>
+                        <ol className="font-thin">
+                          <li>1. Vulgate Version (405)</li>
+                          <li>2. King James Version (1611)</li>
+                          <li>3. Aleppo Codex Bible (920)</li>
+                          <li>4. Biblia Español (1569)</li>
+                          <li>5. Reina Valera (1960)</li>
+                        </ol>
+                      </div>
+                      <div className="w-full sm:w-1/2 text-sm">
+                        <h3 className="text-base font-bold my-3 text-center sm:text-left">
+                          {t("PrecisionTraduccion")}
+                        </h3>
+                        <ol className="font-thin">
+                          <li>1. Vulgate Version (405)</li>
+                          <li>2. Aleppo Codex Bible (920)</li>
+                          <li>3. King James Version (1611)</li>
+                          <li>4. Tyndale (1537)</li>
+                          <li>5. Biblia Español (1569)</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <h3 className="text-[10px] opacity-50 mt-5 mb-2 text-center text-pretty">
+                      {t("PreferencaiUsuario")}
+                    </h3>
+                  </article>
+                </details>
               </div>
+
               {Object.entries(BOOKS).map(([language, books]) => (
                 <div key={language} className="mb-8">
                   <h2 className="text-xl uppercase font-bold mb-2">{translateLanguage(language)}</h2>
@@ -438,8 +485,7 @@ const ListBooks = () => {
                           {/* Estrella de favorito */}
                           <div
                             className="flex items-center cursor-pointer mr-3"
-                            onClick={(e) => {
-                              e.stopPropagation(); // Evitar que el clic en la estrella active/desactive el libro
+                            onClick={() => {
                               handleFavoriteToggle(book.ruta);
                             }}
                           >
