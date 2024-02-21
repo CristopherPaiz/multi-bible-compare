@@ -16,6 +16,7 @@ export const DataProvider = ({ children }) => {
   const [libros, setLibros] = useState({});
   const { t } = useContext(LanguageContext);
   const [tipoTraductor, setTipoTraductor] = useState("m?");
+  const [paginaInicio, setPaginaInicio] = useState("/");
 
   //useStateModals
   //----------------------------------------------------
@@ -134,10 +135,24 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  const handlePaginaInicio = () => {
+    if (paginaInicio === "/") {
+      setPaginaInicio("/compare");
+      localStorage.setItem("paginaInicio", "/compare");
+    } else {
+      setPaginaInicio("/");
+      localStorage.setItem("paginaInicio", "/");
+    }
+  };
+
   useEffect(() => {
     const tipoTraductorGuardado = localStorage.getItem("tipoTraductor");
+    const paginaInicio = localStorage.getItem("paginaInicio");
     if (tipoTraductorGuardado) {
       setTipoTraductor(tipoTraductorGuardado);
+    }
+    if (paginaInicio) {
+      setPaginaInicio(paginaInicio);
     }
   }, []);
 
@@ -163,6 +178,8 @@ export const DataProvider = ({ children }) => {
         setCapituloSeleccionadoNumero,
         tipoTraductor,
         handleTipoTraductor,
+        paginaInicio,
+        handlePaginaInicio,
         //return modals
         //------------
         modalLibros,
