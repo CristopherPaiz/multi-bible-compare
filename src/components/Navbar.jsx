@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import INFO from "/info.png";
 import SETTING from "/setting.png";
 import COMPARE from "/compare.png";
+import HOMEICO from "/hut.png";
 import DataContext from "../context/DataContext";
 
 const Navbar = () => {
@@ -58,9 +59,18 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
+                  <img src={HOMEICO} className="w-6 h-6 dark:invert m-auto" alt="Inicio" />
+                  {t("Inicio")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/"
                   className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
+                  <img src={COMPARE} className="w-6 h-6 dark:invert m-auto" alt="Comparar" />
                   {t("Comparar")}
                 </Link>
               </li>
@@ -89,13 +99,22 @@ const Navbar = () => {
       <nav className="flex bg-[#fbefda] dark:bg-[#693BCC] justify-center sm:hidden">
         <div className="max-w-screen-xl px-4#ffeac7 py-3 mx-auto">
           <div className="flex items-center justify-center">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 text-sm">
+            <ul className="flex flex-row font-medium mt-0 space-x-6 text-sm">
               <li>
                 <Link
                   to="/"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
+                  <img src={HOMEICO} className="w-6 h-6 dark:invert m-auto" alt="Inicio" />
+                  {t("Inicio")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/compare"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
+                  <img src={COMPARE} className="w-9 h-6 dark:invert m-auto text-center text-balance" alt="Comparar" />
                   {t("Comparar")}
                 </Link>
               </li>

@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Settings from "./pages/Settings";
 import { useContext } from "react";
 import ThemeContext from "./context/ThemeContext";
+import Home from "./pages/Home";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -23,7 +24,8 @@ const App = () => {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Compare />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/compare" element={<Compare />} />
             <Route path="/about" element={<About />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<NotFound />} />
