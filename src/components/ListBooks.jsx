@@ -513,7 +513,7 @@ const ListBooks = () => {
               ))}
             </div>
             <div className="flex flex-col pt-5 gap-3 relative">
-              <div className="-mt-16 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="-mt-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Scroll />
               </div>
               <div className="bg-white justify-center flex flex-row pt-5 gap-3 dark:bg-neutral-950">
