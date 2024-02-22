@@ -55,9 +55,9 @@ const History = () => {
         <h1 className="text-center font-bold text-md">{t("UltimoVersiculoTitulo")}</h1>
       </div>
       {history.length === 0 ? (
-        <div className="max-h-[55vh] min-h-[55vh] h-[55vh] w-full sm:min-w-[400px] sm:max-w-[400px] items-center flex flex-col justify-center gap-4 text-center text-balance p-6">
-          <p className="font-semibold italic">{t("UltimoVersiculoTexto1")}</p>
-          <p className="font-thin">{t("UltimoVersiculoTexto2")}</p>
+        <div className="text-black dark:text-white max-h-[55vh] min-h-[55vh] h-[55vh] w-full sm:min-w-[400px] sm:max-w-[400px] items-center flex flex-col justify-center gap-4 text-center text-balance p-6">
+          <p className="font-semibold italic text-black dark:text-white">{t("UltimoVersiculoTexto1")}</p>
+          <p className="text-black dark:text-white font-thin">{t("UltimoVersiculoTexto2")}</p>
         </div>
       ) : (
         <div
@@ -70,18 +70,18 @@ const History = () => {
             return (
               <div
                 key={index}
-                className="w-full h-20 min-h-20 max-h-20 bg-white/40  border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] "
+                className="text-black dark:text-white w-full h-20 min-h-20 max-h-20 bg-white/40  border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] "
               >
-                <div className="flex items-center">
+                <div className="text-black dark:text-white flex items-center">
                   <div className="w-[70px] h-16">
                     <span
                       id="inicial"
-                      className="bg-white/60 dark:bg-black/20 w-[85px] h-[85px] rounded-full -ml-7 -mt-3 mr-3 flex flex-col justify-center items-center"
+                      className="text-black dark:text-white bg-white/60 dark:bg-black/20 w-[85px] h-[85px] rounded-full -ml-7 -mt-3 mr-3 flex flex-col justify-center items-center"
                     >
                       <p className="ml-5 font-extrabold text-2xl uppercase">{TipoTestamento(item.libroSeleccionado)}</p>
                     </span>
                   </div>
-                  <div id="texto" className="flex-grow overflow-hidden">
+                  <div id="texto" className="flex-grow overflow-hidden text-black dark:text-white">
                     <div className="flex flex-col">
                       <div className="flex flex-wrap gap-x-1 items-center">
                         <span>{libros[item.libroSeleccionado]}</span>
