@@ -40,26 +40,26 @@ const Navbar = () => {
         <Link to="/" className="flex sm:hidden py-4 px-6 gap-2" style={{ alignItems: "center" }}>
           <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-14 dark:invert" />
           <div className="flex flex-col px-2 dark:text-white sm:flex sm:flex-wrap">
-            <span className="text-3xl font-extrabold">{t("Biblian")}</span>
-            <span className="text-xl font-semibold">{t("tituloComparar")}</span>
+            <span className="text-xl font-extrabold">{t("Biblian")}</span>
+            <span className="text-lg">{t("tituloComparar")}</span>
           </div>
         </Link>
 
-        <Link to="/" className="hidden sm:flex p-4 gap-2" style={{ alignItems: "center" }}>
+        <Link to="/" className="hidden sm:flex px-4 py-2 gap-2" style={{ alignItems: "center" }}>
           <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-12 dark:invert" />
           <div className="flex dark:text-white gap-2 sm:flex sm:flex-wrap">
-            <span className="text-3xl font-extrabold">{t("Biblian")}</span>
-            <span className="self-end text-xl font-bold">-</span>
-            <span className="self-end text-xl font-semibold">{t("tituloComparar")}</span>
+            <span className="text-2xl font-extrabold">{t("Biblian")}</span>
+            <span className="self-end text-lg font-bold">-</span>
+            <span className="self-end text-lg font-semibold">{t("tituloComparar")}</span>
           </div>
         </Link>
-        <div className="p-4 mr-10 mt-1 hidden sm:flex">
+        <div className="p-3 mr-10 mt-1 hidden sm:flex">
           <div className="flex">
-            <ul className="flex flex-row font-medium mt-0 space-x-12 text-sm">
+            <ul className="flex flex-row font-medium mt-0 space-x-8 text-[10px]">
               <li>
                 <Link
                   to="/"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                  className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
                   <img src={HOMEICO} className="w-6 h-6 dark:invert m-auto" alt="Inicio" />
                   {t("Inicio")}
@@ -97,7 +97,7 @@ const Navbar = () => {
         </div>
       </nav>
       <nav className="flex bg-[#fbefda] dark:bg-[#693BCC] justify-center sm:hidden">
-        <div className="max-w-screen-xl px-4#ffeac7 py-3 mx-auto">
+        <div className="max-w-screen-xl px-4 py-2 mt-1 mx-auto">
           <div className="flex items-center justify-center">
             <ul className="flex flex-row font-medium mt-0 space-x-6 text-sm">
               <li>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   to="/"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={HOMEICO} className="w-6 h-6 dark:invert m-auto" alt="Inicio" />
+                  <img src={HOMEICO} className="w-5 h-5 dark:invert m-auto" alt="Inicio" />
                   {t("Inicio")}
                 </Link>
               </li>
@@ -114,7 +114,7 @@ const Navbar = () => {
                   to="/compare"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={COMPARE} className="w-9 h-6 dark:invert m-auto text-center text-balance" alt="Comparar" />
+                  <img src={COMPARE} className="w-8 h-5 dark:invert m-auto text-center text-balance" alt="Comparar" />
                   {t("Comparar")}
                 </Link>
               </li>
@@ -123,7 +123,7 @@ const Navbar = () => {
                   to="/about"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={INFO} className="w-6 h-6 dark:invert m-auto" alt="Info" />
+                  <img src={INFO} className="w-5 h-5 dark:invert m-auto" alt="Info" />
                   {t("Informacion")}
                 </Link>
               </li>
@@ -132,7 +132,7 @@ const Navbar = () => {
                   to="/settings"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={SETTING} className="w-6 h-6 dark:invert m-auto" alt="Ajustes" />
+                  <img src={SETTING} className="w-5 h-5 dark:invert m-auto" alt="Ajustes" />
                   {t("Ajustes")}
                 </Link>
               </li>
