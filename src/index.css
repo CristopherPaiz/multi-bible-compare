@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ::-webkit-scrollbar-thumb {
+    @apply bg-transparent shadow-sm;
+  }
+  ::-webkit-scrollbar {
+    @apply w-1 bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded bg-yellow-600 dark:bg-purple-400;
+  }
+}
+
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
+  .no-scrollbarVerse::-webkit-scrollbar {
     display: none;
   }
   /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
+  .no-scrollbarVerse {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }

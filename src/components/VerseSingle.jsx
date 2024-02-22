@@ -135,7 +135,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
         </div>
         <div
           ref={containerRef}
-          className={`p-3 overflow-y-auto no-scrollbar max-w-[390px] min-w-[250px] ${
+          className={`p-3 overflow-y-auto no-scrollbarVerse max-w-[390px] min-w-[250px] ${
             typeof textoTraducido === "string" ? "h-fit" : "h-[260px]"
           }`}
           style={{ position: "relative" }}

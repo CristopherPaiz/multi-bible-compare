@@ -17,6 +17,7 @@ export const DataProvider = ({ children }) => {
   const { t } = useContext(LanguageContext);
   const [tipoTraductor, setTipoTraductor] = useState("m?");
   const [paginaInicio, setPaginaInicio] = useState("/");
+  const [history, setHistory] = useState([]);
 
   //useStateModals
   //----------------------------------------------------
@@ -156,6 +157,63 @@ export const DataProvider = ({ children }) => {
     }
   }, []);
 
+  //Cuando se seleccione un versiculoSeleccionadoNumero guardaremos un objeto con todos los datos en el LocalStorage
+  useEffect(() => {
+    // Recuperar historial del LocalStorage al montar el componente
+    const storedHistory = localStorage.getItem("history");
+    if (storedHistory) {
+      const parsedHistory = JSON.parse(storedHistory);
+      setHistory(parsedHistory);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (versiculoSeleccionadoNumero > 0) {
+      // Recuperar historial actual del LocalStorage
+      let history = localStorage.getItem("history");
+      if (!history) {
+        history = [];
+      } else {
+        history = JSON.parse(history);
+      }
+
+      // Crear nuevo objeto de datos
+      const newData = {
+        bibliasSeleccionadas,
+        libroSeleccionado,
+        capituloSeleccionadoNumero,
+        versiculoSeleccionadoNumero,
+      };
+
+      // Agregar nuevo dato al historial
+      history.push(newData);
+
+      // Verificar si hay más de 10 elementos en el historial
+      if (history.length > 10) {
+        // Eliminar el elemento más antiguo
+        history.shift();
+      }
+
+      // Guardar historial actualizado en el LocalStorage
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+  }, [bibliasSeleccionadas, libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero]);
+
+  //Eliminar elemento del hisotrial del LS
+  const eliminarElementoHistorial = (index) => {
+    const newHistory = history.filter((item, i) => i !== index);
+    setHistory(newHistory);
+    localStorage.setItem("history", JSON.stringify(newHistory));
+  };
+
+  //Setear bibliasSeleecionadas, acpituloSeleccionadoNumero, libroSeleccionado, versiculoSeleccionadoNumero
+  const setearHistorial = (data) => {
+    setBibliasSeleccionadas(data.bibliasSeleccionadas);
+    setLibroSeleccionado(data.libroSeleccionado);
+    setCapituloSeleccionadoNumero(data.capituloSeleccionadoNumero);
+    setVersiculoSeleccionadoNumero(data.versiculoSeleccionadoNumero);
+  };
+
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
     <DataContext.Provider
@@ -180,6 +238,9 @@ export const DataProvider = ({ children }) => {
         handleTipoTraductor,
         paginaInicio,
         handlePaginaInicio,
+        history,
+        eliminarElementoHistorial,
+        setearHistorial,
         //return modals
         //------------
         modalLibros,
