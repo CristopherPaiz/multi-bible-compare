@@ -362,7 +362,7 @@ const ListBooks = () => {
 
   return (
     <>
-      <div className="flex w-full justify-center mt-12">
+      <div className="flex w-full justify-center mt-9">
         <ReadMore openModal={openModal} />
       </div>
       {isModalOpen && (
