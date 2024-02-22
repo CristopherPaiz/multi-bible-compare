@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import DataContext from "../context/DataContext";
+import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import { useNavigate } from "react-router-dom";
 
 const History = () => {
   const navigate = useNavigate();
+  const { theme } = useContext(ThemeContext);
 
   const {
     history,
@@ -104,7 +106,7 @@ const History = () => {
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        fill="currentColor"
+                        fill={theme === "light" ? "#000" : "#FFF"}
                         className="w-6 h-6"
                       >
                         <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
