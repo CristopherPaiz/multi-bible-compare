@@ -241,6 +241,7 @@ export const DataProvider = ({ children }) => {
         history,
         eliminarElementoHistorial,
         setearHistorial,
+        setHistory,
         //return modals
         //------------
         modalLibros,

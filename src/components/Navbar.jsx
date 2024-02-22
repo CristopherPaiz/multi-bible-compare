@@ -5,6 +5,7 @@ import INFO from "/info.png";
 import SETTING from "/setting.png";
 import COMPARE from "/compare.png";
 import HOMEICO from "/hut.png";
+import HISTORY from "/history.png";
 import DataContext from "../context/DataContext";
 
 const Navbar = () => {
@@ -74,6 +75,17 @@ const Navbar = () => {
                   {t("Comparar")}
                 </Link>
               </li>
+              {versiculoSeleccionadoNumero > 0 && (
+                <li>
+                  <Link
+                    to="/history"
+                    className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                  >
+                    <img src={HISTORY} className="w-6 h-6 dark:invert m-auto" alt="Historial" />
+                    {t("Historial")}
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link
                   to="/about"
@@ -118,6 +130,21 @@ const Navbar = () => {
                   {t("Comparar")}
                 </Link>
               </li>
+              {versiculoSeleccionadoNumero > 0 && (
+                <li>
+                  <Link
+                    to="/history"
+                    className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                  >
+                    <img
+                      src={HISTORY}
+                      className="w-5 h-5 dark:invert m-auto text-center text-balance"
+                      alt="Historial"
+                    />
+                    {t("Historial")}
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link
                   to="/about"

@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import Settings from "./pages/Settings";
 import ThemeContext from "./context/ThemeContext";
 import Home from "./pages/Home";
+import HistoryPage from "./pages/HistoryPage";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/compare" element={<Compare />} />
             <Route path="/about" element={<About />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/history" element={<HistoryPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
