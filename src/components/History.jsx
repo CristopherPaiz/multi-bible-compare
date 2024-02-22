@@ -15,6 +15,8 @@ const History = () => {
     }
   };
 
+  const reversedKeys = Object.keys(history).reverse();
+
   return (
     <article className="bg-[#ffe8bd] dark:bg-[#332154] mt-8 border-2 border-[#ae7c20] dark:border-[#9054ff] rounded max-h-[60vh] min-h-[60vh] h-[60vh] w-10/12 sm:min-w-[400px] sm:max-w-[400px] m-auto">
       <div className="w-full h-10 flex items-center justify-center text-black dark:text-white bg-[#ffbb3c] dark:bg-[#7d3ef3]">
@@ -31,7 +33,8 @@ const History = () => {
           style={{ height: "calc(100% - 40px)", minHeight: "calc(100% - 40px)" }}
           className="w-full flex flex-col overflow-y-auto no-scrollbar"
         >
-          {history.map((item, index) => {
+          {reversedKeys.map((key, index) => {
+            const item = history[key];
             return (
               <div
                 key={index}

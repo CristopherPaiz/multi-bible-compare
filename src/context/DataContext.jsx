@@ -197,7 +197,7 @@ export const DataProvider = ({ children }) => {
       // Guardar historial actualizado en el LocalStorage
       localStorage.setItem("history", JSON.stringify(history));
     }
-  }, [bibliasSeleccionadas, libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero]);
+  }, [versiculoSeleccionadoNumero]);
 
   //Eliminar elemento del hisotrial del LS
   const eliminarElementoHistorial = (index) => {
