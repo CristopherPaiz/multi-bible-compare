@@ -67,7 +67,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/compare"
                   className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
                   <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
