@@ -55,7 +55,7 @@ const Navbar = () => {
         </Link>
         <div className="p-4 mr-10 mt-1 hidden sm:flex">
           <div className="flex">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 text-sm">
+            <ul className="flex flex-row font-medium mt-0 space-x-12 text-sm">
               <li>
                 <Link
                   to="/"
@@ -70,7 +70,7 @@ const Navbar = () => {
                   to="/"
                   className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
-                  <img src={COMPARE} className="w-6 h-6 dark:invert m-auto" alt="Comparar" />
+                  <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
                   {t("Comparar")}
                 </Link>
               </li>
