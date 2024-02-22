@@ -57,7 +57,7 @@ const History = () => {
         <h1 className="text-center font-bold text-md">{t("UltimoVersiculoTitulo")}</h1>
       </div>
       {history.length === 0 ? (
-        <div className="text-black dark:text-white max-h-[55vh] min-h-[55vh] h-[55vh] w-full sm:min-w-[400px] sm:max-w-[400px] items-center flex flex-col justify-center gap-4 text-center text-balance p-6">
+        <div className="text-black dark:text-white max-h-[45vh] min-h-[45vh] h-[45vh] w-full sm:min-w-[400px] sm:max-w-[400px] items-center flex flex-col justify-center gap-4 text-center text-balance p-6">
           <p className="font-semibold italic text-black dark:text-white">{t("UltimoVersiculoTexto1")}</p>
           <p className="text-black dark:text-white font-thin">{t("UltimoVersiculoTexto2")}</p>
         </div>

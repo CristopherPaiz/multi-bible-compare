@@ -36,7 +36,7 @@ const Home = () => {
         <p className="text-center text-balance mb-12">{t("PS_parrafo2")}</p>
         <Link
           to="/compare"
-          className="dark:bg-purple-500 dark:hover:bg-purple-700 text-white font-bold py-3 px-5 rounded-md w-[150px] m-auto text-center"
+          className="bg-[#a97109] hover:bg-[#634b1d] dark:bg-purple-500 dark:hover:bg-purple-700 text-white font-bold py-3 px-5 rounded-md w-[150px] m-auto text-center"
         >
           {t("Empezar")}
         </Link>
