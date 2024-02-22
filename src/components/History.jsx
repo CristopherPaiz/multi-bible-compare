@@ -29,7 +29,7 @@ const History = () => {
         <div
           id="contenidoTotal"
           style={{ height: "calc(100% - 40px)", minHeight: "calc(100% - 40px)" }}
-          className="w-full flex flex-col overflow-y-scroll no-scrollbar"
+          className="w-full flex flex-col overflow-y-auto no-scrollbar"
         >
           {history.map((item, index) => {
             return (

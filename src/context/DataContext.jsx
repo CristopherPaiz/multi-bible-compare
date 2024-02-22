@@ -189,7 +189,7 @@ export const DataProvider = ({ children }) => {
       history.push(newData);
 
       // Verificar si hay más de 10 elementos en el historial
-      if (history.length > 10) {
+      if (history.length > 20) {
         // Eliminar el elemento más antiguo
         history.shift();
       }
