@@ -26,12 +26,16 @@ const History = () => {
           <p className="font-thin">{t("UltimoVersiculoTexto2")}</p>
         </div>
       ) : (
-        <div className="h-full w-full flex flex-col overflow-y-auto no-scrollbar">
+        <div
+          id="contenidoTotal"
+          style={{ height: "calc(100% - 40px)", minHeight: "calc(100% - 40px)" }}
+          className="w-full flex flex-col overflow-y-scroll no-scrollbar"
+        >
           {history.map((item, index) => {
             return (
               <div
                 key={index}
-                className="w-full h-20 bg-white/40 border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] "
+                className="w-full h-20 min-h-20 max-h-20 bg-white/40  border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] "
               >
                 <div className="flex items-center">
                   <div className="w-[70px] h-16">
