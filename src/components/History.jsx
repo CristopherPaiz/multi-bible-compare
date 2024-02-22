@@ -1,9 +1,21 @@
 import { useContext } from "react";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 const History = () => {
-  const { history, libros, eliminarElementoHistorial, setearHistorial } = useContext(DataContext);
+  const navigate = useNavigate();
+
+  const {
+    history,
+    libros,
+    eliminarElementoHistorial,
+    setearHistorial,
+    bibliasSeleccionadas,
+    capituloSeleccionadoNumero,
+    libroSeleccionado,
+    versiculoSeleccionadoNumero,
+  } = useContext(DataContext);
   const { t } = useContext(LanguageContext);
 
   const TipoTestamento = (libro) => {
@@ -12,6 +24,26 @@ const History = () => {
       return t("shortAntiguoTestamento");
     } else {
       return t("shortNuevoTestamento");
+    }
+  };
+
+  const comprobarRuta = (ruta) => {
+    const mismasBiblias =
+      bibliasSeleccionadas.length === ruta.bibliasSeleccionadas.length &&
+      bibliasSeleccionadas.every((biblia, index) => {
+        return biblia.id === ruta.bibliasSeleccionadas[index].id;
+      });
+
+    if (
+      mismasBiblias &&
+      capituloSeleccionadoNumero === ruta.capituloSeleccionadoNumero &&
+      libroSeleccionado === ruta.libroSeleccionado &&
+      versiculoSeleccionadoNumero === ruta.versiculoSeleccionadoNumero
+    ) {
+      navigate("/compare");
+    } else {
+      setearHistorial(ruta);
+      navigate("/compare");
     }
   };
 
@@ -68,7 +100,7 @@ const History = () => {
                     </div>
                   </div>
                   <div id="iconos" className="w-16 h-16 flex flex-nowrap gap-1 items-center mr-2">
-                    <button className="hover:scale-110" onClick={() => setearHistorial(item)}>
+                    <button className="hover:scale-110" onClick={() => comprobarRuta(item)}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
