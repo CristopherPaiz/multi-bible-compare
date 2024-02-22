@@ -1,0 +1,60 @@
+.readmore-btn {
+  width: fit-content;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 15px;
+  gap: 0px;
+  transition: all 0.5s ease-in-out 0s;
+  box-shadow: rgba(125, 125, 125, 0.8) 0px 0px 0px 0px;
+  animation: 1s cubic-bezier(0.8, 0, 0, 1) 0s 3 normal none running pulse;
+}
+.book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 45px;
+  height: 100%;
+}
+.book-wrapper .book-page {
+  width: 50%;
+  height: auto;
+  position: absolute;
+}
+.readmore-btn .book-page {
+  animation: paging 1s linear 3;
+  transform-origin: left;
+}
+
+@keyframes paging {
+  0% {
+    transform: rotateY(0deg) skewY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg) skewY(-20deg);
+  }
+  100% {
+    transform: rotateY(180deg) skewY(0deg);
+  }
+}
+.text {
+  height: 100%;
+  padding: 4px 8px 4px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}

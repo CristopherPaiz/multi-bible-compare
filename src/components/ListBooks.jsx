@@ -7,6 +7,7 @@ import N from "/N.webp";
 import O from "/O.webp";
 import ON from "/ON.webp";
 import Scroll from "./Scroll";
+import ReadMore from "./ReadMore";
 
 const ListBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -362,12 +363,7 @@ const ListBooks = () => {
   return (
     <>
       <div className="flex w-full justify-center my-4">
-        <button
-          onClick={openModal}
-          className="bg-[#FDD07A] dark:bg-[#693BCC] dark:text-white p-3 rounded-md hover:cursor-pointer m-auto"
-        >
-          {t("SeleccionarBiblias")}
-        </button>
+        <ReadMore openModal={openModal} />
       </div>
       {isModalOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
