@@ -25,12 +25,12 @@ const Home = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
+          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3))",
         }}
       ></div>
       <img src={BG} className="fixed -z-20 object-cover h-full sm:h-auto sm:w-full bottom-0" />
       <article className="sm:max-w-[600px] px-4 flex flex-col justify-center items-center">
-        <h1 className="mt-12 sm:mt-4 text-7xl sm:text-8xl font-bold text-center mb-2">Biblian</h1>
+        <h1 className="mt-10 sm:mt-4 text-7xl sm:text-8xl font-bold text-center mb-2">Biblian</h1>
         <p className="text-center font-bold sm:font-extrabold w-[260px] sm:w-[320px] mb-12">{t("Compara")}</p>
         <p className="text-center text-balance">{t("PS_parrafo1")}</p>
         <p className="text-center text-balance mb-12">{t("PS_parrafo2")}</p>
