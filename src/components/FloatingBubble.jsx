@@ -68,8 +68,8 @@ const FloattingBubble = () => {
     const newX = startOffset.current.x + touch.clientX - startPosition.current.x;
     const newY = startOffset.current.y + touch.clientY - startPosition.current.y;
 
-    const maxX = window.innerWidth - bubbleRef.current.offsetWidth - 10;
-    const maxY = window.innerHeight - bubbleRef.current.offsetHeight - 10;
+    const maxX = window.innerWidth - bubbleRef.current.offsetWidth - 5;
+    const maxY = window.innerHeight - bubbleRef.current.offsetHeight - 5;
 
     const boundedX = Math.min(Math.max(0, newX), maxX);
     const boundedY = Math.min(Math.max(0, newY), maxY);
@@ -97,7 +97,7 @@ const FloattingBubble = () => {
     const bubbleRect = bubble.getBoundingClientRect();
     const screenWidth = window.innerWidth;
 
-    let newX = bubbleRect.left <= screenWidth / 2 ? 0 : screenWidth - bubbleRect.width - 20;
+    let newX = bubbleRect.left <= screenWidth / 2 ? 0 : screenWidth - bubbleRect.width;
 
     bubble.style.transition = "left 0.3s";
     bubble.style.left = `${newX}px`;
@@ -112,7 +112,6 @@ const FloattingBubble = () => {
         right: 0,
         width: 60,
         height: 60,
-        margin: "10px",
         backgroundColor: "transparent",
         borderRadius: "50%",
         cursor: "pointer",
