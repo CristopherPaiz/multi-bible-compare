@@ -8,6 +8,7 @@ import Settings from "./pages/Settings";
 import ThemeContext from "./context/ThemeContext";
 import Home from "./pages/Home";
 import HistoryPage from "./pages/HistoryPage";
+import FloatingBubble from "./components/FloatingBubble";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -25,6 +26,7 @@ const App = () => {
         <div className="backgroundPattern w-full h-full fixed -z-50" style={styles}></div>
         <BrowserRouter>
           <Navbar />
+          <FloatingBubble />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/compare" element={<Compare />} />
