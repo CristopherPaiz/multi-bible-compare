@@ -303,6 +303,9 @@ const ListBooks = () => {
         year: 2017,
       },
     },
+    aramaic: {
+      "Peshitta Version": { ruta: "79. Aramaic - Aramaic Peshitta [1905]", new: true, old: false, year: 1905 },
+    },
     esperanto: {
       "Esperanto Version": { ruta: "20. Esperanto - Bible (1926)", new: true, old: true, year: 1926 },
     },
@@ -355,6 +358,8 @@ const ListBooks = () => {
         return t("Nahuatl");
       case "queqchi":
         return t("Queqchi");
+      case "aramaic":
+        return t("Arameo");
       default:
         return language;
     }
