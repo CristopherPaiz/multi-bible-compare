@@ -1,0 +1,994 @@
+[
+  {
+    "id": "G5501",
+    "ti": "cheírōn",
+    "le": "χείρων",
+    "pl": "jeíron",
+    "ps": "khi'-rone",
+    "df": "compuesto irregular de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2556')}>G2556</span>; de un obsoleto equivalente<b>χέρης</b> <font color='%COLOR_PURPLE%'>jéres</font> (de derivación incierta); más malo o agravado (físicamente, mentalmente o moralmente): <font color='%COLOR_BLUE%'>mayor, peor.</font>"
+  },
+  {
+    "id": "G5502",
+    "ti": "cheroubím",
+    "le": "χερουβίμ",
+    "pl": "jeroubím",
+    "ps": "kher-oo-beem'",
+    "df": "plural de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3742')}>H3742</span>]; «querubín» (i.e. querub o querubín): <font color='%COLOR_BLUE%'>querubín.</font>"
+  },
+  {
+    "id": "G5503",
+    "ti": "chḗra",
+    "le": "χήρα",
+    "pl": "jéra",
+    "ps": "khay'-rah",
+    "df": "femenino de un derivado presunto aparentemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span> mediante la idea de deficiencia; viuda (en cuanto a que le falta esposo), literalmente o figurativamente: <font color='%COLOR_BLUE%'>viuda.</font>"
+  },
+  {
+    "id": "G5504",
+    "ti": "chthés",
+    "le": "χθές",
+    "pl": "jdsés",
+    "ps": "khthes",
+    "df": "de derivación incierta; «ayer»; por extensión en tiempo pasado o antaño: <font color='%COLOR_BLUE%'>ayer.</font>"
+  },
+  {
+    "id": "G5505",
+    "ti": "chiliás",
+    "le": "χιλιάς",
+    "pl": "jiliás",
+    "ps": "khil-ee-as'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5507')}>G5507</span>; mil («kilo»): <font color='%COLOR_BLUE%'>mil, millar.</font>"
+  },
+  {
+    "id": "G5506",
+    "ti": "chilíarchos",
+    "le": "χιλίαρχος",
+    "pl": "jilíarjos",
+    "ps": "khil-ee'-ar-khos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5507')}>G5507</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G757')}>G757</span>; comandante de mil soldados («quiliarca»), i.e. coronel: <font color='%COLOR_BLUE%'>capitán, tribuno.</font>"
+  },
+  {
+    "id": "G5507",
+    "ti": "chílioi",
+    "le": "χίλιοι",
+    "pl": "jílioi",
+    "ps": "khil'-ee-oy",
+    "df": "plural de afín. incierta; mil: <font color='%COLOR_BLUE%'>mil.</font>"
+  },
+  {
+    "id": "G5508",
+    "ti": "Chíos",
+    "le": "Χίος",
+    "pl": "Jíos",
+    "ps": "khee'-os",
+    "df": "de derivación incierta; Quío, una isla en el Mediterráneo: <font color='%COLOR_BLUE%'>Quío.</font>"
+  },
+  {
+    "id": "G5509",
+    "ti": "chitṓn",
+    "le": "χιτών",
+    "pl": "jitón",
+    "ps": "khee-tone'",
+    "df": "de origen extranjero [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3801')}>H3801</span>]; túnica o camisa: <font color='%COLOR_BLUE%'>ropa, túnica, vestidura.</font>"
+  },
+  {
+    "id": "G5510",
+    "ti": "chiṓn",
+    "le": "χιών",
+    "pl": "jión",
+    "ps": "khee-one'",
+    "df": "tal vez similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5465')}>G5465</span>) o <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5494')}>G5494</span> (como descendiendo o vacío); nieve: <font color='%COLOR_BLUE%'>nieve.</font>"
+  },
+  {
+    "id": "G5511",
+    "ti": "chlamýs",
+    "le": "χλαμύς",
+    "pl": "jlamús",
+    "ps": "khlam-ooce'",
+    "df": "de derivación incierta; túnica militar: <font color='%COLOR_BLUE%'>manto.</font>"
+  },
+  {
+    "id": "G5512",
+    "ti": "chleuázō",
+    "le": "χλευάζω",
+    "pl": "jleuázo",
+    "ps": "khlyoo-ad'-zo",
+    "df": "de derivado probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5491')}>G5491</span>; lanzar fuera el labio, i.e. mofarse de: <font color='%COLOR_BLUE%'>burlarse.</font>"
+  },
+  {
+    "id": "G5513",
+    "ti": "chliarós",
+    "le": "χλιαρός",
+    "pl": "jliarós",
+    "ps": "khlee-ar-os'",
+    "df": "de <b>χλίω</b> <font color='%COLOR_PURPLE%'>jlío</font>, (calentar); tibio: <font color='%COLOR_BLUE%'>tibio.</font>"
+  },
+  {
+    "id": "G5514",
+    "ti": "Chlóē",
+    "le": "Χλόη",
+    "pl": "Jlóe",
+    "ps": "khlo'-ay",
+    "df": "femenino de una aparentemente palabra primaria; «verde»; Cloé, una cristiana: <font color='%COLOR_BLUE%'>Cloé.</font>"
+  },
+  {
+    "id": "G5515",
+    "ti": "chlōrós",
+    "le": "χλωρός",
+    "pl": "jlorós",
+    "ps": "khlo-ros'",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5514')}>G5514</span>; verduzco, i.e. verdoso, color pardo: <font color='%COLOR_BLUE%'>amarillo, verde.</font>"
+  },
+  {
+    "id": "G5516",
+    "ti": "chx stigma",
+    "le": "χξϛ",
+    "pl": "ji xi stigma",
+    "ps": "khee xee stig'-ma",
+    "df": "la letra 22ª, 14ª y una obsoleta (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4742')}>G4742</span> como cruz) del alfabeto griego (intermedias entre la 5ª y 6ª), usadas como números; denotando respectivamente <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H600')}>H600</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H60')}>H60</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6')}>H6</span>; <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H666')}>H666</span> como numeral: <font color='%COLOR_BLUE%'>seiscientos.</font>"
+  },
+  {
+    "id": "G5517",
+    "ti": "choïkós",
+    "le": "χοϊκός",
+    "pl": "joikós",
+    "ps": "kho-ik-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5522')}>G5522</span>; polvoriento o sucio (como tierra), i.e. (por implicación) terrenal: <font color='%COLOR_BLUE%'>terrenal.</font>"
+  },
+  {
+    "id": "G5518",
+    "ti": "choînix",
+    "le": "χοῖνιξ",
+    "pl": "joínix",
+    "ps": "khoy'-nix",
+    "df": "de derivación incierta; celemín o cierta medida para áridos: <font color='%COLOR_BLUE%'>libra.</font>"
+  },
+  {
+    "id": "G5519",
+    "ti": "choîros",
+    "le": "χοῖρος",
+    "pl": "joíros",
+    "ps": "khoy'-ros",
+    "df": "de derivación incierta; cerdo: <font color='%COLOR_BLUE%'>cerdo.</font>"
+  },
+  {
+    "id": "G5520",
+    "ti": "choláō",
+    "le": "χολάω",
+    "pl": "joláo",
+    "ps": "khol-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5521')}>G5521</span>; estar bilioso, i.e. (por implicación) irritable (encolerizado, «colérico»): <font color='%COLOR_BLUE%'>enojarse.</font>"
+  },
+  {
+    "id": "G5521",
+    "ti": "cholḗ",
+    "le": "χολή",
+    "pl": "jolé",
+    "ps": "khol-ay'",
+    "df": "femenino de un equivalente tal vez afín a lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5514')}>G5514</span> (del matiz verdoso); «hiel» o bilis, i.e. (por analogía) veneno o anodino (gorgojo, polilla, amapola, etc.): <font color='%COLOR_BLUE%'>hiel.</font>"
+  },
+  {
+    "id": "G5522",
+    "ti": "chóos",
+    "le": "χόος",
+    "pl": "jóos",
+    "ps": "kho'-os",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5494')}>G5494</span>; montón (como derramado fuera), i.e. basura; tierra suelta: <font color='%COLOR_BLUE%'>polvo.</font>"
+  },
+  {
+    "id": "G5523",
+    "ti": "Chorazín",
+    "le": "Χοραζίν",
+    "pl": "Jorazín",
+    "ps": "khor-ad-zin'",
+    "df": "de derivación incierta; Corazín, un lugar en Palestina: <font color='%COLOR_BLUE%'>Corazín.</font>"
+  },
+  {
+    "id": "G5524",
+    "ti": "chorēgéō",
+    "le": "χορηγέω",
+    "pl": "joregéo",
+    "ps": "khor-ayg-eh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5525')}>G5525</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; ser líder en el baile, i.e. (caso genitivo) proveer: <font color='%COLOR_BLUE%'>dar, proveer.</font>"
+  },
+  {
+    "id": "G5525",
+    "ti": "chorós",
+    "le": "χορός",
+    "pl": "jorós",
+    "ps": "khor-os'",
+    "df": "de derivación incierta; anillo, i.e. ronda («coro»): <font color='%COLOR_BLUE%'>danza.</font>"
+  },
+  {
+    "id": "G5526",
+    "ti": "chortázō",
+    "le": "χορτάζω",
+    "pl": "jortázo",
+    "ps": "khor-tad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5528')}>G5528</span>; dar forraje, i.e. (genitivo) darse un atracón (proveer comida en abundancia): <font color='%COLOR_BLUE%'>saciar.</font>"
+  },
+  {
+    "id": "G5527",
+    "ti": "chórtasma",
+    "le": "χόρτασμα",
+    "pl": "jórtasma",
+    "ps": "khor'-tas-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5526')}>G5526</span>; forraje, i.e. comida: <font color='%COLOR_BLUE%'>alimento.</font>"
+  },
+  {
+    "id": "G5528",
+    "ti": "chórtos",
+    "le": "χόρτος",
+    "pl": "jórtos",
+    "ps": "khor'-tos",
+    "df": "aparentemente palabra primaria; «jardín», i.e. (por implicación de pasto) potrero o vegetación: <font color='%COLOR_BLUE%'>heno, hierba.</font>"
+  },
+  {
+    "id": "G5529",
+    "ti": "Chouzâs",
+    "le": "Χουζᾶς",
+    "pl": "Jouzás",
+    "ps": "khood-zas'",
+    "df": "de origen incierto: Chuza, oficial de Herodes: <font color='%COLOR_BLUE%'>Chuza.</font>"
+  },
+  {
+    "id": "G5530",
+    "ti": "chráomai",
+    "le": "χράομαι",
+    "pl": "jráomai",
+    "ps": "khrah'-om-ahee",
+    "df": "voz media de un verbo primario (tal vez más bien de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5495')}>G5495</span>, manejar); proveer lo necesario; (dar un oráculo, «pastar» [tocar ligeramente], dar con, etc.), i.e. (por implicación) emplear o (por extensión) actuar hacia uno de una manera dada: <font color='%COLOR_BLUE%'>aprovechar, disfrutar, procurar, tratar, usar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5531')}>G5531</span>; <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5534')}>G5534</span>."
+  },
+  {
+    "id": "G5531",
+    "ti": "chráō",
+    "le": "χράω",
+    "pl": "jráo",
+    "ps": "khrah'-o",
+    "df": "probablemente lo mismo que la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span>; prestar: <font color='%COLOR_BLUE%'>prestar.</font>"
+  },
+  {
+    "id": "G5532",
+    "ti": "chreía",
+    "le": "χρεία",
+    "pl": "jreía",
+    "ps": "khri'-ah",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span> o <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5534')}>G5534</span>; empleo, i.e. asunto; también (por implicación) ocasión, demanda, requisito o destitución: <font color='%COLOR_BLUE%'>caso, faltar, necesario, necesidad, necesitar, trabajo.</font>"
+  },
+  {
+    "id": "G5533",
+    "ti": "chreōpheilétēs",
+    "le": "χρεωφειλέτης",
+    "pl": "jreofeilétes",
+    "ps": "khreh-o-fi-let'-ace",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5531')}>G5531</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3781')}>G3781</span>; deudor, i.e. persona endeudada: <font color='%COLOR_BLUE%'>deudor.</font>"
+  },
+  {
+    "id": "G5534",
+    "ti": "chrḗ",
+    "le": "χρή",
+    "pl": "jré",
+    "ps": "khray",
+    "df": "tercera persona singular de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span> ó <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5531')}>G5531</span> usado impersonalmente; necesita (deber o debería) ser: <font color='%COLOR_BLUE%'>debe.</font>"
+  },
+  {
+    "id": "G5535",
+    "ti": "chrḗizō",
+    "le": "χρῄζω",
+    "pl": "jrézo",
+    "ps": "khrade'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5532')}>G5532</span>; hacer (i.e. tener) necesidad, i.e. carecer de: <font color='%COLOR_BLUE%'>necesidad, necesitar.</font>"
+  },
+  {
+    "id": "G5536",
+    "ti": "chrēma",
+    "le": "χρῆμα",
+    "pl": "jréma",
+    "ps": "khray'-mah",
+    "df": "algo útil o necesitado, i.e. riqueza, precio: <font color='%COLOR_BLUE%'>precio, riqueza, dinero.</font>"
+  },
+  {
+    "id": "G5537",
+    "ti": "chrēmatízō",
+    "le": "χρηματίζω",
+    "pl": "jrematízo",
+    "ps": "khray-mat-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5536')}>G5536</span>; pronunciar un oráculo (Compare el sentido origen de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span>), i.e. íntimo divinamente; por implicación (Compare el sentido secular de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5532')}>G5532</span>) constituir una firma para negocios, i.e. (genitivo) llevar como título: <font color='%COLOR_BLUE%'>advertir, amonestar, avisar, recibir instrucción, revelar.</font>"
+  },
+  {
+    "id": "G5538",
+    "ti": "chrēmatismós",
+    "le": "χρηματισμός",
+    "pl": "jrematismós",
+    "ps": "khray-mat-is-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5537')}>G5537</span>; respuesta o revelación divina: <font color='%COLOR_BLUE%'>divina respuesta.</font>"
+  },
+  {
+    "id": "G5539",
+    "ti": "chrḗsimos",
+    "le": "χρήσιμος",
+    "pl": "jresimós",
+    "ps": "khray'-see-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5540')}>G5540</span>; servicial: <font color='%COLOR_BLUE%'>aprovechar.</font>"
+  },
+  {
+    "id": "G5540",
+    "ti": "chrēsis",
+    "le": "χρῆσις",
+    "pl": "jrésis",
+    "ps": "khray'-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span>; empleo, i.e. (específicamente) relación sexual (como ocupación del cuerpo): <font color='%COLOR_BLUE%'>uso.</font>"
+  },
+  {
+    "id": "G5541",
+    "ti": "chrēsteúomai",
+    "le": "χρηστεύομαι",
+    "pl": "jresteúomai",
+    "ps": "khraste-yoo'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5543')}>G5543</span>; mostrarse uno mismo útil, i.e. actuar benevolentemente: <font color='%COLOR_BLUE%'>ser benigno.</font>"
+  },
+  {
+    "id": "G5542",
+    "ti": "chrēstología",
+    "le": "χρηστολογία",
+    "pl": "jrestología",
+    "ps": "khrase-tol-og-ee'-ah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5543')}>G5543</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3004')}>G3004</span>; hablar sensata, i.e. plausibilidad: <font color='%COLOR_BLUE%'>suave.</font>"
+  },
+  {
+    "id": "G5543",
+    "ti": "chrēstós",
+    "le": "χρηστός",
+    "pl": "jrestós",
+    "ps": "khrase-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span>; empleado, i.e. (por implicación) útil (de manera o moral): <font color='%COLOR_BLUE%'>benignidad, benigno, bueno, fácil, mejor.</font>"
+  },
+  {
+    "id": "G5544",
+    "ti": "chrēstótēs",
+    "le": "χρηστότης",
+    "pl": "jrestótes",
+    "ps": "khray-stot'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5543')}>G5543</span>; utilidad, i.e. excelencia moralmente (en carácter o presencia): <font color='%COLOR_BLUE%'>benignidad, bondad, bueno.</font>"
+  },
+  {
+    "id": "G5545",
+    "ti": "chrîsma",
+    "le": "χρῖσμα",
+    "pl": "jrísma",
+    "ps": "khris'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5548')}>G5548</span>; ungüento o untado, i.e. (figurativamente) el otorgamiento específicamente («crisma») del Espíritu Santo: <font color='%COLOR_BLUE%'>unción.</font>"
+  },
+  {
+    "id": "G5546",
+    "ti": "Christianós",
+    "le": "Χριστιανός",
+    "pl": "jristianós",
+    "ps": "khris-tee-an-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5547')}>G5547</span>; cristiano, i.e. seguidor de Cristo: <font color='%COLOR_BLUE%'>cristiano.</font>"
+  },
+  {
+    "id": "G5547",
+    "ti": "Christós",
+    "le": "Χριστός",
+    "pl": "Jristós",
+    "ps": "khris-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5548')}>G5548</span>; ungido, i.e. el Mesías, epíteto de Jesús: <font color='%COLOR_BLUE%'>Cristo, Jesucristo, Mesías.</font>"
+  },
+  {
+    "id": "G5548",
+    "ti": "chríō",
+    "le": "χρίω",
+    "pl": "jrío",
+    "ps": "khree'-o",
+    "df": "probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span> mediante la idea de contacto; untar o frotar con aceite, i.e. (por implicación) consagrar a un oficio o servicio religioso: <font color='%COLOR_BLUE%'>ungir.</font>"
+  },
+  {
+    "id": "G5549",
+    "ti": "chronízō",
+    "le": "χρονίζω",
+    "pl": "jronízo",
+    "ps": "khron-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5550')}>G5550</span>; tomar tiempo, i.e. quedarse: <font color='%COLOR_BLUE%'>tardar, demorar.</font>"
+  },
+  {
+    "id": "G5550",
+    "ti": "chrónos",
+    "le": "χρόνος",
+    "pl": "jrónos",
+    "ps": "khron'-os",
+    "df": "de derivación incierta; un espacio de tiempo (en general, y así propiamente distinguido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2540')}>G2540</span>, que designa una ocasión fija o especial; y de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G165')}>G165</span>, que denota un período particular) o intervalo; por extensión una oportunidad individual; por implicación demora: <font color='%COLOR_BLUE%'>edad, tiempo.</font>"
+  },
+  {
+    "id": "G5551",
+    "ti": "chronotribéō",
+    "le": "χρονοτριβέω",
+    "pl": "jronotribéo",
+    "ps": "khron-ot-rib-eh'-o",
+    "df": "de un presunto compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5550')}>G5550</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5147')}>G5147</span>; ser uno que usa el tiempo, i.e. remolonear (demorarse): <font color='%COLOR_BLUE%'>detenerse.</font>"
+  },
+  {
+    "id": "G5552",
+    "ti": "chrýseos",
+    "le": "χρύσεος",
+    "pl": "jrúseos",
+    "ps": "khroo'-seh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5557')}>G5557</span>; hecho de oro: <font color='%COLOR_BLUE%'>oro.</font>"
+  },
+  {
+    "id": "G5553",
+    "ti": "chrysíon",
+    "le": "χρυσίον",
+    "pl": "jrusíon",
+    "ps": "khroo-see'-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5557')}>G5557</span>; artículo de oro, i.e. enchapado de oro, ornamento, o moneda: <font color='%COLOR_BLUE%'>oro.</font>"
+  },
+  {
+    "id": "G5554",
+    "ti": "chrysodaktýlios",
+    "le": "χρυσοδακτύλιος",
+    "pl": "jrusodaktúlios",
+    "ps": "khroo-sod-ak-too'-lee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5557')}>G5557</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1146')}>G1146</span>; con anillo de oro, i.e. que llevar un anillo de oro o joyería similar: <font color='%COLOR_BLUE%'>con anillo de oro.</font>"
+  },
+  {
+    "id": "G5555",
+    "ti": "chrysólithos",
+    "le": "χρυσόλιθος",
+    "pl": "jrusólidsos",
+    "ps": "khroo-sol'-ee-thos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5557')}>G5557</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3037')}>G3037</span>; piedra dorada, i.e. gema amarilla («crisólito»): <font color='%COLOR_BLUE%'>crisólito.</font>"
+  },
+  {
+    "id": "G5556",
+    "ti": "chrysóprasos",
+    "le": "χρυσόπρασος",
+    "pl": "jrusóprasos",
+    "ps": "khroo-sop'-ras-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5557')}>G5557</span> y <b>πράσον</b> <font color='%COLOR_PURPLE%'>práson</font> (puerro); una gema verde amarillenta: <font color='%COLOR_BLUE%'>crisopraso.</font>"
+  },
+  {
+    "id": "G5557",
+    "ti": "chrysós",
+    "le": "χρυσός",
+    "pl": "jrusós",
+    "ps": "khroo-sos'",
+    "df": "tal vez de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span> (mediante la idea de la utilidad del metal); oro; por extensión artículo de oro, como ornamento o moneda: <font color='%COLOR_BLUE%'>oro.</font>"
+  },
+  {
+    "id": "G5558",
+    "ti": "chrysóō",
+    "le": "χρυσόω",
+    "pl": "jrusóo",
+    "ps": "khroo-so'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5557')}>G5557</span>; adornar, i.e. cubierta de ornamentos dorados: <font color='%COLOR_BLUE%'>adornar.</font>"
+  },
+  {
+    "id": "G5559",
+    "ti": "chrṓs",
+    "le": "χρώς",
+    "pl": "jrós",
+    "ps": "khroce",
+    "df": "probablemente similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span> mediante la idea de manejar; el cuerpo (propiamente su superficie o piel): <font color='%COLOR_BLUE%'>cuerpo.</font>"
+  },
+  {
+    "id": "G5560",
+    "ti": "chōlós",
+    "le": "χωλός",
+    "pl": "jolós",
+    "ps": "kho-los'",
+    "df": "aparentemente palabra primaria; «hacer alto», i.e. cojear: <font color='%COLOR_BLUE%'>cojo.</font>"
+  },
+  {
+    "id": "G5561",
+    "ti": "chṓra",
+    "le": "χώρα",
+    "pl": "jóra",
+    "ps": "kho'-rah",
+    "df": "femenino de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span> mediante la idea de extensión vacía; cuarto, salón, i.e. espacio de territorio (más o menos extensión; a menudo incluído sus habitante): <font color='%COLOR_BLUE%'>heredad, campo, país, provincia, región, territorio, tierra.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5117')}>G5117</span>."
+  },
+  {
+    "id": "G5562",
+    "ti": "chōréō",
+    "le": "χωρέω",
+    "pl": "joréo",
+    "ps": "kho-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; estar en (dar) espacio, i.e. (intransitivamente) pasar, entrar, o (transitivamente) sostener, admitir (literalmente o figurativamente): <font color='%COLOR_BLUE%'>proceder, recibir, admitir, caber, hallar cabida, ir.</font>"
+  },
+  {
+    "id": "G5563",
+    "ti": "chōrízō",
+    "le": "χωρίζω",
+    "pl": "jorízo",
+    "ps": "kho-rid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; poner espacio entre, i.e. partir; reflexivamente irse, alejarse: <font color='%COLOR_BLUE%'>irse, apartarse, separarse.</font>"
+  },
+  {
+    "id": "G5564",
+    "ti": "chōríon",
+    "le": "χωρίον",
+    "pl": "joríon",
+    "ps": "kho-ree'-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; punto o lote de terreno: <font color='%COLOR_BLUE%'>propiedad, campo, heredad, lugar.</font>"
+  },
+  {
+    "id": "G5565",
+    "ti": "chōrís",
+    "le": "χωρίς",
+    "pl": "jorís",
+    "ps": "kho-rece'",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; en un espacio, i.e. separadamente o aparte de (a menudo como preposición): <font color='%COLOR_BLUE%'>sin contar.</font>"
+  },
+  {
+    "id": "G5566",
+    "ti": "chōros",
+    "le": "χῶρος",
+    "pl": "jóros",
+    "ps": "kho'-ros",
+    "df": "de origen latín; viento del noroeste: <font color='%COLOR_BLUE%'>nordeste.</font>"
+  },
+  {
+    "id": "G5567",
+    "ti": "psállō",
+    "le": "ψάλλω",
+    "pl": "psállo",
+    "ps": "psal'-lo",
+    "df": "probablemente fortificado de <b>ψάω</b> <font color='%COLOR_PURPLE%'>psáo</font>, (frotar o tocar la superficie; Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5597')}>G5597</span>); rasgar o tocar, i.e. tocar en un instrumento de cuerdas (celebrar la adoración divina con música y odas de acompañamiento): <font color='%COLOR_BLUE%'>alabanza, alabar, cantar.</font>"
+  },
+  {
+    "id": "G5568",
+    "ti": "psalmós",
+    "le": "ψαλμός",
+    "pl": "psalmós",
+    "ps": "psal-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5567')}>G5567</span>; pieza fija de música, i.e. oda sagrada (acompañada con la voz, arpa u otro instrumento; «salmo»); colectivo el libro de los Salmos: <font color='%COLOR_BLUE%'>Salmo.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5603')}>G5603</span>."
+  },
+  {
+    "id": "G5569",
+    "ti": "pseudádelphos",
+    "le": "ψευδάδελφος",
+    "pl": "pseudádelfos",
+    "ps": "psyoo-dad'-el-fos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G80')}>G80</span>; hermano espúreo, i.e. asociado pretendido: <font color='%COLOR_BLUE%'>falso hermano.</font>"
+  },
+  {
+    "id": "G5570",
+    "ti": "pseudapóstolos",
+    "le": "ψευδαπόστολος",
+    "pl": "pseudapóstolos",
+    "ps": "psyoo-dap-os'-tol-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G652')}>G652</span>; apóstol espúreo i.e. predicador pretendido: <font color='%COLOR_BLUE%'>falso apóstol.</font>"
+  },
+  {
+    "id": "G5571",
+    "ti": "pseudḗs",
+    "le": "ψευδής",
+    "pl": "pseudés",
+    "ps": "psyoo-dace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5574')}>G5574</span>; falso, i.e. erróneo, engañoso, perverso: <font color='%COLOR_BLUE%'>falso, mentiroso.</font>"
+  },
+  {
+    "id": "G5572",
+    "ti": "pseudodidáskalos",
+    "le": "ψευδοδιδάσκαλος",
+    "pl": "pseudodidáskalos",
+    "ps": "psyoo-dod-id-as'-kal-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1320')}>G1320</span>; maestro espúreo, i.e. propagador de doctrina cristiana errónea: <font color='%COLOR_BLUE%'>falso maestro.</font>"
+  },
+  {
+    "id": "G5573",
+    "ti": "pseudológos",
+    "le": "ψευδολόγος",
+    "pl": "pseudológos",
+    "ps": "psyoo-dol-og'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3004')}>G3004</span>; mendaz, i.e. promulgando doctrina cristiana errónea: <font color='%COLOR_BLUE%'>mentiroso.</font>"
+  },
+  {
+    "id": "G5574",
+    "ti": "pseúdomai",
+    "le": "ψεύδομαι",
+    "pl": "pseudomai",
+    "ps": "psyoo'-dom-ahee",
+    "df": "voz media de un verbo aparentemente primario; pronunciar una falsedad o intentar engañar mediante falsedad: <font color='%COLOR_BLUE%'>mentir.</font>"
+  },
+  {
+    "id": "G5575",
+    "ti": "pseudomártyr",
+    "le": "ψευδομάρτυρ",
+    "pl": "pseudomártur",
+    "ps": "psyoo-dom-ar'-toor",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y una forma parecida de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3144')}>G3144</span>; testigo espúreo, i.e. que da falso testimonio: <font color='%COLOR_BLUE%'>testigo, falso.</font>"
+  },
+  {
+    "id": "G5576",
+    "ti": "pseudomartyréō",
+    "le": "ψευδομαρτυρέω",
+    "pl": "pseudomarturéo",
+    "ps": "psyoo-dom-ar-too-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5575')}>G5575</span>; ser un testificador falso, i.e. ofrecer falsedad en evidencia: <font color='%COLOR_BLUE%'>falso, dar, decir, testimonio.</font>"
+  },
+  {
+    "id": "G5577",
+    "ti": "pseudomartyría",
+    "le": "ψευδομαρτυρία",
+    "pl": "pseudomarturía",
+    "ps": "psyoo-dom-ar-too-ree'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5575')}>G5575</span>; testimonio falso: <font color='%COLOR_BLUE%'>testimonio, falso.</font>"
+  },
+  {
+    "id": "G5578",
+    "ti": "pseudoprophḗtēs",
+    "le": "ψευδοπροφήτης",
+    "pl": "pseudoprofétes",
+    "ps": "psyoo-dop-rof-ay'-tace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4396')}>G4396</span>; profeta espúreo, i.e. pronosticador pretendido o impostor religioso: <font color='%COLOR_BLUE%'>falso profeta.</font>"
+  },
+  {
+    "id": "G5579",
+    "ti": "pseûdos",
+    "le": "ψεῦδος",
+    "pl": "pseúdos",
+    "ps": "psyoo'-dos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5574')}>G5574</span>; falsedad: <font color='%COLOR_BLUE%'>mentira, mentiroso.</font>"
+  },
+  {
+    "id": "G5580",
+    "ti": "pseudóchristos",
+    "le": "ψευδόχριστος",
+    "pl": "pseudójristos",
+    "ps": "psyoo-dokh'-ris-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5547')}>G5547</span>; Mesías espúreo: <font color='%COLOR_BLUE%'>falso Cristo.</font>"
+  },
+  {
+    "id": "G5581",
+    "ti": "pseudṓnymos",
+    "le": "ψευδώνυμος",
+    "pl": "pseudónumos",
+    "ps": "psyoo-do'-noo-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5571')}>G5571</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3686')}>G3686</span>; nombrado falsamente: <font color='%COLOR_BLUE%'>falsamente llamada.</font>"
+  },
+  {
+    "id": "G5582",
+    "ti": "pseûsma",
+    "le": "ψεῦσμα",
+    "pl": "pseúsma",
+    "ps": "psyoos'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5574')}>G5574</span>; fabricación, i.e. falsedad: <font color='%COLOR_BLUE%'>mentira.</font>"
+  },
+  {
+    "id": "G5583",
+    "ti": "pseústēs",
+    "le": "ψεύστης",
+    "pl": "pseústes",
+    "ps": "psyoos-tace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5574')}>G5574</span>; falsificador, falsario: <font color='%COLOR_BLUE%'>mentiroso.</font>"
+  },
+  {
+    "id": "G5584",
+    "ti": "psēlapháō",
+    "le": "ψηλαφάω",
+    "pl": "pselafáo",
+    "ps": "psay-laf-ah'-o",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5567')}>G5567</span> (Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5586')}>G5586</span>); manipular, i.e. verificar por contacto; figurativamente buscar por: <font color='%COLOR_BLUE%'>palpar.</font>"
+  },
+  {
+    "id": "G5585",
+    "ti": "psēphízō",
+    "le": "ψηφίζω",
+    "pl": "psefízo",
+    "ps": "psay-fid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5586')}>G5586</span>; usar piedritas en enumeración, i.e. (caso genitivo) computar, calcular: <font color='%COLOR_BLUE%'>calcular, contar.</font>"
+  },
+  {
+    "id": "G5586",
+    "ti": "psēphos",
+    "le": "ψῆφος",
+    "pl": "pséfos",
+    "ps": "psay'-fos",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5584')}>G5584</span>; piedrecita (como lisa por el uso), i.e. (por implicación de su uso como contador o voto) a veredicto (de absolución) o boleto (de admisión); voto: <font color='%COLOR_BLUE%'>voto, piedrecita.</font>"
+  },
+  {
+    "id": "G5587",
+    "ti": "psithyrismós",
+    "le": "ψιθυρισμός",
+    "pl": "psidsurismós",
+    "ps": "psith-oo-ris-mos'",
+    "df": "de un derivado de <b>ψίθος</b> <font color='%COLOR_PURPLE%'>psídsos</font> (susurro; por implicación calumnia; probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5574')}>G5574</span>); susurrar, i.e. detracción secreta: <font color='%COLOR_BLUE%'>murmuración.</font>"
+  },
+  {
+    "id": "G5588",
+    "ti": "psithyristḗs",
+    "le": "ψιθυριστής",
+    "pl": "psidsuristés",
+    "ps": "psith-oo-ris-tace'",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5587')}>G5587</span>; calumniador secreto: <font color='%COLOR_BLUE%'>murmurador.</font>"
+  },
+  {
+    "id": "G5589",
+    "ti": "psichíon",
+    "le": "ψιχίον",
+    "pl": "psijíon",
+    "ps": "psikh-ee'-on",
+    "df": "diminutivo de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5567')}>G5567</span> (significa migaja); pedacito o bocado: <font color='%COLOR_BLUE%'>migaja.</font>"
+  },
+  {
+    "id": "G5590",
+    "ti": "psychḗ",
+    "le": "ψυχή",
+    "pl": "psujé",
+    "ps": "psoo-khay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5594')}>G5594</span>; aliento, i.e. (por implicación) espíritu, abstractamente o concretamente (el principio sensitivo del animal solo; así distinguido por un lado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4151')}>G4151</span>, que es el alma racional e inmortal; y por el otro <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2222')}>G2222</span>, que es mera vitalidad, aun de las plantas: estos términos de este mondo corresponden exactamente y respectivamente a los hebreo <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5315')}>H5315</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7307')}>H7307</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2416')}>H2416</span>): <font color='%COLOR_BLUE%'>persona, ser, vida, muerte, alma, ánimo, corazón.</font>"
+  },
+  {
+    "id": "G5591",
+    "ti": "psychikós",
+    "le": "ψυχικός",
+    "pl": "psujikós",
+    "ps": "psoo-khee-kos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5590')}>G5590</span>; sensitivo, i.e. animado (a distinción por un lado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4152')}>G4152</span>, que es la naturaleza más alta o renovada; y por el otro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5446')}>G5446</span>, que es la naturaleza más bajo o bestial): <font color='%COLOR_BLUE%'>animal, natural, sensual.</font>"
+  },
+  {
+    "id": "G5592",
+    "ti": "psýchos",
+    "le": "ψύχος",
+    "pl": "psújos",
+    "ps": "psoo'-khos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5594')}>G5594</span>; frialdad: <font color='%COLOR_BLUE%'>frío.</font>"
+  },
+  {
+    "id": "G5593",
+    "ti": "psychrós",
+    "le": "ψυχρός",
+    "pl": "psujrós",
+    "ps": "psoo-chros'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5592')}>G5592</span>; frío (literalmente o figurativamente): <font color='%COLOR_BLUE%'>frío.</font>"
+  },
+  {
+    "id": "G5594",
+    "ti": "psýchō",
+    "le": "ψύχω",
+    "pl": "psújo",
+    "ps": "psoo'-kho",
+    "df": "verbo primario; respirar (voluntariamente pero gentilmente, de este modo difiriendo por un lado de de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4154')}>G4154</span>, que denota propiamente una respiración forzada; y por el otro de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G109')}>G109</span>, que se refiere propiamente a una brisa inanimada), i.e. (por implicación de reducción de temperatura por evaporación) enfriar (figurativamente): <font color='%COLOR_BLUE%'>enfriarse.</font>"
+  },
+  {
+    "id": "G5595",
+    "ti": "psōmízō",
+    "le": "ψωμίζω",
+    "pl": "psomízo",
+    "ps": "pso-mid'-zo",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5596')}>G5596</span>; proveer con trozos, i.e. (caso genitivo) nutrir: <font color='%COLOR_BLUE%'>dar de comer, repartir para dar de comer.</font>"
+  },
+  {
+    "id": "G5596",
+    "ti": "psōmíon",
+    "le": "ψωμίον",
+    "pl": "psomíon",
+    "ps": "pso-mee'-on",
+    "df": "diminutivo de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5597')}>G5597</span>; migaja o bocado (como si fuera frotado para sacarlo), i.e. bocado: <font color='%COLOR_BLUE%'>pan, bocado.</font>"
+  },
+  {
+    "id": "G5597",
+    "ti": "psṓchō",
+    "le": "ψώχω",
+    "pl": "psójo",
+    "ps": "pso'-kho",
+    "df": "prolongado de la misma base como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5567')}>G5567</span>; triturar, i.e. (por analogía) frotar sacando (granos de mazorcas con los dedos o la mano): <font color='%COLOR_BLUE%'>restregar.</font>"
+  },
+  {
+    "id": "G5598",
+    "ti": "Ō",
+    "le": "Ω",
+    "pl": "o",
+    "ps": "o'-meg-ah",
+    "df": "i.e.<b>ὤμεγα</b> <font color='%COLOR_PURPLE%'>ómega</font> última letra del alfabeto griego, i.e. (figurativamente) finalidad: <font color='%COLOR_BLUE%'>omega.</font>"
+  },
+  {
+    "id": "G5599",
+    "ti": "ō",
+    "le": "ὦ",
+    "pl": "o",
+    "ps": "o",
+    "df": "interjección primario; como señal de la vocativo O; como nota de exclamación, ¡Oh!: <font color='%COLOR_BLUE%'>oh.</font>"
+  },
+  {
+    "id": "G5600",
+    "ti": "ō",
+    "le": "ὦ",
+    "pl": "o",
+    "ps": "o",
+    "df": "incluyendo las formas oblicuas, al igual que <b>ἦς</b> <font color='%COLOR_PURPLE%'>es</font>; <b>ἦ</b> <font color='%COLOR_PURPLE%'>e</font>; etc.; subjuntivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1510')}>G1510</span>; (puede, pudiera, pueda, podría, debería, etc.; también con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1487')}>G1487</span> y sus compuestos, al igual que con otras partículas) ser: <font color='%COLOR_BLUE%'>estar fundada, puede, pudiera, pueda, podría, debería.</font>"
+  },
+  {
+    "id": "G5601",
+    "ti": "Ōbḗd",
+    "le": "Ὠβήδ",
+    "pl": "Obéd",
+    "ps": "o-bade'",
+    "df": "o <b>Ἰωβήδ</b> <font color='%COLOR_PURPLE%'>Iobéd</font> de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5744')}>H5744</span>]; Obed, un israelita: <font color='%COLOR_BLUE%'>Obed.</font>"
+  },
+  {
+    "id": "G5602",
+    "ti": "hōde",
+    "le": "ὧδε",
+    "pl": "hóde",
+    "ps": "ho'-deh",
+    "df": "de una forma adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3592')}>G3592</span>; en este mismo punto, i.e. aquí o acá: <font color='%COLOR_BLUE%'>acá, aquí, en este lugar.</font>"
+  },
+  {
+    "id": "G5603",
+    "ti": "ōidḗ",
+    "le": "ᾠδή",
+    "pl": "odé",
+    "ps": "o-day'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G103')}>G103</span>; canto u «oda» (término general para cualquier palabra cantada; mientras que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5215')}>G5215</span> denota específicamente una composición métrica religiosa., y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5568')}>G5568</span> todavía más específicamente un cántico hebreo): <font color='%COLOR_BLUE%'>cántico.</font>"
+  },
+  {
+    "id": "G5604",
+    "ti": "ōdín",
+    "le": "ὠδίν",
+    "pl": "odín",
+    "ps": "o-deen'",
+    "df": "afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3601')}>G3601</span>; dolor o retortijón, específicamente de parto: <font color='%COLOR_BLUE%'>dolor.</font>"
+  },
+  {
+    "id": "G5605",
+    "ti": "ōdínō",
+    "le": "ὠδίνω",
+    "pl": "odíno",
+    "ps": "o-dee'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5604')}>G5604</span>; experimentar los dolores de parto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>sufrir dolores de parto, angustia.</font>"
+  },
+  {
+    "id": "G5606",
+    "ti": "ōmos",
+    "le": "ὦμος",
+    "pl": "jómos",
+    "ps": "o'-mos",
+    "df": "tal vez del alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; hombro (como en lo que se lleva las cargas): <font color='%COLOR_BLUE%'>hombro.</font>"
+  },
+  {
+    "id": "G5607",
+    "ti": "ṓn",
+    "le": "ὤν",
+    "pl": "ón",
+    "ps": "oan",
+    "df": "incluye el femenino <b>οὖσα</b> <font color='%COLOR_PURPLE%'>oúsa</font> y el neutro <b>ὄν</b> <font color='%COLOR_PURPLE%'>ón</font>; participio presente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1510')}>G1510</span>; ser: <font color='%COLOR_BLUE%'>cuando era, el cual es, ser, tener.</font>"
+  },
+  {
+    "id": "G5608",
+    "ti": "ōnéomai",
+    "le": "ὠνέομαι",
+    "pl": "onéomai",
+    "ps": "o-neh'-om-ahee",
+    "df": "voz media de un aparentemente primario <b>ὦνος</b> <font color='%COLOR_PURPLE%'>onos</font> (suma o precio); comprar, (sinónimo con anterior <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4092')}>G4092</span>): <font color='%COLOR_BLUE%'>comprar.</font>"
+  },
+  {
+    "id": "G5609",
+    "ti": "ōón",
+    "le": "ὠόν",
+    "pl": "oón",
+    "ps": "o-on'",
+    "df": "aparentemente palabra primaria; «huevo»: <font color='%COLOR_BLUE%'>huevo.</font>"
+  },
+  {
+    "id": "G5610",
+    "ti": "hṓra",
+    "le": "ὥρα",
+    "pl": "jóra",
+    "ps": "ho'-rah",
+    "df": "aparentemente palabra primaria; «hora» (literalmente o figurativamente): <font color='%COLOR_BLUE%'>anochecer, avanzado, hora, momento, tiempo.</font>"
+  },
+  {
+    "id": "G5611",
+    "ti": "hōraîos",
+    "le": "ὡραῖος",
+    "pl": "joraíos",
+    "ps": "ho-rah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5610')}>G5610</span>; perteneciente a la hora precisa o temporada (a tiempo), i.e. (por implicación) floreciendo (hermosamente [figurativamente]): <font color='%COLOR_BLUE%'>hermoso.</font>"
+  },
+  {
+    "id": "G5612",
+    "ti": "ōrýomai",
+    "le": "ὠρύομαι",
+    "pl": "orúomai",
+    "ps": "o-roo'-om-ahee",
+    "df": "voz media de un verbo aparentemente primario; «rugir»: <font color='%COLOR_BLUE%'>rugiente.</font>"
+  },
+  {
+    "id": "G5613",
+    "ti": "hōs",
+    "le": "ὡς",
+    "pl": "jós",
+    "ps": "hoce",
+    "df": "probablemente adverbio de comparación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3739')}>G3739</span>; que de manera, i.e. de esa manera (usado muy variadamente como sigue): <font color='%COLOR_BLUE%'>en el caso.</font>"
+  },
+  {
+    "id": "G5614",
+    "ti": "hōsanná",
+    "le": "ὡσαννά",
+    "pl": "josanná",
+    "ps": "ho-san-nah'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3467')}>H3467</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4994')}>H4994</span>]; ¡oh, salve!; hosana, exclamación de adoración: <font color='%COLOR_BLUE%'>hosanna.</font>"
+  },
+  {
+    "id": "G5615",
+    "ti": "hōsaútōs",
+    "le": "ὡσαύτως",
+    "pl": "josaútos",
+    "ps": "ho-sow'-toce",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5613')}>G5613</span> y un adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G846')}>G846</span>; como así, i.e. de la misma manera: <font color='%COLOR_BLUE%'>asímismo, de la misma manera, lo mismo.</font>"
+  },
+  {
+    "id": "G5616",
+    "ti": "hōseí",
+    "le": "ὡσεί",
+    "pl": "joseí",
+    "ps": "ho-si'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5613')}>G5613</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1487')}>G1487</span>; como si: <font color='%COLOR_BLUE%'>como, como era, como había sido, igualmente.</font>"
+  },
+  {
+    "id": "G5617",
+    "ti": "Hōsēé",
+    "le": "Ὡσηέ",
+    "pl": "Joseé",
+    "ps": "ho-say-eh'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1954')}>H1954</span>]; Joseé (i.e. Oseas), un israelita: <font color='%COLOR_BLUE%'>Oseas.</font>"
+  },
+  {
+    "id": "G5618",
+    "ti": "hṓsper",
+    "le": "ὥσπερ",
+    "pl": "jósper",
+    "ps": "hoce'-per",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5613')}>G5613</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4007')}>G4007</span>; justo como, i.e. exactamente como: <font color='%COLOR_BLUE%'>como, lo mismo que, según, pasados.</font>"
+  },
+  {
+    "id": "G5619",
+    "ti": "hōspereí",
+    "le": "ὡσπερεί",
+    "pl": "jospereí",
+    "ps": "hoce-per-i'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5618')}>G5618</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1487')}>G1487</span>; justo como si, i.e. como si fuera: <font color='%COLOR_BLUE%'>como.</font>"
+  },
+  {
+    "id": "G5620",
+    "ti": "hṓste",
+    "le": "ὥστε",
+    "pl": "jóste",
+    "ps": "hoce'-teh",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5613')}>G5613</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5037')}>G5037</span>; así también, i.e. así por lo tanto (en varias relaciones de consecución, como sigue): <font color='%COLOR_BLUE%'>de manera que, de tal manera, de modo que, por consiguiente por tanto.</font>"
+  },
+  {
+    "id": "G5621",
+    "ti": "ōtíon",
+    "le": "ὠτίον",
+    "pl": "otión",
+    "ps": "o-tee'-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3775')}>G3775</span>; oreja, i.e. una de la orejas, o tal vez el lóbulo de la oreja: <font color='%COLOR_BLUE%'>oreja.</font>"
+  },
+  {
+    "id": "G5622",
+    "ti": "ōphéleia",
+    "le": "ὠφέλεια",
+    "pl": "oféleia",
+    "ps": "o-fel'-i-ah",
+    "df": "de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5624')}>G5624</span>; utilidad, i.e. beneficio: <font color='%COLOR_BLUE%'>aprovechar.</font>"
+  },
+  {
+    "id": "G5623",
+    "ti": "ōpheléō",
+    "le": "ὠφελέω",
+    "pl": "ofeléo",
+    "ps": "o-fel-eh'-o",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5622')}>G5622</span>; ser útil, i.e. beneficiar: <font color='%COLOR_BLUE%'>adelantar. aprovechar, ayudar, conseguir, servir.</font>"
+  },
+  {
+    "id": "G5624",
+    "ti": "ōphélimos",
+    "le": "ὠφέλιμος",
+    "pl": "ofélimos",
+    "ps": "o-fel'-ee-mos",
+    "df": "de una forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3786')}>G3786</span>; útil o servicial, i.e. ventajoso: <font color='%COLOR_BLUE%'>provechoso, útil, aprovechar.</font>"
+  }
+]

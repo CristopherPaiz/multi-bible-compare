@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H7651",
+    "ti": "shebaʻ",
+    "le": "שֶׁבַע",
+    "pl": "shéba",
+    "ps": "sheh'-bah",
+    "df": "<font color='%COLOR_GREEN%'></font>o (masculino) <font color='%COLOR_GREEN%'><b>שבעה</b></font> <font color='%COLOR_PURPLE%'>shibá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7650')}>H7650</span>; número cardinal primaria; siete (como el numero sagrado completo); también (adverbio) siete veces; por impl. semana; por extensión número indefinido: <font color='%COLOR_BLUE%'>decimaséptima, diecisiete, séptimo, setecientos, siete.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7658')}>H7658</span>."
+  },
+  {
+    "id": "H7652",
+    "ti": "shebaʻ",
+    "le": "שֶׁבַע",
+    "pl": "Shéba",
+    "ps": "sheh'-bah",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>; siete; Sheba, nombre de un lugar en Palestina, y de dos israelitas: <font color='%COLOR_BLUE%'>Seba.</font><p></p><font color='%COLOR_GREEN%'><b>שבע</b></font> <font color='%COLOR_PURPLE%'>shabúa.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7620')}>H7620</span>."
+  },
+  {
+    "id": "H7653",
+    "ti": "sibʻâh",
+    "le": "שִׂבְעָה",
+    "pl": "sibá",
+    "ps": "sib-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7647')}>H7647</span>; saciedad: <font color='%COLOR_BLUE%'>saciedad.</font>"
+  },
+  {
+    "id": "H7654",
+    "ti": "sobʻâh",
+    "le": "שׇׂבְעָה",
+    "pl": "sobá",
+    "ps": "sob-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7648')}>H7648</span>; saciedad: <font color='%COLOR_BLUE%'>saciar, -se, insaciable.</font><p></p><font color='%COLOR_GREEN%'><b>שבעה</b></font> <font color='%COLOR_PURPLE%'>shibá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>."
+  },
+  {
+    "id": "H7655",
+    "ti": "shibʻâh",
+    "le": "שִׁבְעָה",
+    "pl": "shibá",
+    "ps": "shib-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>: <font color='%COLOR_BLUE%'>siete (veces).</font>"
+  },
+  {
+    "id": "H7656",
+    "ti": "Shibʻâh",
+    "le": "שִׁבְעָה",
+    "pl": "Shibá",
+    "ps": "shib-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>masculino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>; siete (séptimo); Sheba, un pozo en Palestina: <font color='%COLOR_BLUE%'>Seba.</font><p></p><font color='%COLOR_GREEN%'><b>שבעה</b></font> <font color='%COLOR_PURPLE%'>shebuá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7620')}>H7620</span>.<p></p><font color='%COLOR_GREEN%'><b>שביעי</b></font> <font color='%COLOR_PURPLE%'>shebiyí.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7637')}>H7637</span>."
+  },
+  {
+    "id": "H7657",
+    "ti": "shibʻîym",
+    "le": "שִׁבְעִים",
+    "pl": "shibím",
+    "ps": "shib-eem'",
+    "df": "<font color='%COLOR_GREEN%'></font>múltiplo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>; setenta: <font color='%COLOR_BLUE%'>setenta, setecientos, setenta mil.</font>"
+  },
+  {
+    "id": "H7658",
+    "ti": "shibʻânâh",
+    "le": "שִׁבְעָנָה",
+    "pl": "shibaná",
+    "ps": "shib-aw-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>prol. por el masculino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>; siete: <font color='%COLOR_BLUE%'>siete.</font>"
+  },
+  {
+    "id": "H7659",
+    "ti": "shibʻâthayim",
+    "le": "שִׁבְעָתַיִם",
+    "pl": "shibataím",
+    "ps": "shib-aw-thah'-yim",
+    "df": "<font color='%COLOR_GREEN%'></font>dual (adverbio) de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7651')}>H7651</span>; siete veces: <font color='%COLOR_BLUE%'>siete (tantos, veces).</font>"
+  },
+  {
+    "id": "H7660",
+    "ti": "shâbats",
+    "le": "שָׁבַץ",
+    "pl": "shabáts",
+    "ps": "shaw-bats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; entretejer hebras (coloreadas) en cuadrados; por impl. (de reticulación) engastar gemas en oro: <font color='%COLOR_BLUE%'>bordar, engastar, -e, montar.</font>"
+  },
+  {
+    "id": "H7661",
+    "ti": "shâbâts",
+    "le": "שָׁבָץ",
+    "pl": "shabáts",
+    "ps": "shaw-bawts'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7660')}>H7660</span>; enredo, i.e. (figurativamente) perplejidad: <font color='%COLOR_BLUE%'>angustia.</font>"
+  },
+  {
+    "id": "H7662",
+    "ti": "shᵉbaq",
+    "le": "שְׁבַק",
+    "pl": "shebác",
+    "ps": "sheb-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a la raíz de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7733')}>H7733</span>; cejar, cesar, i.e. permitir permanecer: <font color='%COLOR_BLUE%'>dejar.</font>"
+  },
+  {
+    "id": "H7663",
+    "ti": "sâbar",
+    "le": "שָׂבַר",
+    "pl": "sabár",
+    "ps": "saw-bar'",
+    "df": "<font color='%COLOR_GREEN%'></font>errar.<p></p><font color='%COLOR_GREEN%'><b>שבר</b></font> <font color='%COLOR_PURPLE%'>shabár</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Neh 2:13</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Neh 2:15</span>); raíz primaria; escrudriñar; por impl. (de vigilar) esperar (con esperanza y paciencia): <font color='%COLOR_BLUE%'>esperar, observar.</font>"
+  },
+  {
+    "id": "H7664",
+    "ti": "sêber",
+    "le": "שֵׂבֶר",
+    "pl": "séber",
+    "ps": "say'-ber",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7663')}>H7663</span>; expectación: <font color='%COLOR_BLUE%'>esperanza.</font>"
+  },
+  {
+    "id": "H7665",
+    "ti": "shâbar",
+    "le": "שָׁבַר",
+    "pl": "shabár",
+    "ps": "shaw-bar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; reventar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>dañar, derribar, desgajar, deshacer, desmenuzar, desnucar, despedazar, destrozar, destruir, engendrar, establecer, estropear, fracturado, humillar, jorobado, mitigar, moler, partir, perniquebrado, quebrantar, quebrar, romper, roto.</font>"
+  },
+  {
+    "id": "H7666",
+    "ti": "shâbar",
+    "le": "שָׁבַר",
+    "pl": "shabár",
+    "ps": "shaw-bar'",
+    "df": "<font color='%COLOR_GREEN%'></font>denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7668')}>H7668</span>; negociar en grano: <font color='%COLOR_BLUE%'>comprar, vender.</font>"
+  },
+  {
+    "id": "H7667",
+    "ti": "sheber",
+    "le": "שֶׁבֶר",
+    "pl": "shéber",
+    "ps": "sheh'-ber",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שבר</b></font> <font color='%COLOR_PURPLE%'>shéber</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7665')}>H7665</span>; fractura, figurativamente ruina; especialmente solución (de un sueño): <font color='%COLOR_BLUE%'>afligir, caída, cautiverio, desfallecimiento, destrucción, herida, interpretación, quebradura, quebrantamiento, quebrantar, quebranto, rotura, ruina.</font>"
+  },
+  {
+    "id": "H7668",
+    "ti": "sheber",
+    "le": "שֶׁבֶר",
+    "pl": "shéber",
+    "ps": "sheh'-ber",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7667')}>H7667</span>; grano (como si fuera roto en sus granos individuales): <font color='%COLOR_BLUE%'>alimento, comestible, pan, trigo, víveres.</font>"
+  },
+  {
+    "id": "H7669",
+    "ti": "Sheber",
+    "le": "שֶׁבֶר",
+    "pl": "Shéber",
+    "ps": "sheh'-ber",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7667')}>H7667</span>; Sheber, un israelita.: <font color='%COLOR_BLUE%'>Seber.</font>"
+  },
+  {
+    "id": "H7670",
+    "ti": "shibrôwn",
+    "le": "שִׁבְרֹון",
+    "pl": "shibrón",
+    "ps": "shib-rone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7665')}>H7665</span>; ruptura, i.e. punzada de dolor; figurativamente ruina: <font color='%COLOR_BLUE%'>quebrantamiento.</font>"
+  },
+  {
+    "id": "H7671",
+    "ti": "Shᵉbârîym",
+    "le": "שְׁבָרִים",
+    "pl": "Shebarím",
+    "ps": "sheb-aw-reem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7667')}>H7667</span>; ruinas; Shebarim, un lugar en Palestina: <font color='%COLOR_BLUE%'>Sebarim.</font>"
+  },
+  {
+    "id": "H7672",
+    "ti": "shᵉbash",
+    "le": "שְׁבַשׁ",
+    "pl": "shebásh",
+    "ps": "sheb-ash'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7660')}>H7660</span>; enredar, i.e. perplejo: <font color='%COLOR_BLUE%'>perplejo.</font>"
+  },
+  {
+    "id": "H7673",
+    "ti": "shâbath",
+    "le": "שָׁבַת",
+    "pl": "shabát",
+    "ps": "shaw-bath'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; reposar, i.e. desistir del ejercicio; usado en muchas relaciones impl. (caus., figurativamente o especialmente): <font color='%COLOR_BLUE%'>acabar, callar, hacer cesar, consumir, dejar, descansar, destruir, exterminar, faltar, fin, guardar (el día de reposo), parar, poner, quieto, quitar, reposar, reposo.</font>"
+  },
+  {
+    "id": "H7674",
+    "ti": "shebeth",
+    "le": "שֶׁבֶת",
+    "pl": "shébet",
+    "ps": "sheh'-beth",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7673')}>H7673</span>; reposo, descanso, interrupción, cesación: <font color='%COLOR_BLUE%'>cesar, dejar.</font>"
+  },
+  {
+    "id": "H7675",
+    "ti": "shebeth",
+    "le": "שֶׁבֶת",
+    "pl": "shébet",
+    "ps": "sheh'-beth",
+    "df": "<font color='%COLOR_GREEN%'></font>infinitivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3427')}>H3427</span>; propiamente sesión; pero usado también concr. una morada, vivienda o localidad: <font color='%COLOR_BLUE%'>descanso, día, lugar, silla, reposar, reposo.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3429')}>H3429</span>."
+  },
+  {
+    "id": "H7676",
+    "ti": "shabbâth",
+    "le": "שַׁבָּת",
+    "pl": "shabbát",
+    "ps": "shab-bawth'",
+    "df": "<font color='%COLOR_GREEN%'></font>intensivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7673')}>H7673</span>; intermedio, i.e (especialmente) el sabat: <font color='%COLOR_BLUE%'>descanso, día de reposo, semana, reposo.</font>"
+  },
+  {
+    "id": "H7677",
+    "ti": "shabbâthôwn",
+    "le": "שַׁבָּתֹון",
+    "pl": "shabbatón",
+    "ps": "shab-baw-thone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7676')}>H7676</span>; sabatismo o fiesta especial: <font color='%COLOR_BLUE%'>descanso, reposo.</font>"
+  },
+  {
+    "id": "H7678",
+    "ti": "Shabbᵉthay",
+    "le": "שַׁבְּתַי",
+    "pl": "Shabbetái",
+    "ps": "shab-beth-ah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7676')}>H7676</span>; descansado; Sabetai, nombre de tres israelitas: <font color='%COLOR_BLUE%'>Sabetai.</font>"
+  },
+  {
+    "id": "H7679",
+    "ti": "sâgâʼ",
+    "le": "שָׂגָא",
+    "pl": "sagá",
+    "ps": "saw-gaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; crecer, i.e. (caus.) agrandar, (figurativamente) elogiar: <font color='%COLOR_BLUE%'>engrandecer, multiplicar.</font>"
+  },
+  {
+    "id": "H7680",
+    "ti": "sᵉgâʼ",
+    "le": "שְׂגָא",
+    "pl": "segá",
+    "ps": "seg-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7679')}>H7679</span>; aumentar: <font color='%COLOR_BLUE%'>crecer, multiplicar.</font>"
+  },
+  {
+    "id": "H7681",
+    "ti": "Shâgeʼ",
+    "le": "שָׁגֶא",
+    "pl": "Shagué",
+    "ps": "shaw-gay'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7686')}>H7686</span>; errar; Shagué, un israelita.: <font color='%COLOR_BLUE%'>Sage.</font>"
+  },
+  {
+    "id": "H7682",
+    "ti": "sâgab",
+    "le": "שָׂגַב",
+    "pl": "sagáb",
+    "ps": "saw-gab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ser (caus. hacer) elevado, especialmente inaccesible; por impl. seguro, fuerte; usado literalmente y figurativamente: <font color='%COLOR_BLUE%'>alto, defender, elevado, enaltecer, engrandecer, escapar, exaltar, excelso, levantar.</font>"
+  },
+  {
+    "id": "H7683",
+    "ti": "shâgag",
+    "le": "שָׁגַג",
+    "pl": "shagág",
+    "ps": "shaw-gag'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; descarriarse, i.e. (figurativamente) pecar (con más o menos apología): <font color='%COLOR_BLUE%'>andar, descarriar, pecar.</font>"
+  },
+  {
+    "id": "H7684",
+    "ti": "shᵉgâgâh",
+    "le": "שְׁגָגָה",
+    "pl": "shegagá",
+    "ps": "sheg-aw-gaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7683')}>H7683</span>; falta o transgresión inadvertida: <font color='%COLOR_BLUE%'>accidente, error, ignorancia, sin intención, yerro.</font>"
+  },
+  {
+    "id": "H7685",
+    "ti": "sâgâh",
+    "le": "שָׂגָה",
+    "pl": "sagá",
+    "ps": "saw-gaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; agrandar (especialmente hacia arriba, también figurativamente): <font color='%COLOR_BLUE%'>alcanzar, crecer, ser muy grande.</font>"
+  },
+  {
+    "id": "H7686",
+    "ti": "shâgâh",
+    "le": "שָׁגָה",
+    "pl": "shagá",
+    "ps": "shaw-gaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; descarriarse (caus. dirigir al error), usualmente (figurativamente) errar, especialmente (mor.) transgredir; por extens. (mediante la idea de intoxicación) bambolearse, (figurativamente) estar arrebatado, extasiado: <font color='%COLOR_BLUE%'>andar, aturdir, desviar, divagar, errar, error, pecar, estar perdido, recrear, transtornar.</font>"
+  },
+  {
+    "id": "H7687",
+    "ti": "Sᵉgûwb",
+    "le": "שְׂגוּב",
+    "pl": "Segúb",
+    "ps": "seg-oob'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7682')}>H7682</span>; exaltado; Segub, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Segub.</font>"
+  },
+  {
+    "id": "H7688",
+    "ti": "shâgach",
+    "le": "שָׁגַח",
+    "pl": "shagákj",
+    "ps": "shaw-gakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; atisbar, i.e. echar un vistazo agudo a: <font color='%COLOR_BLUE%'>contemplar, inclinar, mirar, ver.</font>"
+  },
+  {
+    "id": "H7689",
+    "ti": "saggîyʼ",
+    "le": "שַׂגִּיא",
+    "pl": "sagguí",
+    "ps": "sag-ghee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7679')}>H7679</span>; (superl.) poderoso: <font color='%COLOR_BLUE%'>grande.</font>"
+  },
+  {
+    "id": "H7690",
+    "ti": "saggîyʼ",
+    "le": "שַׂגִּיא",
+    "pl": "sagguí",
+    "ps": "sag-ghee'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7689')}>H7689</span>; grande (en tamaño, cantidad o número, también adverbio): <font color='%COLOR_BLUE%'>abundante, sobremanera.</font>"
+  },
+  {
+    "id": "H7691",
+    "ti": "shᵉgîyʼâh",
+    "le": "שְׁגִיאָה",
+    "pl": "sheguiyá",
+    "ps": "sheg-ee-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7686')}>H7686</span>; equivocación moral: <font color='%COLOR_BLUE%'>error.</font>"
+  },
+  {
+    "id": "H7692",
+    "ti": "shiggâyôwn",
+    "le": "שִׁגָּיֹון",
+    "pl": "shiggayón",
+    "ps": "shig-gaw-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שגיינה</b></font> <font color='%COLOR_PURPLE%'>shiggayoná</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7686')}>H7686</span>; propiamente aberración, i.e. (tech.) ditirambo o poema sin objeto determinado: <font color='%COLOR_BLUE%'>Sigaión, Sigionot.</font>"
+  },
+  {
+    "id": "H7693",
+    "ti": "shâgal",
+    "le": "שָׁגַל",
+    "pl": "shagál",
+    "ps": "shaw-gal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; copular con: <font color='%COLOR_BLUE%'>dormir con, prostituirse, violar.</font>"
+  },
+  {
+    "id": "H7694",
+    "ti": "shêgâl",
+    "le": "שֵׁגָל",
+    "pl": "shegál",
+    "ps": "shay-gawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7693')}>H7693</span>; reina (de cohabitación): <font color='%COLOR_BLUE%'>reina.</font>"
+  },
+  {
+    "id": "H7695",
+    "ti": "shêgâl",
+    "le": "שֵׁגָל",
+    "pl": "shegál",
+    "ps": "shay-gawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7694')}>H7694</span>; reina (legítima): <font color='%COLOR_BLUE%'>mujer [esposa].</font>"
+  },
+  {
+    "id": "H7696",
+    "ti": "shâgaʻ",
+    "le": "שָׁגַע",
+    "pl": "shagá",
+    "ps": "shaw-gah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; arrebatar mediante locura: <font color='%COLOR_BLUE%'>demente, enloquecer, hacerse el loco, loco.</font>"
+  },
+  {
+    "id": "H7697",
+    "ti": "shiggâʻôwn",
+    "le": "שִׁגָּעֹון",
+    "pl": "shigaón",
+    "ps": "shig-gaw-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7696')}>H7696</span>; locura: <font color='%COLOR_BLUE%'>impetuosamente, locura.</font>"
+  },
+  {
+    "id": "H7698",
+    "ti": "sheger",
+    "le": "שֶׁגֶר",
+    "pl": "shéguer",
+    "ps": "sheh'-ger",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa probablemente significa expulsar; el feto (por ser finalmente expulsado): <font color='%COLOR_BLUE%'>cría.</font>"
+  },
+  {
+    "id": "H7699",
+    "ti": "shad",
+    "le": "שַׁד",
+    "pl": "shad",
+    "ps": "shad",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שיד</b></font> <font color='%COLOR_PURPLE%'>shod</font>; probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7736')}>H7736</span> (en su sentido original) contr.; pecho de una mujer o animal (porque sobresale): <font color='%COLOR_BLUE%'>pecho, teta.</font>"
+  },
+  {
+    "id": "H7700",
+    "ti": "shêd",
+    "le": "שֵׁד",
+    "pl": "shed",
+    "ps": "shade",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7736')}>H7736</span>; demonio (por lo maligno): <font color='%COLOR_BLUE%'>demonio.</font>"
+  },
+  {
+    "id": "H7701",
+    "ti": "shôd",
+    "le": "שֹׁד",
+    "pl": "shod",
+    "ps": "shode",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שויד</b></font> <font color='%COLOR_PURPLE%'>shod</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Job 5:21</span>); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7736')}>H7736</span>; violencia, furia: <font color='%COLOR_BLUE%'>asolamiento, despojador, despojo, destrucción, devastador, opresión, rapiña, robar, robo.</font>"
+  },
+  {
+    "id": "H7702",
+    "ti": "sâdad",
+    "le": "שָׂדַד",
+    "pl": "sadád",
+    "ps": "saw-dad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; rastrillar, raer, i.e. desmenuzar un campo: <font color='%COLOR_BLUE%'>labrar, quebrar, romper, terrón.</font>"
+  },
+  {
+    "id": "H7703",
+    "ti": "shâdad",
+    "le": "שָׁדַד",
+    "pl": "shadád",
+    "ps": "shaw-dad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente ser fornido, i.e. (figurativamente) poderoso (pas. imprenetrable); por impl. asolar: <font color='%COLOR_BLUE%'>asolador, asolar, derribar, desolar, despojo, destrucción, destructor, destruidor, destruir, devastador, ladrón, muerto, oprimir, perder, robador, robar, saquear.</font>"
+  },
+  {
+    "id": "H7704",
+    "ti": "sâdeh",
+    "le": "שָׂדֶה",
+    "pl": "sadé",
+    "ps": "saw-deh'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שדי</b></font> <font color='%COLOR_PURPLE%'>sadái</font>; de una raíz que no se usa que significa esparcir, tender; como campo (por plano): <font color='%COLOR_BLUE%'>campo, ejido, heredad, labranza, montés, país, sembrado, silvestre, terreno, territorio, tierra.</font>"
+  },
+  {
+    "id": "H7705",
+    "ti": "shiddâh",
+    "le": "שִׁדָּה",
+    "pl": "shiddá",
+    "ps": "shid-dah'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7703')}>H7703</span>; esposa (como ama de la casa): <font color='%COLOR_BLUE%'>instrumento de música.</font>"
+  },
+  {
+    "id": "H7706",
+    "ti": "Shadday",
+    "le": "שַׁדַּי",
+    "pl": "Shaddái",
+    "ps": "shad-dah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7703')}>H7703</span>; el Todopoderoso: <font color='%COLOR_BLUE%'>Dios omnipotente, Todopoderoso.</font>"
+  },
+  {
+    "id": "H7707",
+    "ti": "Shᵉdêyʼûwr",
+    "le": "שְׁדֵיאוּר",
+    "pl": "Shedeyúr",
+    "ps": "shed-ay-oor'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7704')}>H7704</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H217')}>H217</span>; esparcidor de luz; Shedeyur, un israelita.: <font color='%COLOR_BLUE%'>Sedeur.</font>"
+  },
+  {
+    "id": "H7708",
+    "ti": "Siddîym",
+    "le": "שִׂדִּים",
+    "pl": "Siddím",
+    "ps": "sid-deem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7704')}>H7704</span>; planicies; Sidim, valle en Palestina: <font color='%COLOR_BLUE%'>Sidim.</font>"
+  },
+  {
+    "id": "H7709",
+    "ti": "shᵉdêmâh",
+    "le": "שְׁדֵמָה",
+    "pl": "shedemá",
+    "ps": "shed-ay-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>aparentemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7704')}>H7704</span>; campo cultivado: <font color='%COLOR_BLUE%'>campo, labrado, seco.</font>"
+  },
+  {
+    "id": "H7710",
+    "ti": "shâdaph",
+    "le": "שָׁדַף",
+    "pl": "shadáf",
+    "ps": "shaw-daf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; calcinar: <font color='%COLOR_BLUE%'>abatir, marchita.</font>"
+  },
+  {
+    "id": "H7711",
+    "ti": "shᵉdêphâh",
+    "le": "שְׁדֵפָה",
+    "pl": "shedefá",
+    "ps": "shed-ay-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שדפוין</b></font> <font color='%COLOR_PURPLE%'>shiddafón</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7710')}>H7710</span>; tizón: <font color='%COLOR_BLUE%'>calamidad, marchitar, tizoncillo, viento solano.</font>"
+  },
+  {
+    "id": "H7712",
+    "ti": "shᵉdar",
+    "le": "שְׁדַר",
+    "pl": "shedár",
+    "ps": "shed-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); raíz primaria; esforzarse: <font color='%COLOR_BLUE%'>trabajar.</font>"
+  },
+  {
+    "id": "H7713",
+    "ti": "sᵉdêrâh",
+    "le": "שְׂדֵרָה",
+    "pl": "sederá",
+    "ps": "sed-ay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa regular; hilera, i.e. rango (de soldado), piso (de edificio): <font color='%COLOR_BLUE%'>artesonado, fila, recinto.</font>"
+  },
+  {
+    "id": "H7714",
+    "ti": "Shadrak",
+    "le": "שַׁדְרַךְ",
+    "pl": "Shadrák",
+    "ps": "shad-rak'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de original for.; Shadrak, nombre babilonio de uno de los compañeros de Daniel: <font color='%COLOR_BLUE%'>Sadrac.</font>"
+  },
+  {
+    "id": "H7715",
+    "ti": "Shadrak",
+    "le": "שַׁדְרַךְ",
+    "pl": "Shadrák",
+    "ps": "shad-rak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7714')}>H7714</span>: <font color='%COLOR_BLUE%'>Sadrac.</font>"
+  },
+  {
+    "id": "H7716",
+    "ti": "seh",
+    "le": "שֶׂה",
+    "pl": "se",
+    "ps": "seh",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שי</b></font> <font color='%COLOR_PURPLE%'>sei</font>; probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7582')}>H7582</span> mediante la idea de arrear hacia afuera para pastar; miembro del rebaño, i.e. oveja o cabra: <font color='%COLOR_BLUE%'>animal, carnero, cordera, ganado, oveja, rebaño.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2089')}>H2089</span>."
+  },
+  {
+    "id": "H7717",
+    "ti": "sâhêd",
+    "le": "שָׂהֵד",
+    "pl": "saéd",
+    "ps": "saw-hade'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa testificar; testigo: <font color='%COLOR_BLUE%'>mi testimonio.</font>"
+  },
+  {
+    "id": "H7718",
+    "ti": "shôham",
+    "le": "שֹׁהַם",
+    "pl": "shóam",
+    "ps": "sho'-ham",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa probablemente significa blanquear; gema, probablemente berilo (de su color verde pálido): <font color='%COLOR_BLUE%'>ónice.</font>"
+  },
+  {
+    "id": "H7719",
+    "ti": "Shôham",
+    "le": "שֹׁהַם",
+    "pl": "Shójam",
+    "ps": "sho'-ham",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7718')}>H7718</span>; Shojam, un israelita.: <font color='%COLOR_BLUE%'>Soham.</font>"
+  },
+  {
+    "id": "H7720",
+    "ti": "sahărôn",
+    "le": "שַׂהֲרֹן",
+    "pl": "saarón",
+    "ps": "sah-har-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5469')}>H5469</span>; pendiente redondo para el cuello: <font color='%COLOR_BLUE%'>adorno, luneta, plancha.</font><p></p><font color='%COLOR_GREEN%'><b>שו</b></font> <font color='%COLOR_PURPLE%'>shav.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7723')}>H7723</span>."
+  },
+  {
+    "id": "H7721",
+    "ti": "sôwʼ",
+    "le": "שֹׂוא",
+    "pl": "so",
+    "ps": "so",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa (parecida a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7722')}>H7722</span>) significa levantarse; levantarse: <font color='%COLOR_BLUE%'>levantar.</font>"
+  },
+  {
+    "id": "H7722",
+    "ti": "shôwʼ",
+    "le": "שֹׁוא",
+    "pl": "sho",
+    "ps": "sho",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>שויאה</b></font> <font color='%COLOR_PURPLE%'>shoá</font>; o <font color='%COLOR_GREEN%'><b>שיאה</b></font> <font color='%COLOR_PURPLE%'>shoá</font>; de una raíz que no se usa que significa precipitarse sobre; tempestad; por impl. devastación: <font color='%COLOR_BLUE%'>alboroto, asolamiento, asolar, calamidad, destrucción, quebrantamiento, restaurar, ruina, tempestad.</font>"
+  },
+  {
+    "id": "H7723",
+    "ti": "shâvᵉʼ",
+    "le": "שָׁוְא",
+    "pl": "shav",
+    "ps": "shawv",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שו</b></font> <font color='%COLOR_PURPLE%'>shav</font>; de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7722')}>H7722</span> en el sentido de desolar; mal (como destructivo), literalmente (ruina) o mor. (especialmente culpa); figurativamente idolatría (como falsa, subj.), inutilidad (como engañosa, obj.; también adverbio en vano): <font color='%COLOR_BLUE%'>calamidad, destrucción, falso, hipócrita, ilusoria, mentira, mentiroso, vanidad, vano.</font>"
+  },
+  {
+    "id": "H7724",
+    "ti": "Shᵉvâʼ",
+    "le": "שְׁוָא",
+    "pl": "Shevá",
+    "ps": "shev-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7723')}>H7723</span>; falso; Sheva, un israelita.: <font color='%COLOR_BLUE%'>Seva.</font>"
+  },
+  {
+    "id": "H7725",
+    "ti": "shûwb",
+    "le": "שׁוּב",
+    "pl": "shub",
+    "ps": "shoob",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; volverse (de aquí, alejarse) transitivo o intr., literalmente o figurativamente (no necesariamente con la idea de volver al punto de partida); generalmente retirarse; a menudo adverbio de nuevo: <font color='%COLOR_BLUE%'>apaciguar, apartar, aplacar, arrepentirse, calmar, cambiar, cesar, compensar, conducir, confortar, contar, contrarrestar, convertir, corresponder, decrecer, dejar, descargar, desistir, despedir, desviar, detener, devolver, discurrir, enderezar, engañar, entrar, entretener, envainar, esconder, estorbar, girar, giro, huir, impedir, indemnización, ir, levantar, llamar, llevar, meter, mitigar, negar, nuevo, paga, pagar, pago, poner, principio, quebrantar, quitar, recaer, recapacitar, rechazar, recobrar, recompensar, recuperar, referir, reflexionar, refrigerio, regresar, reposo, resarcir, rescatar, resistir, responder, restablecer, restaurador, restaurar, restituir, retirar, retractar, retraer, retroceder, revocar, revolver, tomar, torcer, traer, trasladar, venir, vez, volver, vuelta.</font><p></p><font color='%COLOR_GREEN%'><b>שובאל</b></font> <font color='%COLOR_PURPLE%'>Shubaél.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7619')}>H7619</span>."
+  },
+  {
+    "id": "H7726",
+    "ti": "shôwbâb",
+    "le": "שֹׁובָב",
+    "pl": "shobáb",
+    "ps": "sho-bawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7725')}>H7725</span>; apóstata, i.e. idólatra: <font color='%COLOR_BLUE%'>rebelde, rebelión.</font>"
+  },
+  {
+    "id": "H7727",
+    "ti": "Shôwbâb",
+    "le": "שֹׁובָב",
+    "pl": "Shobáb",
+    "ps": "sho-bawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7726')}>H7726</span>; rebelde; Shobab, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Sobab.</font>"
+  },
+  {
+    "id": "H7728",
+    "ti": "shôwbêb",
+    "le": "שֹׁובֵב",
+    "pl": "shobéb",
+    "ps": "sho-babe'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7725')}>H7725</span>; apóstata, i.e. pagano o (en realidad) pagano: <font color='%COLOR_BLUE%'>contumaz.</font>"
+  },
+  {
+    "id": "H7729",
+    "ti": "shûwbâh",
+    "le": "שׁוּבָה",
+    "pl": "shubá",
+    "ps": "shoo-baw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7725')}>H7725</span>; regreso: <font color='%COLOR_BLUE%'>conversión.</font>"
+  },
+  {
+    "id": "H7730",
+    "ti": "sôwbek",
+    "le": "שֹׂובֶךְ",
+    "pl": "sóbek",
+    "ps": "so'-bek",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5441')}>H5441</span>; boscaje, i.e. ramas entrelazadas: <font color='%COLOR_BLUE%'>ramas.</font>"
+  },
+  {
+    "id": "H7731",
+    "ti": "Shôwbâk",
+    "le": "שֹׁובָךְ",
+    "pl": "Shobák",
+    "ps": "sho-bawk'",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7730')}>H7730</span>; Shobak, un sirio: <font color='%COLOR_BLUE%'>Sobac.</font>"
+  },
+  {
+    "id": "H7732",
+    "ti": "Shôwbâl",
+    "le": "שֹׁובָל",
+    "pl": "shobál",
+    "ps": "sho-bawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7640')}>H7640</span>; desbordante; Shobal, nombre de un edomita y dos israelitas: <font color='%COLOR_BLUE%'>Sobal.</font>"
+  },
+  {
+    "id": "H7733",
+    "ti": "Shôwbêq",
+    "le": "שֹׁובֵק",
+    "pl": "Shobéc",
+    "ps": "sho-bake'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio activo de raíz primaria significa dejar, salir (Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7662')}>H7662</span>); olvidar; Shobec, un israelita.: <font color='%COLOR_BLUE%'>Sobec.</font>"
+  },
+  {
+    "id": "H7734",
+    "ti": "sûwg",
+    "le": "שׂוּג",
+    "pl": "sug",
+    "ps": "soog",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; retirarse: <font color='%COLOR_BLUE%'>volver atrás.</font>"
+  },
+  {
+    "id": "H7735",
+    "ti": "sûwg",
+    "le": "שׂוּג",
+    "pl": "sug",
+    "ps": "soog",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; cercar: <font color='%COLOR_BLUE%'>hacer crecer.</font>"
+  },
+  {
+    "id": "H7736",
+    "ti": "shûwd",
+    "le": "שׁוּד",
+    "pl": "shud",
+    "ps": "shood",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente hincharse, i.e. figurativamente (por impl. de insolencia) devastar: <font color='%COLOR_BLUE%'>destruir.</font><p></p><font color='%COLOR_GREEN%'><b>שויד</b></font> <font color='%COLOR_PURPLE%'>shod.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7699')}>H7699</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7701')}>H7701</span>."
+  },
+  {
+    "id": "H7737",
+    "ti": "shâvâh",
+    "le": "שָׁוָה",
+    "pl": "shavá",
+    "ps": "shaw-vaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente nivelar, i.e. igualar; figurativamente parecer; por impl. ajustar (i.e. contrapeso, ser apropiado, componer, lugar, producir, etc.): <font color='%COLOR_BLUE%'>aprovechar, beneficiar, comparar, comportarse, contar, igualar, irreparable, poner, semejante, servir.</font>"
+  },
+  {
+    "id": "H7738",
+    "ti": "shâvâh",
+    "le": "שָׁוָה",
+    "pl": "shavá",
+    "ps": "shaw-vaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; destruir: <font color='%COLOR_BLUE%'>sustancia.</font>"
+  },
+  {
+    "id": "H7739",
+    "ti": "shᵉvâh",
+    "le": "שְׁוָה",
+    "pl": "shevá",
+    "ps": "shev-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7737')}>H7737</span>; parecerse: <font color='%COLOR_BLUE%'>convertir, hacer semejante.</font>"
+  },
+  {
+    "id": "H7740",
+    "ti": "Shâvêh",
+    "le": "שָׁוֵה",
+    "pl": "Shavé",
+    "ps": "shaw-vay'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7737')}>H7737</span>; llanura; Shavé, un lugar en Palestina: <font color='%COLOR_BLUE%'>Save.</font>"
+  },
+  {
+    "id": "H7741",
+    "ti": "Shâvêh Qiryâthayim",
+    "le": "שָׁוֵה קִרְיָתַיִם",
+    "pl": "Shavé Quiriataim",
+    "ps": "shaw-vay' kir-yawthah'-yim",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7740')}>H7740</span> y del dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7151')}>H7151</span>; llanura de una ciudad doble; Shave Quiriataim, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>Save-quiriatam.</font>"
+  },
+  {
+    "id": "H7742",
+    "ti": "sûwach",
+    "le": "שׂוּחַ",
+    "pl": "shúakj",
+    "ps": "soo'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; musitar pensativamente: <font color='%COLOR_BLUE%'>meditar.</font>"
+  },
+  {
+    "id": "H7743",
+    "ti": "shûwach",
+    "le": "שׁוּחַ",
+    "pl": "shúakj",
+    "ps": "shoo'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; hundir, literalmente o figurativamente: <font color='%COLOR_BLUE%'>abatir, agobiar, inclinar, postrar.</font>"
+  },
+  {
+    "id": "H7744",
+    "ti": "Shûwach",
+    "le": "שׁוּחַ",
+    "pl": "Shúakj",
+    "ps": "shoo'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7743')}>H7743</span>; barranco, hondonada; Shuaj, un hijo de Abraham: <font color='%COLOR_BLUE%'>Súa.</font>"
+  },
+  {
+    "id": "H7745",
+    "ti": "shûwchâh",
+    "le": "שׁוּחָה",
+    "pl": "shukjá",
+    "ps": "shoo-khaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7743')}>H7743</span>; barranco: <font color='%COLOR_BLUE%'>despoblada, fosa, hoyo.</font>"
+  },
+  {
+    "id": "H7746",
+    "ti": "Shûwchâh",
+    "le": "שׁוּחָה",
+    "pl": "Shukjá",
+    "ps": "shoo-khaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7745')}>H7745</span>; Shujá, un israelita.: <font color='%COLOR_BLUE%'>Súa.</font>"
+  },
+  {
+    "id": "H7747",
+    "ti": "Shûwchîy",
+    "le": "שׁוּחִי",
+    "pl": "shukjí",
+    "ps": "shoo-khee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7744')}>H7744</span>; shujita o descendiente de Shuaj: <font color='%COLOR_BLUE%'>suhita.</font>"
+  },
+  {
+    "id": "H7748",
+    "ti": "Shûwchâm",
+    "le": "שׁוּחָם",
+    "pl": "Shukjám",
+    "ps": "shoo-khawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7743')}>H7743</span>; humildemente; Shujam, un israelita.: <font color='%COLOR_BLUE%'>Súham.</font>"
+  },
+  {
+    "id": "H7749",
+    "ti": "Shûwchâmîy",
+    "le": "שׁוּחָמִי",
+    "pl": "shukjamí",
+    "ps": "shoo-khaw-mee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7748')}>H7748</span>; shujamita (colectivamente): <font color='%COLOR_BLUE%'>suhamita.</font>"
+  },
+  {
+    "id": "H7750",
+    "ti": "sûwṭ",
+    "le": "שׂוּט",
+    "pl": "sut",
+    "ps": "soot",
+    "df": "<font color='%COLOR_GREEN%'></font>o (por perm.) <font color='%COLOR_GREEN%'><b>סוט</b></font> <font color='%COLOR_PURPLE%'>sut</font>; raíz primaria; hundir, empujar hacia abajo, i.e. (intr. y figurativamente) llegar a ser delincuente (practicar lo equivocado; es decir, idolatría): <font color='%COLOR_BLUE%'>desviarse a.</font>"
+  },
+  {
+    "id": "H7751",
+    "ti": "shûwṭ",
+    "le": "שׁוּט",
+    "pl": "shut",
+    "ps": "shoot",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente empujar hacia; (pero usado solo figurativamente) azotar, i.e. (el mar con los remos) remar; por impl. viajar: <font color='%COLOR_BLUE%'>contemplar, correr, discurrir, ir, recoger, remero, rodear.</font>"
+  },
+  {
+    "id": "H7752",
+    "ti": "shôwṭ",
+    "le": "שֹׁוט",
+    "pl": "shot",
+    "ps": "shote",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7751')}>H7751</span>; latigazo (literalmente o figurativamente): <font color='%COLOR_BLUE%'>azote, látigo.</font>"
+  },
+  {
+    "id": "H7753",
+    "ti": "sûwk",
+    "le": "שׂוּךְ",
+    "pl": "suk",
+    "ps": "sook",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; entretejer, i.e. encerrar (para formación, protección o restringir): <font color='%COLOR_BLUE%'>cercar, rodear, seto, tejer.</font>"
+  },
+  {
+    "id": "H7754",
+    "ti": "sôwk",
+    "le": "שֹׂוךְ",
+    "pl": "sok",
+    "ps": "soke",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>שויכה</b></font> <font color='%COLOR_PURPLE%'>soká</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7753')}>H7753</span>; rama (como con hojas interpoladas): <font color='%COLOR_BLUE%'>rama.</font>"
+  },
+  {
+    "id": "H7755",
+    "ti": "Sôwkôh",
+    "le": "שֹׂוכֹה",
+    "pl": "Sokó",
+    "ps": "so-ko'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שכיה</b></font> <font color='%COLOR_PURPLE%'>Sokó</font>; o <font color='%COLOR_GREEN%'><b>שויכוי</b></font> <font color='%COLOR_PURPLE%'>Sokó</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7753')}>H7753</span>; Soco, nombre de dos lugares en Palestina: <font color='%COLOR_BLUE%'>Soco.</font>"
+  },
+  {
+    "id": "H7756",
+    "ti": "Sûwkâthîy",
+    "le": "שׂוּכָתִי",
+    "pl": "sukatí",
+    "ps": "soo-kaw-thee'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente patronímico de un nombre correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7754')}>H7754</span> (femenino); sucateo o descendiente de un israelita. desconocido llamado Suca: <font color='%COLOR_BLUE%'>sucateos.</font>"
+  },
+  {
+    "id": "H7757",
+    "ti": "shûwl",
+    "le": "שׁוּל",
+    "pl": "shul",
+    "ps": "shool",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa colgar hacia abajo; falda; por impl. hilván inferior: <font color='%COLOR_BLUE%'>falda, orilla, orla.</font>"
+  },
+  {
+    "id": "H7758",
+    "ti": "shôwlâl",
+    "le": "שֹׁולָל",
+    "pl": "sholál",
+    "ps": "sho-lawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שילל</b></font> <font color='%COLOR_PURPLE%'>sheilál</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Miq 1:8</span>); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7997')}>H7997</span>; desnudo (especialmente a pie descalzo); por impl. cautivo: <font color='%COLOR_BLUE%'>despojado.</font>"
+  },
+  {
+    "id": "H7759",
+    "ti": "Shûwlammîyth",
+    "le": "שׁוּלַמִּית",
+    "pl": "shulammít",
+    "ps": "shoo-lam-meeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7999')}>H7999</span>; pacífica (con el art. siempre prefijo, haciéndolo un nombre de cariño); shulamita, apodo de la reina de Salomón: <font color='%COLOR_BLUE%'>sulamita.</font>"
+  },
+  {
+    "id": "H7760",
+    "ti": "sûwm",
+    "le": "שׂוּם",
+    "pl": "sum",
+    "ps": "soom",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שים</b></font> <font color='%COLOR_PURPLE%'>sim</font>; raíz primaria; poner (usado en una gran variedad de aplicaciones, literalmente, figurativamente, infer. y elip.): <font color='%COLOR_BLUE%'>abandonar, abrir, acomodar, afirmar, ajustar, alzar, aplicar, ataviar, atesorar, cambiar, cargar, caso, ceñir, colocar, concierto, considerar, constituir, convertir, culpar, dar, decidir, decir, dejar, derramar, determinar, devolver, dirigir, disponer, echar, elegir, encomendar, enviar, escoger, establecer, exponer, fijar, guardar, hacer, imponer, mandar, meditar, meter, mirar, multiplicar, nombrar, notar, oponer, orden, ordenar, paso, pensar, poner, presencia, preservar, proponer, quitar, recaer, reduir, reflexionar, reparar, reunir, señalar, tornar, trazar, velar, vestir, volver,</font>"
+  },
+  {
+    "id": "H7761",
+    "ti": "sûwm",
+    "le": "שׂוּם",
+    "pl": "sum",
+    "ps": "soom",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7760')}>H7760</span>: <font color='%COLOR_BLUE%'>convertirse, dar, dar orden, poner, respetar.</font>"
+  },
+  {
+    "id": "H7762",
+    "ti": "shûwm",
+    "le": "שׁוּם",
+    "pl": "shum",
+    "ps": "shoom",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa exhalar; ajo (de su olor rancio): <font color='%COLOR_BLUE%'>ajo.</font>"
+  },
+  {
+    "id": "H7763",
+    "ti": "Shôwmêr",
+    "le": "שֹׁומֵר",
+    "pl": "Shomér",
+    "ps": "sho-mare'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שימר</b></font> <font color='%COLOR_PURPLE%'>Shomér</font>; participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8104')}>H8104</span>; cuidar; Shomer, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Somer.</font>"
+  },
+  {
+    "id": "H7764",
+    "ti": "Shûwnîy",
+    "le": "שׁוּנִי",
+    "pl": "Shuní",
+    "ps": "shoo-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa descansar; quieto; Shuni, un israelita.: <font color='%COLOR_BLUE%'>Suni.</font>"
+  },
+  {
+    "id": "H7765",
+    "ti": "Shûwnîy",
+    "le": "שׁוּנִי",
+    "pl": "shuní",
+    "ps": "shoo-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7764')}>H7764</span>; shunita (colectivamente) o descendiente de Suni: <font color='%COLOR_BLUE%'>sunita.</font>"
+  },
+  {
+    "id": "H7766",
+    "ti": "Shûwnêm",
+    "le": "שׁוּנֵם",
+    "pl": "Shuném",
+    "ps": "shoo-name'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7764')}>H7764</span>; quietamente; Shunem, un lugar en Pal: <font color='%COLOR_BLUE%'>Sunem.</font>"
+  },
+  {
+    "id": "H7767",
+    "ti": "Shûwnammîyth",
+    "le": "שׁוּנַמִּית",
+    "pl": "Shunammít",
+    "ps": "shoo-nam-meeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>genitivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7766')}>H7766</span>; Shunamita, o mujer habitante de Sunem: <font color='%COLOR_BLUE%'>sunamita.</font>"
+  },
+  {
+    "id": "H7768",
+    "ti": "shâvaʻ",
+    "le": "שָׁוַע",
+    "pl": "shavá",
+    "ps": "shaw-vah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente ser libre; pero usado solo caus. y refl. llamar a gritos (pidiendo ayuda, i.e. libertad de algún probablementelema): <font color='%COLOR_BLUE%'>clamar, dar voces, gritar.</font>"
+  },
+  {
+    "id": "H7769",
+    "ti": "shûwaʻ",
+    "le": "שׁוּעַ",
+    "pl": "shúa",
+    "ps": "shoo'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7768')}>H7768</span>; grito: <font color='%COLOR_BLUE%'>clamar, riqueza.</font>"
+  },
+  {
+    "id": "H7770",
+    "ti": "Shûwaʻ",
+    "le": "שׁוּעַ",
+    "pl": "Shúa",
+    "ps": "shoo'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7769')}>H7769</span>; Shúa, un cananita: <font color='%COLOR_BLUE%'>Súa.</font>"
+  },
+  {
+    "id": "H7771",
+    "ti": "shôwaʻ",
+    "le": "שֹׁועַ",
+    "pl": "shóa",
+    "ps": "sho'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7768')}>H7768</span> en el sentido original de libertad; noble, i.e. liberal, opulento; también (como sustantivo en el sentido der.) grito: <font color='%COLOR_BLUE%'>clamar, espléndido, rico.</font>"
+  },
+  {
+    "id": "H7772",
+    "ti": "Shôwaʻ",
+    "le": "שֹׁועַ",
+    "pl": "Shóa",
+    "ps": "sho'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1')}>H1</span>; rico; Shóa, pueblo oriental: <font color='%COLOR_BLUE%'>Soa.</font>"
+  },
+  {
+    "id": "H7773",
+    "ti": "shevaʻ",
+    "le": "שֶׁוַע",
+    "pl": "shéva",
+    "ps": "sheh'-vah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7768')}>H7768</span>; clamor, llamar a gritos: <font color='%COLOR_BLUE%'>clamor.</font>"
+  },
+  {
+    "id": "H7774",
+    "ti": "Shûwʻâʼ",
+    "le": "שׁוּעָא",
+    "pl": "Shuá",
+    "ps": "shoo-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7768')}>H7768</span>; riqueza; Shuá, una israelitas: <font color='%COLOR_BLUE%'>Súa.</font>"
+  },
+  {
+    "id": "H7775",
+    "ti": "shavʻâh",
+    "le": "שַׁוְעָה",
+    "pl": "shavá",
+    "ps": "shav-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3')}>H3</span>; griterío: <font color='%COLOR_BLUE%'>clamor, gemir.</font>"
+  },
+  {
+    "id": "H7776",
+    "ti": "shûwʻâl",
+    "le": "שׁוּעָל",
+    "pl": "shuál",
+    "ps": "shoo-awl'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שעל</b></font> <font color='%COLOR_PURPLE%'>shuál</font>; de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8168')}>H8168</span>; chacal (porque escarba para hacer madriguera): <font color='%COLOR_BLUE%'>chacal, zorra.</font>"
+  },
+  {
+    "id": "H7777",
+    "ti": "Shûwʻâl",
+    "le": "שׁוּעָל",
+    "pl": "Shuál",
+    "ps": "shoo-awl'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6')}>H6</span>; Shual, nombre de un israelita. y de un lugar en Palestina: <font color='%COLOR_BLUE%'>Sual, Súal.</font>"
+  },
+  {
+    "id": "H7778",
+    "ti": "shôwʻêr",
+    "le": "שֹׁועֵר",
+    "pl": "shoér",
+    "ps": "sho-are'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שיער</b></font> <font color='%COLOR_PURPLE%'>shoér</font>; participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8176')}>H8176</span> (como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8179')}>H8179</span>); conserje: <font color='%COLOR_BLUE%'>guarda, portero.</font>"
+  },
+  {
+    "id": "H7779",
+    "ti": "shûwph",
+    "le": "שׁוּף",
+    "pl": "shuf",
+    "ps": "shoof",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente bostezar, i.e. quedarse boquiabierto de; figurativamente abrumar: <font color='%COLOR_BLUE%'>encubrir, herir, quebrantar.</font>"
+  },
+  {
+    "id": "H7780",
+    "ti": "Shôwphâk",
+    "le": "שֹׁופָךְ",
+    "pl": "Shofák",
+    "ps": "sho-fawk'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8210')}>H8210</span>; derramado; Shofak, un sirio: <font color='%COLOR_BLUE%'>Sofac.</font>"
+  },
+  {
+    "id": "H7781",
+    "ti": "Shûwphâmîy",
+    "le": "שׁוּפָמִי",
+    "pl": "shufamí",
+    "ps": "shoo-faw-mee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8197')}>H8197</span>; shufamita (colectivamente) o descendiente de Sefufam: <font color='%COLOR_BLUE%'>sufamita.</font><p></p><font color='%COLOR_GREEN%'><b>שויפן</b></font> <font color='%COLOR_PURPLE%'>Shofán.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5855')}>H5855</span>."
+  },
+  {
+    "id": "H7782",
+    "ti": "shôwphâr",
+    "le": "שֹׁופָר",
+    "pl": "shofár",
+    "ps": "sho-far'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שיפר</b></font> <font color='%COLOR_PURPLE%'>shofár</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8231')}>H8231</span> en el sentido original de incidir; corneta (por dar un sonido claro) o cuerno curvo: <font color='%COLOR_BLUE%'>bocina, clarín, corneta, cuerno, trompeta.</font>"
+  },
+  {
+    "id": "H7783",
+    "ti": "shûwq",
+    "le": "שׁוּק",
+    "pl": "shuc",
+    "ps": "shook",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; correr detrás de o hacia, i.e. desbordarse: <font color='%COLOR_BLUE%'>rebosar.</font>"
+  },
+  {
+    "id": "H7784",
+    "ti": "shûwq",
+    "le": "שׁוּק",
+    "pl": "shuc",
+    "ps": "shook",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7783')}>H7783</span>; calle (porque corre hacia): <font color='%COLOR_BLUE%'>calle, plaza.</font>"
+  },
+  {
+    "id": "H7785",
+    "ti": "shôwq",
+    "le": "שֹׁוק",
+    "pl": "shoc",
+    "ps": "shoke",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7783')}>H7783</span>; la pierna (de abajo, como de un corredor): <font color='%COLOR_BLUE%'>agilidad, cadera, espaldilla, pierna.</font>"
+  },
+  {
+    "id": "H7786",
+    "ti": "sûwr",
+    "le": "שׂוּר",
+    "pl": "sur",
+    "ps": "soor",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente desterrar; por impl. gobernar (caus. coronar): <font color='%COLOR_BLUE%'>dominar, vencer.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5493')}>H5493</span>."
+  },
+  {
+    "id": "H7787",
+    "ti": "sûwr",
+    "le": "שׂוּר",
+    "pl": "sur",
+    "ps": "soor",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [más bien idéntico a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7786')}>H7786</span> mediante la idea de reducir a pedazos; Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4883')}>H4883</span>]; aserrar: <font color='%COLOR_BLUE%'>poner a trabajar.</font>"
+  },
+  {
+    "id": "H7788",
+    "ti": "shûwr",
+    "le": "שׁוּר",
+    "pl": "shur",
+    "ps": "shoor",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente volver, i.e. viajar alrededor (como prostituta o comerciante): <font color='%COLOR_BLUE%'>eran como tus caravanas, ir.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7891')}>H7891</span>."
+  },
+  {
+    "id": "H7789",
+    "ti": "shûwr",
+    "le": "שׁוּר",
+    "pl": "shur",
+    "ps": "shoor",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [más bien idéntico a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7788')}>H7788</span> mediante la idea de dar vueltas para inspeccionar]; espiar, i.e. (generalmente) examinar, (para el mal) acechar para, (para bien) cuidar de: <font color='%COLOR_BLUE%'>caso, conocer, considerar, entender, fijar, mirar, ver.</font>"
+  },
+  {
+    "id": "H7790",
+    "ti": "shûwr",
+    "le": "שׁוּר",
+    "pl": "shur",
+    "ps": "shoor",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7889')}>H7889</span>; enemigo (como que espera al acecho): <font color='%COLOR_BLUE%'>enemigo.</font>"
+  },
+  {
+    "id": "H7791",
+    "ti": "shûwr",
+    "le": "שׁוּר",
+    "pl": "shur",
+    "ps": "shoor",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7788')}>H7788</span>; pared (porque circunda): <font color='%COLOR_BLUE%'>muro, pared.</font>"
+  },
+  {
+    "id": "H7792",
+    "ti": "shûwr",
+    "le": "שׁוּר",
+    "pl": "shur",
+    "ps": "shoor",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7791')}>H7791</span>: <font color='%COLOR_BLUE%'>muro.</font>"
+  },
+  {
+    "id": "H7793",
+    "ti": "Shûwr",
+    "le": "שׁוּר",
+    "pl": "Shur",
+    "ps": "shoor",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7791')}>H7791</span>; Shur, una región del desierto: <font color='%COLOR_BLUE%'>Shur.</font>"
+  },
+  {
+    "id": "H7794",
+    "ti": "shôwr",
+    "le": "שֹׁור",
+    "pl": "shor",
+    "ps": "shore",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7788')}>H7788</span>; buey (como viajero): <font color='%COLOR_BLUE%'>becerro, buey, toro, tocar, vaca, pared [por error por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7791')}>H7791</span></font>]."
+  },
+  {
+    "id": "H7795",
+    "ti": "sôwrâh",
+    "le": "שֹׂורָה",
+    "pl": "shorá",
+    "ps": "so-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7786')}>H7786</span> en el sentido primaria de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5493')}>H5493</span>; propiamente anillo, i.e. (por anal.) hilera (adverbio): <font color='%COLOR_BLUE%'>en hilera.</font><p></p><font color='%COLOR_GREEN%'><b>שוירק</b></font> <font color='%COLOR_PURPLE%'>soréc.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8321')}>H8321</span>."
+  },
+  {
+    "id": "H7796",
+    "ti": "Sôwrêq",
+    "le": "שֹׂורֵק",
+    "pl": "Soréc",
+    "ps": "so-rake'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8321')}>H8321</span>; viña; Sorec, valle en Palestina: <font color='%COLOR_BLUE%'>Sorec.</font>"
+  },
+  {
+    "id": "H7797",
+    "ti": "sûws",
+    "le": "שׂוּשׂ",
+    "pl": "sus",
+    "ps": "soos",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שיש</b></font> <font color='%COLOR_PURPLE%'>sis</font>; raíz primaria; estar brillante, i.e. alegre: <font color='%COLOR_BLUE%'>alegrar, alegría, regocijar, gozar.</font>"
+  },
+  {
+    "id": "H7798",
+    "ti": "Shavshâʼ",
+    "le": "שַׁוְשָׁא",
+    "pl": "Shavshá",
+    "ps": "shav-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7797')}>H7797</span>; alegre; Shavshá, un israelita.: <font color='%COLOR_BLUE%'>Savsa.</font>"
+  },
+  {
+    "id": "H7799",
+    "ti": "shûwshan",
+    "le": "שׁוּשַׁן",
+    "pl": "shushán",
+    "ps": "shoo-shan'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>שוישן</b></font> <font color='%COLOR_PURPLE%'>shoshán</font>; o <font color='%COLOR_GREEN%'><b>שישן</b></font> <font color='%COLOR_PURPLE%'>shoshán</font>; y (femenino) <font color='%COLOR_GREEN%'><b>שוישנה</b></font> <font color='%COLOR_PURPLE%'>shoshaná</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7797')}>H7797</span>; lirio (por su blancura), como flor u ornamento arq.; también trompeta (recta de forma tubular): <font color='%COLOR_BLUE%'>lirio, lis.</font>"
+  },
+  {
+    "id": "H7800",
+    "ti": "Shûwshan",
+    "le": "שׁוּשַׁן",
+    "pl": "shushán",
+    "ps": "shoo-shan'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7799')}>H7799</span>; Shushán, un lugar en Pers.: <font color='%COLOR_BLUE%'>Susa.</font>"
+  }
+]

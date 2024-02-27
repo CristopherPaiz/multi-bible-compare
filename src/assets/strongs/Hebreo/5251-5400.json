@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H5251",
+    "ti": "nêç",
+    "le": "נֵס",
+    "pl": "nes",
+    "ps": "nace",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5264')}>H5264</span>; bandera; también vela; por impl. asta; generalmente señal; figurativamente símbolo: <font color='%COLOR_BLUE%'>asta, bandera, escarmiento, pendón, vela.</font>"
+  },
+  {
+    "id": "H5252",
+    "ti": "nᵉçibbâh",
+    "le": "נְסִבָּה",
+    "pl": "nesibbá",
+    "ps": "nes-ib-baw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5437')}>H5437</span>; propiamente ambiente, i.e. circunstancia o situación de asunto: <font color='%COLOR_BLUE%'>causa.</font>"
+  },
+  {
+    "id": "H5253",
+    "ti": "nâçag",
+    "le": "נָסַג",
+    "pl": "naság",
+    "ps": "naw-sag'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; retirarse: <font color='%COLOR_BLUE%'>alcanzar, apartar, recoger, reducir, retirar.</font><p></p><font color='%COLOR_GREEN%'><b>נסה</b></font> <font color='%COLOR_PURPLE%'>nesá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span>."
+  },
+  {
+    "id": "H5254",
+    "ti": "nâçâh",
+    "le": "נָסָה",
+    "pl": "nasá",
+    "ps": "naw-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; probar; por impl. intentar: <font color='%COLOR_BLUE%'>intentar, practicar, probar, hacer la prueba, tentar, tratar.</font>"
+  },
+  {
+    "id": "H5255",
+    "ti": "nâçach",
+    "le": "נָסַח",
+    "pl": "nasákj",
+    "ps": "naw-sakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; destrozar, arrancar: <font color='%COLOR_BLUE%'>arrancar, asolar.</font>"
+  },
+  {
+    "id": "H5256",
+    "ti": "nᵉçach",
+    "le": "נְסַח",
+    "pl": "nesákj",
+    "ps": "nes-akh'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5255')}>H5255</span>: <font color='%COLOR_BLUE%'>arrancar.</font>"
+  },
+  {
+    "id": "H5257",
+    "ti": "nᵉçîyk",
+    "le": "נְסִיךְ",
+    "pl": "nesíc",
+    "ps": "nes-eek'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5258')}>H5258</span>; propiamente algo derramado, i.e. libación; también imagen fundida; por impl. príncipe (por ser ungido): <font color='%COLOR_BLUE%'>imagen, libación, príncipe.</font>"
+  },
+  {
+    "id": "H5258",
+    "ti": "nâçak",
+    "le": "נָסַךְ",
+    "pl": "nasák",
+    "ps": "naw-sak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; derramar, espec. libación, o vaciar (metal); por anal. ungir un rey: <font color='%COLOR_BLUE%'>derramar, ofrecer, fundir, libar, verter.</font>"
+  },
+  {
+    "id": "H5259",
+    "ti": "nâçak",
+    "le": "נָסַךְ",
+    "pl": "nasák",
+    "ps": "naw-sak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [probablemente ident. con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5258')}>H5258</span> mediante la idea de fusión]; entretejer, i.e. (figurativamente) esparcir sobre: <font color='%COLOR_BLUE%'>envolver.</font>"
+  },
+  {
+    "id": "H5260",
+    "ti": "nᵉçak",
+    "le": "נְסַךְ",
+    "pl": "nesák",
+    "ps": "nes-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5258')}>H5258</span>; derramar una libación: <font color='%COLOR_BLUE%'>ofrecer.</font>"
+  },
+  {
+    "id": "H5261",
+    "ti": "nᵉçak",
+    "le": "נְסַךְ",
+    "pl": "nesák",
+    "ps": "nes-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5262')}>H5262</span>; libación: <font color='%COLOR_BLUE%'>libación.</font>"
+  },
+  {
+    "id": "H5262",
+    "ti": "neçek",
+    "le": "נֶסֶךְ",
+    "pl": "nések",
+    "ps": "neh'-sek",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נסך</b></font> <font color='%COLOR_PURPLE%'>nések</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5258')}>H5258</span>; libación; también ídolo fundido: <font color='%COLOR_BLUE%'>ídolo, imagen de fundición, libación, obra de fundición, ofrenda.</font><p></p><font color='%COLOR_GREEN%'><b>נסמן</b></font> <font color='%COLOR_PURPLE%'>nismán.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5567')}>H5567</span>."
+  },
+  {
+    "id": "H5263",
+    "ti": "nâçaç",
+    "le": "נָסַס",
+    "pl": "nasás",
+    "ps": "naw-sas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; desvanecerse, i.e. estar enfermo: <font color='%COLOR_BLUE%'>en derrota.</font>"
+  },
+  {
+    "id": "H5264",
+    "ti": "nâçaç",
+    "le": "נָסַס",
+    "pl": "nasás",
+    "ps": "naw-sas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; brillar desde lejos, i.e. ser conspicuo como señal; o más bien tal vez denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5251')}>H5251</span> [e ident. con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5263')}>H5263</span>, mediante la idea de una bandera que ondea al viento]; elevar un rayo: <font color='%COLOR_BLUE%'>enaltecer.</font>"
+  },
+  {
+    "id": "H5265",
+    "ti": "nâçaʻ",
+    "le": "נָסַע",
+    "pl": "nasá",
+    "ps": "naw-sah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente tirar hacia arriba, espec. las estacas de la tienda, i.e. empezar un viaje: <font color='%COLOR_BLUE%'>apartar, -se, aparte, arrancar, ir, marcha, marchar, mover, mudar, partir, pasar, poner, salir, traer, venir.</font>"
+  },
+  {
+    "id": "H5266",
+    "ti": "nâçaq",
+    "le": "נָסַק",
+    "pl": "nasác",
+    "ps": "naw-sak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; subir: <font color='%COLOR_BLUE%'>subir.</font>"
+  },
+  {
+    "id": "H5267",
+    "ti": "nᵉçaq",
+    "le": "נְסַק",
+    "pl": "nesác",
+    "ps": "nes-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5266')}>H5266</span>: <font color='%COLOR_BLUE%'>alzar, sacar.</font>"
+  },
+  {
+    "id": "H5268",
+    "ti": "Niçrôk",
+    "le": "נִסְרֹךְ",
+    "pl": "Nisrók",
+    "ps": "nis-roke'",
+    "df": "<font color='%COLOR_GREEN%'></font>de origen extranjero; Nisroc, ídolo babilonio: <font color='%COLOR_BLUE%'>Nisroc.</font>"
+  },
+  {
+    "id": "H5269",
+    "ti": "Nêʻâh",
+    "le": "נֵעָה",
+    "pl": "Neá",
+    "ps": "nay-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5128')}>H5128</span>; movimiento; Neá, un lugar en Palestina: <font color='%COLOR_BLUE%'>Nea.</font>"
+  },
+  {
+    "id": "H5270",
+    "ti": "Nôʻâh",
+    "le": "נֹעָה",
+    "pl": "Noá",
+    "ps": "no-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5128')}>H5128</span>; movimiento; Noa, una israelita: <font color='%COLOR_BLUE%'>Noa.</font>"
+  },
+  {
+    "id": "H5271",
+    "ti": "nâʻûwr",
+    "le": "נָעוּר",
+    "pl": "naúr",
+    "ps": "naw-oor'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נער</b></font> <font color='%COLOR_PURPLE%'>naúr</font>; y (femenino) <font color='%COLOR_GREEN%'><b>נערה</b></font> <font color='%COLOR_PURPLE%'>neurá</font>; propiamente participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5288')}>H5288</span> como denominativo; (solo en plural colect. o enf.) juventud, el estado (juventud) o las personas (jóvenes): <font color='%COLOR_BLUE%'>joven, juventud.</font>"
+  },
+  {
+    "id": "H5272",
+    "ti": "Nᵉʻîyʼêl",
+    "le": "נְעִיאֵל",
+    "pl": "Neiyél",
+    "ps": "neh-ee-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5128')}>H5128</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; movido por Dios; Neiel, un lugar en Palestina: <font color='%COLOR_BLUE%'>Neiel.</font>"
+  },
+  {
+    "id": "H5273",
+    "ti": "nâʻîym",
+    "le": "נָעִים",
+    "pl": "naim",
+    "ps": "naw-eem'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5276')}>H5276</span>; delicioso (obj. o subj., lit. o figurativamente): <font color='%COLOR_BLUE%'>agradable, deleitoso, delicia, delicioso, dicha, dulce, suave.</font>"
+  },
+  {
+    "id": "H5274",
+    "ti": "nâʻal",
+    "le": "נָעַל",
+    "pl": "naál",
+    "ps": "naw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente sujetar, i.e. con una barra o cuerda; de aquí, (denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5275')}>H5275</span>), sandalia, i.e. calzado con pantuflas: <font color='%COLOR_BLUE%'>calzado, calzar, cerrar, cerrojo.</font>"
+  },
+  {
+    "id": "H5275",
+    "ti": "naʻal",
+    "le": "נַעַל",
+    "pl": "naál",
+    "ps": "nah'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>נעלה</b></font> <font color='%COLOR_PURPLE%'>naalá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5274')}>H5274</span>; propiamente lengüeta de sandalia; por extens. sandalia o pantufla (a veces como símbolo de algo ocupado, rehusar casarse, o de algo sin valor): <font color='%COLOR_BLUE%'>calzado, sandalia, zapato.</font>"
+  },
+  {
+    "id": "H5276",
+    "ti": "nâʻêm",
+    "le": "נָעֵם",
+    "pl": "naém",
+    "ps": "naw-ame'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; mostrarse de acuerdo (lit. o figurativamente): <font color='%COLOR_BLUE%'>deleitoso, dulce, felicidad, gratísimo, grato, hermoso, sabroso, verdadero.</font>"
+  },
+  {
+    "id": "H5277",
+    "ti": "Naʻam",
+    "le": "נַעַם",
+    "pl": "náam",
+    "ps": "nah'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5276')}>H5276</span>; placer; Naam, un israelita.: <font color='%COLOR_BLUE%'>Naam.</font>"
+  },
+  {
+    "id": "H5278",
+    "ti": "nôʻam",
+    "le": "נֹעַם",
+    "pl": "nóam",
+    "ps": "no'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5276')}>H5276</span>; simpatía, i.e. deleite, apropiado, esplendor o gracia: <font color='%COLOR_BLUE%'>gracia, hermosura, luz, deleitoso, suave.</font>"
+  },
+  {
+    "id": "H5279",
+    "ti": "Naʻămâh",
+    "le": "נַעֲמָה",
+    "pl": "Naamá",
+    "ps": "nah-am-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5277')}>H5277</span>; placentera; Naama, nombre de una mujer antediluviana, de una amonita, y de lugar en Palestina: <font color='%COLOR_BLUE%'>Naama.</font>"
+  },
+  {
+    "id": "H5280",
+    "ti": "Naʻămîy",
+    "le": "נַעֲמִי",
+    "pl": "naamí",
+    "ps": "nah-am-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5283')}>H5283</span>; naamanita, o desc. de Naamán (colectivamente): <font color='%COLOR_BLUE%'>naamita.</font>"
+  },
+  {
+    "id": "H5281",
+    "ti": "Noʻŏmîy",
+    "le": "נׇעֳמִי",
+    "pl": "Noomí",
+    "ps": "no-om-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5278')}>H5278</span>; placentera; Noemí, una israelita: <font color='%COLOR_BLUE%'>Noemí.</font>"
+  },
+  {
+    "id": "H5282",
+    "ti": "naʻămân",
+    "le": "נַעֲמָן",
+    "pl": "naamán",
+    "ps": "nah-am-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5276')}>H5276</span>; agradable, placentero (plural con concr.): <font color='%COLOR_BLUE%'>agradable.</font>"
+  },
+  {
+    "id": "H5283",
+    "ti": "Naʻămân",
+    "le": "נַעֲמָן",
+    "pl": "Naamán",
+    "ps": "nah-am-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5282')}>H5282</span>; Naamán, nombre de un israelita. y de un damasceno: <font color='%COLOR_BLUE%'>Naamán.</font>"
+  },
+  {
+    "id": "H5284",
+    "ti": "Naʻămâthîy",
+    "le": "נַעֲמָתִי",
+    "pl": "naamatí",
+    "ps": "nah-am-aw-thee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de lugar correspondiente en nombre (pero no ident.) a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5279')}>H5279</span>; naamatita, o habitante de Naama: <font color='%COLOR_BLUE%'>naamatita.</font>"
+  },
+  {
+    "id": "H5285",
+    "ti": "naʻătsûwts",
+    "le": "נַעֲצוּץ",
+    "pl": "natsúts",
+    "ps": "nah-ats-oots'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que sign. espinar; probablemente espino; por impl. matorral de espinos: <font color='%COLOR_BLUE%'>zarzal.</font>"
+  },
+  {
+    "id": "H5286",
+    "ti": "nâʻar",
+    "le": "נָעַר",
+    "pl": "naár",
+    "ps": "naw-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; gruñir: <font color='%COLOR_BLUE%'>gruñir.</font>"
+  },
+  {
+    "id": "H5287",
+    "ti": "nâʻar",
+    "le": "נָעַר",
+    "pl": "naár",
+    "ps": "naw-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [probablemente ident. con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5286')}>H5286</span>, mediante la idea del sonido del roce de la melena, que usualmente acompaña el rugido del león]; retozar: <font color='%COLOR_BLUE%'>arrojar, derribar, escapar, -se, sacudir, -se.</font>"
+  },
+  {
+    "id": "H5288",
+    "ti": "naʻar",
+    "le": "נַעַר",
+    "pl": "náar",
+    "ps": "nah'-ar",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5287')}>H5287</span>; (concretamente)muchacho (como act.), de edad de la infancia hasta la adolescencia; por impl. sirviente; también (por interc. de sexo), muchacha (de amplitud similar de edad): <font color='%COLOR_BLUE%'>cortesano, criada, -o, hijo, (hombre) joven, muchacho, niño, pastor, pequeño, servidor, siervo, sirviente.</font>"
+  },
+  {
+    "id": "H5289",
+    "ti": "naʻar",
+    "le": "נַעַר",
+    "pl": "náar",
+    "ps": "nah'-ar",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5287')}>H5287</span> en su sentido der. de lanzar de un lado a otro; vagabundo, nómada: <font color='%COLOR_BLUE%'>pequeña.</font>"
+  },
+  {
+    "id": "H5290",
+    "ti": "nôʻar",
+    "le": "נֹעַר",
+    "pl": "nóar",
+    "ps": "no'-ar",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5287')}>H5287</span>; (abst.) niñez [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5288')}>H5288</span>]: <font color='%COLOR_BLUE%'>niñez, niño, juventud.</font><p></p><font color='%COLOR_GREEN%'><b>נער</b></font> <font color='%COLOR_PURPLE%'>naúr.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5271')}>H5271</span>."
+  },
+  {
+    "id": "H5291",
+    "ti": "naʻărâh",
+    "le": "נַעֲרָה",
+    "pl": "naará",
+    "ps": "nah-ar-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5288')}>H5288</span>; niña, muchacha (de la infancia a la adolescencia): <font color='%COLOR_BLUE%'>criada, doncella, (mujer) joven, muchacha, niña.</font>"
+  },
+  {
+    "id": "H5292",
+    "ti": "Naʻărâh",
+    "le": "נַעֲרָה",
+    "pl": "Naará",
+    "ps": "nah-ar-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5291')}>H5291</span>; Naara, nombre de una israelita, y de un lugar en Palestina: <font color='%COLOR_BLUE%'>Naaara, Naarat.</font><p></p><font color='%COLOR_GREEN%'><b>נערה</b></font> <font color='%COLOR_PURPLE%'>neurá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5271')}>H5271</span>."
+  },
+  {
+    "id": "H5293",
+    "ti": "Naʻăray",
+    "le": "נַעֲרַי",
+    "pl": "Naaraí",
+    "ps": "nah-ar-ah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5288')}>H5288</span>; juvenil; Naarai, un israelita.: <font color='%COLOR_BLUE%'>Naarai.</font>"
+  },
+  {
+    "id": "H5294",
+    "ti": "Nᵉʻaryâh",
+    "le": "נְעַרְיָה",
+    "pl": "Nearyá",
+    "ps": "neh-ar-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5288')}>H5288</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; siervo de Jah; Nearías, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Nearías.</font>"
+  },
+  {
+    "id": "H5295",
+    "ti": "Naʻărân",
+    "le": "נַעֲרָן",
+    "pl": "Naarán",
+    "ps": "nah-ar-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5288')}>H5288</span>; juvenil; Naarán, un lugar en Palestina: <font color='%COLOR_BLUE%'>Naarán.</font>"
+  },
+  {
+    "id": "H5296",
+    "ti": "nᵉʻôreth",
+    "le": "נְעֹרֶת",
+    "pl": "neóret",
+    "ps": "neh-o'-reth",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5287')}>H5287</span>; algo sacudido, i.e. estopa (como los desechos del lino): <font color='%COLOR_BLUE%'>estopa.</font><p></p><font color='%COLOR_GREEN%'><b>נערתה</b></font> <font color='%COLOR_PURPLE%'>Naaratá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5292')}>H5292</span>."
+  },
+  {
+    "id": "H5297",
+    "ti": "Nôph",
+    "le": "נֹף",
+    "pl": "Nof",
+    "ps": "nofe",
+    "df": "<font color='%COLOR_GREEN%'></font>variante de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4644')}>H4644</span>; Nof, capital del Alto Egipto: <font color='%COLOR_BLUE%'>Menfis.</font>"
+  },
+  {
+    "id": "H5298",
+    "ti": "Nepheg",
+    "le": "נֶפֶג",
+    "pl": "Néfeg",
+    "ps": "neh'-feg",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que probablemente sign. brotar; retoño; Nefeg, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Nefeg.</font>"
+  },
+  {
+    "id": "H5299",
+    "ti": "nâphâh",
+    "le": "נָפָה",
+    "pl": "nafá",
+    "ps": "naw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5130')}>H5130</span> en el sentido de levantar; altura; también cedazo: <font color='%COLOR_BLUE%'>criba, provincia, región, territorio.</font>"
+  },
+  {
+    "id": "H5300",
+    "ti": "Nᵉphûwshᵉçîym",
+    "le": "נְפוּשְׁסִים",
+    "pl": "nefushesím",
+    "ps": "nef-oo-shes-eem'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5304')}>H5304</span>; Nefushesim, sirviente del templo: <font color='%COLOR_BLUE%'>Nefisesim.</font>"
+  },
+  {
+    "id": "H5301",
+    "ti": "nâphach",
+    "le": "נָפַח",
+    "pl": "nafákj",
+    "ps": "naw-fakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; soplar, en varios aplicaciones (lit., inflar, soplar duro, esparcir, encender, expirar; figurativamente, desestimar): <font color='%COLOR_BLUE%'>afligir, atizar, despreciar, disipar, encender, hervir, llenarse de dolor, soplar, soplo.</font>"
+  },
+  {
+    "id": "H5302",
+    "ti": "Nôphach",
+    "le": "נֹפַח",
+    "pl": "Nófakj",
+    "ps": "no'-fakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5301')}>H5301</span>; racha de viento; Nofaj, un lugar en Moab: <font color='%COLOR_BLUE%'>Nofa.</font>"
+  },
+  {
+    "id": "H5303",
+    "ti": "nᵉphîyl",
+    "le": "נְפִיל",
+    "pl": "nefíl",
+    "ps": "nef-eel'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נפל</b></font> <font color='%COLOR_PURPLE%'>nefíl</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5307')}>H5307</span>; propiamente, derribador, i.e. patán o tirano: <font color='%COLOR_BLUE%'>gigante.</font>"
+  },
+  {
+    "id": "H5304",
+    "ti": "Nᵉphîyçîym",
+    "le": "נְפִיסִים",
+    "pl": "nefisím",
+    "ps": "nef-ee-seem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de una raíz que no se usa que sign. esparcir; expansiones; nefisim, sirviente del templo: <font color='%COLOR_BLUE%'>Nefusim.</font>"
+  },
+  {
+    "id": "H5305",
+    "ti": "Nâphîysh",
+    "le": "נָפִישׁ",
+    "pl": "nafísh",
+    "ps": "naw-feesh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5314')}>H5314</span>; refrescado; Nafish, un hijo de Ismael, y sus desc.: <font color='%COLOR_BLUE%'>Nafis.</font>"
+  },
+  {
+    "id": "H5306",
+    "ti": "nôphek",
+    "le": "נֹפֶךְ",
+    "pl": "nófek",
+    "ps": "no'-fek",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que sign. brillar; relucir; una gema, probablemente granate: <font color='%COLOR_BLUE%'>esmeralda, perla.</font>"
+  },
+  {
+    "id": "H5307",
+    "ti": "nâphal",
+    "le": "נָפַל",
+    "pl": "nafál",
+    "ps": "naw-fal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; caer, en una gran variedad de aplicaciones (intr. o caus., lit. o figurativamente): <font color='%COLOR_BLUE%'>abatir, aceptar, acometer, adherir, apartar, apoderarse, arrojar, atacar, bajar, caer, caída, decaer, derramar, derribar, derrumbar, descender, desertor, desmayar, echar, elevar, faltar, humillar, llegar, matar, hacer morir, muerto, omitir, perder, perecer, posar, postrar, repartir, resolver, ruina, saltar, talar, tender, yacer.</font>"
+  },
+  {
+    "id": "H5308",
+    "ti": "nᵉphal",
+    "le": "נְפַל",
+    "pl": "nefál",
+    "ps": "nef-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5307')}>H5307</span>: <font color='%COLOR_BLUE%'>caer, ser necesario, postrarse, venir.</font>"
+  },
+  {
+    "id": "H5309",
+    "ti": "nephel",
+    "le": "נֶפֶל",
+    "pl": "néfel",
+    "ps": "neh'-fel",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נפל</b></font> <font color='%COLOR_PURPLE%'>néfel</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5307')}>H5307</span>; algo caído, i.e. aborto: <font color='%COLOR_BLUE%'>abortivo, nacer muerto.</font><p></p><font color='%COLOR_GREEN%'><b>נפל</b></font> <font color='%COLOR_PURPLE%'>nefíl.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5303')}>H5303</span>."
+  },
+  {
+    "id": "H5310",
+    "ti": "nâphats",
+    "le": "נָפַץ",
+    "pl": "nafáts",
+    "ps": "naw-fats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; triturar, o esparcir: <font color='%COLOR_BLUE%'>desatar, desertar, desmenuzar, dispersión, esparcir, estrellar, quebrantar, quebrar, romper.</font>"
+  },
+  {
+    "id": "H5311",
+    "ti": "nephets",
+    "le": "נֶפֶץ",
+    "pl": "néfets",
+    "ps": "neh'-fets",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5310')}>H5310</span>; tormenta, tempestad (como que dispersa): <font color='%COLOR_BLUE%'>torbellino.</font>"
+  },
+  {
+    "id": "H5312",
+    "ti": "nᵉphaq",
+    "le": "נְפַק",
+    "pl": "nefác",
+    "ps": "nef-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); raíz primaria; emitir; caus. sacar: <font color='%COLOR_BLUE%'>aparecer, repartir, sacar, salir.</font>"
+  },
+  {
+    "id": "H5313",
+    "ti": "niphqâʼ",
+    "le": "נִפְקָא",
+    "pl": "nifcá",
+    "ps": "nif-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5312')}>H5312</span>; salida, i.e. gasto: <font color='%COLOR_BLUE%'>gasto.</font>"
+  },
+  {
+    "id": "H5314",
+    "ti": "nâphash",
+    "le": "נָפַשׁ",
+    "pl": "nafásh",
+    "ps": "naw-fash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; respirar; pas., ser soplado sobre, i.e. (figurativamente) refrescado (como por una corriente de aire): <font color='%COLOR_BLUE%'>refrescarse, refrigerio.</font>"
+  },
+  {
+    "id": "H5315",
+    "ti": "nephesh",
+    "le": "נֶפֶשׁ",
+    "pl": "néfesh",
+    "ps": "neh'-fesh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5314')}>H5314</span>; propiamente criatura que respira, i.e. animal de (abst.) vitalidad; usado muy ampliamente en sentido lit., acomodado o figurativamente (corporal o ment.): <font color='%COLOR_BLUE%'>aliento, alma, anhelar, animal, ánimo, antojo, apetito, cadáver, contentamiento, corazón, cordial, cuerpo, dejar, deseo, esclavo, estómago, gusto, hombre, interior, íntimo, lujuria, matar, mente, muerte, muerto, persona, querer, ser, vida, voluntad.</font>"
+  },
+  {
+    "id": "H5316",
+    "ti": "nepheth",
+    "le": "נֶפֶת",
+    "pl": "néfet",
+    "ps": "neh'-feth",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5299')}>H5299</span>; altura: <font color='%COLOR_BLUE%'>provincia.</font>"
+  },
+  {
+    "id": "H5317",
+    "ti": "nôpheth",
+    "le": "נֹפֶת",
+    "pl": "nófet",
+    "ps": "no'-feth",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5130')}>H5130</span> en el sentido de destrozar sacudiendo; goteo, i.e. de miel (del panal): <font color='%COLOR_BLUE%'>panal de miel.</font>"
+  },
+  {
+    "id": "H5318",
+    "ti": "Nephtôwach",
+    "le": "נֶפְתֹּוחַ",
+    "pl": "Neftóakj",
+    "ps": "nef-to'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6605')}>H6605</span>; abierto, i.e. fuente; Neftoac, un lugar en Palestina: <font color='%COLOR_BLUE%'>Neftoa.</font>"
+  },
+  {
+    "id": "H5319",
+    "ti": "naphtûwl",
+    "le": "נַפְתּוּל",
+    "pl": "naftúl",
+    "ps": "naf-tool'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6617')}>H6617</span>; propiamente luchado; pero usado (en plural) trans., lucha, conflicto: <font color='%COLOR_BLUE%'>lucha.</font>"
+  },
+  {
+    "id": "H5320",
+    "ti": "Naphtuchîym",
+    "le": "נַפְתֻּחִים",
+    "pl": "Naftukjím",
+    "ps": "naf-too-kheem",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de origen extranjero, Naftujim, tribu egipcia: <font color='%COLOR_BLUE%'>Naftuhim.</font>"
+  },
+  {
+    "id": "H5321",
+    "ti": "Naphtâlîy",
+    "le": "נַפְתָּלִי",
+    "pl": "Naftalí",
+    "ps": "naf-taw-lee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6617')}>H6617</span>; mi lucha; Neftalí, un hijo de Jacob, la tribu de sus desc., y su territorio: <font color='%COLOR_BLUE%'>Neftalí.</font>"
+  },
+  {
+    "id": "H5322",
+    "ti": "nêts",
+    "le": "נֵץ",
+    "pl": "nets",
+    "ps": "nayts",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5340')}>H5340</span>; flor (por su brillo); también halcón (por su velocidad relámpago): <font color='%COLOR_BLUE%'>flor, gavilán, arrojar.</font>"
+  },
+  {
+    "id": "H5323",
+    "ti": "nâtsâʼ",
+    "le": "נָצָא",
+    "pl": "natsá",
+    "ps": "naw-tsaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; alejarse: <font color='%COLOR_BLUE%'>irse volando.</font>"
+  },
+  {
+    "id": "H5324",
+    "ti": "nâtsab",
+    "le": "נָצַב",
+    "pl": "natsáb",
+    "ps": "naw-tsab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estación, en varias aplicaciones (lit. o figurativamente): <font color='%COLOR_BLUE%'>afilar, afirmar, asegurar, componer, derecho, detener, erigir, establecer, fijar, gobernador, levantar, oficial, permanecer, pilar, presentar, presidir.</font><p></p><font color='%COLOR_GREEN%'><b>נצב</b></font> <font color='%COLOR_PURPLE%'>netsíb.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5333')}>H5333</span>."
+  },
+  {
+    "id": "H5325",
+    "ti": "nitstsâb",
+    "le": "נִצָּב",
+    "pl": "nitstsáb",
+    "ps": "nits-twawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5324')}>H5324</span>; fijo, i.e. manija: <font color='%COLOR_BLUE%'>empuñadura.</font>"
+  },
+  {
+    "id": "H5326",
+    "ti": "nitsbâh",
+    "le": "נִצְבָּה",
+    "pl": "nitsbá",
+    "ps": "nits-baw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5324')}>H5324</span>; fijo, i.e. firmeza: <font color='%COLOR_BLUE%'>fuerza.</font>"
+  },
+  {
+    "id": "H5327",
+    "ti": "nâtsâh",
+    "le": "נָצָה",
+    "pl": "natsá",
+    "ps": "naw-tsaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente salir, avanzar, i.e. (por impl.) ser expulsado, y (consecuentemente) desolado; caus. quedar desolado; también (espec.), pelear: <font color='%COLOR_BLUE%'>asolar, escombro, tener guerra contra, rebelarse, reñir.</font><p></p><font color='%COLOR_GREEN%'><b>ניצה</b></font> <font color='%COLOR_PURPLE%'>notsá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5133')}>H5133</span>."
+  },
+  {
+    "id": "H5328",
+    "ti": "nitstsâh",
+    "le": "נִצָּה",
+    "pl": "nitstsá",
+    "ps": "nits-tsaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5322')}>H5322</span>; florecimiento: <font color='%COLOR_BLUE%'>flor.</font><p></p><font color='%COLOR_GREEN%'><b>נצורה</b></font> <font color='%COLOR_PURPLE%'>netsurá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5341')}>H5341</span>."
+  },
+  {
+    "id": "H5329",
+    "ti": "nâtsach",
+    "le": "נָצַח",
+    "pl": "natsákj",
+    "ps": "naw-tsakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente brillar, relucir desde lejos, i.e. ser eminente (como superintendente, espec. de los cultos del templo y su música); también (como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5331')}>H5331</span>), ser permanente: <font color='%COLOR_BLUE%'>activar, asistir, cantor, capataz, dirigir, jefe, músico principal, velar, vigilar.</font>"
+  },
+  {
+    "id": "H5330",
+    "ti": "nᵉtsach",
+    "le": "נְצַח",
+    "pl": "netsákj",
+    "ps": "nets-akh'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5329')}>H5329</span>; llegar a ser principal: <font color='%COLOR_BLUE%'>ser superior.</font>"
+  },
+  {
+    "id": "H5331",
+    "ti": "netsach",
+    "le": "נֶצַח",
+    "pl": "nétsakj",
+    "ps": "neh'-tsakh",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נצח</b></font> <font color='%COLOR_PURPLE%'>nétsakj</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5329')}>H5329</span>; propiamente meta, blanco, i.e. el objeto brillante a la distancia hacia el cual se viaja; de aquí, (figurativamente) esplendor, o (subj.) veracidad, u (obj.) confianza; pero usualmente (adv.), continuamente (i.e. hasta el punto más distante a la vista): <font color='%COLOR_BLUE%'>eterno, fuerza, gloria, permanecer, perpetuamente, perpetuo, siempre, victoria.</font>"
+  },
+  {
+    "id": "H5332",
+    "ti": "Nêtsach",
+    "le": "נֵצַח",
+    "pl": "nétsakj",
+    "ps": "nay'-tsakh",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente ident. con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5331')}>H5331</span>, mediante la idea de brillo de color; jugo de la uva (por ser rojo sangre): <font color='%COLOR_BLUE%'>sangre.</font>"
+  },
+  {
+    "id": "H5333",
+    "ti": "nᵉtsîyb",
+    "le": "נְצִיב",
+    "pl": "netsíb",
+    "ps": "nets-eeb'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נצב</b></font> <font color='%COLOR_PURPLE%'>netsíb</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5324')}>H5324</span>; algo estacionario, i.e. prefecto, puesto militar, estatua: <font color='%COLOR_BLUE%'>estatua, gobernador, guarnición.</font>"
+  },
+  {
+    "id": "H5334",
+    "ti": "Nᵉtsîyb",
+    "le": "נְצִיב",
+    "pl": "Netsíb",
+    "ps": "nets-eeb'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5333')}>H5333</span>; estación; Netsib, un lugar en Palestina: <font color='%COLOR_BLUE%'>Nezib.</font>"
+  },
+  {
+    "id": "H5335",
+    "ti": "nᵉtsîyach",
+    "le": "נְצִיחַ",
+    "pl": "Netsíakj",
+    "ps": "nets-ee'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5329')}>H5329</span>; conspicuo; Netsiaj, sirviente del templo: <font color='%COLOR_BLUE%'>Nezía.</font>"
+  },
+  {
+    "id": "H5336",
+    "ti": "nâtsîyr",
+    "le": "נָצִיר",
+    "pl": "natsíir",
+    "ps": "naw-tsere'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5341')}>H5341</span>; propiamente conservador; pero usado pas., entregado: <font color='%COLOR_BLUE%'>remanente.</font>"
+  },
+  {
+    "id": "H5337",
+    "ti": "nâtsal",
+    "le": "נָצַל",
+    "pl": "natsál",
+    "ps": "naw-tsal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; arrebatar, sea en sentido bueno o malo: <font color='%COLOR_BLUE%'>arrebatar, defender, despojar, entregar, escapar, huir, libertar, librar, libre, opresor, quitar, recobrar, redimir, sacar, salvar, separar.</font>"
+  },
+  {
+    "id": "H5338",
+    "ti": "nᵉtsal",
+    "le": "נְצַל",
+    "pl": "netsál",
+    "ps": "nets-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5337')}>H5337</span>; desenredar, soltar: <font color='%COLOR_BLUE%'>librar.</font>"
+  },
+  {
+    "id": "H5339",
+    "ti": "nitstsân",
+    "le": "נִצָּן",
+    "pl": "nitsán",
+    "ps": "nits-tsawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5322')}>H5322</span>; florecer: <font color='%COLOR_BLUE%'>flor.</font>"
+  },
+  {
+    "id": "H5340",
+    "ti": "nâtsats",
+    "le": "נָצַץ",
+    "pl": "natsáts",
+    "ps": "naw-tsats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; relumbrar, i.e. ser de brillantes colores: <font color='%COLOR_BLUE%'>centellear.</font>"
+  },
+  {
+    "id": "H5341",
+    "ti": "nâtsar",
+    "le": "נָצַר",
+    "pl": "natsár",
+    "ps": "naw-tsar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; guardar, en buen sentido (proteger, mantener, obedecer, etc.) o en mal sentido (esconder, etc.): <font color='%COLOR_BLUE%'>asediar, asolar, astuto, atalaya, conservar, cuidar, cumplir, esconder, guarda, guardar, librar, mirar, oculto, preservar, retener, velar.</font>"
+  },
+  {
+    "id": "H5342",
+    "ti": "nêtser",
+    "le": "נֵצֶר",
+    "pl": "nétser",
+    "ps": "nay'-tser",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5341')}>H5341</span> en el sentido de verdor como color reluciente; retoño; figurativamente a descendiente: <font color='%COLOR_BLUE%'>renuevo, vástago.</font>"
+  },
+  {
+    "id": "H5343",
+    "ti": "nᵉqêʼ",
+    "le": "נְקֵא",
+    "pl": "nequé",
+    "ps": "nek-ay'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5352')}>H5352</span>; limpio: <font color='%COLOR_BLUE%'>limpio.</font>"
+  },
+  {
+    "id": "H5344",
+    "ti": "nâqab",
+    "le": "נָקַב",
+    "pl": "nacáb",
+    "ps": "naw-kab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; perforar, lit. (perforar, con mucha o poca violencia) o figurativamente (especificar, designar, calumniar): <font color='%COLOR_BLUE%'>atravesar, blasfemar, declarar, designar, horadar, maldecir, notable, roto, señalar, traspasar.</font>"
+  },
+  {
+    "id": "H5345",
+    "ti": "neqeb",
+    "le": "נֶקֶב",
+    "pl": "néqueb",
+    "ps": "neh'keb",
+    "df": "<font color='%COLOR_GREEN%'></font>buril (para una gema): <font color='%COLOR_BLUE%'>flauta.</font>"
+  },
+  {
+    "id": "H5346",
+    "ti": "Neqeb",
+    "le": "נֶקֶב",
+    "pl": "néqueb",
+    "ps": "neh'-keb",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5345')}>H5345</span>; vallecito; Nequeb, un lugar en Palestina: <font color='%COLOR_BLUE%'>(Adami-)neceb.</font>"
+  },
+  {
+    "id": "H5347",
+    "ti": "nᵉqêbâh",
+    "le": "נְקֵבָה",
+    "pl": "nequebá",
+    "ps": "nek-ay-baw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5344')}>H5344</span>; hembra (de forma sexual femenina): <font color='%COLOR_BLUE%'>hembra, mujer.</font>"
+  },
+  {
+    "id": "H5348",
+    "ti": "nâqôd",
+    "le": "נָקֹד",
+    "pl": "nacód",
+    "ps": "naw-kode'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que sign. marcar (por perforar o marcar); manchado: <font color='%COLOR_BLUE%'>pintado, salpicado.</font>"
+  },
+  {
+    "id": "H5349",
+    "ti": "nôqêd",
+    "le": "נֹקֵד",
+    "pl": "noquéd",
+    "ps": "no-kade'",
+    "df": "<font color='%COLOR_GREEN%'></font>part. act. de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5348')}>H5348</span>; observador (de ovejas o reses), i.e. el dueño o cuidador (que por eso las marca): <font color='%COLOR_BLUE%'>pastor.</font>"
+  },
+  {
+    "id": "H5350",
+    "ti": "niqqud",
+    "le": "נִקֻּד",
+    "pl": "niccúd",
+    "ps": "nik-kood'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5348')}>H5348</span>; migaja (por ser despedazado en pedacitos); también galleta (por ser perforada con puntos): <font color='%COLOR_BLUE%'>mohoso, torta.</font>"
+  },
+  {
+    "id": "H5351",
+    "ti": "nᵉquddâh",
+    "le": "נְקֻדָּה",
+    "pl": "necuddá",
+    "ps": "ned-ood-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5348')}>H5348</span>; jefe: <font color='%COLOR_BLUE%'>tachonar.</font>"
+  },
+  {
+    "id": "H5352",
+    "ti": "nâqâh",
+    "le": "נָקָה",
+    "pl": "nacá",
+    "ps": "naw-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ser (o hacer) limpio (lit. o figurativamente); por impl. (en un sentido adverso) estar desnudo, i.e. extirpado: <font color='%COLOR_BLUE%'>absorber, castigar, castigo, culpa, dejar, desamparar, destruir, dejar impune, inocente, librar, libre, limpiar, limpio, de ningún modo.</font>"
+  },
+  {
+    "id": "H5353",
+    "ti": "Nᵉqôwdâʼ",
+    "le": "נְקֹודָא",
+    "pl": "Necodá",
+    "ps": "nek-o-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5348')}>H5348</span> (en sentido figurativamente de marcado); distinción; Necoda, sirviente del templo: <font color='%COLOR_BLUE%'>Necoda.</font>"
+  },
+  {
+    "id": "H5354",
+    "ti": "nâqaṭ",
+    "le": "נָקַט",
+    "pl": "nacát",
+    "ps": "naw-kat'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; jactarse, fanfarronear: <font color='%COLOR_BLUE%'>hastiar.</font>"
+  },
+  {
+    "id": "H5355",
+    "ti": "nâqîy",
+    "le": "נָקִי",
+    "pl": "naquí",
+    "ps": "naw-kee'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נקיא</b></font> <font color='%COLOR_PURPLE%'>naquí</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Joe 4:19</span>; <span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Jon 1:14</span>); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5352')}>H5352</span>; inocente: <font color='%COLOR_BLUE%'>absolver, exceptuar, inocente, libre, limpio, quedar, sin culpa.</font>"
+  },
+  {
+    "id": "H5356",
+    "ti": "niqqâyôwn",
+    "le": "נִקָּיֹון",
+    "pl": "niccayón",
+    "ps": "nik-kaw-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נקיין</b></font> <font color='%COLOR_PURPLE%'>niccayón</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5352')}>H5352</span>; claridad (lit. o figurativamente): <font color='%COLOR_BLUE%'>inocencia, limpieza, limpio.</font>"
+  },
+  {
+    "id": "H5357",
+    "ti": "nâqîyq",
+    "le": "נָקִיק",
+    "pl": "naquic",
+    "ps": "naw-keek'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que sign. perforar; quebrada: <font color='%COLOR_BLUE%'>caverna, hendidura.</font>"
+  },
+  {
+    "id": "H5358",
+    "ti": "nâqam",
+    "le": "נָקַם",
+    "pl": "nacám",
+    "ps": "naw-kam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; rencor, i.e. vengar o castigar: <font color='%COLOR_BLUE%'>castigar, retribuidor, vengador, venganza, vengar, -se, vengativo, vindicación.</font>"
+  },
+  {
+    "id": "H5359",
+    "ti": "nâqâm",
+    "le": "נָקָם",
+    "pl": "nacám",
+    "ps": "naw-kawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5358')}>H5358</span>; venganza: <font color='%COLOR_BLUE%'>retribución, venganza, vengar.</font>"
+  },
+  {
+    "id": "H5360",
+    "ti": "nᵉqâmâh",
+    "le": "נְקָמָה",
+    "pl": "necamá",
+    "ps": "nek-aw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5359')}>H5359</span>; venganza, sea el acto o la pasión: <font color='%COLOR_BLUE%'>retribución, venganza, vengar.</font>"
+  },
+  {
+    "id": "H5361",
+    "ti": "nâqaʻ",
+    "le": "נָקַע",
+    "pl": "nacá",
+    "ps": "naw-kah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; sentir aversión: <font color='%COLOR_BLUE%'>hastiar.</font>"
+  },
+  {
+    "id": "H5362",
+    "ti": "nâqaph",
+    "le": "נָקַף",
+    "pl": "nacáf",
+    "ps": "naw-kaf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; golpear con mucha o poca violencia (batir, caer, corroer); por impl. (de atacar) golpear juntos, i.e. rodear o circundar: <font color='%COLOR_BLUE%'>buscar, ceñir, cercar, circundar, cortar, curso, deshacer, envolver, ir alrededor, pasar, rodear, sitiar.</font>"
+  },
+  {
+    "id": "H5363",
+    "ti": "nôqeph",
+    "le": "נֹקֶף",
+    "pl": "nóquef",
+    "ps": "no'-kef",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5362')}>H5362</span>; sacudir (de olivos): <font color='%COLOR_BLUE%'>sacudir.</font>"
+  },
+  {
+    "id": "H5364",
+    "ti": "niqpâh",
+    "le": "נִקְפָּה",
+    "pl": "nicpá",
+    "ps": "nik-paw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5362')}>H5362</span>; probablemente cuerda (como que encierra en círculo): <font color='%COLOR_BLUE%'>cuerda.</font>"
+  },
+  {
+    "id": "H5365",
+    "ti": "nâqar",
+    "le": "נָקַר",
+    "pl": "nacár",
+    "ps": "naw-kar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; perforar (penetrar, extraer): <font color='%COLOR_BLUE%'>arrancar, cavar, horadar, sacar, taladrar.</font>"
+  },
+  {
+    "id": "H5366",
+    "ti": "nᵉqârâh",
+    "le": "נְקָרָה",
+    "pl": "necará",
+    "ps": "nek-aw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5365')}>H5365</span>, fisura: <font color='%COLOR_BLUE%'>grieta, hendidura.</font>"
+  },
+  {
+    "id": "H5367",
+    "ti": "nâqash",
+    "le": "נָקַשׁ",
+    "pl": "nacásh",
+    "ps": "naw-kash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; entrampar (con lazo), lit. o figurativamente: <font color='%COLOR_BLUE%'>apoderarse, armar lazo, (poner) tropiezo.</font>"
+  },
+  {
+    "id": "H5368",
+    "ti": "nᵉqash",
+    "le": "נְקַשׁ",
+    "pl": "necásh",
+    "ps": "nek-ash'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5367')}>H5367</span>; pero usado en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5362')}>H5362</span>; golpear: <font color='%COLOR_BLUE%'>dar golpes.</font><p></p><font color='%COLOR_GREEN%'><b>נר</b></font> <font color='%COLOR_PURPLE%'>ner</font>; o <font color='%COLOR_GREEN%'><b>נר</b></font> <font color='%COLOR_PURPLE%'>nir.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5215')}>H5215</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5216')}>H5216</span>."
+  },
+  {
+    "id": "H5369",
+    "ti": "Nêr",
+    "le": "נֵר",
+    "pl": "Ner",
+    "ps": "nare",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5216')}>H5216</span>; lámpara; Ner, un israelita.: <font color='%COLOR_BLUE%'>Ner.</font>"
+  },
+  {
+    "id": "H5370",
+    "ti": "Nêrᵉgal",
+    "le": "נֵרְגַּל",
+    "pl": "Nergál",
+    "ps": "nare-gal'",
+    "df": "<font color='%COLOR_GREEN%'></font>de origen extranjero; Nergal, deidad cusita: <font color='%COLOR_BLUE%'>Nergal.</font>"
+  },
+  {
+    "id": "H5371",
+    "ti": "Nêrᵉgal Sharʼetser",
+    "le": "נֵרְגַּל שַׁרְאֶצֶר",
+    "pl": "Nergál Sarétser",
+    "ps": "nare-gal' shar-eh'-tser",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5370')}>H5370</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8272')}>H8272</span>; Nergal Sarezer, nombre de dos babilonios: <font color='%COLOR_BLUE%'>Nergal-sarezer.</font>"
+  },
+  {
+    "id": "H5372",
+    "ti": "nirgân",
+    "le": "נִרְגָּן",
+    "pl": "nirgán",
+    "ps": "neer-gawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que sign. enrollar en pedazos; calumniador: <font color='%COLOR_BLUE%'>chismoso.</font>"
+  },
+  {
+    "id": "H5373",
+    "ti": "nêrd",
+    "le": "נֵרְדְּ",
+    "pl": "nerd",
+    "ps": "nayrd",
+    "df": "<font color='%COLOR_GREEN%'></font>de origen extranjero; nardo, aromático: <font color='%COLOR_BLUE%'>nardo.</font><p></p><font color='%COLOR_GREEN%'><b>נרה</b></font> <font color='%COLOR_PURPLE%'>nerá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5216')}>H5216</span>."
+  },
+  {
+    "id": "H5374",
+    "ti": "Nêrîyâh",
+    "le": "נֵרִיָּה",
+    "pl": "Neriyá",
+    "ps": "nay-ree-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נריהו</b></font> <font color='%COLOR_PURPLE%'>Neriyáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5216')}>H5216</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; luz de Jah; Nerías, un israelita.: <font color='%COLOR_BLUE%'>Nerías.</font>"
+  },
+  {
+    "id": "H5375",
+    "ti": "nâsâʼ",
+    "le": "נָשָׂא",
+    "pl": "nasá",
+    "ps": "naw-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נסה</b></font> <font color='%COLOR_PURPLE%'>nasá</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Sal 4:6</span> [7]); raíz primaria; elevar, en una gran variedad de aplicaciones, lit. y figurativamente, absol. y rel. (como sigue): <font color='%COLOR_BLUE%'>acarrear, hacer acepción, aceptar, acepto, admitir, agradar, aliviar, alzar, anhelar, apresurar, arrancar, arrebatar, arrojar, atender, ayudar, carga, cargar, compartir, conducir, consumir, dar, distinguido, echar, elevar, empinado, enaltecer, engrandecer, entonar, envanecer, erguir, erigir, erizar, estima, estimular, exaltar, exigir, favor, favorecer, florecer, ganar, gritar, hallar, honrar, impulsar, jurar, levantar, libertar, llevar, mover, ofrecer, pagar, palo, perdonador, producir, quitar, rebelarse, recibir, reprimir, respetar, respeto, robar, sacar, sentir, soportar, sostener, subir, sublime, suficiente, sufrir, sustentar, tender, tener, tolerar, tomar, traer, venerable, vestir.</font>"
+  },
+  {
+    "id": "H5376",
+    "ti": "nᵉsâʼ",
+    "le": "נְשָׂא",
+    "pl": "nesá",
+    "ps": "nes-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span>: <font color='%COLOR_BLUE%'>levantarse, llevar, quitar, tomar.</font>"
+  },
+  {
+    "id": "H5377",
+    "ti": "nâshâʼ",
+    "le": "נָשָׁא",
+    "pl": "nashá",
+    "ps": "naw-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; dirigir descarriando, i.e. (ment.) engañar, o (mor.) seducir: <font color='%COLOR_BLUE%'>echar (al olvido), engañar.</font>"
+  },
+  {
+    "id": "H5378",
+    "ti": "nâshâʼ",
+    "le": "נָשָׁא",
+    "pl": "nashá",
+    "ps": "naw-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [tal vez ident. con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5377')}>H5377</span>, mediante la idea de imposición]; prestar a interés; por impl. apremiar por deuda: <font color='%COLOR_BLUE%'>endeudado, dar a logro, exigir, sorprender.</font><p></p><font color='%COLOR_GREEN%'><b>נשא</b></font> <font color='%COLOR_PURPLE%'>nasí.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5387')}>H5387</span>.<p></p><font color='%COLOR_GREEN%'><b>נשאה</b></font> <font color='%COLOR_PURPLE%'>nesúa.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5385')}>H5385</span>."
+  },
+  {
+    "id": "H5379",
+    "ti": "nissêʼth",
+    "le": "נִשֵּׂאת",
+    "pl": "nissét",
+    "ps": "nis-sayth'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span>; algo tomado, i.e. presente: <font color='%COLOR_BLUE%'>regalo.</font>"
+  },
+  {
+    "id": "H5380",
+    "ti": "nâshab",
+    "le": "נָשַׁב",
+    "pl": "nasháb",
+    "ps": "naw-shab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; soplar; por impl. dispersar: <font color='%COLOR_BLUE%'>ahuyentar, soplar.</font>"
+  },
+  {
+    "id": "H5381",
+    "ti": "nâsag",
+    "le": "נָשַׂג",
+    "pl": "naság",
+    "ps": "naw-sag'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; alcanzar (lit. o figurativamente): <font color='%COLOR_BLUE%'>alcanzar, alejar, apoderarse, apresar, enriquecer, llegar, poder, posibilidad, recurso, tener lo suficiente, tomar.</font>"
+  },
+  {
+    "id": "H5382",
+    "ti": "nâshâh",
+    "le": "נָשָׁה",
+    "pl": "nashá",
+    "ps": "naw-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; olvidar; figurativamente descuidar; caus. remitir, remover: <font color='%COLOR_BLUE%'>castigar, echar al olvido, hacer olvidar, olvidarse, privar.</font>"
+  },
+  {
+    "id": "H5383",
+    "ti": "nâshâh",
+    "le": "נָשָׁה",
+    "pl": "nashá",
+    "ps": "naw-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [más bien idéntico con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5382')}>H5382</span>, en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5378')}>H5378</span>]; prestar o (por reciprocidad) tomar prestado con prenda o a interés: <font color='%COLOR_BLUE%'>acreedor, demandar, empréstito, entregar, interés, préstamo, prestar.</font>"
+  },
+  {
+    "id": "H5384",
+    "ti": "nâsheh",
+    "le": "נָשֶׁה",
+    "pl": "nashé",
+    "ps": "naw-sheh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5382')}>H5382</span>, en el sentido de fracaso; reumático o lisiado (del incidente de Jacob): <font color='%COLOR_BLUE%'>(lo) que se contrajo.</font>"
+  },
+  {
+    "id": "H5385",
+    "ti": "nᵉsûwʼâh",
+    "le": "נְשׂוּאָה",
+    "pl": "nesuá",
+    "ps": "nes-oo-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o más bien,<font color='%COLOR_GREEN%'><b>נשאה</b></font> <font color='%COLOR_PURPLE%'>nesuá</font>; participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span>; algo que se lleva, i.e. una carga: <font color='%COLOR_BLUE%'>cosas que solías llevar.</font>"
+  },
+  {
+    "id": "H5386",
+    "ti": "nᵉshîy",
+    "le": "נְשִׁי",
+    "pl": "nishí",
+    "ps": "nesh-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5383')}>H5383</span>; deuda: <font color='%COLOR_BLUE%'>(paga a tus) acreedores.</font>"
+  },
+  {
+    "id": "H5387",
+    "ti": "nâsîyʼ",
+    "le": "נָשִׂיא",
+    "pl": "nasí",
+    "ps": "naw-see'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>נשא</b></font> <font color='%COLOR_PURPLE%'>nasí</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span>; propiamente uno exaltado, i.e. un rey o jeque; también neblina que se levanta: <font color='%COLOR_BLUE%'>corresponder, jefe, juez, nube, principal, príncipe, rey, vapor.</font>"
+  },
+  {
+    "id": "H5388",
+    "ti": "nᵉshîyâh",
+    "le": "נְשִׁיָּה",
+    "pl": "neshiyá",
+    "ps": "nesh-ee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5382')}>H5382</span>; olvido: <font color='%COLOR_BLUE%'>olvido.</font><p></p><font color='%COLOR_GREEN%'><b>נשים</b></font> <font color='%COLOR_PURPLE%'>nashim.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H802')}>H802</span>."
+  },
+  {
+    "id": "H5389",
+    "ti": "nâshîyn",
+    "le": "נָשִׁין",
+    "pl": "nashín",
+    "ps": "naw-sheen'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); plural irregular femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H606')}>H606</span>: <font color='%COLOR_BLUE%'>mujeres.</font>"
+  },
+  {
+    "id": "H5390",
+    "ti": "nᵉshîyqâh",
+    "le": "נְשִׁיקָה",
+    "pl": "neshicá",
+    "ps": "nesh-ee-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5401')}>H5401</span>; beso: <font color='%COLOR_BLUE%'>beso.</font>"
+  },
+  {
+    "id": "H5391",
+    "ti": "nâshak",
+    "le": "נָשַׁךְ",
+    "pl": "nashák",
+    "ps": "naw-shak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; golpear con aguijón (como la serpiente); figurativamente oprimir con interés sobre un préstamo: <font color='%COLOR_BLUE%'>exigir interés, mordida.</font>"
+  },
+  {
+    "id": "H5392",
+    "ti": "neshek",
+    "le": "נֶשֶׁךְ",
+    "pl": "néshek",
+    "ps": "neh'-shek",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5391')}>H5391</span>; interés de una deuda: <font color='%COLOR_BLUE%'>interés, usura.</font>"
+  },
+  {
+    "id": "H5393",
+    "ti": "nishkâh",
+    "le": "נִשְׁכָּה",
+    "pl": "nishcá",
+    "ps": "nish-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3957')}>H3957</span>; celda: <font color='%COLOR_BLUE%'>cámara.</font>"
+  },
+  {
+    "id": "H5394",
+    "ti": "nâshal",
+    "le": "נָשַׁל",
+    "pl": "nashál",
+    "ps": "naw-shal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; arrancar, i.e. desviar, expulsar, o dejar caer: <font color='%COLOR_BLUE%'>caer, echar (fuera), quitar, resbalar, soltar.</font>"
+  },
+  {
+    "id": "H5395",
+    "ti": "nâsham",
+    "le": "נָשַׁם",
+    "pl": "nashám",
+    "ps": "naw-sham'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente soplar alejando, i.e. destruir: <font color='%COLOR_BLUE%'>asolar.</font>"
+  },
+  {
+    "id": "H5396",
+    "ti": "nishmâʼ",
+    "le": "נִשְׁמָא",
+    "pl": "nishmá",
+    "ps": "nish-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5397')}>H5397</span>; aliento vital: <font color='%COLOR_BLUE%'>vida.</font>"
+  },
+  {
+    "id": "H5397",
+    "ti": "nᵉshâmâh",
+    "le": "נְשָׁמָה",
+    "pl": "neshamá",
+    "ps": "nesh-aw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5395')}>H5395</span>; resoplido, i.e. viento, furia o aliento vital, inspiración divina, intelecto, o (concretamente)aliento animal: <font color='%COLOR_BLUE%'>aliento, alma, espíritu, hálito, que respira, respirar, soplo, vida, viviente.</font>"
+  },
+  {
+    "id": "H5398",
+    "ti": "nâshaph",
+    "le": "נָשַׁף",
+    "pl": "nasháf",
+    "ps": "naw-shaf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; soplar la brisa, i.e. soplar fresco (como el viento): <font color='%COLOR_BLUE%'>soplar.</font>"
+  },
+  {
+    "id": "H5399",
+    "ti": "nesheph",
+    "le": "נֶשֶׁף",
+    "pl": "néshef",
+    "ps": "neh'-shef",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5398')}>H5398</span>; propiamente brisa, i.e. (por impl.) ocaso (cuando prevalece la brisa del atardecer): <font color='%COLOR_BLUE%'>alba, anochecer, mañana, noche.</font>"
+  },
+  {
+    "id": "H5400",
+    "ti": "nâsaq",
+    "le": "נָשַׂק",
+    "pl": "nasác",
+    "ps": "naw-sak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; encenderse: <font color='%COLOR_BLUE%'>encender, quemar.</font>"
+  }
+]

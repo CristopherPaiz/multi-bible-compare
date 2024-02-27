@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H5851",
+    "ti": "ʻĂṭârâh",
+    "le": "עֲטָרָה",
+    "pl": "Atará",
+    "ps": "at-aw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5850')}>H5850</span>; Atara, una israelita: <font color='%COLOR_BLUE%'>Atara.</font>"
+  },
+  {
+    "id": "H5852",
+    "ti": "ʻĂṭârôwth",
+    "le": "עֲטָרֹות",
+    "pl": "Atarót",
+    "ps": "at-aw-roth'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עטרית</b></font> <font color='%COLOR_PURPLE%'>Atarót</font>; plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5850')}>H5850</span>; Atarot, nombre (por eso sencillamente) de dos lugares en Palestina: <font color='%COLOR_BLUE%'>Atarot.</font>"
+  },
+  {
+    "id": "H5853",
+    "ti": "ʻAṭrôwth ʼAddâr",
+    "le": "עַטְרֹות אַדָּר",
+    "pl": "Atrót Addár",
+    "ps": "at-roth' ad-dawr'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5852')}>H5852</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H146')}>H146</span>; coronas de Adar; Atarot-adar, un lugar en Palestina: <font color='%COLOR_BLUE%'>Atarot-adar.</font>"
+  },
+  {
+    "id": "H5854",
+    "ti": "ʻAṭrôwth bêyth Yôwʼâb",
+    "le": "עַטְרֹות בֵּית יֹואָב",
+    "pl": "Atrót Beít Yoáb",
+    "ps": "at-roth' bayth yoawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5852')}>H5852</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3097')}>H3097</span>; coronas de (la) casa de Joab; Atrot Bet Joab, un lugar en Palestina: <font color='%COLOR_BLUE%'>Atrot-bet-joab.</font>"
+  },
+  {
+    "id": "H5855",
+    "ti": "ʻAṭrôwth Shôwphân",
+    "le": "עַטְרֹות שֹׁופָן",
+    "pl": "Atrót Shofán",
+    "ps": "at-roth' sho-fawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5852')}>H5852</span> y un nombre que no se usa de otra manera [siendo de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8226')}>H8226</span>] sign. oculto; coronas de Shofán; Atrot Shofán, un lugar en Palestina: <font color='%COLOR_BLUE%'>Atarot-sofán.</font>"
+  },
+  {
+    "id": "H5856",
+    "ti": "ʻîy",
+    "le": "עִי",
+    "pl": "í",
+    "ps": "ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5753')}>H5753</span>; ruina (como si estuviera volteada): <font color='%COLOR_BLUE%'>escombro, montón de ruinas.</font>"
+  },
+  {
+    "id": "H5857",
+    "ti": "ʻAy",
+    "le": "עַי",
+    "pl": "Ai",
+    "ps": "ah'ee",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>עיא</b></font> <font color='%COLOR_PURPLE%'>Ayá</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Neh 11:31</span>); o <font color='%COLOR_GREEN%'><b>עית</b></font> <font color='%COLOR_PURPLE%'>Ayát</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Isa 10:28</span>); por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5856')}>H5856</span>; Ai, Aia o Ajat, un lugar en Palestina: <font color='%COLOR_BLUE%'>Hai, Ajat.</font>"
+  },
+  {
+    "id": "H5858",
+    "ti": "ʻÊybâl",
+    "le": "עֵיבָל",
+    "pl": "Eibál",
+    "ps": "ay-bawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de una raíz que no se usa probablemente sign. ser calvo; desnudo; Ebal, monte de Palestina: <font color='%COLOR_BLUE%'>Ebal.</font><p></p><font color='%COLOR_GREEN%'><b>עיה</b></font> <font color='%COLOR_PURPLE%'>Aiyá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5857')}>H5857</span>."
+  },
+  {
+    "id": "H5859",
+    "ti": "ʻÎyôwn",
+    "le": "עִיֹּון",
+    "pl": "Iyón",
+    "ps": "ee-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5856')}>H5856</span>; ruina; Iyón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ijón.</font>"
+  },
+  {
+    "id": "H5860",
+    "ti": "ʻîyṭ",
+    "le": "עִיט",
+    "pl": "ít",
+    "ps": "eet",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; abalanzarse sobre (literalmente o figurativamente): <font color='%COLOR_BLUE%'>lanzarse sobre, vuelto al, zaherir.</font>"
+  },
+  {
+    "id": "H5861",
+    "ti": "ʻayiṭ",
+    "le": "עַיִט",
+    "pl": "ayít",
+    "ps": "ah'-yit",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5860')}>H5860</span>; halcón u otra ave de rapiña: <font color='%COLOR_BLUE%'>ave, ave de rapiña.</font>"
+  },
+  {
+    "id": "H5862",
+    "ti": "ʻÊyṭâm",
+    "le": "עֵיטָם",
+    "pl": "Eitám",
+    "ps": "ay-tawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5861')}>H5861</span>; tierra de halcón; Etam, un lugar en Palestina: <font color='%COLOR_BLUE%'>Etam.</font>"
+  },
+  {
+    "id": "H5863",
+    "ti": "ʻÎyêy hâ-ʻĂbârîym",
+    "le": "עִיֵּי הָעֲבָרִים",
+    "pl": "Iyei ja Abarím",
+    "ps": "ee-yay' haw-ab-aw-reem'",
+    "df": "<font color='%COLOR_GREEN%'></font>del plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5856')}>H5856</span> y el plural del part. act. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5674')}>H5674</span> con el art. interpuesto; ruinas de los que pasan; Iye Ja Abarim, un lugar cerca de Palestina: <font color='%COLOR_BLUE%'>Ije-Abarim.</font>"
+  },
+  {
+    "id": "H5864",
+    "ti": "ʻÎyîym",
+    "le": "עִיִּים",
+    "pl": "Iyím",
+    "ps": "ee-yeem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5856')}>H5856</span>; ruinas; Iyim, un lugar en el desierto: <font color='%COLOR_BLUE%'>Iim, Ije-abarim.</font>"
+  },
+  {
+    "id": "H5865",
+    "ti": "ʻêylôwm",
+    "le": "עֵילֹום",
+    "pl": "eilóm",
+    "ps": "ay-lome'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5769')}>H5769</span>: <font color='%COLOR_BLUE%'>para siempre.</font>"
+  },
+  {
+    "id": "H5866",
+    "ti": "ʻÎylay",
+    "le": "עִילַי",
+    "pl": "Ilaí",
+    "ps": "ee-lah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; elevado; Ilai, un israelita.: <font color='%COLOR_BLUE%'>Ilai.</font>"
+  },
+  {
+    "id": "H5867",
+    "ti": "ʻÊylâm",
+    "le": "עֵילָם",
+    "pl": "Eilám",
+    "ps": "ay-lawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עוילם</b></font> <font color='%COLOR_PURPLE%'>Olám</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Esd 10:2</span>; <span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Jer 49:36</span>); probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5956')}>H5956</span>; oculto, i.e. distante; Elam, un hijo de Sem, y su descendiente, con su nación; también de seis israelitas: <font color='%COLOR_BLUE%'>Elam.</font>"
+  },
+  {
+    "id": "H5868",
+    "ti": "ʻăyâm",
+    "le": "עֲיָם",
+    "pl": "ayám",
+    "ps": "ah-yawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original y autenticidad dudosos; probablemente sign. fuerza: <font color='%COLOR_BLUE%'>poder.</font>"
+  },
+  {
+    "id": "H5869",
+    "ti": "ʻayin",
+    "le": "עַיִן",
+    "pl": "áyin",
+    "ps": "ah'-yin",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente palabra primaria; ojo (literalmente o figurativamente); por anal. fuente (como el ojo del paisaje): <font color='%COLOR_BLUE%'>agradar, aspecto, cara, ceja, color, contento, crimen, desagradable, desagradar, dificultad, disgusto, donde bien (te parezca), estimar, faz, fuente, grato, gustar, iniquidad, mirar, ojo, opinión, parecer, pesar, placer, preocupar, presencia, satisfecho, vigilante, vista.</font>"
+  },
+  {
+    "id": "H5870",
+    "ti": "ʻayin",
+    "le": "עַיִן",
+    "pl": "áyin",
+    "ps": "ah'-yin",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span>; ojo: <font color='%COLOR_BLUE%'>ojo.</font>"
+  },
+  {
+    "id": "H5871",
+    "ti": "ʻAyin",
+    "le": "עַיִן",
+    "pl": "áyin",
+    "ps": "ah'-yin",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span>; fuente; Ayin, nombre (así sencillamente) de dos lugares en Palestina: <font color='%COLOR_BLUE%'>Aín.</font>"
+  },
+  {
+    "id": "H5872",
+    "ti": "ʻÊyn Gedîy",
+    "le": "עֵין גֶּדִי",
+    "pl": "Ein Gedí",
+    "ps": "ane geh'-dee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1423')}>H1423</span>; fuente de niño; En Gedi, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-gadi.</font>"
+  },
+  {
+    "id": "H5873",
+    "ti": "ʻÊyn Gannîym",
+    "le": "עֵין גַּנִּים",
+    "pl": "Ein Ganním",
+    "ps": "ane gan-neem'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y el plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1588')}>H1588</span>; fuente de jardines; En Ganim, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-ganim.</font>"
+  },
+  {
+    "id": "H5874",
+    "ti": "ʻÊyn-Dôʼr",
+    "le": "עֵין־דֹּאר",
+    "pl": "Ein Dor",
+    "ps": "ane-dore'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עין דויר</b></font> <font color='%COLOR_PURPLE%'> Ein Dor</font>; o <font color='%COLOR_GREEN%'><b>עין־דיר</b></font> <font color='%COLOR_PURPLE%'> Ein Dor</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1755')}>H1755</span>; fuente de morada; En Dor, un lugar en Palestina: <font color='%COLOR_BLUE%'>Endor.</font>"
+  },
+  {
+    "id": "H5875",
+    "ti": "ʻÊyn haq-Qôwrêʼ",
+    "le": "עֵין הַקֹּורֵא",
+    "pl": "Ein jac Coré",
+    "ps": "ane-hak-ko-ray'",
+    "df": "<font color='%COLOR_GREEN%'></font>lugar cerca de Palestina: <font color='%COLOR_BLUE%'>En-hacore.</font><p></p><font color='%COLOR_GREEN%'><b>עינוין</b></font> <font color='%COLOR_PURPLE%'>Einón.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2703')}>H2703</span>."
+  },
+  {
+    "id": "H5876",
+    "ti": "ʻÊyn Chaddâh",
+    "le": "עֵין חַדָּה",
+    "pl": "Ein Kjaddá",
+    "ps": "ane khad-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y el femenino de un der. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2300')}>H2300</span>; fuente de agudeza; En Jada, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-hada.</font>"
+  },
+  {
+    "id": "H5877",
+    "ti": "ʻÊyn Châtsôwr",
+    "le": "עֵין חָצֹור",
+    "pl": "Ein Kjatsór",
+    "ps": "ane khaw-tsore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2674')}>H2674</span>; fuente de una aldea; En Jatsor, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-hazor.</font>"
+  },
+  {
+    "id": "H5878",
+    "ti": "ʻÊyn Chărôd",
+    "le": "עֵין חֲרֹד",
+    "pl": "Ein Kjaród",
+    "ps": "ane khar-ode'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y un der. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2729')}>H2729</span>; fuente de temblor; En Jarod, un lugar en Palestina: <font color='%COLOR_BLUE%'>fuente de Harot.</font>"
+  },
+  {
+    "id": "H5879",
+    "ti": "ʻÊynayim",
+    "le": "עֵינַיִם",
+    "pl": "Einayim",
+    "ps": "ay-nah'-yim",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עינן</b></font> <font color='%COLOR_PURPLE%'>Einám</font>; dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span>; doble fuente; Enaim o Enam, un lugar en Palestina: <font color='%COLOR_BLUE%'>Enam, Enaim.</font>"
+  },
+  {
+    "id": "H5880",
+    "ti": "ʻÊyn Mishpâṭ",
+    "le": "עֵין מִשְׁפָּט",
+    "pl": "Ein Mishpát",
+    "ps": "ane mish-pawt'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4941')}>H4941</span>; fuente de juicio; En Mishpat, un lugar cerca de Palestina: <font color='%COLOR_BLUE%'>En-Mispat.</font>"
+  },
+  {
+    "id": "H5881",
+    "ti": "ʻÊynân",
+    "le": "עֵינָן",
+    "pl": "Einán",
+    "ps": "ay-nawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span>; teniendo ojos; Enán, un israelita.: <font color='%COLOR_BLUE%'>Enán.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2704')}>H2704</span>."
+  },
+  {
+    "id": "H5882",
+    "ti": "ʻÊyn ʻEglayim",
+    "le": "עֵין עֶגְלַיִם",
+    "pl": "Ein Eglayím",
+    "ps": "ane eg-lah'-yim",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y el dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5695')}>H5695</span>; fuente de dos terneros; En Eglajim, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-eglaim.</font>"
+  },
+  {
+    "id": "H5883",
+    "ti": "ʻÊyn Rôgêl",
+    "le": "עֵין רֹגֵל",
+    "pl": "Ein Rogél",
+    "ps": "ane ro-gale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y el part. act. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7270')}>H7270</span>; fuente del viajero; En Rogel, un lugar cerca de Jerusalén: <font color='%COLOR_BLUE%'>fuente de Rogel.</font>"
+  },
+  {
+    "id": "H5884",
+    "ti": "ʻÊyn Rimmôwn",
+    "le": "עֵין רִמֹּון",
+    "pl": "Ein Rimmón",
+    "ps": "ane rim-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7416')}>H7416</span>; fuente de granada; En Rimón, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-Rimón.</font>"
+  },
+  {
+    "id": "H5885",
+    "ti": "ʻÊyn Shemesh",
+    "le": "עֵין שֶׁמֶשׁ",
+    "pl": "Ein Shémesh",
+    "ps": "ane sheh'-mesh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8121')}>H8121</span>; fuente de (el) sol; En Shemesh, un lugar en Palestina: <font color='%COLOR_BLUE%'>En-semes.</font>"
+  },
+  {
+    "id": "H5886",
+    "ti": "ʻÊyn Tannîym",
+    "le": "עֵין תַּנִּים",
+    "pl": "Ein Taním",
+    "ps": "ane tan-neem'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y el plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8565')}>H8565</span>; fuente de chacales; En Tanim, estanque cerca de Jerusalén: <font color='%COLOR_BLUE%'>fuente.</font>"
+  },
+  {
+    "id": "H5887",
+    "ti": "ʻÊyn Tappûwach",
+    "le": "עֵין תַּפּוּחַ",
+    "pl": "Ein Tappúakj",
+    "ps": "ane tap-poo'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5869')}>H5869</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8598')}>H8598</span>; fuente del manzano; En Tapúaj, un lugar en Palestina: <font color='%COLOR_BLUE%'>Tapúa.</font>"
+  },
+  {
+    "id": "H5888",
+    "ti": "ʻâyêph",
+    "le": "עָיֵף",
+    "pl": "ayéf",
+    "ps": "aw-yafe'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; languidecer: <font color='%COLOR_BLUE%'>cansar, desfallecer, desmayar.</font>"
+  },
+  {
+    "id": "H5889",
+    "ti": "ʻâyêph",
+    "le": "עָיֵף",
+    "pl": "ayéf",
+    "ps": "aw-yafe'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5888')}>H5888</span>; lánguido: <font color='%COLOR_BLUE%'>árida, calurosa, cansado, fatigado, sedienta.</font>"
+  },
+  {
+    "id": "H5890",
+    "ti": "ʻêyphâh",
+    "le": "עֵיפָה",
+    "pl": "eifá",
+    "ps": "ay-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5774')}>H5774</span>; obscuridad (como si cubriera): <font color='%COLOR_BLUE%'>oscuridad, tiniebla.</font>"
+  },
+  {
+    "id": "H5891",
+    "ti": "ʻÊyphâh",
+    "le": "עֵיפָה",
+    "pl": "Eifá",
+    "ps": "ay-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5890')}>H5890</span>; Efa, nombre de un hijo de Midian, y de la región en donde se estableció; también de un israelita. y de una israelitas: <font color='%COLOR_BLUE%'>Efa.</font>"
+  },
+  {
+    "id": "H5892",
+    "ti": "ʻîyr",
+    "le": "עִיר",
+    "pl": "ir",
+    "ps": "eer",
+    "df": "<font color='%COLOR_GREEN%'></font>o (en plural) <font color='%COLOR_GREEN%'><b>ער</b></font> <font color='%COLOR_PURPLE%'>ar</font>; o <font color='%COLOR_GREEN%'><b>עיר</b></font> <font color='%COLOR_PURPLE%'>ayár</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Jue 10:4</span>); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5782')}>H5782</span> ciudad (lugar guardar por un vigilante o vigilia) en el sentido más amplio (incluso de un mero campamento o posta): <font color='%COLOR_BLUE%'>aldea, ciudad, lugar, patio, población, pueblo, villa.</font>"
+  },
+  {
+    "id": "H5893",
+    "ti": "ʻÎyr",
+    "le": "עִיר",
+    "pl": "Ir",
+    "ps": "eer",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span>; Ir, un israelita.: <font color='%COLOR_BLUE%'>Hir.</font>"
+  },
+  {
+    "id": "H5894",
+    "ti": "ʻîyr",
+    "le": "עִיר",
+    "pl": "ir",
+    "ps": "eer",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5782')}>H5782</span>; guardián, i.e. ángel (como guardián): <font color='%COLOR_BLUE%'>vigilante.</font>"
+  },
+  {
+    "id": "H5895",
+    "ti": "ʻayir",
+    "le": "עַיִר",
+    "pl": "áyir",
+    "ps": "ah'-yeer",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5782')}>H5782</span> en sentido de levantar (i.e. cargar una carga); propiamente asno joven (como apenas amansado); de aquí, borrico: <font color='%COLOR_BLUE%'>asno, borrico, pollino.</font>"
+  },
+  {
+    "id": "H5896",
+    "ti": "ʻÎyrâʼ",
+    "le": "עִירָא",
+    "pl": "Irá",
+    "ps": "ee-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5782')}>H5782</span>; vigilia; Ira, nombre de tres israelitas: <font color='%COLOR_BLUE%'>Ira.</font>"
+  },
+  {
+    "id": "H5897",
+    "ti": "ʻÎyrâd",
+    "le": "עִירָד",
+    "pl": "Irád",
+    "ps": "ee-rawd'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6166')}>H6166</span>; fugitivo; Irad, un antediluviano: <font color='%COLOR_BLUE%'>Irad.</font>"
+  },
+  {
+    "id": "H5898",
+    "ti": "ʻÎyr ham-Melach",
+    "le": "עִיר הַמֶּלַח",
+    "pl": "Ir jaMelákj",
+    "ps": "eer ham-meh'-lakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4417')}>H4417</span> con el art.de sustancia interp.; ciudad de (la) sal; Ir jaMeláj, un lugar cerca de Palestina: <font color='%COLOR_BLUE%'>ciudad de la sal.</font>"
+  },
+  {
+    "id": "H5899",
+    "ti": "ʻÎyr hat-Tᵉmârîym",
+    "le": "עִיר הַתְּמָרִים",
+    "pl": "Ir jaTemarím",
+    "ps": "eer hat-tem-aw-reem'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span> y el plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8558')}>H8558</span> con el art. interpolado; ciudad de las palmeras; Ir ja Temarim, un lugar en Palestina: <font color='%COLOR_BLUE%'>(ciudad) de palmeras.</font>"
+  },
+  {
+    "id": "H5900",
+    "ti": "ʻÎyrûw",
+    "le": "עִירוּ",
+    "pl": "Irú",
+    "ps": "ee-roo'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span>; ciudadano; Iru, un israelita.: <font color='%COLOR_BLUE%'>Iru.</font>"
+  },
+  {
+    "id": "H5901",
+    "ti": "ʻÎyrîy",
+    "le": "עִירִי",
+    "pl": "Irí",
+    "ps": "ee-ree'",
+    "df": "<font color='%COLOR_GREEN%'></font>eeree; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span>; urbano; Iri, un israelita.: <font color='%COLOR_BLUE%'>Iri.</font>"
+  },
+  {
+    "id": "H5902",
+    "ti": "ʻÎyrâm",
+    "le": "עִירָם",
+    "pl": "Irám",
+    "ps": "ee-rawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span>; de la ciudad; Iram, un idumeo idumeo: <font color='%COLOR_BLUE%'>Iram.</font>"
+  },
+  {
+    "id": "H5903",
+    "ti": "ʻêyrôm",
+    "le": "עֵירֹם",
+    "pl": "eiróm",
+    "ps": "ay-rome'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ערין</b></font> <font color='%COLOR_PURPLE%'>eiróm</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6191')}>H6191</span>; desnudez: <font color='%COLOR_BLUE%'>descubierto, desnudez, desnudo.</font>"
+  },
+  {
+    "id": "H5904",
+    "ti": "ʻÎyr Nâchâsh",
+    "le": "עִיר נָחָשׁ",
+    "pl": "Ir Nakjásh",
+    "ps": "eer naw-khawsh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5175')}>H5175</span>; ciudad de la serpiente; Ir Najash, un lugar en Palestina: <font color='%COLOR_BLUE%'>Nahas.</font>"
+  },
+  {
+    "id": "H5905",
+    "ti": "ʻÎyr Shemesh",
+    "le": "עִיר שֶׁמֶשׁ",
+    "pl": "Ir Shémesh",
+    "ps": "eer sheh'-mesh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5892')}>H5892</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8121')}>H8121</span>; ciudad del sol; Ir Shemesh, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ir-semes.</font>"
+  },
+  {
+    "id": "H5906",
+    "ti": "ʻAyish",
+    "le": "עַיִשׁ",
+    "pl": "Aísh",
+    "ps": "ah'-yish",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עש</b></font> <font color='%COLOR_PURPLE%'>Ash</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5789')}>H5789</span>; constelación de la Osa Mayor(tal vez por su migración por los cielos): <font color='%COLOR_BLUE%'>Osa.</font><p></p><font color='%COLOR_GREEN%'><b>עית</b></font> <font color='%COLOR_PURPLE%'>Ayát.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5857')}>H5857</span>."
+  },
+  {
+    "id": "H5907",
+    "ti": "ʻAkbôwr",
+    "le": "עַכְבֹּור",
+    "pl": "Akbór",
+    "ps": "ak-bore'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5909')}>H5909</span>; Akbor, nombre de un idumeo y dos israelitas: <font color='%COLOR_BLUE%'>Acbor.</font>"
+  },
+  {
+    "id": "H5908",
+    "ti": "ʻakkâbîysh",
+    "le": "עַכָּבִישׁ",
+    "pl": "akkabísh",
+    "ps": "ak-kaw-beesh'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de una raíz que no se usa en sentido literal de enredar; araña (como tejiendo una red): <font color='%COLOR_BLUE%'>araña.</font>"
+  },
+  {
+    "id": "H5909",
+    "ti": "ʻakbâr",
+    "le": "עַכְבָּר",
+    "pl": "akbár",
+    "ps": "ak-bawr'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5908')}>H5908</span> en segundo sentido de atacar; ratón (porque roe): <font color='%COLOR_BLUE%'>ratón.</font>"
+  },
+  {
+    "id": "H5910",
+    "ti": "ʻAkkôw",
+    "le": "עַכֹּו",
+    "pl": "ákko",
+    "ps": "ak-ko'",
+    "df": "<font color='%COLOR_GREEN%'></font>aparentemente de una raíz que no se usa que sign. hilvanar en; Ako (por su situación en una bahía): <font color='%COLOR_BLUE%'>Aco.</font>"
+  },
+  {
+    "id": "H5911",
+    "ti": "ʻÂkôwr",
+    "le": "עָכֹור",
+    "pl": "Alór",
+    "ps": "aw-kore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5916')}>H5916</span>; atormentado; Akor, nombre de lugar en Palestina: <font color='%COLOR_BLUE%'>Acor.</font>"
+  },
+  {
+    "id": "H5912",
+    "ti": "ʻÂkân",
+    "le": "עָכָן",
+    "pl": "Akán",
+    "ps": "aw-kawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que sign. atormentar, atribular; perturbador; Akán, un israelita.: <font color='%COLOR_BLUE%'>Acán.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5917')}>H5917</span>."
+  },
+  {
+    "id": "H5913",
+    "ti": "ʻâkaç",
+    "le": "עָכַס",
+    "pl": "akás",
+    "ps": "aw-kas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente atar, espec. con grilletes; pero usado solo como de denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5914')}>H5914</span>; ponerse cadenillas en los tobillos: <font color='%COLOR_BLUE%'>hacer son.</font>"
+  },
+  {
+    "id": "H5914",
+    "ti": "ʻekeç",
+    "le": "עֶכֶס",
+    "pl": "ékes",
+    "ps": "eh'-kes",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5913')}>H5913</span>; grillete; de aquí, cadenilla para tobillo: <font color='%COLOR_BLUE%'>atavío (del calzado), prisiones.</font>"
+  },
+  {
+    "id": "H5915",
+    "ti": "ʻAkçâh",
+    "le": "עַכְסָה",
+    "pl": "Aksá",
+    "ps": "ak-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5914')}>H5914</span>; cadenilla; Aksa, una israelitas: <font color='%COLOR_BLUE%'>Acsa.</font>"
+  },
+  {
+    "id": "H5916",
+    "ti": "ʻâkar",
+    "le": "עָכַר",
+    "pl": "akár",
+    "ps": "aw-kar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente revolver agua; figurativamente perturbar o afligir: <font color='%COLOR_BLUE%'>agravar, alborotar, atormentar, perturbar, turbación, turbar.</font>"
+  },
+  {
+    "id": "H5917",
+    "ti": "ʻÂkâr",
+    "le": "עָכָר",
+    "pl": "Akár",
+    "ps": "aw-kawr'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5916')}>H5916</span>; alborotador, perturbador; Akar, un israelita.: <font color='%COLOR_BLUE%'>Acán.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5912')}>H5912</span>."
+  },
+  {
+    "id": "H5918",
+    "ti": "ʻOkrân",
+    "le": "עׇכְרָן",
+    "pl": "Okrán",
+    "ps": "ok-rawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5916')}>H5916</span>; atolondrado; Okrán, un israelita.: <font color='%COLOR_BLUE%'>Ocrán.</font>"
+  },
+  {
+    "id": "H5919",
+    "ti": "ʻakshûwb",
+    "le": "עַכְשׁוּב",
+    "pl": "akshúb",
+    "ps": "ak-shoob'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de una raíz que no se usa que significa enroscarse; aspid (por acechar enroscada): <font color='%COLOR_BLUE%'>áspid.</font>"
+  },
+  {
+    "id": "H5920",
+    "ti": "ʻal",
+    "le": "עַל",
+    "pl": "al",
+    "ps": "al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; propiamente cima; especialmente el Altísimo (i.e. Dios); también (adverbio) elevado, hacia Jehová: <font color='%COLOR_BLUE%'>Altísimo, alto.</font>"
+  },
+  {
+    "id": "H5921",
+    "ti": "ʻal",
+    "le": "עַל",
+    "pl": "al",
+    "ps": "al",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5920')}>H5920</span> usado como perposición (en singular o plural a menudo con prefijo, o como conjugación con partícula siguiéndole); encima, sobre, arriba, o en contra (sin embargo, siempre en su última relación de aspecto hacia abajo) en una gran variedad de aplicaciones (como sigue): <font color='%COLOR_BLUE%'>a causa de, además, cerca de, como, con, conforme a, contra, de, del, desde, encima, enfrente, entre, hasta, hasta cuándo, junto a, para, por, sobre, todo, por todo.</font>"
+  },
+  {
+    "id": "H5922",
+    "ti": "ʻal",
+    "le": "עַל",
+    "pl": "al",
+    "ps": "al",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5921')}>H5921</span>: <font color='%COLOR_BLUE%'>a, a causa de, además, con, contra, conforme a, contra, de, desde, en, en contra de, entre, hasta, para, por, sobre.</font>"
+  },
+  {
+    "id": "H5923",
+    "ti": "ʻôl",
+    "le": "עֹל",
+    "pl": "ol",
+    "ps": "ole",
+    "df": "<font color='%COLOR_GREEN%'></font>u<font color='%COLOR_GREEN%'><b>עויל</b></font> <font color='%COLOR_PURPLE%'>ol</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5953')}>H5953</span>; yugo, yunta (como impuesto sobre el pescuezo), literalmente o figurativamente: <font color='%COLOR_BLUE%'>carga, yugo.</font>"
+  },
+  {
+    "id": "H5924",
+    "ti": "ʻêllâʼ",
+    "le": "עֵלָּא",
+    "pl": "elá",
+    "ps": "ale-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5922')}>H5922</span>; encima, arriba: <font color='%COLOR_BLUE%'>sobre.</font>"
+  },
+  {
+    "id": "H5925",
+    "ti": "ʻUllâʼ",
+    "le": "עֻלָּא",
+    "pl": "Ulá",
+    "ps": "ool-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5923')}>H5923</span>; carga; Ula, un israelita.: <font color='%COLOR_BLUE%'>Ula.</font>"
+  },
+  {
+    "id": "H5926",
+    "ti": "ʻillêg",
+    "le": "עִלֵּג",
+    "pl": "ilég",
+    "ps": "il-layg'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa tartamudear; tartamudeo: <font color='%COLOR_BLUE%'>tartamudo.</font>"
+  },
+  {
+    "id": "H5927",
+    "ti": "ʻâlâh",
+    "le": "עָלָה",
+    "pl": "alá",
+    "ps": "aw-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ascender, intr. (ser alto) o act. (monte); usado en gran variedad de sentidos, primario y sec., literalmente y figurativamente (como sigue): <font color='%COLOR_BLUE%'>abandonar, adelantar, alejar, altivez, alzar, andar, apartar, apuntar, arder, arreciar, asaltar, atrapar, caer, conducir, cortar, crecer, cubrir, decretar, dejar, desaparecer, despuntar, desvanecer, echar, elevar, enaltecer, encender, enhiesto, enorgullecer, ensanchar, enviar, escalar, establecer, exaltar, exhalar, gastar, grada, imponer, invadir, ir, levantar, llegar, llevar, mayor, mención, ofrecer, ofrenda, pasar, pesar, poner, preferente, al rayar, realzar, recoger, recurrir, retirar, rumiar, sacar, sacrificar, sacrificio, salir, sobrepasar, subida, subir, traer, trepar, venir, volver.</font>"
+  },
+  {
+    "id": "H5928",
+    "ti": "ʻălâh",
+    "le": "עֲלָה",
+    "pl": "alá",
+    "ps": "al-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5930')}>H5930</span>; holocausto: <font color='%COLOR_BLUE%'>holocausto.</font>"
+  },
+  {
+    "id": "H5929",
+    "ti": "ʻâleh",
+    "le": "עָלֶה",
+    "pl": "alé",
+    "ps": "aw-leh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; hoja (como brotando sobre un árbol); colect. follaje: <font color='%COLOR_BLUE%'>hoja, rama.</font>"
+  },
+  {
+    "id": "H5930",
+    "ti": "ʻôlâh",
+    "le": "עֹלָה",
+    "pl": "olá",
+    "ps": "o-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>u<font color='%COLOR_GREEN%'><b>עוילה</b></font> <font color='%COLOR_PURPLE%'>olá</font>; part. act. femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; escalón o (colect. gradas, como ascendiendo); por lo general holocausto (como subiendo en humo): <font color='%COLOR_BLUE%'>holocausto, ofrecer holocausto, quemar, subir.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5766')}>H5766</span>."
+  },
+  {
+    "id": "H5931",
+    "ti": "ʻillâh",
+    "le": "עִלָּה",
+    "pl": "ilá",
+    "ps": "il-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); femenino de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; pretexto (como elevándose artificialmente): <font color='%COLOR_BLUE%'>ocasión.</font>"
+  },
+  {
+    "id": "H5932",
+    "ti": "ʻalvâh",
+    "le": "עַלְוָה",
+    "pl": "alvá",
+    "ps": "al-vaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5766')}>H5766</span>; perversidad moral: <font color='%COLOR_BLUE%'>iniquidad.</font>"
+  },
+  {
+    "id": "H5933",
+    "ti": "ʻAlvâh",
+    "le": "עַלְוָה",
+    "pl": "Alvá",
+    "ps": "al-vaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עליה</b></font> <font color='%COLOR_PURPLE%'>Alyá</font>; lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5932')}>H5932</span>; Alva o Alja, un idumeo: <font color='%COLOR_BLUE%'>Alva.</font>"
+  },
+  {
+    "id": "H5934",
+    "ti": "ʻâlûwm",
+    "le": "עָלוּם",
+    "pl": "alúm",
+    "ps": "aw-loom'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5956')}>H5956</span> en sentido denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5958')}>H5958</span>; (solo en plural como abst.) adolescencia; figurativamente vigor: <font color='%COLOR_BLUE%'>juventud.</font>"
+  },
+  {
+    "id": "H5935",
+    "ti": "ʻAlvân",
+    "le": "עַלְוָן",
+    "pl": "Alván",
+    "ps": "al-vawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עלין</b></font> <font color='%COLOR_PURPLE%'>Alyán</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; elevado; Alván o Alyan, un idumeo: <font color='%COLOR_BLUE%'>Alván.</font>"
+  },
+  {
+    "id": "H5936",
+    "ti": "ʻălûwqâh",
+    "le": "עֲלוּקָה",
+    "pl": "alucá",
+    "ps": "al-oo-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de una raíz que no se usa significa chupar; sanguijuela: <font color='%COLOR_BLUE%'>sanguijuela.</font>"
+  },
+  {
+    "id": "H5937",
+    "ti": "ʻâlaz",
+    "le": "עָלַז",
+    "pl": "aláz",
+    "ps": "aw-laz'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; saltar de gozo, i.e. exultar: <font color='%COLOR_BLUE%'>alegrarse, contento, gloriarse, gozar, gozo, regocijar.</font>"
+  },
+  {
+    "id": "H5938",
+    "ti": "ʻâlêz",
+    "le": "עָלֵז",
+    "pl": "aléz",
+    "ps": "aw-laze'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5937')}>H5937</span>; exultante: <font color='%COLOR_BLUE%'>regocijar.</font>"
+  },
+  {
+    "id": "H5939",
+    "ti": "ʻălâṭâh",
+    "le": "עֲלָטָה",
+    "pl": "alatá",
+    "ps": "al-aw-taw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de una raíz que no se usa que significa cubrir; crepúsculo, anochecer: <font color='%COLOR_BLUE%'>noche, oscurecer.</font>"
+  },
+  {
+    "id": "H5940",
+    "ti": "ʻĕlîy",
+    "le": "עֱלִי",
+    "pl": "elí",
+    "ps": "el-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; manilla de mortero (como que se lo levanta): <font color='%COLOR_BLUE%'>pisón.</font>"
+  },
+  {
+    "id": "H5941",
+    "ti": "ʻÊlîy",
+    "le": "עֵלִי",
+    "pl": "Elí",
+    "ps": "ay-lee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; elevado; Eli, sumo sacerdote israelitas: <font color='%COLOR_BLUE%'>Elí.</font>"
+  },
+  {
+    "id": "H5942",
+    "ti": "ʻillîy",
+    "le": "עִלִּי",
+    "pl": "ilí",
+    "ps": "il-lee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; alto; i.e. comparativo: <font color='%COLOR_BLUE%'>de arriba.</font>"
+  },
+  {
+    "id": "H5943",
+    "ti": "ʻillay",
+    "le": "עִלַּי",
+    "pl": "ilái",
+    "ps": "il-lah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5942')}>H5942</span>; supremo (i.e. Dios): <font color='%COLOR_BLUE%'>Altísimo.</font><p></p><font color='%COLOR_GREEN%'><b>עליה</b></font> <font color='%COLOR_PURPLE%'>Alyá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5933')}>H5933</span>."
+  },
+  {
+    "id": "H5944",
+    "ti": "ʻălîyâh",
+    "le": "עֲלִיָּה",
+    "pl": "aliyá",
+    "ps": "al-ee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; algo elevado, i.e. escalera; también cuarto en el segundo piso (o incluso en la terraza); figurativamente el firmamento, cielo: <font color='%COLOR_BLUE%'>aposento, cámara (alta), escalinata, sala.</font>"
+  },
+  {
+    "id": "H5945",
+    "ti": "ʻelyôwn",
+    "le": "עֶלְיֹון",
+    "pl": "elión",
+    "ps": "el-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; elevación, i.e. (adj.) elevado (comp.); como título, el Supremo: <font color='%COLOR_BLUE%'>Altísimo, alto, de mucha estima, exaltar, excelso, mayor, superior.</font>"
+  },
+  {
+    "id": "H5946",
+    "ti": "ʻelyôwn",
+    "le": "עֶלְיֹון",
+    "pl": "elión",
+    "ps": "el-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5945')}>H5945</span>; el Supremo: <font color='%COLOR_BLUE%'>Altísimo.</font>"
+  },
+  {
+    "id": "H5947",
+    "ti": "ʻallîyz",
+    "le": "עַלִּיז",
+    "pl": "alíz",
+    "ps": "al-leez'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5937')}>H5937</span>; exultante: <font color='%COLOR_BLUE%'>alegrar, alegre.</font>"
+  },
+  {
+    "id": "H5948",
+    "ti": "ʻălîyl",
+    "le": "עֲלִיל",
+    "pl": "alíl",
+    "ps": "al-eel'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5953')}>H5953</span> en sentido de completar; probablemente crisol (como trabajando el metal): <font color='%COLOR_BLUE%'>horno.</font>"
+  },
+  {
+    "id": "H5949",
+    "ti": "ʻălîylâh",
+    "le": "עֲלִילָה",
+    "pl": "alilá",
+    "ps": "al-ee-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עללה</b></font> <font color='%COLOR_PURPLE%'>alilá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5953')}>H5953</span> en sentido de efectuar; hazaña (de Dios), o desempeño (de hombre, a menudo en mal sentido); por impl. oportunidad: <font color='%COLOR_BLUE%'>acción, hecho, obra, ocasión.</font>"
+  },
+  {
+    "id": "H5950",
+    "ti": "ʻălîylîyâh",
+    "le": "עֲלִילִיָּה",
+    "pl": "aliliyá",
+    "ps": "al-ee-lee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5949')}>H5949</span>; ejecución (milagrosa): <font color='%COLOR_BLUE%'>hecho, obra.</font><p></p><font color='%COLOR_GREEN%'><b>עלין</b></font> <font color='%COLOR_PURPLE%'>Alyán.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5935')}>H5935</span>."
+  },
+  {
+    "id": "H5951",
+    "ti": "ʻălîytsûwth",
+    "le": "עֲלִיצוּת",
+    "pl": "alitsút",
+    "ps": "al-ee-tsooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5970')}>H5970</span>; regocijo: <font color='%COLOR_BLUE%'>regocijo.</font>"
+  },
+  {
+    "id": "H5952",
+    "ti": "ʻallîyth",
+    "le": "עַלִּית",
+    "pl": "alít",
+    "ps": "al-leeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span>; cuarto en el segundo piso: <font color='%COLOR_BLUE%'>cámara.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5944')}>H5944</span>."
+  },
+  {
+    "id": "H5953",
+    "ti": "ʻâlal",
+    "le": "עָלַל",
+    "pl": "alál",
+    "ps": "aw-lal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; afectar totalmente; especialmente rebuscar (también figurativamente); por impl. (en mal sentido) excederse, i.e. maltratar, ser riguroso con, dolor, imponer (también literalmente): <font color='%COLOR_BLUE%'>abusar, burlar, contristar, encarnecer, escarnio, maltratar, rebuscar.</font>"
+  },
+  {
+    "id": "H5954",
+    "ti": "ʻălal",
+    "le": "עֲלַל",
+    "pl": "alál",
+    "ps": "al-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5953')}>H5953</span> (en sentido de confiar uno mismo en), entrar; caus. introducir, presentar: <font color='%COLOR_BLUE%'>entrar, introducir, llevar, traer, venir.</font><p></p><font color='%COLOR_GREEN%'><b>עילל</b></font> <font color='%COLOR_PURPLE%'>olál.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5768')}>H5768</span>.<p></p><font color='%COLOR_GREEN%'><b>עללה</b></font> <font color='%COLOR_PURPLE%'>alilá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5949')}>H5949</span>."
+  },
+  {
+    "id": "H5955",
+    "ti": "ʻôlêlâh",
+    "le": "עֹלֵלָה",
+    "pl": "olelá",
+    "ps": "o-lay-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio activo femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5953')}>H5953</span>; solo en plural rebusco, barbecho; por extens. tiempo de rebusco: <font color='%COLOR_BLUE%'>rebusco.</font>"
+  },
+  {
+    "id": "H5956",
+    "ti": "ʻâlam",
+    "le": "עָלַם",
+    "pl": "alám",
+    "ps": "aw-lam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; velar de la vista, i.e. ocultar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>apartar, -se, encerrar, encubrir, esconder, negar, ocultamente, oculto, oscurecer, simuladamente.</font>"
+  },
+  {
+    "id": "H5957",
+    "ti": "ʻâlam",
+    "le": "עָלַם",
+    "pl": "alám",
+    "ps": "aw-lam'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5769')}>H5769</span>; tiempo remoto, i.e. futuro o pasado indefinidamente; a menudo adverbio para siempre: <font color='%COLOR_BLUE%'>antiguo, eternamente, eterno, perdurar, sempiterno, siglo.</font>"
+  },
+  {
+    "id": "H5958",
+    "ti": "ʻelem",
+    "le": "עֶלֶם",
+    "pl": "élem",
+    "ps": "eh'-lem",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5956')}>H5956</span>; propiamente algo que se guarda fuera de vista [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5959')}>H5959</span>], i.e. muchacho: <font color='%COLOR_BLUE%'>joven, muchacho.</font><p></p><font color='%COLOR_GREEN%'><b>עילם</b></font> <font color='%COLOR_PURPLE%'>olám.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5769')}>H5769</span>."
+  },
+  {
+    "id": "H5959",
+    "ti": "ʻalmâh",
+    "le": "עַלְמָה",
+    "pl": "almá",
+    "ps": "al-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5958')}>H5958</span>; muchacha (como usando velo o privada): <font color='%COLOR_BLUE%'>doncella, virgen.</font>"
+  },
+  {
+    "id": "H5960",
+    "ti": "ʻAlmôwn",
+    "le": "עַלְמֹון",
+    "pl": "Almón",
+    "ps": "al-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5956')}>H5956</span>; oculto; Almón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Almón.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5963')}>H5963</span>."
+  },
+  {
+    "id": "H5961",
+    "ti": "ʻĂlâmôwth",
+    "le": "עֲלָמֹות",
+    "pl": "Alamót",
+    "ps": "al-aw-moth'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5959')}>H5959</span>; propiamente niñas, i.e. voz de soprano o femenina, tal vez falsete: <font color='%COLOR_BLUE%'>Alamot.</font><p></p><font color='%COLOR_GREEN%'><b>עלמות</b></font> <font color='%COLOR_PURPLE%'>almút.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4192')}>H4192</span>."
+  },
+  {
+    "id": "H5962",
+    "ti": "ʻAlmîy",
+    "le": "עַלְמִי",
+    "pl": "almí",
+    "ps": "al-mee'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); gent. de un nombre correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5867')}>H5867</span> contr.; un elamita o habitante de Elam: <font color='%COLOR_BLUE%'>elamita.</font>"
+  },
+  {
+    "id": "H5963",
+    "ti": "ʻAlmôn Diblâthâyᵉmâh",
+    "le": "עַלְמֹן דִּבְלָתָיְמָה",
+    "pl": "Almón Diblatayemá",
+    "ps": "al-mone' dib-lawthaw'-yem-aw",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5960')}>H5960</span> y el dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1690')}>H1690</span> [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1015')}>H1015</span>] con encl. de dirección; Almón hacia Diblataim; Almon Diblataimá, un lugar en Moab: <font color='%COLOR_BLUE%'>Almón-diblataim.</font>"
+  },
+  {
+    "id": "H5964",
+    "ti": "ʻÂlemeth",
+    "le": "עָלֶמֶת",
+    "pl": "Alémet",
+    "ps": "aw-leh'-meth",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5956')}>H5956</span>; cubierta; Alemet, nombre de un lugar en Palestina y de dos israelitas: <font color='%COLOR_BLUE%'>Alamet, Alemet.</font>"
+  },
+  {
+    "id": "H5965",
+    "ti": "ʻâlaç",
+    "le": "עָלַס",
+    "pl": "alás",
+    "ps": "aw-las'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; brincar de gozo, i.e. exultar, saludar gozosamente: <font color='%COLOR_BLUE%'>alegrar, gozar.</font>"
+  },
+  {
+    "id": "H5966",
+    "ti": "ʻâlaʻ",
+    "le": "עָלַע",
+    "pl": "alá",
+    "ps": "aw-lah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; sorber: <font color='%COLOR_BLUE%'>chupar.</font>"
+  },
+  {
+    "id": "H5967",
+    "ti": "ʻălaʻ",
+    "le": "עֲלַע",
+    "pl": "alá",
+    "ps": "al-ah'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6763')}>H6763</span>; costilla: <font color='%COLOR_BLUE%'>costilla.</font>"
+  },
+  {
+    "id": "H5968",
+    "ti": "ʻâlaph",
+    "le": "עָלַף",
+    "pl": "aláf",
+    "ps": "aw-laf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; velar o cubrir; figurativamente ser lánguido: <font color='%COLOR_BLUE%'>arrebozar, cubrirse, desmaya.</font>"
+  },
+  {
+    "id": "H5969",
+    "ti": "ʻulpeh",
+    "le": "עֻלְפֶּה",
+    "pl": "ulpé",
+    "ps": "ool-peh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5968')}>H5968</span>; envoltorio, i.e. (figurativamente) duelo: <font color='%COLOR_BLUE%'>desmayar.</font>"
+  },
+  {
+    "id": "H5970",
+    "ti": "ʻâlats",
+    "le": "עָלַץ",
+    "pl": "aláts",
+    "ps": "aw-lats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; saltar de gozo, i.e. júbilo: <font color='%COLOR_BLUE%'>alegrar, gozar, regocijar.</font>"
+  },
+  {
+    "id": "H5971",
+    "ti": "ʻam",
+    "le": "עַם",
+    "pl": "am",
+    "ps": "am",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6004')}>H6004</span>; pueblo (como unidad congregada); especialmente tribu (como las de Israel); de aquí, (colectivamente) tropas o ayudantes; figurativamente rebaño: <font color='%COLOR_BLUE%'>ejército, gente, hombres, nación, pueblo.</font>"
+  },
+  {
+    "id": "H5972",
+    "ti": "ʻam",
+    "le": "עַם",
+    "pl": "am",
+    "ps": "am",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span>: <font color='%COLOR_BLUE%'>pueblo.</font>"
+  },
+  {
+    "id": "H5973",
+    "ti": "ʻim",
+    "le": "עִם",
+    "pl": "im",
+    "ps": "eem",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6004')}>H6004</span>; adverbio o perposición, con (i.e. en conjunción con), en aplicaciones variadas; especialmente igualmente con; a menudo con perposición prefijo (y entonces por lo general no aparece en español): <font color='%COLOR_BLUE%'>a favor, al (parecer), cerca, cercano, como, con, conmigo, contigo, contra, con todo eso, cual, de entre, delante de, de parte de, en, junto a, mientras, no... ni, que no, también a este, y.</font>"
+  },
+  {
+    "id": "H5974",
+    "ti": "ʻim",
+    "le": "עִם",
+    "pl": "im",
+    "ps": "eem",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5973')}>H5973</span>: <font color='%COLOR_BLUE%'>a, al, como, con, de, hacia.</font>"
+  },
+  {
+    "id": "H5975",
+    "ti": "ʻâmad",
+    "le": "עָמַד",
+    "pl": "amád",
+    "ps": "aw-mad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estar, en varias relaciones (literalmente y figurativamente, intr. y trans.): <font color='%COLOR_BLUE%'>afirmar, aquietar, arreglar, asentar, asistir, callar, cesar, colocar, comparecer, confiar, confirmar, conservar, constituir, consultar, cumplir, dejar, descansar, desempeñar, designar, detener, determinar, enfrentar, entrar, entregar, erigir, esperar, establecer, estar atento, existir, faltar, estar firme, habitar, interponer, levantar, llegar, llevar, mantener, ministrar, mirar, oponer, orden, parar, parecer, permanecer, persistir, estar de pie, poner, presentar, presente, prevalecer, quedar, reedificar, reposar, resistir, restaurar, restituir, señalar, servir, sobrevivir, sostener, subsistir, suceder, venir.</font>"
+  },
+  {
+    "id": "H5976",
+    "ti": "ʻâmad",
+    "le": "עָמַד",
+    "pl": "amád",
+    "ps": "aw-mad'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4571')}>H4571</span>; sacudir, agitar: <font color='%COLOR_BLUE%'>(romper) enteramente.</font>"
+  },
+  {
+    "id": "H5977",
+    "ti": "ʻômed",
+    "le": "עֹמֶד",
+    "pl": "ómed",
+    "ps": "o'-med",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5975')}>H5975</span>; mancha (como siendo fija): <font color='%COLOR_BLUE%'>lugar, puesto, sitio.</font>"
+  },
+  {
+    "id": "H5978",
+    "ti": "ʻimmâd",
+    "le": "עִמָּד",
+    "pl": "immád",
+    "ps": "im-mawd'",
+    "df": "<font color='%COLOR_GREEN%'></font>prol. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5973')}>H5973</span>; junto con: <font color='%COLOR_BLUE%'>a mí, de mí, en mí, me, por compañera, conmigo.</font><p></p><font color='%COLOR_GREEN%'><b>עמד</b></font> <font color='%COLOR_PURPLE%'>ammúd.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5982')}>H5982</span>."
+  },
+  {
+    "id": "H5979",
+    "ti": "ʻemdâh",
+    "le": "עֶמְדָּה",
+    "pl": "emdá",
+    "ps": "em-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5975')}>H5975</span>; estación, i.e. domicilio: <font color='%COLOR_BLUE%'>apoyo.</font>"
+  },
+  {
+    "id": "H5980",
+    "ti": "ʻummâh",
+    "le": "עֻמָּה",
+    "pl": "ummá",
+    "ps": "oom-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6004')}>H6004</span>; conjunción, i.e. sociedad; mayormente adverbio o perposición (con perposición prefijo), cerca, al lado, junto con: <font color='%COLOR_BLUE%'>alternar, corresponder, enfrente, guardar, al lado.</font>"
+  },
+  {
+    "id": "H5981",
+    "ti": "ʻUmmâh",
+    "le": "עֻמָּה",
+    "pl": "Ummá",
+    "ps": "oom-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5980')}>H5980</span>; asociación; Uma, un lugar en Palestina: <font color='%COLOR_BLUE%'>príncipe, Uma.</font>"
+  },
+  {
+    "id": "H5982",
+    "ti": "ʻammûwd",
+    "le": "עַמּוּד",
+    "pl": "ammúd",
+    "ps": "am-mood'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>עמד</b></font> <font color='%COLOR_PURPLE%'>ammúd</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5975')}>H5975</span>; columna (como estando erecta); también atril, i.e. plataforma: <font color='%COLOR_BLUE%'>columna.</font>"
+  },
+  {
+    "id": "H5983",
+    "ti": "ʻAmmôwn",
+    "le": "עַמֹּון",
+    "pl": "Ammón",
+    "ps": "am-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span>; tribal, i.e. innato; Ammón, un hijo de Lot; también su posteridad y su país: <font color='%COLOR_BLUE%'>Amón, amonita.</font>"
+  },
+  {
+    "id": "H5984",
+    "ti": "ʻAmmôwnîy",
+    "le": "עַמֹּונִי",
+    "pl": "ammoní",
+    "ps": "am-mo-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5983')}>H5983</span>; amonita o (adj.) amoniteo: <font color='%COLOR_BLUE%'>de Amón, amonita.</font>"
+  },
+  {
+    "id": "H5985",
+    "ti": "ʻAmmôwnîyth",
+    "le": "עַמֹּונִית",
+    "pl": "ammonít",
+    "ps": "am-mo-neeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5984')}>H5984</span>; una amonita: <font color='%COLOR_BLUE%'>(mujer) amonita.</font>"
+  },
+  {
+    "id": "H5986",
+    "ti": "ʻÂmôwç",
+    "le": "עָמֹוס",
+    "pl": "Amós",
+    "ps": "aw-moce'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6006')}>H6006</span>; cargoso; Amós, profeta israelitas: <font color='%COLOR_BLUE%'>Amós.</font>"
+  },
+  {
+    "id": "H5987",
+    "ti": "ʻÂmôwq",
+    "le": "עָמֹוק",
+    "pl": "Amóc",
+    "ps": "aw-moke'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6009')}>H6009</span>; hondo; Amoc, un israelita.: <font color='%COLOR_BLUE%'>Amoc.</font>"
+  },
+  {
+    "id": "H5988",
+    "ti": "ʻAmmîyʼêl",
+    "le": "עַמִּיאֵל",
+    "pl": "Ammiél",
+    "ps": "am-mee-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; pueblo de Dios; Amiel, nombre de tres o cuatro israelitas: <font color='%COLOR_BLUE%'>Amiel.</font>"
+  },
+  {
+    "id": "H5989",
+    "ti": "ʻAmmîyhûwd",
+    "le": "עַמִּיהוּד",
+    "pl": "Ammijúd",
+    "ps": "am-mee-hood'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1935')}>H1935</span>; pueblo de esplendor; Amijud, nombre de tres israelitas: <font color='%COLOR_BLUE%'>Amiud.</font>"
+  },
+  {
+    "id": "H5990",
+    "ti": "ʻAmmîyzâbâd",
+    "le": "עַמִּיזָבָד",
+    "pl": "Ammizabád",
+    "ps": "am-mee-zaw-bawd'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2064')}>H2064</span>; pueblo de dote; Amizabad, un israelita.: <font color='%COLOR_BLUE%'>Amisabad.</font>"
+  },
+  {
+    "id": "H5991",
+    "ti": "ʻAmmîychûwr",
+    "le": "עַמִּיחוּר",
+    "pl": "Ammikjur",
+    "ps": "am-mee-khoor'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2353')}>H2353</span>; pueblo de nobleza; Amijur, príncipe sirio: <font color='%COLOR_BLUE%'>Amiud.</font>"
+  },
+  {
+    "id": "H5992",
+    "ti": "ʻAmmîynâdâb",
+    "le": "עַמִּינָדָב",
+    "pl": "Amminadab",
+    "ps": "am-mee-naw-dawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5068')}>H5068</span>; pueblo de liberalidad; Aminadab, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Aminadab.</font>"
+  },
+  {
+    "id": "H5993",
+    "ti": "ʻAmmîy Nâdîyb",
+    "le": "עַמִּי נָדִיב",
+    "pl": "Ammí Nadíb",
+    "ps": "am-mee' naw-deeb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5081')}>H5081</span>; mi pueblo (es) liberal; Ammi Nadib, probablemente un israelita.: <font color='%COLOR_BLUE%'>Aminadab.</font>"
+  },
+  {
+    "id": "H5994",
+    "ti": "ʻămîyq",
+    "le": "עֲמִיק",
+    "pl": "amíc",
+    "ps": "am-eek'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6012')}>H6012</span>; profundo, i.e. insondable: <font color='%COLOR_BLUE%'>profundo.</font>"
+  },
+  {
+    "id": "H5995",
+    "ti": "ʻâmîyr",
+    "le": "עָמִיר",
+    "pl": "amír",
+    "ps": "aw-meer'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6014')}>H6014</span>; atado de grano: <font color='%COLOR_BLUE%'>gavilla, manojo.</font>"
+  },
+  {
+    "id": "H5996",
+    "ti": "ʻAmmîyshadday",
+    "le": "עַמִּישַׁדַּי",
+    "pl": "Ammishaddái",
+    "ps": "am-mee-shad-dah'ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7706')}>H7706</span>; pueblo de (l) Todopoderoso; Amishadai, un israelita.: <font color='%COLOR_BLUE%'>Amisadai.</font>"
+  },
+  {
+    "id": "H5997",
+    "ti": "ʻâmîyth",
+    "le": "עָמִית",
+    "pl": "amít",
+    "ps": "aw-meeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz primaria significa asociar; compañía; de aquí, (concretamente) compañero o pariente: <font color='%COLOR_BLUE%'>compañero, prójimo.</font>"
+  },
+  {
+    "id": "H5998",
+    "ti": "ʻâmal",
+    "le": "עָמַל",
+    "pl": "amál",
+    "ps": "aw-mal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; laborar, hacer gran esfuerzo, i.e. trabajar arduamente y con fastidio: <font color='%COLOR_BLUE%'>, afanarse, fatigarse, trabajar.</font>"
+  },
+  {
+    "id": "H5999",
+    "ti": "ʻâmâl",
+    "le": "עָמָל",
+    "pl": "amál",
+    "ps": "aw-mawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5998')}>H5998</span>; trabajo, i.e. esfuerzo agotador; de aquí, preocupación, sea del cuerpo o de la mente: <font color='%COLOR_BLUE%'>aflicción, agravio, dolor, duro, faena, iniquidad, injuria, labor, maldad, miseria, molestia, molesto, perversidad, tiranía, trabajar, trabajo, vejación.</font>"
+  },
+  {
+    "id": "H6000",
+    "ti": "ʻÂmâl",
+    "le": "עָמָל",
+    "pl": "Amál",
+    "ps": "aw-mawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5999')}>H5999</span>; Amál, un israelita.: <font color='%COLOR_BLUE%'>Amal.</font>"
+  }
+]

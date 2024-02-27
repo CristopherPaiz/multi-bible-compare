@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G4001",
+    "ti": "pentakósioi",
+    "le": "πεντακόσιοι",
+    "pl": "pentakósioi",
+    "ps": "pen-tak-os'-ee-oy",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4002')}>G4002</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1540')}>G1540</span>, quinientos: <font color='%COLOR_BLUE%'>quinientos.</font>"
+  },
+  {
+    "id": "G4002",
+    "ti": "pénte",
+    "le": "πέντε",
+    "pl": "pénte",
+    "ps": "pen'-teh",
+    "df": "número primario; «cinco»: <font color='%COLOR_BLUE%'>cinco.</font>"
+  },
+  {
+    "id": "G4003",
+    "ti": "pentekaidékatos",
+    "le": "πεντεκαιδέκατος",
+    "pl": "pentekaidékatos",
+    "ps": "pen-tek-ahee-dek'-at-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4002')}>G4002</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2532')}>G2532</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1182')}>G1182</span>; cinco y décimo: <font color='%COLOR_BLUE%'>decimoquinto.</font>"
+  },
+  {
+    "id": "G4004",
+    "ti": "pentḗkonta",
+    "le": "πεντήκοντα",
+    "pl": "pentékonta",
+    "ps": "pen-tay'-kon-tah",
+    "df": "multiplicador de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4002')}>G4002</span>; cincuenta: <font color='%COLOR_BLUE%'>cincuenta.</font>"
+  },
+  {
+    "id": "G4005",
+    "ti": "pentēkostḗ",
+    "le": "πεντηκοστή",
+    "pl": "pentekosté",
+    "ps": "pen-tay-kos-tay'",
+    "df": "femenino del ordinal de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4004')}>G4004</span>; quincuagésima (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2250')}>G2250</span> implicación) de la Pascua, i.e. el festival de «Pentecostés»: <font color='%COLOR_BLUE%'>Pentecostés.</font>"
+  },
+  {
+    "id": "G4006",
+    "ti": "pepoíthēsis",
+    "le": "πεποίθησις",
+    "pl": "pepoídsesis",
+    "ps": "pep-oy'-thay-sis",
+    "df": "del perfecto del alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3958')}>G3958</span>; confianza: <font color='%COLOR_BLUE%'>confianza, confiar.</font>"
+  },
+  {
+    "id": "G4007",
+    "ti": "per",
+    "le": "περ",
+    "pl": "per",
+    "ps": "per",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>; partícula enclítica significa tiva de abundancia (por entero, por completo), i.e. énfasis; mucho, muy o siempre: <font color='%COLOR_BLUE%'>alguna otra cosa.</font>"
+  },
+  {
+    "id": "G4008",
+    "ti": "péran",
+    "le": "πέραν",
+    "pl": "péran",
+    "ps": "per'-an",
+    "df": "aparentemente acusativo de un derivado obsoleto de <b>πείρω</b> <font color='%COLOR_PURPLE%'>peíro</font> («perforar»); a través (como adverbio o preposición), i.e. a través: <font color='%COLOR_BLUE%'>al otro lado, la otra orilla, la otra ribera.</font>"
+  },
+  {
+    "id": "G4009",
+    "ti": "péras",
+    "le": "πέρας",
+    "pl": "péras",
+    "ps": "per'-as",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>; extremidad: <font color='%COLOR_BLUE%'>fin.</font>"
+  },
+  {
+    "id": "G4010",
+    "ti": "Pérgamos",
+    "le": "Πέργαμος",
+    "pl": "Pérgamos",
+    "ps": "per'-gam-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4444')}>G4444</span>; fortificado; Pérgamo, lugar en Asia Menor: <font color='%COLOR_BLUE%'>Pérgamo.</font>"
+  },
+  {
+    "id": "G4011",
+    "ti": "Pérgē",
+    "le": "Πέργη",
+    "pl": "Pérge",
+    "ps": "perg'-ay",
+    "df": "probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4010')}>G4010</span>; torre; Perge, lugar en Asia Menor: <font color='%COLOR_BLUE%'>Perge.</font>"
+  },
+  {
+    "id": "G4012",
+    "ti": "perí",
+    "le": "περί",
+    "pl": "perí",
+    "ps": "per-ee'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>; propiamente a través (por todas partes), i.e. alrededor; figurativamente con respecto a; usada en varias aplicaciones, de lugar, causa o tiempo (con el genitivo denotando el sujeto u ocasión o punto superlativo; con el acusativo localidad, circuito, materia, circunstancia o período general): <font color='%COLOR_BLUE%'>acerca de, por, en cuanto a, alrededor de, en torno de, en, con, cerca de (la hora), respecto a, por causa de, junto a.</font> En la composición retiene substancialmente el mismo significa do de circuito (alrededor), exceso (más allá), o carácter completo (total, todo)."
+  },
+  {
+    "id": "G4013",
+    "ti": "periágō",
+    "le": "περιάγω",
+    "pl": "periágo",
+    "ps": "per-ee-ag'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; llevar alrededor (como compañero); reflexivamente andar alrededor, rodear: <font color='%COLOR_BLUE%'>andar alrededor, recorrer, traer.</font>"
+  },
+  {
+    "id": "G4014",
+    "ti": "periairéō",
+    "le": "περιαιρέω",
+    "pl": "periairéo",
+    "ps": "per-ee-ahee-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span> (incluído su alternado); quitar todo alrededor, i.e. develar, descorrer el velo, echar (ancla); figurativamente expiar: <font color='%COLOR_BLUE%'>cortar, perder, quitar.</font>"
+  },
+  {
+    "id": "G4015",
+    "ti": "periastráptō",
+    "le": "περιαστράπτω",
+    "pl": "periastrápto",
+    "ps": "per-ee-as-trap'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G797')}>G797</span>; relampaguear todo alrededor, i.e. envolver en luz: <font color='%COLOR_BLUE%'>lo rodeó un resplandor.</font>"
+  },
+  {
+    "id": "G4016",
+    "ti": "peribállō",
+    "le": "περιβάλλω",
+    "pl": "peribálo",
+    "ps": "per-ee-bal'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; lanzar todo alrededor; i.e. investir (con empalizada o ropa): <font color='%COLOR_BLUE%'>ropa, vestir, envolver, adornar, cubrir.</font>"
+  },
+  {
+    "id": "G4017",
+    "ti": "periblépō",
+    "le": "περιβλέπω",
+    "pl": "periblépo",
+    "ps": "per-ee-blep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G991')}>G991</span>; mirar todo alrededor: <font color='%COLOR_BLUE%'>mirar alrededor.</font>"
+  },
+  {
+    "id": "G4018",
+    "ti": "peribólaion",
+    "le": "περιβόλαιον",
+    "pl": "peribólaion",
+    "ps": "per-ib-ol'-ah-yon",
+    "df": "neutro de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4016')}>G4016</span>; algo lanzado alrededor de uno, i.e. manto, velo: <font color='%COLOR_BLUE%'>velo, vestido.</font>"
+  },
+  {
+    "id": "G4019",
+    "ti": "peridéō",
+    "le": "περιδέω",
+    "pl": "peridéo",
+    "ps": "per-ee-deh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span>; atar alrededor a uno, i.e. envolver: <font color='%COLOR_BLUE%'>envuelto.</font><p></p><b>περιδρέμω</b> <font color='%COLOR_PURPLE%'>peridrémo.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4063')}>G4063</span>.<p></p><b>περιέλλω</b> <font color='%COLOR_PURPLE%'>periélo.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4014')}>G4014</span>.<p></p><b>περιέλθω</b> <font color='%COLOR_PURPLE%'>periéldso.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4022')}>G4022</span>."
+  },
+  {
+    "id": "G4020",
+    "ti": "periergázomai",
+    "le": "περιεργάζομαι",
+    "pl": "periergázomai",
+    "ps": "per-ee-er-gad'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2038')}>G2038</span>; trabajar todo alrededor, i.e. entremeterse: <font color='%COLOR_BLUE%'>entretenerse en lo ajeno.</font>"
+  },
+  {
+    "id": "G4021",
+    "ti": "períergos",
+    "le": "περίεργος",
+    "pl": "períergos",
+    "ps": "per-ee'-er-gos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2041')}>G2041</span>; trabajar todo alrededor, i.e. oficioso (entremetido, neutro plural mágico): <font color='%COLOR_BLUE%'>entremetido, magia.</font>"
+  },
+  {
+    "id": "G4022",
+    "ti": "periérchomai",
+    "le": "περιέρχομαι",
+    "pl": "periérjomai",
+    "ps": "per-ee-er'-khom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span> (incluído sus alternado); venir todo alrededor, i.e. pasear, vacilar, doblar camino: <font color='%COLOR_BLUE%'>ambulante, andar, costear.</font>"
+  },
+  {
+    "id": "G4023",
+    "ti": "periéchō",
+    "le": "περιέχω",
+    "pl": "periéjo",
+    "ps": "per-ee-ekh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2192')}>G2192</span>; sostener todo alrededor, i.e. incluir, agarrar (figurativamente): <font color='%COLOR_BLUE%'>contener, el temor se apoderó.</font>"
+  },
+  {
+    "id": "G4024",
+    "ti": "perizṓnnymi",
+    "le": "περιζώννυμι",
+    "pl": "perizónnumi",
+    "ps": "per-id-zone'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2224')}>G2224</span>; fajar todo alrededor, i.e. (voz media o pasiva) sujetar el cinturón de uno (literalmente o figurativamente): <font color='%COLOR_BLUE%'>ceñir.</font>"
+  },
+  {
+    "id": "G4025",
+    "ti": "períthesis",
+    "le": "περίθεσις",
+    "pl": "perídsesis",
+    "ps": "per-ith'-es-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4060')}>G4060</span>; poner todo alrededor, i.e. decorarse uno mismo con: <font color='%COLOR_BLUE%'>atavío.</font>"
+  },
+  {
+    "id": "G4026",
+    "ti": "periḯstēmi",
+    "le": "περιΐστημι",
+    "pl": "periístemi",
+    "ps": "per-ee-is'-tay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; estar todo alrededor, i.e. ser (casi) un mirón, espectador, o mantenerse lejos (reservado): <font color='%COLOR_BLUE%'>estar alrededor, evitar, cubrir.</font>"
+  },
+  {
+    "id": "G4027",
+    "ti": "perikátharma",
+    "le": "περικάθαρμα",
+    "pl": "perikádsarma",
+    "ps": "per-ee-kath'-ar-mah",
+    "df": "de un compuesto de de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2508')}>G2508</span>; algo limpio todo alrededor, i.e. inmundicia (figurativamente): <font color='%COLOR_BLUE%'>desecho, escoria.</font>"
+  },
+  {
+    "id": "G4028",
+    "ti": "perikalýptō",
+    "le": "περικαλύπτω",
+    "pl": "perikalúpto",
+    "ps": "per-ee-kal-oop'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2572')}>G2572</span>; cubrir todo alrededor, i.e. enteramente (la cara, una superficie): <font color='%COLOR_BLUE%'>cubierta, cubrir, vendar.</font>"
+  },
+  {
+    "id": "G4029",
+    "ti": "períkeimai",
+    "le": "περίκειμαι",
+    "pl": "períkeimai",
+    "ps": "per-ik'-i-mahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2749')}>G2749</span>; yacer todo alrededor, i.e. encerrar, incluir, estorbar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>rodear, sujetar, atar.</font>"
+  },
+  {
+    "id": "G4030",
+    "ti": "perikephalaía",
+    "le": "περικεφαλαία",
+    "pl": "perikefalaía",
+    "ps": "per-ee-kef-al-ah'-yah",
+    "df": "femenino de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2776')}>G2776</span>; rodear en círculo la cabeza, i.e. casco, yelmo: <font color='%COLOR_BLUE%'>yelmo.</font>"
+  },
+  {
+    "id": "G4031",
+    "ti": "perikratḗs",
+    "le": "περικρατής",
+    "pl": "perikratés",
+    "ps": "per-ee-krat-ace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2904')}>G2904</span>; fuerte todo alrededor, i.e. maestro (administrador): <font color='%COLOR_BLUE%'>recoger.</font>"
+  },
+  {
+    "id": "G4032",
+    "ti": "perikrýptō",
+    "le": "περικρύπτω",
+    "pl": "perikrúpto",
+    "ps": "per-ee-kroop'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2928')}>G2928</span>; esconder, ocultar todo alrededor, i.e. enteramente: <font color='%COLOR_BLUE%'>recluirse en casa.</font>"
+  },
+  {
+    "id": "G4033",
+    "ti": "perikyklóō",
+    "le": "περικυκλόω",
+    "pl": "perikuklóo",
+    "ps": "per-ee-koo-klo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2944')}>G2944</span>; circunscribir todo alrededor, i.e. bloquear completamente: <font color='%COLOR_BLUE%'>rodear.</font>"
+  },
+  {
+    "id": "G4034",
+    "ti": "perilámpō",
+    "le": "περιλάμπω",
+    "pl": "perilámpo",
+    "ps": "per-ee-lam'-po",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2989')}>G2989</span>; iluminar todo alrededor, i.e. investir con un halo: <font color='%COLOR_BLUE%'>rodear de resplandor,.</font>"
+  },
+  {
+    "id": "G4035",
+    "ti": "perileípō",
+    "le": "περιλείπω",
+    "pl": "perileípo",
+    "ps": "per-ee-li'-po",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3007')}>G3007</span>; dejar todo alrededor, i.e. (pasivamente) sobrevivir: <font color='%COLOR_BLUE%'>quedar.</font>"
+  },
+  {
+    "id": "G4036",
+    "ti": "perílypos",
+    "le": "περίλυπος",
+    "pl": "perílupos",
+    "ps": "per-il'-oo-pos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3077')}>G3077</span>; afligirse todo alrededor, i.e. intensamente triste: <font color='%COLOR_BLUE%'>entristecer mucho, muy triste.</font>"
+  },
+  {
+    "id": "G4037",
+    "ti": "periménō",
+    "le": "περιμένω",
+    "pl": "periméno",
+    "ps": "per-ee-men'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3306')}>G3306</span>; quedarse alrededor, i.e. esperar: <font color='%COLOR_BLUE%'>esperar.</font>"
+  },
+  {
+    "id": "G4038",
+    "ti": "périx",
+    "le": "πέριξ",
+    "pl": "périx",
+    "ps": "per'-ix",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span>, todo alrededor, i.e. (como adjetivo) circunyacente: <font color='%COLOR_BLUE%'>vecina.</font>"
+  },
+  {
+    "id": "G4039",
+    "ti": "perioikéō",
+    "le": "περιοικέω",
+    "pl": "perioikéo",
+    "ps": "per-ee-oy-keh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3611')}>G3611</span>; residir alrededor, i.e. ser vecino: <font color='%COLOR_BLUE%'>vecino.</font>"
+  },
+  {
+    "id": "G4040",
+    "ti": "períoikos",
+    "le": "περίοικος",
+    "pl": "períoikos",
+    "ps": "per-ee'-oy-kos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G35624')}>G35624</span>; morar alrededor, i.e. ser vecino (elipsis usado como sustantivo): <font color='%COLOR_BLUE%'>vecino.</font>"
+  },
+  {
+    "id": "G4041",
+    "ti": "perioúsios",
+    "le": "περιούσιος",
+    "pl": "perioúsios",
+    "ps": "per-ee-oo'-see-os",
+    "df": "del participio presente femenino de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1510')}>G1510</span>; ser más allá de lo usual, i.e. especial (propio de uno): <font color='%COLOR_BLUE%'>propio.</font>"
+  },
+  {
+    "id": "G4042",
+    "ti": "periochḗ",
+    "le": "περιοχή",
+    "pl": "periojé",
+    "ps": "per-ee-okh-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4023')}>G4023</span>; ser mantenido alrededor, i.e. (concretamente) pasaje (de las escrituras, como circunscrito): <font color='%COLOR_BLUE%'>pasaje.</font>"
+  },
+  {
+    "id": "G4043",
+    "ti": "peripatéō",
+    "le": "περιπατέω",
+    "pl": "peripatéo",
+    "ps": "per-ee-pat-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3961')}>G3961</span>; andar todo alrededor, i.e. andar en general (específicamente como prueba de capacidad); figurativamente vivir, moverse uno mismo, seguir (como compañero o partidario): <font color='%COLOR_BLUE%'>ocupar, encaminar, hacer, ir, andar, caminar, camino, conducir, proceder.</font>"
+  },
+  {
+    "id": "G4044",
+    "ti": "peripeírō",
+    "le": "περιπείρω",
+    "pl": "peripeíro",
+    "ps": "per-ee-pi'-ro",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>; penetrar enteramente, i.e. transfigurarse (figurativamente): <font color='%COLOR_BLUE%'>traspasar.</font>"
+  },
+  {
+    "id": "G4045",
+    "ti": "peripíptō",
+    "le": "περιπίπτω",
+    "pl": "peripípto",
+    "ps": "per-ee-pip'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4098')}>G4098</span>; caer en algo, i.e. todo alrededor, i.e. luz entre o sobre, ser rodeado con: <font color='%COLOR_BLUE%'>hallar (en pruebas), caer entre, dar en (un lugar).</font>"
+  },
+  {
+    "id": "G4046",
+    "ti": "peripoiéomai",
+    "le": "περιποιέομαι",
+    "pl": "peripoiéomai",
+    "ps": "per-ee-poy-eh'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4160')}>G4160</span>; hacerse uno mismo alrededor, i.e. adquirir (comprar): <font color='%COLOR_BLUE%'>ganar.</font>"
+  },
+  {
+    "id": "G4047",
+    "ti": "peripoíēsis",
+    "le": "περιποίησις",
+    "pl": "peripoíesis",
+    "ps": "per-ee-poy'-ay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4046')}>G4046</span>; adquisición (el acto o la cosa) por extensión preservación: <font color='%COLOR_BLUE%'>posesión, preservación, adquirir, alcanzar.</font>"
+  },
+  {
+    "id": "G4048",
+    "ti": "perirrhḗgnymi",
+    "le": "περιῤῥήγνυμι",
+    "pl": "perirrégnumi",
+    "ps": "per-ir-hrayg'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4486')}>G4486</span>; rasgar todo alrededor, i.e. separar completamente: <font color='%COLOR_BLUE%'>rasgar.</font>"
+  },
+  {
+    "id": "G4049",
+    "ti": "perispáō",
+    "le": "περισπάω",
+    "pl": "perispáo",
+    "ps": "per-ee-spah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4685')}>G4685</span>; arrastrar todo alrededor, i.e. (figurativamente) distraer (con atención): <font color='%COLOR_BLUE%'>preocuparse.</font>"
+  },
+  {
+    "id": "G4050",
+    "ti": "perisseía",
+    "le": "περισσεία",
+    "pl": "perisseía",
+    "ps": "per-is-si'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4062')}>G4062</span>; provisión excesiva, i.e. superabundancia: <font color='%COLOR_BLUE%'>abundancia, abundar.</font>"
+  },
+  {
+    "id": "G4051",
+    "ti": "perísseuma",
+    "le": "περίσσευμα",
+    "pl": "perísseuma",
+    "ps": "per-is'-syoo-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4052')}>G4052</span>; exceso, o superabundancia: <font color='%COLOR_BLUE%'>abundancia.</font>"
+  },
+  {
+    "id": "G4052",
+    "ti": "perisseúō",
+    "le": "περισσεύω",
+    "pl": "perisseúo",
+    "ps": "per-is-syoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4053')}>G4053</span>; superabundar (en cantidad o calidad), haber en exceso, ser superfluo; también (transitivamente) hacer superabundar o sobresalir: <font color='%COLOR_BLUE%'>abundancia, abundar, aumentar, crecer.</font>"
+  },
+  {
+    "id": "G4053",
+    "ti": "perissós",
+    "le": "περισσός",
+    "pl": "perissós",
+    "ps": "per-is-sos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> (en el sentido de más allá); superabundante (en cantidad) o superior (en calidad); por implicación excesivo; adverbio (con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1537')}>G1537</span>) violentamente; neutro (como sustantivo) preeminencia: <font color='%COLOR_BLUE%'>ventaja, insistencia, abundancia, abundantemente.</font>"
+  },
+  {
+    "id": "G4054",
+    "ti": "perissóteron",
+    "le": "περισσότερον",
+    "pl": "perissóteron",
+    "ps": "per-is-sot'-er-on",
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4055')}>G4055</span> (como adverbio); de una manera más superabundante: <font color='%COLOR_BLUE%'>más, mucho más.</font>"
+  },
+  {
+    "id": "G4055",
+    "ti": "perissóteros",
+    "le": "περισσότερος",
+    "pl": "perissóteros",
+    "ps": "per-is-sot'-er-os",
+    "df": "compare de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4053')}>G4053</span>; más superabundante (en número, grado o carácter): <font color='%COLOR_BLUE%'>mayor, más abundante, demasiado.</font>"
+  },
+  {
+    "id": "G4056",
+    "ti": "perissotérōs",
+    "le": "περισσοτέρως",
+    "pl": "perissotéros",
+    "ps": "per-is-sot-er'-oce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4055')}>G4055</span>; más superabundantemente: <font color='%COLOR_BLUE%'>abundante, con mucho deseo, con más diligencia.</font>"
+  },
+  {
+    "id": "G4057",
+    "ti": "perissōs",
+    "le": "περισσῶς",
+    "pl": "perissós",
+    "ps": "per-is-soce'",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4053')}>G4053</span>; superabundantemente: <font color='%COLOR_BLUE%'>sobremanera, aún más, aun más.</font>"
+  },
+  {
+    "id": "G4058",
+    "ti": "peristerá",
+    "le": "περιστερά",
+    "pl": "peristerá",
+    "ps": "per-is-ter-ah'",
+    "df": "de derivación incierta; paloma, tórtola: <font color='%COLOR_BLUE%'>paloma. palomino.</font>"
+  },
+  {
+    "id": "G4059",
+    "ti": "peritémnō",
+    "le": "περιτέμνω",
+    "pl": "peritémno",
+    "ps": "per-ee-tem'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5114')}>G5114</span>; cortar alrededor, i.e. (específicamente) circuncidar: <font color='%COLOR_BLUE%'>circuncidar, circunciso.</font>"
+  },
+  {
+    "id": "G4060",
+    "ti": "peritíthēmi",
+    "le": "περιτίθημι",
+    "pl": "peritídsemi",
+    "ps": "per-ee-tith'-ay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; colocar alrededor; por implicación presentar: <font color='%COLOR_BLUE%'>echar encima, poner, cercar (de vallado).</font>"
+  },
+  {
+    "id": "G4061",
+    "ti": "peritomḗ",
+    "le": "περιτομή",
+    "pl": "peritomé",
+    "ps": "per-it-om-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4059')}>G4059</span>; circuncisión (el rito, la condición, o la gente, literalmente o figurativamente): <font color='%COLOR_BLUE%'>circuncidar, circuncisión.</font>"
+  },
+  {
+    "id": "G4062",
+    "ti": "peritrépō",
+    "le": "περιτρέπω",
+    "pl": "peritrépo",
+    "ps": "per-ee-trep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5157')}>G5157</span>; voltearse, volverse, i.e. (mentalmente) enloquecer: <font color='%COLOR_BLUE%'>volver (loco).</font>"
+  },
+  {
+    "id": "G4063",
+    "ti": "peritréchō",
+    "le": "περιτρέχω",
+    "pl": "peritréjo",
+    "ps": "per-ee-trekh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5143')}>G5143</span> (incluído sus alternado); correr alrededor, i.e. atravesar: <font color='%COLOR_BLUE%'>recorrer.</font>"
+  },
+  {
+    "id": "G4064",
+    "ti": "periphérō",
+    "le": "περιφέρω",
+    "pl": "periféro",
+    "ps": "per-ee-fer'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5342')}>H5342</span>; llevar alrededor, i.e. transportar de aquí para allá: <font color='%COLOR_BLUE%'>llevar, dejar, traer.</font>"
+  },
+  {
+    "id": "G4065",
+    "ti": "periphronéō",
+    "le": "περιφρονέω",
+    "pl": "perifronéo",
+    "ps": "per-ee-fron-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5426')}>G5426</span>; pensar más allá, i.e. despreciar (desdeñar, tener en poco): <font color='%COLOR_BLUE%'>menospreciar.</font>"
+  },
+  {
+    "id": "G4066",
+    "ti": "períchōros",
+    "le": "περίχωρος",
+    "pl": "períjoros",
+    "ps": "per-ikh'-o-ros",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; alrededor de la región, i.e. circunyacente (como sustantivo, con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1093')}>G1093</span> implicación vecindad): <font color='%COLOR_BLUE%'>alrededor, circunvecina, contorno, provincia, región.</font>"
+  },
+  {
+    "id": "G4067",
+    "ti": "perípsōma",
+    "le": "περίψωμα",
+    "pl": "perípsoma",
+    "ps": "per-ip'-so-mah",
+    "df": "o <b>περίψημα</b> <font color='%COLOR_PURPLE%'>perípsoma</font>; de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <b>ψάω</b> <font color='%COLOR_PURPLE%'>psáo</font> (frotar); algo cepillado todo alrededor, i.e. restregado (figurativamente espuma, nata, escoria): <font color='%COLOR_BLUE%'>desecho.</font>"
+  },
+  {
+    "id": "G4068",
+    "ti": "perpereúomai",
+    "le": "περπερεύομαι",
+    "pl": "perpereúomai",
+    "ps": "per-per-yoo'-om-ahee",
+    "df": "voz media de <b>πέρπερος</b> <font color='%COLOR_PURPLE%'>pérperos</font> (jactancioso, fanfarrón; tal vez por reduplicación de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>); jactarse, fanfarronear: <font color='%COLOR_BLUE%'>jactancioso.</font>"
+  },
+  {
+    "id": "G4069",
+    "ti": "Persís",
+    "le": "Περσίς",
+    "pl": "Persís",
+    "ps": "per-sece'",
+    "df": "mujer persa; Pérsida, una mujer cristiana: <font color='%COLOR_BLUE%'>Pérsida.</font>"
+  },
+  {
+    "id": "G4070",
+    "ti": "pérysi",
+    "le": "πέρυσι",
+    "pl": "pérusi",
+    "ps": "per'-oo-si",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4009')}>G4009</span>; el pasado, i.e. (como sustantivo) el año pasado: <font color='%COLOR_BLUE%'>el año pasado.</font><p></p><b>πετάομαι</b> <font color='%COLOR_PURPLE%'>petáomai.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4072')}>G4072</span>."
+  },
+  {
+    "id": "G4071",
+    "ti": "peteinón",
+    "le": "πετεινόν",
+    "pl": "peteinón",
+    "ps": "pet-i-non'",
+    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4072')}>G4072</span>; animal que vuela, i.e. ave, pájaro: <font color='%COLOR_BLUE%'>ave.</font>"
+  },
+  {
+    "id": "G4072",
+    "ti": "pétomai",
+    "le": "πέτομαι",
+    "pl": "pétomai",
+    "ps": "pet'-om-ahee",
+    "df": "o prolongado <b>πετάομαι</b> <font color='%COLOR_PURPLE%'>petáomai</font>; o contracción<b>πτάομαι</b> <font color='%COLOR_PURPLE%'>ptáomai</font>; voz media de un verbo primario; volar: <font color='%COLOR_BLUE%'>volar.</font>"
+  },
+  {
+    "id": "G4073",
+    "ti": "pétra",
+    "le": "πέτρα",
+    "pl": "pétra",
+    "ps": "pet'-ra",
+    "df": "femenino de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4074')}>G4074</span>; una (masa de) roca (literalmente o figurativamente): <font color='%COLOR_BLUE%'>peña, piedra, roca.</font>"
+  },
+  {
+    "id": "G4074",
+    "ti": "Pétros",
+    "le": "Πέτρος",
+    "pl": "Pétros",
+    "ps": "pet'-ros",
+    "df": "aparentemente palabra primaria; un (pedazo de) roca (más grande que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3073')}>G3073</span>); como nombre, Pedro, un apóstol.: <font color='%COLOR_BLUE%'>Pedro.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2786')}>G2786</span>."
+  },
+  {
+    "id": "G4075",
+    "ti": "petrṓdēs",
+    "le": "πετρώδης",
+    "pl": "petródes",
+    "ps": "pet-ro'-dace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4073')}>G4073</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1491')}>G1491</span>; parecido a roca, i.e. pedregoso. rocoso: <font color='%COLOR_BLUE%'>pedregal.</font>"
+  },
+  {
+    "id": "G4076",
+    "ti": "pḗganon",
+    "le": "πήγανον",
+    "pl": "péganon",
+    "ps": "pay'-gan-on",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4078')}>G4078</span>; ruda (por sus hojas gruesas y carnosas): <font color='%COLOR_BLUE%'>ruda.</font>"
+  },
+  {
+    "id": "G4077",
+    "ti": "pēgḗ",
+    "le": "πηγή",
+    "pl": "pegé",
+    "ps": "pay-gay'",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4078')}>G4078</span> (mediante la idea de salir a chorros gruesos); fuente (literalmente o figurativamente), i.e. fuente o provisión (de agua, sangre, gozo) (no necesariamente la fuente origen): <font color='%COLOR_BLUE%'>pozo, fuente.</font>"
+  },
+  {
+    "id": "G4078",
+    "ti": "pḗgnymi",
+    "le": "πήγνυμι",
+    "pl": "pégnumi",
+    "ps": "payg'-noo-mee",
+    "df": "forma prolongada de un verbo primario (que en su forma más sencilla ocurre solo como alternado en ciertos tiempos); arreglar («pegar»), i.e. (específicamente) levantar, armar (una tienda, una carpa): <font color='%COLOR_BLUE%'>levantar.</font>"
+  },
+  {
+    "id": "G4079",
+    "ti": "pēdálion",
+    "le": "πηδάλιον",
+    "pl": "pedálion",
+    "ps": "pay-dal'-ee-on",
+    "df": "de un derivado (presunto) de <b>πηδόν</b> <font color='%COLOR_PURPLE%'>pedón</font> (la hoja de un remo; de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3976')}>G3976</span>); «pedal», i.e. timón: <font color='%COLOR_BLUE%'>timón.</font>"
+  },
+  {
+    "id": "G4080",
+    "ti": "pēlíkos",
+    "le": "πηλίκος",
+    "pl": "pelíkos",
+    "ps": "pay-lee'-kos",
+    "df": "forma cuantivativa (femenino) de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4225')}>G4225</span>; cuánto (como indefinida) i.e. en tamaño o (figurativamente) dignidad: <font color='%COLOR_BLUE%'>cuán grande.</font>"
+  },
+  {
+    "id": "G4081",
+    "ti": "pēlós",
+    "le": "πηλός",
+    "pl": "pelós",
+    "ps": "pay-los'",
+    "df": "tal vez palabra primaria; barro, lodo: <font color='%COLOR_BLUE%'>lodo, barro.</font>"
+  },
+  {
+    "id": "G4082",
+    "ti": "pḗra",
+    "le": "πήρα",
+    "pl": "péra",
+    "ps": "pay'-rah",
+    "df": "de afinidad incierta; cartera o bolsa de cuero para comida: <font color='%COLOR_BLUE%'>alforja.</font>"
+  },
+  {
+    "id": "G4083",
+    "ti": "pēchys",
+    "le": "πῆχυς",
+    "pl": "péjus",
+    "ps": "pay'-khoos",
+    "df": "de afín incierto, antebrazo, i.e. (como medida) un codo: <font color='%COLOR_BLUE%'>codo.</font>"
+  },
+  {
+    "id": "G4084",
+    "ti": "piázō",
+    "le": "πιάζω",
+    "pl": "piázo",
+    "ps": "pee-ad'-zo",
+    "df": "probablemente otra forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G971')}>G971</span>; exprimir, i.e. agarrar (gentilmente con las manos [prensar], u oficialmente [arrestar], o en cacería [capturar]: <font color='%COLOR_BLUE%'>apresar, pescar, prender, preso, tomar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4085')}>G4085</span>."
+  },
+  {
+    "id": "G4085",
+    "ti": "piézō",
+    "le": "πιέζω",
+    "pl": "piézo",
+    "ps": "pee-ed'-zo",
+    "df": "otra forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4084')}>G4084</span>; empacar: <font color='%COLOR_BLUE%'>apretada.</font>"
+  },
+  {
+    "id": "G4086",
+    "ti": "pithanología",
+    "le": "πιθανολογία",
+    "pl": "pidsanología",
+    "ps": "pith-an-ol-og-ee'-ah",
+    "df": "de un compuesto de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3982')}>G3982</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span>; lenguaje persuasivo: <font color='%COLOR_BLUE%'>palabra persuasiva.</font>"
+  },
+  {
+    "id": "G4087",
+    "ti": "pikraínō",
+    "le": "πικραίνω",
+    "pl": "pikraíno",
+    "ps": "pik-rah'-ee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4089')}>G4089</span>; amargar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>amargar, amargo, áspero.</font>"
+  },
+  {
+    "id": "G4088",
+    "ti": "pikría",
+    "le": "πικρία",
+    "pl": "pikría",
+    "ps": "pik-ree'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4089')}>G4089</span>; punzante (específicamente veneno): <font color='%COLOR_BLUE%'>amargura.</font>"
+  },
+  {
+    "id": "G4089",
+    "ti": "pikrós",
+    "le": "πικρός",
+    "pl": "pikrós",
+    "ps": "pik-ros'",
+    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4078')}>G4078</span> (mediante la idea de atravesar, perforar; agudo (puntiagudo), i.e. punzante (literalmente o figurativamente): <font color='%COLOR_BLUE%'>amargo.</font>"
+  },
+  {
+    "id": "G4090",
+    "ti": "pikrōs",
+    "le": "πικρῶς",
+    "pl": "pikrós",
+    "ps": "pik-roce'",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4089')}>G4089</span>; amargamente, i.e. (figurativamente) violentamente: <font color='%COLOR_BLUE%'>amargamente.</font>"
+  },
+  {
+    "id": "G4091",
+    "ti": "Pilâtos",
+    "le": "Πιλᾶτος",
+    "pl": "Pilátos",
+    "ps": "pil-at'-os",
+    "df": "de origen latín; apretado estrechamente; i.e. firme; Pilato, un romano: <font color='%COLOR_BLUE%'>Pilato.</font><p></p><b>πίμπλημι</b> <font color='%COLOR_PURPLE%'>pimplemi.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>."
+  },
+  {
+    "id": "G4092",
+    "ti": "pímprēmi",
+    "le": "πίμπρημι",
+    "pl": "mímpremi",
+    "ps": "pim'-pray-mee",
+    "df": "forma reduplicación y prolongado de un primario <b>πρέω</b> <font color='%COLOR_PURPLE%'>préo</font>; que ocurre solo como alternado en ciertos tiempos; arder, i.e. quemar (figurativamente y pasivamente inflamarse con fiebre): <font color='%COLOR_BLUE%'>hinchar.</font>"
+  },
+  {
+    "id": "G4093",
+    "ti": "pinakídion",
+    "le": "πινακίδιον",
+    "pl": "pinakídion",
+    "ps": "pin-ak-id'-ee-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4094')}>G4094</span>; tablilla (para escribir): <font color='%COLOR_BLUE%'>tablilla.</font>"
+  },
+  {
+    "id": "G4094",
+    "ti": "pínax",
+    "le": "πίναξ",
+    "pl": "pínax",
+    "ps": "pin'-ax",
+    "df": "aparentemente forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4109')}>G4109</span>; plato: <font color='%COLOR_BLUE%'>plato.</font>"
+  },
+  {
+    "id": "G4095",
+    "ti": "pínō",
+    "le": "πίνω",
+    "pl": "píno",
+    "ps": "pee'-no",
+    "df": "forma prolongada de <b>πίω</b> <font color='%COLOR_PURPLE%'>pío</font>; que (junto con otra forma <b>πόω</b> <font color='%COLOR_PURPLE%'>póo</font>; ocurre solo como alternado en ciertos tiempos); beber (literalmente o figurativamente): <font color='%COLOR_BLUE%'>beber.</font>"
+  },
+  {
+    "id": "G4096",
+    "ti": "piótēs",
+    "le": "πιότης",
+    "pl": "piótes",
+    "ps": "pee-ot'-ace",
+    "df": "de <b>πίων</b> <font color='%COLOR_PURPLE%'>píon</font> (grasa, gordura; tal vez afín a alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4095')}>G4095</span> mediante la idea de saciedad); gordura, i.e. (por implicación) riqueza (grasoso): <font color='%COLOR_BLUE%'>rica savia.</font>"
+  },
+  {
+    "id": "G4097",
+    "ti": "pipráskō",
+    "le": "πιπράσκω",
+    "pl": "piprásko",
+    "ps": "pip-ras'-ko",
+    "df": "forma prolongada y reduplicación de <b>πράω</b> <font color='%COLOR_PURPLE%'>práo</font>; (que ocurre solo como alternado en ciertos tiempos); contracción de <b>περάω</b> <font color='%COLOR_PURPLE%'>peráo</font> (atravesar; de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>); traficar (por viajar), i.e. disponer de mercadería o en esclavitud (literalmente o figurativamente): <font color='%COLOR_BLUE%'>vender.</font>"
+  },
+  {
+    "id": "G4098",
+    "ti": "píptō",
+    "le": "πίπτω",
+    "pl": "pípto",
+    "ps": "pip'-to",
+    "df": "forma reduplicación y contracción de <b>πέτω</b> <font color='%COLOR_PURPLE%'>péto</font>; (que ocurre solo como alternado en ciertos tiempos); probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4072')}>G4072</span> mediante la idea de aligerar; caer (literalmente o figurativamente): <font color='%COLOR_BLUE%'>perecer, postrar, frustrar, caer, derrumbar.</font>"
+  },
+  {
+    "id": "G4099",
+    "ti": "Pisidía",
+    "le": "Πισιδία",
+    "pl": "Pisidía",
+    "ps": "pis-id-ee'-ah",
+    "df": "probablemente de origen extranjero; Pisidia, una región de Asia Menor: <font color='%COLOR_BLUE%'>Pisidia.</font>"
+  },
+  {
+    "id": "G4100",
+    "ti": "pisteúō",
+    "le": "πιστεύω",
+    "pl": "pisteúo",
+    "ps": "pist-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4102')}>G4102</span>; tener fe (en, o con respecto a, persona o cosa), i.e. crédito; por implicación confiar (específicamente a Cristo el bienestar espiritual de uno): <font color='%COLOR_BLUE%'>encomendar, fiar, guardar, confiar, creer, creyente.</font>"
+  },
+  {
+    "id": "G4101",
+    "ti": "pistikós",
+    "le": "πιστικός",
+    "pl": "pistikos",
+    "ps": "pis-tik-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4102')}>G4102</span>; fidedigno, digno de confianza, i.e. genuino (no adulterado): <font color='%COLOR_BLUE%'>puro.</font>"
+  },
+  {
+    "id": "G4102",
+    "ti": "pístis",
+    "le": "πίστις",
+    "pl": "pístis",
+    "ps": "pis'-tis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3982')}>G3982</span>; persuasión, i.e. credibilidad; moralmente convicción (de verdad religión, o la veracidad de Dios o de un maestro religioso), específicamente confianza en Cristo para salvación; abstractamente constancia en tal profesión; por extensión, el sistema de verdad religiosa (evangelio) en sí mismo: <font color='%COLOR_BLUE%'>fe, fidelidad, fiel, gracia.</font>"
+  },
+  {
+    "id": "G4103",
+    "ti": "pistós",
+    "le": "πιστός",
+    "pl": "pistos",
+    "ps": "pis-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3982')}>G3982</span>; objectivamente digno de confianza, confiable, fidedigno; subjectivamente confiado: <font color='%COLOR_BLUE%'>fiel, fielmente, creer, creyente, verdad.</font>"
+  },
+  {
+    "id": "G4104",
+    "ti": "pistóō",
+    "le": "πιστόω",
+    "pl": "pistóo",
+    "ps": "pis-to'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4103')}>G4103</span>; asegurar: <font color='%COLOR_BLUE%'>persuadir.</font>"
+  },
+  {
+    "id": "G4105",
+    "ti": "planáō",
+    "le": "πλανάω",
+    "pl": "planáo",
+    "ps": "plan-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4106')}>G4106</span>; (propiamente hacer) vagar (de seguridad, verdad o virtud): <font color='%COLOR_BLUE%'>engañador, engañar, errar, extraviar, descarriar, seducir, vagar.</font>"
+  },
+  {
+    "id": "G4106",
+    "ti": "plánē",
+    "le": "πλάνη",
+    "pl": "pláne",
+    "ps": "plan'-ay",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4108')}>G4108</span> (como abstractamente); objectivamente fraude; subjectivamente desviarse de la ortodoxia o piedad: <font color='%COLOR_BLUE%'>engañar, engañoso, error, extravío.</font>"
+  },
+  {
+    "id": "G4107",
+    "ti": "planḗtēs",
+    "le": "πλανήτης",
+    "pl": "planétes",
+    "ps": "plan-ay'-tace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4108')}>G4108</span>; andariego («planeta»), i.e. (figurativamente) maestro errático: <font color='%COLOR_BLUE%'>errante.</font>"
+  },
+  {
+    "id": "G4108",
+    "ti": "plános",
+    "le": "πλάνος",
+    "pl": "plános",
+    "ps": "plan'-os",
+    "df": "de afinidad incierta; andar, vagabundear (como vagabundo), i.e. (por implicación) impostor o guía errado: <font color='%COLOR_BLUE%'>engañador.</font>"
+  },
+  {
+    "id": "G4109",
+    "ti": "pláx",
+    "le": "πλάξ",
+    "pl": "plax",
+    "ps": "plax",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4111')}>G4111</span>; tabla, i.e. superficie plana («plato», o tabla, tablilla, literalmente o figurativamente): <font color='%COLOR_BLUE%'>tabla.</font>"
+  },
+  {
+    "id": "G4110",
+    "ti": "plásma",
+    "le": "πλάσμα",
+    "pl": "plásma",
+    "ps": "plas'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4111')}>G4111</span>; algo moldeado: <font color='%COLOR_BLUE%'>vaso de barro.</font>"
+  },
+  {
+    "id": "G4111",
+    "ti": "plássō",
+    "le": "πλάσσω",
+    "pl": "plásso",
+    "ps": "plas'-so",
+    "df": "verbo primario; moldear, i.e. modelar o fabricar: <font color='%COLOR_BLUE%'>formar.</font>"
+  },
+  {
+    "id": "G4112",
+    "ti": "plastós",
+    "le": "πλαστός",
+    "pl": "plastos",
+    "ps": "plas-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4111')}>G4111</span>; moldeado, i.e. (por implicación) artificial o (figurativamente) ficticio (falso): <font color='%COLOR_BLUE%'>fingir.</font>"
+  },
+  {
+    "id": "G4113",
+    "ti": "plateîa",
+    "le": "πλατεῖα",
+    "pl": "plateía",
+    "ps": "plat-i'-ah",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4116')}>G4116</span>; lugar amplio, i.e. plaza abierta: <font color='%COLOR_BLUE%'>calle, plaza.</font>"
+  },
+  {
+    "id": "G4114",
+    "ti": "plátos",
+    "le": "πλάτος",
+    "pl": "plátos",
+    "ps": "plat'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4116')}>G4116</span>; anchura: <font color='%COLOR_BLUE%'>anchura.</font>"
+  },
+  {
+    "id": "G4115",
+    "ti": "platýnō",
+    "le": "πλατύνω",
+    "pl": "platúno",
+    "ps": "plat-oo'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4116')}>G4116</span>; ampliar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>ensanchar.</font>"
+  },
+  {
+    "id": "G4116",
+    "ti": "platýs",
+    "le": "πλατύς",
+    "pl": "platús",
+    "ps": "plat-oos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4111')}>G4111</span>; esparcir plano, i.e. amplio: <font color='%COLOR_BLUE%'>ancho.</font>"
+  },
+  {
+    "id": "G4117",
+    "ti": "plégma",
+    "le": "πλέγμα",
+    "pl": "plégma",
+    "ps": "pleg'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4120')}>G4120</span>; trenza (de cabello): <font color='%COLOR_BLUE%'>peinado ostentoso.</font><p></p><b>πλεῖον</b> <font color='%COLOR_PURPLE%'>pleíon.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4119')}>G4119</span>."
+  },
+  {
+    "id": "G4118",
+    "ti": "pleîstos",
+    "le": "πλεῖστος",
+    "pl": "pleístos",
+    "ps": "plice'-tos",
+    "df": "superlativo irregular de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4183')}>G4183</span>; el número más grande o muy grande: <font color='%COLOR_BLUE%'>muy numerosa, mucho, a lo más.</font>"
+  },
+  {
+    "id": "G4119",
+    "ti": "pleíōn",
+    "le": "πλείων",
+    "pl": "pleíon",
+    "ps": "pli-own",
+    "df": "neutro <b>πλεῖον</b> <font color='%COLOR_PURPLE%'>pleíon</font>; o <b>πλέον</b> <font color='%COLOR_PURPLE%'>pléon</font>; comparativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4183')}>G4183</span>; más en cantidad, número, o calidad; también (en plural) la porción mayor: <font color='%COLOR_BLUE%'>más adelante, más excelente, mayor, mayoría.</font>"
+  },
+  {
+    "id": "G4120",
+    "ti": "plékō",
+    "le": "πλέκω",
+    "pl": "pléko",
+    "ps": "plek'-o",
+    "df": "palabra primaria; trenzar o hacer trenza: <font color='%COLOR_BLUE%'>entretejida, poner, tejida.</font><p></p><b>πλέον</b> <font color='%COLOR_PURPLE%'>pléon.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4119')}>G4119</span>."
+  },
+  {
+    "id": "G4121",
+    "ti": "pleonázō",
+    "le": "πλεονάζω",
+    "pl": "pleonázo",
+    "ps": "pleh-on-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4119')}>G4119</span>; hacer, o ser más, i.e. aumentar (transitivamente o intransitivamente); por extensión superabundar: <font color='%COLOR_BLUE%'>hacer abundar, crecer.</font>"
+  },
+  {
+    "id": "G4122",
+    "ti": "pleonektéō",
+    "le": "πλεονεκτέω",
+    "pl": "pleonektéo",
+    "ps": "pleh-on-cek-teh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4123')}>G4123</span>; ser codicioso, i.e. (por implicación) abarcar demasiado: <font color='%COLOR_BLUE%'>engañar, ganar ventaja.</font>"
+  },
+  {
+    "id": "G4123",
+    "ti": "pleonéktēs",
+    "le": "πλεονέκτης",
+    "pl": "pleonéktes",
+    "ps": "pleh-on-ek'-tace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4119')}>G4119</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2192')}>G2192</span>; sostener (desear) más, i.e con ansia de ganancia (avaricioso, de aquí, defraudador): <font color='%COLOR_BLUE%'>avaro.</font>"
+  },
+  {
+    "id": "G4124",
+    "ti": "pleonexía",
+    "le": "πλεονεξία",
+    "pl": "pleonexía",
+    "ps": "pleh-on-ex-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4123')}>G4123</span>; avaricia, i.e. (por implicación) fraude, extorsión: <font color='%COLOR_BLUE%'>avaricia, avidez, codicia.</font>"
+  },
+  {
+    "id": "G4125",
+    "ti": "pleurá",
+    "le": "πλευρά",
+    "pl": "pleurá",
+    "ps": "plyoo-rah'",
+    "df": "de afinidad incierta; costilla, i.e. (por extensión) lado, costado: <font color='%COLOR_BLUE%'>costado.</font>"
+  },
+  {
+    "id": "G4126",
+    "ti": "pléō",
+    "le": "πλέω",
+    "pl": "pléo",
+    "ps": "pleh'-o",
+    "df": "otra forma de <b>πλεύω</b> <font color='%COLOR_PURPLE%'>pleúo</font>; que se usa como alternado en ciertos tiempos; probablemente una forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4150')}>G4150</span> (mediante la idea de sumergirse por el agua); pasar en barco: <font color='%COLOR_BLUE%'>navegar, zarpar.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>."
+  },
+  {
+    "id": "G4127",
+    "ti": "plēgḗ",
+    "le": "πληγή",
+    "pl": "plegé",
+    "ps": "play-gay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4141')}>G4141</span>; golpe; por implicación herida; figurativamente calamidad: <font color='%COLOR_BLUE%'>plaga, herida, herir, azotar, azote.</font>"
+  },
+  {
+    "id": "G4128",
+    "ti": "plēthos",
+    "le": "πλῆθος",
+    "pl": "plédsos",
+    "ps": "play'-thos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>; llenura, plenitud, i.e. número grande, multitud, populacho: <font color='%COLOR_BLUE%'>asamblea, cantidad, congregación, juntar, muchedumbre, multitud, número.</font>"
+  },
+  {
+    "id": "G4129",
+    "ti": "plēthýnō",
+    "le": "πληθύνω",
+    "pl": "pledsúno",
+    "ps": "play-thoo'-no",
+    "df": "de otra forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4128')}>G4128</span>; aumentar (transitivamente o intransitivamente): <font color='%COLOR_BLUE%'>multiplicar, abundancia, acrecentar, crecer.</font>"
+  },
+  {
+    "id": "G4130",
+    "ti": "plḗthō",
+    "le": "πλήθω",
+    "pl": "plédso",
+    "ps": "play'-tho",
+    "df": "forma prolongada de un primario <b>πλέω</b> <font color='%COLOR_PURPLE%'>pléo</font> (que aparece solo como alternado en ciertos tiempos y en la forma reduplicación <b>πίμπλημι</b> <font color='%COLOR_PURPLE%'>pímplemi</font>); llenar (literalmente o figurativamente [embeber, influir, proveer]); específicamente cumplir (-se el tiempo): <font color='%COLOR_BLUE%'>cumplir, -se, empapar, llenar, -se, lleno.</font>"
+  },
+  {
+    "id": "G4131",
+    "ti": "plḗktēs",
+    "le": "πλήκτης",
+    "pl": "pléktes",
+    "ps": "plake'-tace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4141')}>G4141</span>; golpeador, i.e. belicoso (peleonero): <font color='%COLOR_BLUE%'>pendenciero.</font>"
+  },
+  {
+    "id": "G4132",
+    "ti": "plḗmmyra",
+    "le": "πλήμμυρα",
+    "pl": "plemmúra",
+    "ps": "plame-moo'-rah",
+    "df": "prolongado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>; inundación, i.e. (por analogía) riachuelo: <font color='%COLOR_BLUE%'>inundación, pleno.</font>"
+  },
+  {
+    "id": "G4133",
+    "ti": "plḗn",
+    "le": "πλήν",
+    "pl": "plen",
+    "ps": "plane",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4119')}>G4119</span>; todavía más (además), i.e. encima de eso, más bien, todavía: <font color='%COLOR_BLUE%'>no obstante, salvo, sin embargo.</font>"
+  },
+  {
+    "id": "G4134",
+    "ti": "plḗrēs",
+    "le": "πλήρης",
+    "pl": "pléres",
+    "ps": "play'-race",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>; repleto, o cubierto encima; por analogía completo: <font color='%COLOR_BLUE%'>abundar, llenar, lleno.</font>"
+  },
+  {
+    "id": "G4135",
+    "ti": "plērophoréō",
+    "le": "πληροφορέω",
+    "pl": "pleroforéo",
+    "ps": "play-rof-or-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4134')}>G4134</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5409')}>G5409</span>; llevar fuera completamente (en evidencia), i.e. completamente seguro (o convencido), logrado por entero: <font color='%COLOR_BLUE%'>plenamente convencido, ser ciertísimo.</font>"
+  },
+  {
+    "id": "G4136",
+    "ti": "plērophoría",
+    "le": "πληροφορία",
+    "pl": "pleroforía",
+    "ps": "play-rof-or-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4135')}>G4135</span>; entero confianza: <font color='%COLOR_BLUE%'>plena certeza, plena certidumbre.</font>"
+  },
+  {
+    "id": "G4137",
+    "ti": "plēróō",
+    "le": "πληρόω",
+    "pl": "pleróo",
+    "ps": "play-ro'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4134')}>G4134</span>; hacer repleto, i.e. (literalmente) atiborrar (una red), rellenar (un hueco), o (figurativamente) proveer (o imbuir, difundir, influencia), satisfacer, ejercer (un oficio), terminar (un período o tarea), verificar (o coincidir con una predicción), etc.: <font color='%COLOR_BLUE%'>pasar, perfecto, rellenar, suplir, terminar, lleno, llena, atestar, al cabo, completar, completo, completa, cumplidamente, cumplir.</font>"
+  },
+  {
+    "id": "G4138",
+    "ti": "plḗrōma",
+    "le": "πλήρωμα",
+    "pl": "pléroma",
+    "ps": "play'-ro-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4137')}>G4137</span>; rellenar o terminación, i.e. (subjectivamente) lo que llena (como contenido, suplemento, copiosidad, multitud), u (objectivamente) lo que es llenado (como contenedor, desempeño, período): <font color='%COLOR_BLUE%'>abundancia, cumplimiento, lleno, llena, plenitud, pleno, plena, remiendo, restauración.</font>"
+  },
+  {
+    "id": "G4139",
+    "ti": "plēsíon",
+    "le": "πλησίον",
+    "pl": "plesíon",
+    "ps": "play-see'-on",
+    "df": "neutro de un derivado de <b>πέλας</b> <font color='%COLOR_PURPLE%'>pélas</font> (cerca); (adverbio) cerca; como sustantivo, vecino, i.e. compañero (como hombre, paisano, cristiana o amigo): <font color='%COLOR_BLUE%'>junto, prójimo.</font>"
+  },
+  {
+    "id": "G4140",
+    "ti": "plēsmonḗ",
+    "le": "πλησμονή",
+    "pl": "plesmoné",
+    "ps": "place-mon-ay'",
+    "df": "de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>; llenar, i.e. (figurativamente) gratificación: <font color='%COLOR_BLUE%'>apetito.</font>"
+  },
+  {
+    "id": "G4141",
+    "ti": "plḗssō",
+    "le": "πλήσσω",
+    "pl": "plésso",
+    "ps": "place'-so",
+    "df": "aparentemente otra forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4111')}>G4111</span> (mediante la idea de allanar); martillar, i.e. (figurativamente) inflingir con (calamidad): <font color='%COLOR_BLUE%'>herida, herir.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5180')}>G5180</span>."
+  },
+  {
+    "id": "G4142",
+    "ti": "ploiárion",
+    "le": "πλοιάριον",
+    "pl": "ploiárion",
+    "ps": "ploy-ar'-ee-on",
+    "df": "neutro de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4143')}>G4143</span>; barco: <font color='%COLOR_BLUE%'>barca.</font>"
+  },
+  {
+    "id": "G4143",
+    "ti": "ploîon",
+    "le": "πλοῖον",
+    "pl": "ploíon",
+    "ps": "ploy'-on",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4126')}>G4126</span>; que navega, i.e. barco, bote, nave: <font color='%COLOR_BLUE%'>barca, barco, nave.</font>"
+  },
+  {
+    "id": "G4144",
+    "ti": "plóos",
+    "le": "πλόος",
+    "pl": "plóos",
+    "ps": "plo'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4126')}>G4126</span>; vela, i.e. navegación: <font color='%COLOR_BLUE%'>navegación, rumbo.</font>"
+  },
+  {
+    "id": "G4145",
+    "ti": "ploúsios",
+    "le": "πλούσιος",
+    "pl": "ploúsios",
+    "ps": "ploo'-see-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4149')}>G4149</span>; rico; figurativamente abundando con: <font color='%COLOR_BLUE%'>rico.</font>"
+  },
+  {
+    "id": "G4146",
+    "ti": "plousíōs",
+    "le": "πλουσίως",
+    "pl": "plousíos",
+    "ps": "ploo-see'-oce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4145')}>G4145</span>; copiosamente: <font color='%COLOR_BLUE%'>abundancia, amplio, generosa.</font>"
+  },
+  {
+    "id": "G4147",
+    "ti": "ploutéō",
+    "le": "πλουτέω",
+    "pl": "ploutéo",
+    "ps": "ploo-teh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4148')}>G4148</span>; ser rico (o enriquecerse) (literalmente o figurativamente): <font color='%COLOR_BLUE%'>rico, enriquecer.</font>"
+  },
+  {
+    "id": "G4148",
+    "ti": "ploutízō",
+    "le": "πλουτίζω",
+    "pl": "ploutízo",
+    "ps": "ploo-tid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4149')}>G4149</span>; hacer rico (figurativamente): <font color='%COLOR_BLUE%'>enriquecer.</font>"
+  },
+  {
+    "id": "G4149",
+    "ti": "ploûtos",
+    "le": "πλοῦτος",
+    "pl": "ploútos",
+    "ps": "ploo'-tos",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4130')}>G4130</span>; riqueza (como llenura), i.e. (literalmente) dinero, posesiones, o (figurativamente) abundancia, riquezas, (específicamente) legado valioso: <font color='%COLOR_BLUE%'>riqueza.</font>"
+  },
+  {
+    "id": "G4150",
+    "ti": "plýnō",
+    "le": "πλύνω",
+    "pl": "pluno",
+    "ps": "ploo'-no",
+    "df": "forma prolongada de un obsoleto <b>πλύω</b> <font color='%COLOR_PURPLE%'>plúo</font>, («fluir»); hundir, sumergir, i.e. lavar ropa: <font color='%COLOR_BLUE%'>lavar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3068')}>G3068</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3538')}>G3538</span>."
+  }
+]

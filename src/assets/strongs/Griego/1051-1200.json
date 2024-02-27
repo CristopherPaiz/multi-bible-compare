@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G1051",
+    "ti": "gála",
+    "le": "γάλα",
+    "pl": "gála",
+    "ps": "gal'-ah",
+    "df": "de afinidad incierta; leche (figurativamente): <font color='%COLOR_BLUE%'>leche.</font>"
+  },
+  {
+    "id": "G1052",
+    "ti": "Galátēs",
+    "le": "Γαλάτης",
+    "pl": "Galátes",
+    "ps": "gal-at'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1053')}>G1053</span>; gálata o habitante de Galacia: <font color='%COLOR_BLUE%'>gálatas.</font>"
+  },
+  {
+    "id": "G1053",
+    "ti": "Galatía",
+    "le": "Γαλατία",
+    "pl": "Galatía",
+    "ps": "gal-at-ee'-ah",
+    "df": "de origen extranjero; Galacia, región de Asia: <font color='%COLOR_BLUE%'>Galacia.</font>"
+  },
+  {
+    "id": "G1054",
+    "ti": "Galatikós",
+    "le": "Γαλατικός",
+    "pl": "Galatikós",
+    "ps": "gal-at-ee-kos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1053')}>G1053</span>; galacio o relativo a Galacia: <font color='%COLOR_BLUE%'>Galacia.</font>"
+  },
+  {
+    "id": "G1055",
+    "ti": "galḗnē",
+    "le": "γαλήνη",
+    "pl": "galéne",
+    "ps": "gal-ay'-nay",
+    "df": "de derivación incierta; tranquilidad: <font color='%COLOR_BLUE%'>bonanza.</font>"
+  },
+  {
+    "id": "G1056",
+    "ti": "Galilaía",
+    "le": "Γαλιλαία",
+    "pl": "Galilaía",
+    "ps": "gal-il-ah'-yah",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1551')}>H1551</span>]; Galilea (i.e. círculo pagano), región en Palestina: <font color='%COLOR_BLUE%'>Galilea.</font>"
+  },
+  {
+    "id": "G1057",
+    "ti": "Galilaîos",
+    "le": "Γαλιλαῖος",
+    "pl": "Galilaios",
+    "ps": "gal-ee-lah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1056')}>G1056</span>; galileo o perteneciente a Galilea: <font color='%COLOR_BLUE%'>galileo.</font>"
+  },
+  {
+    "id": "G1058",
+    "ti": "Gallíōn",
+    "le": "Γαλλίων",
+    "pl": "Galíon",
+    "ps": "gal-lee'-own",
+    "df": "de origen latín; Galión, un oficial romano: <font color='%COLOR_BLUE%'>Galión.</font>"
+  },
+  {
+    "id": "G1059",
+    "ti": "Gamaliḗl",
+    "le": "Γαμαλιήλ",
+    "pl": "Gamaliél",
+    "ps": "gam-al-ee-ale'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1583')}>H1583</span>]; Gamaliel, un israelita: <font color='%COLOR_BLUE%'>Gamaliel.</font>"
+  },
+  {
+    "id": "G1060",
+    "ti": "gaméō",
+    "le": "γαμέω",
+    "pl": "gaméo",
+    "ps": "gam-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1062')}>G1062</span>; casarse (de cualquier sexo): <font color='%COLOR_BLUE%'>matrimonio, casado, -a, asar.</font>"
+  },
+  {
+    "id": "G1061",
+    "ti": "gamískō",
+    "le": "γαμίσκω",
+    "pl": "gamísko",
+    "ps": "gam-is'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1062')}>G1062</span>; casar (una hija a un esposo): <font color='%COLOR_BLUE%'>dar en casamiento.</font>"
+  },
+  {
+    "id": "G1062",
+    "ti": "gámos",
+    "le": "γάμος",
+    "pl": "gámos",
+    "ps": "gam'-os",
+    "df": "de afinidad incierta; nupcial: <font color='%COLOR_BLUE%'>matrimonio, boda.</font>"
+  },
+  {
+    "id": "G1063",
+    "ti": "gár",
+    "le": "γάρ",
+    "pl": "gár",
+    "ps": "gar",
+    "df": "partícula primaria; propiamente asignando una razón (usada en discusión, argumentación, explicación o intensificación; a menudo con otras partículas: <font color='%COLOR_BLUE%'>acontecer, consistir.</font>"
+  },
+  {
+    "id": "G1064",
+    "ti": "gastḗr",
+    "le": "γαστήρ",
+    "pl": "gastér",
+    "ps": "gas-tare'",
+    "df": "de derivación incierta; estómago; por analogía matriz; figurativamente glotón: <font color='%COLOR_BLUE%'>encinta, glotón, concebir, vientre.</font>"
+  },
+  {
+    "id": "G1065",
+    "ti": "gé",
+    "le": "γέ",
+    "pl": "gé",
+    "ps": "gheh",
+    "df": "partícula primaria de énfasis o calificación (a menudo usada con otras partículas prefijo): <font color='%COLOR_BLUE%'>sin embargo.</font>"
+  },
+  {
+    "id": "G1066",
+    "ti": "Gedeṓn",
+    "le": "Γεδεών",
+    "pl": "Gedeón",
+    "ps": "ghed-eh-own'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1493')}>H1493</span>]; Gedeón, un israelita: <font color='%COLOR_BLUE%'>Gedeón.</font>"
+  },
+  {
+    "id": "G1067",
+    "ti": "géenna",
+    "le": "γέεννα",
+    "pl": "géenna",
+    "ps": "gheh'-en-nah",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1516')}>H1516</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2011')}>H2011</span>]; valle del (hijo de) Hinón; gehena (o Ge-hinón), valle de Jerusalén, usado (figurativamente) como nombre del lugar (o estado) de castigo eterno: <font color='%COLOR_BLUE%'>infierno.</font>"
+  },
+  {
+    "id": "G1068",
+    "ti": "Gethsēmanē",
+    "le": "Γεθσημανῆ",
+    "pl": "Gedssemané",
+    "ps": "gheth-say-man-ay'",
+    "df": "de origen caldeo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1660')}>H1660</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8081')}>H8081</span>]; prensa de aceite; Getsemaní, huerto cerca de Jerusalén: <font color='%COLOR_BLUE%'>Getsemaní.</font>"
+  },
+  {
+    "id": "G1069",
+    "ti": "geítōn",
+    "le": "γείτων",
+    "pl": "geíton",
+    "ps": "ghi'-tone",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1093')}>G1093</span>; vecino (como terreno adyacente al de uno); por implicación amigo: <font color='%COLOR_BLUE%'>vecino.</font>"
+  },
+  {
+    "id": "G1070",
+    "ti": "geláō",
+    "le": "γελάω",
+    "pl": "geláo",
+    "ps": "ghel-ah'-o",
+    "df": "de afinidad incierta; reírse (como señal de gozo o satisfacción): <font color='%COLOR_BLUE%'>reír.</font>"
+  },
+  {
+    "id": "G1071",
+    "ti": "gélōs",
+    "le": "γέλως",
+    "pl": "gélos",
+    "ps": "ghel'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1070')}>G1070</span>; risa (como señal de gratificación): <font color='%COLOR_BLUE%'>risa.</font>"
+  },
+  {
+    "id": "G1072",
+    "ti": "gemízō",
+    "le": "γεμίζω",
+    "pl": "gemízo",
+    "ps": "ghem-id'-zo",
+    "df": "transitivamente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1073')}>G1073</span>; llenar por entero: <font color='%COLOR_BLUE%'>anegar, empapar, llenar.</font>"
+  },
+  {
+    "id": "G1073",
+    "ti": "gémō",
+    "le": "γέμω",
+    "pl": "gémo",
+    "ps": "ghem'-o",
+    "df": "verbo primario hincharse, i.e. llenarse, ser lleno: <font color='%COLOR_BLUE%'>lleno.</font>"
+  },
+  {
+    "id": "G1074",
+    "ti": "geneá",
+    "le": "γενεά",
+    "pl": "geneá",
+    "ps": "ghen-eh-ah'",
+    "df": "de (un derivado presunto de) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1085')}>G1085</span>; generación; por implicación edad (período o personas): <font color='%COLOR_BLUE%'>edad, generación, tiempo.</font>"
+  },
+  {
+    "id": "G1075",
+    "ti": "genealogéō",
+    "le": "γενεαλογέω",
+    "pl": "genealogéo",
+    "ps": "ghen-eh-al-og-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1074')}>G1074</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span>; reconocer por generaciones, i.e. trazar la genealogía: <font color='%COLOR_BLUE%'>contar, genealogía.</font>"
+  },
+  {
+    "id": "G1076",
+    "ti": "genealogía",
+    "le": "γενεαλογία",
+    "pl": "genealogía",
+    "ps": "ghen-eh-al-og-ee'-ah",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1075')}>G1075</span>; rastrear generaciones, i.e. «genealogía»: <font color='%COLOR_BLUE%'>genealogía.</font>"
+  },
+  {
+    "id": "G1077",
+    "ti": "genésia",
+    "le": "γενέσια",
+    "pl": "genésia",
+    "ps": "ghen-es'-ee-ah",
+    "df": "neutro plural de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1078')}>G1078</span>; ceremonias de cumpleaños: <font color='%COLOR_BLUE%'>cumpleaños.</font>"
+  },
+  {
+    "id": "G1078",
+    "ti": "génesis",
+    "le": "γένεσις",
+    "pl": "génesis",
+    "ps": "ghen'-es-is",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1074')}>G1074</span>; navidad, figurativamente naturaleza: <font color='%COLOR_BLUE%'>genealogía, creación.</font>"
+  },
+  {
+    "id": "G1079",
+    "ti": "genetḗ",
+    "le": "γενετή",
+    "pl": "geneté",
+    "ps": "ghen-et-ay",
+    "df": "femenino de un derivado presunto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1074')}>G1074</span>; nacimiento: <font color='%COLOR_BLUE%'>nacimiento.</font>"
+  },
+  {
+    "id": "G1080",
+    "ti": "gennáō",
+    "le": "γεννάω",
+    "pl": "gennáo",
+    "ps": "ghen-nah'-o",
+    "df": "de una variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1085')}>G1085</span>; procrear (propiamente del padre. pero por extensión de la madre); figurativamente regenerar: <font color='%COLOR_BLUE%'>engendrar, dar a luz, nacer, nacimiento, concebir.</font>"
+  },
+  {
+    "id": "G1081",
+    "ti": "génnēma",
+    "le": "γέννημα",
+    "pl": "génnema",
+    "ps": "ghen'-nay-mah",
+    "df": "de <b>γένημα</b> <font color='%COLOR_PURPLE%'>génema</font> de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1080')}>G1080</span>; prole; por analogía producto, fruto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>fruto, generación.</font>"
+  },
+  {
+    "id": "G1082",
+    "ti": "Gennēsarét",
+    "le": "Γεννησαρέτ",
+    "pl": "Gennesarét",
+    "ps": "ghen-nay-sar-et'",
+    "df": "de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3672')}>H3672</span>]; Genesaret, (i.e. Cineret), lago y llanura en Palestina: <font color='%COLOR_BLUE%'>Genesaret.</font>"
+  },
+  {
+    "id": "G1083",
+    "ti": "génnēsis",
+    "le": "γέννησις",
+    "pl": "génnesis",
+    "ps": "ghen'-nay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1080')}>G1080</span>; natividad, nacimiento: <font color='%COLOR_BLUE%'>nacimiento, natural.</font>"
+  },
+  {
+    "id": "G1084",
+    "ti": "gennētós",
+    "le": "γεννητός",
+    "pl": "gennetós",
+    "ps": "ghen-nay-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1080')}>G1080</span>; nacidos: <font color='%COLOR_BLUE%'>nacer.</font>"
+  },
+  {
+    "id": "G1085",
+    "ti": "génos",
+    "le": "γένος",
+    "pl": "génos",
+    "ps": "ghen'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1096')}>G1096</span>; «familia», «parientes» (abstractamente o concretamente, literalmente o figurativamente, individual o colectivo): <font color='%COLOR_BLUE%'>clase, familia, género, linaje, nación, natural.</font>"
+  },
+  {
+    "id": "G1086",
+    "ti": "Gergesēnós",
+    "le": "Γεργεσηνός",
+    "pl": "gergesenós",
+    "ps": "gher-ghes-ay-nos'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1622')}>H1622</span>]; gergeseno o uno de los aborígenes de Palestina: <font color='%COLOR_BLUE%'>gadarenos.</font>"
+  },
+  {
+    "id": "G1087",
+    "ti": "gerousía",
+    "le": "γερουσία",
+    "pl": "gerousía",
+    "ps": "gher-oo-see'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1088')}>G1088</span>; ancianos, i.e. (colectivamente) sanedrín judío: <font color='%COLOR_BLUE%'>anciano.</font>"
+  },
+  {
+    "id": "G1088",
+    "ti": "gérōn",
+    "le": "γέρων",
+    "pl": "géron",
+    "ps": "gher'-own",
+    "df": "de afín incierto [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1094')}>G1094</span>]; anciano, viejo: <font color='%COLOR_BLUE%'>viejo.</font>"
+  },
+  {
+    "id": "G1089",
+    "ti": "geúomai",
+    "le": "γεύομαι",
+    "pl": "geúomai",
+    "ps": "ghyoo'-om-ahee",
+    "df": "verbo primario probar, saborear; por implicación comer; figurativamente experimentar (bien o mal): <font color='%COLOR_BLUE%'>comer, gustar, probar, sufrir.</font>"
+  },
+  {
+    "id": "G1090",
+    "ti": "geōrgéō",
+    "le": "γεωργέω",
+    "pl": "georgéo",
+    "ps": "gheh-or-gheh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1092')}>G1092</span>; arar (el suelo): <font color='%COLOR_BLUE%'>labrar.</font>"
+  },
+  {
+    "id": "G1091",
+    "ti": "geṓrgion",
+    "le": "γεώργιον",
+    "pl": "geórgion",
+    "ps": "gheh-ore'-ghee-on",
+    "df": "neutro de un der (presunto) de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1092')}>G1092</span>; cultivable, i.e., granja: <font color='%COLOR_BLUE%'>labranza.</font>"
+  },
+  {
+    "id": "G1092",
+    "ti": "geōrgós",
+    "le": "γεωργός",
+    "pl": "georgós",
+    "ps": "gheh-ore-gos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1093')}>G1093</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2041')}>G2041</span>; obrero, peón, i.e. agricultor, labrador: <font color='%COLOR_BLUE%'>labrador.</font>"
+  },
+  {
+    "id": "G1093",
+    "ti": "gē",
+    "le": "γῆ",
+    "pl": "ge",
+    "ps": "ghay",
+    "df": "contracción de una palabra primaria; suelo; por extensión región, o la parte sólida o todo el globo terráqueo (incluído los ocupantes en cada aplicación): <font color='%COLOR_BLUE%'>suelo, terrenal, terrestre, territorio, tierra.</font>"
+  },
+  {
+    "id": "G1094",
+    "ti": "gēras",
+    "le": "γῆρας",
+    "pl": "géras",
+    "ps": "ghay'-ras",
+    "df": "afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1088')}>G1088</span>; senilidad: <font color='%COLOR_BLUE%'>vejez.</font>"
+  },
+  {
+    "id": "G1095",
+    "ti": "gēráskō",
+    "le": "γηράσκω",
+    "pl": "gerásko",
+    "ps": "ghay-ras'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1094')}>G1094</span>; ser senil, ser viejo: <font color='%COLOR_BLUE%'>viejo, envejecer.</font>"
+  },
+  {
+    "id": "G1096",
+    "ti": "gínomai",
+    "le": "γίνομαι",
+    "pl": "gínomai",
+    "ps": "ghin'-om-ahee",
+    "df": "prolongado y voz media de un verbo primario hacer que sea («gen» -erar), i.e. (reflexivamente) llegar (llegar a ser), usado con gran latitud (literalmente, figurativamente, intensivo, etc.): <font color='%COLOR_BLUE%'>acabar, acercar, acontecer, alcanzar, caer, cesar, comportarse, constituir, continuar, convertir, cumplir, Dios (nos libre), dividir, divulgar, efectuar, espantar, expulsar, gobernar, hacer, intervenir, levantar, librar, llegar, llenar, (de ninguna) manera, nacer, participante, pasar, poner, producir, quedar, quitar, reducir, resultar, sobrevenir, suceder, temblar, venir, volver.</font>"
+  },
+  {
+    "id": "G1097",
+    "ti": "ginṓskō",
+    "le": "γινώσκω",
+    "pl": "ginósko",
+    "ps": "ghin-oce'-ko",
+    "df": "prolongado de un verbo primario «conocer, saber» (absolutamente) en una gran variedad de aplicaciones y con muchas implicación (como sigue, con otros no claramente expresados de este modo): <font color='%COLOR_BLUE%'>notar, reconocer, saber, sentir, tener, entender, informar, llegar (al conocimiento), cerciorar, comprender, conocer, conocimiento.</font>"
+  },
+  {
+    "id": "G1098",
+    "ti": "gleûkos",
+    "le": "γλεῦκος",
+    "pl": "gleúkos",
+    "ps": "glyoo'-kos",
+    "df": "afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1099')}>G1099</span>; vino dulce, i.e., (propiamente) mosto (jugo fresco), pero usado del más dulce (y por lo tanto altamente embriagante) vino fermentado: <font color='%COLOR_BLUE%'>mosto.</font>"
+  },
+  {
+    "id": "G1099",
+    "ti": "glykýs",
+    "le": "γλυκύς",
+    "pl": "glukús",
+    "ps": "gloo-koos'",
+    "df": "de afinidad incierta; dulce (i.e., no amargo ni salado): <font color='%COLOR_BLUE%'>dulce.</font>"
+  },
+  {
+    "id": "G1100",
+    "ti": "glōssa",
+    "le": "γλῶσσα",
+    "pl": "glossa",
+    "ps": "gloce-sah'",
+    "df": "de afinidad incierta; lengua; por implicación lenguaje, idioma (específicamente uno adquirido no naturalmente: <font color='%COLOR_BLUE%'>lengua.</font>"
+  },
+  {
+    "id": "G1101",
+    "ti": "glōssókomon",
+    "le": "γλωσσόκομον",
+    "pl": "glossókomon",
+    "ps": "gloce-sok'-om-on",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1100')}>G1100</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2889')}>G2889</span>; propiamente estuche (para guardar las boquillas de los instrumentos de viento) i.e., (por extensión) ataúd o (específicamente) cartera: <font color='%COLOR_BLUE%'>bolsa.</font>"
+  },
+  {
+    "id": "G1102",
+    "ti": "gnapheús",
+    "le": "γναφεύς",
+    "pl": "gnafeús",
+    "ps": "gnaf-yuce'",
+    "df": "por variación de un derivado de <b>κνάπτω</b> <font color='%COLOR_PURPLE%'>knápto</font> (desenredar tela); lavador de tela: <font color='%COLOR_BLUE%'>lavador.</font>"
+  },
+  {
+    "id": "G1103",
+    "ti": "gnḗsios",
+    "le": "γνήσιος",
+    "pl": "gnésios",
+    "ps": "gnay'-see-os",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1077')}>G1077</span>; legítimo (de nacimiento), i.e. genuino: <font color='%COLOR_BLUE%'>sinceramente, sinceridad, verdadero, fiel.</font>"
+  },
+  {
+    "id": "G1104",
+    "ti": "gnēsíōs",
+    "le": "γνησίως",
+    "pl": "gnesíos",
+    "ps": "gnay-see'-ose",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1103')}>G1103</span>; genuinamente, i.e., realmente: <font color='%COLOR_BLUE%'>sinceramente.</font>"
+  },
+  {
+    "id": "G1105",
+    "ti": "gnóphos",
+    "le": "γνόφος",
+    "pl": "gnófos",
+    "ps": "gnof'-os",
+    "df": "afín de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3509')}>G3509</span>; lóbrego (cómo una tormenta): <font color='%COLOR_BLUE%'>oscuridad.</font>"
+  },
+  {
+    "id": "G1106",
+    "ti": "gnṓmē",
+    "le": "γνώμη",
+    "pl": "gnóme",
+    "ps": "gno'-may",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; conocimiento, i.e. (subj.) opinión, u (objectivamente) resolución (consejo, consentimiento, etc.): <font color='%COLOR_BLUE%'>parecer, propósito, querer, consejo, consentimiento, decisión, juicio.</font>"
+  },
+  {
+    "id": "G1107",
+    "ti": "gnōrízō",
+    "le": "γνωρίζω",
+    "pl": "gnorízo",
+    "ps": "gno-rid'-zo",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; hacer conocer, dar a conocer, subj. conocer, saber: <font color='%COLOR_BLUE%'>hacer (conocer), manifestar, mostrar, conocer, dar (a conocer), declarar, (hacer)notorio, saber.</font>"
+  },
+  {
+    "id": "G1108",
+    "ti": "gnōsis",
+    "le": "γνῶσις",
+    "pl": "gnósis",
+    "ps": "gno'-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; conocer (el acto) i.e. (por implicación) conocimiento: <font color='%COLOR_BLUE%'>sabiamente, ciencia, conocimiento.</font>"
+  },
+  {
+    "id": "G1109",
+    "ti": "gnṓstēs",
+    "le": "γνώστης",
+    "pl": "gnóstes",
+    "ps": "gnoce'-tace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; conocedor: <font color='%COLOR_BLUE%'>conocer.</font>"
+  },
+  {
+    "id": "G1110",
+    "ti": "gnōstós",
+    "le": "γνωστός",
+    "pl": "gnostós",
+    "ps": "gnoce-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; bien conocido: <font color='%COLOR_BLUE%'>conocer, conocido, notorio, a, saber.</font>"
+  },
+  {
+    "id": "G1111",
+    "ti": "gongýzō",
+    "le": "γογγύζω",
+    "pl": "gongúzo",
+    "ps": "gong-good'-zo",
+    "df": "de derivación incierta; rezongar, murmurar: <font color='%COLOR_BLUE%'>murmuración.</font>"
+  },
+  {
+    "id": "G1112",
+    "ti": "gongysmós",
+    "le": "γογγυσμός",
+    "pl": "gongusmós",
+    "ps": "gong-goos-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1111')}>G1111</span>; rezongo, murmuración: <font color='%COLOR_BLUE%'>murmullo, murmuración.</font>"
+  },
+  {
+    "id": "G1113",
+    "ti": "gongystḗs",
+    "le": "γογγυστής",
+    "pl": "gongustés",
+    "ps": "gong-goos-tace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1111')}>G1111</span>; rezongón, murmurador: <font color='%COLOR_BLUE%'>murmurador.</font>"
+  },
+  {
+    "id": "G1114",
+    "ti": "góēs",
+    "le": "γόης",
+    "pl": "góes",
+    "ps": "go'-ace",
+    "df": "de <b>γοάω</b> <font color='%COLOR_PURPLE%'>goáo</font> (lamentar, gemir); propiamente mago (como pronunciando conjuros), i.e. (por implicación) impostor: <font color='%COLOR_BLUE%'>engañador.</font>"
+  },
+  {
+    "id": "G1115",
+    "ti": "Golgothâ",
+    "le": "Γολγοθᾶ",
+    "pl": "Golgodsá",
+    "ps": "gol-goth-ah'",
+    "df": "de origen caldeo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1538')}>H1538</span>]; cráneo, calavera; Gólgota, montículo cerca de Jerusalén: <font color='%COLOR_BLUE%'>Gólgota.</font>"
+  },
+  {
+    "id": "G1116",
+    "ti": "Gómorrha",
+    "le": "Γόμοῤῥα",
+    "pl": "Gómorra",
+    "ps": "gom'-or-hrhah",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6017')}>H6017</span>]; Gomorra, lugar cerca del Mar Muerto: <font color='%COLOR_BLUE%'>Gomorra.</font>"
+  },
+  {
+    "id": "G1117",
+    "ti": "gómos",
+    "le": "γόμος",
+    "pl": "gómos",
+    "ps": "gom'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1073')}>G1073</span>; carga (como llenar), i.e. (específicamente) carga, o (por extensión) mercancías: <font color='%COLOR_BLUE%'>mercadería.</font>"
+  },
+  {
+    "id": "G1118",
+    "ti": "goneús",
+    "le": "γονεύς",
+    "pl": "goneús",
+    "ps": "gon-yooce'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1096')}>G1096</span>; padre, madre: <font color='%COLOR_BLUE%'>padre.</font>"
+  },
+  {
+    "id": "G1119",
+    "ti": "góny",
+    "le": "γόνυ",
+    "pl": "gonú",
+    "ps": "gon-oo'",
+    "df": "de afinidad incierta; «rodilla»: <font color='%COLOR_BLUE%'>rodilla.</font>"
+  },
+  {
+    "id": "G1120",
+    "ti": "gonypetéō",
+    "le": "γονυπετέω",
+    "pl": "gonú",
+    "ps": "gon-oo-pet-eh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1119')}>G1119</span> y del alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4098')}>G4098</span>; caer de rodillas: <font color='%COLOR_BLUE%'>hincar, arrodillarse.</font>"
+  },
+  {
+    "id": "G1121",
+    "ti": "grámma",
+    "le": "γράμμα",
+    "pl": "grámma",
+    "ps": "gram'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1125')}>G1125</span>; escrito, i.e., carta, nota, epístola, libro, etc.; plural aprendizaje: <font color='%COLOR_BLUE%'>carta, cuenta, escrito, escritura, letra.</font>"
+  },
+  {
+    "id": "G1122",
+    "ti": "grammateús",
+    "le": "γραμματεύς",
+    "pl": "grammateús",
+    "ps": "gram-mat-yooce'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1121')}>G1121</span>; escritor, i.e. (profesionalmente) escriba o secretario: <font color='%COLOR_BLUE%'>escriba, escribano.</font>"
+  },
+  {
+    "id": "G1123",
+    "ti": "graptós",
+    "le": "γραπτός",
+    "pl": "graptós",
+    "ps": "grap-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1125')}>G1125</span>; inscrito (figurativamente): <font color='%COLOR_BLUE%'>escrita.</font>"
+  },
+  {
+    "id": "G1124",
+    "ti": "graphḗ",
+    "le": "γραφή",
+    "pl": "grafé",
+    "ps": "graf-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1125')}>G1125</span>; documento, i.e. santo Escrito (o su contenido o declaración en él): <font color='%COLOR_BLUE%'>escritura.</font>"
+  },
+  {
+    "id": "G1125",
+    "ti": "gráphō",
+    "le": "γράφω",
+    "pl": "gráfo",
+    "ps": "graf'-o",
+    "df": "verbo primario «grabar», específicamente escribir; figurativamente describir: <font color='%COLOR_BLUE%'>escribir, inscribir, dar (carta), decir.</font>"
+  },
+  {
+    "id": "G1126",
+    "ti": "graṓdēs",
+    "le": "γραώδης",
+    "pl": "graódes",
+    "ps": "grah-o'-dace",
+    "df": "de <b>γραύς</b> <font color='%COLOR_PURPLE%'>graús</font> (vieja)  y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1491')}>G1491</span>; parecida a vieja, i.e. necia, tonta,: <font color='%COLOR_BLUE%'>viejo.</font>"
+  },
+  {
+    "id": "G1127",
+    "ti": "grēgoreúō",
+    "le": "γρηγορεύω",
+    "pl": "gregoreúo",
+    "ps": "gray-gor-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1453')}>G1453</span>; mantener despierto, i.e. vigilar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>velar, vigilante.</font>"
+  },
+  {
+    "id": "G1128",
+    "ti": "gymnázō",
+    "le": "γυμνάζω",
+    "pl": "gumnázo",
+    "ps": "goom-nad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1131')}>G1131</span>; practicar desnudez (en los juegos), i.e. entrenar (figurativamente): <font color='%COLOR_BLUE%'>ejercitar, habituar.</font>"
+  },
+  {
+    "id": "G1129",
+    "ti": "gymnasía",
+    "le": "γυμνασία",
+    "pl": "gumnasía",
+    "ps": "goom-nas-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1128')}>G1128</span>; entrenar, i.e. (figurativamente) ascetismo: <font color='%COLOR_BLUE%'>ejercicio.</font>"
+  },
+  {
+    "id": "G1130",
+    "ti": "gymnēteúō",
+    "le": "γυμνητεύω",
+    "pl": "gumneteúo",
+    "ps": "goom-nayt-yoo'-o",
+    "df": "o <b>γυμνιτεύω</b> <font color='%COLOR_PURPLE%'>gumniteúo</font>; de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1131')}>G1131</span>; desnudar, i.e. (reflexivamente) ir probremente vestido: <font color='%COLOR_BLUE%'>desnudo.</font>"
+  },
+  {
+    "id": "G1131",
+    "ti": "gymnós",
+    "le": "γυμνός",
+    "pl": "gumnós",
+    "ps": "goom-nos'",
+    "df": "de afinidad incierta; desnudo (absolutamente o relativamente, literalmente o figurativamente): <font color='%COLOR_BLUE%'>desnudo, despojar.</font>"
+  },
+  {
+    "id": "G1132",
+    "ti": "gymnótēs",
+    "le": "γυμνότης",
+    "pl": "gumnótes",
+    "ps": "goom-not'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1131')}>G1131</span>; desnudez (absolutamente o Compare): <font color='%COLOR_BLUE%'>desnudez.</font>"
+  },
+  {
+    "id": "G1133",
+    "ti": "gynaikárion",
+    "le": "γυναικάριον",
+    "pl": "gunaikárion",
+    "ps": "goo-nahee-kar'-ee-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1135')}>G1135</span>; mujer pequeña (i.e. necia): <font color='%COLOR_BLUE%'>mujercilla.</font>"
+  },
+  {
+    "id": "G1134",
+    "ti": "gynaikeîos",
+    "le": "γυναικεῖος",
+    "pl": "gunaikéios",
+    "ps": "goo-nahee-ki'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1135')}>G1135</span>; femenina: <font color='%COLOR_BLUE%'>mujer.</font>"
+  },
+  {
+    "id": "G1135",
+    "ti": "gynḗ",
+    "le": "γυνή",
+    "pl": "guné",
+    "ps": "goo-nay'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1096')}>G1096</span>; mujer; específicamente esposa: <font color='%COLOR_BLUE%'>casado, esposa, mujer.</font>"
+  },
+  {
+    "id": "G1136",
+    "ti": "Gṓg",
+    "le": "Γώγ",
+    "pl": "Góg",
+    "ps": "gogue",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1463')}>H1463</span>]; Gog, nombre simbólico de algún futuro Anticristo: <font color='%COLOR_BLUE%'>Gog.</font>"
+  },
+  {
+    "id": "G1137",
+    "ti": "gōnía",
+    "le": "γωνία",
+    "pl": "gonía",
+    "ps": "go-nee'-ah",
+    "df": "probablemente afín de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1119')}>G1119</span>; ángulo: <font color='%COLOR_BLUE%'>esquina, ángulo, rincón.</font>"
+  },
+  {
+    "id": "G1138",
+    "ti": "Dabíd",
+    "le": "Δαβίδ",
+    "pl": "Dabíd",
+    "ps": "dab-eed'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1732')}>H1732</span>]; David, rey de israelitas: <font color='%COLOR_BLUE%'>David.</font>"
+  },
+  {
+    "id": "G1139",
+    "ti": "daimonízomai",
+    "le": "δαιμονίζομαι",
+    "pl": "daimonízomai",
+    "ps": "dahee-mon-id'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1142')}>G1142</span>; ser ejercido por un demonio: <font color='%COLOR_BLUE%'>atormentado, demonio, endemoniado.</font>"
+  },
+  {
+    "id": "G1140",
+    "ti": "daimónion",
+    "le": "δαιμόνιον",
+    "pl": "daimónion",
+    "ps": "dahee-mon'-ee-on",
+    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1142')}>G1142</span>; ser demoníaco; por extensión deidad: <font color='%COLOR_BLUE%'>endemoniado, demonio, dios.</font>"
+  },
+  {
+    "id": "G1141",
+    "ti": "daimoniṓdēs",
+    "le": "δαιμονιώδης",
+    "pl": "daimoniódes",
+    "ps": "dahee-mon-ee-o'-dace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1140')}>G1140</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1142')}>G1142</span>; parecido a demonio: <font color='%COLOR_BLUE%'>diabólico.</font>"
+  },
+  {
+    "id": "G1142",
+    "ti": "daímōn",
+    "le": "δαίμων",
+    "pl": "daímon",
+    "ps": "dah'-ee-mown",
+    "df": "de <b>δαίω</b> <font color='%COLOR_PURPLE%'>daío</font> (distribuir fortunas); demonio o espíritu sobrenatural (de naturaleza mala): <font color='%COLOR_BLUE%'>demonio.</font>"
+  },
+  {
+    "id": "G1143",
+    "ti": "dáknō",
+    "le": "δάκνω",
+    "pl": "dákno",
+    "ps": "dak'-no",
+    "df": "forma prolongada de una raíz primaria; morder, i.e. (figurativamente) frustrar: <font color='%COLOR_BLUE%'>morder.</font>"
+  },
+  {
+    "id": "G1144",
+    "ti": "dákry",
+    "le": "δάκρυ",
+    "pl": "dákru",
+    "ps": "dak'-roo",
+    "df": "o <b>δάκρυον</b> <font color='%COLOR_PURPLE%'>dákruon</font> de afinidad incierta; lágrima: <font color='%COLOR_BLUE%'>lágrima.</font>"
+  },
+  {
+    "id": "G1145",
+    "ti": "dakrýō",
+    "le": "δακρύω",
+    "pl": "dakrúo",
+    "ps": "dak-roo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1144')}>G1144</span>; derramar lágrimas: <font color='%COLOR_BLUE%'>llorar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2799')}>H2799</span>."
+  },
+  {
+    "id": "G1146",
+    "ti": "daktýlios",
+    "le": "δακτύλιος",
+    "pl": "daktúlios",
+    "ps": "dak-too'-lee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1147')}>G1147</span>; anillo: <font color='%COLOR_BLUE%'>anillo.</font>"
+  },
+  {
+    "id": "G1147",
+    "ti": "dáktylos",
+    "le": "δάκτυλος",
+    "pl": "dáktulos",
+    "ps": "dak'-too-los",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span>; dedo: <font color='%COLOR_BLUE%'>dedo.</font>"
+  },
+  {
+    "id": "G1148",
+    "ti": "Dalmanouthá",
+    "le": "Δαλμανουθά",
+    "pl": "Dalmanoudsá",
+    "ps": "dal-man-oo-thah'",
+    "df": "probablemente de origen caldeo; Dalmanuta, lugar en Palestina: <font color='%COLOR_BLUE%'>Dalmanuta.</font>"
+  },
+  {
+    "id": "G1149",
+    "ti": "Dalmatía",
+    "le": "Δαλματία",
+    "pl": "Dalmatía",
+    "ps": "dal-mat-ee'-ah",
+    "df": "probablemente de origen extranjero derivado Dalmacia, región de Europa: <font color='%COLOR_BLUE%'>Dalmacia.</font>"
+  },
+  {
+    "id": "G1150",
+    "ti": "damázō",
+    "le": "δαμάζω",
+    "pl": "damázo",
+    "ps": "dam-ad'-zo",
+    "df": "variación de un primario obsoleto del mismo significa do; domar, amansar: <font color='%COLOR_BLUE%'>domar, dominar.</font>"
+  },
+  {
+    "id": "G1151",
+    "ti": "dámalis",
+    "le": "δάμαλις",
+    "pl": "dámalis",
+    "ps": "dam'-al-is",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1150')}>G1150</span>; novilla, vaquilla (como mansa): <font color='%COLOR_BLUE%'>becerra.</font>"
+  },
+  {
+    "id": "G1152",
+    "ti": "Dámaris",
+    "le": "Δάμαρις",
+    "pl": "Dámaris",
+    "ps": "dam'-ar-is",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1150')}>G1150</span>; tal vez gentil, amable; Damaris, mujer ateniense: <font color='%COLOR_BLUE%'>Damaris.</font>"
+  },
+  {
+    "id": "G1153",
+    "ti": "Damaskēnós",
+    "le": "Δαμασκηνός",
+    "pl": "Damaskenós",
+    "ps": "dam-as-kay-nos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1154')}>G1154</span>; damasceno o habit. de Damasco: <font color='%COLOR_BLUE%'>damasceno.</font>"
+  },
+  {
+    "id": "G1154",
+    "ti": "Damaskós",
+    "le": "Δαμασκός",
+    "pl": "Damaskós",
+    "ps": "dam-as-kos'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1834')}>H1834</span>]; Damasco, ciudad de Siria: <font color='%COLOR_BLUE%'>Damasco.</font>"
+  },
+  {
+    "id": "G1155",
+    "ti": "daneízō",
+    "le": "δανείζω",
+    "pl": "daneízo",
+    "ps": "dan-ide'-zo",
+    "df": "o <b>δανίζω</b> <font color='%COLOR_PURPLE%'>danízo</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1156')}>G1156</span>; prestar a interés; reflexivamente tomar prestado: <font color='%COLOR_BLUE%'>pedir, prestar.</font>"
+  },
+  {
+    "id": "G1156",
+    "ti": "dáneion",
+    "le": "δάνειον",
+    "pl": "dáneion",
+    "ps": "dan'-i-on",
+    "df": "de <b>δάνος</b> <font color='%COLOR_PURPLE%'>dános</font> (don, regalo)  probablemente afín a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1325')}>G1325</span>; préstamo: <font color='%COLOR_BLUE%'>deuda.</font>"
+  },
+  {
+    "id": "G1157",
+    "ti": "daneistḗs",
+    "le": "δανειστής",
+    "pl": "daneistés",
+    "ps": "dan-ice-tace'",
+    "df": "o <b>δανιστής</b> <font color='%COLOR_PURPLE%'>danistés</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1155')}>G1155</span>; prestamista: <font color='%COLOR_BLUE%'>acreedor.</font>"
+  },
+  {
+    "id": "G1158",
+    "ti": "Daniḗl",
+    "le": "Δανιήλ",
+    "pl": "Daniél",
+    "ps": "dan-ee-ale'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1840')}>H1840</span>]; Daniel, un israelita: <font color='%COLOR_BLUE%'>Daniel.</font>"
+  },
+  {
+    "id": "G1159",
+    "ti": "dapanáō",
+    "le": "δαπανάω",
+    "pl": "dapanáo",
+    "ps": "dap-an-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1160')}>G1160</span>; gastar, i.e. (en buen sentido) incurrir en costo, o (en sentido malo) desperdiciar: <font color='%COLOR_BLUE%'>gastar, gasto, malgastar, pagar.</font>"
+  },
+  {
+    "id": "G1160",
+    "ti": "dapánē",
+    "le": "δαπάνη",
+    "pl": "dapáne",
+    "ps": "dap-an'-ay",
+    "df": "de <b>δάπτω</b> <font color='%COLOR_PURPLE%'>dápto</font> (devorar); gastar (como consumir): <font color='%COLOR_BLUE%'>gasto.</font>"
+  },
+  {
+    "id": "G1161",
+    "ti": "dé",
+    "le": "δέ",
+    "pl": "dé",
+    "ps": "deh",
+    "df": "partícula primaria (adversativa o continuativa); pero, y, etc.: <font color='%COLOR_BLUE%'>bien, (es) decir, verdaderamente.</font>"
+  },
+  {
+    "id": "G1162",
+    "ti": "déēsis",
+    "le": "δέησις",
+    "pl": "déesis",
+    "ps": "deh'-ay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1189')}>G1189</span>; petición: <font color='%COLOR_BLUE%'>oración, rogar, rogativa, ruego, súplica.</font>"
+  },
+  {
+    "id": "G1163",
+    "ti": "deî",
+    "le": "δεῖ",
+    "pl": "dei",
+    "ps": "die",
+    "df": "tercera persona singular presente activode <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span>; también <b>δεόν</b> <font color='%COLOR_PURPLE%'>deón</font>; neutro participio activo de lo mismo; ambas usadas impersonal; es (fue, etc.) necesario (como obligatorio): <font color='%COLOR_BLUE%'>conveniente, convenir, deber, necesario, necesidad, preciso.</font>"
+  },
+  {
+    "id": "G1164",
+    "ti": "deîgma",
+    "le": "δεῖγμα",
+    "pl": "deígma",
+    "ps": "digh'-mah",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1166')}>G1166</span>; espécimen (como mostrado): <font color='%COLOR_BLUE%'>ejemplo.</font>"
+  },
+  {
+    "id": "G1165",
+    "ti": "deigmatízō",
+    "le": "δειγματίζω",
+    "pl": "deigmatízo",
+    "ps": "digh-mat-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1164')}>G1164</span>; exhibir: <font color='%COLOR_BLUE%'>exhibir.</font>"
+  },
+  {
+    "id": "G1166",
+    "ti": "deiknýō",
+    "le": "δεικνύω",
+    "pl": "deiknúo",
+    "ps": "dike-noo'-o",
+    "df": "forma prolongada de un primario obsoleto del mismo significa; mostrar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>declarar, manifestar, mostrar.</font>"
+  },
+  {
+    "id": "G1167",
+    "ti": "deilía",
+    "le": "δειλία",
+    "pl": "deilía",
+    "ps": "di-lee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1169')}>G1169</span>; timidez: <font color='%COLOR_BLUE%'>cobardía.</font>"
+  },
+  {
+    "id": "G1168",
+    "ti": "deiliáō",
+    "le": "δειλιάω",
+    "pl": "deiliáo",
+    "ps": "di-lee-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1167')}>G1167</span>; ser tímido: <font color='%COLOR_BLUE%'>miedo.</font>"
+  },
+  {
+    "id": "G1169",
+    "ti": "deilós",
+    "le": "δειλός",
+    "pl": "deilós",
+    "ps": "di-los'",
+    "df": "de <b>δέος</b> <font color='%COLOR_PURPLE%'>déos</font> (pavor); tímido: <font color='%COLOR_BLUE%'>amedrentar, cobarde, temer.</font>"
+  },
+  {
+    "id": "G1170",
+    "ti": "deîna",
+    "le": "δεῖνα",
+    "pl": "deína",
+    "ps": "di'-nah",
+    "df": "probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1171')}>G1171</span> (mediante la idea de olvidar el nombre como temeroso, i.e. extraño); el tal (cuando no se especifica a la persona): <font color='%COLOR_BLUE%'>cierto hombre.</font>"
+  },
+  {
+    "id": "G1171",
+    "ti": "deinōs",
+    "le": "δεινῶς",
+    "pl": "deinós",
+    "ps": "di-noce'",
+    "df": "adverbio de un derivado de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1169')}>G1169</span>; terriblemente, i.e. excesivamente: <font color='%COLOR_BLUE%'>gravemente.</font>"
+  },
+  {
+    "id": "G1172",
+    "ti": "deipnéō",
+    "le": "δειπνέω",
+    "pl": "deipnéo",
+    "ps": "dipe-neh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1173')}>G1173</span>; cenar, i.e., tomar la comida principal (o de la noche): <font color='%COLOR_BLUE%'>cena, cenar.</font>"
+  },
+  {
+    "id": "G1173",
+    "ti": "deîpnon",
+    "le": "δεῖπνον",
+    "pl": "deípnon",
+    "ps": "dipe'-non",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1160')}>G1160</span>; cenar, i.e. la comida principal (por lo general por la noche): <font color='%COLOR_BLUE%'>cena, cenar.</font>"
+  },
+  {
+    "id": "G1174",
+    "ti": "deisidaimonésteros",
+    "le": "δεισιδαιμονέστερος",
+    "pl": "deisidaimonésteros",
+    "ps": "dice-ee-dahee-mon-es'-ter-os",
+    "df": "comparativo de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1169')}>G1169</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1142')}>G1142</span>; más religiosamente que otros: <font color='%COLOR_BLUE%'>religioso.</font>"
+  },
+  {
+    "id": "G1175",
+    "ti": "deisidaimonía",
+    "le": "δεισιδαιμονία",
+    "pl": "deisidaimonía",
+    "ps": "dice-ee-dahee-mon-ee'-ah",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1174')}>G1174</span>; religión: <font color='%COLOR_BLUE%'>religión.</font>"
+  },
+  {
+    "id": "G1176",
+    "ti": "déka",
+    "le": "δέκα",
+    "pl": "déka",
+    "ps": "dek'-ah",
+    "df": "número primario diez: <font color='%COLOR_BLUE%'>diez.</font>"
+  },
+  {
+    "id": "G1177",
+    "ti": "dekadýo",
+    "le": "δεκαδύο",
+    "pl": "dekadúo",
+    "ps": "dek-ad-oo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1417')}>G1417</span>; dos y diez, i.e. doce: <font color='%COLOR_BLUE%'>doce.</font>"
+  },
+  {
+    "id": "G1178",
+    "ti": "dekapénte",
+    "le": "δεκαπέντε",
+    "pl": "dekapénte",
+    "ps": "dek-ap-en'-teh",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4002')}>G4002</span>; diez y cinco, i.e. quince: <font color='%COLOR_BLUE%'>quince.</font>"
+  },
+  {
+    "id": "G1179",
+    "ti": "Dekápolis",
+    "le": "Δεκάπολις",
+    "pl": "Dekápolis",
+    "ps": "dek-ap'-ol-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4172')}>G4172</span>; región de diez ciudades; Decápolis, distrito de Siria: <font color='%COLOR_BLUE%'>Decápolis.</font>"
+  },
+  {
+    "id": "G1180",
+    "ti": "dekatéssares",
+    "le": "δεκατέσσαρες",
+    "pl": "dekatéssares",
+    "ps": "dek-at-es'-sar-es",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5064')}>G5064</span>; diez y cuatro, i.e. catorce: <font color='%COLOR_BLUE%'>catorce.</font>"
+  },
+  {
+    "id": "G1181",
+    "ti": "dekátē",
+    "le": "δεκάτη",
+    "pl": "dekáte",
+    "ps": "dek-at'-ay",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1182')}>G1182</span>; décimo, i.e. como en porcentaje o (tecnicamente) diezmo: <font color='%COLOR_BLUE%'>diezmo.</font>"
+  },
+  {
+    "id": "G1182",
+    "ti": "dékatos",
+    "le": "δέκατος",
+    "pl": "dékatos",
+    "ps": "dek'-at-os",
+    "df": "ordinal de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span>; décimo: <font color='%COLOR_BLUE%'>décimo.</font>"
+  },
+  {
+    "id": "G1183",
+    "ti": "dekatóō",
+    "le": "δεκατόω",
+    "pl": "dekatóo",
+    "ps": "dek-at-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1181')}>G1181</span>; diezmo, i.e. dar o tomar una décima: <font color='%COLOR_BLUE%'>diezmar.</font>"
+  },
+  {
+    "id": "G1184",
+    "ti": "dektós",
+    "le": "δεκτός",
+    "pl": "dektós",
+    "ps": "dek-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1209')}>G1209</span>; aprobado; (figurativamente) propicio: <font color='%COLOR_BLUE%'>acepto, agradable, agradar.</font>"
+  },
+  {
+    "id": "G1185",
+    "ti": "deleázō",
+    "le": "δελεάζω",
+    "pl": "deleázo",
+    "ps": "del-eh-ad'-zo",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1388')}>G1388</span>; entrampar, i.e. (figurativamente) engañar: <font color='%COLOR_BLUE%'>seducir.</font>"
+  },
+  {
+    "id": "G1186",
+    "ti": "déndron",
+    "le": "δένδρον",
+    "pl": "déndron",
+    "ps": "den'-dron",
+    "df": "probablemente de <b>δρύς</b> <font color='%COLOR_PURPLE%'>drús</font> (roble); un árbol: <font color='%COLOR_BLUE%'>árbol.</font>"
+  },
+  {
+    "id": "G1187",
+    "ti": "dexiolábos",
+    "le": "δεξιολάβος",
+    "pl": "dexiolábos",
+    "ps": "dex-ee-ol-ab'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1188')}>G1188</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2983')}>G2983</span>; guardián (usando la mano derecha) o soldado ligeramente armado: <font color='%COLOR_BLUE%'>lancero.</font>"
+  },
+  {
+    "id": "G1188",
+    "ti": "dexiós",
+    "le": "δεξιός",
+    "pl": "dexiós",
+    "ps": "dex-ee-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1209')}>G1209</span>; lado derecho o (femenino) mano (con la que por lo general se toma): <font color='%COLOR_BLUE%'>lado derecho, mano derecha, (ojo) derecho, diestra.</font>"
+  },
+  {
+    "id": "G1189",
+    "ti": "déomai",
+    "le": "δέομαι",
+    "pl": "déomai",
+    "ps": "deh'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span>; suplicar (como obligándose), i.e. petición: <font color='%COLOR_BLUE%'>orar, pedir, presentar, rogar, ruego.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4441')}>G4441</span>.<p></p><b>δεόν</b> <font color='%COLOR_PURPLE%'>deón.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1163')}>G1163</span>."
+  },
+  {
+    "id": "G1190",
+    "ti": "Derbaîos",
+    "le": "Δερβαῖος",
+    "pl": "Derbaíos",
+    "ps": "der-bah'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1191')}>G1191</span>; De Derbe o habit. de Derbe: <font color='%COLOR_BLUE%'>derbe.</font>"
+  },
+  {
+    "id": "G1191",
+    "ti": "Dérbē",
+    "le": "Δέρβη",
+    "pl": "Dérbe",
+    "ps": "der-bay'",
+    "df": "de origen extranjero; Derbe, lugar en Asia Menor: <font color='%COLOR_BLUE%'>Derbe.</font>"
+  },
+  {
+    "id": "G1192",
+    "ti": "dérma",
+    "le": "δέρμα",
+    "pl": "dérma",
+    "ps": "der'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1194')}>G1194</span>; piel, cuero: <font color='%COLOR_BLUE%'>piel.</font>"
+  },
+  {
+    "id": "G1193",
+    "ti": "dermátinos",
+    "le": "δερμάτινος",
+    "pl": "dermátinos",
+    "ps": "der-mat'-ee-nos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1192')}>G1192</span>; hecho de cuero: <font color='%COLOR_BLUE%'>cuero.</font>"
+  },
+  {
+    "id": "G1194",
+    "ti": "dérō",
+    "le": "δέρω",
+    "pl": "déro",
+    "ps": "der'-o",
+    "df": "verbo primario probablemente azotar, i.e. (por implicación) azotar, o (por analogía) flagelar, dar golpiza: <font color='%COLOR_BLUE%'>azotar, bofetada, dar, golpear.</font>"
+  },
+  {
+    "id": "G1195",
+    "ti": "desmeúō",
+    "le": "δεσμεύω",
+    "pl": "desmeúo",
+    "ps": "des-myoo'-o",
+    "df": "de un derivado (presunto) de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1196')}>G1196</span>; ser atador (captor), i.e. encadenar (a un prisionero), atar (una carga): <font color='%COLOR_BLUE%'>atar, prender.</font>"
+  },
+  {
+    "id": "G1196",
+    "ti": "desméō",
+    "le": "δεσμέω",
+    "pl": "desméo",
+    "ps": "des-meh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1199')}>G1199</span>; atar, i.e. encadenar: <font color='%COLOR_BLUE%'>atar.</font>"
+  },
+  {
+    "id": "G1197",
+    "ti": "désmē",
+    "le": "δέσμη",
+    "pl": "desmé",
+    "ps": "des-may'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1196')}>G1196</span>; atado, bulto: <font color='%COLOR_BLUE%'>manojo.</font>"
+  },
+  {
+    "id": "G1198",
+    "ti": "désmios",
+    "le": "δέσμιος",
+    "pl": "désmios",
+    "ps": "des'-mee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1199')}>G1199</span>; cautivo (como atado): <font color='%COLOR_BLUE%'>preso, prisionero.</font>"
+  },
+  {
+    "id": "G1199",
+    "ti": "desmón",
+    "le": "δεσμόν",
+    "pl": "desmón",
+    "ps": "des-mon'",
+    "df": "o <b>δεσμός</b> <font color='%COLOR_PURPLE%'>desmós</font>; neutro y masculino respectivamente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span>; banda, i.e. ligamento (del cuerpo) o grillo (de un preso); figurativamente impedimento o deshabilidad: <font color='%COLOR_BLUE%'>ligadura, cadena, preso, prisión.</font>"
+  },
+  {
+    "id": "G1200",
+    "ti": "desmophýlax",
+    "le": "δεσμοφύλαξ",
+    "pl": "desmofúlax",
+    "ps": "des-mof-oo'-lax",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1199')}>G1199</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5441')}>G5441</span>; carcelero (como guardando a los presos): <font color='%COLOR_BLUE%'>carcelero.</font>"
+  }
+]

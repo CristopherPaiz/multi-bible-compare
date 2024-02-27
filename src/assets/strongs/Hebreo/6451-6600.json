@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H6451",
+    "ti": "piççâh",
+    "le": "פִּסָּה",
+    "pl": "pissá",
+    "ps": "pis-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6461')}>H6461</span>; expansión, i.e. abundancia: <font color='%COLOR_BLUE%'>puñado.</font>"
+  },
+  {
+    "id": "H6452",
+    "ti": "pâçach",
+    "le": "פָּסַח",
+    "pl": "pasákj",
+    "ps": "paw-sakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; brincar, i.e. (figurativamente) saltar encima (o librar); por impl. vacilar; también (literalmente) cojera, danzar: <font color='%COLOR_BLUE%'>andar, claudicar, pasar, quedar cojo, saltar.</font>"
+  },
+  {
+    "id": "H6453",
+    "ti": "peçach",
+    "le": "פֶּסַח",
+    "pl": "Pésakj",
+    "ps": "peh'-sakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6452')}>H6452</span>; a preterición, i.e. exención; usado solo tecnicamente de la pascua judía (el festival o la víctima): <font color='%COLOR_BLUE%'> (ofrenda de) pascua.</font>"
+  },
+  {
+    "id": "H6454",
+    "ti": "Pâçêach",
+    "le": "פָּסֵחַ",
+    "pl": "Paséakj",
+    "ps": "paw-say'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6452')}>H6452</span>; cojear; Paseaj, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Paseah.</font>"
+  },
+  {
+    "id": "H6455",
+    "ti": "piççêach",
+    "le": "פִּסֵּחַ",
+    "pl": "pisséakj",
+    "ps": "pis-say'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6452')}>H6452</span>; cojo: <font color='%COLOR_BLUE%'>cojo, lisiado.</font>"
+  },
+  {
+    "id": "H6456",
+    "ti": "pᵉçîyl",
+    "le": "פְּסִיל",
+    "pl": "pesíl",
+    "ps": "pes-eel'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6458')}>H6458</span>; ídolo: <font color='%COLOR_BLUE%'>escultura, estatua, ídolo, imagen, talla.</font>"
+  },
+  {
+    "id": "H6457",
+    "ti": "Pâçak",
+    "le": "פָּסַךְ",
+    "pl": "Pasák",
+    "ps": "paw-sak'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa dividir; divisor; Pasak, un israelita.: <font color='%COLOR_BLUE%'>Pasac.</font>"
+  },
+  {
+    "id": "H6458",
+    "ti": "pâçal",
+    "le": "פָּסַל",
+    "pl": "pasál",
+    "ps": "paw-sal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; tallar, sea madera o piedra: <font color='%COLOR_BLUE%'>alisar, cortar, labrar.</font>"
+  },
+  {
+    "id": "H6459",
+    "ti": "peçel",
+    "le": "פֶּסֶל",
+    "pl": "pésel",
+    "ps": "peh'-sel",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6458')}>H6458</span>; ídolo: <font color='%COLOR_BLUE%'>esculpir, escultura, estatua, ídolo, imagen, talla.</font>"
+  },
+  {
+    "id": "H6460",
+    "ti": "pᵉçanṭêrîyn",
+    "le": "פְּסַנְטֵרִין",
+    "pl": "pesanterín",
+    "ps": "pes-an-tay-reen'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); o <font color='%COLOR_GREEN%'><b>פסנתרין</b></font> <font color='%COLOR_PURPLE%'>pesanterín</font>; transliteración del griego <b>鸅鋷碖濈濨故RK] psalterion; lira: <font color='%COLOR_BLUE%'>salterio.</font></b>"
+  },
+  {
+    "id": "H6461",
+    "ti": "pâçaç",
+    "le": "פָּסַס",
+    "pl": "pasás",
+    "ps": "paw-sas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; probablemente dispersar, i.e. (intr.) desaparecer: <font color='%COLOR_BLUE%'>acabar, desaparecer.</font>"
+  },
+  {
+    "id": "H6462",
+    "ti": "Piçpâh",
+    "le": "פִּסְפָּה",
+    "pl": "Pispá",
+    "ps": "pis-paw'",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6461')}>H6461</span>; dispersión; Pispá, un israelita.: <font color='%COLOR_BLUE%'>Pispa.</font>"
+  },
+  {
+    "id": "H6463",
+    "ti": "pâʻâh",
+    "le": "פָּעָה",
+    "pl": "paá",
+    "ps": "paw-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; gritar: <font color='%COLOR_BLUE%'>dar voces.</font>"
+  },
+  {
+    "id": "H6464",
+    "ti": "Pâʻûw",
+    "le": "פָּעוּ",
+    "pl": "Paú",
+    "ps": "paw-oo'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פעי</b></font> <font color='%COLOR_PURPLE%'>paí</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6463')}>H6463</span>; gritar; Pau o Pai, un lugar en Edom: <font color='%COLOR_BLUE%'>Pai, Pau.</font>"
+  },
+  {
+    "id": "H6465",
+    "ti": "Pᵉʻôwr",
+    "le": "פְּעֹור",
+    "pl": "Peór",
+    "ps": "peh-ore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6473')}>H6473</span>; brecha; Peor, monte al E. del Jordán; también (por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1187')}>H1187</span>) una deidad que se adoraba allí: <font color='%COLOR_BLUE%'>Peor, (Baal-)Peor.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1047')}>H1047</span>.<p></p><font color='%COLOR_GREEN%'><b>פעי</b></font> <font color='%COLOR_PURPLE%'>paí.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6464')}>H6464</span>."
+  },
+  {
+    "id": "H6466",
+    "ti": "pâʻal",
+    "le": "פָּעַל",
+    "pl": "paál",
+    "ps": "paw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; hacer (sistemática y habitualmente), especialmente practicar: <font color='%COLOR_BLUE%'>cometer, hacedor, hacer, labrar, maquinar, mostrar, obra, trabajar.</font>"
+  },
+  {
+    "id": "H6467",
+    "ti": "pôʻal",
+    "le": "פֹּעַל",
+    "pl": "poál",
+    "ps": "po'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6466')}>H6466</span>; acto u obra (concr.): <font color='%COLOR_BLUE%'>conducta, hacer, hecho, labor, obra, trabajo.</font>"
+  },
+  {
+    "id": "H6468",
+    "ti": "pᵉʻullâh",
+    "le": "פְּעֻלָּה",
+    "pl": "peulá",
+    "ps": "peh-ool-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6466')}>H6466</span>; (abst.) trabajo: <font color='%COLOR_BLUE%'>hecho, obra, pago, salario, trabajo.</font>"
+  },
+  {
+    "id": "H6469",
+    "ti": "Pᵉʻullᵉthay",
+    "le": "פְּעֻלְּתַי",
+    "pl": "Peuletái",
+    "ps": "peh-ool-leh-thah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6468')}>H6468</span>; laborioso; Peuletai, un israelita.: <font color='%COLOR_BLUE%'>Peultai.</font>"
+  },
+  {
+    "id": "H6470",
+    "ti": "pâʻam",
+    "le": "פָּעַם",
+    "pl": "paám",
+    "ps": "paw-am'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; dar golpecitos, i.e. golpear regularmente; de aquí, (generalmente) impulsar o agitar: <font color='%COLOR_BLUE%'>perturbar, quebrantar, turbar, manifestar, agitar.</font>"
+  },
+  {
+    "id": "H6471",
+    "ti": "paʻam",
+    "le": "פַּעַם",
+    "pl": "paám",
+    "ps": "pah'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>פעמה</b></font> <font color='%COLOR_PURPLE%'>paamá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6470')}>H6470</span>; golpe, literalmente o figurativamente (en varias aplicaciones, como sigue): <font color='%COLOR_BLUE%'>ahora, cuántas veces, dos veces, esquina, ocasión, paso, pies, esta vez, tres veces, una vez, veces, yunque.</font>"
+  },
+  {
+    "id": "H6472",
+    "ti": "paʻămôn",
+    "le": "פַּעֲמֹן",
+    "pl": "paamón",
+    "ps": "pah-am-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6471')}>H6471</span>; campana (como que se golpea): <font color='%COLOR_BLUE%'>campanilla.</font>"
+  },
+  {
+    "id": "H6473",
+    "ti": "pâʻar",
+    "le": "פָּעַר",
+    "pl": "paár",
+    "ps": "paw-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; bostezar, i.e. bien abierto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>abrir, extender.</font>"
+  },
+  {
+    "id": "H6474",
+    "ti": "Paʻăray",
+    "le": "פַּעֲרַי",
+    "pl": "Paarái",
+    "ps": "pah-ar-ah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6473')}>H6473</span>; bostezar; Paarai, un israelita.: <font color='%COLOR_BLUE%'>Paarai.</font>"
+  },
+  {
+    "id": "H6475",
+    "ti": "pâtsâh",
+    "le": "פָּצָה",
+    "pl": "patsá",
+    "ps": "paw-tsaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; rasgar, i.e. abrir (especialmente la boca): <font color='%COLOR_BLUE%'>abrir, rescatar.</font>"
+  },
+  {
+    "id": "H6476",
+    "ti": "pâtsach",
+    "le": "פָּצַח",
+    "pl": "patsákj",
+    "ps": "paw-tsakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; prorrumpir (en sonido gozoso): <font color='%COLOR_BLUE%'>(cantar) alabanzas, levantar la voz, prorrumpir, quebrantar.</font>"
+  },
+  {
+    "id": "H6477",
+    "ti": "pᵉtsîyrâh",
+    "le": "פְּצִירָה",
+    "pl": "petsirá",
+    "ps": "pets-ee-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6484')}>H6484</span>; embotadura: <font color='%COLOR_BLUE%'>el precio (era un pim).</font>"
+  },
+  {
+    "id": "H6478",
+    "ti": "pâtsal",
+    "le": "פָּצַל",
+    "pl": "patsál",
+    "ps": "paw-tsal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; pelar: <font color='%COLOR_BLUE%'>mondar, descortezar.</font>"
+  },
+  {
+    "id": "H6479",
+    "ti": "pᵉtsâlâh",
+    "le": "פְּצָלָה",
+    "pl": "petsalá",
+    "ps": "pets-aw-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6478')}>H6478</span>; peladura: <font color='%COLOR_BLUE%'>mondadura.</font>"
+  },
+  {
+    "id": "H6480",
+    "ti": "pâtsam",
+    "le": "פָּצַם",
+    "pl": "patsám",
+    "ps": "paw-tsam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; rasgar (por terremoto): <font color='%COLOR_BLUE%'>hender.</font>"
+  },
+  {
+    "id": "H6481",
+    "ti": "pâtsaʻ",
+    "le": "פָּצַע",
+    "pl": "patsá",
+    "ps": "paw-tsah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; partir, i.e. herir: <font color='%COLOR_BLUE%'>hacer herida, herir, magullar.</font>"
+  },
+  {
+    "id": "H6482",
+    "ti": "petsaʻ",
+    "le": "פֶּצַע",
+    "pl": "petsá",
+    "ps": "peh'-tsah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6481')}>H6481</span>; herida: <font color='%COLOR_BLUE%'>golpe, herida, herir.</font><p></p><font color='%COLOR_GREEN%'><b>פצץ</b></font> <font color='%COLOR_PURPLE%'>Patséts.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1048')}>H1048</span>."
+  },
+  {
+    "id": "H6483",
+    "ti": "Pitstsêts",
+    "le": "פִּצֵּץ",
+    "pl": "Pitséts",
+    "ps": "pits-tsates'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa desunir; dispersar; Pitsets, un sacerdote: <font color='%COLOR_BLUE%'>Afses. [incl. el art.].</font>"
+  },
+  {
+    "id": "H6484",
+    "ti": "pâtsar",
+    "le": "פָּצַר",
+    "pl": "patsár",
+    "ps": "paw-tsar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; picotear, i.e. (figurativamente) perplejo o tedioso: <font color='%COLOR_BLUE%'>hacer, importunar, insistir, instar, obstinación, porfiar.</font>"
+  },
+  {
+    "id": "H6485",
+    "ti": "pâqad",
+    "le": "פָּקַד",
+    "pl": "pacád",
+    "ps": "paw-kad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; visitar (con inteción amistosa u hostil); por anal. supervisar, reunir, acusar, cuidar de, extrañar, depositar, etc.: <font color='%COLOR_BLUE%'>activar, arreglo, buscar, cargo, castigar, castigo, censo, consignar, constituir, contar, cuenta, cuidar, custodiar, dañar, depositar, destruir, echar, empadronar, encargado, encargar, encargo, encomendar, entregar, enviar, faltar, gobernador, gobernar, guardar, huir, inspeccionar, ir, juzgar, lista, mayordomo, memoria, mención, menoscabar, mirar, número, pasar lista, poner, preguntar, prescribir, privar, revista, señalar, traer, vacío, visitar.</font><p></p><font color='%COLOR_GREEN%'><b>פקד</b></font> <font color='%COLOR_PURPLE%'>piccúd.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6490')}>H6490</span>."
+  },
+  {
+    "id": "H6486",
+    "ti": "pᵉquddâh",
+    "le": "פְּקֻדָּה",
+    "pl": "pecuddá",
+    "ps": "pek-ood-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6485')}>H6485</span>; visitación (en muchos sentidos, principalmente oficial): <font color='%COLOR_BLUE%'>cárcel, cargo, castigo, contar, cuidado, custodia, distribuir, gobernar, guarnición, lista, número, oficio, opresor, portero, reservar.</font>"
+  },
+  {
+    "id": "H6487",
+    "ti": "piqqâdôwn",
+    "le": "פִּקָּדֹון",
+    "pl": "piccadón",
+    "ps": "pik-kaw-done'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6485')}>H6485</span>; depósito: <font color='%COLOR_BLUE%'>encomendar, dejar en depósito, volver.</font>"
+  },
+  {
+    "id": "H6488",
+    "ti": "pᵉqiduth",
+    "le": "פְּקִדֻת",
+    "pl": "pequedút",
+    "ps": "pek-ee-dooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6496')}>H6496</span>; supervisión: <font color='%COLOR_BLUE%'>[de la guardia].</font>"
+  },
+  {
+    "id": "H6489",
+    "ti": "Pᵉqôwd",
+    "le": "פְּקֹוד",
+    "pl": "Pecód",
+    "ps": "pek-ode'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6485')}>H6485</span>; castigo; Pecod, nombre simb. de Babilonia: <font color='%COLOR_BLUE%'>Pecod.</font>"
+  },
+  {
+    "id": "H6490",
+    "ti": "piqqûwd",
+    "le": "פִּקּוּד",
+    "pl": "piccúd",
+    "ps": "pik-kood'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פקד</b></font> <font color='%COLOR_PURPLE%'>piccúd</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6485')}>H6485</span>; propiamente nombrado, i.e. mandato (de Dios; solo plural colect. por la Ley): <font color='%COLOR_BLUE%'>mandamientos.</font>"
+  },
+  {
+    "id": "H6491",
+    "ti": "pâqach",
+    "le": "פָּקַח",
+    "pl": "pacakj",
+    "ps": "paw-kakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; abrir (los sentidos, especialmente los ojos); figurativamente ser observante: <font color='%COLOR_BLUE%'>abierto, abrir.</font>"
+  },
+  {
+    "id": "H6492",
+    "ti": "Peqach",
+    "le": "פֶּקַח",
+    "pl": "Pecákj",
+    "ps": "peh'-kakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6491')}>H6491</span>; vigilar; Peka, un rey israelitas: <font color='%COLOR_BLUE%'>Peka.</font>"
+  },
+  {
+    "id": "H6493",
+    "ti": "piqqêach",
+    "le": "פִּקֵּחַ",
+    "pl": "picquéakj",
+    "ps": "pik-kay'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6491')}>H6491</span>; de vista clara; figurativamente inteligente: <font color='%COLOR_BLUE%'>ver.</font>"
+  },
+  {
+    "id": "H6494",
+    "ti": "Pᵉqachyâh",
+    "le": "פְּקַחְיָה",
+    "pl": "Pecakjyá",
+    "ps": "pek-akh-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6491')}>H6491</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha observado; Pekaía, un rey israelitas: <font color='%COLOR_BLUE%'>Pekaía.</font>"
+  },
+  {
+    "id": "H6495",
+    "ti": "pᵉqach-qôwach",
+    "le": "פְּקַח־קֹוחַ",
+    "pl": "pecakj coákj",
+    "ps": "pek-akh-ko'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6491')}>H6491</span> redoblado; apertura (de una mazmorra), i.e. liberar de la cárcel (figurativamente salvación de pecado): <font color='%COLOR_BLUE%'>apertura de la cárcel.</font>"
+  },
+  {
+    "id": "H6496",
+    "ti": "pâqîyd",
+    "le": "פָּקִיד",
+    "pl": "paquíd",
+    "ps": "paw-keed'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6485')}>H6485</span>; superintendente (civil, militar, o religioso): <font color='%COLOR_BLUE%'>ayudante, capitán, director, gobernador, jefe, mayordomo, persona, prefecto.</font>"
+  },
+  {
+    "id": "H6497",
+    "ti": "peqaʻ",
+    "le": "פֶּקַע",
+    "pl": "pecá",
+    "ps": "peh'-kah",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa reventar; usado solo como término de arq. de un ornamento similar a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6498')}>H6498</span>, semiesfera: <font color='%COLOR_BLUE%'>calabaza, calabaza silvestre.</font>"
+  },
+  {
+    "id": "H6498",
+    "ti": "paqquʻâh",
+    "le": "פַּקֻּעָה",
+    "pl": "paccúa",
+    "ps": "pak-koo-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6497')}>H6497</span>; pepino silvestre (de partirse para dejar salir las semillas): <font color='%COLOR_BLUE%'>calabaza silvestre.</font>"
+  },
+  {
+    "id": "H6499",
+    "ti": "par",
+    "le": "פַּר",
+    "pl": "par",
+    "ps": "par",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פר</b></font> <font color='%COLOR_PURPLE%'>par</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6565')}>H6565</span>; toro (apar. como irrumpiendo con fuerza salvaje, o tal vez por sus cascos divididos): <font color='%COLOR_BLUE%'>becerro, buey, novillo, toro.</font>"
+  },
+  {
+    "id": "H6500",
+    "ti": "pârâʼ",
+    "le": "פָּרָא",
+    "pl": "pará",
+    "ps": "paw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; llevar fruto: <font color='%COLOR_BLUE%'>fructificar.</font>"
+  },
+  {
+    "id": "H6501",
+    "ti": "pereʼ",
+    "le": "פֶּרֶא",
+    "pl": "pére",
+    "ps": "peh'-reh",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פרה</b></font> <font color='%COLOR_PURPLE%'>péré</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Jer 2:24</span>); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6500')}>H6500</span> en segundo sentido de correr salvajemente; asno salvaje: <font color='%COLOR_BLUE%'>(asno, -a) montés.</font><p></p><font color='%COLOR_GREEN%'><b>פיראה</b></font> <font color='%COLOR_PURPLE%'>porá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6288')}>H6288</span>."
+  },
+  {
+    "id": "H6502",
+    "ti": "Pirʼâm",
+    "le": "פִּרְאָם",
+    "pl": "Pirám",
+    "ps": "pir-awm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6501')}>H6501</span>; salvajemente; Piram, un cananeo: <font color='%COLOR_BLUE%'>Piream.</font>"
+  },
+  {
+    "id": "H6503",
+    "ti": "Parbâr",
+    "le": "פַּרְבָּר",
+    "pl": "Parbár",
+    "ps": "par-bawr'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פרור</b></font> <font color='%COLOR_PURPLE%'>Parvár</font>; de original for.; Parbar o Parvar, sector de Jerusalén: <font color='%COLOR_BLUE%'>ejido, cámara de los utensilios.</font>"
+  },
+  {
+    "id": "H6504",
+    "ti": "pârad",
+    "le": "פָּרַד",
+    "pl": "parád",
+    "ps": "paw-rad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; irrumpir, i.e. extender o separar (-se uno mismo): <font color='%COLOR_BLUE%'>apartar, decidir, descoyuntar, desviar, dispensar, distribuir, dividir, esparcir, extender, repartir, (hacer) separación, separar, -se.</font>"
+  },
+  {
+    "id": "H6505",
+    "ti": "pered",
+    "le": "פֶּרֶד",
+    "pl": "péred",
+    "ps": "peh'-red",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6504')}>H6504</span>; mulo (tal vez por sus hábitos solitarios): <font color='%COLOR_BLUE%'>mulo.</font>"
+  },
+  {
+    "id": "H6506",
+    "ti": "pirdâh",
+    "le": "פִּרְדָּה",
+    "pl": "pirdá",
+    "ps": "pir-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6505')}>H6505</span>; mula: <font color='%COLOR_BLUE%'>mula.</font>"
+  },
+  {
+    "id": "H6507",
+    "ti": "pᵉrudâh",
+    "le": "פְּרֻדָה",
+    "pl": "perudá",
+    "ps": "per-oo-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6504')}>H6504</span>; algo separado, i.e. semilla: <font color='%COLOR_BLUE%'>grano.</font>"
+  },
+  {
+    "id": "H6508",
+    "ti": "pardêç",
+    "le": "פַּרְדֵּס",
+    "pl": "pardés",
+    "ps": "par-dace'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original for.; parque: <font color='%COLOR_BLUE%'>bosque, paraíso.</font>"
+  },
+  {
+    "id": "H6509",
+    "ti": "pârâh",
+    "le": "פָּרָה",
+    "pl": "pará",
+    "ps": "paw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; llevar fruto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>aumentar, crecer, fértil, fructífero, fructificar, dar fruto, multiplicar, producir, retoñar.</font>"
+  },
+  {
+    "id": "H6510",
+    "ti": "pârâh",
+    "le": "פָּרָה",
+    "pl": "pará",
+    "ps": "paw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6499')}>H6499</span>; vaca: <font color='%COLOR_BLUE%'>novillo, vaca.</font>"
+  },
+  {
+    "id": "H6511",
+    "ti": "Pârâh",
+    "le": "פָּרָה",
+    "pl": "Pará",
+    "ps": "paw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6510')}>H6510</span>; Pará, un lugar en Palestina: <font color='%COLOR_BLUE%'>Pará.</font><p></p><font color='%COLOR_GREEN%'><b>פרה</b></font> <font color='%COLOR_PURPLE%'>pére.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6501')}>H6501</span>."
+  },
+  {
+    "id": "H6512",
+    "ti": "pêrâh",
+    "le": "פֵּרָה",
+    "pl": "perá",
+    "ps": "pay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6331')}>H6331</span>; hueco, agujero (como roto, i.e. cavado): <font color='%COLOR_BLUE%'>topo.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2661')}>H2661</span>."
+  },
+  {
+    "id": "H6513",
+    "ti": "Purâh",
+    "le": "פֻּרָה",
+    "pl": "Purá",
+    "ps": "poo-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6288')}>H6288</span>; follaje; Pura, un israelita.: <font color='%COLOR_BLUE%'>Fura.</font>"
+  },
+  {
+    "id": "H6514",
+    "ti": "Pᵉrûwdâʼ",
+    "le": "פְּרוּדָא",
+    "pl": "Perudá",
+    "ps": "per-oo-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פרידא</b></font> <font color='%COLOR_PURPLE%'>Peridá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6504')}>H6504</span>; dispersión; Peruda o Perida, uno de los «siervos de Salomón»: <font color='%COLOR_BLUE%'>Perida, Peruda.</font><p></p><font color='%COLOR_GREEN%'><b>פרויזי</b></font> <font color='%COLOR_PURPLE%'>perozí.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6521')}>H6521</span>."
+  },
+  {
+    "id": "H6515",
+    "ti": "Pârûwach",
+    "le": "פָּרוּחַ",
+    "pl": "Parúakj",
+    "ps": "paw-roo'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6524')}>H6524</span>; florecido; Parúa, un israelita.: <font color='%COLOR_BLUE%'>Parúa.</font>"
+  },
+  {
+    "id": "H6516",
+    "ti": "Parvayim",
+    "le": "פַּרְוַיִם",
+    "pl": "Parvaím",
+    "ps": "par-vah'-yim",
+    "df": "<font color='%COLOR_GREEN%'></font>de original for.; Parvaim, región oriental: <font color='%COLOR_BLUE%'>Parvaim.</font>"
+  },
+  {
+    "id": "H6517",
+    "ti": "pârûwr",
+    "le": "פָּרוּר",
+    "pl": "parúr",
+    "ps": "paw-roor'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6565')}>H6565</span> en sentido de estirar, extender [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6524')}>H6524</span>]; sartén (como plano u hondo): <font color='%COLOR_BLUE%'>caldero, marmita, olla.</font><p></p><font color='%COLOR_GREEN%'><b>פרור</b></font> <font color='%COLOR_PURPLE%'>Parvár.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6503')}>H6503</span>."
+  },
+  {
+    "id": "H6518",
+    "ti": "pârâz",
+    "le": "פָּרָז",
+    "pl": "paráz",
+    "ps": "paw-rawz'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa separar, i.e. decidir; jefe: <font color='%COLOR_BLUE%'>guerrero.</font>"
+  },
+  {
+    "id": "H6519",
+    "ti": "pᵉrâzâh",
+    "le": "פְּרָזָה",
+    "pl": "perazá",
+    "ps": "per-aw-zaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6518')}>H6518</span>; campo abierto: <font color='%COLOR_BLUE%'>sin muro, tierra indefensa.</font>"
+  },
+  {
+    "id": "H6520",
+    "ti": "pᵉrâzôwn",
+    "le": "פְּרָזֹון",
+    "pl": "perazón",
+    "ps": "per-aw-zone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6518')}>H6518</span>; magistratura, i.e. liderazgo (también concr. jefes): <font color='%COLOR_BLUE%'>aldea.</font>"
+  },
+  {
+    "id": "H6521",
+    "ti": "pᵉrâzîy",
+    "le": "פְּרָזִי",
+    "pl": "perazí",
+    "ps": "per-aw-zee'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פרויזי</b></font> <font color='%COLOR_PURPLE%'>perozí</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6519')}>H6519</span>; rústico, patán: <font color='%COLOR_BLUE%'>aldeano, sin muro.</font>"
+  },
+  {
+    "id": "H6522",
+    "ti": "Pᵉrizzîy",
+    "le": "פְּרִזִּי",
+    "pl": "perizzí",
+    "ps": "per-iz-zee'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6521')}>H6521</span>; hab. del campo abierto; perizita, una de las tribus cananeas: <font color='%COLOR_BLUE%'>ferezeo.</font>"
+  },
+  {
+    "id": "H6523",
+    "ti": "parzel",
+    "le": "פַּרְזֶל",
+    "pl": "parzél",
+    "ps": "par-zel'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1270')}>H1270</span>; hierro: <font color='%COLOR_BLUE%'>hierro.</font>"
+  },
+  {
+    "id": "H6524",
+    "ti": "pârach",
+    "le": "פָּרַח",
+    "pl": "parákj",
+    "ps": "paw-rakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; brotar como botón, i.e. florecer; generalmente extender; especialmente volar (como entendiendo las alas); figurativamente florecer: <font color='%COLOR_BLUE%'>brotar, cundir, florecer, originar, producir, profusamente, renuevo, reverdecer, volar, vuelo, extender.</font>"
+  },
+  {
+    "id": "H6525",
+    "ti": "perach",
+    "le": "פֶּרַח",
+    "pl": "pérakj",
+    "ps": "peh'-rakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6524')}>H6524</span>; cáliz (nat. o artif.); generalmente flor: <font color='%COLOR_BLUE%'>flor, fruto, renuevo.</font>"
+  },
+  {
+    "id": "H6526",
+    "ti": "pirchach",
+    "le": "פִּרְחַח",
+    "pl": "pirkjákj",
+    "ps": "pir-khakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6524')}>H6524</span>; progenie, i.e. prole, camada: <font color='%COLOR_BLUE%'>populacho.</font>"
+  },
+  {
+    "id": "H6527",
+    "ti": "pâraṭ",
+    "le": "פָּרַט",
+    "pl": "parát",
+    "ps": "paw-rat'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; esparcir palabras, i.e. parlotear (o tararear): <font color='%COLOR_BLUE%'>gorjear.</font>"
+  },
+  {
+    "id": "H6528",
+    "ti": "pereṭ",
+    "le": "פֶּרֶט",
+    "pl": "péret",
+    "ps": "peh'-ret",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6527')}>H6527</span>; baya o grano extraviado o solo: <font color='%COLOR_BLUE%'>fruto.</font>"
+  },
+  {
+    "id": "H6529",
+    "ti": "pᵉrîy",
+    "le": "פְּרִי",
+    "pl": "perí",
+    "ps": "per-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6509')}>H6509</span>; fruto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>fructífero, fruto, galardón, descendencia, rama, sementera.</font><p></p><font color='%COLOR_GREEN%'><b>פרידא</b></font> <font color='%COLOR_PURPLE%'>Peridá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6514')}>H6514</span>.<p></p><font color='%COLOR_GREEN%'><b>פרים</b></font> <font color='%COLOR_PURPLE%'>Purím.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6332')}>H6332</span>."
+  },
+  {
+    "id": "H6530",
+    "ti": "pᵉrîyts",
+    "le": "פְּרִיץ",
+    "pl": "períts",
+    "ps": "per-eets'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6555')}>H6555</span>; violento, i.e. tirano: <font color='%COLOR_BLUE%'>ladrón, violento.</font>"
+  },
+  {
+    "id": "H6531",
+    "ti": "perek",
+    "le": "פֶּרֶךְ",
+    "pl": "pérek",
+    "ps": "peh'-rek",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa romper; fracturar, i.e. severidad: <font color='%COLOR_BLUE%'>dureza, duro, rigor, violencia.</font>"
+  },
+  {
+    "id": "H6532",
+    "ti": "pôreketh",
+    "le": "פֹּרֶכֶת",
+    "pl": "poréket",
+    "ps": "po-reh'-keth",
+    "df": "<font color='%COLOR_GREEN%'></font>participio activo femenino de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6531')}>H6531</span>; separadora, i.e. velo (sagrado): <font color='%COLOR_BLUE%'>velo, cortina.</font>"
+  },
+  {
+    "id": "H6533",
+    "ti": "pâram",
+    "le": "פָּרַם",
+    "pl": "parám",
+    "ps": "paw-ram'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; rasgar: <font color='%COLOR_BLUE%'>rasgar.</font>"
+  },
+  {
+    "id": "H6534",
+    "ti": "Parmashtâʼ",
+    "le": "פַּרְמַשְׁתָּא",
+    "pl": "Parmashtá",
+    "ps": "par-mash-taw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original persa; Parmashta, un hijo de Hamán: <font color='%COLOR_BLUE%'>Parmasta.</font>"
+  },
+  {
+    "id": "H6535",
+    "ti": "Parnak",
+    "le": "פַּרְנַךְ",
+    "pl": "Parnák",
+    "ps": "par-nak'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Parnak, un israelita.: <font color='%COLOR_BLUE%'>Parnac.</font>"
+  },
+  {
+    "id": "H6536",
+    "ti": "pâraç",
+    "le": "פָּרַס",
+    "pl": "parás",
+    "ps": "paw-ras'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; despedazar, i.e. (por lo general sin violencia) partir, distribuir: <font color='%COLOR_BLUE%'>hender, partir, pezuña hendida.</font>"
+  },
+  {
+    "id": "H6537",
+    "ti": "pᵉraç",
+    "le": "פְּרַס",
+    "pl": "perás",
+    "ps": "per-as'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6536')}>H6536</span>; dividir, seccionar: <font color='%COLOR_BLUE%'>dividir, Peres, romper, Uparsin.</font>"
+  },
+  {
+    "id": "H6538",
+    "ti": "pereç",
+    "le": "פֶּרֶס",
+    "pl": "péres",
+    "ps": "peh'-res",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6536')}>H6536</span>; garra; también una especie de águila: <font color='%COLOR_BLUE%'>quebrantahuesos.</font>"
+  },
+  {
+    "id": "H6539",
+    "ti": "Pâraç",
+    "le": "פָּרַס",
+    "pl": "Parás",
+    "ps": "paw-ras'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original for.; Parás (i.e. Persia), una nación al E., incl. sus hab.: <font color='%COLOR_BLUE%'>persa, Persia.</font>"
+  },
+  {
+    "id": "H6540",
+    "ti": "Pâraç",
+    "le": "פָּרַס",
+    "pl": "Parás",
+    "ps": "paw-ras'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6539')}>H6539</span>: <font color='%COLOR_BLUE%'>persa, Persia.</font>"
+  },
+  {
+    "id": "H6541",
+    "ti": "parçâh",
+    "le": "פַּרְסָה",
+    "pl": "parsá",
+    "ps": "par-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6538')}>H6538</span>; garra o pezuña hendida: <font color='%COLOR_BLUE%'>pezuña [hendida], uña, casco.</font>"
+  },
+  {
+    "id": "H6542",
+    "ti": "Parçîy",
+    "le": "פַּרְסִי",
+    "pl": "parsí",
+    "ps": "par-see'",
+    "df": "<font color='%COLOR_GREEN%'></font>genitivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6539')}>H6539</span>; parsita (i.e. persa), o habitante de Peres: <font color='%COLOR_BLUE%'>persa.</font>"
+  },
+  {
+    "id": "H6543",
+    "ti": "Parçîy",
+    "le": "פַּרְסִי",
+    "pl": "parsí",
+    "ps": "par-see'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6542')}>H6542</span>: <font color='%COLOR_BLUE%'>persa.</font>"
+  },
+  {
+    "id": "H6544",
+    "ti": "pâraʻ",
+    "le": "פָּרַע",
+    "pl": "pará",
+    "ps": "paw-rah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; aflojar; por impl. exponer, disminuir; figurativamente absolver, empezar: <font color='%COLOR_BLUE%'>cesar, dejar, descubrir, desechar, desenfrenadamente, desenfrenar, desnudar, menospreciar, volver.</font>"
+  },
+  {
+    "id": "H6545",
+    "ti": "peraʻ",
+    "le": "פֶּרַע",
+    "pl": "perá",
+    "ps": "peh'-rah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6544')}>H6544</span>; cabello (como desordenado): <font color='%COLOR_BLUE%'>cabello.</font>"
+  },
+  {
+    "id": "H6546",
+    "ti": "parʻâh",
+    "le": "פַּרְעָה",
+    "pl": "pará",
+    "ps": "par-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6545')}>H6545</span> (en sentido de empezar); liderazgo (plural concr. líderes): <font color='%COLOR_BLUE%'>cabeza de jefes.</font>"
+  },
+  {
+    "id": "H6547",
+    "ti": "Parʻôh",
+    "le": "פַּרְעֹה",
+    "pl": "Paró",
+    "ps": "par-o'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación egipcia; Paro, título generalmente de los reyes egipcios: <font color='%COLOR_BLUE%'>Faraón.</font>"
+  },
+  {
+    "id": "H6548",
+    "ti": "Parʻôh Chophraʻ",
+    "le": "פַּרְעֹה חׇפְרַע",
+    "pl": "Paró Kjofrá",
+    "ps": "par-o' khof-rah'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación egipcia; Paro Jofra, rey egipcio: <font color='%COLOR_BLUE%'>Faraón Hofra.</font>"
+  },
+  {
+    "id": "H6549",
+    "ti": "Parʻôh Nᵉkôh",
+    "le": "פַּרְעֹה נְכֹה",
+    "pl": "Paró Nekó",
+    "ps": "par-o' nek-o'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פרעיה נכוי</b></font> <font color='%COLOR_PURPLE%'> Paró Nekó</font>; de derivación egipcia; Paro Neko, un rey egipcio: <font color='%COLOR_BLUE%'>Faraón Necao.</font>"
+  },
+  {
+    "id": "H6550",
+    "ti": "parʻôsh",
+    "le": "פַּרְעֹשׁ",
+    "pl": "parósh",
+    "ps": "par-oshe'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6544')}>H6544</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6211')}>H6211</span>; pulga (como insecto aislado): <font color='%COLOR_BLUE%'>pulga.</font>"
+  },
+  {
+    "id": "H6551",
+    "ti": "Parʻôsh",
+    "le": "פַּרְעֹשׁ",
+    "pl": "Parósh",
+    "ps": "par-oshe'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6550')}>H6550</span>; Parosh, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Paros, Faros.</font>"
+  },
+  {
+    "id": "H6552",
+    "ti": "Pirʻâthôwn",
+    "le": "פִּרְעָתֹון",
+    "pl": "Piratón",
+    "ps": "pir-aw-thone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6546')}>H6546</span>; jefatura; Piratón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Piratón.</font>"
+  },
+  {
+    "id": "H6553",
+    "ti": "Pirʻâthôwnîy",
+    "le": "פִּרְעָתֹונִי",
+    "pl": "piratoní",
+    "ps": "pir-aw-tho-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פרעתיני</b></font> <font color='%COLOR_PURPLE%'>piratoní</font>; gent. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6552')}>H6552</span>; piratonita o habitante de Piratón: <font color='%COLOR_BLUE%'>piratonita.</font>"
+  },
+  {
+    "id": "H6554",
+    "ti": "Parpar",
+    "le": "פַּרְפַּר",
+    "pl": "Parpár",
+    "ps": "par-par'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6565')}>H6565</span> en sentido de correr precipitadamente; rápido; Parpar, río de Siria: <font color='%COLOR_BLUE%'>Farfar.</font>"
+  },
+  {
+    "id": "H6555",
+    "ti": "pârats",
+    "le": "פָּרַץ",
+    "pl": "paráts",
+    "ps": "paw-rats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; salir rompiendo (en muchas aplicaciones, dir. y indir., literalmente y figurativamente): <font color='%COLOR_BLUE%'>abrir, aportillar, aumentar, caer, crecer, derribar, desarrollar, destruir, divulgar, esparcir, hacer estrago, extender, hacer huir, importunar, insistir, multiplicar, porfiar, portillo, quebrantar, quebranto, rebosar, romper.</font>"
+  },
+  {
+    "id": "H6556",
+    "ti": "perets",
+    "le": "פֶּרֶץ",
+    "pl": "pérets",
+    "ps": "peh'-rets",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6555')}>H6555</span>; ruptura (literalmente o figurativamente): <font color='%COLOR_BLUE%'>asalto, brecha, corriente, grieta, impetuoso, portillo, prevaricador, quebrantar.</font>"
+  },
+  {
+    "id": "H6557",
+    "ti": "Perets",
+    "le": "פֶּרֶץ",
+    "pl": "Pérets",
+    "ps": "peh'-rets",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6556')}>H6556</span>; Perets, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Fares.</font>"
+  },
+  {
+    "id": "H6558",
+    "ti": "Partsîy",
+    "le": "פַּרְצִי",
+    "pl": "partsí",
+    "ps": "par-tsee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6557')}>H6557</span>; partsita (colectivamente) o descendiente de Perets: <font color='%COLOR_BLUE%'>faresitas.</font>"
+  },
+  {
+    "id": "H6559",
+    "ti": "pᵉrâtsîym",
+    "le": "פְּרָצִים",
+    "pl": "Peratsím",
+    "ps": "per-aw-tseem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6556')}>H6556</span>; rupturas; Peratsim, monte en Palestina: <font color='%COLOR_BLUE%'>Perazim.</font>"
+  },
+  {
+    "id": "H6560",
+    "ti": "Perets ʻUzzâʼ",
+    "le": "פֶּרֶץ עֻזָּא",
+    "pl": "Pérets Uzzá",
+    "ps": "peh'-rets ooz-zaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6556')}>H6556</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5798')}>H5798</span>; quebrantamiento de Uzza; Perets Uzza, un lugar en Palestina: <font color='%COLOR_BLUE%'>Pérez-uza.</font>"
+  },
+  {
+    "id": "H6561",
+    "ti": "pâraq",
+    "le": "פָּרַק",
+    "pl": "parác",
+    "ps": "paw-rak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; romper o triturar; figurativamente librar: <font color='%COLOR_BLUE%'>apartar, descargar, librar, redimir, romper (en pedazos).</font>"
+  },
+  {
+    "id": "H6562",
+    "ti": "pᵉraq",
+    "le": "פְּרַק",
+    "pl": "perác",
+    "ps": "per-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6561')}>H6561</span>; descontinuar: <font color='%COLOR_BLUE%'>redimir.</font>"
+  },
+  {
+    "id": "H6563",
+    "ti": "pereq",
+    "le": "פֶּרֶק",
+    "pl": "pérec",
+    "ps": "peh'-rek",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6561')}>H6561</span>; rapiña; también bifurcación (en caminos): <font color='%COLOR_BLUE%'>encrucijada, rapiña.</font>"
+  },
+  {
+    "id": "H6564",
+    "ti": "pârâq",
+    "le": "פָּרָק",
+    "pl": "parác",
+    "ps": "paw-rawk'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6561')}>H6561</span>; sopa (como llema de carne molida): <font color='%COLOR_BLUE%'>caldo.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4832')}>H4832</span>."
+  },
+  {
+    "id": "H6565",
+    "ti": "pârar",
+    "le": "פָּרַר",
+    "pl": "parár",
+    "ps": "paw-rar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; romper (por lo general figurativamente, i.e. violar, frustrar: <font color='%COLOR_BLUE%'>anular, desbaratar, deshacer, desmenuzar, disipar, dividir, frustrar, impedir, infringir, invalidar, menospreciar, nulo, perder, quebrantar, quebrar, romper.</font>"
+  },
+  {
+    "id": "H6566",
+    "ti": "pâras",
+    "le": "פָּרַשׂ",
+    "pl": "parás",
+    "ps": "paw-ras'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; romper, separar, dispersar, etc.: <font color='%COLOR_BLUE%'>alargar, alzar, entesar, esparcir, extender, levantar, manifestar, poner, repartir, tender, violar.</font>"
+  },
+  {
+    "id": "H6567",
+    "ti": "pârâsh",
+    "le": "פָּרָשׁ",
+    "pl": "parásh",
+    "ps": "paw-rash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; separar, literalmente (dispersar) o figurativamente (especificar); también (por impl.) herir: <font color='%COLOR_BLUE%'>claramente, dar dolor, declarar, esparcir.</font>"
+  },
+  {
+    "id": "H6568",
+    "ti": "pᵉrash",
+    "le": "פְּרַשׁ",
+    "pl": "perásh",
+    "ps": "per-ash'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6567')}>H6567</span>; especificar: <font color='%COLOR_BLUE%'>claramente.</font>"
+  },
+  {
+    "id": "H6569",
+    "ti": "peresh",
+    "le": "פֶּרֶשׁ",
+    "pl": "péresh",
+    "ps": "peh'-resh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6567')}>H6567</span>; excremento (como eliminado): <font color='%COLOR_BLUE%'>estiércol.</font>"
+  },
+  {
+    "id": "H6570",
+    "ti": "Peresh",
+    "le": "פֶּרֶשׁ",
+    "pl": "Péresh",
+    "ps": "peh'-resh",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6569')}>H6569</span>; Peresh, un israelita.: <font color='%COLOR_BLUE%'>Peres.</font>"
+  },
+  {
+    "id": "H6571",
+    "ti": "pârâsh",
+    "le": "פָּרָשׁ",
+    "pl": "parásh",
+    "ps": "paw-rawsh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6567')}>H6567</span>; corcel (como extendido fuera de un vehículo, no solamente para montar [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5483')}>H5483</span>]); también (por impl.) conductor (en un carro), i.e. (colectivamente) caballería: <font color='%COLOR_BLUE%'>caballería, corcel de guerra, dientes de su trillo, gente de a caballo hombre de a caballo, jinete.</font>"
+  },
+  {
+    "id": "H6572",
+    "ti": "parshegen",
+    "le": "פַּרְשֶׁגֶן",
+    "pl": "parshéguen",
+    "ps": "par-sheh'-ghen",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פתשגן</b></font> <font color='%COLOR_PURPLE%'>patshéguen</font>; de original for.; transcripción: <font color='%COLOR_BLUE%'>copia.</font>"
+  },
+  {
+    "id": "H6573",
+    "ti": "parshegen",
+    "le": "פַּרְשֶׁגֶן",
+    "pl": "parshéguen",
+    "ps": "par-sheh'-ghen",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6572')}>H6572</span>: <font color='%COLOR_BLUE%'>copia.</font>"
+  },
+  {
+    "id": "H6574",
+    "ti": "parshᵉdôn",
+    "le": "פַּרְשְׁדֹן",
+    "pl": "parshedón",
+    "ps": "par-shed-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez popr compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6567')}>H6567</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6504')}>H6504</span> (en sentido de montar a horcajadas) [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6576')}>H6576</span>]; entrepiernas (o ano): <font color='%COLOR_BLUE%'>estiércol.</font>"
+  },
+  {
+    "id": "H6575",
+    "ti": "pârâshâh",
+    "le": "פָּרָשָׁה",
+    "pl": "parashá",
+    "ps": "paw-raw-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6567')}>H6567</span>; exposición: <font color='%COLOR_BLUE%'>noticia, relato.</font>"
+  },
+  {
+    "id": "H6576",
+    "ti": "parshêz",
+    "le": "פַּרְשֵׁז",
+    "pl": "parshéz",
+    "ps": "par-shaze'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz apar. formada por composición de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6567')}>H6567</span> y la de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6518')}>H6518</span> [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6574')}>H6574</span>]; expandir: <font color='%COLOR_BLUE%'>extender.</font>"
+  },
+  {
+    "id": "H6577",
+    "ti": "Parshandâthâʼ",
+    "le": "פַּרְשַׁנְדָּתָא",
+    "pl": "Parshandatá",
+    "ps": "par-shan-daw-thaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original persa; Parshandata, un hijo de Hamán: <font color='%COLOR_BLUE%'>Parsandata.</font>"
+  },
+  {
+    "id": "H6578",
+    "ti": "Pᵉrâth",
+    "le": "פְּרָת",
+    "pl": "Perát",
+    "ps": "per-awth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa abrirse paso; correr; Perat (i.e. éufrates), río del este: <font color='%COLOR_BLUE%'>éufrates.</font><p></p><font color='%COLOR_GREEN%'><b>פירת</b></font> <font color='%COLOR_PURPLE%'>porát.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6509')}>H6509</span>."
+  },
+  {
+    "id": "H6579",
+    "ti": "partam",
+    "le": "פַּרְתַּם",
+    "pl": "partám",
+    "ps": "par-tam'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original persa; persona grande: <font color='%COLOR_BLUE%'>gobernador, (muy) noble, príncipe.</font>"
+  },
+  {
+    "id": "H6580",
+    "ti": "pash",
+    "le": "פַּשׁ",
+    "pl": "pash",
+    "ps": "pash",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de una raíz que no se usa que significa desintegrar; estupidez (como resultado de grosería o degeneración): <font color='%COLOR_BLUE%'>rigor.</font>"
+  },
+  {
+    "id": "H6581",
+    "ti": "pâsâh",
+    "le": "פָּשָׂה",
+    "pl": "pasá",
+    "ps": "paw-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; extender, esparcir: <font color='%COLOR_BLUE%'>cundir, extender.</font>"
+  },
+  {
+    "id": "H6582",
+    "ti": "pâshach",
+    "le": "פָּשַׁח",
+    "pl": "pashákj",
+    "ps": "paw-shakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; romper en pedazos: <font color='%COLOR_BLUE%'>despedazar.</font>"
+  },
+  {
+    "id": "H6583",
+    "ti": "Pashchûwr",
+    "le": "פַּשְׁחוּר",
+    "pl": "Pashkjúr",
+    "ps": "pash-khoor'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6582')}>H6582</span>; liberación; Pashkjur, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Pasur.</font>"
+  },
+  {
+    "id": "H6584",
+    "ti": "pâshaṭ",
+    "le": "פָּשַׁט",
+    "pl": "pashát",
+    "ps": "paw-shat'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estirar, extender (i.e. desplegar en formación hostil); por anal. despojar (i.e. desvestir, saquear, desollar, etc.): <font color='%COLOR_BLUE%'>acometer, arremeter, botín, caer, desnudar, desollar, despojar, extender, ímpetu, incursión, invadir, irrupción, merodear, poner, presa, quitar.</font>"
+  },
+  {
+    "id": "H6585",
+    "ti": "pâsaʻ",
+    "le": "פָּשַׂע",
+    "pl": "pasá",
+    "ps": "paw-sah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; dar zancadas (por extender las piernas), i.e. apresurarse sobre: <font color='%COLOR_BLUE%'>hollar.</font>"
+  },
+  {
+    "id": "H6586",
+    "ti": "pâshaʻ",
+    "le": "פָּשַׁע",
+    "pl": "pashá",
+    "ps": "paw-shah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [más bien idéntico con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6585')}>H6585</span> mediante la idea de expansión]; separarse (de la autoridad justa), i.e. traspasar, apostatar, pelear: <font color='%COLOR_BLUE%'>apartar, libertar, ofender, pecar, prevaricar, rebelarsse, rebelde, rebelión, transgresor.</font>"
+  },
+  {
+    "id": "H6587",
+    "ti": "pesaʻ",
+    "le": "פֶּשַׂע",
+    "pl": "pésa",
+    "ps": "peh'-sah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6585')}>H6585</span>; zancada, paso: <font color='%COLOR_BLUE%'>un paso.</font>"
+  },
+  {
+    "id": "H6588",
+    "ti": "peshaʻ",
+    "le": "פֶּשַׁע",
+    "pl": "pésha",
+    "ps": "peh'-shah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6586')}>H6586</span>; revuelta (nacional, moral, o religiosa): <font color='%COLOR_BLUE%'>defecto, falta, fraude, infracción, iniquidad, maldad, ofensa, pecado, pecar, prevaricación, rebelarse, rebelde, rebeldía, rebelión, traición, transgresión.</font>"
+  },
+  {
+    "id": "H6589",
+    "ti": "pâsaq",
+    "le": "פָּשַׂק",
+    "pl": "pasác",
+    "ps": "paw-sak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; separar (los pies o los labios), i.e. hacerse licencioso: <font color='%COLOR_BLUE%'>abrir.</font>"
+  },
+  {
+    "id": "H6590",
+    "ti": "pᵉshar",
+    "le": "פְּשַׁר",
+    "pl": "peshár",
+    "ps": "pesh-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6622')}>H6622</span>; interpretar: <font color='%COLOR_BLUE%'>dar [interpretación], interpretar.</font>"
+  },
+  {
+    "id": "H6591",
+    "ti": "pᵉshar",
+    "le": "פְּשַׁר",
+    "pl": "peshár",
+    "ps": "pesh-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6590')}>H6590</span>; interpretación: <font color='%COLOR_BLUE%'>interpretación.</font>"
+  },
+  {
+    "id": "H6592",
+    "ti": "pêsher",
+    "le": "פֵּשֶׁר",
+    "pl": "pésher",
+    "ps": "pay'-sher",
+    "df": "<font color='%COLOR_GREEN%'></font>correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6591')}>H6591</span>: <font color='%COLOR_BLUE%'>declaración.</font>"
+  },
+  {
+    "id": "H6593",
+    "ti": "pishteh",
+    "le": "פִּשְׁתֶּה",
+    "pl": "pishté",
+    "ps": "pish-teh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6580')}>H6580</span> como en sentido de desmenuzar; lino (i.e. el hilo, como cardado): <font color='%COLOR_BLUE%'>lino.</font>"
+  },
+  {
+    "id": "H6594",
+    "ti": "pishtâh",
+    "le": "פִּשְׁתָּה",
+    "pl": "pishtá",
+    "ps": "pish-taw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6593')}>H6593</span>; linaza; por impl. mecha: <font color='%COLOR_BLUE%'>lino, pábilo.</font>"
+  },
+  {
+    "id": "H6595",
+    "ti": "path",
+    "le": "פַּת",
+    "pl": "pat",
+    "ps": "path",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6626')}>H6626</span>; poco: <font color='%COLOR_BLUE%'>bocado, parte, pedazo, pieza.</font>"
+  },
+  {
+    "id": "H6596",
+    "ti": "pôth",
+    "le": "פֹּת",
+    "pl": "pot",
+    "ps": "pohth",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פיתה</b></font> <font color='%COLOR_PURPLE%'>potá</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Eze 13:19</span>); de una raíz que no se usa que significa abrir; hueco, agujero, i.e. bisagra o las pudendas femeninas: <font color='%COLOR_BLUE%'>quicial, vergüenza.</font><p></p><font color='%COLOR_GREEN%'><b>פתאי</b></font> <font color='%COLOR_PURPLE%'>petaí.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6612')}>H6612</span>."
+  },
+  {
+    "id": "H6597",
+    "ti": "pithʼôwm",
+    "le": "פִּתְאֹום",
+    "pl": "pitóm",
+    "ps": "pith-ome'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>פתאים</b></font> <font color='%COLOR_PURPLE%'>pitóm</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6621')}>H6621</span>; instantáneamente: <font color='%COLOR_BLUE%'>hora, momento, rápidamente, repente, repentinamente, repentino.</font>"
+  },
+  {
+    "id": "H6598",
+    "ti": "pathbag",
+    "le": "פַּתְבַּג",
+    "pl": "patbág",
+    "ps": "pathbag'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original persa; golosina: <font color='%COLOR_BLUE%'>comida, manjar, parte, porción, ración.</font>"
+  },
+  {
+    "id": "H6599",
+    "ti": "pithgâm",
+    "le": "פִּתְגָּם",
+    "pl": "pitgám",
+    "ps": "pith-gawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original persa; sentencia (judicial): <font color='%COLOR_BLUE%'>decreto, sentencia.</font>"
+  },
+  {
+    "id": "H6600",
+    "ti": "pithgâm",
+    "le": "פִּתְגָּם",
+    "pl": "pitgám",
+    "ps": "pith-gawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6599')}>H6599</span>; palabra, respuesta, carta o decreto: <font color='%COLOR_BLUE%'>asunto, carta, decreto, respuesta.</font>"
+  }
+]

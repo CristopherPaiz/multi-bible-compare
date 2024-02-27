@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H7351",
+    "ti": "rᵉchîyṭ",
+    "le": "רְחִיט",
+    "pl": "rikjít",
+    "ps": "rekh-eet'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7298')}>H7298</span>; panel (porque se parece a una artesa): <font color='%COLOR_BLUE%'>artesonado.</font>"
+  },
+  {
+    "id": "H7352",
+    "ti": "rachîyq",
+    "le": "רַחִיק",
+    "pl": "rakjíc",
+    "ps": "rakh-eek'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7350')}>H7350</span>: <font color='%COLOR_BLUE%'>alejar.</font>"
+  },
+  {
+    "id": "H7353",
+    "ti": "râchêl",
+    "le": "רָחֵל",
+    "pl": "rakjél",
+    "ps": "raw-kale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa viajar; ovejita [siendo las hembras el elemento predominante de un rebaño] (como de buen viajero): <font color='%COLOR_BLUE%'>oveja.</font>"
+  },
+  {
+    "id": "H7354",
+    "ti": "Râchêl",
+    "le": "רָחֵל",
+    "pl": "Rakjél",
+    "ps": "raw-khale'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7353')}>H7353</span>; Raquel, una esposa de Jacob: <font color='%COLOR_BLUE%'>Raquel.</font>"
+  },
+  {
+    "id": "H7355",
+    "ti": "râcham",
+    "le": "רָחַם",
+    "pl": "rakjám",
+    "ps": "raw-kham'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; mimar, acariciar; por impl. querer, amar, especialmente compadecer: <font color='%COLOR_BLUE%'>amar, ser clemente, compadecerse, tener compasión, (alcanzar, tener) misericordia, ser misericordioso, piedad, Ruhama.</font>"
+  },
+  {
+    "id": "H7356",
+    "ti": "racham",
+    "le": "רַחַם",
+    "pl": "rákjam",
+    "ps": "rakh'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7355')}>H7355</span>; compasión (en el plural); por extens. vientre (como que acaricia al feto); por impl. soltera: <font color='%COLOR_BLUE%'>afecto, compasión, corazón, doncella, entraña, gracia, matriz, misericordia, natural, piedad, vientre.</font>"
+  },
+  {
+    "id": "H7357",
+    "ti": "Racham",
+    "le": "רַחַם",
+    "pl": "Rákjam",
+    "ps": "rakh'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7356')}>H7356</span>; piedad; Rajam, un israelita.: <font color='%COLOR_BLUE%'>Raham.</font>"
+  },
+  {
+    "id": "H7358",
+    "ti": "rechem",
+    "le": "רֶחֶם",
+    "pl": "rékjem",
+    "ps": "rekh'-em",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7355')}>H7355</span>; vientre [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7356')}>H7356</span>]: <font color='%COLOR_BLUE%'>dar (conceder) hijos,matriz, primer nacido, seno, seno materno, vientre.</font>"
+  },
+  {
+    "id": "H7359",
+    "ti": "rᵉchêm",
+    "le": "רְחֵם",
+    "pl": "rékjem",
+    "ps": "rekh-ame'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7356')}>H7356</span>; (plural) piedad: <font color='%COLOR_BLUE%'>misericordia.</font>"
+  },
+  {
+    "id": "H7360",
+    "ti": "râchâm",
+    "le": "רָחָם",
+    "pl": "rakjám",
+    "ps": "raw-khawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>רחמה</b></font> <font color='%COLOR_PURPLE%'>rakjamá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7355')}>H7355</span>; una especie de buitre (que se supone es tierno con sus polluelos): <font color='%COLOR_BLUE%'>buitre.</font>"
+  },
+  {
+    "id": "H7361",
+    "ti": "rachămâh",
+    "le": "רַחֲמָה",
+    "pl": "rakjamá",
+    "ps": "rakh-am-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7356')}>H7356</span>; doncella, soltera: <font color='%COLOR_BLUE%'>doncella.</font>"
+  },
+  {
+    "id": "H7362",
+    "ti": "rachmânîy",
+    "le": "רַחְמָנִי",
+    "pl": "rakjmaní",
+    "ps": "rakh-maw-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7355')}>H7355</span>; compasivo: <font color='%COLOR_BLUE%'>piadoso.</font>"
+  },
+  {
+    "id": "H7363",
+    "ti": "râchaph",
+    "le": "רָחַף",
+    "pl": "rakjáf",
+    "ps": "raw-khaf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; empollar; por impl. estar tranquilo: <font color='%COLOR_BLUE%'>mover, temblar.</font>"
+  },
+  {
+    "id": "H7364",
+    "ti": "râchats",
+    "le": "רָחַץ",
+    "pl": "rakjáts",
+    "ps": "raw-khats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; lavar (el todo o una parte de algo): <font color='%COLOR_BLUE%'>bañar(-se), lavar(-se), limpiar(-se).</font>"
+  },
+  {
+    "id": "H7365",
+    "ti": "rᵉchats",
+    "le": "רְחַץ",
+    "pl": "rekjáts",
+    "ps": "rekh-ats'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7364')}>H7364</span> [probablemente mediante la idea accesoria de ministrar como un criado en el baño]; atender, ayudar a: <font color='%COLOR_BLUE%'>confiar.</font>"
+  },
+  {
+    "id": "H7366",
+    "ti": "rachats",
+    "le": "רַחַץ",
+    "pl": "rákjats",
+    "ps": "rakh'-ats",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7364')}>H7364</span>; baño: <font color='%COLOR_BLUE%'>[vasija para] lavar.</font>"
+  },
+  {
+    "id": "H7367",
+    "ti": "rachtsâh",
+    "le": "רַחְצָה",
+    "pl": "rakjtsá",
+    "ps": "rakh-tsaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7366')}>H7366</span>; lugar para bañarse: <font color='%COLOR_BLUE%'>lavadero.</font>"
+  },
+  {
+    "id": "H7368",
+    "ti": "râchaq",
+    "le": "רָחַק",
+    "pl": "rakjác",
+    "ps": "raw-khak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ampliar (en cualquier dirección), i.e. (intr.) retroceder o (trans.) remover (literalmente o figurativamente, de lugar o relación): <font color='%COLOR_BLUE%'>abstenerse, alejar, apartar, arrojar, poner distancia, echar, ensanchar, extender, estar lejos.</font>"
+  },
+  {
+    "id": "H7369",
+    "ti": "râchêq",
+    "le": "רָחֵק",
+    "pl": "rakjéc",
+    "ps": "raw-khake'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7368')}>H7368</span>; remoto: <font color='%COLOR_BLUE%'>los que alejan.</font><p></p><font color='%COLOR_GREEN%'><b>רחיק</b></font> <font color='%COLOR_PURPLE%'>rakjóc.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7350')}>H7350</span>."
+  },
+  {
+    "id": "H7370",
+    "ti": "râchash",
+    "le": "רָחַשׁ",
+    "pl": "rakjásh",
+    "ps": "raw-khash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; chorro: <font color='%COLOR_BLUE%'>rebosar.</font>"
+  },
+  {
+    "id": "H7371",
+    "ti": "rachath",
+    "le": "רַחַת",
+    "pl": "rákjat",
+    "ps": "rakh'-ath",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7306')}>H7306</span>; horquilla para aventar (al aventar el tamo): <font color='%COLOR_BLUE%'>pala.</font>"
+  },
+  {
+    "id": "H7372",
+    "ti": "râṭab",
+    "le": "רָטַב",
+    "pl": "ratáb",
+    "ps": "raw-tab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estar húmedo: <font color='%COLOR_BLUE%'>mojarse.</font>"
+  },
+  {
+    "id": "H7373",
+    "ti": "râṭôb",
+    "le": "רָטֹב",
+    "pl": "ratób",
+    "ps": "raw-tobe'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7372')}>H7372</span>; húmedo (con sabia): <font color='%COLOR_BLUE%'>verde.</font>"
+  },
+  {
+    "id": "H7374",
+    "ti": "reṭeṭ",
+    "le": "רֶטֶט",
+    "pl": "rétet",
+    "ps": "reh'-tet",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa temblar; terror: <font color='%COLOR_BLUE%'>temblor.</font>"
+  },
+  {
+    "id": "H7375",
+    "ti": "ruṭăphash",
+    "le": "רֻטֲפַשׁ",
+    "pl": "rutafásh",
+    "ps": "roo-taf-ash'",
+    "df": "<font color='%COLOR_GREEN%'></font>una raíz compuesta de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7373')}>H7373</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2954')}>H2954</span>; ser rejuvenecido: <font color='%COLOR_BLUE%'>tierno.</font>"
+  },
+  {
+    "id": "H7376",
+    "ti": "râṭâsh",
+    "le": "רָטָשׁ",
+    "pl": "ratásh",
+    "ps": "raw-tash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estrellar: <font color='%COLOR_BLUE%'>destrozar, estrellar.</font>"
+  },
+  {
+    "id": "H7377",
+    "ti": "rîy",
+    "le": "רִי",
+    "pl": "ri",
+    "ps": "ree",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7301')}>H7301</span>; irrigación, i.e. lluvia: <font color='%COLOR_BLUE%'>regar.</font>"
+  },
+  {
+    "id": "H7378",
+    "ti": "rîyb",
+    "le": "רִיב",
+    "pl": "rib",
+    "ps": "reeb",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רוב</b></font> <font color='%COLOR_PURPLE%'>rub</font>; raíz primaria; propiamente arrojar, i.e. agarrar; mayormente figurativamente luchar, i.e. sostener una controversia; (por impl.) defender: <font color='%COLOR_BLUE%'>abogar, adversario, alegar, altercar, amparar, castigar, contender, contienda, cuestión, defender, demandar, disputar, juzgar, litigar, pleitear, pleito, porfiar, recovenir, reñir, reprender, resistir, sustentar, tratar.</font>"
+  },
+  {
+    "id": "H7379",
+    "ti": "rîyb",
+    "le": "רִיב",
+    "pl": "rib",
+    "ps": "reeb",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רב</b></font> <font color='%COLOR_PURPLE%'>rib</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7378')}>H7378</span>; concurso (personal o legal): <font color='%COLOR_BLUE%'>adversario, altercar, caso, causa, contención, contender, contienda, disputa, juicio, justicia, litigante, litigio, pelear, pelea, pleito, rencilla, suplicar.</font>"
+  },
+  {
+    "id": "H7380",
+    "ti": "Rîybay",
+    "le": "רִיבַי",
+    "pl": "Ribái",
+    "ps": "ree-bah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7378')}>H7378</span>; contencioso; Ribai, un israelita.: <font color='%COLOR_BLUE%'>Ribai.</font>"
+  },
+  {
+    "id": "H7381",
+    "ti": "rêyach",
+    "le": "רֵיחַ",
+    "pl": "réyakj",
+    "ps": "ray'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7306')}>H7306</span>; olor (como que vuela): <font color='%COLOR_BLUE%'>frangancia, olor, percibir, perfumar.</font>"
+  },
+  {
+    "id": "H7382",
+    "ti": "rêyach",
+    "le": "רֵיחַ",
+    "pl": "réyakj",
+    "ps": "ray'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7381')}>H7381</span>: <font color='%COLOR_BLUE%'>olor.</font><p></p><font color='%COLOR_GREEN%'><b>רים</b></font> <font color='%COLOR_PURPLE%'>réim.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7214')}>H7214</span>.<p></p><font color='%COLOR_GREEN%'><b>ריע</b></font> <font color='%COLOR_PURPLE%'>reyá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7453')}>H7453</span>."
+  },
+  {
+    "id": "H7383",
+    "ti": "rîyphâh",
+    "le": "רִיפָה",
+    "pl": "rifá",
+    "ps": "ree-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רפה</b></font> <font color='%COLOR_PURPLE%'>rifá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7322')}>H7322</span>; (solo plural), sémola (como molida): <font color='%COLOR_BLUE%'>grano, grano molido, trigo.</font>"
+  },
+  {
+    "id": "H7384",
+    "ti": "Rîyphath",
+    "le": "רִיפַת",
+    "pl": "Rifát",
+    "ps": "ree-fath'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (probablemente por err. ort.) <font color='%COLOR_GREEN%'><b>דיפת</b></font> <font color='%COLOR_PURPLE%'>Difat</font>; de original for.; Rifat, nieto de Jafet y sus descendiente: <font color='%COLOR_BLUE%'>Rifat.</font>"
+  },
+  {
+    "id": "H7385",
+    "ti": "rîyq",
+    "le": "רִיק",
+    "pl": "ric",
+    "ps": "reek",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7324')}>H7324</span>; vacío, vaciedad; figurativamente algo que no vale nada; adverbio en vano: <font color='%COLOR_BLUE%'>vacío, vanidad, vano, cosa vana.</font>"
+  },
+  {
+    "id": "H7386",
+    "ti": "rêyq",
+    "le": "רֵיק",
+    "pl": "réic",
+    "ps": "rake",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviado) <font color='%COLOR_GREEN%'><b>רק</b></font> <font color='%COLOR_PURPLE%'>rec</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7324')}>H7324</span>; vacío; figurativamente que no vale nada: <font color='%COLOR_BLUE%'>ocioso, vacío, vagabundo, (hombre) vano.</font>"
+  },
+  {
+    "id": "H7387",
+    "ti": "rêyqâm",
+    "le": "רֵיקָם",
+    "pl": "reicám",
+    "ps": "ray-kawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7386')}>H7386</span>; vacíamente; figurativamente (obj.) inefectivamente, (subj.) inmerecidamente: <font color='%COLOR_BLUE%'>sin causa, en vano, vacío.</font>"
+  },
+  {
+    "id": "H7388",
+    "ti": "rîyr",
+    "le": "רִיר",
+    "pl": "rir",
+    "ps": "reer",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7325')}>H7325</span>; saliva; por semejanza caldo: <font color='%COLOR_BLUE%'>clara [del huevo], saliva.</font>"
+  },
+  {
+    "id": "H7389",
+    "ti": "rêysh",
+    "le": "רֵישׁ",
+    "pl": "réish",
+    "ps": "raysh",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ראש</b></font> <font color='%COLOR_PURPLE%'>résh</font>; o <font color='%COLOR_GREEN%'><b>ריש</b></font> <font color='%COLOR_PURPLE%'>rish</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7326')}>H7326</span>; pobreza: <font color='%COLOR_BLUE%'>necesidad, pobreza.</font>"
+  },
+  {
+    "id": "H7390",
+    "ti": "rak",
+    "le": "רַךְ",
+    "pl": "rac",
+    "ps": "rak",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7401')}>H7401</span>; tierno (literalmente o figurativamente); por impl. débil: <font color='%COLOR_BLUE%'>blando, débil, delicado, lisonja, pusilánime, tallo, tierna edad, tierno.</font>"
+  },
+  {
+    "id": "H7391",
+    "ti": "rôk",
+    "le": "רֹךְ",
+    "pl": "roc",
+    "ps": "roke",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7401')}>H7401</span>; suavidad (figurativamente): <font color='%COLOR_BLUE%'>ternura.</font>"
+  },
+  {
+    "id": "H7392",
+    "ti": "râkab",
+    "le": "רָכַב",
+    "pl": "racáb",
+    "ps": "raw-kab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; montar (en un animal o un vehículo); caus. colocar sobre (para montar o generalmente), despachar: <font color='%COLOR_BLUE%'>cabalgar, caballo, carro, conducir, jinete, llevar, montar, poner, subir, traer.</font>"
+  },
+  {
+    "id": "H7393",
+    "ti": "rekeb",
+    "le": "רֶכֶב",
+    "pl": "réqueb",
+    "ps": "reh'-keb",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7392')}>H7392</span>; vehículo; por impl. yunta; por extens. caballería; por anal. jinete, i.e. la muela superior del molino: <font color='%COLOR_BLUE%'>carreta, carro, carruaje, hombre, (rueda superior del) molino, montar, rueda, uncir.</font>"
+  },
+  {
+    "id": "H7394",
+    "ti": "Rêkâb",
+    "le": "רֵכָב",
+    "pl": "Recáb",
+    "ps": "ray-kawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7392')}>H7392</span>; jinete; Recab, nombre de dos árabes y de dos israelitas: <font color='%COLOR_BLUE%'>Recab.</font>"
+  },
+  {
+    "id": "H7395",
+    "ti": "rakkâb",
+    "le": "רַכָּב",
+    "pl": "raccáb",
+    "ps": "rak-kawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7392')}>H7392</span>; auriga: <font color='%COLOR_BLUE%'>jinete, cochero.</font>"
+  },
+  {
+    "id": "H7396",
+    "ti": "rikbâh",
+    "le": "רִכְבָּה",
+    "pl": "ricbá",
+    "ps": "rik-baw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7393')}>H7393</span>; carros (colectivamente): <font color='%COLOR_BLUE%'>carros.</font>"
+  },
+  {
+    "id": "H7397",
+    "ti": "Rêkâh",
+    "le": "רֵכָה",
+    "pl": "Recá",
+    "ps": "ray-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7401')}>H7401</span>; suavidad; Reca, un lugar en Palestina: <font color='%COLOR_BLUE%'>Reca.</font>"
+  },
+  {
+    "id": "H7398",
+    "ti": "rᵉkûwb",
+    "le": "רְכוּב",
+    "pl": "recúb",
+    "ps": "rek-oob'",
+    "df": "<font color='%COLOR_GREEN%'></font>de participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7392')}>H7392</span>; vehículo (porque se monta en él): <font color='%COLOR_BLUE%'>carroza.</font>"
+  },
+  {
+    "id": "H7399",
+    "ti": "rᵉkûwsh",
+    "le": "רְכוּשׁ",
+    "pl": "recúsh",
+    "ps": "rek-oosh'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רכש</b></font> <font color='%COLOR_PURPLE%'>recush</font>; de participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7408')}>H7408</span>; propiedad (porque se junta): <font color='%COLOR_BLUE%'>bienes, ganancia, hacienda, posesión, riqueza.</font>"
+  },
+  {
+    "id": "H7400",
+    "ti": "râkîyl",
+    "le": "רָכִיל",
+    "pl": "raquíl",
+    "ps": "raw-keel'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7402')}>H7402</span> detractor (como que viaja por todas partes): <font color='%COLOR_BLUE%'>calumniador, calumniar, chisme, chismear, chismoso.</font>"
+  },
+  {
+    "id": "H7401",
+    "ti": "râkak",
+    "le": "רָכַךְ",
+    "pl": "racác",
+    "ps": "raw-kak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; suavizar (intr. o trans.), usado figurativamente: <font color='%COLOR_BLUE%'>conmover, desmayar, enervar, enternecer, suavizar.</font>"
+  },
+  {
+    "id": "H7402",
+    "ti": "râkal",
+    "le": "רָכַל",
+    "pl": "racál",
+    "ps": "raw-kal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; viajar para comerciar: <font color='%COLOR_BLUE%'>aromático, comerciante, comerciar, mercader, la que trafica.</font>"
+  },
+  {
+    "id": "H7403",
+    "ti": "Râkâl",
+    "le": "רָכָל",
+    "pl": "Racál",
+    "ps": "raw-kawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7402')}>H7402</span>; comerciante; Racal, un lugar en Palestina: <font color='%COLOR_BLUE%'>Racal.</font>"
+  },
+  {
+    "id": "H7404",
+    "ti": "rᵉkullâh",
+    "le": "רְכֻלָּה",
+    "pl": "reculá",
+    "ps": "rek-ool-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7402')}>H7402</span>; comercio (como vender al por menor): <font color='%COLOR_BLUE%'>contratación, mercadería.</font>"
+  },
+  {
+    "id": "H7405",
+    "ti": "râkaç",
+    "le": "רָכַס",
+    "pl": "racás",
+    "ps": "raw-kas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; atar: <font color='%COLOR_BLUE%'>atar.</font>"
+  },
+  {
+    "id": "H7406",
+    "ti": "rekeç",
+    "le": "רֶכֶס",
+    "pl": "réques",
+    "ps": "reh'-kes",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7405')}>H7405</span>; cordillera (como picos unidos): <font color='%COLOR_BLUE%'>lo áspero.</font>"
+  },
+  {
+    "id": "H7407",
+    "ti": "rôkeç",
+    "le": "רֹכֶס",
+    "pl": "róques",
+    "ps": "ro'-kes",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7405')}>H7405</span>; trampa (como redes atadas): <font color='%COLOR_BLUE%'>conspiración.</font>"
+  },
+  {
+    "id": "H7408",
+    "ti": "râkash",
+    "le": "רָכַשׁ",
+    "pl": "racásh",
+    "ps": "raw-kash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; amontonar, acumular, i.e. recoger, coleccionar: <font color='%COLOR_BLUE%'>adquirir, ganar, obtener.</font>"
+  },
+  {
+    "id": "H7409",
+    "ti": "rekesh",
+    "le": "רֶכֶשׁ",
+    "pl": "réquesh",
+    "ps": "reh'-kesh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7408')}>H7408</span>; relevo de animales en una ruta de relevos (por estar guardados para ese propósito); por impl. corcel: <font color='%COLOR_BLUE%'>bestia de carga, bestia veloz, caballo veloz.</font><p></p><font color='%COLOR_GREEN%'><b>רכש</b></font> <font color='%COLOR_PURPLE%'>recúsh.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7399')}>H7399</span>.<p></p><font color='%COLOR_GREEN%'><b>רם</b></font> <font color='%COLOR_PURPLE%'>rem.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7214')}>H7214</span>."
+  },
+  {
+    "id": "H7410",
+    "ti": "Râm",
+    "le": "רָם",
+    "pl": "Ram",
+    "ps": "rawm",
+    "df": "<font color='%COLOR_GREEN%'></font>participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7311')}>H7311</span>; alto; Ram, nombre de un árabe y de un israelita.: <font color='%COLOR_BLUE%'>Ram.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1027')}>H1027</span>.<p></p><font color='%COLOR_GREEN%'><b>רם</b></font> <font color='%COLOR_PURPLE%'>rum.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7311')}>H7311</span>."
+  },
+  {
+    "id": "H7411",
+    "ti": "râmâh",
+    "le": "רָמָה",
+    "pl": "ramá",
+    "ps": "raw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; lanzar; especialmente disparar; figurativamente engañar o traicionar (como hacer caer): <font color='%COLOR_BLUE%'>disparar, engañar, entregar, flechero, lanzar.</font>"
+  },
+  {
+    "id": "H7412",
+    "ti": "rᵉmâh",
+    "le": "רְמָה",
+    "pl": "remá",
+    "ps": "rem-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7411')}>H7411</span>; lanzar, arrojar, fijar, (figurativamente) evaluar: <font color='%COLOR_BLUE%'>echar (abajo), imponer, poner.</font>"
+  },
+  {
+    "id": "H7413",
+    "ti": "râmâh",
+    "le": "רָמָה",
+    "pl": "ramá",
+    "ps": "raw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio activo femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7311')}>H7311</span>; altura (como sede de idolatría): <font color='%COLOR_BLUE%'>lugar alto.</font>"
+  },
+  {
+    "id": "H7414",
+    "ti": "Râmâh",
+    "le": "רָמָה",
+    "pl": "Ramá",
+    "ps": "raw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7413')}>H7413</span>; Ramá, nombre de cuatro lugares en Palestina: <font color='%COLOR_BLUE%'>Ramá.</font>"
+  },
+  {
+    "id": "H7415",
+    "ti": "rimmâh",
+    "le": "רִמָּה",
+    "pl": "rimmá",
+    "ps": "rim-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7426')}>H7426</span> en el sentido de reproducir [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7311')}>H7311</span>]; gusano, larva (porque se reproducen rápidamente), literalmente o figurativamente: <font color='%COLOR_BLUE%'>gusano.</font>"
+  },
+  {
+    "id": "H7416",
+    "ti": "rimmôwn",
+    "le": "רִמֹּון",
+    "pl": "rimmón",
+    "ps": "rim-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רמין</b></font> <font color='%COLOR_PURPLE%'>rimmón</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7426')}>H7426</span>; granado, el árbol (porque crece derecho) o el fruto (también un ornamento artificial): <font color='%COLOR_BLUE%'>granada, granado.</font>"
+  },
+  {
+    "id": "H7417",
+    "ti": "Rimmôwn",
+    "le": "רִמֹּון",
+    "pl": "Rimmón",
+    "ps": "rim-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abr.) <font color='%COLOR_GREEN%'><b>רמין</b></font> <font color='%COLOR_PURPLE%'>Rimmón</font>; o <font color='%COLOR_GREEN%'><b>רמוינוי</b></font> <font color='%COLOR_PURPLE%'>Rimmonó</font> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>1Cr 6:62</span> [77]); lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7416')}>H7416</span>; Rimón, nombre de una deidad siria, también de cinco lugares en Palestina: <font color='%COLOR_BLUE%'>Rimón. La adición «-mezoar» (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Jos 19:13</span>) es<font color='%COLOR_GREEN%'><b>המתיאר</b></font></font> <font color='%COLOR_PURPLE%'>jammezoar</font>; participio pasado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8388')}>H8388</span> con el artםculo el descartado, i.e. lo que ataסe; equivocado por parte del nombre.<p></p><font color='%COLOR_GREEN%'><b>רמוית</b></font> <font color='%COLOR_PURPLE%'>Ramót.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7418')}>H7418</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7433')}>H7433</span>."
+  },
+  {
+    "id": "H7418",
+    "ti": "Râmôwth",
+    "le": "רָמֹות",
+    "pl": "Ramot Néguev",
+    "ps": "raw-moth",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רמת נגב</b></font> <font color='%COLOR_PURPLE%'> Ramát Néguev</font>; del plural o forma constr. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7413')}>H7413</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5045')}>H5045</span>; alturas (o altura) del sur; Ramot Néguev o Ramat Néguev, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ramot del Néguev.</font>"
+  },
+  {
+    "id": "H7419",
+    "ti": "râmûwth",
+    "le": "רָמוּת",
+    "pl": "ramút",
+    "ps": "raw-mooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7311')}>H7311</span>; montón (de cadáveres): <font color='%COLOR_BLUE%'>cadáveres.</font>"
+  },
+  {
+    "id": "H7420",
+    "ti": "rômach",
+    "le": "רֹמַח",
+    "pl": "rómakj",
+    "ps": "ro'-makh",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa lanzar; lanza (porque se arroja); especialmente la punta de hierro: <font color='%COLOR_BLUE%'>lanceta, lanza, pavés.</font>"
+  },
+  {
+    "id": "H7421",
+    "ti": "rammîy",
+    "le": "רַמִּי",
+    "pl": "rammí",
+    "ps": "ram-mee'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H761')}>H761</span>; rameo, i.e. arameo: <font color='%COLOR_BLUE%'>sirio.</font>"
+  },
+  {
+    "id": "H7422",
+    "ti": "Ramyâh",
+    "le": "רַמְיָה",
+    "pl": "ramiyá",
+    "ps": "ram-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7311')}>H7311</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha levantado; Ramía, un israelita.: <font color='%COLOR_BLUE%'>Ramia.</font>"
+  },
+  {
+    "id": "H7423",
+    "ti": "rᵉmîyâh",
+    "le": "רְמִיָּה",
+    "pl": "remiyá",
+    "ps": "rem-ee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7411')}>H7411</span>; negligencia, traición: <font color='%COLOR_BLUE%'>engaño, engañoso, fraude, fraudulento, indolente, indolentemente, negligencia, negligente.</font>"
+  },
+  {
+    "id": "H7424",
+    "ti": "rammâk",
+    "le": "רַמָּךְ",
+    "pl": "rammác",
+    "ps": "ram-mawk'",
+    "df": "<font color='%COLOR_GREEN%'></font>de original for.; yegua de casta: <font color='%COLOR_BLUE%'>de los repastos reales.</font>"
+  },
+  {
+    "id": "H7425",
+    "ti": "Rᵉmalyâhûw",
+    "le": "רְמַלְיָהוּ",
+    "pl": "Remalyáju",
+    "ps": "rem-al-yaw'-hoo",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span> (tal vez significa ataviar); Jah ha adornado; Remalía, un israelita.: <font color='%COLOR_BLUE%'>Remalías.</font>"
+  },
+  {
+    "id": "H7426",
+    "ti": "râmam",
+    "le": "רָמַם",
+    "pl": "ramám",
+    "ps": "raw-mam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; levantarse (literalmente o figurativamente): <font color='%COLOR_BLUE%'>alzar, apartarse, exaltar (-se), levantar, -se, sublime.</font>"
+  },
+  {
+    "id": "H7427",
+    "ti": "rômêmuth",
+    "le": "רֹמֵמֻת",
+    "pl": "romemút",
+    "ps": "ro-may-mooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>del participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7426')}>H7426</span>; exaltación: <font color='%COLOR_BLUE%'>levantarse.</font><p></p><font color='%COLOR_GREEN%'><b>רמין</b></font> <font color='%COLOR_PURPLE%'>rimmón.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7416')}>H7416</span>."
+  },
+  {
+    "id": "H7428",
+    "ti": "Rimmôn Perets",
+    "le": "רִמֹּן פֶּרֶץ",
+    "pl": "Rimmón Pérets",
+    "ps": "rim-mone' peh'-rets",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7416')}>H7416</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6556')}>H6556</span>; granada de (la) brecha; Rimón Peres, un lugar en el desierto: <font color='%COLOR_BLUE%'>Rimón-peres.</font>"
+  },
+  {
+    "id": "H7429",
+    "ti": "râmaç",
+    "le": "רָמַס",
+    "pl": "ramás",
+    "ps": "raw-mas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; pisotear (como el alfarero, al caminar o abusivamente): <font color='%COLOR_BLUE%'>atropellar, hollar, pisar, pisotear.</font>"
+  },
+  {
+    "id": "H7430",
+    "ti": "râmas",
+    "le": "רָמַשׂ",
+    "pl": "ramás",
+    "ps": "raw-mas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente deslizarse suavemente, i.e. escurrirse o moverse con pasos cortos; por anal. trepar: <font color='%COLOR_BLUE%'>arrastrar, corretear, mover.</font>"
+  },
+  {
+    "id": "H7431",
+    "ti": "remes",
+    "le": "רֶמֶשׂ",
+    "pl": "rémes",
+    "ps": "reh'-mes",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7430')}>H7430</span>; reptil o cualquier otro animal que se mueve velozmente: <font color='%COLOR_BLUE%'>animal que se arrastra, lo que se mueve, serpiente, reptil.</font>"
+  },
+  {
+    "id": "H7432",
+    "ti": "Remeth",
+    "le": "רֶמֶת",
+    "pl": "Rémet",
+    "ps": "reh'-meth",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7411')}>H7411</span>; altura; Remet, un lugar en Palestina: <font color='%COLOR_BLUE%'>Remet.</font>"
+  },
+  {
+    "id": "H7433",
+    "ti": "Râmôth Gilʻâd",
+    "le": "רָמֹת גִּלעָד",
+    "pl": "Ramót Gileád",
+    "ps": "raw-moth' gil-awd'",
+    "df": "<font color='%COLOR_GREEN%'></font> (o <font color='%COLOR_GREEN%'><b>רמוית</b></font>)(<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>2Cr 22:5</span>); del plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7413')}>H7413</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1568')}>H1568</span>; alturas de Gilead; Ramot Gilead, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>Ramot de Galaad.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7216')}>H7216</span>."
+  },
+  {
+    "id": "H7434",
+    "ti": "Râmath ham-Mit-speh",
+    "le": "רָמַת הַמִּצְפֶּה",
+    "pl": "Ramat jamMitspé",
+    "ps": "raw-math' ham-mitspeh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7413')}>H7413</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4707')}>H4707</span> con el art. interpolado; altura del atalaya; Ramat jamMitspe, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ramat-mizpa.</font>"
+  },
+  {
+    "id": "H7435",
+    "ti": "Râmâthîy",
+    "le": "רָמָתִי",
+    "pl": "ramatí",
+    "ps": "raw-maw-thee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7414')}>H7414</span>; ramatita o habitante de Ramá: <font color='%COLOR_BLUE%'>ramatita.</font>"
+  },
+  {
+    "id": "H7436",
+    "ti": "Râmâthayim Tsôwphîym",
+    "le": "רָמָתַיִם צֹופִים",
+    "pl": "Ramataím Tsofím",
+    "ps": "raw-maw-thah'-yim tso-feem'",
+    "df": "<font color='%COLOR_GREEN%'></font>del dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7413')}>H7413</span> y el plural del participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6822')}>H6822</span>; doble altura de vigías; Ramataim Tsofim, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ramataim de Zofim.</font>"
+  },
+  {
+    "id": "H7437",
+    "ti": "Râmath Lechîy",
+    "le": "רָמַת לֶחִי",
+    "pl": "Ramát Lekjí",
+    "ps": "raw'-math lekh'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7413')}>H7413</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3895')}>H3895</span>; altura de (una) quijada; Ramat Leji, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ramat-lehi.</font><p></p><font color='%COLOR_GREEN%'><b>רן</b></font> <font color='%COLOR_PURPLE%'>Ran.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1028')}>H1028</span>."
+  },
+  {
+    "id": "H7438",
+    "ti": "rôn",
+    "le": "רֹן",
+    "pl": "ron",
+    "ps": "rone",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7442')}>H7442</span>; grito (de independencia): <font color='%COLOR_BLUE%'>cántico.</font>"
+  },
+  {
+    "id": "H7439",
+    "ti": "rânâh",
+    "le": "רָנָה",
+    "pl": "raná",
+    "ps": "raw-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; sisear: <font color='%COLOR_BLUE%'>sonar.</font>"
+  },
+  {
+    "id": "H7440",
+    "ti": "rinnâh",
+    "le": "רִנָּה",
+    "pl": "rinná",
+    "ps": "rin-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7442')}>H7442</span>; propiamente crujido (o sonido escalofriante), i.e. grito (de alegría o aflicción): <font color='%COLOR_BLUE%'>alegría, canción, cantar, cántico, clamar, clamor, entonar, fiesta, gloriarse, júbilo, pregón, prorrumpir, regocijo.</font>"
+  },
+  {
+    "id": "H7441",
+    "ti": "Rinnâh",
+    "le": "רִנָּה",
+    "pl": "Rinná",
+    "ps": "rin-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7440')}>H7440</span>; Rina, un israelita.: <font color='%COLOR_BLUE%'>Rina.</font>"
+  },
+  {
+    "id": "H7442",
+    "ti": "rânan",
+    "le": "רָנַן",
+    "pl": "ranán",
+    "ps": "raw-nan'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente crujir (o emitir un sonido estridente), i.e. gritar (usualmente de alegría): <font color='%COLOR_BLUE%'>alegrar, alegría, aplaudir, canción, cantar, clamar, gozo, gritar, grito, júbilo, regocijar, regocijo.</font>"
+  },
+  {
+    "id": "H7443",
+    "ti": "renen",
+    "le": "רֶנֶן",
+    "pl": "rénen",
+    "ps": "reh'-nen",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7442')}>H7442</span>; avestruz (por su graznido): <font color='%COLOR_BLUE%'>hermoso.</font>"
+  },
+  {
+    "id": "H7444",
+    "ti": "rannên",
+    "le": "רַנֵּן",
+    "pl": "rannén",
+    "ps": "ran-nane'",
+    "df": "<font color='%COLOR_GREEN%'></font>intensivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7442')}>H7442</span>; gritar (de alegría): <font color='%COLOR_BLUE%'>júbilo.</font>"
+  },
+  {
+    "id": "H7445",
+    "ti": "rᵉnânâh",
+    "le": "רְנָנָה",
+    "pl": "renaná",
+    "ps": "ren-aw-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7442')}>H7442</span>; grito (de alegría): <font color='%COLOR_BLUE%'>alegría, canción, cantar, de júbilo, regocijo.</font>"
+  },
+  {
+    "id": "H7446",
+    "ti": "Riççâh",
+    "le": "רִסָּה",
+    "pl": "Rissá",
+    "ps": "ris-saw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7450')}>H7450</span>; ruina (por gotear en pedazos); Risa, un lugar en el desierto: <font color='%COLOR_BLUE%'>Rissa.</font>"
+  },
+  {
+    "id": "H7447",
+    "ti": "râçîyç",
+    "le": "רָסִיס",
+    "pl": "rasís",
+    "ps": "raw-sees'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7450')}>H7450</span>; propiamente gotear en pedazos, i.e. ruina; también gota de rocío: <font color='%COLOR_BLUE%'>gota, hendidura.</font>"
+  },
+  {
+    "id": "H7448",
+    "ti": "reçen",
+    "le": "רֶסֶן",
+    "pl": "résen",
+    "ps": "reh'-sen",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa contener; cabestro (porque restringe); por impl. quijada: <font color='%COLOR_BLUE%'>freno, cabestro.</font>"
+  },
+  {
+    "id": "H7449",
+    "ti": "Reçen",
+    "le": "רֶסֶן",
+    "pl": "Résen",
+    "ps": "reh'-sen",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7448')}>H7448</span>; Resen, un lugar en Asiria.: <font color='%COLOR_BLUE%'>Resén.</font>"
+  },
+  {
+    "id": "H7450",
+    "ti": "râçaç",
+    "le": "רָסַס",
+    "pl": "rasás",
+    "ps": "raw-sas'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; pulverizar; usado solo como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7447')}>H7447</span>, humedecer (con gotas): <font color='%COLOR_BLUE%'>mezclar.</font>"
+  },
+  {
+    "id": "H7451",
+    "ti": "raʻ",
+    "le": "רַע",
+    "pl": "rah",
+    "ps": "rah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7489')}>H7489</span>; malo o (como sustantivo) mal (nat. o mor.): <font color='%COLOR_BLUE%'>adversidad, aflicción, agravio, apariencia, avaro, calamidad, calumnia, castigo, depravado, desastre, desgracia, destructor, difícil, doloroso, duro, escoria, fastidiosa, feo, feroz, impío, infortunio, inicuo, injusto, mal, maldad, malestar, malicia, maligno, malo, malvado, molesto, parecer, pecado, penoso, perniciosa, perversidad, perverso, quebrantamiento, sarna, terrible, triste. [incl. femenino <font color='%COLOR_GREEN%'><b>רעה</b></font></font> <font color='%COLOR_PURPLE%'>raב</font>; como adjetivo o sustantivo]"
+  },
+  {
+    "id": "H7452",
+    "ti": "rêaʻ",
+    "le": "רֵעַ",
+    "pl": "réa",
+    "ps": "ray'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7321')}>H7321</span>; estruendo (del trueno), ruido (de guerra), grito (de alegría): <font color='%COLOR_BLUE%'>trueno, gritar.</font>"
+  },
+  {
+    "id": "H7453",
+    "ti": "rêaʻ",
+    "le": "רֵעַ",
+    "pl": "réa",
+    "ps": "ray'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ריע</b></font> <font color='%COLOR_PURPLE%'>réya</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span>; asociado (más o menos íntimo): <font color='%COLOR_BLUE%'>amigo, amistad, cercano, compañero, jornalero, prójimo, vecino.</font>"
+  },
+  {
+    "id": "H7454",
+    "ti": "rêaʻ",
+    "le": "רֵעַ",
+    "pl": "réa",
+    "ps": "ray'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span>; pensamiento (como asociación de ideas): <font color='%COLOR_BLUE%'>pensamiento.</font>"
+  },
+  {
+    "id": "H7455",
+    "ti": "rôaʻ",
+    "le": "רֹעַ",
+    "pl": "róa",
+    "ps": "ro'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7489')}>H7489</span>; malo (como en arruinar), fis. o mor.: <font color='%COLOR_BLUE%'>fealdad, iniquidad, maldad, malicia, malo, perversidad, quebranto, tristeza.</font>"
+  },
+  {
+    "id": "H7456",
+    "ti": "râʻêb",
+    "le": "רָעֵב",
+    "pl": "raéb",
+    "ps": "raw-abe'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; tener hambre: <font color='%COLOR_BLUE%'>hambre, hambriento.</font>"
+  },
+  {
+    "id": "H7457",
+    "ti": "râʻêb",
+    "le": "רָעֵב",
+    "pl": "raéb",
+    "ps": "raw-abe'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7456')}>H7456</span>; hambriento (más o menos intensamente): <font color='%COLOR_BLUE%'>gastarse de hambre, hambre, hambriento.</font>"
+  },
+  {
+    "id": "H7458",
+    "ti": "râʻâb",
+    "le": "רָעָב",
+    "pl": "raáb",
+    "ps": "raw-awb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7456')}>H7456</span>; hambre (más o menos extendido): <font color='%COLOR_BLUE%'>hambre.</font>"
+  },
+  {
+    "id": "H7459",
+    "ti": "rᵉʻâbôwn",
+    "le": "רְעָבֹון",
+    "pl": "reabón",
+    "ps": "reh-aw-bone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7456')}>H7456</span>; hambruna: <font color='%COLOR_BLUE%'>hambre.</font>"
+  },
+  {
+    "id": "H7460",
+    "ti": "râʻad",
+    "le": "רָעַד",
+    "pl": "raád",
+    "ps": "raw-ad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria: temblar (más o menos violentamente): <font color='%COLOR_BLUE%'>estremecer, temblar.</font>"
+  },
+  {
+    "id": "H7461",
+    "ti": "raʻad",
+    "le": "רַעַד",
+    "pl": "ráad",
+    "ps": "rah'-ad",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>רעדה</b></font> <font color='%COLOR_PURPLE%'>readá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7460')}>H7460</span>; temblor: <font color='%COLOR_BLUE%'>espanto, temblor.</font>"
+  },
+  {
+    "id": "H7462",
+    "ti": "râʻâh",
+    "le": "רָעָה",
+    "pl": "raá",
+    "ps": "raw-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; cuidar, apacentar un rebaño; i.e. pastar; intr. pastar (literalmente o figurativamente); generalmente gobernar; por extens. asociarse con (como amigo): <font color='%COLOR_BLUE%'>alimentar, alimento, amigo, andar, apacentar, comer, compañero, devorar, entremeter, frecuentar, ganadero, gustar, jefe, juntar, mantener, oveja, pacer, pastar, pasto, pastor, pastoril, sustentar.</font>"
+  },
+  {
+    "id": "H7463",
+    "ti": "rêʻeh",
+    "le": "רֵעֶה",
+    "pl": "reé",
+    "ps": "ray-eh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span>; compañero (varón): <font color='%COLOR_BLUE%'>amigo.</font>"
+  },
+  {
+    "id": "H7464",
+    "ti": "rêʻâh",
+    "le": "רֵעָה",
+    "pl": "réa",
+    "ps": "ray'-aw",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7453')}>H7453</span>; asociada (mujer): <font color='%COLOR_BLUE%'>compañera.</font>"
+  },
+  {
+    "id": "H7465",
+    "ti": "rôʻâh",
+    "le": "רֹעָה",
+    "pl": "roá",
+    "ps": "ro-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7455')}>H7455</span>; ruptura: <font color='%COLOR_BLUE%'>roto.</font>"
+  },
+  {
+    "id": "H7466",
+    "ti": "Rᵉʻûw",
+    "le": "רְעוּ",
+    "pl": "Reú",
+    "ps": "reh-oo'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7471')}>H7471</span> en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7453')}>H7453</span>; amigo; Reu, patriarca postdiluviano: <font color='%COLOR_BLUE%'>Reu.</font>"
+  },
+  {
+    "id": "H7467",
+    "ti": "Rᵉʻûwʼêl",
+    "le": "רְעוּאֵל",
+    "pl": "Reuél",
+    "ps": "reh-oo-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7466')}>H7466</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; amigo de Dios; Reuel, nombre del suegro de Moisés, también de un edomita y un israelita.: <font color='%COLOR_BLUE%'>Ragüel, Reuel.</font>"
+  },
+  {
+    "id": "H7468",
+    "ti": "rᵉʻûwth",
+    "le": "רְעוּת",
+    "pl": "reút",
+    "ps": "reh-ooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span> en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7453')}>H7453</span>; asociada (mujer); generalmente una adicional: <font color='%COLOR_BLUE%'>amiga, compañera, vecina.</font>"
+  },
+  {
+    "id": "H7469",
+    "ti": "rᵉʻûwth",
+    "le": "רְעוּת",
+    "pl": "reút",
+    "ps": "reh-ooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span>; comerse a, i.e. agarrar después: <font color='%COLOR_BLUE%'>aflicción.</font>"
+  },
+  {
+    "id": "H7470",
+    "ti": "rᵉʻûwth",
+    "le": "רְעוּת",
+    "pl": "reút",
+    "ps": "reh-ooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7469')}>H7469</span>; deseo: <font color='%COLOR_BLUE%'>voluntad.</font>"
+  },
+  {
+    "id": "H7471",
+    "ti": "rᵉʻîy",
+    "le": "רְעִי",
+    "pl": "reí",
+    "ps": "reh-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span>; potrero, pasto: <font color='%COLOR_BLUE%'>pasto.</font>"
+  },
+  {
+    "id": "H7472",
+    "ti": "Rêʻîy",
+    "le": "רֵעִי",
+    "pl": "Reí",
+    "ps": "ray-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7453')}>H7453</span>; social; Rei, un israelita.: <font color='%COLOR_BLUE%'>Rei.</font>"
+  },
+  {
+    "id": "H7473",
+    "ti": "rôʻîy",
+    "le": "רֹעִי",
+    "pl": "roí",
+    "ps": "ro-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>del participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span>; pastoral; como sustantivo, pastor: <font color='%COLOR_BLUE%'>pastor.</font>"
+  },
+  {
+    "id": "H7474",
+    "ti": "raʻyâh",
+    "le": "רַעְיָה",
+    "pl": "rayá",
+    "ps": "rah-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7453')}>H7453</span>; asociada mujer: <font color='%COLOR_BLUE%'>amiga, compañera.</font>"
+  },
+  {
+    "id": "H7475",
+    "ti": "raʻyôwn",
+    "le": "רַעְיֹון",
+    "pl": "rayón",
+    "ps": "rah-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span> en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7469')}>H7469</span>; deseo: <font color='%COLOR_BLUE%'>aflicción, fatiga.</font>"
+  },
+  {
+    "id": "H7476",
+    "ti": "raʻyôwn",
+    "le": "רַעְיֹון",
+    "pl": "rayón",
+    "ps": "rah-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7475')}>H7475</span>; agarrar, captar, i.e. (figurativamente) concepción (mental): <font color='%COLOR_BLUE%'>pensamiento.</font>"
+  },
+  {
+    "id": "H7477",
+    "ti": "râʻal",
+    "le": "רָעַל",
+    "pl": "raál",
+    "ps": "raw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; bambolearse, i.e. (figurativamente) trastabillar: <font color='%COLOR_BLUE%'>temblar.</font>"
+  },
+  {
+    "id": "H7478",
+    "ti": "raʻal",
+    "le": "רַעַל",
+    "pl": "ráal",
+    "ps": "rah'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7477')}>H7477</span>; bamboleo (de intoxicación): <font color='%COLOR_BLUE%'>temblar.</font>"
+  },
+  {
+    "id": "H7479",
+    "ti": "raʻălâh",
+    "le": "רַעֲלָה",
+    "pl": "rahalá",
+    "ps": "rah-al-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7478')}>H7478</span>; velo largo (como revoleo): <font color='%COLOR_BLUE%'>pendiente.</font>"
+  },
+  {
+    "id": "H7480",
+    "ti": "Rᵉʻêlâyâh",
+    "le": "רְעֵלָיָה",
+    "pl": "Reelayá",
+    "ps": "reh-ay-law-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7477')}>H7477</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; hecho temblar (i.e. temeroso) de Jah; Reelaía, un israelita.: <font color='%COLOR_BLUE%'>Reelaías.</font>"
+  },
+  {
+    "id": "H7481",
+    "ti": "râʻam",
+    "le": "רָעַם",
+    "pl": "raám",
+    "ps": "raw-am'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; dar volteretas, i.e. agitarse violentamente; especialmente estruendo (del trueno); figurativamente irritar (con cólera): <font color='%COLOR_BLUE%'>entristecer, demudar, tronar.</font>"
+  },
+  {
+    "id": "H7482",
+    "ti": "raʻam",
+    "le": "רַעַם",
+    "pl": "raám",
+    "ps": "rah'am",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7481')}>H7481</span>; retumbar del trueno: <font color='%COLOR_BLUE%'>trueno.</font>"
+  },
+  {
+    "id": "H7483",
+    "ti": "raʻmâh",
+    "le": "רַעְמָה",
+    "pl": "ramá",
+    "ps": "rah-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7482')}>H7482</span>; melena del caballo (porque flota al viento): <font color='%COLOR_BLUE%'>ondulante.</font>"
+  },
+  {
+    "id": "H7484",
+    "ti": "Raʻmâh",
+    "le": "רַעְמָה",
+    "pl": "Ramá",
+    "ps": "rah-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7483')}>H7483</span>; Ramá, nombre de un nieto de Cam, y de un lugar (tal vez fundado por él): <font color='%COLOR_BLUE%'>Raama.</font>"
+  },
+  {
+    "id": "H7485",
+    "ti": "Raʻamyâh",
+    "le": "רַעַמְיָה",
+    "pl": "Raamyá",
+    "ps": "rah-am-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7481')}>H7481</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha sacudido; Raamyá, un israelita.: <font color='%COLOR_BLUE%'>Raamías.</font>"
+  },
+  {
+    "id": "H7486",
+    "ti": "Raʻmᵉçêç",
+    "le": "רַעְמְסֵס",
+    "pl": "Ramesés",
+    "ps": "rah-mes-ace'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רעמסס</b></font> <font color='%COLOR_PURPLE%'>Raamsés</font>; de original egipcio; Ramesés o Raamsés, un lugar en Egipto: <font color='%COLOR_BLUE%'>Ramesés.</font>"
+  },
+  {
+    "id": "H7487",
+    "ti": "raʻănan",
+    "le": "רַעֲנַן",
+    "pl": "raanán",
+    "ps": "rah-aw-nan'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7488')}>H7488</span>; verde, i.e. (figurativamente) próspero: <font color='%COLOR_BLUE%'>floreciente.</font>"
+  },
+  {
+    "id": "H7488",
+    "ti": "raʻănân",
+    "le": "רַעֲנָן",
+    "pl": "raanán",
+    "ps": "rah-an-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa estar verde; verdor; por anal. nuevo; figurativamente próspero: <font color='%COLOR_BLUE%'>flor, fresco, frondoso, reverdecer, verde.</font>"
+  },
+  {
+    "id": "H7489",
+    "ti": "râʻaʻ",
+    "le": "רָעַע",
+    "pl": "raá",
+    "ps": "raw-ah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente arruinar (literalmente al despedazar); figurativamente hacer (o ser) bueno para nada, i.e. malo (física, social o moralmente): <font color='%COLOR_BLUE%'>afligir, apesadumbrar, cometer, conmover, dañar, daño, desagradar, devastar, disgustar, doler, grave, hacedor, hacer mal, mal, maldad, maligno, malo, maltratar, malvado, más mal, mentiroso, mezquino, mostrarse amigo [por error por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7462')}>H7462</span></font>], parecer, peor, pesar, quebrantar, quebrar, reunir, tal maldad, triste, ser (tratar, hacer) peor."
+  },
+  {
+    "id": "H7490",
+    "ti": "rᵉʻaʻ",
+    "le": "רְעַע",
+    "pl": "reá",
+    "ps": "reh-ah'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7489')}>H7489</span>: <font color='%COLOR_BLUE%'>desmenuzar.</font>"
+  },
+  {
+    "id": "H7491",
+    "ti": "râʻaph",
+    "le": "רָעַף",
+    "pl": "raáf",
+    "ps": "raw-af'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; gotear: <font color='%COLOR_BLUE%'>destilar, rociar.</font>"
+  },
+  {
+    "id": "H7492",
+    "ti": "râʻats",
+    "le": "רָעַץ",
+    "pl": "raáts",
+    "ps": "raw-ats'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; destrozar, despedazar figurativamente hostigar, acosar: <font color='%COLOR_BLUE%'>quebrantar.</font>"
+  },
+  {
+    "id": "H7493",
+    "ti": "râʻash",
+    "le": "רָעַשׁ",
+    "pl": "raásh",
+    "ps": "raw-ash",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ondular (como la tierra, el cielo, etc.; también un campo de grano), partic. mediante temor; especialmente saltar (como langosta): <font color='%COLOR_BLUE%'>conmover, estremecer, intimidar, hacer temblar, trastornar.</font>"
+  },
+  {
+    "id": "H7494",
+    "ti": "raʻash",
+    "le": "רַעַשׁ",
+    "pl": "ráash",
+    "ps": "rah'-ash",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7493')}>H7493</span>; vibración, rugido, clamor: <font color='%COLOR_BLUE%'>alboroto, estruendo, fragor, ímpetu, temblor, terremoto.</font>"
+  },
+  {
+    "id": "H7495",
+    "ti": "râphâʼ",
+    "le": "רָפָא",
+    "pl": "rafá",
+    "ps": "raw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רפה</b></font> <font color='%COLOR_PURPLE%'>rafá</font>; raíz primaria; propiamente remendar (con puntadas), i.e. (figurativamente) curar: <font color='%COLOR_BLUE%'>arreglar, cuidar, curación, curar, médico, restaurar, sanador, sanar, sanear, sanidad, sano.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7503')}>H7503</span>."
+  },
+  {
+    "id": "H7496",
+    "ti": "râphâʼ",
+    "le": "רָפָא",
+    "pl": "rafá",
+    "ps": "raw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7495')}>H7495</span> en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7503')}>H7503</span>; propiamente laxo, i.e. (figurativamente) fantasma (como muerto; solo en plural): <font color='%COLOR_BLUE%'>muerto.</font>"
+  },
+  {
+    "id": "H7497",
+    "ti": "râphâʼ",
+    "le": "רָפָא",
+    "pl": "rafá",
+    "ps": "raw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רפה</b></font> <font color='%COLOR_PURPLE%'>rafá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7495')}>H7495</span> en el sentido de vigorizar; gigante: <font color='%COLOR_BLUE%'>gigante, Refaim, refaitas.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1051')}>H1051</span>."
+  },
+  {
+    "id": "H7498",
+    "ti": "Râphâʼ",
+    "le": "רָפָא",
+    "pl": "Rafá",
+    "ps": "raw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>רפה</b></font> <font color='%COLOR_PURPLE%'>Rafá</font>; probablemente lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7497')}>H7497</span>; gigante; Rafa, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Rafa.</font>"
+  },
+  {
+    "id": "H7499",
+    "ti": "rᵉphuʼâh",
+    "le": "רְפֻאָה",
+    "pl": "refuá",
+    "ps": "ref-oo-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasado femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7495')}>H7495</span>; medicamento: <font color='%COLOR_BLUE%'>medicamento, medicina.</font>"
+  },
+  {
+    "id": "H7500",
+    "ti": "riphʼûwth",
+    "le": "רִפְאוּת",
+    "pl": "rifút",
+    "ps": "rif-ooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7495')}>H7495</span>; curación, cura, curar: <font color='%COLOR_BLUE%'>medicina.</font>"
+  }
+]

@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G1201",
+    "ti": "desmōtḗrion",
+    "le": "δεσμωτήριον",
+    "pl": "desmotérion",
+    "ps": "des-mo-tay'-ree-on",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1199')}>G1199</span> (equivalente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1196')}>G1196</span>); lugar de esclavitud, i.e., mazmorra, calabozo: <font color='%COLOR_BLUE%'>cárcel.</font>"
+  },
+  {
+    "id": "G1202",
+    "ti": "desmṓtēs",
+    "le": "δεσμώτης",
+    "pl": "desmótes",
+    "ps": "des-mo'-tace",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1201')}>G1201</span>; (pasivamente) cautivo: <font color='%COLOR_BLUE%'>preso.</font>"
+  },
+  {
+    "id": "G1203",
+    "ti": "despótēs",
+    "le": "δεσπότης",
+    "pl": "despótes",
+    "ps": "des-pot'-ace",
+    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span> y <b>πόσις</b> <font color='%COLOR_PURPLE%'>pósis</font> (esposo); gobernador absoluto («déspota»): <font color='%COLOR_BLUE%'>amo, señor.</font>"
+  },
+  {
+    "id": "G1204",
+    "ti": "deûro",
+    "le": "δεῦρο",
+    "pl": "deúro",
+    "ps": "dyoo'-ro",
+    "df": "de afinidad incierta; aquí; usado también en imperativo ¡acá!; y de tiempo, hasta ahora: <font color='%COLOR_BLUE%'>venir.</font>"
+  },
+  {
+    "id": "G1205",
+    "ti": "deûte",
+    "le": "δεῦτε",
+    "pl": "deúte",
+    "ps": "dyoo'-teh",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1204')}>G1204</span> y una forma imperativo de <b>εἶμι</b> <font color='%COLOR_PURPLE%'>eimi</font> (ir); ¡ven acá!: <font color='%COLOR_BLUE%'>venir, volver.</font>"
+  },
+  {
+    "id": "G1206",
+    "ti": "deuteraîos",
+    "le": "δευτεραῖος",
+    "pl": "deuteraíos",
+    "ps": "dyoo-ter-ah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1208')}>G1208</span>; secundario, i. e (específicamente) el segundo día: <font color='%COLOR_BLUE%'>al segundo día.</font>"
+  },
+  {
+    "id": "G1207",
+    "ti": "deuteróprōtos",
+    "le": "δευτερόπρωτος",
+    "pl": "deuteróprotos",
+    "ps": "dyoo-ter-op'-ro-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1208')}>G1208</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4413')}>G4413</span>; segundo primero, i.e. (específicamente) designación del sábado inmediato después de la semana pascual (el segundo después de la Pascua, y el primero de los siete sábados en el intervalo hasta Pentecostés): <font color='%COLOR_BLUE%'>(Reina-Valera traduce día de reposo sin los calificativos.)</font>"
+  },
+  {
+    "id": "G1208",
+    "ti": "deúteros",
+    "le": "δεύτερος",
+    "pl": "deúteros",
+    "ps": "dyoo'-ter-os",
+    "df": "como comparativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1417')}>G1417</span>; (ordinal) segundo (en tiempo, lugar, o rango; también adverbio): <font color='%COLOR_BLUE%'>segundo, último.</font>"
+  },
+  {
+    "id": "G1209",
+    "ti": "déchomai",
+    "le": "δέχομαι",
+    "pl": "déjomai",
+    "ps": "dekh'-om-ahee",
+    "df": "voz media de un verbo primario recibir (en varias aplicaciones, literalmente o figurativamente): <font color='%COLOR_BLUE%'>percibir, recibir, tomar, aceptar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2983')}>H2983</span>."
+  },
+  {
+    "id": "G1210",
+    "ti": "déō",
+    "le": "δέω",
+    "pl": "déo",
+    "ps": "deh'-o",
+    "df": "verbo primario atar (en varias aplicaciones, literalmente o figurativamente): <font color='%COLOR_BLUE%'>atar, encadenar, ligar, prender, preso, sujetar.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1163')}>H1163</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1189')}>H1189</span>."
+  },
+  {
+    "id": "G1211",
+    "ti": "dḗ",
+    "le": "δή",
+    "pl": "dé",
+    "ps": "day",
+    "df": "probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1161')}>G1161</span>; partícula de énfasis o para decirlo explícitamente; ahora, entonces, etc.: <font color='%COLOR_BLUE%'>ahora, pues, verdaderamente.</font>"
+  },
+  {
+    "id": "G1212",
+    "ti": "dēlos",
+    "le": "δῆλος",
+    "pl": "délos",
+    "ps": "day'-los",
+    "df": "de derivación incierta; claro: <font color='%COLOR_BLUE%'>descubrir, duda, evidente.</font>"
+  },
+  {
+    "id": "G1213",
+    "ti": "dēlóō",
+    "le": "δηλόω",
+    "pl": "delóo",
+    "ps": "day-lo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1212')}>G1212</span>; aclarar (por palabras): <font color='%COLOR_BLUE%'>entender, indicar, informar, dar, declarar.</font>"
+  },
+  {
+    "id": "G1214",
+    "ti": "Dēmâs",
+    "le": "Δημᾶς",
+    "pl": "Demas",
+    "ps": "day-mas'",
+    "df": "probablemente por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1216')}>G1216</span>; Demas, un cristiano: <font color='%COLOR_BLUE%'>Demas.</font>"
+  },
+  {
+    "id": "G1215",
+    "ti": "dēmēgoréō",
+    "le": "δημηγορέω",
+    "pl": "demegoréo",
+    "ps": "day-may-gor-eh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1218')}>G1218</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G58')}>G58</span>; ser uno que reúne personas, i.e. dirigirse a una asamblea pública: <font color='%COLOR_BLUE%'>arengar.</font>"
+  },
+  {
+    "id": "G1216",
+    "ti": "Dēmḗtrios",
+    "le": "Δημήτριος",
+    "pl": "Demétrios",
+    "ps": "day-may'-tree-os",
+    "df": "de <b>Δημήτηρ</b> <font color='%COLOR_PURPLE%'>Deméter</font>; nombre de un efesio y de un cristiano: <font color='%COLOR_BLUE%'>Demetrio.</font>"
+  },
+  {
+    "id": "G1217",
+    "ti": "dēmiourgós",
+    "le": "δημιουργός",
+    "pl": "demiourgós",
+    "ps": "day-me-oor-gos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1218')}>G1218</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2041')}>G2041</span>; obrero por las personas, i.e. mecánico (hablando del Creador): <font color='%COLOR_BLUE%'>constructor.</font>"
+  },
+  {
+    "id": "G1218",
+    "ti": "dēmos",
+    "le": "δῆμος",
+    "pl": "démos",
+    "ps": "day'-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1201')}>G1201</span>; el público (como reunido socialmente): <font color='%COLOR_BLUE%'>pueblo.</font>"
+  },
+  {
+    "id": "G1219",
+    "ti": "dēmósios",
+    "le": "δημόσιος",
+    "pl": "demósios",
+    "ps": "day-mos'ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1218')}>G1218</span>; público; (caso femenino singular dat. como adverbio) en público: <font color='%COLOR_BLUE%'>públicamente, público.</font>"
+  },
+  {
+    "id": "G1220",
+    "ti": "dēnárion",
+    "le": "δηνάριον",
+    "pl": "denárion",
+    "ps": "day-nar'-ee-on",
+    "df": "de origen latín; denario: <font color='%COLOR_BLUE%'>moneda, denario.</font>"
+  },
+  {
+    "id": "G1221",
+    "ti": "dḗpote",
+    "le": "δήποτε",
+    "pl": "dépote",
+    "ps": "day'-pot-eh",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1211')}>G1211</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4218')}>G4218</span>; partícula de generalización; en verdad, en cualquier tiempo: <font color='%COLOR_BLUE%'>cualquier.</font>"
+  },
+  {
+    "id": "G1222",
+    "ti": "dḗpou",
+    "le": "δήπου",
+    "pl": "dépou",
+    "ps": "day'-poo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1211')}>G1211</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4225')}>G4225</span>; particular de aseveración; en verdad sin duda: <font color='%COLOR_BLUE%'>ciertamente.</font>"
+  },
+  {
+    "id": "G1223",
+    "ti": "diá",
+    "le": "διά",
+    "pl": "diá",
+    "ps": "dee-ah'",
+    "df": "preposición primaria denotando el canal de un acto; mediante (en aplicaciones muy amplias, local, causal u ocasional): <font color='%COLOR_BLUE%'>pasar, través, atravesar, causa, conducto. En composición retiene el mismo sentido general.</font><p></p><b>Δία</b> <font color='%COLOR_PURPLE%'>Día.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2203')}>G2203</span>."
+  },
+  {
+    "id": "G1224",
+    "ti": "diabaínō",
+    "le": "διαβαίνω",
+    "pl": "diabaíno",
+    "ps": "dee-ab-ah'-ee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; cruzar: <font color='%COLOR_BLUE%'>pasar.</font>"
+  },
+  {
+    "id": "G1225",
+    "ti": "diabállō",
+    "le": "διαβάλλω",
+    "pl": "diabállo",
+    "ps": "dee-ab-al'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; (figurativamente) calumniar: <font color='%COLOR_BLUE%'>acusar.</font>"
+  },
+  {
+    "id": "G1226",
+    "ti": "diabebaióomai",
+    "le": "διαβεβαιόομαι",
+    "pl": "diabebaióomai",
+    "ps": "dee-ab-eb-ahee-o'-om-ahee",
+    "df": "voz media de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G950')}>G950</span>; confirmar totalmente (por palabras), i.e., aseverar: <font color='%COLOR_BLUE%'>firmeza, insistir, afirmar.</font>"
+  },
+  {
+    "id": "G1227",
+    "ti": "diablépō",
+    "le": "διαβλέπω",
+    "pl": "diablépo",
+    "ps": "dee-ab-lep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G991')}>G991</span>; mirar completamente, i.e., recuperar visión completa: <font color='%COLOR_BLUE%'>ver bien.</font>"
+  },
+  {
+    "id": "G1228",
+    "ti": "diábolos",
+    "le": "διάβολος",
+    "pl": "diábolos",
+    "ps": "dee-ab'-ol-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1225')}>G1225</span>; calumniador; específicamente Satanás [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7854')}>H7854</span>]: <font color='%COLOR_BLUE%'>calumniador, diablo.</font>"
+  },
+  {
+    "id": "G1229",
+    "ti": "diangéllō",
+    "le": "διαγγέλλω",
+    "pl": "diangéllo",
+    "ps": "de-ang-gel'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G32')}>G32</span>; proclamar como heraldo completamente: <font color='%COLOR_BLUE%'>anunciar.</font>"
+  },
+  {
+    "id": "G1230",
+    "ti": "diagínomai",
+    "le": "διαγίνομαι",
+    "pl": "diagínomai",
+    "ps": "dee-ag-in'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1096')}>G1096</span>; pasar mientras tanto: <font color='%COLOR_BLUE%'>pasar.</font>"
+  },
+  {
+    "id": "G1231",
+    "ti": "diaginṓskō",
+    "le": "διαγινώσκω",
+    "pl": "diaginósko",
+    "ps": "dee-ag-in-o'-sko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; conocer completamente, i.e. aseverar exactamente: <font color='%COLOR_BLUE%'>conocer, indagar.</font>"
+  },
+  {
+    "id": "G1232",
+    "ti": "diagnōrízō",
+    "le": "διαγνωρίζω",
+    "pl": "diagnorízo",
+    "ps": "dee-ag-no-rid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1123')}>G1123</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1107')}>G1107</span>; contar por todas partes: <font color='%COLOR_BLUE%'>dar a conocer.</font>"
+  },
+  {
+    "id": "G1233",
+    "ti": "diágnōsis",
+    "le": "διάγνωσις",
+    "pl": "diágnosis",
+    "ps": "dee-ag'-no-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1231')}>G1231</span>; examen (magisterial) («diagnosis»): <font color='%COLOR_BLUE%'>conocimiento.</font>"
+  },
+  {
+    "id": "G1234",
+    "ti": "diagongýzō",
+    "le": "διαγογγύζω",
+    "pl": "diagongúzo",
+    "ps": "dee-ag-ong-good'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1111')}>G1111</span>; queja de una multitud: <font color='%COLOR_BLUE%'>murmurar.</font>"
+  },
+  {
+    "id": "G1235",
+    "ti": "diagrēgoréō",
+    "le": "διαγρηγορέω",
+    "pl": "diagregoréo",
+    "ps": "dee-ag-ray-gor-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1127')}>G1127</span>; despertarse completamente: <font color='%COLOR_BLUE%'>despierto.</font>"
+  },
+  {
+    "id": "G1236",
+    "ti": "diágō",
+    "le": "διάγω",
+    "pl": "diágo",
+    "ps": "dee-ag'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; pasar el tiempo o la vida: <font color='%COLOR_BLUE%'>vivir.</font>"
+  },
+  {
+    "id": "G1237",
+    "ti": "diadéchomai",
+    "le": "διαδέχομαι",
+    "pl": "diadéjomai",
+    "ps": "dee-ad-ekh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1209')}>G1209</span>; recibir por turno, i.e. (figurativamente) suceder a: <font color='%COLOR_BLUE%'>recibir.</font>"
+  },
+  {
+    "id": "G1238",
+    "ti": "diádēma",
+    "le": "διάδημα",
+    "pl": "diádema",
+    "ps": "dee-ad'-ay-mah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span>; «diadema» (como atada alrededor de la cabeza: <font color='%COLOR_BLUE%'>diadema.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4735')}>H4735</span>."
+  },
+  {
+    "id": "G1239",
+    "ti": "diadídōmi",
+    "le": "διαδίδωμι",
+    "pl": "diadídomi",
+    "ps": "dee-ad-id'-o-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1325')}>G1325</span>; ceder a la multitud, i.e. hacer trato; también entregar a (como sucesor): <font color='%COLOR_BLUE%'>repartir, dar, entregar.</font>"
+  },
+  {
+    "id": "G1240",
+    "ti": "diádochos",
+    "le": "διάδοχος",
+    "pl": "diádojos",
+    "ps": "dee-ad'-okh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1237')}>G1237</span>; sucesor en el cargo: <font color='%COLOR_BLUE%'>sucesor.</font>"
+  },
+  {
+    "id": "G1241",
+    "ti": "diazṓnnymi",
+    "le": "διαζώννυμι",
+    "pl": "diazónnumi",
+    "ps": "dee-az-own'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2224')}>G2224</span>; sujetar apretadamente, fajar: <font color='%COLOR_BLUE%'>ceñir.</font>"
+  },
+  {
+    "id": "G1242",
+    "ti": "diathḗkē",
+    "le": "διαθήκη",
+    "pl": "diadséke",
+    "ps": "dee-ath-ay'-kay",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1303')}>G1303</span>; propiamente disposición, i.e. (específicamente) contrato (específicamente testamento): <font color='%COLOR_BLUE%'>pacto, testamento.</font>"
+  },
+  {
+    "id": "G1243",
+    "ti": "diaíresis",
+    "le": "διαίρεσις",
+    "pl": "diaíresis",
+    "ps": "dee-ah'-ee-res-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1244')}>G1244</span>; distinción o (concretamente) variedad: <font color='%COLOR_BLUE%'>diversidad.</font>"
+  },
+  {
+    "id": "G1244",
+    "ti": "diairéō",
+    "le": "διαιρέω",
+    "pl": "diairéo",
+    "ps": "dee-ahee-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>: separar, i. e, distribuir: <font color='%COLOR_BLUE%'>repartir.</font>"
+  },
+  {
+    "id": "G1245",
+    "ti": "diakatharízō",
+    "le": "διακαθαρίζω",
+    "pl": "diakadsarízo",
+    "ps": "dee-ak-ath-ar-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2511')}>G2511</span>; limpiar perfectamente, i.e. (específicamente) aventar: <font color='%COLOR_BLUE%'>limpiar.</font>"
+  },
+  {
+    "id": "G1246",
+    "ti": "diakatelénchomai",
+    "le": "διακατελέγχομαι",
+    "pl": "diakatelégjomai",
+    "ps": "dee-ak-at-el-eng'-khom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1651')}>G1651</span>; probar por completo, i.e. refutar: <font color='%COLOR_BLUE%'>refutar.</font>"
+  },
+  {
+    "id": "G1247",
+    "ti": "diakonéō",
+    "le": "διακονέω",
+    "pl": "diakonéo",
+    "ps": "dee-ak-on-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1249')}>G1249</span>; ser servidor, i.e. servir a (domésticamente o como anfitrión, amigo, o [figurativamente] maestro); tecnicamente actuar como diácono cristiana: <font color='%COLOR_BLUE%'>administrar, ayudar, diaconado, expedir, ministrar, servir.</font>"
+  },
+  {
+    "id": "G1248",
+    "ti": "diakonía",
+    "le": "διακονία",
+    "pl": "diakonía",
+    "ps": "dee-ak-on-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1249')}>G1249</span>; servicio (como sirviente, etc.); figurativamente ayuda, servicio (oficial) (específicamente del maestro cristiana o tecnicamente del diaconado): <font color='%COLOR_BLUE%'>quehacer, servicio, servir, socorro, ministerio, ministración, distribución.</font>"
+  },
+  {
+    "id": "G1249",
+    "ti": "diákonos",
+    "le": "διάκονος",
+    "pl": "diákonos",
+    "ps": "dee-ak'-on-os",
+    "df": "probablemente de un obsoleto <b>διάκω</b> <font color='%COLOR_PURPLE%'>diáko</font> (hacer mandados; Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1377')}>G1377</span>); ayudante, i.e. (generalmente) mesero (a la mesa o en otros quehaceres domésticos); específicamente maestro cristiana y pastor (tecnicamente diácono o diaconisa): <font color='%COLOR_BLUE%'>diaconisa, diácono, ministro, servidor, siervo, sirviente.</font>"
+  },
+  {
+    "id": "G1250",
+    "ti": "diakósioi",
+    "le": "διακόσιοι",
+    "pl": "diakósioi",
+    "ps": "dee-ak-os'-ee-oy",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1346')}>G1346</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1540')}>G1540</span>; doscientos: <font color='%COLOR_BLUE%'>doscientos.</font>"
+  },
+  {
+    "id": "G1251",
+    "ti": "diakoúomai",
+    "le": "διακούομαι",
+    "pl": "diakoúomai",
+    "ps": "dee-ak-oo'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G191')}>G191</span>; oír completamente, i.e. escuchar pacientemente (la súplica de un prisionero): <font color='%COLOR_BLUE%'>oír.</font>"
+  },
+  {
+    "id": "G1252",
+    "ti": "diakrínō",
+    "le": "διακρίνω",
+    "pl": "diakríno",
+    "ps": "dee-ak-ree'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2991')}>G2991</span>; separar completamente, i.e. (literalmente o reflexivamente) retirarse de, o (por implicación) oponerse; figurativamente discriminar (por implicación decidir), o (reflexivamente) vacilar, titubear: <font color='%COLOR_BLUE%'>contender, diferencia, discernir, disputar, distinción, distinguir, dudar, examinar, hacer (diferencia), juzgar.</font>"
+  },
+  {
+    "id": "G1253",
+    "ti": "diákrisis",
+    "le": "διάκρισις",
+    "pl": "diákrisis",
+    "ps": "dee-ak'-ree-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1252')}>G1252</span>; opinión judicial: <font color='%COLOR_BLUE%'>contender, discernimiento, opinión, oponer.</font>"
+  },
+  {
+    "id": "G1254",
+    "ti": "diakōlýō",
+    "le": "διακωλύω",
+    "pl": "diakolúo",
+    "ps": "dee-ak-o-loo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2967')}>G2967</span>; esconder completamente, i.e. prohibir totalmente: <font color='%COLOR_BLUE%'>oponer.</font>"
+  },
+  {
+    "id": "G1255",
+    "ti": "dialaléō",
+    "le": "διαλαλέω",
+    "pl": "dialaléo",
+    "ps": "dee-al-al-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2980')}>G2980</span>; hablar completamente en compañía, i.e. conversar o (generalmente) publicar: <font color='%COLOR_BLUE%'>hablar, divulgar.</font>"
+  },
+  {
+    "id": "G1256",
+    "ti": "dialégomai",
+    "le": "διαλέγομαι",
+    "pl": "dialégomai",
+    "ps": "dee-al-eg'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3004')}>G3004</span>; decir por completo, i.e. discutir (en discusión o exhortación): <font color='%COLOR_BLUE%'>decir, discutir, disertar, disputar, enseñar.</font>"
+  },
+  {
+    "id": "G1257",
+    "ti": "dialeípō",
+    "le": "διαλείπω",
+    "pl": "dialeípo",
+    "ps": "dee-al-i'-po",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3007')}>G3007</span>; dejar fuera en el medio, i.e., intermediar: <font color='%COLOR_BLUE%'>cesar.</font>"
+  },
+  {
+    "id": "G1258",
+    "ti": "diálektos",
+    "le": "διάλεκτος",
+    "pl": "diálektos",
+    "ps": "dee-al'-ek-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1256')}>G1256</span>; (modo de) discurso, i.e., «dialecto»: <font color='%COLOR_BLUE%'>lengua.</font>"
+  },
+  {
+    "id": "G1259",
+    "ti": "diallássō",
+    "le": "διαλλάσσω",
+    "pl": "dialásso",
+    "ps": "dee-al-las'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G236')}>G236</span>; cambiar completamente, i.e. (mentalmente) conciliar: <font color='%COLOR_BLUE%'>reconciliar.</font>"
+  },
+  {
+    "id": "G1260",
+    "ti": "dialogízomai",
+    "le": "διαλογίζομαι",
+    "pl": "dialogízomai",
+    "ps": "dee-al-og-id'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3049')}>G3049</span>; reconocer completamente, i.e. (generalmente) deliberar (por reflexión o diálogo): <font color='%COLOR_BLUE%'>pensar, cavilar, discutir, disputar.</font>"
+  },
+  {
+    "id": "G1261",
+    "ti": "dialogismós",
+    "le": "διαλογισμός",
+    "pl": "dialogismós",
+    "ps": "dee-al-og-is-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1260')}>G1260</span>; discusión, i.e. consideración (interna) (por implicación propósito), o debate (externo): <font color='%COLOR_BLUE%'>contienda, discusión, pensamiento.</font>"
+  },
+  {
+    "id": "G1262",
+    "ti": "dialýō",
+    "le": "διαλύω",
+    "pl": "dialúo",
+    "ps": "dee-al-oo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3089')}>G3089</span>; disolver completamente: <font color='%COLOR_BLUE%'>dispersar.</font>"
+  },
+  {
+    "id": "G1263",
+    "ti": "diamartýromai",
+    "le": "διαμαρτύρομαι",
+    "pl": "diamartúromai",
+    "ps": "dee-am-ar-too'-rom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3410')}>G3410</span>; atestiguar o protestar fervientemente, o (por implicación) con exhortación: <font color='%COLOR_BLUE%'>encarecer, exhortar, dar (testimonio), testificar, testimonio.</font>"
+  },
+  {
+    "id": "G1264",
+    "ti": "diamáchomai",
+    "le": "διαμάχομαι",
+    "pl": "diamájomai",
+    "ps": "dee-am-akh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3164')}>G3164</span>; luchar ferozmente (en altercado): <font color='%COLOR_BLUE%'>contender.</font>"
+  },
+  {
+    "id": "G1265",
+    "ti": "diaménō",
+    "le": "διαμένω",
+    "pl": "diaméno",
+    "ps": "dee-am-en'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3306')}>G3306</span>; quedarse constantemente (en ser o relación): <font color='%COLOR_BLUE%'>permanecer.</font>"
+  },
+  {
+    "id": "G1266",
+    "ti": "diamerízō",
+    "le": "διαμερίζω",
+    "pl": "diamerízo",
+    "ps": "dee-am-er-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3307')}>G3307</span>; partir completamente (literalmente en distribución, figurativamente en disensión): <font color='%COLOR_BLUE%'>partir, repartir, dividir.</font>"
+  },
+  {
+    "id": "G1267",
+    "ti": "diamerismós",
+    "le": "διαμερισμός",
+    "pl": "diamerismós",
+    "ps": "dee-am-er-is-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1266')}>G1266</span>; desunión (de opinión o conducta): <font color='%COLOR_BLUE%'>disensión.</font>"
+  },
+  {
+    "id": "G1268",
+    "ti": "dianémō",
+    "le": "διανέμω",
+    "pl": "dianémo",
+    "ps": "dee-an-em'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3551')}>G3551</span>; distribuir, i.e. diseminar (información): <font color='%COLOR_BLUE%'>divulgar.</font>"
+  },
+  {
+    "id": "G1269",
+    "ti": "dianeúō",
+    "le": "διανεύω",
+    "pl": "dianeúo",
+    "ps": "dee-an-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3506')}>G3506</span>; asentir (o expresar por señas) a través de un espacio que separa: <font color='%COLOR_BLUE%'>seña.</font>"
+  },
+  {
+    "id": "G1270",
+    "ti": "dianóēma",
+    "le": "διανόημα",
+    "pl": "dianóema",
+    "ps": "dee-an-o'-ay-mah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3539')}>G3539</span>; algo pensado por completo, i.e. sentimiento: <font color='%COLOR_BLUE%'>pensamiento.</font>"
+  },
+  {
+    "id": "G1271",
+    "ti": "diánoia",
+    "le": "διάνοια",
+    "pl": "diánoia",
+    "ps": "dee-an'-oy-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3563')}>G3563</span>; pensamiento hondo, propiamente la facultad (mental o su disposición), por implicación su ejercicio: <font color='%COLOR_BLUE%'>entendimiento, mente, pensamiento.</font>"
+  },
+  {
+    "id": "G1272",
+    "ti": "dianoígō",
+    "le": "διανοίγω",
+    "pl": "dianoígo",
+    "ps": "dee-an-oy'-go",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G455')}>G455</span>: abrir completamente, literalmente (como primogénito) o figurativamente (exponer): <font color='%COLOR_BLUE%'>abrir, declarar.</font>"
+  },
+  {
+    "id": "G1273",
+    "ti": "dianyktereúō",
+    "le": "διανυκτερεύω",
+    "pl": "dianuktereúo",
+    "ps": "dee-an-ook-ter-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3571')}>G3571</span>, sentarse la noche entera: <font color='%COLOR_BLUE%'>(pasar la) noche.</font>"
+  },
+  {
+    "id": "G1274",
+    "ti": "dianýō",
+    "le": "διανύω",
+    "pl": "dianúo",
+    "ps": "dee-an-oo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <b>ἀνύω</b> <font color='%COLOR_PURPLE%'>anúo</font> (efecto); conseguir completamente: <font color='%COLOR_BLUE%'>completar.</font>"
+  },
+  {
+    "id": "G1275",
+    "ti": "diapantós",
+    "le": "διαπαντός",
+    "pl": "diapantós",
+    "ps": "dee-ap-an-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y del gentilicio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3956')}>G3956</span>; a través de todo el tiempo; i.e. (adverbio) constantemente: <font color='%COLOR_BLUE%'>continuamente, siempre.</font>"
+  },
+  {
+    "id": "G1276",
+    "ti": "diaperáō",
+    "le": "διαπεράω",
+    "pl": "diaperáo",
+    "ps": "dee-ap-er-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span>; cruzar enteramente: <font color='%COLOR_BLUE%'>(al otro) lado, pasar, terminar (travesía).</font>"
+  },
+  {
+    "id": "G1277",
+    "ti": "diapléō",
+    "le": "διαπλέω",
+    "pl": "diapléo",
+    "ps": "dee-ap-leh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4126')}>G4126</span>; navegar a través: <font color='%COLOR_BLUE%'>atravesar.</font>"
+  },
+  {
+    "id": "G1278",
+    "ti": "diaponéō",
+    "le": "διαπονέω",
+    "pl": "diaponéo",
+    "ps": "dee-ap-on-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4192')}>G4192</span>; laborar completamente, i.e. (pasivamente) afanarse: <font color='%COLOR_BLUE%'>desagradar.</font>"
+  },
+  {
+    "id": "G1279",
+    "ti": "diaporeúomai",
+    "le": "διαπορεύομαι",
+    "pl": "diaporeúomai",
+    "ps": "dee-ap-or-yoo'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4198')}>G4198</span>; viajar a través: <font color='%COLOR_BLUE%'>pasar.</font>"
+  },
+  {
+    "id": "G1280",
+    "ti": "diaporéō",
+    "le": "διαπορέω",
+    "pl": "diaporéo",
+    "ps": "dee-ap-or-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G639')}>G639</span>; quedarse completamente perplejo: <font color='%COLOR_BLUE%'>dudar, perplejo.</font>"
+  },
+  {
+    "id": "G1281",
+    "ti": "diapragmateúomai",
+    "le": "διαπραγματεύομαι",
+    "pl": "diapragmateúmai",
+    "ps": "dee-ap-rag-mat-yoo'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4231')}>G4231</span>; ocuparse uno mismo por completo, i.e. (transitivamente y por implicación) ganar en los negocios: <font color='%COLOR_BLUE%'>negociar.</font>"
+  },
+  {
+    "id": "G1282",
+    "ti": "diapríō",
+    "le": "διαπρίω",
+    "pl": "diaprío",
+    "ps": "dee-ap-ree'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4249')}>G4249</span>; separar, i.e. (figurativamente) exasperar: <font color='%COLOR_BLUE%'>enfurecer.</font>"
+  },
+  {
+    "id": "G1283",
+    "ti": "diarpázō",
+    "le": "διαρπάζω",
+    "pl": "diarpázo",
+    "ps": "dee-ar-pad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G726')}>G726</span>; atrapar para separar, i.e. saquear: <font color='%COLOR_BLUE%'>saquear.</font>"
+  },
+  {
+    "id": "G1284",
+    "ti": "diarrhḗssō",
+    "le": "διαῤῥήσσω",
+    "pl": "diarrésso",
+    "ps": "dee-ar-hrayce'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4486')}>G4486</span>; partir para separar: <font color='%COLOR_BLUE%'>rasgar, romper.</font>"
+  },
+  {
+    "id": "G1285",
+    "ti": "diasaphéō",
+    "le": "διασαφέω",
+    "pl": "diasaféo",
+    "ps": "dee-as-af-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <b>σαφής</b> <font color='%COLOR_PURPLE%'>safés</font> (claro); aclarar completamente, i.e. (figurativamente) declarar: <font color='%COLOR_BLUE%'>referir.</font>"
+  },
+  {
+    "id": "G1286",
+    "ti": "diaseíō",
+    "le": "διασείω",
+    "pl": "diaseío",
+    "ps": "dee-as-i'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4579')}>G4579</span>; sacudir completamente, i.e. (figurativamente) intimidar: <font color='%COLOR_BLUE%'>hacer extorsión.</font>"
+  },
+  {
+    "id": "G1287",
+    "ti": "diaskorpízō",
+    "le": "διασκορπίζω",
+    "pl": "diaskorpízo",
+    "ps": "dee-as-kor-pid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4650')}>G4650</span>; disipar, i.e. (generalmente) desarraigar o separar; específicamente aventar; figurativamente despilfarrar: <font color='%COLOR_BLUE%'>desperdiciar, disipador, dispersar, esparcir.</font>"
+  },
+  {
+    "id": "G1288",
+    "ti": "diaspáō",
+    "le": "διασπάω",
+    "pl": "diaspáo",
+    "ps": "dee-as-pah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4685')}>G4685</span>; separar, i.e. separar o desmembrar: <font color='%COLOR_BLUE%'>hacer pedazos, despedazar.</font>"
+  },
+  {
+    "id": "G1289",
+    "ti": "diaspeírō",
+    "le": "διασπείρω",
+    "pl": "diaspeíro",
+    "ps": "dee-as-pi'-ro",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4687')}>G4687</span>; sembrar por completo, i.e. (figurativamente) distribuir en tierras extranjeras: <font color='%COLOR_BLUE%'>esparcir.</font>"
+  },
+  {
+    "id": "G1290",
+    "ti": "diasporá",
+    "le": "διασπορά",
+    "pl": "diasporá",
+    "ps": "dee-as-por-ah'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span>; dispersión, i.e. (específicamente y concretamente) israelita (convertido) residente en países gentiles: <font color='%COLOR_BLUE%'>dispersar, dispersión.</font>"
+  },
+  {
+    "id": "G1291",
+    "ti": "diastéllomai",
+    "le": "διαστέλλομαι",
+    "pl": "diastélomai",
+    "ps": "dee-as-tel'-lom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4724')}>G4724</span>; separarse (uno mismo) (figurativamente distinguirse), i.e. (por implicación) unir: <font color='%COLOR_BLUE%'>ordenar, dar (orden), mandar.</font>"
+  },
+  {
+    "id": "G1292",
+    "ti": "diástēma",
+    "le": "διάστημα",
+    "pl": "diástema",
+    "ps": "dee-as'-tay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1339')}>G1339</span>; intervalo: <font color='%COLOR_BLUE%'>lapso.</font>"
+  },
+  {
+    "id": "G1293",
+    "ti": "diastolḗ",
+    "le": "διαστολή",
+    "pl": "diastolé",
+    "ps": "dee-as-tol-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1291')}>G1291</span>; variación: <font color='%COLOR_BLUE%'>diferencia, distinción.</font>"
+  },
+  {
+    "id": "G1294",
+    "ti": "diastréphō",
+    "le": "διαστρέφω",
+    "pl": "diastréfo",
+    "ps": "dee-as-tref'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4762')}>G4762</span>; distorsionar, i.e. (figurativamente) malinterpretar, o corromper (moralmente): <font color='%COLOR_BLUE%'>perverso, pervertir, trastornar, apartar.</font>"
+  },
+  {
+    "id": "G1295",
+    "ti": "diasṓzō",
+    "le": "διασώζω",
+    "pl": "diasózo",
+    "ps": "dee-as-odze'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4982')}>G4982</span>; salvar por completo, i.e. (por implicación o analogía) curar, preservar, rescatar, etc.: <font color='%COLOR_BLUE%'>escapar, llevar (en salvo), salvar, salvo, sanar, sano.</font>"
+  },
+  {
+    "id": "G1296",
+    "ti": "diatagḗ",
+    "le": "διαταγή",
+    "pl": "diatagé",
+    "ps": "dee-at-ag-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1299')}>G1299</span>; arreglo, i.e. institución: <font color='%COLOR_BLUE%'>establecer, disposición.</font>"
+  },
+  {
+    "id": "G1297",
+    "ti": "diátagma",
+    "le": "διάταγμα",
+    "pl": "diátagma",
+    "ps": "dee-at'-ag-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1299')}>G1299</span>; arreglo, i.e. edicto (autoritativo): <font color='%COLOR_BLUE%'>decreto.</font>"
+  },
+  {
+    "id": "G1298",
+    "ti": "diatarássō",
+    "le": "διαταράσσω",
+    "pl": "diatarásso",
+    "ps": "dee-at-ar-as'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5015')}>G5015</span>; perturbar completamente, i.e. agitar (con alarma): <font color='%COLOR_BLUE%'>turbar.</font>"
+  },
+  {
+    "id": "G1299",
+    "ti": "diatássō",
+    "le": "διατάσσω",
+    "pl": "diatásso",
+    "ps": "dee-at-as'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5021')}>G5021</span>; arreglar completamente, i.e. (específicamente) instituir, prescribir, etc.: <font color='%COLOR_BLUE%'>orden, ordenar, poner (en orden), dar (instrucciones), determinar, instrucción, mandar.</font>"
+  },
+  {
+    "id": "G1300",
+    "ti": "diateléō",
+    "le": "διατελέω",
+    "pl": "diateléo",
+    "ps": "dee-at-el-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5055')}>G5055</span>; lograr completamente, i.e. (subj.) persistir: <font color='%COLOR_BLUE%'>permanecer.</font>"
+  },
+  {
+    "id": "G1301",
+    "ti": "diatēréō",
+    "le": "διατηρέω",
+    "pl": "diateréo",
+    "ps": "dee-at-ay-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5083')}>G5083</span>; vigilar completamente, i.e. evadir completamente: <font color='%COLOR_BLUE%'>guardar.</font>"
+  },
+  {
+    "id": "G1302",
+    "ti": "diatí",
+    "le": "διατί",
+    "pl": "diatí",
+    "ps": "dee-at-ee'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5101')}>G5101</span>; ¿por qué causa?, i.e. ¿por qué?: <font color='%COLOR_BLUE%'>¿por qué?.</font>"
+  },
+  {
+    "id": "G1303",
+    "ti": "diatíthemai",
+    "le": "διατίθεμαι",
+    "pl": "diatídsemai",
+    "ps": "dee-at-ith'-em-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; separar, i.e. (figurativamente) disponer, repartir (por asignación, convenio o legado): <font color='%COLOR_BLUE%'>asignar, hacer (pacto), testador.</font>"
+  },
+  {
+    "id": "G1304",
+    "ti": "diatríbō",
+    "le": "διατρίβω",
+    "pl": "diatríbo",
+    "ps": "dee-at-ree'-bo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5147')}>G5147</span>; gastar a través (el tiempo), i.e. permanecer, quedarse: <font color='%COLOR_BLUE%'>quedar, continuar, detener.</font>"
+  },
+  {
+    "id": "G1305",
+    "ti": "diatrophḗ",
+    "le": "διατροφή",
+    "pl": "diatrofé",
+    "ps": "dee-at-rof-ay'",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5142')}>G5142</span>; nutrición: <font color='%COLOR_BLUE%'>sustento.</font>"
+  },
+  {
+    "id": "G1306",
+    "ti": "diaugázō",
+    "le": "διαυγάζω",
+    "pl": "diaugázo",
+    "ps": "dee-ow-gad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G826')}>G826</span>; brillar (a través), i.e. romper (como día): <font color='%COLOR_BLUE%'>esclarecer.</font>"
+  },
+  {
+    "id": "G1307",
+    "ti": "diaphanḗs",
+    "le": "διαφανής",
+    "pl": "diafanés",
+    "ps": "dee-af-an-ace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5316')}>G5316</span>; aparecer a través, i.e. «diáfano»: <font color='%COLOR_BLUE%'>transparente.</font>"
+  },
+  {
+    "id": "G1308",
+    "ti": "diaphérō",
+    "le": "διαφέρω",
+    "pl": "diaféro",
+    "ps": "dee-af-er'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; llevar a través, i.e. (literalmente) transportar; por lo general llevar aparte, i.e. (objectivamente) echar de un lado a otro (figurativamente reportar, informar); subj. «diferir», o (por implicación) superar: <font color='%COLOR_BLUE%'>(de más) valor, diferente, diferir, difundir, llevar, mejor.</font>"
+  },
+  {
+    "id": "G1309",
+    "ti": "diapheúgō",
+    "le": "διαφεύγω",
+    "pl": "diafeúgo",
+    "ps": "dee-af-yoo'-go",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5343')}>G5343</span>; huir a través, i.e. escapar: <font color='%COLOR_BLUE%'>fugar.</font>"
+  },
+  {
+    "id": "G1310",
+    "ti": "diaphēmízō",
+    "le": "διαφημίζω",
+    "pl": "diafemízo",
+    "ps": "dee-af-ay-mid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5345')}>G5345</span>; informar por completo, i.e. divulgar: <font color='%COLOR_BLUE%'>divulgar, fama.</font>"
+  },
+  {
+    "id": "G1311",
+    "ti": "diaphtheírō",
+    "le": "διαφθείρω",
+    "pl": "diafdseíro",
+    "ps": "dee-af-thi'-ro",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1225')}>G1225</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5351')}>G5351</span>; podrir por completo, i.e. arruinar (pasivamente descomponer totalmente, figurativamente pervertir): <font color='%COLOR_BLUE%'>corrupto, desgastar, destruir.</font>"
+  },
+  {
+    "id": "G1312",
+    "ti": "diaphthorá",
+    "le": "διαφθορά",
+    "pl": "diafdsorá",
+    "ps": "dee-af-thor-ah'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1311')}>G1311</span>; descomponer, corromperse: <font color='%COLOR_BLUE%'>corrupción.</font>"
+  },
+  {
+    "id": "G1313",
+    "ti": "diáphoros",
+    "le": "διάφορος",
+    "pl": "diáforos",
+    "ps": "dee-af'-or-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1308')}>G1308</span>; variar; también superar, sobrepasar: <font color='%COLOR_BLUE%'>diferente, diverso, excelente.</font>"
+  },
+  {
+    "id": "G1314",
+    "ti": "diaphylássō",
+    "le": "διαφυλάσσω",
+    "pl": "diafulásso",
+    "ps": "dee-af-oo-las'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5442')}>G5442</span>; guardar completamente, i.e., proteger: <font color='%COLOR_BLUE%'>guardar.</font>"
+  },
+  {
+    "id": "G1315",
+    "ti": "diacheirízomai",
+    "le": "διαχειρίζομαι",
+    "pl": "diajeirízomai",
+    "ps": "dee-akh-i-rid'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5495')}>G5495</span>; manejar completamente, i.e. imponer violentamente las manos sobre: <font color='%COLOR_BLUE%'>matar.</font>"
+  },
+  {
+    "id": "G1316",
+    "ti": "diachōrízomai",
+    "le": "διαχωρίζομαι",
+    "pl": "diajorízomai",
+    "ps": "dee-akh-o-rid'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5563')}>G5563</span>; salir (uno mismo) completamente, i.e. retirarse: <font color='%COLOR_BLUE%'>apartar.</font>"
+  },
+  {
+    "id": "G1317",
+    "ti": "didaktikós",
+    "le": "διδακτικός",
+    "pl": "didaktikós",
+    "ps": "did-ak-tik-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1318')}>G1318</span>; instructivo («didáctico»): <font color='%COLOR_BLUE%'>apto para enseñar.</font>"
+  },
+  {
+    "id": "G1318",
+    "ti": "didaktós",
+    "le": "διδακτός",
+    "pl": "didaktós",
+    "ps": "did-ak-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1321')}>G1321</span>; (subj,) instruido, u (obj.) comunicado por enseñanza: <font color='%COLOR_BLUE%'>enseñado.</font>"
+  },
+  {
+    "id": "G1319",
+    "ti": "didaskalía",
+    "le": "διδασκαλία",
+    "pl": "didaskalía",
+    "ps": "did-as-kal-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1320')}>G1320</span>; instrucción (la función o la información): <font color='%COLOR_BLUE%'>enseñanza, enseñar, doctrina.</font>"
+  },
+  {
+    "id": "G1320",
+    "ti": "didáskalos",
+    "le": "διδάσκαλος",
+    "pl": "didáskalos",
+    "ps": "did-as'-kal-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1321')}>G1321</span>; instructor (generalmente o específicamente): <font color='%COLOR_BLUE%'>doctor, maestro, padre (de familia).</font>"
+  },
+  {
+    "id": "G1321",
+    "ti": "didáskō",
+    "le": "διδάσκω",
+    "pl": "didásko",
+    "ps": "did-as'-ko",
+    "df": "forma prolongada (causativo) de un verbo primario <b>δάω</b> <font color='%COLOR_PURPLE%'>dáo</font> (aprender); enseñar (en la misma aplicación amplia): <font color='%COLOR_BLUE%'>enseñar, instruir, aprender.</font>"
+  },
+  {
+    "id": "G1322",
+    "ti": "didachḗ",
+    "le": "διδαχή",
+    "pl": "didajé",
+    "ps": "did-akh-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1321')}>G1321</span>; instrucción (el acto o la material): <font color='%COLOR_BLUE%'>doctrina, enseñanza, enseñar.</font>"
+  },
+  {
+    "id": "G1323",
+    "ti": "dídrachmon",
+    "le": "δίδραχμον",
+    "pl": "dídrajmon",
+    "ps": "did'-rakh-mon",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1364')}>G1364</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1406')}>G1406</span>; doble dracma (didracma): <font color='%COLOR_BLUE%'>dracma.</font>"
+  },
+  {
+    "id": "G1324",
+    "ti": "Dídymos",
+    "le": "Δίδυμος",
+    "pl": "Dídumos",
+    "ps": "did'-oo-mos",
+    "df": "prolongado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1364')}>G1364</span>; doble, i.e. gemelo; Dídimo, a cristiana: <font color='%COLOR_BLUE%'>Dídimo.</font>"
+  },
+  {
+    "id": "G1325",
+    "ti": "dídōmi",
+    "le": "δίδωμι",
+    "pl": "dídomi",
+    "ps": "did'-o-mee",
+    "df": "forma prolongada de un verbo primario (que se usa como alternado en la mayoría de los tiempos); dar (usado en muy amplia aplicación, propiamente o por implicación, literalmente o figurativamente; grandemente modificado por la conexión): <font color='%COLOR_BLUE%'>conceder, confiar, constituir, dar, dejar (lugar), echar (suertes), entregar, infundir, libertad, ofrecer, permitir, poner, presentar, procurar, producir, repartir, tener (misericordia).</font>"
+  },
+  {
+    "id": "G1326",
+    "ti": "diegeírō",
+    "le": "διεγείρω",
+    "pl": "deigeíro",
+    "ps": "dee-eg-i'-ro",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1453')}>G1453</span>; despertar completamente; i.e. levantar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>levantar, despertar.</font>"
+  },
+  {
+    "id": "G1327",
+    "ti": "diéxodos",
+    "le": "διέξοδος",
+    "pl": "diéxodos",
+    "ps": "dee-ex'-od-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1841')}>G1841</span>; salida a través, i.e. probablemente plaza abierta (de la cual divergen las carreteras): <font color='%COLOR_BLUE%'>(salida del) camino.</font>"
+  },
+  {
+    "id": "G1328",
+    "ti": "diermēneutḗs",
+    "le": "διερμηνευτής",
+    "pl": "diermeneutés",
+    "ps": "dee-er-main-yoo-tace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1329')}>G1329</span>; que explica: <font color='%COLOR_BLUE%'>intérprete.</font>"
+  },
+  {
+    "id": "G1329",
+    "ti": "diermēneúō",
+    "le": "διερμηνεύω",
+    "pl": "diermeneúo",
+    "ps": "dee-er-main-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2059')}>G2059</span>; explicar completamente, por implicación traducir: <font color='%COLOR_BLUE%'>interpretar, declarar, traducir.</font>"
+  },
+  {
+    "id": "G1330",
+    "ti": "diérchomai",
+    "le": "διέρχομαι",
+    "pl": "diérjomai",
+    "ps": "dee-er'-khom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span>; atravesar (literalmente): <font color='%COLOR_BLUE%'>(todas) partes, pasar, recorrer, traspasar, venir, visitar, andar, atravesar, extender, ir.</font>"
+  },
+  {
+    "id": "G1331",
+    "ti": "dierōtáō",
+    "le": "διερωτάω",
+    "pl": "dierotáo",
+    "ps": "dee-er-o-tah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2065')}>G2065</span>; preguntar completamente, i.e. asegurarse mediante interrogación: <font color='%COLOR_BLUE%'>preguntar.</font>"
+  },
+  {
+    "id": "G1332",
+    "ti": "dietḗs",
+    "le": "διετής",
+    "pl": "dietés",
+    "ps": "dee-et-ace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1364')}>G1364</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2094')}>G2094</span>; de dos años (en edad): <font color='%COLOR_BLUE%'>dos años.</font>"
+  },
+  {
+    "id": "G1333",
+    "ti": "dietía",
+    "le": "διετία",
+    "pl": "dietía",
+    "ps": "dee-et-ee'-a",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1332')}>G1332</span>; espacio de dos años (bienio): <font color='%COLOR_BLUE%'>dos años.</font>"
+  },
+  {
+    "id": "G1334",
+    "ti": "diēgéomai",
+    "le": "διηγέομαι",
+    "pl": "diegéomai",
+    "ps": "dee-ayg-eh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2233')}>G2233</span>; relatar completamente: <font color='%COLOR_BLUE%'>contar, decir.</font>"
+  },
+  {
+    "id": "G1335",
+    "ti": "diḗgesis",
+    "le": "διήγεσις",
+    "pl": "diégesis",
+    "ps": "dee-ayg'-es-is",
+    "df": "o <b>διήγησις</b> diégesis; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1334')}>G1334</span>; recital: <font color='%COLOR_BLUE%'>historia.</font>"
+  },
+  {
+    "id": "G1336",
+    "ti": "diēnekḗs",
+    "le": "διηνεκής",
+    "pl": "dienekés",
+    "ps": "dee-ay-nek-es'",
+    "df": "neutro de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de un derivado de un alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; llevado a través, i. e (adverbio con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1519')}>G1519</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3588')}>G3588</span> prefijo) perpetuamente: <font color='%COLOR_BLUE%'>siempre.</font>"
+  },
+  {
+    "id": "G1337",
+    "ti": "dithálassos",
+    "le": "διθάλασσος",
+    "pl": "didsálassos",
+    "ps": "dee-thal'-as-sos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1364')}>G1364</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2281')}>G2281</span>; teniendo dos mares, i.e. brazo de mar con doble salida: <font color='%COLOR_BLUE%'>dos aguas.</font>"
+  },
+  {
+    "id": "G1338",
+    "ti": "diïknéomai",
+    "le": "διϊκνέομαι",
+    "pl": "diiknéomai",
+    "ps": "dee-ik-neh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2425')}>G2425</span>; alcanzar a través, i.e. penetrar: <font color='%COLOR_BLUE%'>penetrar.</font>"
+  },
+  {
+    "id": "G1339",
+    "ti": "diḯstēmi",
+    "le": "διΐστημι",
+    "pl": "diístemi",
+    "ps": "dee-is'-tay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; estar aparte, i.e. (reflexivamente) remover, intervenir: <font color='%COLOR_BLUE%'>separar, (pasar) adelante.</font>"
+  },
+  {
+    "id": "G1340",
+    "ti": "diïschyrízomai",
+    "le": "διϊσχυρίζομαι",
+    "pl": "diisjurízomai",
+    "ps": "dee-is-khoo-rid'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1223')}>G1223</span> y de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2478')}>G2478</span>; afirmar a través, i.e. aseverar: <font color='%COLOR_BLUE%'>afirmar.</font>"
+  },
+  {
+    "id": "G1341",
+    "ti": "dikaiokrisía",
+    "le": "δικαιοκρισία",
+    "pl": "dikaiokrisía",
+    "ps": "dik-ah-yok-ris-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1342')}>G1342</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2920')}>G2920</span>; sentencia justa: <font color='%COLOR_BLUE%'>juicio justo.</font>"
+  },
+  {
+    "id": "G1342",
+    "ti": "díkaios",
+    "le": "δίκαιος",
+    "pl": "díkaios",
+    "ps": "dik'-ah-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1349')}>G1349</span>; equitativo (en carácter o acto); por implicación inocente, santo (absolutamente o relativamente): <font color='%COLOR_BLUE%'>justo.</font>"
+  },
+  {
+    "id": "G1343",
+    "ti": "dikaiosýnē",
+    "le": "δικαιοσύνη",
+    "pl": "dikaiosúne",
+    "ps": "dik-ah-yos-oo'-nay",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1342')}>G1342</span>; equidad (de carácter o acto); específicamente justificación (cristiana): <font color='%COLOR_BLUE%'>justicia, justificación.</font>"
+  },
+  {
+    "id": "G1344",
+    "ti": "dikaióō",
+    "le": "δικαιόω",
+    "pl": "dikaióo",
+    "ps": "dik-ah-yo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1342')}>G1342</span>; rendir (i.e. mostrar o considerar como) justo o inocente: <font color='%COLOR_BLUE%'>justificar.</font>"
+  },
+  {
+    "id": "G1345",
+    "ti": "dikaíōma",
+    "le": "δικαίωμα",
+    "pl": "dikaíoma",
+    "ps": "dik-ah'-yo-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1344')}>G1344</span>; obra equitativa; por implicación estatuto o decisión: <font color='%COLOR_BLUE%'>ordenanza, juicio, justificación, justo.</font>"
+  },
+  {
+    "id": "G1346",
+    "ti": "dikaíōs",
+    "le": "δικαίως",
+    "pl": "dikaíos",
+    "ps": "dik-ah'-yoce",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1342')}>G1342</span> equitativamente: <font color='%COLOR_BLUE%'>justamente, justo.</font>"
+  },
+  {
+    "id": "G1347",
+    "ti": "dikaíōsis",
+    "le": "δικαίωσις",
+    "pl": "dikaíosis",
+    "ps": "dik-ah'-yo-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1344')}>G1344</span>; absolución (por amor de Cristo): <font color='%COLOR_BLUE%'>justificación.</font>"
+  },
+  {
+    "id": "G1348",
+    "ti": "dikastḗs",
+    "le": "δικαστής",
+    "pl": "dikastés",
+    "ps": "dik-as-tace'",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1349')}>G1349</span>; juez, juzgador: <font color='%COLOR_BLUE%'>juez.</font>"
+  },
+  {
+    "id": "G1349",
+    "ti": "díkē",
+    "le": "δίκη",
+    "pl": "díke",
+    "ps": "dee'-kay",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1166')}>G1166</span>; derecho, recto (como auto-evidente), i.e. justicia (el principio, la decisión, o su ejecución): <font color='%COLOR_BLUE%'>castigo, condenación, justicia.</font>"
+  },
+  {
+    "id": "G1350",
+    "ti": "díktyon",
+    "le": "δίκτυον",
+    "pl": "díktuon",
+    "ps": "dik'-too-on",
+    "df": "probablemente de un verbo primario <b>δίκω</b> <font color='%COLOR_PURPLE%'>díko</font> (echar); red (para pescar): <font color='%COLOR_BLUE%'>red.</font>"
+  }
+]

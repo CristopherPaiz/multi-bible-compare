@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G4601",
+    "ti": "sigáō",
+    "le": "σιγάω",
+    "pl": "sigáo",
+    "ps": "see-gah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4602')}>G4602</span>; guardar silencio (transitivamente o intransitivamente): <font color='%COLOR_BLUE%'>callar, mantener oculto.</font>"
+  },
+  {
+    "id": "G4602",
+    "ti": "sigḗ",
+    "le": "σιγή",
+    "pl": "sigé",
+    "ps": "see-gay'",
+    "df": "aparentemente de <b>σίζω</b> <font color='%COLOR_PURPLE%'>sízo</font> (sisear, i.e. hacer callar); silencio: <font color='%COLOR_BLUE%'>silencio.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4623')}>G4623</span>."
+  },
+  {
+    "id": "G4603",
+    "ti": "sidḗreos",
+    "le": "σιδήρεος",
+    "pl": "sidéreos",
+    "ps": "sid-ay'-reh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4604')}>G4604</span>; hecho de hierro: <font color='%COLOR_BLUE%'>de hierro, hierro.</font>"
+  },
+  {
+    "id": "G4604",
+    "ti": "sídēros",
+    "le": "σίδηρος",
+    "pl": "síderos",
+    "ps": "sid'-ay-ros",
+    "df": "de derivación incierta; hierro: <font color='%COLOR_BLUE%'>hierro.</font>"
+  },
+  {
+    "id": "G4605",
+    "ti": "Sidṓn",
+    "le": "Σιδών",
+    "pl": "Sidón",
+    "ps": "sid-one'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6721')}>H6721</span>]; Sidón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Sidón.</font>"
+  },
+  {
+    "id": "G4606",
+    "ti": "Sidṓnios",
+    "le": "Σιδώνιος",
+    "pl": "sidónios",
+    "ps": "sid-o'-nee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4605')}>G4605</span>; sidonio, i.e. habitante de Sidón: <font color='%COLOR_BLUE%'>de Sidón.</font>"
+  },
+  {
+    "id": "G4607",
+    "ti": "sikários",
+    "le": "σικάριος",
+    "pl": "sikários",
+    "ps": "sik-ar'-ee-os",
+    "df": "de origen latín; hombre de daga o asesino; a filibustero (judío fanático proscrito por los romanos): <font color='%COLOR_BLUE%'>sicario.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5406')}>G5406</span>."
+  },
+  {
+    "id": "G4608",
+    "ti": "síkera",
+    "le": "σίκερα",
+    "pl": "síkera",
+    "ps": "sik'-er-ah",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7941')}>H7941</span>]; un intoxicante, i.e. licor fermentado intensamente: <font color='%COLOR_BLUE%'>sidra.</font>"
+  },
+  {
+    "id": "G4609",
+    "ti": "Sílas",
+    "le": "Σίλας",
+    "pl": "Sílas",
+    "ps": "see'-las",
+    "df": "contracción de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4610')}>G4610</span>; Silas, un cristiano: <font color='%COLOR_BLUE%'>Silas.</font>"
+  },
+  {
+    "id": "G4610",
+    "ti": "Silouanós",
+    "le": "Σιλουανός",
+    "pl": "Silouanós",
+    "ps": "sil-oo-an-os'",
+    "df": "de origen latín; «silvano»; Silvano, un cristiano: <font color='%COLOR_BLUE%'>Silvano.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4609')}>G4609</span>."
+  },
+  {
+    "id": "G4611",
+    "ti": "Silōám",
+    "le": "Σιλωάμ",
+    "pl": "Siloám",
+    "ps": "sil-o-am'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7975')}>H7975</span>]; Siloé (i.e. Shiloaj), un estanque en Jerusalén: <font color='%COLOR_BLUE%'>Siloé.</font>"
+  },
+  {
+    "id": "G4612",
+    "ti": "simikínthion",
+    "le": "σιμικίνθιον",
+    "pl": "simikíndsion",
+    "ps": "sim-ee-kin'-thee-on",
+    "df": "de origen latín; semicinto o media faja, i.e. cubierta angosta (delantal): <font color='%COLOR_BLUE%'>delantal.</font>"
+  },
+  {
+    "id": "G4613",
+    "ti": "Símōn",
+    "le": "Σίμων",
+    "pl": "Símon",
+    "ps": "see'-mone",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8095')}>H8095</span>]; Simón, nombre de nueve israelitas: <font color='%COLOR_BLUE%'>Simón.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4826')}>G4826</span>."
+  },
+  {
+    "id": "G4614",
+    "ti": "Sinâ",
+    "le": "Σινᾶ",
+    "pl": "Siná",
+    "ps": "see-nah'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5514')}>H5514</span>]; Sina (i.e. Sinaí), montaña en Arabia: <font color='%COLOR_BLUE%'>Sinaí.</font>"
+  },
+  {
+    "id": "G4615",
+    "ti": "sínapi",
+    "le": "σίναπι",
+    "pl": "sínapi",
+    "ps": "sin'-ap-ee",
+    "df": "tal vez de <b>σίνομαι</b> <font color='%COLOR_PURPLE%'>sínomai</font> (lastimar, i.e. aguijonear); mostaza (la planta): <font color='%COLOR_BLUE%'>mostaza.</font>"
+  },
+  {
+    "id": "G4616",
+    "ti": "sindṓn",
+    "le": "σινδών",
+    "pl": "sindón",
+    "ps": "sin-done'",
+    "df": "de origen incierto (tal vez extranjero); sábana, i.e. lino blanqueado (la tela o el vestido hecho con ella): <font color='%COLOR_BLUE%'>sábana.</font>"
+  },
+  {
+    "id": "G4617",
+    "ti": "siniázō",
+    "le": "σινιάζω",
+    "pl": "siniázo",
+    "ps": "sin-ee-ad'-zo",
+    "df": "de <b>σινίον</b> <font color='%COLOR_PURPLE%'>siníon</font>, (cedazo); zarandear (figurativamente): <font color='%COLOR_BLUE%'>zarandear.</font><p></p><b>σῖτα</b> <font color='%COLOR_PURPLE%'>síta.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4621')}>G4621</span>."
+  },
+  {
+    "id": "G4618",
+    "ti": "siteutós",
+    "le": "σιτευτός",
+    "pl": "siteutós",
+    "ps": "sit-yoo-ros'",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4621')}>G4621</span>; alimentado de grano, i.e. engordado: <font color='%COLOR_BLUE%'>gordo.</font>"
+  },
+  {
+    "id": "G4619",
+    "ti": "sitistós",
+    "le": "σιτιστός",
+    "pl": "sitistós",
+    "ps": "sit-is-tos'",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4621')}>G4621</span>; con grano, i.e. engordado: <font color='%COLOR_BLUE%'>engordar un animal.</font>"
+  },
+  {
+    "id": "G4620",
+    "ti": "sitómetron",
+    "le": "σιτόμετρον",
+    "pl": "sitómetron",
+    "ps": "sit-om'-et-ron",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4621')}>G4621</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3358')}>G3358</span>; medida de grano, i.e. (por implicación) ración (porción asignada de alimento): <font color='%COLOR_BLUE%'>ración.</font>"
+  },
+  {
+    "id": "G4621",
+    "ti": "sîtos",
+    "le": "σῖτος",
+    "pl": "sítos",
+    "ps": "see'-tos",
+    "df": "plural irregular neutro <b>σῖτα</b> <font color='%COLOR_PURPLE%'>síta</font>; de derivación incierta; grano, específicamente trigo: <font color='%COLOR_BLUE%'>trigo, grano.</font>"
+  },
+  {
+    "id": "G4622",
+    "ti": "Siṓn",
+    "le": "Σιών",
+    "pl": "Sión",
+    "ps": "see-own'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6726')}>H6726</span>]; Sion, colina de Jerusalén; figurativamente la iglesia (militante o triunfante): <font color='%COLOR_BLUE%'>Sion.</font>"
+  },
+  {
+    "id": "G4623",
+    "ti": "siōpáō",
+    "le": "σιωπάω",
+    "pl": "siopáo",
+    "ps": "see-o-pah'-o",
+    "df": "de <b>σιωπή</b> <font color='%COLOR_PURPLE%'>siopé</font>, (silencio, i.e. hacer callar; propiamente mudez, i.e. quietud involuntaria, o inhabilidad para hablar; y por eso diferente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4602')}>G4602</span>, que es más bien un rehusar voluntario o indisposición para hablar, aunque los términos a menudo se usan como sinónimos); quedar mudo (pero no sordo también, como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2974')}>G2974</span> propiamente); figurativamente estar en calma (como agua tranquila): <font color='%COLOR_BLUE%'>callar, quedar mudo.</font>"
+  },
+  {
+    "id": "G4624",
+    "ti": "skandalízō",
+    "le": "σκανδαλίζω",
+    "pl": "skandalízo",
+    "ps": "skan-dal-id'-zo",
+    "df": "(«escandalizar»); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4625')}>G4625</span>; entrampar, i.e. hacer tropezar (figurativamente tropezar [transitivamente] o incitar a pecar, a la apostasía o desagrado): <font color='%COLOR_BLUE%'>escandalizar, hacer caer, ofender, poner tropiezo, tropiezo.</font>"
+  },
+  {
+    "id": "G4625",
+    "ti": "skándalon",
+    "le": "σκάνδαλον",
+    "pl": "skándalon",
+    "ps": "skan'-dal-on",
+    "df": "(«escándalo»); probablemente de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2578')}>G2578</span>; rama para trampa (arbusto encorvado), i.e. trampa (figurativamente causa de desagrado o pecado): <font color='%COLOR_BLUE%'>ocasión de tropiezo, caer, caída.</font>"
+  },
+  {
+    "id": "G4626",
+    "ti": "skáptō",
+    "le": "σκάπτω",
+    "pl": "skápto",
+    "ps": "skap'-to",
+    "df": "aparentemente verbo primario; cavar, hurgar: <font color='%COLOR_BLUE%'>ahondar, cavar.</font>"
+  },
+  {
+    "id": "G4627",
+    "ti": "skáphē",
+    "le": "σκάφη",
+    "pl": "skáfe",
+    "ps": "skaf'-ay",
+    "df": "«esquife» (como si fuera cavado), o bote (llevado a bordo de un barco grande para llegar a tierra): <font color='%COLOR_BLUE%'>esquife.</font>"
+  },
+  {
+    "id": "G4628",
+    "ti": "skélos",
+    "le": "σκέλος",
+    "pl": "skélos",
+    "ps": "skel'-os",
+    "df": "aparentemente de <b>σκέλλω</b> <font color='%COLOR_PURPLE%'>skéllo</font>, (secar; mediante la idea de flacura); pierna (como larga y flaca): <font color='%COLOR_BLUE%'>pierna.</font>"
+  },
+  {
+    "id": "G4629",
+    "ti": "sképasma",
+    "le": "σκέπασμα",
+    "pl": "sképasma",
+    "ps": "skep'-as-mah",
+    "df": "de un derivado de <b>σκέπας</b> <font color='%COLOR_PURPLE%'>sképas</font> (cubierta; tal vez similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4649')}>G4649</span>, mediante la idea de notorio); vestido, ropa: <font color='%COLOR_BLUE%'>abrigo.</font>"
+  },
+  {
+    "id": "G4630",
+    "ti": "Skeuâs",
+    "le": "Σκευᾶς",
+    "pl": "Skeuás",
+    "ps": "skyoo-as'",
+    "df": "aparentemente de origen latín; zurdo; Esceva, un israelita: <font color='%COLOR_BLUE%'>Esceva.</font>"
+  },
+  {
+    "id": "G4631",
+    "ti": "skeuḗ",
+    "le": "σκευή",
+    "pl": "skeué",
+    "ps": "skyoo-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4632')}>G4632</span>; mobiliario, i.e. aparejo extra: <font color='%COLOR_BLUE%'>aparejo.</font>"
+  },
+  {
+    "id": "G4632",
+    "ti": "skeûos",
+    "le": "σκεῦος",
+    "pl": "skeúos",
+    "ps": "skyoo'-os",
+    "df": "de afín. incierta; vaso, vasija, implemento, equipo o aparato (literalmente o figurativamente [específicamente la esposa como contribuyendo a la utilidad del esposo]): <font color='%COLOR_BLUE%'>bienes, esposa, lienzo, utensilio, vasija, vaso, vela.</font>"
+  },
+  {
+    "id": "G4633",
+    "ti": "skēnḗ",
+    "le": "σκηνή",
+    "pl": "skené",
+    "ps": "skay-nay'",
+    "df": "aparentemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4632')}>G4632</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4639')}>G4639</span>; tienda o choza de tela (literalmente o figurativamente): <font color='%COLOR_BLUE%'>tabernáculo, tienda, enramada, morada.</font>"
+  },
+  {
+    "id": "G4634",
+    "ti": "skēnopēgía",
+    "le": "σκηνοπηγία",
+    "pl": "skenopegía",
+    "ps": "skay-nop-ayg-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4636')}>G4636</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4078')}>G4078</span>; Fiesta de los Tabernáculos (llamada así por la costumbre de fabricar chozas como viviendas temporales): <font color='%COLOR_BLUE%'>tabernáculo.</font>"
+  },
+  {
+    "id": "G4635",
+    "ti": "skēnopoiós",
+    "le": "σκηνοποιός",
+    "pl": "skenopoiós",
+    "ps": "skay-nop-oy-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4633')}>G4633</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4160')}>G4160</span>; fabricante de tiendas: <font color='%COLOR_BLUE%'>hacer tienda.</font>"
+  },
+  {
+    "id": "G4636",
+    "ti": "skēnos",
+    "le": "σκῆνος",
+    "pl": "skénos",
+    "ps": "skay'-nos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4633')}>G4633</span>; choza o residencia temporal, i.e. (figurativamente) el cuerpo humano (como morada del espíritu): <font color='%COLOR_BLUE%'>tabernáculo.</font>"
+  },
+  {
+    "id": "G4637",
+    "ti": "skēnóō",
+    "le": "σκηνόω",
+    "pl": "skenóo",
+    "ps": "skay-no'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4636')}>G4636</span>; acampar, i.e. (figurativamente) ocupar (como una mansión) o (específicamente) residir (como Dios lo hizo en el tabernáculo de la antigüedad, símbolo de protección y comunión): <font color='%COLOR_BLUE%'>extender su tabernáculo, habitar, morar.</font>"
+  },
+  {
+    "id": "G4638",
+    "ti": "skḗnōma",
+    "le": "σκήνωμα",
+    "pl": "skénoma",
+    "ps": "skay'-no-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4637')}>G4637</span>; campamento, i.e. (figurativamente) el templo (como residencia de Dios), el cuerpo (como albergue del alma): <font color='%COLOR_BLUE%'>cuerpo, tabernáculo.</font>"
+  },
+  {
+    "id": "G4639",
+    "ti": "skiá",
+    "le": "σκιά",
+    "pl": "skía",
+    "ps": "skee'-ah",
+    "df": "aparentemente palabra primaria; «sombra» (literalmente o figurativamente [tinieblas de error o presagio]): <font color='%COLOR_BLUE%'>sombra.</font>"
+  },
+  {
+    "id": "G4640",
+    "ti": "skirtáō",
+    "le": "σκιρτάω",
+    "pl": "skirtáo",
+    "ps": "skeer-tah'-o",
+    "df": "afín a <b>σκαίρω</b> <font color='%COLOR_PURPLE%'>skaíro</font>, (saltar); saltar, i.e. moverse de gozo (como el despertarse de un feto): <font color='%COLOR_BLUE%'>saltar.</font>"
+  },
+  {
+    "id": "G4641",
+    "ti": "sklērokardía",
+    "le": "σκληροκαρδία",
+    "pl": "sklerokardía",
+    "ps": "sklay-rok-ar-dee'-ah",
+    "df": "femenino de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4642')}>G4642</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2588')}>G2588</span>; dureza de corazón, i.e. (específicamente) destitución de percepción (espiritual): <font color='%COLOR_BLUE%'>dureza de corazón.</font>"
+  },
+  {
+    "id": "G4642",
+    "ti": "sklērós",
+    "le": "σκληρός",
+    "pl": "sklerós",
+    "ps": "sklay-ros'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4628')}>G4628</span>; seco, i.e. dura o firme (figurativamente riguroso, severo): <font color='%COLOR_BLUE%'>impetuoso, dura cosa.</font>"
+  },
+  {
+    "id": "G4643",
+    "ti": "sklērótēs",
+    "le": "σκληρότης",
+    "pl": "sklerótes",
+    "ps": "sklay-rot'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4642')}>G4642</span>; encallecimiento, i.e. (figurativamente) obstinación: <font color='%COLOR_BLUE%'>dureza.</font>"
+  },
+  {
+    "id": "G4644",
+    "ti": "sklērotráchēlos",
+    "le": "σκληροτράχηλος",
+    "pl": "sklerotrájelos",
+    "ps": "sklay-rot-rakh'-ay-los",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4642')}>G4642</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5137')}>G5137</span>; endurecido, i.e. (figurativamente) obstinado: <font color='%COLOR_BLUE%'>duro de cerviz.</font>"
+  },
+  {
+    "id": "G4645",
+    "ti": "sklērýnō",
+    "le": "σκληρύνω",
+    "pl": "sklerúno",
+    "ps": "sklay-roo'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4642')}>G4642</span>; endurecer, i.e. (figurativamente) hacer obstinado: <font color='%COLOR_BLUE%'>endurecer.</font>"
+  },
+  {
+    "id": "G4646",
+    "ti": "skoliós",
+    "le": "σκολιός",
+    "pl": "skoliós",
+    "ps": "skol-ee-os'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4628')}>G4628</span>; retorcido, i.e. sinuoso; figurativamente perverso: <font color='%COLOR_BLUE%'>difícil de soportar, maligno, perverso, torcido.</font>"
+  },
+  {
+    "id": "G4647",
+    "ti": "skólops",
+    "le": "σκόλοψ",
+    "pl": "skólops",
+    "ps": "skol'-ops",
+    "df": "tal vez de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4628')}>G4628</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span>; seco al frente, i.e. punta o púa (figurativamente fastidio o discapacidad corporal): <font color='%COLOR_BLUE%'>aguijón.</font>"
+  },
+  {
+    "id": "G4648",
+    "ti": "skopéō",
+    "le": "σκοπέω",
+    "pl": "skopéo",
+    "ps": "skop-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4649')}>G4649</span>; apuntar a (espiar), i.e. (figurativamente) considerar: <font color='%COLOR_BLUE%'>considerar, fijarse, mirar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span>."
+  },
+  {
+    "id": "G4649",
+    "ti": "skopós",
+    "le": "σκοπός",
+    "pl": "skopos",
+    "ps": "skop-os'",
+    "df": "(«-scopio»); de <b>σκέπτομαι</b> <font color='%COLOR_PURPLE%'>sképtomai</font> (de mirar acerca [«escéptico»]; tal vez afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4626')}>G4626</span> mediante la idea de ocultar; Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4629')}>G4629</span>); un reloj (guardia o explorador), i.e. (por implicación) un guardameta: <font color='%COLOR_BLUE%'>meta.</font>"
+  },
+  {
+    "id": "G4650",
+    "ti": "skorpízō",
+    "le": "σκορπίζω",
+    "pl": "skorpízo",
+    "ps": "skor-pid'-zo",
+    "df": "aparentemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4651')}>G4651</span> (mediante la idea de penetrar); disipar, i.e. (figurativamente) hacer huir, despediciar, ser liberal: <font color='%COLOR_BLUE%'>esparcir, arrebatar, desparramar, dispersar.</font>"
+  },
+  {
+    "id": "G4651",
+    "ti": "skorpíos",
+    "le": "σκορπίος",
+    "pl": "skorpíos",
+    "ps": "skor-pee'-os",
+    "df": "probablemente de <b>σκέρπω</b> <font color='%COLOR_PURPLE%'>skérpo</font>, una palabra obsoleta (tal vez fortificado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4649')}>G4649</span>, y significa perforar); «escorpión» (por su aguijón): <font color='%COLOR_BLUE%'>escorpión.</font>"
+  },
+  {
+    "id": "G4652",
+    "ti": "skoteinós",
+    "le": "σκοτεινός",
+    "pl": "skoteinós",
+    "ps": "skot-i-nos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4655')}>G4655</span>; opaco, i.e. (figurativamente) ensombrecido: <font color='%COLOR_BLUE%'>tiniebla, en tinieblas.</font>"
+  },
+  {
+    "id": "G4653",
+    "ti": "skotía",
+    "le": "σκοτία",
+    "pl": "skotía",
+    "ps": "skot-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4655')}>G4655</span>; penumbra, oscuridad (literalmente o figurativamente): <font color='%COLOR_BLUE%'>oscuro, tiniebla.</font>"
+  },
+  {
+    "id": "G4654",
+    "ti": "skotízō",
+    "le": "σκοτίζω",
+    "pl": "skotízo",
+    "ps": "skot-id-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4655')}>G4655</span>; oscurecer (literalmente o figurativamente): <font color='%COLOR_BLUE%'>oscurecer, entenebrecer.</font>"
+  },
+  {
+    "id": "G4655",
+    "ti": "skótos",
+    "le": "σκότος",
+    "pl": "skótos",
+    "ps": "skot'-os",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4639')}>G4639</span>; sombra, i.e. oscuridad (literalmente o figurativamente): <font color='%COLOR_BLUE%'>oscuridad, tiniebla.</font>"
+  },
+  {
+    "id": "G4656",
+    "ti": "skotóō",
+    "le": "σκοτόω",
+    "pl": "skotóo",
+    "ps": "skot-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4655')}>G4655</span>; oscurecer o cegar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>cubrirse de tinieblas.</font>"
+  },
+  {
+    "id": "G4657",
+    "ti": "skýbalon",
+    "le": "σκύβαλον",
+    "pl": "skúbalon",
+    "ps": "skoo'-bal-on",
+    "df": "neutro de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1519')}>G1519</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2965')}>G2965</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; lo que se tira a los perros, i.e. desechos (inmundicia): <font color='%COLOR_BLUE%'>basura.</font>"
+  },
+  {
+    "id": "G4658",
+    "ti": "Skýthēs",
+    "le": "Σκύθης",
+    "pl": "Skúdses",
+    "ps": "skoo'-thace",
+    "df": "probablemente de origen extranjero; escita, i.e. (por implicación) salvaje: <font color='%COLOR_BLUE%'>escita.</font>"
+  },
+  {
+    "id": "G4659",
+    "ti": "skythrōpós",
+    "le": "σκυθρωπός",
+    "pl": "skudsropós",
+    "ps": "skoo-thro-pos'",
+    "df": "de <b>σκυθρός</b> <font color='%COLOR_PURPLE%'>skudsrós</font>, (enfurruñado) y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span>; de semblante iracundo, i.e. alicaído o demostrando una apariencia lamentable: <font color='%COLOR_BLUE%'>triste, austero.</font>"
+  },
+  {
+    "id": "G4660",
+    "ti": "skýllō",
+    "le": "σκύλλω",
+    "pl": "skúlo",
+    "ps": "skool'-lo",
+    "df": "aparentemente verbo primario; vejar, i.e. (figurativamente) hostigar, acosar: <font color='%COLOR_BLUE%'>molestar.</font>"
+  },
+  {
+    "id": "G4661",
+    "ti": "skŷlon",
+    "le": "σκῦλον",
+    "pl": "skúlon",
+    "ps": "skoo'-lon",
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4660')}>G4660</span>; algo arrebatado (como una piel), i.e. botín: <font color='%COLOR_BLUE%'>botín.</font>"
+  },
+  {
+    "id": "G4662",
+    "ti": "skōlēkóbrōtos",
+    "le": "σκωληκόβρωτος",
+    "pl": "skolekóbrotos",
+    "ps": "sko-lay-kob'-ro-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4663')}>G4663</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G977')}>G977</span>; comido de gusanos, i.e. enfermo con gusanos: <font color='%COLOR_BLUE%'>comido de gusanos.</font>"
+  },
+  {
+    "id": "G4663",
+    "ti": "skṓlēx",
+    "le": "σκώληξ",
+    "pl": "skólex",
+    "ps": "sko'-lakes",
+    "df": "de derivación incierta; gusano: <font color='%COLOR_BLUE%'>gusano.</font>"
+  },
+  {
+    "id": "G4664",
+    "ti": "smarágdinos",
+    "le": "σμαράγδινος",
+    "pl": "smarágdinos",
+    "ps": "smar-ag'-dee-nos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4665')}>G4665</span>; consistente de esmeralda: <font color='%COLOR_BLUE%'>esmeralda.</font>"
+  },
+  {
+    "id": "G4665",
+    "ti": "smáragdos",
+    "le": "σμάραγδος",
+    "pl": "smáragdos",
+    "ps": "smar'-ag-dos",
+    "df": "de derivación incierta; esmeralda o gema verde de ese nombre: <font color='%COLOR_BLUE%'>esmeralda.</font>"
+  },
+  {
+    "id": "G4666",
+    "ti": "smýrna",
+    "le": "σμύρνα",
+    "pl": "smúrna",
+    "ps": "smoor'-nah",
+    "df": "aparentemente fortificado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3464')}>G3464</span>; mirra: <font color='%COLOR_BLUE%'>mirra.</font>"
+  },
+  {
+    "id": "G4667",
+    "ti": "Smýrna",
+    "le": "Σμύρνα",
+    "pl": "Smúrna",
+    "ps": "smoor'-nah",
+    "df": "lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4666')}>G4666</span>; Esmirna, un lugar en Asia Menor: <font color='%COLOR_BLUE%'>Esmirna.</font>"
+  },
+  {
+    "id": "G4668",
+    "ti": "Smyrnaîos",
+    "le": "Σμυρναῖος",
+    "pl": "smurnaíos",
+    "ps": "smoor-nah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4667')}>G4667</span>; habitante de Esmirna: <font color='%COLOR_BLUE%'>de Esmirna.</font>"
+  },
+  {
+    "id": "G4669",
+    "ti": "smyrnízō",
+    "le": "σμυρνίζω",
+    "pl": "smurnízo",
+    "ps": "smoor-nid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4667')}>G4667</span>; tinturar con mirra, i.e. amargar (como narcótico): <font color='%COLOR_BLUE%'>mezclado con mirra.</font>"
+  },
+  {
+    "id": "G4670",
+    "ti": "Sódoma",
+    "le": "Σόδομα",
+    "pl": "Sódoma",
+    "ps": "sod'-om-ah",
+    "df": "plural de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5467')}>H5467</span>]; Sodoma, un lugar en Palestina: <font color='%COLOR_BLUE%'>Sodoma.</font>"
+  },
+  {
+    "id": "G4671",
+    "ti": "soí",
+    "le": "σοί",
+    "pl": "soí",
+    "ps": "soy",
+    "df": "dativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4771')}>G4771</span>: <font color='%COLOR_BLUE%'>a ti.</font>"
+  },
+  {
+    "id": "G4672",
+    "ti": "Solomṓn",
+    "le": "Σολομών",
+    "pl": "Solomón",
+    "ps": "sol-om-one'",
+    "df": " o <b>Σολομῶν</b>de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8010')}>H8010</span>]; Salomón hijo de David: <font color='%COLOR_BLUE%'>Salomón.</font>"
+  },
+  {
+    "id": "G4673",
+    "ti": "sorós",
+    "le": "σορός",
+    "pl": "sorós",
+    "ps": "sor-os'",
+    "df": "probablemente similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4987')}>G4987</span>; recipiente funeral (urna, ataúd), i.e. (por analogía) féretro: <font color='%COLOR_BLUE%'>féretro.</font>"
+  },
+  {
+    "id": "G4674",
+    "ti": "sós",
+    "le": "σός",
+    "pl": "sós",
+    "ps": "sos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4771')}>G4771</span>: <font color='%COLOR_BLUE%'>tuyo, tu.</font>"
+  },
+  {
+    "id": "G4675",
+    "ti": "soû",
+    "le": "σοῦ",
+    "pl": "sou",
+    "ps": "soo",
+    "df": "genitivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4771')}>G4771</span>; de ti, tuyo: <font color='%COLOR_BLUE%'>ti, tuyo, contigo.</font>"
+  },
+  {
+    "id": "G4676",
+    "ti": "soudárion",
+    "le": "σουδάριον",
+    "pl": "soudárion",
+    "ps": "soo-dar'-ee-on",
+    "df": "de origen latín; sudario, i.e. toalla (para limpiar el sudor de la cara, o envolver la cara de un cadáver): <font color='%COLOR_BLUE%'>paño, pañuelo, sudario.</font>"
+  },
+  {
+    "id": "G4677",
+    "ti": "Sousánna",
+    "le": "Σουσάννα",
+    "pl": "Sousánna",
+    "ps": "soo-san'-nah",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7799')}>H7799</span> femenino]; lirio; Susana, una israelita: <font color='%COLOR_BLUE%'>Susana.</font>"
+  },
+  {
+    "id": "G4678",
+    "ti": "sophía",
+    "le": "σοφία",
+    "pl": "sofía",
+    "ps": "sof-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4680')}>G4680</span>; sabiduría (más elevada o más baja, mundana o espiritual): <font color='%COLOR_BLUE%'>sabiamente, sabiduría.</font>"
+  },
+  {
+    "id": "G4679",
+    "ti": "sophízō",
+    "le": "σοφίζω",
+    "pl": "sofízo",
+    "ps": "sof-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4680')}>G4680</span>; hacer sabio; en aceptación siniestra, formar «sofismas», i.e. continuar un error plausible: <font color='%COLOR_BLUE%'>hacer sabio, artificiosa.</font>"
+  },
+  {
+    "id": "G4680",
+    "ti": "sophós",
+    "le": "σοφός",
+    "pl": "sofós",
+    "ps": "sof-os'",
+    "df": "afín a <b>σαφής</b> <font color='%COLOR_PURPLE%'>safés</font>, (claro); sabio (en una aplicación más general): <font color='%COLOR_BLUE%'>sabio.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5429')}>G5429</span>."
+  },
+  {
+    "id": "G4681",
+    "ti": "Spanía",
+    "le": "Σπανία",
+    "pl": "Spanía",
+    "ps": "span-ee'-ah",
+    "df": "probablemente de origen extranjero; España, una región de Europa: <font color='%COLOR_BLUE%'>España.</font>"
+  },
+  {
+    "id": "G4682",
+    "ti": "sparássō",
+    "le": "σπαράσσω",
+    "pl": "sparásso",
+    "ps": "spar-as'-so",
+    "df": "prolongado de <b>σπαίρω</b> <font color='%COLOR_PURPLE%'>spaíro</font> (boquear; aparentemente fortificado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4685')}>G4685</span>, mediante la idea de una contracción espasmódica); retorcerse, i.e. con convulsiones de epilepsia: <font color='%COLOR_BLUE%'>sacudir con violencia.</font>"
+  },
+  {
+    "id": "G4683",
+    "ti": "sparganóō",
+    "le": "σπαργανόω",
+    "pl": "sparganóo",
+    "ps": "spar-gan-o'-o",
+    "df": "de <b>σπάργανον</b> <font color='%COLOR_PURPLE%'>spárganon</font>, (tira, franja; de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4682')}>G4682</span> significa atar o envolver con tiras); fajar (a un infante según la costumbre oriental): <font color='%COLOR_BLUE%'>envolver en pañales.</font>"
+  },
+  {
+    "id": "G4684",
+    "ti": "spataláō",
+    "le": "σπαταλάω",
+    "pl": "spataláo",
+    "ps": "spat-al-ah'-o",
+    "df": "de <b>σπατάλη</b> <font color='%COLOR_PURPLE%'>spatále</font>, (lujo); de ser voluptuoso: <font color='%COLOR_BLUE%'>disoluto, entregarse a los placeres.</font>"
+  },
+  {
+    "id": "G4685",
+    "ti": "spáō",
+    "le": "σπάω",
+    "pl": "spáo",
+    "ps": "spah'-o",
+    "df": "verbo primario; sacar: <font color='%COLOR_BLUE%'>sacar.</font>"
+  },
+  {
+    "id": "G4686",
+    "ti": "speîra",
+    "le": "σπεῖρα",
+    "pl": "speíra",
+    "ps": "spi'-rah",
+    "df": "de origen latín inmedia, pero a la larga derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span> en el sentido de su cognado <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1507')}>G1507</span>; bobina («espiral»), i.e. (figurativamente) masa de hombres (una cohorte militar romano; también [por analogía] una escuadra de porteros levíticos): <font color='%COLOR_BLUE%'>compañía.</font>"
+  },
+  {
+    "id": "G4687",
+    "ti": "speírō",
+    "le": "σπείρω",
+    "pl": "speíro",
+    "ps": "spi'-ro",
+    "df": "probablemente fortificado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4685')}>G4685</span> (mediante la idea de extender); esparcir, i.e. sembrar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>sembrador, sembrar.</font>"
+  },
+  {
+    "id": "G4688",
+    "ti": "spekoulátōr",
+    "le": "σπεκουλάτωρ",
+    "pl": "spekoulátor",
+    "ps": "spek-oo-lat'-ore",
+    "df": "de origen latín; especulador, i.e. explorador militar (espía o [por extensión] guardaespalda): <font color='%COLOR_BLUE%'>guardia.</font>"
+  },
+  {
+    "id": "G4689",
+    "ti": "spéndō",
+    "le": "σπένδω",
+    "pl": "spéndo",
+    "ps": "spen'-do",
+    "df": "aparentemente verbo primario; derramar como libación, i.e. (figurativamente) dedicar (la vida o la sangre de uno, como sacrificio) (gastar): <font color='%COLOR_BLUE%'>sacrificar, derramar en libación.</font>"
+  },
+  {
+    "id": "G4690",
+    "ti": "spérma",
+    "le": "σπέρμα",
+    "pl": "spérma",
+    "ps": "sper'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4687')}>G4687</span>; algo sembrado, i.e. derramado (incluído la «esperma» masculina); por implicación descendencia; específicamente remanente (figurativamente como si se guardara para sembrar): <font color='%COLOR_BLUE%'>linaje, descendencia, descendiente, semilla, simiente.</font>"
+  },
+  {
+    "id": "G4691",
+    "ti": "spermológos",
+    "le": "σπερμολόγος",
+    "pl": "spermológos",
+    "ps": "sper-mol-og'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4690')}>G4690</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3004')}>G3004</span>; recogedor de semilla (como el cuervo), i.e. (figurativamente) gorrón, aprovechador (específicamente chismoso o palabrero): <font color='%COLOR_BLUE%'>palabrero.</font>"
+  },
+  {
+    "id": "G4692",
+    "ti": "speúdō",
+    "le": "σπεύδω",
+    "pl": "speúdo",
+    "ps": "spyoo'-do",
+    "df": "probablemente fortificado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4228')}>G4228</span>; acelerar, i.e. urgir o instar (diligentemente o fervientemente); por implicación esperar con ansia: <font color='%COLOR_BLUE%'>apresuradamente, apresurar, dar prisa, prontamente.</font>"
+  },
+  {
+    "id": "G4693",
+    "ti": "spḗlaion",
+    "le": "σπήλαιον",
+    "pl": "spélaion",
+    "ps": "spay'-lah-yon",
+    "df": "neutro de un derivado presunto de <b>σπέος</b> <font color='%COLOR_PURPLE%'>spéos</font> (gruta); caverna; por implicación escondite o lugar de reposo: <font color='%COLOR_BLUE%'>cueva.</font>"
+  },
+  {
+    "id": "G4694",
+    "ti": "spilás",
+    "le": "σπιλάς",
+    "pl": "spilás",
+    "ps": "spee-las'",
+    "df": "de derivación incierta; precipicio o acantilado de roca en el mar: <font color='%COLOR_BLUE%'>mancha [por confusión con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4696')}>G4696</span>].</font>"
+  },
+  {
+    "id": "G4695",
+    "ti": "spilóō",
+    "le": "σπιλόω",
+    "pl": "spilóo",
+    "ps": "spee-lo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4696')}>G4696</span>; manchar o ensuciar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>contaminar, inmundicia.</font>"
+  },
+  {
+    "id": "G4696",
+    "ti": "spílos",
+    "le": "σπίλος",
+    "pl": "spílos",
+    "ps": "spee'-los",
+    "df": "de derivación incierta; mancha o defecto, i.e. (figurativamente) defecto, desgracia: <font color='%COLOR_BLUE%'>mancha..</font>"
+  },
+  {
+    "id": "G4697",
+    "ti": "splanchnízomai",
+    "le": "σπλαγχνίζομαι",
+    "pl": "splanjnízomai",
+    "ps": "splangkh-nid'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4698')}>G4698</span>; sentir que las entrañas anhelan, i.e. (figurativamente) sentir lástima, compadecer: <font color='%COLOR_BLUE%'>misericordia, mover a misericordia, compadecer, compasión.</font>"
+  },
+  {
+    "id": "G4698",
+    "ti": "splánchnon",
+    "le": "σπλάγχνον",
+    "pl": "splánjnon",
+    "ps": "splangkh'-non",
+    "df": "probablemente fortificado de <b>σπλήν</b> <font color='%COLOR_PURPLE%'>splén</font> («esplín»); intestino, (plural); figurativamente compasión o lástima: <font color='%COLOR_BLUE%'>cariño, corazón, entraña, amor entrañable.</font>"
+  },
+  {
+    "id": "G4699",
+    "ti": "spóngos",
+    "le": "σπόγγος",
+    "pl": "spóngos",
+    "ps": "spong'-gos",
+    "df": "tal vez de origen extranjero; «esponja»: <font color='%COLOR_BLUE%'>esponja.</font>"
+  },
+  {
+    "id": "G4700",
+    "ti": "spodós",
+    "le": "σποδός",
+    "pl": "spodós",
+    "ps": "spod-os'",
+    "df": "de derivación incierta; cenizas: <font color='%COLOR_BLUE%'>ceniza.</font>"
+  },
+  {
+    "id": "G4701",
+    "ti": "sporá",
+    "le": "σπορά",
+    "pl": "sporá",
+    "ps": "spor-ah'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4687')}>G4687</span>; siembra, i.e. (por implicación) parentela: <font color='%COLOR_BLUE%'>simiente.</font>"
+  },
+  {
+    "id": "G4702",
+    "ti": "spórimos",
+    "le": "σπόριμος",
+    "pl": "spórimos",
+    "ps": "spor'-ee-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4703')}>G4703</span>; sembrado, i.e. (neutro plural) campo plantado: <font color='%COLOR_BLUE%'>sembrado.</font>"
+  },
+  {
+    "id": "G4703",
+    "ti": "spóros",
+    "le": "σπόρος",
+    "pl": "spóros",
+    "ps": "spro'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4687')}>G4687</span>; esparcir (la semilla), i.e. (concretamente) sembrar (como al voleo): <font color='%COLOR_BLUE%'>sementera.</font>"
+  },
+  {
+    "id": "G4704",
+    "ti": "spoudázō",
+    "le": "σπουδάζω",
+    "pl": "spoudázo",
+    "ps": "spoo-dad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4710')}>G4710</span>; usar velocidad, i.e. hacer esfuerzo, ser pronto o ferviente: <font color='%COLOR_BLUE%'>procurar con diligencia, solícito.</font>"
+  },
+  {
+    "id": "G4705",
+    "ti": "spoudaîos",
+    "le": "σπουδαῖος",
+    "pl": "spoudaíos",
+    "ps": "spoo-dah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4710')}>G4710</span>; pronto, enérgico, ferviente: <font color='%COLOR_BLUE%'>diligencia, solicitud.</font>"
+  },
+  {
+    "id": "G4706",
+    "ti": "spoudaióteron",
+    "le": "σπουδαιότερον",
+    "pl": "spoudaióteron",
+    "ps": "spoo-dah-yot'-er-on",
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4707')}>G4707</span> como adverbio; más fervientemente que otros, i.e. muy prontamente: <font color='%COLOR_BLUE%'>solícitamente.</font>"
+  },
+  {
+    "id": "G4707",
+    "ti": "spoudaióteros",
+    "le": "σπουδαιότερος",
+    "pl": "spoudaióteros",
+    "ps": "spoo-dah-yot'-er-os",
+    "df": "comparativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4705')}>G4705</span>; más pronto, más ferviente: <font color='%COLOR_BLUE%'>más diligente, muy solícito.</font>"
+  },
+  {
+    "id": "G4708",
+    "ti": "spoudaiotérōs",
+    "le": "σπουδαιοτέρως",
+    "pl": "spoudaiotéros",
+    "ps": "spoo-dah-yot-er'-oce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4707')}>G4707</span>; más rápidamente, i.e. más pronto que de otra manera: <font color='%COLOR_BLUE%'>mayor solicitud,.</font>"
+  },
+  {
+    "id": "G4709",
+    "ti": "spoudaíōs",
+    "le": "σπουδαίως",
+    "pl": "spoudaíos",
+    "ps": "spoo-dah'-yoce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4705')}>G4705</span>; fervientemente, prontamente: <font color='%COLOR_BLUE%'>con solicitud.</font>"
+  },
+  {
+    "id": "G4710",
+    "ti": "spoudḗ",
+    "le": "σπουδή",
+    "pl": "spoudé",
+    "ps": "spoo-day'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4692')}>G4692</span>; velocidad, rapidez, i.e. (por implicación) despachar, fervor, anhelo: <font color='%COLOR_BLUE%'>prisa, prontamente, con solicitud, con diligencia.</font>"
+  },
+  {
+    "id": "G4711",
+    "ti": "spyrís",
+    "le": "σπυρίς",
+    "pl": "spurís",
+    "ps": "spoo-rece'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4687')}>G4687</span> (como tejido); canasta o recipiente para fiambre: <font color='%COLOR_BLUE%'>canasta.</font>"
+  },
+  {
+    "id": "G4712",
+    "ti": "stádion",
+    "le": "στάδιον",
+    "pl": "stádion",
+    "ps": "stad'-ee-on",
+    "df": "o masculino (en plural) <b>στάδιος</b> <font color='%COLOR_PURPLE%'>stádios</font>; de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>, (como fijo); estadio o cierta medida de distancia; por implicación estadio o pista de carreras: <font color='%COLOR_BLUE%'>estadio.</font>"
+  },
+  {
+    "id": "G4713",
+    "ti": "stámnos",
+    "le": "στάμνος",
+    "pl": "stámnos",
+    "ps": "stam'-nos",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span> (como estacionario); jarra, jarrón o tanque de tierra: <font color='%COLOR_BLUE%'>urna.</font>"
+  },
+  {
+    "id": "G4714",
+    "ti": "stásis",
+    "le": "στάσις",
+    "pl": "stásis",
+    "ps": "stas'-is",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; estar de pie (propiamente el acto), i.e. (por analogía) posición (existencia); por implicación levantamiento popular; figurativamente controversia: <font color='%COLOR_BLUE%'>revuelta, sedición, contienda, disensión.</font>"
+  },
+  {
+    "id": "G4715",
+    "ti": "statḗr",
+    "le": "στατήρ",
+    "pl": "statér",
+    "ps": "stat-air'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2746')}>G2746</span>; estándar (de valor), i.e. (específicamente) estatero o cierta moneda: <font color='%COLOR_BLUE%'>estatero.</font>"
+  },
+  {
+    "id": "G4716",
+    "ti": "staurós",
+    "le": "σταυρός",
+    "pl": "staurós",
+    "ps": "stow-ros'",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; estaca o poste (como clavada erecta), i.e. (específicamente) poste o cruz (como instrumento de pena capital); figurativamente exposición a la muerte, i.e. negación propia; por implicación expiación de Cristo: <font color='%COLOR_BLUE%'>cruz.</font>"
+  },
+  {
+    "id": "G4717",
+    "ti": "stauróō",
+    "le": "σταυρόω",
+    "pl": "stauróo",
+    "ps": "stow-ro'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4716')}>G4716</span>; empalar en la cruz; figurativamente extinguir (subyugar) pasión o egoísmo: <font color='%COLOR_BLUE%'>crucificar.</font>"
+  },
+  {
+    "id": "G4718",
+    "ti": "staphylḗ",
+    "le": "σταφυλή",
+    "pl": "stafulé",
+    "ps": "staf-oo-lay'",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4735')}>G4735</span>; racimo de uvas (como entretejido): <font color='%COLOR_BLUE%'>uva.</font>"
+  },
+  {
+    "id": "G4719",
+    "ti": "stáchys",
+    "le": "στάχυς",
+    "pl": "stájus",
+    "ps": "stakh'-oos",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; espiga de grano (como estando parada fuera del tallo): <font color='%COLOR_BLUE%'>espiga.</font>"
+  },
+  {
+    "id": "G4720",
+    "ti": "Stáchys",
+    "le": "Στάχυς",
+    "pl": "Stájus",
+    "ps": "stakh'-oos",
+    "df": "lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4719')}>G4719</span>; Estaquis, un cristiano: <font color='%COLOR_BLUE%'>Estaquis.</font>"
+  },
+  {
+    "id": "G4721",
+    "ti": "stégē",
+    "le": "στέγη",
+    "pl": "stége",
+    "ps": "steg'-ay",
+    "df": "fortificado del primario <b>τέγος</b> <font color='%COLOR_PURPLE%'>tégos</font> («tejado» o «azotea» de un edificio); techo: <font color='%COLOR_BLUE%'>techo.</font>"
+  },
+  {
+    "id": "G4722",
+    "ti": "stégō",
+    "le": "στέγω",
+    "pl": "stégo",
+    "ps": "steg'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4721')}>G4721</span>; techar, i.e. (figurativamente) cubrir con silencio (soportar pacientemente): <font color='%COLOR_BLUE%'>soportar, sufrir.</font>"
+  },
+  {
+    "id": "G4723",
+    "ti": "steíros",
+    "le": "στείρος",
+    "pl": "steíros",
+    "ps": "sti'-ros",
+    "df": "contracción de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4731')}>G4731</span> (como tieso e innatural); «estéril»: <font color='%COLOR_BLUE%'>estéril.</font>"
+  },
+  {
+    "id": "G4724",
+    "ti": "stéllō",
+    "le": "στέλλω",
+    "pl": "stélo",
+    "ps": "stel'-lo",
+    "df": "probablemente fortificado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; propiamente fijar firmemente («detener»), i.e. (figurativamente) reprimir (reflexivamente abstenerse de asociarse con): <font color='%COLOR_BLUE%'>apartarse, evitar.</font>"
+  },
+  {
+    "id": "G4725",
+    "ti": "stémma",
+    "le": "στέμμα",
+    "pl": "stémma",
+    "ps": "stem'-mah",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4735')}>G4735</span>; corona para espectáculo: <font color='%COLOR_BLUE%'>guirnalda.</font>"
+  },
+  {
+    "id": "G4726",
+    "ti": "stenagmós",
+    "le": "στεναγμός",
+    "pl": "stenagmós",
+    "ps": "sten-ag-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4727')}>G4727</span>; suspiro: <font color='%COLOR_BLUE%'>gemido.</font>"
+  },
+  {
+    "id": "G4727",
+    "ti": "stenázō",
+    "le": "στενάζω",
+    "pl": "stenázo",
+    "ps": "sten-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4728')}>G4728</span>; meter (intransitivamente estar) en aprietos, i.e. (por implicación) suspirar, murmurar, orar inaudiblemente: <font color='%COLOR_BLUE%'>gemir, angustia, quejarse.</font>"
+  },
+  {
+    "id": "G4728",
+    "ti": "stenós",
+    "le": "στενός",
+    "pl": "stenós",
+    "ps": "sten-os'",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; estrecho, angosto (de obstáculos que están cerca): <font color='%COLOR_BLUE%'>angosto, estrecho.</font>"
+  },
+  {
+    "id": "G4729",
+    "ti": "stenochōréō",
+    "le": "στενοχωρέω",
+    "pl": "stenojoréo",
+    "ps": "sten-okh-o-reh'-o",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4730')}>G4730</span>; cercar estrechamente, i.e. (figurativamente) atiborrar: <font color='%COLOR_BLUE%'>estrecho, angustiar.</font>"
+  },
+  {
+    "id": "G4730",
+    "ti": "stenochōría",
+    "le": "στενοχωρία",
+    "pl": "stenojoría",
+    "ps": "sten-okh-o-ree'-ah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4728')}>G4728</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; estrechez de espacio, i.e. (figurativamente) calamidad: <font color='%COLOR_BLUE%'>angustia.</font>"
+  },
+  {
+    "id": "G4731",
+    "ti": "stereós",
+    "le": "στερεός",
+    "pl": "stereós",
+    "ps": "ster-eh-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; tieso, i.e. sólido, estable (literalmente o figurativamente): <font color='%COLOR_BLUE%'>firme, sólido.</font>"
+  },
+  {
+    "id": "G4732",
+    "ti": "stereóō",
+    "le": "στερεόω",
+    "pl": "stereóo",
+    "ps": "ster-eh-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4731')}>G4731</span>; solidificar, i.e. confirmar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>afirmar, confirmar.</font>"
+  },
+  {
+    "id": "G4733",
+    "ti": "steréōma",
+    "le": "στερέωμα",
+    "pl": "steréoma",
+    "ps": "ster-eh'-o-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4732')}>G4732</span>; algo establecido, i.e. (abstractamente) confirmación (estabilidad): <font color='%COLOR_BLUE%'>firmeza.</font>"
+  },
+  {
+    "id": "G4734",
+    "ti": "Stephanâs",
+    "le": "Στεφανᾶς",
+    "pl": "Stefanás",
+    "ps": "stef-an-as'",
+    "df": "probablemente contracción de <b>στεφανωτός</b> <font color='%COLOR_PURPLE%'>stefanotós</font> (coronado; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4737')}>G4737</span>); Estéfanas, un cristiano: <font color='%COLOR_BLUE%'>Estéfanas.</font>"
+  },
+  {
+    "id": "G4735",
+    "ti": "stéphanos",
+    "le": "στέφανος",
+    "pl": "stéfanos",
+    "ps": "stef'-an-os",
+    "df": "de un aparentemente primario <b>στέφω</b> <font color='%COLOR_PURPLE%'>stéfo</font> (entretejer o trenzar); guirnalda, (como estiqueta de realeza, premio en los juegos públicos o símbolo de honor general; pero más conspicuo y elaborado que la simple corona, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1238')}>G1238</span>), literalmente o figurativamente: <font color='%COLOR_BLUE%'>corona.</font>"
+  },
+  {
+    "id": "G4736",
+    "ti": "Stéphanos",
+    "le": "Στέφανος",
+    "pl": "Stéfanos",
+    "ps": "stef'-an-os",
+    "df": "lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4735')}>G4735</span>; Esteban, un cristiano: <font color='%COLOR_BLUE%'>Esteban.</font>"
+  },
+  {
+    "id": "G4737",
+    "ti": "stephanóō",
+    "le": "στεφανόω",
+    "pl": "stefanóo",
+    "ps": "stef-an-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4735')}>G4735</span>; adornar con una corona honoraria (literalmente o figurativamente): <font color='%COLOR_BLUE%'>coronar.</font>"
+  },
+  {
+    "id": "G4738",
+    "ti": "stēthos",
+    "le": "στῆθος",
+    "pl": "stédsos",
+    "ps": "stay'-thos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span> (como irguiéndose prominentemente); pecho (externo entero), i.e. pecho: <font color='%COLOR_BLUE%'>al lado, pecho.</font>"
+  },
+  {
+    "id": "G4739",
+    "ti": "stḗkō",
+    "le": "στήκω",
+    "pl": "stéko",
+    "ps": "stay'-ko",
+    "df": "del tiempo perfecto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; estar estacionario, i.e. (figurativamente) perseverar: <font color='%COLOR_BLUE%'>estar en pie, estar firme.</font>"
+  },
+  {
+    "id": "G4740",
+    "ti": "stērigmós",
+    "le": "στηριγμός",
+    "pl": "sterigmós",
+    "ps": "stay-rig-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4741')}>G4741</span>; estabilidad (figurativamente): <font color='%COLOR_BLUE%'>firmeza.</font>"
+  },
+  {
+    "id": "G4741",
+    "ti": "stērízō",
+    "le": "στηρίζω",
+    "pl": "sterízo",
+    "ps": "stay-rid'-zo",
+    "df": "de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span> (como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4731')}>G4731</span>); fijar firmemente, i.e. (literalmente) volverse resueltamente en cierta dirección, o (figurativamente) confirmar: <font color='%COLOR_BLUE%'>establecer, afirmar, confirmar.</font>"
+  },
+  {
+    "id": "G4742",
+    "ti": "stígma",
+    "le": "στίγμα",
+    "pl": "stígma",
+    "ps": "stig'-mah",
+    "df": "del primario <b>στίζω</b> <font color='%COLOR_PURPLE%'>stízo</font> («punzar», i.e. hincar); marcar hecha con incisión o perforación (para reconocimiento de propiedad), i.e. (figurativamente) cicatriz de servicio: <font color='%COLOR_BLUE%'>marca.</font>"
+  },
+  {
+    "id": "G4743",
+    "ti": "stigmḗ",
+    "le": "στιγμή",
+    "pl": "stigmé",
+    "ps": "stig-may'",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4742')}>G4742</span>; punto de tiempo, i.e. instante: <font color='%COLOR_BLUE%'>momento.</font>"
+  },
+  {
+    "id": "G4744",
+    "ti": "stílbō",
+    "le": "στίλβω",
+    "pl": "stilbo",
+    "ps": "stil'-bo",
+    "df": "aparentemente verbo primario; relucir, i.e. relampaguear intensamente: <font color='%COLOR_BLUE%'>resplandeciente.</font>"
+  },
+  {
+    "id": "G4745",
+    "ti": "stoá",
+    "le": "στοά",
+    "pl": "stoá",
+    "ps": "sto-ah'",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; pórticos o plaza interior: <font color='%COLOR_BLUE%'>pórtico.</font>"
+  },
+  {
+    "id": "G4746",
+    "ti": "stoibás",
+    "le": "στοιβάς",
+    "pl": "stoibás",
+    "ps": "stoy-bas'",
+    "df": "o <b>στιβάς</b> <font color='%COLOR_PURPLE%'>stibás</font>; del primario <b>στείβω</b> <font color='%COLOR_PURPLE%'>steíbo</font> («estampar»); esparcir (como si se pisoteara para aplanar) de materiales sueltos para hacer cama, i.e. (por implicación) rama de árbol así empleada: <font color='%COLOR_BLUE%'>rama.</font>"
+  },
+  {
+    "id": "G4747",
+    "ti": "stoicheîon",
+    "le": "στοιχεῖον",
+    "pl": "stoijeíon",
+    "ps": "stoy-khi'-on",
+    "df": "neutro de un derivado presunto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4748')}>G4748</span>; algo ordenadamente en arreglo, i.e. (por implicación) constituyente en serie (básico, fundamental, inicial) (literalmente), proposición (figurativamente): <font color='%COLOR_BLUE%'>rudimento, elemento.</font>"
+  },
+  {
+    "id": "G4748",
+    "ti": "stoichéō",
+    "le": "στοιχέω",
+    "pl": "stoijéo",
+    "ps": "stoy-kheh'-o",
+    "df": "de un derivado de <b>στείχω</b> <font color='%COLOR_PURPLE%'>steíjo</font> (ordenar en fila regular); marchar, en rango (militar) (guardar el paso), i.e. (figurativamente) conformarse a la virtud y piedad: <font color='%COLOR_BLUE%'>andar (ordenadamente), seguir.</font>"
+  },
+  {
+    "id": "G4749",
+    "ti": "stolḗ",
+    "le": "στολή",
+    "pl": "stolé",
+    "ps": "stol-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4724')}>G4724</span>; equipo, i.e. (específicamente) «estola» o túnica larga (como marca de dignidad): <font color='%COLOR_BLUE%'>larga ropa, vestido, vestidura.</font>"
+  },
+  {
+    "id": "G4750",
+    "ti": "stóma",
+    "le": "στόμα",
+    "pl": "stóma",
+    "ps": "stom'-a",
+    "df": "probablemente fortificado de un derivado presunto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5114')}>G5114</span>; boca (como si fuera un rasgón en la cara); por implicación lenguaje (y sus relaciones); figurativamente apertura (en la tierra); específicamente de frente o filo (de un arma): <font color='%COLOR_BLUE%'>filo, boca, cara.</font>"
+  }
+]

@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H2851",
+    "ti": "chittîyth",
+    "le": "חִתִּית",
+    "pl": "kjittít",
+    "ps": "khit-teeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2865')}>H2865</span>; temor: <font color='%COLOR_BLUE%'>espanto, terror.</font>"
+  },
+  {
+    "id": "H2852",
+    "ti": "châthak",
+    "le": "חָתַךְ",
+    "pl": "kjaták",
+    "ps": "khaw-thak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente cortar, separar, i.e. (figurativamente) decretar: <font color='%COLOR_BLUE%'>determinar.</font>"
+  },
+  {
+    "id": "H2853",
+    "ti": "châthal",
+    "le": "חָתַל",
+    "pl": "kjatál",
+    "ps": "khaw-thal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; envolver: <font color='%COLOR_BLUE%'>envolver, faja.</font>"
+  },
+  {
+    "id": "H2854",
+    "ti": "chăthullâh",
+    "le": "חֲתֻלָּה",
+    "pl": "kjatulá",
+    "ps": "khath-ool-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2853')}>H2853</span>; tela para envolver, pañal (figurativamente): <font color='%COLOR_BLUE%'>faja.</font>"
+  },
+  {
+    "id": "H2855",
+    "ti": "Chethlôn",
+    "le": "חֶתְלֹן",
+    "pl": "KJetlón",
+    "ps": "kheth-lone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2853')}>H2853</span>; envuelto en pañales; Jetlón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Hetlón.</font>"
+  },
+  {
+    "id": "H2856",
+    "ti": "châtham",
+    "le": "חָתַם",
+    "pl": "kjatám",
+    "ps": "khaw-tham'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; encerrar, cerrar; específicamente sellar: <font color='%COLOR_BLUE%'>fin, firmar, sellado, sellar, sello, señalar.</font>"
+  },
+  {
+    "id": "H2857",
+    "ti": "chătham",
+    "le": "חֲתַם",
+    "pl": "kjatám",
+    "ps": "khath-am'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2856')}>H2856</span>; sellar: <font color='%COLOR_BLUE%'>sellar.</font><p></p><font color='%COLOR_GREEN%'><b>חיתם</b></font> <font color='%COLOR_PURPLE%'>kjotám.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2368')}>H2368</span>."
+  },
+  {
+    "id": "H2858",
+    "ti": "chôthemeth",
+    "le": "חֹתֶמֶת",
+    "pl": "kjotémet",
+    "ps": "kho-the-meth",
+    "df": "<font color='%COLOR_GREEN%'></font>participio femenino activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2856')}>H2856</span>; sello: <font color='%COLOR_BLUE%'>sello.</font>"
+  },
+  {
+    "id": "H2859",
+    "ti": "châthan",
+    "le": "חָתַן",
+    "pl": "kjatán",
+    "ps": "khaw-than'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; dar (una hija) en matrimonio; de aquí, (generalmente) contraer afinidad por matrimonio: <font color='%COLOR_BLUE%'>contraer matrimonio, emparentar, matrimonio, parentesco, suegra, -o, yerno.</font>"
+  },
+  {
+    "id": "H2860",
+    "ti": "châthân",
+    "le": "חָתָן",
+    "pl": "kjatán",
+    "ps": "khaw-thawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2859')}>H2859</span>; pariente político (específicamente mediante la esposa); figurativamente niño circuncidado (con una especie de desposorio religioso): <font color='%COLOR_BLUE%'>desposado, esposo, yerno.</font>"
+  },
+  {
+    "id": "H2861",
+    "ti": "chăthunnâh",
+    "le": "חֲתֻנָּה",
+    "pl": "kjatunná",
+    "ps": "khath-oon-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2859')}>H2859</span>; boda: <font color='%COLOR_BLUE%'>desposorio.</font>"
+  },
+  {
+    "id": "H2862",
+    "ti": "châthaph",
+    "le": "חָתַף",
+    "pl": "kjatáf",
+    "ps": "khaw-thaf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; agarrar: <font color='%COLOR_BLUE%'>arrebatar.</font>"
+  },
+  {
+    "id": "H2863",
+    "ti": "chetheph",
+    "le": "חֶתֶף",
+    "pl": "kjétef",
+    "ps": "kheh'-thef",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2862')}>H2862</span>; propiamente rapiña; figurativamente robo: <font color='%COLOR_BLUE%'>presa.</font>"
+  },
+  {
+    "id": "H2864",
+    "ti": "châthar",
+    "le": "חָתַר",
+    "pl": "kjatár",
+    "ps": "khaw-thar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; abrirse paso a la fuerza, como para robar; figurativamente con remos: <font color='%COLOR_BLUE%'>abrir, cavar, humillar, minar, paso, remar.</font>"
+  },
+  {
+    "id": "H2865",
+    "ti": "châthath",
+    "le": "חָתַת",
+    "pl": "kjatát",
+    "ps": "khaw-thath'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente prostrar; de aquí, derribar, bien sea (literalmente) por violencia, o (figurativamente) por confusión y temor: <font color='%COLOR_BLUE%'>acobardar, amedrentar, asombrar, asustar, atemorizar, dejar, desmayar, temer, temor, espantar, intimidar, miedo, perecer, quebrantar, quebrar, resquebrajar.</font>"
+  },
+  {
+    "id": "H2866",
+    "ti": "chăthath",
+    "le": "חֲתַת",
+    "pl": "kjatát",
+    "ps": "khath-ath'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2865')}>H2865</span>; desmayo: <font color='%COLOR_BLUE%'>tormento.</font>"
+  },
+  {
+    "id": "H2867",
+    "ti": "Chăthath",
+    "le": "חֲתַת",
+    "pl": "KJatát",
+    "ps": "khath-ath'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2866')}>H2866</span>; Jatat, un israelita: <font color='%COLOR_BLUE%'>Hatat.</font>"
+  },
+  {
+    "id": "H2868",
+    "ti": "ṭᵉʼêb",
+    "le": "טְאֵב",
+    "pl": "teeb",
+    "ps": "teh-abe'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); raíz primaria; regocijarse: <font color='%COLOR_BLUE%'>alegrarse.</font>"
+  },
+  {
+    "id": "H2869",
+    "ti": "ṭâb",
+    "le": "טָב",
+    "pl": "tab",
+    "ps": "teh-abe'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2868')}>H2868</span>; lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2896')}>H2896</span>; bueno: <font color='%COLOR_BLUE%'>bueno, fino.</font>"
+  },
+  {
+    "id": "H2870",
+    "ti": "ṭâbᵉʼêl",
+    "le": "טָבְאֵל",
+    "pl": "Tabeél",
+    "ps": "taw-beh-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2895')}>H2895</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; agradable (a) Dios; Tabeel, nombre de un siro y de un persa: <font color='%COLOR_BLUE%'>Tabeel.</font>"
+  },
+  {
+    "id": "H2871",
+    "ti": "ṭâbûwl",
+    "le": "טָבוּל",
+    "pl": "tabúl",
+    "ps": "taw-bool'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2881')}>H2881</span>; propiamente teñido, i.e. turbante (probablemente por su tela de colores): <font color='%COLOR_BLUE%'>tiaras de colores.</font>"
+  },
+  {
+    "id": "H2872",
+    "ti": "ṭabbûwr",
+    "le": "טַבּוּר",
+    "pl": "tabúr",
+    "ps": "tab-boor'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa apilar; propiamente acumulado; i.e. (por implicación) una cima: <font color='%COLOR_BLUE%'>central.</font>"
+  },
+  {
+    "id": "H2873",
+    "ti": "ṭâbach",
+    "le": "טָבַח",
+    "pl": "tabákj",
+    "ps": "taw-bakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; matar, masacrar (animales u hombres): <font color='%COLOR_BLUE%'>degollar, matadero, matar.</font>"
+  },
+  {
+    "id": "H2874",
+    "ti": "ṭebach",
+    "le": "טֶבַח",
+    "pl": "tébakj",
+    "ps": "teh'-bakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2873')}>H2873</span>; propiamente algo sacrificado; de aquí, bestia (o carne, como matada); abstractamente masacre (o concretamente un lugar de matanza): <font color='%COLOR_BLUE%'>degolladero, degollar, matadero, res, víctima.</font>"
+  },
+  {
+    "id": "H2875",
+    "ti": "Ṭebach",
+    "le": "טֶבַח",
+    "pl": "Tébakj",
+    "ps": "teh'-bakh",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2874')}>H2874</span>; masacre; Tebaj, nombre de un mesopotamio y de un israelita: <font color='%COLOR_BLUE%'>Teba.</font>"
+  },
+  {
+    "id": "H2876",
+    "ti": "ṭabbâch",
+    "le": "טַבָּח",
+    "pl": "tabbákj",
+    "ps": "tab-bawkh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2873')}>H2873</span>; propiamente carnicero; de aquí, guardián (porque actúa como verdugo); también cocinero (porque por lo general mata animales para alimento): <font color='%COLOR_BLUE%'>cocinero, guardia.</font>"
+  },
+  {
+    "id": "H2877",
+    "ti": "ṭabbâch",
+    "le": "טַבָּח",
+    "pl": "tabbákj",
+    "ps": "tab-bawkh'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2876')}>H2876</span>; guardia: <font color='%COLOR_BLUE%'>guardia.</font>"
+  },
+  {
+    "id": "H2878",
+    "ti": "ṭibchâh",
+    "le": "טִבְחָה",
+    "pl": "tibejá",
+    "ps": "tib-khaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2874')}>H2874</span> y significa lo mismo: <font color='%COLOR_BLUE%'>carne, degolladero, matadero.</font>"
+  },
+  {
+    "id": "H2879",
+    "ti": "ṭabbâchâh",
+    "le": "טַבָּחָה",
+    "pl": "tabbakjá",
+    "ps": "tab-baw-khaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2876')}>H2876</span>; cocinera: <font color='%COLOR_BLUE%'>cocinera.</font>"
+  },
+  {
+    "id": "H2880",
+    "ti": "Ṭibchath",
+    "le": "טִבְחַת",
+    "pl": "Tibkját",
+    "ps": "tib-khath'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2878')}>H2878</span>; matanza; Tibjat, un lugar en Siria: <font color='%COLOR_BLUE%'>Tibhat.</font>"
+  },
+  {
+    "id": "H2881",
+    "ti": "ṭâbal",
+    "le": "טָבַל",
+    "pl": "tabál",
+    "ps": "taw-bal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; sumergir, hundir: <font color='%COLOR_BLUE%'>hundir, meter, mojar, teñir, zambullir.</font>"
+  },
+  {
+    "id": "H2882",
+    "ti": "Ṭᵉbalyâhûw",
+    "le": "טְבַלְיָהוּ",
+    "pl": "Tebaliáju",
+    "ps": "teb-al-yaw'-hoo",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2881')}>H2881</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha sumergido; Tebalía, un israelita: <font color='%COLOR_BLUE%'>Tebalías.</font>"
+  },
+  {
+    "id": "H2883",
+    "ti": "ṭâbaʻ",
+    "le": "טָבַע",
+    "pl": "tabá",
+    "ps": "taw-bah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; hundir: <font color='%COLOR_BLUE%'>clavar, echar, formar, hundir, sumergir.</font>"
+  },
+  {
+    "id": "H2884",
+    "ti": "Ṭabbâʻôwth",
+    "le": "טַבָּעֹות",
+    "pl": "Tabbaót",
+    "ps": "tab-baw-othe'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2885')}>H2885</span>; anillos; Tabaot, uno de los sirvientes del templo: <font color='%COLOR_BLUE%'>Tabaot.</font>"
+  },
+  {
+    "id": "H2885",
+    "ti": "ṭabbaʻath",
+    "le": "טַבַּעַת",
+    "pl": "tabbaát",
+    "ps": "tab-bah'-ath",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2883')}>H2883</span>; propiamente sello (como hundido en la cera), i.e. anillo de sellar (para sellar); de aquí, (generalmente) anillo de cualquier clase: <font color='%COLOR_BLUE%'>anillo.</font>"
+  },
+  {
+    "id": "H2886",
+    "ti": "Ṭabrimmôwn",
+    "le": "טַבְרִמֹּון",
+    "pl": "Tabrimmón",
+    "ps": "tab-rim-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2895')}>H2895</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7417')}>H7417</span>; agradable (a) Rimón; Tabrimón, un sirio: <font color='%COLOR_BLUE%'>Tabrimón.</font>"
+  },
+  {
+    "id": "H2887",
+    "ti": "Ṭêbeth",
+    "le": "טֵבֶת",
+    "pl": "Tébet",
+    "ps": "tay'-beth",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de derivado extranjero; Tébet, décimo mes hebreo: <font color='%COLOR_BLUE%'>Tebet.</font>"
+  },
+  {
+    "id": "H2888",
+    "ti": "Ṭabbath",
+    "le": "טַבַּת",
+    "pl": "Tabát",
+    "ps": "tab-bath'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Tabat, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>Tabat.</font>"
+  },
+  {
+    "id": "H2889",
+    "ti": "ṭâhôwr",
+    "le": "טָהֹור",
+    "pl": "tajór",
+    "ps": "taw-hore'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>טהיר</b></font> <font color='%COLOR_PURPLE%'>tajór</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2891')}>H2891</span>; puro (en sentido físico, químico, ceremonial o moral): <font color='%COLOR_BLUE%'>fino, limpiar, -o, pureza, -ificar, -o.</font>"
+  },
+  {
+    "id": "H2890",
+    "ti": "ṭᵉhôwr",
+    "le": "טְהֹור",
+    "pl": "tejór",
+    "ps": "teh-hore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2891')}>H2891</span>; pureza: <font color='%COLOR_BLUE%'>limpio, limpieza.</font>"
+  },
+  {
+    "id": "H2891",
+    "ti": "ṭâhêr",
+    "le": "טָהֵר",
+    "pl": "tajér",
+    "ps": "taw-hare'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente ser brillante; i.e. (por implicación) ser puro (físicamente sano, claro, no adulterado; levit. incontaminado; moralmente inocente o santo): <font color='%COLOR_BLUE%'>declarar, expiación, limpiar, limpio, purificación, purificar.</font>"
+  },
+  {
+    "id": "H2892",
+    "ti": "ṭôhar",
+    "le": "טֹהַר",
+    "pl": "tójar",
+    "ps": "to'-har",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2891')}>H2891</span>; literalmente brillo; purificación ceremonial: <font color='%COLOR_BLUE%'>gloria, purificación, sereno.</font>"
+  },
+  {
+    "id": "H2893",
+    "ti": "ṭohŏrâh",
+    "le": "טׇהֳרָה",
+    "pl": "tojorá",
+    "ps": "toh-or-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2892')}>H2892</span>; purificación ceremonial; pureza moral: <font color='%COLOR_BLUE%'>expiación, limpiar, -o, purificación, -ar.</font>"
+  },
+  {
+    "id": "H2894",
+    "ti": "ṭûwʼ",
+    "le": "טוּא",
+    "pl": "tu",
+    "ps": "too",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; barrer: <font color='%COLOR_BLUE%'>barrer.</font>"
+  },
+  {
+    "id": "H2895",
+    "ti": "ṭôwb",
+    "le": "טֹוב",
+    "pl": "tob",
+    "ps": "tobe",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria, ser (transitivamente hacer) bueno (o bien) en el sentido más amplio: <font color='%COLOR_BLUE%'>agradable, agradar, alegre, alivio, bien, bienhechor, hacer, mejor, parecer, placer.</font>"
+  },
+  {
+    "id": "H2896",
+    "ti": "ṭôwb",
+    "le": "טֹוב",
+    "pl": "tob",
+    "ps": "tobe",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2895')}>H2895</span>; bueno (como adjetivo) en sentido más amplio; usado igualmente como sustantivo, tanto en masculino como en femenino, singular y plural (bueno, cosa buena, bien, hombre bueno, mujer buena; el bien, cosas buenas, bienes, hombres o mujeres buenas), también como adverbio (bien): <font color='%COLOR_BLUE%'>abundancia, acepto, acertado, agradable, agradar, alegrar, alegre, alegría, amigablemente, benéfica, beneficio, benevolencia, benigno, bien, bienestar, bondad, bueno, contento, cosa, dichoso, éxito, favor, feliz, fértil, fino, gozar, gozoso, gusto, hermoso, humanamente, mejor, misericordioso, parecer, placer, prosperidad, rebosar, suave, tesoro.</font>"
+  },
+  {
+    "id": "H2897",
+    "ti": "Ṭôwb",
+    "le": "טֹוב",
+    "pl": "Tob",
+    "ps": "tobe",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2896')}>H2896</span>; bueno; Tob, región aparentemente al E. del Jordán: <font color='%COLOR_BLUE%'>Tob.</font>"
+  },
+  {
+    "id": "H2898",
+    "ti": "ṭûwb",
+    "le": "טוּב",
+    "pl": "tub",
+    "ps": "toob",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2895')}>H2895</span>; bueno (como sustantivo), en el sentido más amplio, específicamente bondad (superlativo concretamente lo mejor), belleza, alegría, bienestar: <font color='%COLOR_BLUE%'>beneficio, bien, bondad, bueno, gozo, júbilo, lozana, mejor, regalo.</font>"
+  },
+  {
+    "id": "H2899",
+    "ti": "Ṭôwb ʼĂdônîyâhûw",
+    "le": "טֹוב אֲדֹנִיָּהוּ",
+    "pl": "Tob Adoniyáju",
+    "ps": "tobe ado-nee-yah'-hoo",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2896')}>H2896</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H138')}>H138</span>; agradable (a) Adoníaj; Tob Adonías, un israelita: <font color='%COLOR_BLUE%'>Tobadonías.</font>"
+  },
+  {
+    "id": "H2900",
+    "ti": "Ṭôwbîyâh",
+    "le": "טֹובִיָּה",
+    "pl": "Tobiyá",
+    "ps": "to-bee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>טויביהו</b></font> <font color='%COLOR_PURPLE%'>Tobiyáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2896')}>H2896</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; bondad de Jehová; Tobíaj, nombre de tres israelitas y de un samaritano: <font color='%COLOR_BLUE%'>Tobías.</font>"
+  },
+  {
+    "id": "H2901",
+    "ti": "ṭâvâh",
+    "le": "טָוָה",
+    "pl": "tavá",
+    "ps": "taw-vaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; girar, dar vueltas: <font color='%COLOR_BLUE%'>hilar.</font>"
+  },
+  {
+    "id": "H2902",
+    "ti": "ṭûwach",
+    "le": "טוּחַ",
+    "pl": "túakj",
+    "ps": "too'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; untar, embadurnar, específicamente con lodo: <font color='%COLOR_BLUE%'>cerrar, cubrir, recubridor, recubrir.</font>"
+  },
+  {
+    "id": "H2903",
+    "ti": "ṭôwphâphâh",
+    "le": "טֹופָפָה",
+    "pl": "tofafá",
+    "ps": "to-faw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa rodear o atar; cintillo para la frente: <font color='%COLOR_BLUE%'>frontal, memorial.</font>"
+  },
+  {
+    "id": "H2904",
+    "ti": "ṭûwl",
+    "le": "טוּל",
+    "pl": "tul",
+    "ps": "tool",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; voltear o dar vuelta; de aquí, (transitivamente) derribar o echar fuera: <font color='%COLOR_BLUE%'>arrojar, llevar cautivo, desmayar, echar, levantar, llevar, postrar, transportar.</font>"
+  },
+  {
+    "id": "H2905",
+    "ti": "ṭûwr",
+    "le": "טוּר",
+    "pl": "tur",
+    "ps": "toor",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa ordenar de una manera regular; hilera; de aquí, pared: <font color='%COLOR_BLUE%'>hilera, pared.</font>"
+  },
+  {
+    "id": "H2906",
+    "ti": "ṭûwr",
+    "le": "טוּר",
+    "pl": "tur",
+    "ps": "toor",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6697')}>H6697</span>; roca o colina: <font color='%COLOR_BLUE%'>monte.</font>"
+  },
+  {
+    "id": "H2907",
+    "ti": "ṭûws",
+    "le": "טוּשׂ",
+    "pl": "tus",
+    "ps": "toos",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; saltar sobre como ave de presa: <font color='%COLOR_BLUE%'>arrojarse.</font>"
+  },
+  {
+    "id": "H2908",
+    "ti": "ṭᵉvâth",
+    "le": "טְוָת",
+    "pl": "tevát",
+    "ps": "tev-awth'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2901')}>H2901</span>; hambre (como retorciéndose): <font color='%COLOR_BLUE%'>ayuno.</font>"
+  },
+  {
+    "id": "H2909",
+    "ti": "ṭâchâh",
+    "le": "טָחָה",
+    "pl": "takjá",
+    "ps": "taw-khaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estirar un arco, como arquero: <font color='%COLOR_BLUE%'>tiro.</font>"
+  },
+  {
+    "id": "H2910",
+    "ti": "ṭuchâh",
+    "le": "טֻחָה",
+    "pl": "tukjá",
+    "ps": "too-khaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2909')}>H2909</span> (o <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2902')}>H2902</span>) en el sentido de superponer; (en el plural solamente) los riñones (como estando cubiertos); de aquí, (figurativamente) los pensamientos más íntimos: <font color='%COLOR_BLUE%'>entrañas, íntimo.</font>"
+  },
+  {
+    "id": "H2911",
+    "ti": "ṭᵉchôwn",
+    "le": "טְחֹון",
+    "pl": "tekjón",
+    "ps": "tekh-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2912')}>H2912</span>; molino de mano; de aquí, piedra de molino: <font color='%COLOR_BLUE%'>moler.</font>"
+  },
+  {
+    "id": "H2912",
+    "ti": "ṭâchan",
+    "le": "טָחַן",
+    "pl": "takján",
+    "ps": "taw-khan'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; moler una comida; de aquí, ser una concubina (siendo ese su empleo): <font color='%COLOR_BLUE%'>moler, muelas.</font>"
+  },
+  {
+    "id": "H2913",
+    "ti": "ṭachănâh",
+    "le": "טַחֲנָה",
+    "pl": "takjaná",
+    "ps": "takh-an-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2912')}>H2912</span>; molino de mano; de aquí, (figurativamente) masticar: <font color='%COLOR_BLUE%'>muela, moler.</font>"
+  },
+  {
+    "id": "H2914",
+    "ti": "ṭᵉchôr",
+    "le": "טְחֹר",
+    "pl": "tekjór",
+    "ps": "tekh-ore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa quemar; forúnculo o úlcera (por la inflamación), específicamente tumor en el ano o partes pudendas (hemorroides, almorranas): <font color='%COLOR_BLUE%'>tumor.</font>"
+  },
+  {
+    "id": "H2915",
+    "ti": "ṭîyach",
+    "le": "טִיחַ",
+    "pl": "tíakj",
+    "ps": "tee'akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de (el equivalente de) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2902')}>H2902</span>; mezcla o argamaza: <font color='%COLOR_BLUE%'>embarradura.</font>"
+  },
+  {
+    "id": "H2916",
+    "ti": "ṭîyṭ",
+    "le": "טִיט",
+    "pl": "tit",
+    "ps": "teet",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa aparentemente ser pegajoso [más bien tal vez un denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2894')}>H2894</span>, mediante la idea de tierra quje es barrida]; lodo o barro; figurativamente calamidad: <font color='%COLOR_BLUE%'>lodo, barro, cieno, suelo.</font>"
+  },
+  {
+    "id": "H2917",
+    "ti": "ṭîyn",
+    "le": "טִין",
+    "pl": "tín",
+    "ps": "teen",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); tal vez por intercambio, por una palabra correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2916')}>H2916</span>; barro: <font color='%COLOR_BLUE%'>barro cocido.</font>"
+  },
+  {
+    "id": "H2918",
+    "ti": "ṭîyrâh",
+    "le": "טִירָה",
+    "pl": "tirá",
+    "ps": "tee-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de (un equivalente a) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2905')}>H2905</span>; pared; de aquí, fortaleza o aldea: <font color='%COLOR_BLUE%'>aprisco, domicilio, habitación, palacio, pared.</font>"
+  },
+  {
+    "id": "H2919",
+    "ti": "ṭal",
+    "le": "טַל",
+    "pl": "tal",
+    "ps": "tal",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2926')}>H2926</span>; rocío (como cubriendo la vegetación): <font color='%COLOR_BLUE%'>rocío, lluvia.</font>"
+  },
+  {
+    "id": "H2920",
+    "ti": "ṭal",
+    "le": "טַל",
+    "pl": "tal",
+    "ps": "tal",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2919')}>H2919</span>: <font color='%COLOR_BLUE%'>rocío.</font>"
+  },
+  {
+    "id": "H2921",
+    "ti": "ṭâlâʼ",
+    "le": "טָלָא",
+    "pl": "talá",
+    "ps": "taw-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente cubrir con piezas; i.e. (por implicación) manchar o colorear (como tapete): <font color='%COLOR_BLUE%'>manchado, salpicadas de color, rayado, recosido.</font>"
+  },
+  {
+    "id": "H2922",
+    "ti": "ṭᵉlâʼ",
+    "le": "טְלָא",
+    "pl": "telá",
+    "ps": "tel-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>aparentemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2921')}>H2921</span> en en sentido (origen) de cubrir (por protección); oveja [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2924')}>H2924</span>]: <font color='%COLOR_BLUE%'>cordero.</font>"
+  },
+  {
+    "id": "H2923",
+    "ti": "Ṭᵉlâʼîym",
+    "le": "טְלָאִים",
+    "pl": "Telaím",
+    "ps": "tel-aw-eem'",
+    "df": "<font color='%COLOR_GREEN%'></font>del plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2922')}>H2922</span>; ovejas; Telaim, un lugar en Palestina: <font color='%COLOR_BLUE%'>Telaim.</font>"
+  },
+  {
+    "id": "H2924",
+    "ti": "ṭâleh",
+    "le": "טָלֶה",
+    "pl": "talé",
+    "ps": "taw-leh'",
+    "df": "<font color='%COLOR_GREEN%'></font>por variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2922')}>H2922</span>; oveja: <font color='%COLOR_BLUE%'>cordero.</font>"
+  },
+  {
+    "id": "H2925",
+    "ti": "ṭalṭêlâh",
+    "le": "טַלְטֵלָה",
+    "pl": "taltelá",
+    "ps": "tal-tay-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2904')}>H2904</span>; derrocamiento o rechazo: <font color='%COLOR_BLUE%'>cautiverio.</font>"
+  },
+  {
+    "id": "H2926",
+    "ti": "ṭâlal",
+    "le": "טָלַל",
+    "pl": "talál",
+    "ps": "taw-lal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente extender encima, i.e. (por implicación) cubrir en o plata (con frijoles): <font color='%COLOR_BLUE%'>enmaderar.</font>"
+  },
+  {
+    "id": "H2927",
+    "ti": "ṭᵉlal",
+    "le": "טְלַל",
+    "pl": "telál",
+    "ps": "tel-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2926')}>H2926</span>; cubrir con sombra: <font color='%COLOR_BLUE%'>sombra.</font>"
+  },
+  {
+    "id": "H2928",
+    "ti": "Ṭelem",
+    "le": "טֶלֶם",
+    "pl": "Télem",
+    "ps": "teh'-lem",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa romper o tratar violentamente; opresión; Télem, nombre de un lugar en Idumea, también de un portero del templo: <font color='%COLOR_BLUE%'>Telem.</font>"
+  },
+  {
+    "id": "H2929",
+    "ti": "Ṭalmôwn",
+    "le": "טַלְמֹון",
+    "pl": "Talmón",
+    "ps": "tal-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2728')}>H2728</span>; opresivo; Talmón, un portero del templo: <font color='%COLOR_BLUE%'>Talmón.</font>"
+  },
+  {
+    "id": "H2930",
+    "ti": "ṭâmêʼ",
+    "le": "טָמֵא",
+    "pl": "tamé",
+    "ps": "taw-may'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; estar contaminado, específicamente en un sentido ceremonialmente o moralmente (contaminado): <font color='%COLOR_BLUE%'>amancillar, contaminar, corromper, declarar, envilecer, inmundicia, inmundo, profanar, violar.</font>"
+  },
+  {
+    "id": "H2931",
+    "ti": "ṭâmêʼ",
+    "le": "טָמֵא",
+    "pl": "tamé",
+    "ps": "taw-may'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2930')}>H2930</span>; impuro en un sentido religioso: <font color='%COLOR_BLUE%'>amacillar, contaminar, impuro, inmundicia, inmundo, menstruo, suciedad.</font>"
+  },
+  {
+    "id": "H2932",
+    "ti": "ṭumʼâh",
+    "le": "טֻמְאָה",
+    "pl": "tumá",
+    "ps": "toom-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2930')}>H2930</span>; impureza religiosa.: <font color='%COLOR_BLUE%'>impureza, inmundicia, inmundo, suciedad.</font>"
+  },
+  {
+    "id": "H2933",
+    "ti": "ṭâmâh",
+    "le": "טָמָה",
+    "pl": "tamá",
+    "ps": "taw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>forma colateral de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2930')}>H2930</span>; ser impuro en un sentido religioso.: <font color='%COLOR_BLUE%'>vil.</font>"
+  },
+  {
+    "id": "H2934",
+    "ti": "ṭâman",
+    "le": "טָמַן",
+    "pl": "tamán",
+    "ps": "taw-man'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; esconder (por cubrir encima): <font color='%COLOR_BLUE%'>cubrir, encubrir, esconder.</font>"
+  },
+  {
+    "id": "H2935",
+    "ti": "ṭeneʼ",
+    "le": "טֶנֶא",
+    "pl": "téne",
+    "ps": "teh'-neh",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa probablemente significa tejer; canasta (por mimbres entrelazados): <font color='%COLOR_BLUE%'>canasta.</font>"
+  },
+  {
+    "id": "H2936",
+    "ti": "ṭânaph",
+    "le": "טָנַף",
+    "pl": "tanáf",
+    "ps": "taw-naf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ensuciar: <font color='%COLOR_BLUE%'>ensuciar.</font>"
+  },
+  {
+    "id": "H2937",
+    "ti": "ṭâʻâh",
+    "le": "טָעָה",
+    "pl": "taá",
+    "ps": "taw-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; vagar; causativo hacer desviar, descarriar: <font color='%COLOR_BLUE%'>engañar.</font>"
+  },
+  {
+    "id": "H2938",
+    "ti": "ṭâʻam",
+    "le": "טָעַם",
+    "pl": "taám",
+    "ps": "taw-am'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; probar, saborear; figurativamente percibir: <font color='%COLOR_BLUE%'>gustar, probar, tomar gusto, ver.</font>"
+  },
+  {
+    "id": "H2939",
+    "ti": "ṭᵉʻam",
+    "le": "טְעַם",
+    "pl": "teám",
+    "ps": "teh-am'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2938')}>H2938</span>; saborear, gustar; causativo alimentar: <font color='%COLOR_BLUE%'>apacentar, hacer comer.</font>"
+  },
+  {
+    "id": "H2940",
+    "ti": "ṭaʻam",
+    "le": "טַעַם",
+    "pl": "táam",
+    "ps": "tah'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2938')}>H2938</span>; propiamente gusto, sabor, i.e. (figurativamente) percepción; por implicación inteligencia; transitivamente mandato: <font color='%COLOR_BLUE%'>aconsejar, comportarse, consejo, gusto, mandato, manera, razón, razonamiento, sabor, semblante, sentido.</font>"
+  },
+  {
+    "id": "H2941",
+    "ti": "ṭaʻam",
+    "le": "טַעַם",
+    "pl": "táam",
+    "ps": "tah'-am",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2939')}>H2939</span>; propiamente gusto, sabor, i.e. (como en <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2940')}>H2940</span>) sentencia judicial: <font color='%COLOR_BLUE%'>asunto, cuenta, mandar, mandato, orden.</font>"
+  },
+  {
+    "id": "H2942",
+    "ti": "ṭᵉʻêm",
+    "le": "טְעֵם",
+    "pl": "teém",
+    "ps": "teh-ame'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2939')}>H2939</span>, y equivalente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2941')}>H2941</span>; propiamente sabor; figurativamente juicio (tanto subjectiva y objectivamente); de aquí, cuenta (tanto subjectiva y objectivamente): <font color='%COLOR_BLUE%'>canciller, dar, decretar, decreto, gusto, juez, ley, mandar, orden, ordenamiento, sabiamente.</font>"
+  },
+  {
+    "id": "H2943",
+    "ti": "ṭâʻan",
+    "le": "טָעַן",
+    "pl": "taán",
+    "ps": "taw-an'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; cargar una bestia: <font color='%COLOR_BLUE%'>cargar.</font>"
+  },
+  {
+    "id": "H2944",
+    "ti": "ṭâʻan",
+    "le": "טָעַן",
+    "pl": "taán",
+    "ps": "taw-an'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; apuñalear: <font color='%COLOR_BLUE%'>pasar (a espada).</font>"
+  },
+  {
+    "id": "H2945",
+    "ti": "ṭaph",
+    "le": "טַף",
+    "pl": "taf",
+    "ps": "taf",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2952')}>H2952</span> (tal vez refiriéndose al brincar de los niños); familia (usada mayormente colectivo en singular): <font color='%COLOR_BLUE%'>familia, hijo, niño, pequeñuelo.</font>"
+  },
+  {
+    "id": "H2946",
+    "ti": "ṭâphach",
+    "le": "טָפַח",
+    "pl": "tafákj",
+    "ps": "taw-fakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; alisar o extender (como una tienda); figurativamente amamantar a un niño (como promoviendo su crecimiento); o tal vez denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2947')}>H2947</span>, extensión de las palmas: <font color='%COLOR_BLUE%'>medir, criar.</font>"
+  },
+  {
+    "id": "H2947",
+    "ti": "ṭêphach",
+    "le": "טֵפַח",
+    "pl": "téfakj",
+    "ps": "tay'-fakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2946')}>H2946</span>; extensión de la mano, i.e. un palmo (no la «distancia» de los dedos); arquit. repisa (como palma que soporta): <font color='%COLOR_BLUE%'>palmo menor, remate, término corto.</font>"
+  },
+  {
+    "id": "H2948",
+    "ti": "ṭôphach",
+    "le": "טֹפַח",
+    "pl": "tófakj",
+    "ps": "to'-fakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2946')}>H2946</span> (lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2947')}>H2947</span>): <font color='%COLOR_BLUE%'>palmo menor.</font>"
+  },
+  {
+    "id": "H2949",
+    "ti": "ṭippuch",
+    "le": "טִפֻּח",
+    "pl": "tipúkj",
+    "ps": "tip-pookh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2946')}>H2946</span>; amamantar: <font color='%COLOR_BLUE%'>tierno cuidado.</font>"
+  },
+  {
+    "id": "H2950",
+    "ti": "ṭâphal",
+    "le": "טָפַל",
+    "pl": "tafál",
+    "ps": "taw-fal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente adherirse como parche; figurativamente imputar falsamente: <font color='%COLOR_BLUE%'>coser, forjar, fraguador.</font>"
+  },
+  {
+    "id": "H2951",
+    "ti": "ṭiphçar",
+    "le": "טִפְסַר",
+    "pl": "tifsár",
+    "ps": "tif-sar'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivado extranjero; gobernante militar: <font color='%COLOR_BLUE%'>grande, mayordomo, capitán, príncipe.</font>"
+  },
+  {
+    "id": "H2952",
+    "ti": "ṭâphaph",
+    "le": "טָפַף",
+    "pl": "tafáf",
+    "ps": "taw-faf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; aparentemente trastabillar (con pasos cortos) con coquetería: <font color='%COLOR_BLUE%'>danzar.</font>"
+  },
+  {
+    "id": "H2953",
+    "ti": "ṭᵉphar",
+    "le": "טְפַר",
+    "pl": "tefár",
+    "ps": "tef-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6852')}>H6852</span>, y significa lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6856')}>H6856</span>; uña del dedo; también casco o garra: <font color='%COLOR_BLUE%'>uña.</font>"
+  },
+  {
+    "id": "H2954",
+    "ti": "ṭâphash",
+    "le": "טָפַשׁ",
+    "pl": "tafásh",
+    "ps": "taw-fash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente aparentemente ser grueso; figurativamente ser estúpido: <font color='%COLOR_BLUE%'>engrosar, engordar, gordo.</font>"
+  },
+  {
+    "id": "H2955",
+    "ti": "Ṭâphath",
+    "le": "טָפַת",
+    "pl": "Tafát",
+    "ps": "taw-fath'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5197')}>H5197</span>; derramamiento (de ungüento); Tafat, una israelita: <font color='%COLOR_BLUE%'>Tafat.</font>"
+  },
+  {
+    "id": "H2956",
+    "ti": "ṭârad",
+    "le": "טָרַד",
+    "pl": "tarád",
+    "ps": "taw-rad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; avanzar; figurativamente seguir de cerca: <font color='%COLOR_BLUE%'>continuo.</font>"
+  },
+  {
+    "id": "H2957",
+    "ti": "ṭᵉrad",
+    "le": "טְרַד",
+    "pl": "terád",
+    "ps": "ter-ad'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2956')}>H2956</span>; expulsar: <font color='%COLOR_BLUE%'>arrojar, echar.</font>"
+  },
+  {
+    "id": "H2958",
+    "ti": "ṭᵉrôwm",
+    "le": "טְרֹום",
+    "pl": "teróm",
+    "ps": "ter-ome'",
+    "df": "<font color='%COLOR_GREEN%'></font>variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2962')}>H2962</span>; no todavía: <font color='%COLOR_BLUE%'>antes que.</font>"
+  },
+  {
+    "id": "H2959",
+    "ti": "ṭârach",
+    "le": "טָרַח",
+    "pl": "tarákj",
+    "ps": "taw-rakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; sobrecargar: <font color='%COLOR_BLUE%'>llegar a disipar.</font>"
+  },
+  {
+    "id": "H2960",
+    "ti": "ṭôrach",
+    "le": "טֹרַח",
+    "pl": "tórakj",
+    "ps": "to'-rakh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2959')}>H2959</span>; una carga: <font color='%COLOR_BLUE%'>gravoso, molestia.</font>"
+  },
+  {
+    "id": "H2961",
+    "ti": "ṭârîy",
+    "le": "טָרִי",
+    "pl": "tarí",
+    "ps": "taw-ree'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa aparentemente significa estar húmedo; propiamente chorreando; de aquí, fresco (i.e. hecho recientemente así): <font color='%COLOR_BLUE%'>fresco, podrido.</font>"
+  },
+  {
+    "id": "H2962",
+    "ti": "ṭerem",
+    "le": "טֶרֶם",
+    "pl": "térem",
+    "ps": "teh'-rem",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa aparentemente significa interrumpir o suspender; propiamente no ocurrencia; usado adverbio no todavía o antes: <font color='%COLOR_BLUE%'>antes que, aún, aún no, no todavía.</font>"
+  },
+  {
+    "id": "H2963",
+    "ti": "ṭâraph",
+    "le": "טָרַף",
+    "pl": "taráf",
+    "ps": "taw-raf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; arrancar o tirar a pedazos; causativo suplir con alimento (como por bocados): <font color='%COLOR_BLUE%'>arrebatador, arrebatar, desgarrar, despedazar, mantener, presa.</font>"
+  },
+  {
+    "id": "H2964",
+    "ti": "ṭereph",
+    "le": "טֶרֶף",
+    "pl": "téref",
+    "ps": "teh'-ref",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2963')}>H2963</span>; algo roto, i.e. fragmento, por ejemplo hoja fresca, presa, alimento: <font color='%COLOR_BLUE%'>alimento, caza, comida, hoja, pillaje, presa, robar, robo.</font>"
+  },
+  {
+    "id": "H2965",
+    "ti": "ṭârâph",
+    "le": "טָרָף",
+    "pl": "taráf",
+    "ps": "taw-rawf'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2963')}>H2963</span>; recientemente arrancado, i.e. fresco: <font color='%COLOR_BLUE%'>arracanda.</font>"
+  },
+  {
+    "id": "H2966",
+    "ti": "ṭᵉrêphâh",
+    "le": "טְרֵפָה",
+    "pl": "terefá",
+    "ps": "ter-ay-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino (colectivamente) de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2964')}>H2964</span>; presa, i.e. rebaños devorados por animales: <font color='%COLOR_BLUE%'>arrebatar, desgarrar, despedazar, destrozar, robo.</font>"
+  },
+  {
+    "id": "H2967",
+    "ti": "Ṭarpᵉlay",
+    "le": "טַרְפְּלַי",
+    "pl": "tarpelái",
+    "ps": "tar-pel-ah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de un nombre de derivado extranjero; tarpelita (colectivamente) o habitante de Tarpel, un lugar en Asiria: <font color='%COLOR_BLUE%'>oficial.</font>"
+  },
+  {
+    "id": "H2968",
+    "ti": "yâʼab",
+    "le": "יָאַב",
+    "pl": "yaáb",
+    "ps": "yaw-ab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; desear: <font color='%COLOR_BLUE%'>desear.</font>"
+  },
+  {
+    "id": "H2969",
+    "ti": "yâʼâh",
+    "le": "יָאָה",
+    "pl": "yaá",
+    "ps": "yaw-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ser adecuado: <font color='%COLOR_BLUE%'>es debido.</font><p></p><font color='%COLOR_GREEN%'><b>יאויר</b></font> <font color='%COLOR_PURPLE%'>yeór.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2975')}>H2975</span>."
+  },
+  {
+    "id": "H2970",
+    "ti": "Yaʼăzanyâh",
+    "le": "יַאֲזַנְיָה",
+    "pl": "Yaazaniá",
+    "ps": "yah-az-an-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>יאזניהו</b></font> <font color='%COLOR_PURPLE%'>Yaazaniáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H238')}>H238</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; oído de Jah; Jaazaniá, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Jaazanías.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3153')}>H3153</span>."
+  },
+  {
+    "id": "H2971",
+    "ti": "Yâʼîyr",
+    "le": "יָאִיר",
+    "pl": "Yaír",
+    "ps": "yaw-ere'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H215')}>H215</span>; iluminador; Jair, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Jair.</font>"
+  },
+  {
+    "id": "H2972",
+    "ti": "Yâʼirîy",
+    "le": "יָאִרִי",
+    "pl": "Yairí",
+    "ps": "yaw-ee-ree'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2971')}>H2971</span>; jairita o descendiente de Jair: <font color='%COLOR_BLUE%'>jaireo.</font>"
+  },
+  {
+    "id": "H2973",
+    "ti": "yâʼal",
+    "le": "יָאַל",
+    "pl": "yaál",
+    "ps": "yaw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente ser descuidado, i.e. (figurativamente) ser necio: <font color='%COLOR_BLUE%'>actuar locamente, desvanecer, enloquecer, entontecer.</font>"
+  },
+  {
+    "id": "H2974",
+    "ti": "yâʼal",
+    "le": "יָאַל",
+    "pl": "yaál",
+    "ps": "yaw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [probablemente más bien lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2973')}>H2973</span> mediante la idea de debilidad mental]; propiamente someterse, específicamente asentir; de aquí, (positivamente) acometer como acto de voluntad: <font color='%COLOR_BLUE%'>agradar, convenir, emprender, querer.</font>"
+  },
+  {
+    "id": "H2975",
+    "ti": "yᵉʼôr",
+    "le": "יְאֹר",
+    "pl": "yeór",
+    "ps": "yeh-ore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de origen egipcio; canal, por ejemplo fosa, canal, zanja; específicamente el Nilo, como río único de Egipto, incluído sus quebradas colaterales; también el Tigris, como principal río de Asiria: <font color='%COLOR_BLUE%'>arroyo, corriente, Nilo, río.</font>"
+  },
+  {
+    "id": "H2976",
+    "ti": "yâʼash",
+    "le": "יָאַשׁ",
+    "pl": "yaásh",
+    "ps": "yaw-ash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; desistir, i.e. (figurativamente) desmayar: <font color='%COLOR_BLUE%'>desesperado, desesperanzar, ocupar, ofrecer, remedio, en vano.</font>"
+  },
+  {
+    "id": "H2977",
+    "ti": "Yôʼshîyâh",
+    "le": "יֹאשִׁיָּה",
+    "pl": "Yoshiyá",
+    "ps": "yo-shee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ייאשיהו</b></font> <font color='%COLOR_PURPLE%'>Yoshiyáju</font>; de la misma raíz que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H803')}>H803</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; fundado de Jah; Joshiá, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Josías.</font>"
+  },
+  {
+    "id": "H2978",
+    "ti": "yᵉʼithôwn",
+    "le": "יְאִתֹון",
+    "pl": "yeitón",
+    "ps": "yeh-ee-thone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H857')}>H857</span>; entrada: <font color='%COLOR_BLUE%'>entrada.</font>"
+  },
+  {
+    "id": "H2979",
+    "ti": "yᵉʼâthᵉray",
+    "le": "יְאָתְרַי",
+    "pl": "Yeaterái",
+    "ps": "yeh-aw-ther-ah'ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H871')}>H871</span>; pisando; Jeaterai, un israelita: <font color='%COLOR_BLUE%'>Jeatrai.</font>"
+  },
+  {
+    "id": "H2980",
+    "ti": "yâbab",
+    "le": "יָבַב",
+    "pl": "yabáb",
+    "ps": "yaw-bab",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; desgañitarse: <font color='%COLOR_BLUE%'>decir a voces.</font>"
+  },
+  {
+    "id": "H2981",
+    "ti": "yᵉbûwl",
+    "le": "יְבוּל",
+    "pl": "yebúl",
+    "ps": "yeb-ool'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2986')}>H2986</span>; producir, i.e. una cosecha o (figurativamente) riqueza: <font color='%COLOR_BLUE%'>fruto, producto, renuevo.</font>"
+  },
+  {
+    "id": "H2982",
+    "ti": "Yᵉbûwç",
+    "le": "יְבוּס",
+    "pl": "Yebús",
+    "ps": "yeb-oos'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H947')}>H947</span>; pisoteado, i.e. lugar para trillar; Jebús, nombre aborigen de Jerusalén: <font color='%COLOR_BLUE%'>Jebús.</font>"
+  },
+  {
+    "id": "H2983",
+    "ti": "Yᵉbûwçîy",
+    "le": "יְבוּסִי",
+    "pl": "yebusí",
+    "ps": "yeb-oo-see'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2982')}>H2982</span>; jebusita o habitante de Jebús: <font color='%COLOR_BLUE%'>jebuseo.</font>"
+  },
+  {
+    "id": "H2984",
+    "ti": "Yibchar",
+    "le": "יִבְחַר",
+    "pl": "Yibkjár",
+    "ps": "yib-khar'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H977')}>H977</span>; alternativa; Jibjar, un israelita: <font color='%COLOR_BLUE%'>Ibhar.</font>"
+  },
+  {
+    "id": "H2985",
+    "ti": "Yâbîyn",
+    "le": "יָבִין",
+    "pl": "Yabín",
+    "ps": "yaw-bene'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H995')}>H995</span>; inteligente; Jabín, nombre de dos reyes cananeos: <font color='%COLOR_BLUE%'>Jabín.</font><p></p><font color='%COLOR_GREEN%'><b>יביש</b></font> <font color='%COLOR_PURPLE%'>Yabeish.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3003')}>H3003</span>."
+  },
+  {
+    "id": "H2986",
+    "ti": "yâbal",
+    "le": "יָבַל",
+    "pl": "yabál",
+    "ps": "yaw-bal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente fluir; causativo traer (específicamente con pompa): <font color='%COLOR_BLUE%'>llevar, traer.</font>"
+  },
+  {
+    "id": "H2987",
+    "ti": "yᵉbal",
+    "le": "יְבַל",
+    "pl": "yebál",
+    "ps": "yeb-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2986')}>H2986</span>; traer: <font color='%COLOR_BLUE%'>llevar.</font><p></p><font color='%COLOR_GREEN%'><b>ייבל</b></font> <font color='%COLOR_PURPLE%'>yobel.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3104')}>H3104</span>."
+  },
+  {
+    "id": "H2988",
+    "ti": "yâbâl",
+    "le": "יָבָל",
+    "pl": "yabál",
+    "ps": "yaw-bawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2986')}>H2986</span>; arroyo, riachuelo: <font color='%COLOR_BLUE%'>corriente, ribera.</font>"
+  },
+  {
+    "id": "H2989",
+    "ti": "Yâbâl",
+    "le": "יָבָל",
+    "pl": "Yabál",
+    "ps": "yaw-bawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2988')}>H2988</span>; Jabal, un antediluviano: <font color='%COLOR_BLUE%'>Jabal.</font><p></p><font color='%COLOR_GREEN%'><b>ייבל</b></font> <font color='%COLOR_PURPLE%'>yobél.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3104')}>H3104</span>."
+  },
+  {
+    "id": "H2990",
+    "ti": "yabbêl",
+    "le": "יַבֵּל",
+    "pl": "yabbél",
+    "ps": "yab-bale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2986')}>H2986</span>; teniendo llagas supurantes: <font color='%COLOR_BLUE%'>verrugoso.</font>"
+  },
+  {
+    "id": "H2991",
+    "ti": "Yiblᵉʻâm",
+    "le": "יִבְלְעָם",
+    "pl": "Yibleám",
+    "ps": "yib-leh-awm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1104')}>H1104</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span>; devorando gente; Jibleam, un lugar en Palestina: <font color='%COLOR_BLUE%'>Ibleam.</font>"
+  },
+  {
+    "id": "H2992",
+    "ti": "yâbam",
+    "le": "יָבַם",
+    "pl": "yabám",
+    "ps": "yaw-bam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria de significa dudoso; usado solo como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2993')}>H2993</span>; casarse con la viuda del hermano (fallecido): <font color='%COLOR_BLUE%'>casarse, cumplir el deber de cuñado, desposar, emparentar.</font>"
+  },
+  {
+    "id": "H2993",
+    "ti": "yâbâm",
+    "le": "יָבָם",
+    "pl": "yabám",
+    "ps": "yaw-bawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de (el origen de) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2992')}>H2992</span>; cuñado: <font color='%COLOR_BLUE%'>cuñado.</font>"
+  },
+  {
+    "id": "H2994",
+    "ti": "Yᵉbêmeth",
+    "le": "יְבֵמֶת",
+    "pl": "Yebémet",
+    "ps": "yeb-ay'-meth",
+    "df": "<font color='%COLOR_GREEN%'></font>participio femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2992')}>H2992</span>; cuñada: <font color='%COLOR_BLUE%'>cuñada.</font>"
+  },
+  {
+    "id": "H2995",
+    "ti": "Yabnᵉʼêl",
+    "le": "יַבְנְאֵל",
+    "pl": "Yabneél",
+    "ps": "yab-neh-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>: construido de Dios; Jabneel, nombre de dos lugares en Palestina: <font color='%COLOR_BLUE%'>Jabneel.</font>"
+  },
+  {
+    "id": "H2996",
+    "ti": "Yabneh",
+    "le": "יַבְנֶה",
+    "pl": "Yabné",
+    "ps": "yab-neh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; edificio; Jabne, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jabnia.</font>"
+  },
+  {
+    "id": "H2997",
+    "ti": "Yibnᵉyâh",
+    "le": "יִבְנְיָה",
+    "pl": "Yibneyá",
+    "ps": "yib-neh-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; construido de Jah; Jibneiá, un israelita: <font color='%COLOR_BLUE%'>Ibneías.</font>"
+  },
+  {
+    "id": "H2998",
+    "ti": "Yibnîyâh",
+    "le": "יִבְנִיָּה",
+    "pl": "Yibniyá",
+    "ps": "yib-nee-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; edificio de Jah; Jibniá, un israelita: <font color='%COLOR_BLUE%'>Ibnías.</font>"
+  },
+  {
+    "id": "H2999",
+    "ti": "Yabbôq",
+    "le": "יַבֹּק",
+    "pl": "Yabbóc",
+    "ps": "yab-boke'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1238')}>H1238</span>; derramando; Jaboc, un río al E. del Jordán: <font color='%COLOR_BLUE%'>Jaboc.</font>"
+  },
+  {
+    "id": "H3000",
+    "ti": "Yᵉberekyâhûw",
+    "le": "יְבֶרֶכְיָהוּ",
+    "pl": "Yeberequiáju",
+    "ps": "yeb-eh-rek-yaw'-hoo",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1288')}>H1288</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>: bendito de Jah; Jeberequiá, un israelita: <font color='%COLOR_BLUE%'>Jeberequías.</font>"
+  }
+]

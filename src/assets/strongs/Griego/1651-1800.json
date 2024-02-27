@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G1651",
+    "ti": "elénchō",
+    "le": "ἐλέγχω",
+    "pl": "elenjo",
+    "ps": "el-eng'-kho",
+    "df": "de afinidad incierta; refutar, amonestar: <font color='%COLOR_BLUE%'>acusar, convencer, convicto, redargüir, reprender.</font>"
+  },
+  {
+    "id": "G1652",
+    "ti": "eleeinós",
+    "le": "ἐλεεινός",
+    "pl": "eleeinós",
+    "ps": "el-eh-i-nos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1656')}>G1656</span>; lastimero, digno de lástima: <font color='%COLOR_BLUE%'>miserable, conmiseración.</font>"
+  },
+  {
+    "id": "G1653",
+    "ti": "eleéō",
+    "le": "ἐλεέω",
+    "pl": "eleéo",
+    "ps": "el-eh-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1656')}>G1656</span>; compasivo (en palabra u obra, específicamente, por gracia divina): <font color='%COLOR_BLUE%'>alcanzar misericordia, recibir misericordia.</font>"
+  },
+  {
+    "id": "G1654",
+    "ti": "eleēmosýnē",
+    "le": "ἐλεημοσύνη",
+    "pl": "eleemosúne",
+    "ps": "el-eh-ay-mos-oo'-nay",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1656')}>G1656</span>; compasión, i.e. beneficencia (ejercida hacia el pobre), o (concretamente) benevolencia: <font color='%COLOR_BLUE%'>justicia, limosna.</font>"
+  },
+  {
+    "id": "G1655",
+    "ti": "eleḗmōn",
+    "le": "ἐλεήμων",
+    "pl": "eleémon",
+    "ps": "el-eh-ay'-mone",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1653')}>G1653</span>; compasivo (activamente): <font color='%COLOR_BLUE%'>misericordioso.</font>"
+  },
+  {
+    "id": "G1656",
+    "ti": "éleos",
+    "le": "ἔλεος",
+    "pl": "éleos",
+    "ps": "el'-eh-os",
+    "df": "de afinidad incierta; compasión (humana o divina, específicamente activa): <font color='%COLOR_BLUE%'>misericordia.</font>"
+  },
+  {
+    "id": "G1657",
+    "ti": "eleuthería",
+    "le": "ἐλευθερία",
+    "pl": "eleudsería",
+    "ps": "el-yoo-ther-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1658')}>G1658</span>; libertad (legítima o licenciosa, principalmente moralmente o ceremonialmente): <font color='%COLOR_BLUE%'>libertad, libre.</font>"
+  },
+  {
+    "id": "G1658",
+    "ti": "eleútheros",
+    "le": "ἐλεύθερος",
+    "pl": "eleúdseros",
+    "ps": "el-yoo'-ther-os",
+    "df": "probablemente del alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span>; sin freno (para ir al placer), i.e. (como ciudadano) no esclavo (sea nacido libre o manumiso), o (generalmente) exento (de obligación o responsabilidad): <font color='%COLOR_BLUE%'>exento, libre.</font>"
+  },
+  {
+    "id": "G1659",
+    "ti": "eleutheróō",
+    "le": "ἐλευθερόω",
+    "pl": "eleudseróo",
+    "ps": "el-yoo-ther-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1658')}>G1658</span>; liberar, i.e. (figurativamente) eximir (de responsabilidad moralmente, ceremonialmente o mortal): <font color='%COLOR_BLUE%'>hacer (libre), libertar, librar, libre.</font><p></p><b>ἐλεύθω</b> <font color='%COLOR_PURPLE%'>eleúdso.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span>."
+  },
+  {
+    "id": "G1660",
+    "ti": "éleusis",
+    "le": "ἔλευσις",
+    "pl": "éleusis",
+    "ps": "el'-yoo-sis",
+    "df": "del alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span>; adviento, venida: <font color='%COLOR_BLUE%'>venida.</font>"
+  },
+  {
+    "id": "G1661",
+    "ti": "elephántinos",
+    "le": "ἐλεφάντινος",
+    "pl": "elefántinos",
+    "ps": "el-ef-an'-tee-nos",
+    "df": "de <b>ἔλεφας</b> <font color='%COLOR_PURPLE%'>élefas</font> (un «elefante»); elefantino, i.e. (por implicación) compuesto de marfil: <font color='%COLOR_BLUE%'>marfil.</font>"
+  },
+  {
+    "id": "G1662",
+    "ti": "Eliakeím",
+    "le": "Ἐλιακείμ",
+    "pl": "Eliaqueím",
+    "ps": "el-ee-ak-ime'",
+    "df": "o <b>Ἐλιακίμ</b> <font color='%COLOR_PURPLE%'>Elaiquim</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H471')}>H471</span>]; Eliacim, un israelita: <font color='%COLOR_BLUE%'>Eliaquim.</font>"
+  },
+  {
+    "id": "G1663",
+    "ti": "Eliézer",
+    "le": "Ἐλιέζερ",
+    "pl": "Eliézer",
+    "ps": "el-ee-ed'-zer",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H461')}>H461</span>]; Eliezer, un israelita: <font color='%COLOR_BLUE%'>Eliezer.</font>"
+  },
+  {
+    "id": "G1664",
+    "ti": "Elioúd",
+    "le": "Ἐλιούδ",
+    "pl": "Elioúd",
+    "ps": "el-ee-ood'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1935')}>H1935</span>]; Dios de majestad; Eliud, un israelita: <font color='%COLOR_BLUE%'>Eliud.</font>"
+  },
+  {
+    "id": "G1665",
+    "ti": "Elisábet",
+    "le": "Ἐλισάβετ",
+    "pl": "Elisábet",
+    "ps": "el-ee-sab'-et",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H472')}>H472</span>]; Elisabet, una israelita: <font color='%COLOR_BLUE%'>Elisabet.</font>"
+  },
+  {
+    "id": "G1666",
+    "ti": "Elissaîos",
+    "le": "Ἐλισσαῖος",
+    "pl": "Elissaios",
+    "ps": "el-is-sah'-yos",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H477')}>H477</span>]; Eliseo, un israelita: <font color='%COLOR_BLUE%'>Eliseo.</font>"
+  },
+  {
+    "id": "G1667",
+    "ti": "helíssō",
+    "le": "ἑλίσσω",
+    "pl": "jelíso",
+    "ps": "hel-is'-so",
+    "df": "una forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1507')}>G1507</span>; envolver o enrollar: <font color='%COLOR_BLUE%'>envolver.</font>"
+  },
+  {
+    "id": "G1668",
+    "ti": "hélkos",
+    "le": "ἕλκος",
+    "pl": "jélcos",
+    "ps": "hel'-kos",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1670')}>G1670</span>; úlcera (como si estuviera unida): <font color='%COLOR_BLUE%'>llaga, úlcera.</font>"
+  },
+  {
+    "id": "G1669",
+    "ti": "helkóō",
+    "le": "ἑλκόω",
+    "pl": "jelcóo",
+    "ps": "hel-ko'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1668')}>G1668</span>; causar úlceración, i.e. (pasivamente) ulceroso: <font color='%COLOR_BLUE%'>enfermar, llaga.</font>"
+  },
+  {
+    "id": "G1670",
+    "ti": "helkýō",
+    "le": "ἑλκύω",
+    "pl": "jelcúo",
+    "ps": "hel-koo'-o",
+    "df": "o <b>ἕλκω</b> <font color='%COLOR_PURPLE%'>jélco</font>; probablemente semejante a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>; arrastrar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>arrastrar, atraer, sacar, traer.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1667')}>G1667</span>."
+  },
+  {
+    "id": "G1671",
+    "ti": "Hellás",
+    "le": "Ἑλλάς",
+    "pl": "Jelás",
+    "ps": "hel-las'",
+    "df": "de afinidad incierta; Jelas (o Grecia), nación de Europa: <font color='%COLOR_BLUE%'>Grecia.</font>"
+  },
+  {
+    "id": "G1672",
+    "ti": "Héllēn",
+    "le": "Ἕλλην",
+    "pl": "jélen",
+    "ps": "hel'-lane",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1671')}>G1671</span>; heleno (griego) o habitante de Jelas; por extensión persona que habla griego, específicamente un no-judío: <font color='%COLOR_BLUE%'>gentil, griego.</font>"
+  },
+  {
+    "id": "G1673",
+    "ti": "Hellēnikós",
+    "le": "Ἑλληνικός",
+    "pl": "jelenikós",
+    "ps": "hel-lay-nee-kos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1672')}>G1672</span>; helénico, i.e. griego (en idioma): <font color='%COLOR_BLUE%'>griego.</font>"
+  },
+  {
+    "id": "G1674",
+    "ti": "Hellēnís",
+    "le": "Ἑλληνίς",
+    "pl": "jelenís",
+    "ps": "hel-lay-nis'",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1672')}>G1672</span>; mujer griega (i.e. no-judía): <font color='%COLOR_BLUE%'>griego.</font>"
+  },
+  {
+    "id": "G1675",
+    "ti": "Hellēnistḗs",
+    "le": "Ἑλληνιστής",
+    "pl": "jelenistés",
+    "ps": "hel-lay-nis-tace'",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1672')}>G1672</span>; judío helenista o que habla griego: <font color='%COLOR_BLUE%'>griego.</font>"
+  },
+  {
+    "id": "G1676",
+    "ti": "Hellēnistí",
+    "le": "Ἑλληνιστί",
+    "pl": "jelenistí",
+    "ps": "hel-lay-nis-tee'",
+    "df": "adverbio de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1675')}>G1675</span>; helenísticamente, i.e. en griego: <font color='%COLOR_BLUE%'>griego.</font>"
+  },
+  {
+    "id": "G1677",
+    "ti": "ellogéō",
+    "le": "ἐλλογέω",
+    "pl": "elogéo",
+    "ps": "el-log-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span> (en el sentido de tomar cuentas); reconocer, i.e. atributo: <font color='%COLOR_BLUE%'>inculpar, poner a cuenta.</font><p></p><b>ἕλλομαι</b> <font color='%COLOR_PURPLE%'>élomai.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>."
+  },
+  {
+    "id": "G1678",
+    "ti": "Elmōdám",
+    "le": "Ἐλμωδάμ",
+    "pl": "Elmodám",
+    "ps": "el-mo-dam'",
+    "df": "de origen hebreo [tal vez por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H486')}>H486</span>]; Elmodam, un israelita: <font color='%COLOR_BLUE%'>Elmodán.</font>"
+  },
+  {
+    "id": "G1679",
+    "ti": "elpízō",
+    "le": "ἐλπίζω",
+    "pl": "elpízo",
+    "ps": "el-pid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1680')}>G1680</span>; esperar o confiar: <font color='%COLOR_BLUE%'>esperanza, esperar.</font>"
+  },
+  {
+    "id": "G1680",
+    "ti": "elpís",
+    "le": "ἐλπίς",
+    "pl": "elpis",
+    "ps": "el-pece'",
+    "df": "del primario <b>ἔλπω</b> <font color='%COLOR_PURPLE%'>élpo</font> (esperar con anhelo, por lo general con placer); expectación (abstractamente o concretamente) o confianza: <font color='%COLOR_BLUE%'>esperanza, esperar.</font>"
+  },
+  {
+    "id": "G1681",
+    "ti": "Elýmas",
+    "le": "Ἐλύμας",
+    "pl": "Elúmas",
+    "ps": "el-oo'-mas",
+    "df": "de origen extranjero; Elimas, un mago: <font color='%COLOR_BLUE%'>Elimas.</font>"
+  },
+  {
+    "id": "G1682",
+    "ti": "eloḯ",
+    "le": "ἐλοΐ",
+    "pl": "eloí",
+    "ps": "el-o-ee'",
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H426')}>H426</span> con sufijo pronombre] Dios mío: <font color='%COLOR_BLUE%'>Eloi.</font>"
+  },
+  {
+    "id": "G1683",
+    "ti": "emautoû",
+    "le": "ἐμαυτοῦ",
+    "pl": "emautoú",
+    "ps": "em-ow-too'",
+    "df": "compuesto genitivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1700')}>G1700</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G846')}>G846</span>; de mí mismo (de la misma manera el dativo) <b>ἐμαυτῷ</b> <font color='%COLOR_PURPLE%'>emautó</font>; y acusativo <b>ἐμαυτόν</b> <font color='%COLOR_PURPLE%'>emautón</font>: <font color='%COLOR_BLUE%'>(propia) cuenta.</font>"
+  },
+  {
+    "id": "G1684",
+    "ti": "embaínō",
+    "le": "ἐμβαίνω",
+    "pl": "embaíno",
+    "ps": "em-ba'-hee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; subir, i.e. embarcarse (a bordo de un barco), alcanzar (un estanque): <font color='%COLOR_BLUE%'>descender, entrar, subir.</font>"
+  },
+  {
+    "id": "G1685",
+    "ti": "embállō",
+    "le": "ἐμβάλλω",
+    "pl": "embálo",
+    "ps": "em-bal'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; arrojar, echar en, i.e. (figurativamente) sujeto a (castigo eterno): <font color='%COLOR_BLUE%'>echar.</font>"
+  },
+  {
+    "id": "G1686",
+    "ti": "embáptō",
+    "le": "ἐμβάπτω",
+    "pl": "embápto",
+    "ps": "em-bap'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G911')}>G911</span>; sumergir en, i.e. mojar (una parte de la persona, etc.) por contacto con un líquido: <font color='%COLOR_BLUE%'>meter, mojar.</font>"
+  },
+  {
+    "id": "G1687",
+    "ti": "embateúō",
+    "le": "ἐμβατεύω",
+    "pl": "embateúo",
+    "ps": "em-bat-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y un derivado presunto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; equivalente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1684')}>G1684</span>; entrometerse en (figurativamente): <font color='%COLOR_BLUE%'>entremeter.</font>"
+  },
+  {
+    "id": "G1688",
+    "ti": "embibázō",
+    "le": "ἐμβιβάζω",
+    "pl": "embibázo",
+    "ps": "em-bib-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <b>βιβάζω</b> <font color='%COLOR_PURPLE%'>bibázo</font> (montar; causativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1684')}>G1684</span>); colocar en, i.e. transferir (abordar un barco): <font color='%COLOR_BLUE%'>embarcar.</font>"
+  },
+  {
+    "id": "G1689",
+    "ti": "emblépō",
+    "le": "ἐμβλέπω",
+    "pl": "emblépo",
+    "ps": "em-blep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G991')}>G991</span>; mirar a, i.e. (relativamente) observar fijamente, o (absolutamente) discernir claramente: <font color='%COLOR_BLUE%'>mirar, ver.</font>"
+  },
+  {
+    "id": "G1690",
+    "ti": "embrimáomai",
+    "le": "ἐμβριμάομαι",
+    "pl": "embrimáomai",
+    "ps": "em-brim-ah'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <b>βριμάομαι</b> <font color='%COLOR_PURPLE%'>brimáomai</font> (bufar con cólera); tener indignación por, i.e. (transitivamente) culpar, (intransitivo) suspirar con disgusto, (específicamente) encargar rigurosamente: <font color='%COLOR_BLUE%'>encargar, estremecer, murmuración, conmover.</font>"
+  },
+  {
+    "id": "G1691",
+    "ti": "emé",
+    "le": "ἐμέ",
+    "pl": "eme",
+    "ps": "em-eh'",
+    "df": "forma prolongada de un <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3165')}>G3165</span>; mí: <font color='%COLOR_BLUE%'>mí, mí mismo.</font>"
+  },
+  {
+    "id": "G1692",
+    "ti": "eméō",
+    "le": "ἐμέω",
+    "pl": "eméo",
+    "ps": "em-eh'-o",
+    "df": "de afinidad incierta; vomitar: <font color='%COLOR_BLUE%'>vomitar.</font>"
+  },
+  {
+    "id": "G1693",
+    "ti": "emmaínomai",
+    "le": "ἐμμαίνομαι",
+    "pl": "emmaínomai",
+    "ps": "em-mah'-ee-nom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3105')}>G3105</span>; rabiar contra, i.e. rabiar a: <font color='%COLOR_BLUE%'>enfurecer.</font>"
+  },
+  {
+    "id": "G1694",
+    "ti": "Emmanouḗl",
+    "le": "Ἐμμανουήλ",
+    "pl": "Emmanouél",
+    "ps": "em-man-oo-ale'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6005')}>H6005</span>]; Dios con nosotros; Emanuel, un nombre de Cristo: <font color='%COLOR_BLUE%'>Emanuel.</font>"
+  },
+  {
+    "id": "G1695",
+    "ti": "Emmaoús",
+    "le": "Ἐμμαούς",
+    "pl": "Emaoús",
+    "ps": "em-mah-ooce'",
+    "df": "probablemente de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3222')}>H3222</span>]; Emaús, lugar en Palestina: <font color='%COLOR_BLUE%'>Emaús.</font>"
+  },
+  {
+    "id": "G1696",
+    "ti": "emménō",
+    "le": "ἐμμένω",
+    "pl": "emméno",
+    "ps": "em-men'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3306')}>G3306</span>; quedar en el mismo lugar, i.e. (figurativamente) perseverar: <font color='%COLOR_BLUE%'>permanecer.</font>"
+  },
+  {
+    "id": "G1697",
+    "ti": "Emmór",
+    "le": "Ἐμμόρ",
+    "pl": "Emmór",
+    "ps": "em-mor'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2544')}>H2544</span>]; Emor (i.e. Jamor), un cananeo: <font color='%COLOR_BLUE%'>Hamor.</font>"
+  },
+  {
+    "id": "G1698",
+    "ti": "emoí",
+    "le": "ἐμοί",
+    "pl": "emoí",
+    "ps": "em-oy'",
+    "df": "forma prolongada de un <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3427')}>G3427</span>; a mí: <font color='%COLOR_BLUE%'>a mí, en mí.</font>"
+  },
+  {
+    "id": "G1699",
+    "ti": "emós",
+    "le": "ἐμός",
+    "pl": "emós",
+    "ps": "em-os'",
+    "df": "de casos oblicuos de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1473')}>G1473</span> (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1698')}>G1698</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1700')}>G1700</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1691')}>G1691</span>); mío: <font color='%COLOR_BLUE%'>mi, mío.</font>"
+  },
+  {
+    "id": "G1700",
+    "ti": "emoû",
+    "le": "ἐμοῦ",
+    "pl": "emoú",
+    "ps": "em-oo'",
+    "df": "forma prolongada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3450')}>G3450</span>; de mí: <font color='%COLOR_BLUE%'>mí, mío.</font>"
+  },
+  {
+    "id": "G1701",
+    "ti": "empaigmós",
+    "le": "ἐμπαιγμός",
+    "pl": "empaigmós",
+    "ps": "emp-aheeg-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1702')}>G1702</span>; mofa, burla: <font color='%COLOR_BLUE%'>vituperio.</font>"
+  },
+  {
+    "id": "G1702",
+    "ti": "empaízō",
+    "le": "ἐμπαίζω",
+    "pl": "empaízo",
+    "ps": "emp-aheed'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3815')}>G3815</span>; burlarse de, i.e. denigrar, mofarse: <font color='%COLOR_BLUE%'>burla, burlar, escarnecer.</font>"
+  },
+  {
+    "id": "G1703",
+    "ti": "empaíktēs",
+    "le": "ἐμπαίκτης",
+    "pl": "empaiktés",
+    "ps": "emp-aheek-tace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1702')}>G1702</span>; burlador, i.e. (por implicación) maestro falso: <font color='%COLOR_BLUE%'>burlador.</font>"
+  },
+  {
+    "id": "G1704",
+    "ti": "emperipatéō",
+    "le": "ἐμπεριπατέω",
+    "pl": "emperipatéo",
+    "ps": "em-per-ee-pat-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4043')}>G4043</span>; deambular en un lugar, i.e. (figurativamente) ocuparse entre personas: <font color='%COLOR_BLUE%'>andar.</font>"
+  },
+  {
+    "id": "G1705",
+    "ti": "empíplēmi",
+    "le": "ἐμπίπλημι",
+    "pl": "empíplemi",
+    "ps": "em-pip'-lay-mee",
+    "df": "o <b>ἐμπλήθω</b> <font color='%COLOR_PURPLE%'>emplédso</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4118')}>G4118</span>; llenar, i.e. (por implicación) satisfacer (literalmente o figurativamente): <font color='%COLOR_BLUE%'>colmar, gozar, llenar, saciar.</font>"
+  },
+  {
+    "id": "G1706",
+    "ti": "empíptō",
+    "le": "ἐμπίπτω",
+    "pl": "empípto",
+    "ps": "em-pip'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4098')}>G4098</span>; caer en, i.e. (literalmente) quedar atrapado por, o (figurativamente) quedar abrumado por: <font color='%COLOR_BLUE%'>caer.</font>"
+  },
+  {
+    "id": "G1707",
+    "ti": "emplékō",
+    "le": "ἐμπλέκω",
+    "pl": "empléco",
+    "ps": "em-plek'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4120')}>G4120</span>; enredarse, i.e. (figurativamente) involucrarse en: <font color='%COLOR_BLUE%'>enredar.</font><p></p><b>ἐμπλήθω</b> <font color='%COLOR_PURPLE%'>emplédso.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1705')}>G1705</span>."
+  },
+  {
+    "id": "G1708",
+    "ti": "emplokḗ",
+    "le": "ἐμπλοκή",
+    "pl": "emploqué",
+    "ps": "em-plok-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1707')}>G1707</span>; trenzado elaborado del cabello: <font color='%COLOR_BLUE%'>(peinado) ostentoso.</font>"
+  },
+  {
+    "id": "G1709",
+    "ti": "empnéō",
+    "le": "ἐμπνέω",
+    "pl": "empnéo",
+    "ps": "emp-neh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4154')}>G4154</span>; inhalar, i.e. (figurativamente) ser animado por (soplado sobre): <font color='%COLOR_BLUE%'>respirar.</font>"
+  },
+  {
+    "id": "G1710",
+    "ti": "emporeúomai",
+    "le": "ἐμπορεύομαι",
+    "pl": "emporeúomai",
+    "ps": "em-por-yoo'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4198')}>G4198</span>; viajar por (una nación como comerciante), i.e. (por implicación) comerciar: <font color='%COLOR_BLUE%'>hacer mercaderia.</font>"
+  },
+  {
+    "id": "G1711",
+    "ti": "emporía",
+    "le": "ἐμπορία",
+    "pl": "emporía",
+    "ps": "em-por-ee'-ah",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1713')}>G1713</span>; tráfico: <font color='%COLOR_BLUE%'>negocio.</font>"
+  },
+  {
+    "id": "G1712",
+    "ti": "empórion",
+    "le": "ἐμπόριον",
+    "pl": "empórion",
+    "ps": "em-por'-ee-on",
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1713')}>G1713</span>; mercado («emporio»): <font color='%COLOR_BLUE%'>mercado.</font>"
+  },
+  {
+    "id": "G1713",
+    "ti": "émporos",
+    "le": "ἔμπορος",
+    "pl": "émporos",
+    "ps": "em'-por-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4198')}>G4198</span>; vendedor, comerciante (mayorista): <font color='%COLOR_BLUE%'>mercader.</font>"
+  },
+  {
+    "id": "G1714",
+    "ti": "emprḗthō",
+    "le": "ἐμπρήθω",
+    "pl": "emprédso",
+    "ps": "em-pray'-tho",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <b>πρήθω</b> <font color='%COLOR_PURPLE%'>prédso</font>; (soplar una llama); encender, i.e. inflamar: <font color='%COLOR_BLUE%'>quemar.</font>"
+  },
+  {
+    "id": "G1715",
+    "ti": "émprosthen",
+    "le": "ἔμπροσθεν",
+    "pl": "émprosdsen",
+    "ps": "em'-pros-then",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4314')}>G4314</span>; en frente de (un lugar [literalmente o figurativamente] o tiempo): <font color='%COLOR_BLUE%'>primero.</font>"
+  },
+  {
+    "id": "G1716",
+    "ti": "emptýō",
+    "le": "ἐμπτύω",
+    "pl": "emptúo",
+    "ps": "emp-too'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4429')}>G4429</span>; escupir a o sobre: <font color='%COLOR_BLUE%'>escupir.</font>"
+  },
+  {
+    "id": "G1717",
+    "ti": "emphanḗs",
+    "le": "ἐμφανής",
+    "pl": "emfanés",
+    "ps": "em-fan-ace'",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5316')}>G5316</span>; aparente en sí mismo: <font color='%COLOR_BLUE%'>manifestar.</font>"
+  },
+  {
+    "id": "G1718",
+    "ti": "emphanízō",
+    "le": "ἐμφανίζω",
+    "pl": "emfanízo",
+    "ps": "em-fan-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1717')}>G1717</span>; exhibir (en persona) o revelar (con palabras): <font color='%COLOR_BLUE%'>(dar a) entender, manifestar, aparecer, aviso, claramente, comparecer, dar (aviso), presentar, requerir.</font>"
+  },
+  {
+    "id": "G1719",
+    "ti": "émphobos",
+    "le": "ἔμφοβος",
+    "pl": "émfobos",
+    "ps": "em'-fob-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5401')}>G5401</span>; con temor, i.e. alarmado: <font color='%COLOR_BLUE%'>temor, atemorizar, aterrorizar, espantar.</font>"
+  },
+  {
+    "id": "G1720",
+    "ti": "emphysáō",
+    "le": "ἐμφυσάω",
+    "pl": "émfusáo",
+    "ps": "em-foo-sah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <b>φυσάω</b> <font color='%COLOR_PURPLE%'>fusáo</font> (soplar) [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5453')}>G5453</span>]; soplar a o sobre: <font color='%COLOR_BLUE%'>soplar.</font>"
+  },
+  {
+    "id": "G1721",
+    "ti": "émphytos",
+    "le": "ἔμφυτος",
+    "pl": "émfutos",
+    "ps": "em'-foo-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5453')}>G5453</span>; injertado, implantado (figurativamente): <font color='%COLOR_BLUE%'>implantada.</font>"
+  },
+  {
+    "id": "G1722",
+    "ti": "en",
+    "le": "ἐν",
+    "pl": "en",
+    "ps": "en",
+    "df": "preposición primaria denotando posición (fija) (en lugar, tiempo o estado), y (por implicación) instrumentalidad (como medio o constructivamente), i.e. relación de reposo (intermedior entre <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1519')}>G1519</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1537')}>G1537</span>); «en,» a, sobre, por, etc.: <font color='%COLOR_BLUE%'>exhortación, interior, bajo, oscuramente, potente.</font>"
+  },
+  {
+    "id": "G1723",
+    "ti": "enankalízomai",
+    "le": "ἐναγκαλίζομαι",
+    "pl": "enankalízomai",
+    "ps": "en-ang-kal-id'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G43')}>G43</span>; recibir en los brazos de uno, i.e. abrazar: <font color='%COLOR_BLUE%'>tomar, brazo.</font>"
+  },
+  {
+    "id": "G1724",
+    "ti": "enálios",
+    "le": "ἐνάλιος",
+    "pl": "enálios",
+    "ps": "en-al'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G251')}>G251</span>; en el mar, i.e. marino: <font color='%COLOR_BLUE%'>mar.</font>"
+  },
+  {
+    "id": "G1725",
+    "ti": "énanti",
+    "le": "ἔναντι",
+    "pl": "énanti",
+    "ps": "en'-an-tee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G473')}>G473</span>; en frente (i.e. figurativamente presencia) de: <font color='%COLOR_BLUE%'>delante.</font>"
+  },
+  {
+    "id": "G1726",
+    "ti": "enantíon",
+    "le": "ἐναντίον",
+    "pl": "enantíon",
+    "ps": "en-an-tee'-on",
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1727')}>G1727</span>; (adverbio) en la presencia (vista) de: <font color='%COLOR_BLUE%'>delante (de).</font>"
+  },
+  {
+    "id": "G1727",
+    "ti": "enantíos",
+    "le": "ἐναντίος",
+    "pl": "enantíos",
+    "ps": "en-an-tee'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1725')}>G1725</span>; opuesto; figurativamente antagonista: <font color='%COLOR_BLUE%'>contrario, oponer.</font>"
+  },
+  {
+    "id": "G1728",
+    "ti": "enárchomai",
+    "le": "ἐνάρχομαι",
+    "pl": "enárjomai",
+    "ps": "en-ar'-khom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G756')}>G756</span>; comenzar en: <font color='%COLOR_BLUE%'>comenzar.</font>"
+  },
+  {
+    "id": "G1729",
+    "ti": "endeḗs",
+    "le": "ἐνδεής",
+    "pl": "endeés",
+    "ps": "en-deh-ace'",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1210')}>G1210</span> (en el sentido de carecer); deficiente en: <font color='%COLOR_BLUE%'>necesitado.</font>"
+  },
+  {
+    "id": "G1730",
+    "ti": "éndeigma",
+    "le": "ἔνδειγμα",
+    "pl": "éndeigma",
+    "ps": "en'-dighe-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1731')}>G1731</span>; una indicación (concretamente): <font color='%COLOR_BLUE%'>demostración.</font>"
+  },
+  {
+    "id": "G1731",
+    "ti": "endeíknymi",
+    "le": "ἐνδείκνυμι",
+    "pl": "endeiknumi",
+    "ps": "en-dike'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1166')}>G1166</span>; indicar (por palabra o acción): <font color='%COLOR_BLUE%'>mostrar.</font>"
+  },
+  {
+    "id": "G1732",
+    "ti": "éndeixis",
+    "le": "ἔνδειξις",
+    "pl": "éndeixis",
+    "ps": "en'-dike-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1731')}>G1731</span>; indicación (abstractamente): <font color='%COLOR_BLUE%'>prueba, indicio, manifestar, comprobar.</font>"
+  },
+  {
+    "id": "G1733",
+    "ti": "héndeka",
+    "le": "ἕνδεκα",
+    "pl": "jéndeka",
+    "ps": "hen'-dek-ah",
+    "df": "de (el neutro de) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1520')}>G1520</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1176')}>G1176</span>; uno y diez, i.e. once: <font color='%COLOR_BLUE%'>once.</font>"
+  },
+  {
+    "id": "G1734",
+    "ti": "hendékatos",
+    "le": "ἑνδέκατος",
+    "pl": "jendékatos",
+    "ps": "hen-dek'-at-os",
+    "df": "ordinal de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1733')}>G1733</span>; undécimo: <font color='%COLOR_BLUE%'>undécimo.</font>"
+  },
+  {
+    "id": "G1735",
+    "ti": "endéchetai",
+    "le": "ἐνδέχεται",
+    "pl": "endéjetai",
+    "ps": "en-dekh'-et-ahee",
+    "df": "tercera persona singular presente de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1209')}>G1209</span>; (impersonal) es aceptado en, i.e. admitido (posible): <font color='%COLOR_BLUE%'>(no es) posible.</font>"
+  },
+  {
+    "id": "G1736",
+    "ti": "endēméō",
+    "le": "ἐνδημέω",
+    "pl": "endeméo",
+    "ps": "en-day-meh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1218')}>G1218</span>; estar en el país propio de uno, i.e. en casa (figurativamente): <font color='%COLOR_BLUE%'>presente.</font>"
+  },
+  {
+    "id": "G1737",
+    "ti": "endidýskō",
+    "le": "ἐνδιδύσκω",
+    "pl": "endidúsko",
+    "ps": "en-did-oos'-ko",
+    "df": "forma prolongada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1746')}>G1746</span>; investir (con un vestido): <font color='%COLOR_BLUE%'>vestir.</font>"
+  },
+  {
+    "id": "G1738",
+    "ti": "éndikos",
+    "le": "ἔνδικος",
+    "pl": "éndikos",
+    "ps": "en'-dee-kos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1349')}>G1349</span>; derecho, i.e. justo: <font color='%COLOR_BLUE%'>justo.</font>"
+  },
+  {
+    "id": "G1739",
+    "ti": "endómēsis",
+    "le": "ἐνδόμησις",
+    "pl": "endómesis",
+    "ps": "en-dom'-ay-sis",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1218')}>G1218</span>; vivir en (residencia), i.e. estructura: <font color='%COLOR_BLUE%'>material.</font>"
+  },
+  {
+    "id": "G1740",
+    "ti": "endoxázō",
+    "le": "ἐνδοξάζω",
+    "pl": "endoxazo",
+    "ps": "en-dox-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1741')}>G1741</span>; glorificar: <font color='%COLOR_BLUE%'>glorificar.</font>"
+  },
+  {
+    "id": "G1741",
+    "ti": "éndoxos",
+    "le": "ἔνδοξος",
+    "pl": "éndoxos",
+    "ps": "en'-dox-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1391')}>G1391</span>; en gloria, i.e. espléndido, (figurativamente) noble: <font color='%COLOR_BLUE%'>glorioso, honorable, precioso.</font>"
+  },
+  {
+    "id": "G1742",
+    "ti": "éndyma",
+    "le": "ἔνδυμα",
+    "pl": "énduma",
+    "ps": "en'-doo-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1746')}>G1746</span>; ropa, ropaje (específicamente el manto exterior): <font color='%COLOR_BLUE%'>vestido, vestidura, vestir.</font>"
+  },
+  {
+    "id": "G1743",
+    "ti": "endynamóō",
+    "le": "ἐνδυναμόω",
+    "pl": "endunamóo",
+    "ps": "en-doo-nam-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1412')}>G1412</span>; apoderar: <font color='%COLOR_BLUE%'>dar fuerza, esforzar, fortalecer.</font>"
+  },
+  {
+    "id": "G1744",
+    "ti": "endýnō",
+    "le": "ἐνδύνω",
+    "pl": "endúno",
+    "ps": "en-doo'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1772')}>G1772</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1416')}>G1416</span>; hundir (por implicación envolver [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1746')}>G1746</span>]) en, i.e. (figurativamente) entremeterse: <font color='%COLOR_BLUE%'>meter.</font>"
+  },
+  {
+    "id": "G1745",
+    "ti": "éndysis",
+    "le": "ἔνδυσις",
+    "pl": "éndusis",
+    "ps": "en'-doo-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1746')}>G1746</span>; investir con ropa: <font color='%COLOR_BLUE%'>lujoso.</font>"
+  },
+  {
+    "id": "G1746",
+    "ti": "endýō",
+    "le": "ἐνδύω",
+    "pl": "endúo",
+    "ps": "en-doo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1416')}>G1416</span> (en el sentido de hundir en un vestido); investir con ropa (literalmente o figurativamente): <font color='%COLOR_BLUE%'>poner, revestir, vestir, investir.</font><p></p><b>ἐνέγκω</b> <font color='%COLOR_PURPLE%'>enénko.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>."
+  },
+  {
+    "id": "G1747",
+    "ti": "enédra",
+    "le": "ἐνέδρα",
+    "pl": "enédra",
+    "ps": "en-ed'-rah",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1476')}>G1476</span>; emboscada, i.e. (figurativamente) propósito criminal: <font color='%COLOR_BLUE%'>celada.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1749')}>G1749</span>."
+  },
+  {
+    "id": "G1748",
+    "ti": "enedreúō",
+    "le": "ἐνεδρεύω",
+    "pl": "enedreúo",
+    "ps": "en-ed-ryoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1747')}>G1747</span>; acechar, i.e. (figurativamente) tramar asesinato: <font color='%COLOR_BLUE%'>acechar.</font>"
+  },
+  {
+    "id": "G1749",
+    "ti": "énedron",
+    "le": "ἔνεδρον",
+    "pl": "énedron",
+    "ps": "en'-ed-ron",
+    "df": "neutro de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1747')}>G1747</span>; emboscada, i.e. (figurativamente) designio asesino: <font color='%COLOR_BLUE%'>celada.</font>"
+  },
+  {
+    "id": "G1750",
+    "ti": "eneiléō",
+    "le": "ἐνειλέω",
+    "pl": "eneiléo",
+    "ps": "en-i-leh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1772')}>G1772</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1507')}>G1507</span>; envolver: <font color='%COLOR_BLUE%'>envolver.</font>"
+  },
+  {
+    "id": "G1751",
+    "ti": "éneimi",
+    "le": "ἔνειμι",
+    "pl": "éneimi",
+    "ps": "en'-i-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1772')}>G1772</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1510')}>G1510</span>; estar dentro (participio plural neutro): <font color='%COLOR_BLUE%'>tener.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1762')}>G1762</span>."
+  },
+  {
+    "id": "G1752",
+    "ti": "héneka",
+    "le": "ἕνεκα",
+    "pl": "jéneka",
+    "ps": "hen'-ek-ah",
+    "df": "o <b>ἕνεκεν</b> <font color='%COLOR_PURPLE%'>jéneken</font>; o <b>ἕινεκεν</b> <font color='%COLOR_PURPLE%'>jeíneken</font>; de afinidad incierta; a cuenta de: <font color='%COLOR_BLUE%'>por causa, por lo cual, por qué, porque.</font>"
+  },
+  {
+    "id": "G1753",
+    "ti": "enérgeia",
+    "le": "ἐνέργεια",
+    "pl": "enérgeia",
+    "ps": "en-erg'-i-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1756')}>G1756</span>; eficiencia («energía»): <font color='%COLOR_BLUE%'>actividad (propia), obra, operación, poder.</font>"
+  },
+  {
+    "id": "G1754",
+    "ti": "energéō",
+    "le": "ἐνεργέω",
+    "pl": "energéo",
+    "ps": "en-erg-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1756')}>G1756</span>; ser activo, eficiente: <font color='%COLOR_BLUE%'>obrar, operar.</font>"
+  },
+  {
+    "id": "G1755",
+    "ti": "enérgēma",
+    "le": "ἐνέργημα",
+    "pl": "enérgema",
+    "ps": "en-erg'-ay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1754')}>G1754</span>; efecto: <font color='%COLOR_BLUE%'>hacer.</font>"
+  },
+  {
+    "id": "G1756",
+    "ti": "energḗs",
+    "le": "ἐνεργής",
+    "pl": "energés",
+    "ps": "en-er-gace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2041')}>G2041</span>; activo, operativo: <font color='%COLOR_BLUE%'>eficaz.</font>"
+  },
+  {
+    "id": "G1757",
+    "ti": "eneulogéō",
+    "le": "ἐνευλογέω",
+    "pl": "eneuloguéo",
+    "ps": "en-yoo-log-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2127')}>G2127</span>; conferir un beneficio sobre: <font color='%COLOR_BLUE%'>bendecir.</font>"
+  },
+  {
+    "id": "G1758",
+    "ti": "enéchō",
+    "le": "ἐνέχω",
+    "pl": "enéjo",
+    "ps": "en-ekh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2192')}>G2192</span>; sostener en o sobre, i.e. acechar; por implicación guardar rencor: <font color='%COLOR_BLUE%'>estrechar, sujetar.</font>"
+  },
+  {
+    "id": "G1759",
+    "ti": "entháde",
+    "le": "ἐνθάδε",
+    "pl": "endsáde",
+    "ps": "en-thad'-eh",
+    "df": "de forma prolongada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span>; propiamente dentro, i.e. (de lugar) aquí, acá: <font color='%COLOR_BLUE%'>acá, allí, aquí.</font>"
+  },
+  {
+    "id": "G1760",
+    "ti": "enthyméomai",
+    "le": "ἐνθυμέομαι",
+    "pl": "endsuméomai",
+    "ps": "en-thoo-meh'-om-ahee",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2372')}>G2372</span>; inspirado, i.e. meditar: <font color='%COLOR_BLUE%'>pensar.</font>"
+  },
+  {
+    "id": "G1761",
+    "ti": "enthýmēsis",
+    "le": "ἐνθύμησις",
+    "pl": "endsúmesis",
+    "ps": "en-thoo'-may-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1760')}>G1760</span>; deliberación: <font color='%COLOR_BLUE%'>imaginación, pensamiento.</font>"
+  },
+  {
+    "id": "G1762",
+    "ti": "éni",
+    "le": "ἔνι",
+    "pl": "éni",
+    "ps": "en'-ee",
+    "df": "contracción por la tercera persona singular presente indicativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1751')}>G1751</span>; impersonal hay en o entre: <font color='%COLOR_BLUE%'>hay.</font>"
+  },
+  {
+    "id": "G1763",
+    "ti": "eniautós",
+    "le": "ἐνιαυτός",
+    "pl": "eniautós",
+    "ps": "en-ee-ow-tos'",
+    "df": "prolongado del primario <b>ἔνος</b> <font color='%COLOR_PURPLE%'>énos</font> (un año); año: <font color='%COLOR_BLUE%'>año.</font>"
+  },
+  {
+    "id": "G1764",
+    "ti": "enístēmi",
+    "le": "ἐνίστημι",
+    "pl": "enístemi",
+    "ps": "en-is'-tay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; colocar cerca, i.e. (reflexivamente) acercarse, (participio) ser al instante: <font color='%COLOR_BLUE%'>presentar, presente, venir, cerca.</font>"
+  },
+  {
+    "id": "G1765",
+    "ti": "enischýō",
+    "le": "ἐνισχύω",
+    "pl": "enisjúo",
+    "ps": "en-is-khoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2480')}>G2480</span>; vigorizar (transitivamente o reflexivamente): <font color='%COLOR_BLUE%'>fortalecer, fuerza.</font>"
+  },
+  {
+    "id": "G1766",
+    "ti": "énnatos",
+    "le": "ἔννατος",
+    "pl": "énnatos",
+    "ps": "en'-nat-os",
+    "df": "ordinal de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1767')}>G1767</span>; noveno: <font color='%COLOR_BLUE%'>noveno.</font>"
+  },
+  {
+    "id": "G1767",
+    "ti": "ennéa",
+    "le": "ἐννέα",
+    "pl": "ennéa",
+    "ps": "en-neh'-ah",
+    "df": "número primario; nueve: <font color='%COLOR_BLUE%'>noventa, nueve.</font>"
+  },
+  {
+    "id": "G1768",
+    "ti": "ennenēkontaennéa",
+    "le": "ἐννενηκονταεννέα",
+    "pl": "ennenekontaennéa",
+    "ps": "en-nen-ay-kon-tah-en-neh'-ah",
+    "df": "de un múltiplo (décimo) de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1767')}>G1767</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1767')}>G1767</span> mismo; noventa y nueve: <font color='%COLOR_BLUE%'>noventa y nueve.</font>"
+  },
+  {
+    "id": "G1769",
+    "ti": "enneós",
+    "le": "ἐννεός",
+    "pl": "enneós",
+    "ps": "en-neh-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1770')}>G1770</span>; mudo (como haciendo señas), i.e. silencioso por asombro: <font color='%COLOR_BLUE%'>atónito.</font>"
+  },
+  {
+    "id": "G1770",
+    "ti": "enneúō",
+    "le": "ἐννεύω",
+    "pl": "enneúo",
+    "ps": "en-nyoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3506')}>G3506</span>; asentir a, i.e. llamar o comunicarse por señas: <font color='%COLOR_BLUE%'>seña.</font>"
+  },
+  {
+    "id": "G1771",
+    "ti": "énnoia",
+    "le": "ἔννοια",
+    "pl": "énnoia",
+    "ps": "en'-noy-ah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3563')}>G3563</span>; sensatez, i.e. comprensión moral: <font color='%COLOR_BLUE%'>pensamiento, intención.</font>"
+  },
+  {
+    "id": "G1772",
+    "ti": "énnomos",
+    "le": "ἔννομος",
+    "pl": "énnomos",
+    "ps": "en'-nom-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3551')}>G3551</span>; (subj.) legal, o (objectivamente) sujeto a: <font color='%COLOR_BLUE%'>legítimo, -a.</font>"
+  },
+  {
+    "id": "G1773",
+    "ti": "énnychon",
+    "le": "ἔννυχον",
+    "pl": "énnucon",
+    "ps": "en'-noo-khon",
+    "df": "neutro de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3571')}>G3571</span>; (adverbio) todavía de noche: <font color='%COLOR_BLUE%'>siendo aún muy oscuro.</font>"
+  },
+  {
+    "id": "G1774",
+    "ti": "enoikéō",
+    "le": "ἐνοικέω",
+    "pl": "enoiquéo",
+    "ps": "en-oy-keh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3611')}>G3611</span>; habitar (figurativamente): <font color='%COLOR_BLUE%'>habitar, morar.</font>"
+  },
+  {
+    "id": "G1775",
+    "ti": "henótēs",
+    "le": "ἑνότης",
+    "pl": "jenotés",
+    "ps": "hen-ot-ace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1520')}>G1520</span>; unidad, i.e. (figurativamente) unanimidad: <font color='%COLOR_BLUE%'>unidad.</font>"
+  },
+  {
+    "id": "G1776",
+    "ti": "enochléō",
+    "le": "ἐνοχλέω",
+    "pl": "enojléo",
+    "ps": "en-okh-leh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3791')}>G3791</span>; entrar en tropel, i.e. (figurativamente) fastidiar: <font color='%COLOR_BLUE%'>estorbar.</font>"
+  },
+  {
+    "id": "G1777",
+    "ti": "énochos",
+    "le": "ἔνοχος",
+    "pl": "énojos",
+    "ps": "en'-okh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1758')}>G1758</span>; suceptible a (una condición, pena o imputación): <font color='%COLOR_BLUE%'>exponer, culpable, culpar, digno, reo, sujetar.</font>"
+  },
+  {
+    "id": "G1778",
+    "ti": "éntalma",
+    "le": "ἔνταλμα",
+    "pl": "éntalma",
+    "ps": "en'-tal-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1781')}>G1781</span>; orden o mandato, i.e. precepto religión: <font color='%COLOR_BLUE%'>mandamiento.</font>"
+  },
+  {
+    "id": "G1779",
+    "ti": "entaphiázō",
+    "le": "ἐνταφιάζω",
+    "pl": "entafiázo",
+    "ps": "en-taf-ee-ad'-zo",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5028')}>G5028</span>; preparar con ungüentos para el entierro: <font color='%COLOR_BLUE%'>sepultar, sepultura.</font>"
+  },
+  {
+    "id": "G1780",
+    "ti": "entaphiasmós",
+    "le": "ἐνταφιασμός",
+    "pl": "entafiasmós",
+    "ps": "en-taf-ee-as-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1779')}>G1779</span>; preparación para el entierro: <font color='%COLOR_BLUE%'>sepultura.</font>"
+  },
+  {
+    "id": "G1781",
+    "ti": "entéllomai",
+    "le": "ἐντέλλομαι",
+    "pl": "entélomai",
+    "ps": "en-tel'-lom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5056')}>G5056</span>; mandar: <font color='%COLOR_BLUE%'>mandamiento, mandar, dar.</font>"
+  },
+  {
+    "id": "G1782",
+    "ti": "enteûthen",
+    "le": "ἐντεῦθεν",
+    "pl": "enteúdsen",
+    "ps": "ent-yoo'-then",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1759')}>G1759</span>; de aquí (literalmente o figurativamente); (repetido) por ambos lados: <font color='%COLOR_BLUE%'> por otro lado.</font>"
+  },
+  {
+    "id": "G1783",
+    "ti": "énteuxis",
+    "le": "ἔντευξις",
+    "pl": "énteuxis",
+    "ps": "ent'-yook-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1793')}>G1793</span>; entrevista, i.e. (específicamente) súplica: <font color='%COLOR_BLUE%'>oración, petición.</font>"
+  },
+  {
+    "id": "G1784",
+    "ti": "éntimos",
+    "le": "ἔντιμος",
+    "pl": "éntimos",
+    "ps": "en'-tee-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5092')}>G5092</span>; muy apreciado, muy querido, valioso (figurativamente): <font color='%COLOR_BLUE%'>precioso, querer, distinguido, estima.</font>"
+  },
+  {
+    "id": "G1785",
+    "ti": "entolḗ",
+    "le": "ἐντολή",
+    "pl": "entolé",
+    "ps": "en-tol-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1781')}>G1781</span>; mandamiento, orden, i.e. prescripción autoritativa: <font color='%COLOR_BLUE%'>mandamiento, mandar, orden, ordenamiento.</font>"
+  },
+  {
+    "id": "G1786",
+    "ti": "entópios",
+    "le": "ἐντόπιος",
+    "pl": "entópios",
+    "ps": "en-top'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5117')}>G5117</span>; residente: <font color='%COLOR_BLUE%'>(los de aquel) lugar.</font>"
+  },
+  {
+    "id": "G1787",
+    "ti": "entós",
+    "le": "ἐντός",
+    "pl": "entós",
+    "ps": "en-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span>; dentro (adverbio o sutantivo): <font color='%COLOR_BLUE%'>dentro.</font>"
+  },
+  {
+    "id": "G1788",
+    "ti": "entrépō",
+    "le": "ἐντρέπω",
+    "pl": "entrépo",
+    "ps": "en-trep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5157')}>G5157</span>; invertir, i.e. (figurativamente y reflexivamente) en buen sentido, respetar; o en mal sentido, confundir: <font color='%COLOR_BLUE%'>avergonzar, respeto, venerar.</font>"
+  },
+  {
+    "id": "G1789",
+    "ti": "entréphō",
+    "le": "ἐντρέφω",
+    "pl": "entréfo",
+    "ps": "en-tref'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5142')}>G5142</span>; (figurativamente) educar: <font color='%COLOR_BLUE%'>nutrido.</font>"
+  },
+  {
+    "id": "G1790",
+    "ti": "éntromos",
+    "le": "ἔντρομος",
+    "pl": "éntromos",
+    "ps": "en'-trom-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5156')}>G5156</span>; aterrado: <font color='%COLOR_BLUE%'>temblar.</font>"
+  },
+  {
+    "id": "G1791",
+    "ti": "entropḗ",
+    "le": "ἐντροπή",
+    "pl": "entropé",
+    "ps": "en-trop-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1788')}>G1788</span>; confusión: <font color='%COLOR_BLUE%'>vergüenza, avergonzar.</font>"
+  },
+  {
+    "id": "G1792",
+    "ti": "entrypháō",
+    "le": "ἐντρυφάω",
+    "pl": "entrufáo",
+    "ps": "en-troo-fah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5171')}>G5171</span>; recrearse en: <font color='%COLOR_BLUE%'>recrear.</font>"
+  },
+  {
+    "id": "G1793",
+    "ti": "entynchánō",
+    "le": "ἐντυγχάνω",
+    "pl": "entunjáno",
+    "ps": "en-toong-khan'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5177')}>G5177</span>; encontrar por casualidad, i.e. (por implicación) conferir con; por extensión interceder (a favor o en contra): <font color='%COLOR_BLUE%'>interceder, invocar.</font>"
+  },
+  {
+    "id": "G1794",
+    "ti": "entylíssō",
+    "le": "ἐντυλίσσω",
+    "pl": "entulísso",
+    "ps": "en-too-lis'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <b>τυλίσσω</b> <font color='%COLOR_PURPLE%'>tulísso</font> (torcer; probablemente semejante a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1507')}>G1507</span>); retorcer, enrollar, i.e. envolver en: <font color='%COLOR_BLUE%'>enrollar, envolver.</font>"
+  },
+  {
+    "id": "G1795",
+    "ti": "entypóō",
+    "le": "ἐντυπόω",
+    "pl": "entupóo",
+    "ps": "en-too-po'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5179')}>G5179</span>; estampar, i.e. grabar: <font color='%COLOR_BLUE%'>grabar.</font>"
+  },
+  {
+    "id": "G1796",
+    "ti": "enybrízō",
+    "le": "ἐνυβρίζω",
+    "pl": "enubrízo",
+    "ps": "en-oo-brid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5195')}>G5195</span>; insultar: <font color='%COLOR_BLUE%'>hacer afrenta.</font>"
+  },
+  {
+    "id": "G1797",
+    "ti": "enypniázomai",
+    "le": "ἐνυπνιάζομαι",
+    "pl": "enupniázomai",
+    "ps": "en-oop-nee-ad'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1798')}>G1798</span>; soñar: <font color='%COLOR_BLUE%'>soñador.</font>"
+  },
+  {
+    "id": "G1798",
+    "ti": "enýpnion",
+    "le": "ἐνύπνιον",
+    "pl": "enúpnion",
+    "ps": "en-oop'-nee-on",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5258')}>G5258</span>; algo visto en el sueño, i.e. sueño (visión en sueño): <font color='%COLOR_BLUE%'>sueño.</font>"
+  },
+  {
+    "id": "G1799",
+    "ti": "enṓpion",
+    "le": "ἐνώπιον",
+    "pl": "enópion",
+    "ps": "en-o'-pee-on",
+    "df": "neutro de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1722')}>G1722</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span>; en la cara de (literalmente o figurativamente): <font color='%COLOR_BLUE%'>presencia.</font>"
+  },
+  {
+    "id": "G1800",
+    "ti": "Enṓs",
+    "le": "Ἐνώς",
+    "pl": "Enós",
+    "ps": "en-oce'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H583')}>H583</span>]; Enós, un patriarca: <font color='%COLOR_BLUE%'>Enoc, Enós.</font>"
+  }
+]

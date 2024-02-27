@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G301",
+    "ti": "Amṓs",
+    "le": "Ἀμώς",
+    "pl": "Amós",
+    "ps": "am-oce'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H531')}>H531</span>]; Amós, un israelita: <font color='%COLOR_BLUE%'>Amós.</font>"
+  },
+  {
+    "id": "G302",
+    "ti": "án",
+    "le": "ἄν",
+    "pl": "an",
+    "ps": "an",
+    "df": "partícula primaria que denota una suposición, deseo, posibilidad o incertidumbre: <font color='%COLOR_BLUE%'>cualquier cosa.</font> Por lo general no expresada excepto por el modo subjuntivo o potencial. También contracción por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1437')}>G1437</span>."
+  },
+  {
+    "id": "G303",
+    "ti": "aná",
+    "le": "ἀνά",
+    "pl": "aná",
+    "ps": "an-ah'",
+    "df": "preposición y adverbio primario, propiamente arriba; pero (por extensión) usada (distributivamente) variadamente, o (localmente) a o en (etc.): <font color='%COLOR_BLUE%'>en, entre, cada, por todo hombre, varios, a través de. En compuestos (como prefijo) aparece a menudo significa (por implicación) repetición, intensidad, inversión, etc.</font>"
+  },
+  {
+    "id": "G304",
+    "ti": "anabathmós",
+    "le": "ἀναβαθμός",
+    "pl": "anabadsmós",
+    "ps": "an-ab-ath-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G305')}>G305</span> [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G898')}>G898</span>]; escalera, grada: <font color='%COLOR_BLUE%'>grada.</font>"
+  },
+  {
+    "id": "G305",
+    "ti": "anabaínō",
+    "le": "ἀναβαίνω",
+    "pl": "anabaíno",
+    "ps": "an-ab-ah'-ee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; subir (literalmente o figurativamente): <font color='%COLOR_BLUE%'>entrar, brotar, crecer, resucitar, sacar, subir, venir.</font>"
+  },
+  {
+    "id": "G306",
+    "ti": "anabállomai",
+    "le": "ἀναβάλλομαι",
+    "pl": "anabálomai",
+    "ps": "an-ab-al'-lom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; posponer (por uno mismo): <font color='%COLOR_BLUE%'>aplazar.</font>"
+  },
+  {
+    "id": "G307",
+    "ti": "anabibázō",
+    "le": "ἀναβιβάζω",
+    "pl": "anabibázo",
+    "ps": "an-ab-ee-bad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; hacer subir, i.e. recoger, alzar (una red): <font color='%COLOR_BLUE%'>sacar.</font>"
+  },
+  {
+    "id": "G308",
+    "ti": "anablépō",
+    "le": "ἀναβλέπω",
+    "pl": "anablépo",
+    "ps": "an-ab-lep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G991')}>G991</span>; mirar; por implicación recobrar, recuperar la vista: <font color='%COLOR_BLUE%'>levantar los ojos, recibir la vista, recobrar la vista, ver, mirar.</font>"
+  },
+  {
+    "id": "G309",
+    "ti": "anáblepsis",
+    "le": "ἀνάβλεψις",
+    "pl": "anáblepsis",
+    "ps": "an-ab'-lep-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G308')}>G308</span>; restauración de la vista: <font color='%COLOR_BLUE%'>sanar la vista.</font>"
+  },
+  {
+    "id": "G310",
+    "ti": "anaboáō",
+    "le": "ἀναβοάω",
+    "pl": "anaboáo",
+    "ps": "an-ab-o-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G994')}>G994</span>; clamar a gran voz: <font color='%COLOR_BLUE%'>clamar.</font>"
+  },
+  {
+    "id": "G311",
+    "ti": "anabolḗ",
+    "le": "ἀναβολή",
+    "pl": "anabolé",
+    "ps": "an-ab-ol-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G306')}>G306</span>; dilación: <font color='%COLOR_BLUE%'>dilación.</font>"
+  },
+  {
+    "id": "G312",
+    "ti": "anangéllō",
+    "le": "ἀναγγέλλω",
+    "pl": "anangélo",
+    "ps": "an-ang-el'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G32')}>G32</span>; anunciar (en detalle): <font color='%COLOR_BLUE%'>referir, saber, anunciar, aviso, contar, dar cuenta, declarar.</font>"
+  },
+  {
+    "id": "G313",
+    "ti": "anagennáō",
+    "le": "ἀναγεννάω",
+    "pl": "anagennáo",
+    "ps": "an-ag-en-nah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1080')}>G1080</span>; engendrar o (por extensión) procrear (de nuevo): <font color='%COLOR_BLUE%'>renacer.</font>"
+  },
+  {
+    "id": "G314",
+    "ti": "anaginṓskō",
+    "le": "ἀναγινώσκω",
+    "pl": "anaginósko",
+    "ps": "an-ag-in-oce'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1097')}>G1097</span>; aprender de nuevo, i.e. (por extensión) leer: <font color='%COLOR_BLUE%'>leer.</font>"
+  },
+  {
+    "id": "G315",
+    "ti": "anankázō",
+    "le": "ἀναγκάζω",
+    "pl": "anankázo",
+    "ps": "an-ang-kad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G318')}>G318</span>; demandar, precisar de: <font color='%COLOR_BLUE%'>forzar, hacer (en el sentido de obligar), obligar, oponerse.</font>"
+  },
+  {
+    "id": "G316",
+    "ti": "anankaîos",
+    "le": "ἀναγκαῖος",
+    "pl": "anankaíos",
+    "ps": "an-ang-kah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G318')}>G318</span>; necesario; por implicación cercano (de sangre): <font color='%COLOR_BLUE%'>necesario, necesidad, íntimo.</font>"
+  },
+  {
+    "id": "G317",
+    "ti": "anankastōs",
+    "le": "ἀναγκαστῶς",
+    "pl": "anankastós",
+    "ps": "an-ang-kas-toce'",
+    "df": "adverbio de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G315')}>G315</span>; compulsivo, obligatorio: <font color='%COLOR_BLUE%'>por fuerza.</font>"
+  },
+  {
+    "id": "G318",
+    "ti": "anánkē",
+    "le": "ἀνάγκη",
+    "pl": "ananké",
+    "ps": "an-ang-kay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G43')}>G43</span>; restricción (literalmente o figurativamente); por implicación malestar, aflicción: <font color='%COLOR_BLUE%'>calamidad, necesario, necesidad, necesitar.</font>"
+  },
+  {
+    "id": "G319",
+    "ti": "anagnōrízomai",
+    "le": "ἀναγνωρίζομαι",
+    "pl": "anagnorízomai",
+    "ps": "an-ag-no-rid'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1107')}>G1107</span>; darse (uno mismo) a conocer: <font color='%COLOR_BLUE%'>darse a conocer.</font>"
+  },
+  {
+    "id": "G320",
+    "ti": "anágnōsis",
+    "le": "ἀνάγνωσις",
+    "pl": "anágnosis",
+    "ps": "an-ag'-no-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G314')}>G314</span>; (el acto de) leer: <font color='%COLOR_BLUE%'>lectura, leer.</font>"
+  },
+  {
+    "id": "G321",
+    "ti": "anágō",
+    "le": "ἀνάγω",
+    "pl": "anágo",
+    "ps": "an-ag'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; conducir arriba; por extensión sacar; específicamente zarpar: <font color='%COLOR_BLUE%'>navegar, ofrecer, partir, proponer, sacar, subir, traer, zarpar, embarcar, hacerse a la vela, llevar.</font>"
+  },
+  {
+    "id": "G322",
+    "ti": "anadeíknymi",
+    "le": "ἀναδείκνυμι",
+    "pl": "anadeíknumi",
+    "ps": "an-ad-ike'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1166')}>G1166</span>; exhibir, i.e. (por implicación) indicar, nombrar: <font color='%COLOR_BLUE%'>designar.</font>"
+  },
+  {
+    "id": "G323",
+    "ti": "anádeixis",
+    "le": "ἀνάδειξις",
+    "pl": "anádeixis",
+    "ps": "an-ad'-ike-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G322')}>G322</span>; (el acto de) exhibición: <font color='%COLOR_BLUE%'>manifestación.</font>"
+  },
+  {
+    "id": "G324",
+    "ti": "anadéchomai",
+    "le": "ἀναδέχομαι",
+    "pl": "anadéjomai",
+    "ps": "an-ad-ekh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1209')}>G1209</span>; agasajar (como invitado): <font color='%COLOR_BLUE%'>recibir.</font>"
+  },
+  {
+    "id": "G325",
+    "ti": "anadídōmi",
+    "le": "ἀναδίδωμι",
+    "pl": "anadídomi",
+    "ps": "an-ad-eed'-om-ee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1325')}>G1325</span>; entregar: <font color='%COLOR_BLUE%'>dar.</font>"
+  },
+  {
+    "id": "G326",
+    "ti": "anazáō",
+    "le": "ἀναζάω",
+    "pl": "anazáo",
+    "ps": "an-ad-zah'-o",
+    "df": "recobrar la vida (literalmente o figurativamente): <font color='%COLOR_BLUE%'>revivir, volver a vivir.</font>"
+  },
+  {
+    "id": "G327",
+    "ti": "anazētéō",
+    "le": "ἀναζητέω",
+    "pl": "anazetéo",
+    "ps": "an-ad-zay-teh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2212')}>G2212</span>; buscar, investigar: <font color='%COLOR_BLUE%'>buscar.</font>"
+  },
+  {
+    "id": "G328",
+    "ti": "anazṓnnymi",
+    "le": "ἀναζώννυμι",
+    "pl": "anazónnumi",
+    "ps": "an-ad-zone'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2224')}>G2224</span>; apretarse de nuevo la faja: <font color='%COLOR_BLUE%'>ceñir.</font>"
+  },
+  {
+    "id": "G329",
+    "ti": "anazōpyréō",
+    "le": "ἀναζωπυρέω",
+    "pl": "anazopuréo",
+    "ps": "an-ad-zo-poor-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y un compuesto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2226')}>G2226</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4442')}>G4442</span>; volver a encender: <font color='%COLOR_BLUE%'>avivar.</font>"
+  },
+  {
+    "id": "G330",
+    "ti": "anathállō",
+    "le": "ἀναθάλλω",
+    "pl": "anadsálo",
+    "ps": "an-ath-al'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <b>θάλλω</b> <font color='%COLOR_PURPLE%'>dsálo</font> (florecer); de revivir: <font color='%COLOR_BLUE%'>revivir.</font>"
+  },
+  {
+    "id": "G331",
+    "ti": "anáthema",
+    "le": "ἀνάθεμα",
+    "pl": "anádsema",
+    "ps": "an-ath'-em-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G394')}>G394</span>; prohibición (religiosa) o (concretamente) (cosa o persona) excomulgada: <font color='%COLOR_BLUE%'>anatema.</font>"
+  },
+  {
+    "id": "G332",
+    "ti": "anathematízō",
+    "le": "ἀναθεματίζω",
+    "pl": "anadsematízo",
+    "ps": "an-ath-em-at-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G331')}>G331</span>; declarar o hacer voto bajo pena de execración: <font color='%COLOR_BLUE%'>juramentarse bajo maldición.</font>"
+  },
+  {
+    "id": "G333",
+    "ti": "anatheōréō",
+    "le": "ἀναθεωρέω",
+    "pl": "anadseoréo",
+    "ps": "an-ath-eh-o-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2334')}>G2334</span>; mirar de nuevo (i.e. atentamente) a (literalmente o figurativamente): <font color='%COLOR_BLUE%'>considerar, mirar.</font>"
+  },
+  {
+    "id": "G334",
+    "ti": "anáthēma",
+    "le": "ἀνάθημα",
+    "pl": "anádsema",
+    "ps": "an-ath'-ay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G394')}>G394</span> [como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G331')}>G331</span>, pero en buen sentido]; ofrenda votiva: <font color='%COLOR_BLUE%'>ofrenda.</font>"
+  },
+  {
+    "id": "G335",
+    "ti": "anaídeia",
+    "le": "ἀναίδεια",
+    "pl": "anaídeia",
+    "ps": "an-ah'-ee-die-ah'",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G427')}>G427</span>]) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G127')}>G127</span>; insolencia, descaro, i.e. (por implicación) importunidad: <font color='%COLOR_BLUE%'>importunidad.</font>"
+  },
+  {
+    "id": "G336",
+    "ti": "anaíresis",
+    "le": "ἀναίρεσις",
+    "pl": "anaíresis",
+    "ps": "an-ah'-ee-res-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G337')}>G337</span>; (el acto de) matar: <font color='%COLOR_BLUE%'>muerte.</font>"
+  },
+  {
+    "id": "G337",
+    "ti": "anairéō",
+    "le": "ἀναιρέω",
+    "pl": "anairéo",
+    "ps": "an-ahee-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y (el acto. de) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>; llevar, recoger, i.e. adoptar; por implicación arrebatar (violentamente), i.e. abolir, asesinar: <font color='%COLOR_BLUE%'>matar, dar muerte, quitar, recoger.</font>"
+  },
+  {
+    "id": "G338",
+    "ti": "anaítios",
+    "le": "ἀναίτιος",
+    "pl": "anaítios",
+    "ps": "an-ah'-ee-tee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G159')}>G159</span> (en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G156')}>G156</span>); inocente: <font color='%COLOR_BLUE%'>sin culpa, inocente.</font>"
+  },
+  {
+    "id": "G339",
+    "ti": "anakathízō",
+    "le": "ἀνακαθίζω",
+    "pl": "anakadsízo",
+    "ps": "an-ak-ath-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2523')}>G2523</span>; propiamente establecer, i.e. (reflexivamente) incorporarse: <font color='%COLOR_BLUE%'>incorporar.</font>"
+  },
+  {
+    "id": "G340",
+    "ti": "anakainízō",
+    "le": "ἀνακαινίζω",
+    "pl": "anakainízo",
+    "ps": "an-ak-ahee-nid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2537')}>G2537</span>; de restaurar: <font color='%COLOR_BLUE%'>renovar.</font>"
+  },
+  {
+    "id": "G341",
+    "ti": "anakainóō",
+    "le": "ἀνακαινόω",
+    "pl": "anakainóo",
+    "ps": "an-ak-ahee-no'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2537')}>G2537</span>; de renovar: <font color='%COLOR_BLUE%'>renovar.</font>"
+  },
+  {
+    "id": "G342",
+    "ti": "anakaínōsis",
+    "le": "ἀνακαίνωσις",
+    "pl": "anakaínosis",
+    "ps": "an-ak-ah'-ee-no-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G341')}>G341</span>; renovación: <font color='%COLOR_BLUE%'>renovación.</font>"
+  },
+  {
+    "id": "G343",
+    "ti": "anakalýptō",
+    "le": "ἀνακαλύπτω",
+    "pl": "anakalúpto",
+    "ps": "an-ak-al-oop'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> (en el sentido de revertir) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2572')}>G2572</span>; develar, descorrer el velo: <font color='%COLOR_BLUE%'>descubierto.</font>"
+  },
+  {
+    "id": "G344",
+    "ti": "anakámptō",
+    "le": "ἀνακάμπτω",
+    "pl": "anakámpto",
+    "ps": "an-ak-amp'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2578')}>G2578</span>; volver, regresar: <font color='%COLOR_BLUE%'>volver.</font>"
+  },
+  {
+    "id": "G345",
+    "ti": "anakeîmai",
+    "le": "ἀνακεῖμαι",
+    "pl": "anakeímai",
+    "ps": "an-ak-i'-mahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2749')}>G2749</span>; reclinarse (como un cadáver o en una comida): <font color='%COLOR_BLUE%'>sentado a la mesa, convidado, recostar,.</font>"
+  },
+  {
+    "id": "G346",
+    "ti": "anakephalaíomai",
+    "le": "ἀνακεφαλαίομαι",
+    "pl": "anakefalaíomai",
+    "ps": "an-ak-ef-al-ah'-ee-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2775')}>G2775</span> (en su sentido origen); resumir: <font color='%COLOR_BLUE%'>resumir, reunir.</font>"
+  },
+  {
+    "id": "G347",
+    "ti": "anaklínō",
+    "le": "ἀνακλίνω",
+    "pl": "anaklíno",
+    "ps": "an-ak-lee'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2827')}>G2827</span>; recostarse: <font color='%COLOR_BLUE%'>acostar, hacer recostar, sentar.</font>"
+  },
+  {
+    "id": "G348",
+    "ti": "anakóptō",
+    "le": "ἀνακόπτω",
+    "pl": "anakópto",
+    "ps": "an-ak-op'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2875')}>G2875</span>; repasar, i.e. verificar: <font color='%COLOR_BLUE%'>estorbar.</font>"
+  },
+  {
+    "id": "G349",
+    "ti": "anakrázō",
+    "le": "ἀνακράζω",
+    "pl": "anakrázo",
+    "ps": "an-ak-rad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2896')}>G2896</span>; gritar (a voz en cuello): <font color='%COLOR_BLUE%'>exclamar, lanzar grito, dar voces.</font>"
+  },
+  {
+    "id": "G350",
+    "ti": "anakrínō",
+    "le": "ἀνακρίνω",
+    "pl": "anakríno",
+    "ps": "an-ak-ree'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2919')}>G2919</span>; propiamente escrudiñar, i.e. (por implicación) investigar, interrogar, determinar: <font color='%COLOR_BLUE%'>preguntar, acusar, discernir, escudriñar, examinar, interrogar, juzgar.</font>"
+  },
+  {
+    "id": "G351",
+    "ti": "anákrisis",
+    "le": "ἀνάκρισις",
+    "pl": "anákrisis",
+    "ps": "an-ak'-ree-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G350')}>G350</span>; investigación (judicial): <font color='%COLOR_BLUE%'>examinar.</font>"
+  },
+  {
+    "id": "G352",
+    "ti": "anakýptō",
+    "le": "ἀνακύπτω",
+    "pl": "anakúpto",
+    "ps": "an-ak-oop'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> (en el sentido de reversión) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2955')}>G2955</span>; desdoblar, i.e. levantarse; figurativamente alegrarse: <font color='%COLOR_BLUE%'>enderezar, erguir.</font>"
+  },
+  {
+    "id": "G353",
+    "ti": "analambánō",
+    "le": "ἀναλαμβάνω",
+    "pl": "analambáno",
+    "ps": "an-al-am-ban'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2983')}>G2983</span>; tomar hacia arriba, recoger: <font color='%COLOR_BLUE%'>recibir, recoger, tomar, llevar.</font>"
+  },
+  {
+    "id": "G354",
+    "ti": "análēpsis",
+    "le": "ἀνάληψις",
+    "pl": "análepsis",
+    "ps": "an-al'-ape-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G353')}>G353</span>; ascensión: <font color='%COLOR_BLUE%'>recibir arriba.</font>"
+  },
+  {
+    "id": "G355",
+    "ti": "analískō",
+    "le": "ἀναλίσκω",
+    "pl": "analísko",
+    "ps": "an-al-is'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y una forma del alternada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>; propiamente usar totalmente, i.e. destruir: <font color='%COLOR_BLUE%'>consumir, matar.</font>"
+  },
+  {
+    "id": "G356",
+    "ti": "analogía",
+    "le": "ἀναλογία",
+    "pl": "analogía",
+    "ps": "an-al-og-ee'-ah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span>; proporción: <font color='%COLOR_BLUE%'>medida.</font>"
+  },
+  {
+    "id": "G357",
+    "ti": "analogízomai",
+    "le": "ἀναλογίζομαι",
+    "pl": "analogízomai",
+    "ps": "an-al-og-id'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G356')}>G356</span>; estimar, i.e. (figurativamente) contemplar: <font color='%COLOR_BLUE%'>considerar.</font>"
+  },
+  {
+    "id": "G358",
+    "ti": "ánalos",
+    "le": "ἄναλος",
+    "pl": "ánalos",
+    "ps": "an'-al-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G251')}>G251</span>; sin sal, i.e. insípido: <font color='%COLOR_BLUE%'>insípida.</font>"
+  },
+  {
+    "id": "G359",
+    "ti": "análysis",
+    "le": "ἀνάλυσις",
+    "pl": "análusis",
+    "ps": "an-al'-oo-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G360')}>G360</span>; partida: <font color='%COLOR_BLUE%'>partida.</font>"
+  },
+  {
+    "id": "G360",
+    "ti": "analýō",
+    "le": "ἀναλύω",
+    "pl": "analúo",
+    "ps": "an-al-oo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3089')}>G3089</span>; romper, i.e. partir (literalmente o figurativamente): <font color='%COLOR_BLUE%'>partir, regresar.</font>"
+  },
+  {
+    "id": "G361",
+    "ti": "anamártētos",
+    "le": "ἀναμάρτητος",
+    "pl": "anamártetos",
+    "ps": "an-am-ar'-tay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G264')}>G264</span>; sin pecado: <font color='%COLOR_BLUE%'>estar sin pecado.</font>"
+  },
+  {
+    "id": "G362",
+    "ti": "anaménō",
+    "le": "ἀναμένω",
+    "pl": "anaméno",
+    "ps": "an-am-en'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3306')}>G3306</span>; esperar: <font color='%COLOR_BLUE%'>esperar.</font>"
+  },
+  {
+    "id": "G363",
+    "ti": "anamimnḗskō",
+    "le": "ἀναμιμνήσκω",
+    "pl": "anamimnésko",
+    "ps": "an-am-im-nace'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3403')}>G3403</span>; hacer acuerdo; (reflexivamente) recordar: <font color='%COLOR_BLUE%'>traer a memoria, aconsejar (que recuerde), acordar, -se, recordar.</font>"
+  },
+  {
+    "id": "G364",
+    "ti": "anámnēsis",
+    "le": "ἀνάμνησις",
+    "pl": "anámnesis",
+    "ps": "an-am'-nay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G363')}>G363</span>; recolección, recuerdo: <font color='%COLOR_BLUE%'>memoria.</font>"
+  },
+  {
+    "id": "G365",
+    "ti": "ananeóō",
+    "le": "ἀνανεόω",
+    "pl": "ananeóo",
+    "ps": "an-an-neh-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3501')}>G3501</span>; renovar, i.e. reformar: <font color='%COLOR_BLUE%'>renovar.</font>"
+  },
+  {
+    "id": "G366",
+    "ti": "ananḗphō",
+    "le": "ἀνανήφω",
+    "pl": "ananéfo",
+    "ps": "an-an-ay'-fo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3525')}>G3525</span>; quedar sobrio de nuevo, i.e. (figurativamente) recuperar los sentidos (de uno): <font color='%COLOR_BLUE%'>escapar de un lazo.</font>"
+  },
+  {
+    "id": "G367",
+    "ti": "Ananías",
+    "le": "Ἀνανίας",
+    "pl": "Ananías",
+    "ps": "an-an-ee'-as",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2608')}>H2608</span>]; Ananías, nombre de tres israelitas: <font color='%COLOR_BLUE%'>Ananías.</font>"
+  },
+  {
+    "id": "G368",
+    "ti": "anantírrhētos",
+    "le": "ἀναντίῤῥητος",
+    "pl": "anantírretos",
+    "ps": "an-an-tir'-hray-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G473')}>G473</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4483')}>G4483</span>; indisputable: <font color='%COLOR_BLUE%'>que no puede contradecirse.</font>"
+  },
+  {
+    "id": "G369",
+    "ti": "anantirrhḗtōs",
+    "le": "ἀναντιῤῥήτως",
+    "pl": "anantirrétos",
+    "ps": "an-an-tir-hray'-toce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G368')}>G368</span>; prontamente: <font color='%COLOR_BLUE%'>sin replicar.</font>"
+  },
+  {
+    "id": "G370",
+    "ti": "anáxios",
+    "le": "ἀνάξιος",
+    "pl": "anáxios",
+    "ps": "an-ax'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G514')}>G514</span>; inapropiado: <font color='%COLOR_BLUE%'>indigno.</font>"
+  },
+  {
+    "id": "G371",
+    "ti": "anaxíōs",
+    "le": "ἀναξίως",
+    "pl": "anaxíos",
+    "ps": "an-ax-ee'-oce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G370')}>G370</span>; irreverentemente: <font color='%COLOR_BLUE%'>indignamente.</font>"
+  },
+  {
+    "id": "G372",
+    "ti": "anápausis",
+    "le": "ἀνάπαυσις",
+    "pl": "anápausis",
+    "ps": "an-ap'-ow-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G373')}>G373</span>; intermedio; por implicación recreación: <font color='%COLOR_BLUE%'>descanso, reposo.</font>"
+  },
+  {
+    "id": "G373",
+    "ti": "anapaúō",
+    "le": "ἀναπαύω",
+    "pl": "anapaúo",
+    "ps": "an-ap-ow'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3973')}>G3973</span>; (reflexivamente) reposar (literalmente o figurativamente [ser exento], permanecer); por implicación refrescarse: <font color='%COLOR_BLUE%'>reposar, confortar, descansar.</font>"
+  },
+  {
+    "id": "G374",
+    "ti": "anapeíthō",
+    "le": "ἀναπείθω",
+    "pl": "anapeídso",
+    "ps": "an-ap-i'-tho",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3982')}>G3982</span>; incitar: <font color='%COLOR_BLUE%'>persuadir.</font>"
+  },
+  {
+    "id": "G375",
+    "ti": "anapémpō",
+    "le": "ἀναπέμπω",
+    "pl": "anapémpo",
+    "ps": "an-ap-em'-po",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3992')}>G3992</span>; enviar arriba o de vuelta: <font color='%COLOR_BLUE%'>remitir, volver a enviar.</font>"
+  },
+  {
+    "id": "G376",
+    "ti": "anápēros",
+    "le": "ἀνάπηρος",
+    "pl": "anáperos",
+    "ps": "an-ap'-ay-ros",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> (en el sentido de intensidad) y <b>πῆρος</b> <font color='%COLOR_PURPLE%'>péros</font> (mutilado); lisiado: <font color='%COLOR_BLUE%'>manco.</font>"
+  },
+  {
+    "id": "G377",
+    "ti": "anapíptō",
+    "le": "ἀναπίπτω",
+    "pl": "anapípto",
+    "ps": "an-ap-ip'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4098')}>G4098</span>; caer hacia atrás, i.e. acostarse, yacer, recostarse: <font color='%COLOR_BLUE%'>recostar, sentar.</font>"
+  },
+  {
+    "id": "G378",
+    "ti": "anaplēróō",
+    "le": "ἀναπληρόω",
+    "pl": "anapleróo",
+    "ps": "an-ap-lay-ro'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4137')}>G4137</span>; completar; por implicación ocupar, suplir, proveer; figurativamente lograr (por coincidencia u obediencia): <font color='%COLOR_BLUE%'>ocupar, suplir, colmar, cumplir.</font>"
+  },
+  {
+    "id": "G379",
+    "ti": "anapológētos",
+    "le": "ἀναπολόγητος",
+    "pl": "anapológetos",
+    "ps": "an-ap-ol-og'-ay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G626')}>G626</span>; indefendible: <font color='%COLOR_BLUE%'>sin excusa, inexcusable.</font>"
+  },
+  {
+    "id": "G380",
+    "ti": "anaptýssō",
+    "le": "ἀναπτύσσω",
+    "pl": "anaptússo",
+    "ps": "an-ap-toos'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> (en el sentido de reversión) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4428')}>G4428</span>; desenrrollar (un rollo o tomo): <font color='%COLOR_BLUE%'>abrir.</font>"
+  },
+  {
+    "id": "G381",
+    "ti": "anáptō",
+    "le": "ἀνάπτω",
+    "pl": "anápto",
+    "ps": "an-ap'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G681')}>G681</span>; encender: <font color='%COLOR_BLUE%'>encender.</font>"
+  },
+  {
+    "id": "G382",
+    "ti": "anaríthmētos",
+    "le": "ἀναρίθμητος",
+    "pl": "anarídsmetos",
+    "ps": "an-ar-ith'-may-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G705')}>G705</span>; innumerable, i.e. sin cantidad: <font color='%COLOR_BLUE%'>innumerable.</font>"
+  },
+  {
+    "id": "G383",
+    "ti": "anaseíō",
+    "le": "ἀνασείω",
+    "pl": "anaseío",
+    "ps": "an-as-i'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4579')}>G4579</span>; figurativamente excitar: <font color='%COLOR_BLUE%'>incitar, alborotar.</font>"
+  },
+  {
+    "id": "G384",
+    "ti": "anaskeuázō",
+    "le": "ἀνασκευάζω",
+    "pl": "anaskeuázo",
+    "ps": "an-ask-yoo-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> (en el sentido de reversión) y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4632')}>G4632</span>; propiamente empacar (equipaje), i.e. (por implicación y figurativamente) alterar, molestar: <font color='%COLOR_BLUE%'>perturbar.</font>"
+  },
+  {
+    "id": "G385",
+    "ti": "anaspáō",
+    "le": "ἀνασπάω",
+    "pl": "anaspáo",
+    "ps": "an-as-pah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4685')}>G4685</span>; sacar o soltar: <font color='%COLOR_BLUE%'>sacar, llevar arriba.</font>"
+  },
+  {
+    "id": "G386",
+    "ti": "anástasis",
+    "le": "ἀνάστασις",
+    "pl": "anástasis",
+    "ps": "an-as'-tas-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G450')}>G450</span>; pararse de nuevo, i.e. (literalmente) resurrección de los muertos (individual, general o por implicación [su autor]), o (figurativamente) a (moral) recobrar o recuperar (la verdad espiritual): <font color='%COLOR_BLUE%'>levantamiento, resurrección.</font>"
+  },
+  {
+    "id": "G387",
+    "ti": "anastatóō",
+    "le": "ἀναστατόω",
+    "pl": "anastatóo",
+    "ps": "an-as-tat-o'-o",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G450')}>G450</span> (en el sentido de extracción); propiamente empujar fuera de casa, i.e. (por implicación) perturbar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>perturbar, levantar sedición.</font>"
+  },
+  {
+    "id": "G388",
+    "ti": "anastauróō",
+    "le": "ἀνασταυρόω",
+    "pl": "anastauróo",
+    "ps": "an-as-tow-ro'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4717')}>G4717</span>; de crucificar de nuevo (figurativamente): <font color='%COLOR_BLUE%'>crucificar de nuevo.</font>"
+  },
+  {
+    "id": "G389",
+    "ti": "anastenázō",
+    "le": "ἀναστενάζω",
+    "pl": "anastenázo",
+    "ps": "an-as-ten-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4727')}>G4727</span>; suspirar profundamente: <font color='%COLOR_BLUE%'>gemir.</font>"
+  },
+  {
+    "id": "G390",
+    "ti": "anastréphō",
+    "le": "ἀναστρέφω",
+    "pl": "anastréfo",
+    "ps": "an-as-tref'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4762')}>G4762</span>; voltear; también regresar; por implicación ocuparse uno mismo, i.e. permanecer, vivir: <font color='%COLOR_BLUE%'>conducirse uno (en el sentido de conducta), estar, vivir, volcar, volver.</font>"
+  },
+  {
+    "id": "G391",
+    "ti": "anastrophḗ",
+    "le": "ἀναστροφή",
+    "pl": "anastrofé",
+    "ps": "an-as-trof-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G390')}>G390</span>; conducta, comportamiento: <font color='%COLOR_BLUE%'>conducta, manera de vivir.</font>"
+  },
+  {
+    "id": "G392",
+    "ti": "anatássomai",
+    "le": "ἀνατάσσομαι",
+    "pl": "anatássomai",
+    "ps": "an-at-as'-som-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5021')}>G5021</span>; arreglar: <font color='%COLOR_BLUE%'>poner en orden.</font>"
+  },
+  {
+    "id": "G393",
+    "ti": "anatéllō",
+    "le": "ἀνατέλλω",
+    "pl": "anatélo",
+    "ps": "an-at-el'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5056')}>G5056</span>; (hacer) levantarse: <font color='%COLOR_BLUE%'>hacer salir.</font>"
+  },
+  {
+    "id": "G394",
+    "ti": "anatíthemai",
+    "le": "ἀνατίθεμαι",
+    "pl": "anatídsemai",
+    "ps": "an-at-ith'-em-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; presentar, mostrarse (por uno mismo), i.e. proponer: <font color='%COLOR_BLUE%'>exponer.</font>"
+  },
+  {
+    "id": "G395",
+    "ti": "anatolḗ",
+    "le": "ἀνατολή",
+    "pl": "anatolé",
+    "ps": "an-at-ol-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G393')}>G393</span>; levantarse la luz, i.e. aurora (figurativamente); por implicación el este (también en plural): <font color='%COLOR_BLUE%'>aurora, oriente.</font>"
+  },
+  {
+    "id": "G396",
+    "ti": "anatrépō",
+    "le": "ἀνατρέπω",
+    "pl": "anatrépo",
+    "ps": "an-at-rep'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5157')}>G5157</span>; voltear. trastornar, volcar (figurativamente): <font color='%COLOR_BLUE%'>trastornar.</font>"
+  },
+  {
+    "id": "G397",
+    "ti": "anatréphō",
+    "le": "ἀνατρέφω",
+    "pl": "anatréfo",
+    "ps": "an-at-ref'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5142')}>G5142</span>; criar (físicamente o mentalmente): <font color='%COLOR_BLUE%'>criar, instruir.</font>"
+  },
+  {
+    "id": "G398",
+    "ti": "anaphaínō",
+    "le": "ἀναφαίνω",
+    "pl": "anafaíno",
+    "ps": "an-af-ah'-ee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5316')}>G5316</span>; mostrar, i.e. (reflexivamente) aparecer, o (pasivamente) haber indicado: <font color='%COLOR_BLUE%'>manifestar, avistar.</font>"
+  },
+  {
+    "id": "G399",
+    "ti": "anaphérō",
+    "le": "ἀναφέρω",
+    "pl": "anaféro",
+    "ps": "an-af-er'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; tomar arriba, recoger (literalmente o figurativamente): <font color='%COLOR_BLUE%'>ofrecer, llevar.</font>"
+  },
+  {
+    "id": "G400",
+    "ti": "anaphōnéō",
+    "le": "ἀναφωνέω",
+    "pl": "anafonéo",
+    "ps": "an-af-o-neh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5455')}>G5455</span>; exclamar: <font color='%COLOR_BLUE%'>exclamar.</font>"
+  },
+  {
+    "id": "G401",
+    "ti": "anáchysis",
+    "le": "ἀνάχυσις",
+    "pl": "anájusis",
+    "ps": "an-akh'-oo-sis",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y cevw <font color='%COLOR_PURPLE%'>jéo</font> (verter, derramar); propiamente efusión, i.e. (figurativamente) licencia: <font color='%COLOR_BLUE%'>desenfreno.</font>"
+  },
+  {
+    "id": "G402",
+    "ti": "anachōréō",
+    "le": "ἀναχωρέω",
+    "pl": "anajoréo",
+    "ps": "an-akh-o-reh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5562')}>G5562</span>; retirar: <font color='%COLOR_BLUE%'>apartar, aparte, irse, partir, regresar, retirar, salir, volver.</font>"
+  },
+  {
+    "id": "G403",
+    "ti": "anápsyxis",
+    "le": "ἀνάψυξις",
+    "pl": "anápsuxis",
+    "ps": "an-aps'-ook-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G404')}>G404</span>; propiamente recuperar el aliento, i.e. (figurativamente) revivir: <font color='%COLOR_BLUE%'>refrigerio.</font>"
+  },
+  {
+    "id": "G404",
+    "ti": "anapsýchō",
+    "le": "ἀναψύχω",
+    "pl": "anapsújo",
+    "ps": "an-aps-oo'-kho",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5594')}>G5594</span>; propiamente enfriar, i.e. (figurativamente) aliviar: <font color='%COLOR_BLUE%'>confortar.</font>"
+  },
+  {
+    "id": "G405",
+    "ti": "andrapodistḗs",
+    "le": "ἀνδραποδιστής",
+    "pl": "andrapodistés",
+    "ps": "an-drap-od-is-tace'",
+    "df": "de un derivado de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4228')}>G4228</span>; esclavizador (como trayendo a hombres a sus pies): <font color='%COLOR_BLUE%'>secuestrador.</font>"
+  },
+  {
+    "id": "G406",
+    "ti": "Andréas",
+    "le": "Ἀνδρέας",
+    "pl": "Andréas",
+    "ps": "an-dreh'-as",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span>; varonil; Andrés, un israelita: <font color='%COLOR_BLUE%'>Andrés.</font>"
+  },
+  {
+    "id": "G407",
+    "ti": "andrízomai",
+    "le": "ἀνδρίζομαι",
+    "pl": "andrízomai",
+    "ps": "an-drid'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span>; actuar varonilmente: <font color='%COLOR_BLUE%'>portarse varonilmente.</font>"
+  },
+  {
+    "id": "G408",
+    "ti": "Andrónikos",
+    "le": "Ἀνδρόνικος",
+    "pl": "Andrónikos",
+    "ps": "an-dron'-ee-kos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3534')}>G3534</span>; hombre de victoria; Andrónico, un israelita: <font color='%COLOR_BLUE%'>Andrónico.</font>"
+  },
+  {
+    "id": "G409",
+    "ti": "androphónos",
+    "le": "ἀνδροφόνος",
+    "pl": "androfónos",
+    "ps": "an-drof-on'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5408')}>G5408</span>; asesino: <font color='%COLOR_BLUE%'>parricida, homicida.</font>"
+  },
+  {
+    "id": "G410",
+    "ti": "anénklētos",
+    "le": "ἀνέγκλητος",
+    "pl": "anénkletos",
+    "ps": "an-eng'-klay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1458')}>G1458</span>; no acusado, i.e. (por implicación) irreprochable: <font color='%COLOR_BLUE%'>irreprensible.</font>"
+  },
+  {
+    "id": "G411",
+    "ti": "anekdiḗgētos",
+    "le": "ἀνεκδιήγητος",
+    "pl": "anekdiégetos",
+    "ps": "an-ek-dee-ay'-gay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1555')}>G1555</span>; no expuesto en pleno, i.e. indescriptible: <font color='%COLOR_BLUE%'>inefable.</font>"
+  },
+  {
+    "id": "G412",
+    "ti": "aneklálētos",
+    "le": "ἀνεκλάλητος",
+    "pl": "anekláletos",
+    "ps": "an-ek-lal'-ay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1583')}>G1583</span>; no hablado, i.e. (por implicación) indecible: <font color='%COLOR_BLUE%'>inefable.</font>"
+  },
+  {
+    "id": "G413",
+    "ti": "anékleiptos",
+    "le": "ἀνέκλειπτος",
+    "pl": "anékleiptos",
+    "ps": "an-ek'-lipe-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1587')}>G1587</span>; no se queda sin nada, i.e. (por implicación) inacabable: <font color='%COLOR_BLUE%'>que no se agota.</font>"
+  },
+  {
+    "id": "G414",
+    "ti": "anektóteros",
+    "le": "ἀνεκτότερος",
+    "pl": "anektóteros",
+    "ps": "an-ek-tot'-er-os",
+    "df": "compare de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G430')}>G430</span>; más soportable: <font color='%COLOR_BLUE%'>tolerable.</font>"
+  },
+  {
+    "id": "G415",
+    "ti": "aneleḗmōn",
+    "le": "ἀνελεήμων",
+    "pl": "aneleémon",
+    "ps": "an-eleh-ay'-mone",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1655')}>G1655</span>; inmisericorde: <font color='%COLOR_BLUE%'>sin misericordia.</font>"
+  },
+  {
+    "id": "G416",
+    "ti": "anemízō",
+    "le": "ἀνεμίζω",
+    "pl": "anemízo",
+    "ps": "an-em-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G417')}>G417</span>; echar al viento: <font color='%COLOR_BLUE%'>arrastrado por el viento.</font>"
+  },
+  {
+    "id": "G417",
+    "ti": "ánemos",
+    "le": "ἄνεμος",
+    "pl": "ánemos",
+    "ps": "an'-em-os",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G109')}>G109</span>; viento; (plural) por implicación (los cuatro) cuartos (de la tierra): <font color='%COLOR_BLUE%'>viento.</font>"
+  },
+  {
+    "id": "G418",
+    "ti": "anéndektos",
+    "le": "ἀνένδεκτος",
+    "pl": "anéndektos",
+    "ps": "an-en'-dek-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1735')}>G1735</span>; no admitido, i.e. (por implicación) que no se puede esperar: <font color='%COLOR_BLUE%'>imposible.</font>"
+  },
+  {
+    "id": "G419",
+    "ti": "anexereúnētos",
+    "le": "ἀνεξερεύνητος",
+    "pl": "anexereúnetos",
+    "ps": "an-ex-er-yoo'-nay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1830')}>G1830</span>; no examinado, i.e. (por implicación) inescrutable: <font color='%COLOR_BLUE%'>inescrutable, insondable.</font>"
+  },
+  {
+    "id": "G420",
+    "ti": "anexíkakos",
+    "le": "ἀνεξίκακος",
+    "pl": "anexíkakos",
+    "ps": "an-ex-ik'-ak-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G430')}>G430</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2556')}>G2556</span>; soportando la enfermedad, i.e. paciente: <font color='%COLOR_BLUE%'>sufrido.</font>"
+  },
+  {
+    "id": "G421",
+    "ti": "anexichníastos",
+    "le": "ἀνεξιχνίαστος",
+    "pl": "anexijníastos",
+    "ps": "an-ex-ikh-nee'-as-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1537')}>G1537</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2487')}>G2487</span>; no rastreado, i.e. (por implicación) que no se puede rastrear: <font color='%COLOR_BLUE%'>inescrutable.</font>"
+  },
+  {
+    "id": "G422",
+    "ti": "anepaíschyntos",
+    "le": "ἀνεπαίσχυντος",
+    "pl": "anepaísjuntos",
+    "ps": "an-ep-ah'-ee-skhoon-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G153')}>G153</span>; no avergonzado, i.e. (por implicación) irreprensible: <font color='%COLOR_BLUE%'>no tiene de qué avergonzarse.</font>"
+  },
+  {
+    "id": "G423",
+    "ti": "anepílēptos",
+    "le": "ἀνεπίληπτος",
+    "pl": "anepíleptos",
+    "ps": "an-ep-eel'-ape-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1949')}>G1949</span>; no arrestado, i.e. (por implicación) inculpable: <font color='%COLOR_BLUE%'>sin reprensión, irreprensible.</font>"
+  },
+  {
+    "id": "G424",
+    "ti": "anérchomai",
+    "le": "ἀνέρχομαι",
+    "pl": "anérjomai",
+    "ps": "an-erkh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span>; ascender: <font color='%COLOR_BLUE%'>subir.</font>"
+  },
+  {
+    "id": "G425",
+    "ti": "ánesis",
+    "le": "ἄνεσις",
+    "pl": "ánesis",
+    "ps": "an'-es-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G447')}>G447</span>; relajación o (figurativamente) alivio: <font color='%COLOR_BLUE%'>reposo, holgura, libertad.</font>"
+  },
+  {
+    "id": "G426",
+    "ti": "anetázō",
+    "le": "ἀνετάζω",
+    "pl": "anetázo",
+    "ps": "an-et-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <b>ἐτάζω</b> <font color='%COLOR_PURPLE%'>etázo</font> (probar); investigar (judicialmente): <font color='%COLOR_BLUE%'>examinar.</font>"
+  },
+  {
+    "id": "G427",
+    "ti": "áneu",
+    "le": "ἄνευ",
+    "pl": "áneu",
+    "ps": "an'-yoo",
+    "df": "partícula primaria, sin: <font color='%COLOR_BLUE%'>sin.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span>."
+  },
+  {
+    "id": "G428",
+    "ti": "aneúthetos",
+    "le": "ἀνεύθετος",
+    "pl": "aneúdsetos",
+    "ps": "an-yoo'-the-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2111')}>G2111</span>; no bien preparado, i.e. inconveniente: <font color='%COLOR_BLUE%'>incómodo.</font>"
+  },
+  {
+    "id": "G429",
+    "ti": "aneurískō",
+    "le": "ἀνευρίσκω",
+    "pl": "aneurísko",
+    "ps": "an-yoo-ris'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2147')}>G2147</span>; buscar, hallar: <font color='%COLOR_BLUE%'>hallar.</font>"
+  },
+  {
+    "id": "G430",
+    "ti": "anéchomai",
+    "le": "ἀνέχομαι",
+    "pl": "anéjomai",
+    "ps": "an-ekh'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2192')}>G2192</span>; sostenerse uno mismo en contra de, i.e. (figurativamente) soportar, aguantar: <font color='%COLOR_BLUE%'>padecer, soportar, sufrir, tolerar.</font>"
+  },
+  {
+    "id": "G431",
+    "ti": "anepsiós",
+    "le": "ἀνεψιός",
+    "pl": "anépsios",
+    "ps": "an-eps'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula de unión) y un obsoleto <b>νέπος</b> <font color='%COLOR_PURPLE%'>népos</font> (camada); propiamente afín, i.e. (específicamente) primo (aunque muchas versiones traducen sobrino): <font color='%COLOR_BLUE%'>sobrino.</font>"
+  },
+  {
+    "id": "G432",
+    "ti": "ánēthon",
+    "le": "ἄνηθον",
+    "pl": "ánedson",
+    "ps": "an'-ay-thon",
+    "df": "probablemente de origen extranjero; eneldo, cilantro: <font color='%COLOR_BLUE%'>eneldo.</font>"
+  },
+  {
+    "id": "G433",
+    "ti": "anḗkō",
+    "le": "ἀνήκω",
+    "pl": "anéko",
+    "ps": "an-ay'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2240')}>G2240</span>; llenar a cabalidad, i.e. (figurativamente) ser propio: <font color='%COLOR_BLUE%'>convenir.</font>"
+  },
+  {
+    "id": "G434",
+    "ti": "anḗmeros",
+    "le": "ἀνήμερος",
+    "pl": "anémeros",
+    "ps": "an-ay'-mer-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <b>ἥμερος</b> <font color='%COLOR_PURPLE%'>jémeros</font> (cojo); salvaje: <font color='%COLOR_BLUE%'>cruel.</font>"
+  },
+  {
+    "id": "G435",
+    "ti": "anḗr",
+    "le": "ἀνήρ",
+    "pl": "anér",
+    "ps": "an'-ayr",
+    "df": "palabra primaria [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G444')}>G444</span>]; hombre (propiamente como un varón individual): <font color='%COLOR_BLUE%'>esposo, hombre, marido, varón.</font>"
+  },
+  {
+    "id": "G436",
+    "ti": "anthístēmi",
+    "le": "ἀνθίστημι",
+    "pl": "andsístemi",
+    "ps": "anth-is'-tay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G473')}>G473</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; pararse en contra, i.e. oponerse: <font color='%COLOR_BLUE%'>oponer, resistir, contradecir.</font>"
+  },
+  {
+    "id": "G437",
+    "ti": "anthomologéomai",
+    "le": "ἀνθομολογέομαι",
+    "pl": "andsomologéomai",
+    "ps": "anth-om-ol-og-eh'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G473')}>G473</span> y la voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3670')}>G3670</span>; confesar a su vez, i.e. responder en alabanza: <font color='%COLOR_BLUE%'>dar gracias.</font>"
+  },
+  {
+    "id": "G438",
+    "ti": "ánthos",
+    "le": "ἄνθος",
+    "pl": "ándsos",
+    "ps": "anth'-os",
+    "df": "palabra primaria, flor: <font color='%COLOR_BLUE%'>flor.</font>"
+  },
+  {
+    "id": "G439",
+    "ti": "anthrakiá",
+    "le": "ἀνθρακιά",
+    "pl": "andsrakiá",
+    "ps": "anth-rak-ee-ah'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G440')}>G440</span>; brasas encendidas: <font color='%COLOR_BLUE%'>brasas, fuego.</font>"
+  },
+  {
+    "id": "G440",
+    "ti": "ánthrax",
+    "le": "ἄνθραξ",
+    "pl": "ándsrax",
+    "ps": "anth'-rax",
+    "df": "de derivación incierta; brasa encendida: <font color='%COLOR_BLUE%'>ascua.</font>"
+  },
+  {
+    "id": "G441",
+    "ti": "anthrōpáreskos",
+    "le": "ἀνθρωπάρεσκος",
+    "pl": "andsropáreskos",
+    "ps": "anth-ro-par'-es-kos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G444')}>G444</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G700')}>G700</span>; adular: <font color='%COLOR_BLUE%'>agradar a los hombres.</font>"
+  },
+  {
+    "id": "G442",
+    "ti": "anthrṓpinos",
+    "le": "ἀνθρώπινος",
+    "pl": "andsrópinos",
+    "ps": "anth-ro'-pee-nos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G444')}>G444</span>; humano: <font color='%COLOR_BLUE%'>naturaleza humana.</font>"
+  },
+  {
+    "id": "G443",
+    "ti": "anthrōpoktónos",
+    "le": "ἀνθρωποκτόνος",
+    "pl": "andsropoktónos",
+    "ps": "anth-ro-pok-ton'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G444')}>G444</span> y <b>κτείνω</b> <font color='%COLOR_PURPLE%'>kteíno</font> (matar); homicida: <font color='%COLOR_BLUE%'>homicida.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5406')}>G5406</span>."
+  },
+  {
+    "id": "G444",
+    "ti": "ánthrōpos",
+    "le": "ἄνθρωπος",
+    "pl": "ándsropos",
+    "ps": "anth'-ro-pos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span> y <b>ὤψ</b> <font color='%COLOR_PURPLE%'>óps</font> (semblante; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span>); con cara humana, i.e. un ser humano: <font color='%COLOR_BLUE%'>gente, hombre, humano, varón.</font>"
+  },
+  {
+    "id": "G445",
+    "ti": "anthypateúō",
+    "le": "ἀνθυπατεύω",
+    "pl": "andsupateúo",
+    "ps": "anth-oo-pat-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G446')}>G446</span>; actuar como procónsul: <font color='%COLOR_BLUE%'>procónsul en función.</font>"
+  },
+  {
+    "id": "G446",
+    "ti": "anthýpatos",
+    "le": "ἀνθύπατος",
+    "pl": "andsúpatos",
+    "ps": "anth-oo'-pat-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G473')}>G473</span> y un superlativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5228')}>G5228</span>; en lugar del más alto oficial, i.e. (específicamente) procónsul romano: <font color='%COLOR_BLUE%'>procónsul.</font>"
+  },
+  {
+    "id": "G447",
+    "ti": "aníēmi",
+    "le": "ἀνίημι",
+    "pl": "aníemi",
+    "ps": "an-ee'-ay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <b>ἵημι</b> <font color='%COLOR_PURPLE%'>jíemi</font> (enviar); soltar, desatar, i.e. (literalmente) aflojar o (figurativamente) desertar, desistir de: <font color='%COLOR_BLUE%'>largar, dejar, soltar.</font>"
+  },
+  {
+    "id": "G448",
+    "ti": "aníleōs",
+    "le": "ἀνίλεως",
+    "pl": "aníleos",
+    "ps": "an-ee'-leh-oce",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2436')}>G2436</span>; inexorable: <font color='%COLOR_BLUE%'>sin misericordia.</font>"
+  },
+  {
+    "id": "G449",
+    "ti": "ániptos",
+    "le": "ἄνιπτος",
+    "pl": "ániptos",
+    "ps": "an'-ip-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1')}>G1</span> (como partícula negativa) y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3538')}>G3538</span>; sin ablución: <font color='%COLOR_BLUE%'>inmundo, sin lavar.</font>"
+  },
+  {
+    "id": "G450",
+    "ti": "anístēmi",
+    "le": "ἀνίστημι",
+    "pl": "anístemi",
+    "ps": "an-is'-tay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G303')}>G303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; levantarse, pararse (literalmente o figurativamente, transitivo o intransitivo): <font color='%COLOR_BLUE%'>levantar, resucitar.</font>"
+  }
+]

@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H1501",
+    "ti": "gâzâm",
+    "le": "גָּזָם",
+    "pl": "gazám",
+    "ps": "gaw-zawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa devorar; especie de langosta: <font color='%COLOR_BLUE%'>langosta.</font>"
+  },
+  {
+    "id": "H1502",
+    "ti": "Gazzâm",
+    "le": "גַּזָּם",
+    "pl": "Gazzám",
+    "ps": "gaz-zawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1501')}>H1501</span>; devorador; Gazzam, uno de los sirvientes del templo: <font color='%COLOR_BLUE%'>Gazam.</font>"
+  },
+  {
+    "id": "H1503",
+    "ti": "gezaʻ",
+    "le": "גֶּזַע",
+    "pl": "guéza",
+    "ps": "geh'-zah",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa cortar (árboles); tronco o tocón de un árbol (caído o plantado): <font color='%COLOR_BLUE%'>tronco.</font>"
+  },
+  {
+    "id": "H1504",
+    "ti": "gâzar",
+    "le": "גָּזַר",
+    "pl": "gazár",
+    "ps": "gaw-zar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; cortar o arrancar; (figurativamente) destruir, dividir, excluir o decidir: <font color='%COLOR_BLUE%'>apartado, arrebatar, cortar, destruir, determinar, dividir, excluir, hurtar, muerto soy, partir, quitar, sentencia, ser cortado, ser quitado.</font>"
+  },
+  {
+    "id": "H1505",
+    "ti": "gᵉzar",
+    "le": "גְּזַר",
+    "pl": "guezár",
+    "ps": "ghez-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1504')}>H1504</span>; extraer piedras de una cantera; determinar: <font color='%COLOR_BLUE%'>adivino, cortar.</font>"
+  },
+  {
+    "id": "H1506",
+    "ti": "gezer",
+    "le": "גֶּזֶר",
+    "pl": "guézer",
+    "ps": "gheh'-zer",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1504')}>H1504</span>; algo cortado; porción: <font color='%COLOR_BLUE%'>dividir.</font>"
+  },
+  {
+    "id": "H1507",
+    "ti": "Gezer",
+    "le": "גֶּזֶר",
+    "pl": "Guézer",
+    "ps": "gheh'-zer",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1506')}>H1506</span>; Guezer, un lugar en Palestina: <font color='%COLOR_BLUE%'>Gezer.</font>"
+  },
+  {
+    "id": "H1508",
+    "ti": "gizrâh",
+    "le": "גִּזְרָה",
+    "pl": "guizrá",
+    "ps": "ghiz-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1506')}>H1506</span>; figura o persona (como recortada); también un cercado (como separado): <font color='%COLOR_BLUE%'>espacio abierto, talle.</font>"
+  },
+  {
+    "id": "H1509",
+    "ti": "gᵉzêrâh",
+    "le": "גְּזֵרָה",
+    "pl": "guezerá",
+    "ps": "ghez-ay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1504')}>H1504</span>; desierto (como separado): <font color='%COLOR_BLUE%'>inhabitada.</font>"
+  },
+  {
+    "id": "H1510",
+    "ti": "gᵉzêrâh",
+    "le": "גְּזֵרָה",
+    "pl": "guezerá",
+    "ps": "ghez-ay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1505')}>H1505</span> (1504); decreto: <font color='%COLOR_BLUE%'>sentencia.</font>"
+  },
+  {
+    "id": "H1511",
+    "ti": "Gizrîy",
+    "le": "גִּזְרִי",
+    "pl": "guizrí",
+    "ps": "ghiz-ree'",
+    "df": "<font color='%COLOR_GREEN%'></font>(en el margen); gentilicio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1507')}>H1507</span>; guezerita (colectivamente) o habitante de Guezer; pero mejor (como en el texto) por transposición<font color='%COLOR_GREEN%'><b>גרזי</b></font> <font color='%COLOR_PURPLE%'>guirzí</font>; gentilicio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1630')}>H1630</span>; guirzita (colectivamente) o miembro de una tribu nativa en Palestina: <font color='%COLOR_BLUE%'>gezritas.</font><p></p><font color='%COLOR_GREEN%'><b>גחוין</b></font> <font color='%COLOR_PURPLE%'>Guikjón.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1521')}>H1521</span>."
+  },
+  {
+    "id": "H1512",
+    "ti": "gâchôwn",
+    "le": "גָּחֹון",
+    "pl": "gakjón",
+    "ps": "gaw-khone'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1518')}>H1518</span>; abdomen externo, vientre (como fuente del feto [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1521')}>H1521</span>]): <font color='%COLOR_BLUE%'>pecho.</font>"
+  },
+  {
+    "id": "H1513",
+    "ti": "gechel",
+    "le": "גֶּחֶל",
+    "pl": "guékjel",
+    "ps": "geh'-khel",
+    "df": "<font color='%COLOR_GREEN%'></font>o (femenino) <font color='%COLOR_GREEN%'><b>גחלת</b></font> <font color='%COLOR_PURPLE%'>gakjelet</font>; de una raíz que no se usa que significa brillar o encender; ascua, carbón encendido: <font color='%COLOR_BLUE%'>ascua, brasa, carbón.</font>"
+  },
+  {
+    "id": "H1514",
+    "ti": "Gacham",
+    "le": "גַּחַם",
+    "pl": "Gákjam",
+    "ps": "gah'-kham",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa quemar; llama; Gakjam, un hijo de Nacor: <font color='%COLOR_BLUE%'>Gaham.</font>"
+  },
+  {
+    "id": "H1515",
+    "ti": "Gachar",
+    "le": "גַּחַר",
+    "pl": "Gákjar",
+    "ps": "gah'-khar",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa esconder; acechador; Gakjar, uno de los sirvientes del templo: <font color='%COLOR_BLUE%'>Gahar.</font><p></p><font color='%COLOR_GREEN%'><b>גיי</b></font> <font color='%COLOR_PURPLE%'>goi.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1471')}>H1471</span>."
+  },
+  {
+    "id": "H1516",
+    "ti": "gayʼ",
+    "le": "גַּיְא",
+    "pl": "gai",
+    "ps": "gah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviación) <font color='%COLOR_GREEN%'><b>גי</b></font> <font color='%COLOR_PURPLE%'>gai</font>; probablemente (por transmutación) de misma raíz que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1466')}>H1466</span> (abreviación); desfiladero (por sus lados escarpados; de aquí, angosto, pero no un arroyo ni torrente de invierno): <font color='%COLOR_BLUE%'>valle.</font>"
+  },
+  {
+    "id": "H1517",
+    "ti": "gîyd",
+    "le": "גִּיד",
+    "pl": "guíd",
+    "ps": "gheed",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1464')}>H1464</span>; correa (como compresora); por analogía tendón: <font color='%COLOR_BLUE%'>nervio, tendón, barra.</font>"
+  },
+  {
+    "id": "H1518",
+    "ti": "gîyach",
+    "le": "גִּיחַ",
+    "pl": "guíakj",
+    "ps": "ghee'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviación) <font color='%COLOR_GREEN%'><b>גיח</b></font> <font color='%COLOR_PURPLE%'>góakj</font>; raíz primaria; borbotar (como agua), generalmente emitir: <font color='%COLOR_BLUE%'>estrellar, gemir, sacar, salir.</font>"
+  },
+  {
+    "id": "H1519",
+    "ti": "gîyach",
+    "le": "גִּיחַ",
+    "pl": "guíakj",
+    "ps": "ghee'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); o (abreviación) <font color='%COLOR_GREEN%'><b>גוח</b></font> <font color='%COLOR_PURPLE%'>gúakj</font> (caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1518')}>H1518</span>; apresurarse: <font color='%COLOR_BLUE%'>combatir.</font>"
+  },
+  {
+    "id": "H1520",
+    "ti": "Gîyach",
+    "le": "גִּיחַ",
+    "pl": "Guíakj",
+    "ps": "ghee'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1518')}>H1518</span>; fuente; Guiakj, un lugar en Palestina: <font color='%COLOR_BLUE%'>Gia.</font>"
+  },
+  {
+    "id": "H1521",
+    "ti": "Gîychôwn",
+    "le": "גִּיחֹון",
+    "pl": "Guikjón",
+    "ps": "ghee-khone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviación) <font color='%COLOR_GREEN%'><b>גחוין</b></font> <font color='%COLOR_PURPLE%'>Guikjón</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1518')}>H1518</span>; corriente; Guikjón, río del Paraíso; también un valle (o estanque) cerca de Jerusalén: <font color='%COLOR_BLUE%'>Gihón.</font>"
+  },
+  {
+    "id": "H1522",
+    "ti": "Gêychăzîy",
+    "le": "גֵּיחֲזִי",
+    "pl": "Gueikjazí",
+    "ps": "gay-khah-zee'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>גחזי</b></font> <font color='%COLOR_PURPLE%'>Guekjazí</font>; aparentemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1516')}>H1516</span> y la <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2372')}>H2372</span>; valle de un visionario; Gekjazi, criado de Eliseo: <font color='%COLOR_BLUE%'>Giezi.</font>"
+  },
+  {
+    "id": "H1523",
+    "ti": "gîyl",
+    "le": "גִּיל",
+    "pl": "guil",
+    "ps": "gheel",
+    "df": "<font color='%COLOR_GREEN%'></font>o (por permutación ) <font color='%COLOR_GREEN%'><b>גול</b></font> <font color='%COLOR_PURPLE%'>gul</font>; raíz primaria girar alrededor (bajo la influencia de cualquier emoción violenta), i.e. usualmente regocijarse, o (como encogerse de) temor: <font color='%COLOR_BLUE%'>alegrar, -se, alegría, gozar, -se, holgar, júbilo, recrear, regocijar, -se.</font>"
+  },
+  {
+    "id": "H1524",
+    "ti": "gîyl",
+    "le": "גִּיל",
+    "pl": "guil",
+    "ps": "gheel",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1523')}>H1523</span>; revolución (de tiempo, i.e. en edad); también gozo: <font color='%COLOR_BLUE%'>alegría, gozo, gran gozo.</font>"
+  },
+  {
+    "id": "H1525",
+    "ti": "gîylâh",
+    "le": "גִּילָה",
+    "pl": "guilá",
+    "ps": "ghee-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>גילת</b></font> <font color='%COLOR_PURPLE%'>guilát</font>; femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1524')}>H1524</span>; gozo: <font color='%COLOR_BLUE%'>júbilo.</font><p></p><font color='%COLOR_GREEN%'><b>גיליה</b></font> <font color='%COLOR_PURPLE%'>Guiló.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1542')}>H1542</span>."
+  },
+  {
+    "id": "H1526",
+    "ti": "Gîylônîy",
+    "le": "גִּילֹנִי",
+    "pl": "guiloní",
+    "ps": "ghee-lo-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>gentilicio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1542')}>H1542</span>; guilonita o habitante de Guiló: <font color='%COLOR_BLUE%'>gilonita.</font>"
+  },
+  {
+    "id": "H1527",
+    "ti": "Gîynath",
+    "le": "גִּינַת",
+    "pl": "Guínat",
+    "ps": "ghee-nath'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Guinat, un israelita: <font color='%COLOR_BLUE%'>Ginat.</font>"
+  },
+  {
+    "id": "H1528",
+    "ti": "gîyr",
+    "le": "גִּיר",
+    "pl": "guír",
+    "ps": "gheer",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1615')}>H1615</span>; cal, mezcla: <font color='%COLOR_BLUE%'>encalado.</font><p></p><font color='%COLOR_GREEN%'><b>גיר</b></font> <font color='%COLOR_PURPLE%'>gueir.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1616')}>H1616</span>."
+  },
+  {
+    "id": "H1529",
+    "ti": "Gêyshân",
+    "le": "גֵּישָׁן",
+    "pl": "Gueishán",
+    "ps": "gay-shawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1487')}>H1487</span>; deforme; Gueshán, un israelita: <font color='%COLOR_BLUE%'>Gesam.</font>"
+  },
+  {
+    "id": "H1530",
+    "ti": "gal",
+    "le": "גַּל",
+    "pl": "gal",
+    "ps": "gal",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; algo enrollado, i.e. montón de piedra o estiércol (plural ruinas), por analogía manantial de agua (plural olas): <font color='%COLOR_BLUE%'>majano, montón, ola, onda, ruina.</font>"
+  },
+  {
+    "id": "H1531",
+    "ti": "gôl",
+    "le": "גֹּל",
+    "pl": "gol",
+    "ps": "gole",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; tazón para aceite (por redondo): <font color='%COLOR_BLUE%'>redoma.</font><p></p><font color='%COLOR_GREEN%'><b>גלא</b></font> <font color='%COLOR_PURPLE%'>guela.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1541')}>H1541</span>."
+  },
+  {
+    "id": "H1532",
+    "ti": "gallâb",
+    "le": "גַּלָּב",
+    "pl": "galab",
+    "ps": "gal-lawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa afeitar; barbero: <font color='%COLOR_BLUE%'>barbero.</font>"
+  },
+  {
+    "id": "H1533",
+    "ti": "Gilbôaʻ",
+    "le": "גִּלְבֹּעַ",
+    "pl": "Guilboa",
+    "ps": "ghil-bo'-ah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1530')}>H1530</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1158')}>H1158</span>; fuente de ebullición; Guilboa, montaña de Palestina: <font color='%COLOR_BLUE%'>Gilboa.</font>"
+  },
+  {
+    "id": "H1534",
+    "ti": "galgal",
+    "le": "גַּלְגַּל",
+    "pl": "galgal",
+    "ps": "gal-gal'",
+    "df": "<font color='%COLOR_GREEN%'></font>por reduplicación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; rueda; por analogía remolino de viento; también polvo (como alborotado por el viento): <font color='%COLOR_BLUE%'>rueda, torbellino.</font>"
+  },
+  {
+    "id": "H1535",
+    "ti": "galgal",
+    "le": "גַּלְגַּל",
+    "pl": "galgal",
+    "ps": "gal-gal'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1534')}>H1534</span>; rueda: <font color='%COLOR_BLUE%'>rueda.</font>"
+  },
+  {
+    "id": "H1536",
+    "ti": "gilgâl",
+    "le": "גִּלְגָּל",
+    "pl": "guilgal",
+    "ps": "ghil-gawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1534')}>H1534</span>: <font color='%COLOR_BLUE%'>rueda.</font>"
+  },
+  {
+    "id": "H1537",
+    "ti": "Gilgâl",
+    "le": "גִּלְגָּל",
+    "pl": "Guilgal",
+    "ps": "ghil-gawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1536')}>H1536</span> (con el artículo como sust. propio); Guilgal, nombre de tres lugares en Palestina: <font color='%COLOR_BLUE%'>Gilgal.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1019')}>H1019</span>."
+  },
+  {
+    "id": "H1538",
+    "ti": "gulgôleth",
+    "le": "גֻּלְגֹּלֶת",
+    "pl": "gulgólet",
+    "ps": "gul-go'-leth",
+    "df": "<font color='%COLOR_GREEN%'></font>por reduplicación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; cráneo (por redondo); por implicación cabeza (al contar personas): <font color='%COLOR_BLUE%'>cabeza, cráneo, todo hombre.</font>"
+  },
+  {
+    "id": "H1539",
+    "ti": "geled",
+    "le": "גֶּלֶד",
+    "pl": "guéled",
+    "ps": "ghe'-led",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que probablemente significa pulir; piel (humana) (como suave): <font color='%COLOR_BLUE%'>piel.</font>"
+  },
+  {
+    "id": "H1540",
+    "ti": "gâlâh",
+    "le": "גָּלָה",
+    "pl": "galá",
+    "ps": "gaw-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; desnudar (específicamente en sentido deshonroso); por implicación desterrados (cautivos que usualmente se les desnuda); figurativamente revelar: <font color='%COLOR_BLUE%'>abierto, abrir, aparecer, cautiverio, cautividad, llevar cautivo, claramente, conocer, decir, descubierto, descubrir, desnudar, desterrado, desterrar, disipar, encomendar, entregar, exponer, hacer transportar, manifestarse, manifiesto, mostrar, partir, pasar, patente, publicar, revelarse, salir, traer, trasladar, traspasar, trasponer.</font>"
+  },
+  {
+    "id": "H1541",
+    "ti": "gᵉlâh",
+    "le": "גְּלָה",
+    "pl": "guelá",
+    "ps": "ghel-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); o <font color='%COLOR_GREEN%'><b>גלא</b></font> <font color='%COLOR_PURPLE%'>guelá</font> (caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1540')}>H1540</span>: <font color='%COLOR_BLUE%'>revelar, llevar cautivo, mostrar.</font><p></p><font color='%COLOR_GREEN%'><b>גילה</b></font> <font color='%COLOR_PURPLE%'>golá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1473')}>H1473</span>."
+  },
+  {
+    "id": "H1542",
+    "ti": "Gilôh",
+    "le": "גִּלֹה",
+    "pl": "Guiló",
+    "ps": "ghee-lo'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (compl.) <font color='%COLOR_GREEN%'><b>גיליה</b></font> <font color='%COLOR_PURPLE%'>Guiló</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1540')}>H1540</span>; abierto; Guilo, un lugar en Palestina: <font color='%COLOR_BLUE%'>Gilo.</font>"
+  },
+  {
+    "id": "H1543",
+    "ti": "gullâh",
+    "le": "גֻּלָּה",
+    "pl": "gulá",
+    "ps": "gool-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; fuente, tazón o esfera (todo por ser redondo): <font color='%COLOR_BLUE%'>cordón, cuenco, depósito, esfera, fuente, redondo.</font>"
+  },
+  {
+    "id": "H1544",
+    "ti": "gillûwl",
+    "le": "גִּלּוּל",
+    "pl": "guilul",
+    "ps": "ghil-lool'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviación) <font color='%COLOR_GREEN%'><b>גלל</b></font> <font color='%COLOR_PURPLE%'>guilul</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; propiamente tronco (por redondo); por implicación ídolo: <font color='%COLOR_BLUE%'>idolatría, ídolo, terafín.</font>"
+  },
+  {
+    "id": "H1545",
+    "ti": "gᵉlôwm",
+    "le": "גְּלֹום",
+    "pl": "guelóm",
+    "ps": "ghel-ome'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1563')}>H1563</span>; vestido (como envuelto): <font color='%COLOR_BLUE%'>manto.</font>"
+  },
+  {
+    "id": "H1546",
+    "ti": "gâlûwth",
+    "le": "גָּלוּת",
+    "pl": "galút",
+    "ps": "gaw-looth'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1540')}>H1540</span>; cautividad; concretamente exiliados (colectivamente): <font color='%COLOR_BLUE%'>cautiverio, cautivos, deportación, deportados, transportados.</font>"
+  },
+  {
+    "id": "H1547",
+    "ti": "gâlûwth",
+    "le": "גָּלוּת",
+    "pl": "galut",
+    "ps": "gaw-looth'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1546')}>H1546</span>: <font color='%COLOR_BLUE%'>cautividad, cautivos, deportados.</font>"
+  },
+  {
+    "id": "H1548",
+    "ti": "gâlach",
+    "le": "גָּלַח",
+    "pl": "galákj",
+    "ps": "gaw-lakh'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente ser calvo, i.e. (causativo) afeitar; figurativamente devastar: <font color='%COLOR_BLUE%'>afeitarse las cejas, cortar, hacer que se rasure, navaja, raer, rapar, rasurar.</font>"
+  },
+  {
+    "id": "H1549",
+    "ti": "gillâyôwn",
+    "le": "גִּלָּיֹון",
+    "pl": "guilaión",
+    "ps": "ghil-law-yone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>גליוין</b></font> <font color='%COLOR_PURPLE%'>guilión</font> de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1540')}>H1540</span>; tablilla para escribir (como descubierta); por analogía un espejo (como placa): <font color='%COLOR_BLUE%'>tabla, espejo.</font>"
+  },
+  {
+    "id": "H1550",
+    "ti": "gâlîyl",
+    "le": "גָּלִיל",
+    "pl": "galíl",
+    "ps": "gaw-leel'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; hoja de una puerta plegadiza (como rotativa); también anillo (por redondo): <font color='%COLOR_BLUE%'>girar, anillo.</font>"
+  },
+  {
+    "id": "H1551",
+    "ti": "Gâlîyl",
+    "le": "גָּלִיל",
+    "pl": "Galíl",
+    "ps": "gaw-leel'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (prolongado) <font color='%COLOR_GREEN%'><b>גלילה</b></font> <font color='%COLOR_PURPLE%'>Galilá</font>; lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1550')}>H1550</span>; círculo (con el artículo); Galilá (como circuito especial) al norte de Palestina: <font color='%COLOR_BLUE%'>Galilea.</font>"
+  },
+  {
+    "id": "H1552",
+    "ti": "gᵉlîylâh",
+    "le": "גְלִילָה",
+    "pl": "guelilá",
+    "ps": "ghel-ee-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1550')}>H1550</span>; circuito o región: <font color='%COLOR_BLUE%'>límite, región, territorio.</font>"
+  },
+  {
+    "id": "H1553",
+    "ti": "Gᵉlîylôwth",
+    "le": "גְּלִילֹות",
+    "pl": "Guelilot",
+    "ps": "ghel-ee-lowth'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1552')}>H1552</span>; círculos; Guelilot, un lugar en Palestina: <font color='%COLOR_BLUE%'>Gelilot.</font>"
+  },
+  {
+    "id": "H1554",
+    "ti": "Gallîym",
+    "le": "גַּלִּים",
+    "pl": "Galím",
+    "ps": "gal-leem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1530')}>H1530</span>; manantiales; Galim, un lugar en Palestina: <font color='%COLOR_BLUE%'>Galim.</font>"
+  },
+  {
+    "id": "H1555",
+    "ti": "Golyath",
+    "le": "גׇּלְיַת",
+    "pl": "Goliat",
+    "ps": "gol-yath'",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1540')}>H1540</span>; exilio; Goliat, un filisteo: <font color='%COLOR_BLUE%'>Goliat.</font>"
+  },
+  {
+    "id": "H1556",
+    "ti": "gâlal",
+    "le": "גָּלַל",
+    "pl": "galál",
+    "ps": "gaw-lal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; revolver (literalmente o figurativamente): <font color='%COLOR_BLUE%'>apartar, correr, encomendar, enrollar, tender lazo, remover, revolcar, revolver, rodar.</font>"
+  },
+  {
+    "id": "H1557",
+    "ti": "gâlâl",
+    "le": "גָּלָל",
+    "pl": "galál",
+    "ps": "gaw-lawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; estiércol (como en bolas): <font color='%COLOR_BLUE%'>estiércol.</font>"
+  },
+  {
+    "id": "H1558",
+    "ti": "gâlâl",
+    "le": "גָּלָל",
+    "pl": "galál",
+    "ps": "gaw-lawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; circunstancia (como envuelta alrededor); se usa solo como adverbio, a causa de: <font color='%COLOR_BLUE%'>por, a causa de.</font>"
+  },
+  {
+    "id": "H1559",
+    "ti": "Gâlâl",
+    "le": "גָּלָל",
+    "pl": "Galál",
+    "ps": "gaw-lawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>, en el sentido de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1560')}>H1560</span>; grande; Galal, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Galal.</font>"
+  },
+  {
+    "id": "H1560",
+    "ti": "gᵉlâl",
+    "le": "גְּלָל",
+    "pl": "guelál",
+    "ps": "ghel-awl'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1556')}>H1556</span>; peso o medida (como enrollado): <font color='%COLOR_BLUE%'>grande.</font>"
+  },
+  {
+    "id": "H1561",
+    "ti": "gêlel",
+    "le": "גֵּלֶל",
+    "pl": "guélel",
+    "ps": "gay'-lel",
+    "df": "<font color='%COLOR_GREEN%'></font>variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1557')}>H1557</span>; estiércol (plural bolas de estiércol): <font color='%COLOR_BLUE%'>estiércol, excremento.</font>"
+  },
+  {
+    "id": "H1562",
+    "ti": "Gilălay",
+    "le": "גִּלֲלַי",
+    "pl": "Guilalái",
+    "ps": "ghe-lal-ah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1561')}>H1561</span>; lleno de estiércol; Guilalai, un israelita: <font color='%COLOR_BLUE%'>Gilalai.</font>"
+  },
+  {
+    "id": "H1563",
+    "ti": "gâlam",
+    "le": "גָּלַם",
+    "pl": "galám",
+    "ps": "gaw-lam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; doblar: <font color='%COLOR_BLUE%'>doblar.</font>"
+  },
+  {
+    "id": "H1564",
+    "ti": "gôlem",
+    "le": "גֹּלֶם",
+    "pl": "gólem",
+    "ps": "go'-lem",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1563')}>H1563</span>; envoltura (y masa deforme, i.e. como el embrión): <font color='%COLOR_BLUE%'>embrión.</font>"
+  },
+  {
+    "id": "H1565",
+    "ti": "galmûwd",
+    "le": "גַּלְמוּד",
+    "pl": "galmud",
+    "ps": "gal-mood'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente por prolongado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1563')}>H1563</span>; estéril (como envuelto demasiado apretado); figurativamente desolado: <font color='%COLOR_BLUE%'>asolar, desolado, solitario.</font>"
+  },
+  {
+    "id": "H1566",
+    "ti": "gâlaʻ",
+    "le": "גָּלַע",
+    "pl": "galá",
+    "ps": "gaw-lah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ser obstinado: <font color='%COLOR_BLUE%'>enredar, entremeter, envolver.</font>"
+  },
+  {
+    "id": "H1567",
+    "ti": "Galʻêd",
+    "le": "גַּלְעֵד",
+    "pl": "Galed",
+    "ps": "gal-ade'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1530')}>H1530</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5707')}>H5707</span>; montón del testimonio; Galed, montón de piedras conmemorativo al E. del Jordán: <font color='%COLOR_BLUE%'>Galaad.</font>"
+  },
+  {
+    "id": "H1568",
+    "ti": "Gilʻâd",
+    "le": "גִּלְעָד",
+    "pl": "Guilad",
+    "ps": "ghil-awd'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1567')}>H1567</span>; Gilad, a región al E. del Jordán; también nombre de tres israelitas: <font color='%COLOR_BLUE%'>Galaad, galaadita, (Jabes-)Galaad.</font>"
+  },
+  {
+    "id": "H1569",
+    "ti": "Gilʻâdîy",
+    "le": "גִּלְעָדִי",
+    "pl": "guiladí",
+    "ps": "ghil-aw-dee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patrón. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1568')}>H1568</span>; guiladita o descendiente de Guilad: <font color='%COLOR_BLUE%'>galaadita.</font>"
+  },
+  {
+    "id": "H1570",
+    "ti": "gâlash",
+    "le": "גָּלַשׁ",
+    "pl": "galásh",
+    "ps": "gaw-lash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; probablemente brincar (como cabra): <font color='%COLOR_BLUE%'>recostarse.</font>"
+  },
+  {
+    "id": "H1571",
+    "ti": "gam",
+    "le": "גַּם",
+    "pl": "gam",
+    "ps": "gam",
+    "df": "<font color='%COLOR_GREEN%'></font>por contracción de una raíz que no se usa que significa reunir; propiamente asamblea; usado solo como adverbio también, aun, y aun, aunque; frecuentemente se repite como correlativamente tanto… como: <font color='%COLOR_BLUE%'>con, entonces, igualmente, ni... ni, no obstante, sin embargo.</font>"
+  },
+  {
+    "id": "H1572",
+    "ti": "gâmâʼ",
+    "le": "גָּמָא",
+    "pl": "gamá",
+    "ps": "gaw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria (literalmente o figurativamente) absorber: <font color='%COLOR_BLUE%'>dar de beber, escarbar.</font>"
+  },
+  {
+    "id": "H1573",
+    "ti": "gômeʼ",
+    "le": "גֹּמֶא",
+    "pl": "góme",
+    "ps": "go'-meh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1572')}>H1572</span>; propiamente absorbente, i.e. junco (por su porosidad); específicamente papiro: <font color='%COLOR_BLUE%'>junco.</font>"
+  },
+  {
+    "id": "H1574",
+    "ti": "gômed",
+    "le": "גֹּמֶד",
+    "pl": "gómed",
+    "ps": "go'-med",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que aparentemente significa asir; propiamente una distancia: <font color='%COLOR_BLUE%'>codo.</font>"
+  },
+  {
+    "id": "H1575",
+    "ti": "gammâd",
+    "le": "גַּמָּד",
+    "pl": "gammád",
+    "ps": "gam-mawd'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1574')}>H1574</span>; guerrero (como empuñando armas): <font color='%COLOR_BLUE%'>gamadeos.</font>"
+  },
+  {
+    "id": "H1576",
+    "ti": "gᵉmûwl",
+    "le": "גְּמוּל",
+    "pl": "guemúl",
+    "ps": "ghem-ool'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1580')}>H1580</span>; tratamiento, i.e. acto (de bien o mal); por implicación servicio o compensación: <font color='%COLOR_BLUE%'>beneficio, hacer el bien, paga, pagar, pago, recompensa, retribución.</font>"
+  },
+  {
+    "id": "H1577",
+    "ti": "gâmûwl",
+    "le": "גָּמוּל",
+    "pl": "Gamúl",
+    "ps": "gaw-mool'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1580')}>H1580</span>; premiado; Gamul, un israelita: <font color='%COLOR_BLUE%'>Gamul.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1014')}>H1014</span>."
+  },
+  {
+    "id": "H1578",
+    "ti": "gᵉmûwlâh",
+    "le": "גְּמוּלָה",
+    "pl": "guemulá",
+    "ps": "ghem-oo-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1576')}>H1576</span>; significa lo mismo: <font color='%COLOR_BLUE%'>paga, recompensa, retribución, vindicación.</font>"
+  },
+  {
+    "id": "H1579",
+    "ti": "Gimzôw",
+    "le": "גִּמְזֹו",
+    "pl": "Guimzó",
+    "ps": "ghim-zo'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Gimzo, un lugar en Palestina: <font color='%COLOR_BLUE%'>Gimzo.</font>"
+  },
+  {
+    "id": "H1580",
+    "ti": "gâmal",
+    "le": "גָּמַל",
+    "pl": "gamál",
+    "ps": "gaw-mal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; tratar a una persona (bien o mal), i.e. beneficio o merecimiento; por implicación (de trabajo pesado), madurar, i.e. (específicamente) destetar: <font color='%COLOR_BLUE%'>amontonar, dar bien, dar (recompensa), destetar, hacer, hacer bien, madurar, pagar (con bien, con mal), pago, pasar, premiar, ser propicio.</font>"
+  },
+  {
+    "id": "H1581",
+    "ti": "gâmâl",
+    "le": "גָּמָל",
+    "pl": "gamal",
+    "ps": "gaw-mawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>aparentemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1580')}>H1580</span> (en sel sentido de labor o que lleva carga); camello: <font color='%COLOR_BLUE%'>camello.</font>"
+  },
+  {
+    "id": "H1582",
+    "ti": "Gᵉmallîy",
+    "le": "גְּמַלִּי",
+    "pl": "Guemalí",
+    "ps": "ghem-al-lee'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1581')}>H1581</span>; camellero; Gemali, un israelita: <font color='%COLOR_BLUE%'>Gemali.</font>"
+  },
+  {
+    "id": "H1583",
+    "ti": "Gamlîyʼêl",
+    "le": "גַּמְלִיאֵל",
+    "pl": "Gamliel",
+    "ps": "gam-lee-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1580')}>H1580</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; premio de Dios; Gamliel, un israelita: <font color='%COLOR_BLUE%'>Gamaliel.</font>"
+  },
+  {
+    "id": "H1584",
+    "ti": "gâmar",
+    "le": "גָּמַר",
+    "pl": "gamár",
+    "ps": "gaw-mar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; terminar (en el sentido de cumplimiento o fracaso): <font color='%COLOR_BLUE%'>acabarse, cumplir, favorecer, fenecer.</font>"
+  },
+  {
+    "id": "H1585",
+    "ti": "gᵉmar",
+    "le": "גְּמַר",
+    "pl": "guemár",
+    "ps": "ghem-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1584')}>H1584</span>: <font color='%COLOR_BLUE%'>perfecta.</font>"
+  },
+  {
+    "id": "H1586",
+    "ti": "Gômer",
+    "le": "גֹּמֶר",
+    "pl": "Gómer",
+    "ps": "go'-mer",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1584')}>H1584</span>; terminación; Gomer, nombre de un hijo de Jafet y de su descendiente; también de una hebreo: <font color='%COLOR_BLUE%'>Gomer.</font>"
+  },
+  {
+    "id": "H1587",
+    "ti": "Gᵉmaryâh",
+    "le": "גְּמַרְיָה",
+    "pl": "Guemariá",
+    "ps": "ghem-ar-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>גמריהו</b></font> <font color='%COLOR_PURPLE%'>Guemariáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1584')}>H1584</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha perfeccionado; Gemariá, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Gemarías.</font>"
+  },
+  {
+    "id": "H1588",
+    "ti": "gan",
+    "le": "גַּן",
+    "pl": "gan",
+    "ps": "gan",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1598')}>H1598</span>; jardín (como cercado): <font color='%COLOR_BLUE%'>huerto, jardín, paraíso.</font>"
+  },
+  {
+    "id": "H1589",
+    "ti": "gânab",
+    "le": "גָּנַב",
+    "pl": "ganáb",
+    "ps": "gaw-nab'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; robar (literalmente o figurativamente); por implicación engañar: <font color='%COLOR_BLUE%'>a escondidas, arrebatar, engañar, escondidamente, hurtar, hurto, llevar, oculto, robar, sacar.</font>"
+  },
+  {
+    "id": "H1590",
+    "ti": "gannâb",
+    "le": "גַּנָּב",
+    "pl": "gannáb",
+    "ps": "gaw-nab'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1589')}>H1589</span>; ladrón: <font color='%COLOR_BLUE%'>ladrón.</font>"
+  },
+  {
+    "id": "H1591",
+    "ti": "gᵉnêbâh",
+    "le": "גְּנֵבָה",
+    "pl": "guenebá",
+    "ps": "ghen-ay-baw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1589')}>H1589</span>; robar, i.e. (concretamente) algo robado: <font color='%COLOR_BLUE%'>hurto, ladrón.</font>"
+  },
+  {
+    "id": "H1592",
+    "ti": "Gᵉnubath",
+    "le": "גְּנֻבַת",
+    "pl": "Guenubát",
+    "ps": "ghen-oo-bath'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1589')}>H1589</span>; robo; Genubat, príncipe edomita: <font color='%COLOR_BLUE%'>Genubat.</font>"
+  },
+  {
+    "id": "H1593",
+    "ti": "gannâh",
+    "le": "גַּנָּה",
+    "pl": "ganná",
+    "ps": "gan-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1588')}>H1588</span>; jardín: <font color='%COLOR_BLUE%'>huerto, jardín.</font>"
+  },
+  {
+    "id": "H1594",
+    "ti": "ginnâh",
+    "le": "גִּנָּה",
+    "pl": "guinná",
+    "ps": "ghin-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>otra forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1593')}>H1593</span>: <font color='%COLOR_BLUE%'>huerto.</font>"
+  },
+  {
+    "id": "H1595",
+    "ti": "genez",
+    "le": "גֶּנֶז",
+    "pl": "guénez",
+    "ps": "gheh'-nez",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa almacenar; tesoro; por implicación cofre: <font color='%COLOR_BLUE%'>tesoro, caja.</font>"
+  },
+  {
+    "id": "H1596",
+    "ti": "gᵉnaz",
+    "le": "גְּנַז",
+    "pl": "guenáz",
+    "ps": "ghen-az'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1595')}>H1595</span>; tesoro: <font color='%COLOR_BLUE%'>tesoro.</font>"
+  },
+  {
+    "id": "H1597",
+    "ti": "ginzak",
+    "le": "גִּנְזַךְ",
+    "pl": "guinzak",
+    "ps": "ghin-zak'",
+    "df": "<font color='%COLOR_GREEN%'></font>prolongado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1595')}>H1595</span>; tesorería: <font color='%COLOR_BLUE%'>tesorería.</font>"
+  },
+  {
+    "id": "H1598",
+    "ti": "gânan",
+    "le": "גָּנַן",
+    "pl": "ganán",
+    "ps": "gaw-nan'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; cercar, i.e. (generalmente) proteger: <font color='%COLOR_BLUE%'>amparar.</font>"
+  },
+  {
+    "id": "H1599",
+    "ti": "Ginnᵉthôwn",
+    "le": "גִּנְּתֹון",
+    "pl": "Guinnetón",
+    "ps": "ghin-neth-one",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>גנתוי</b></font> <font color='%COLOR_PURPLE%'>Guinnetó</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1598')}>H1598</span>; jardinero; Guinetón o Guineto, un israelita: <font color='%COLOR_BLUE%'>Gineto, Ginetón.</font>"
+  },
+  {
+    "id": "H1600",
+    "ti": "gâʻâh",
+    "le": "גָּעָה",
+    "pl": "gaá",
+    "ps": "gaw-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; bramar (como ganado): <font color='%COLOR_BLUE%'>bramar.</font>"
+  },
+  {
+    "id": "H1601",
+    "ti": "Gôʻâh",
+    "le": "גֹּעָה",
+    "pl": "Goá",
+    "ps": "go-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio femenino activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1600')}>H1600</span>; mugiendo; Goá, un lugar cerca de Jerusalén: <font color='%COLOR_BLUE%'>Goa.</font>"
+  },
+  {
+    "id": "H1602",
+    "ti": "gâʻal",
+    "le": "גָּעַל",
+    "pl": "gaál",
+    "ps": "gaw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; detestar; por implicación rechazar: <font color='%COLOR_BLUE%'>abominar, aborrecer, desechar, echar, no fallar, fastidio.</font>"
+  },
+  {
+    "id": "H1603",
+    "ti": "Gaʻal",
+    "le": "גַּעַל",
+    "pl": "Gáal",
+    "ps": "gah'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1602')}>H1602</span>; abominar; Gaal, un israelita: <font color='%COLOR_BLUE%'>Gaal.</font>"
+  },
+  {
+    "id": "H1604",
+    "ti": "gôʻal",
+    "le": "גֹּעַל",
+    "pl": "góal",
+    "ps": "go'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1602')}>H1602</span>; aborrecimiento: <font color='%COLOR_BLUE%'>menosprecio.</font>"
+  },
+  {
+    "id": "H1605",
+    "ti": "gâʻar",
+    "le": "גָּעַר",
+    "pl": "gaár",
+    "ps": "gaw-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; regañar: <font color='%COLOR_BLUE%'>amenazar, dañar, reñir, reprender, reprimir.</font>"
+  },
+  {
+    "id": "H1606",
+    "ti": "gᵉʻârâh",
+    "le": "גְּעָרָה",
+    "pl": "gueará",
+    "ps": "gheh-aw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1605')}>H1605</span>; regaño: <font color='%COLOR_BLUE%'>amenaza, censura, reprensión.</font>"
+  },
+  {
+    "id": "H1607",
+    "ti": "gâʻash",
+    "le": "גָּעַשׁ",
+    "pl": "gaásh",
+    "ps": "gaw-ash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria agitar violentamente: <font color='%COLOR_BLUE%'>alborotar, conmover, estremecer, levantar, mover, temblar.</font>"
+  },
+  {
+    "id": "H1608",
+    "ti": "Gaʻash",
+    "le": "גַּעַשׁ",
+    "pl": "Gáash",
+    "ps": "ga'-ash",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1607')}>H1607</span>; estremecimiento; Gaash, una colina en Palestina: <font color='%COLOR_BLUE%'>Gaas.</font>"
+  },
+  {
+    "id": "H1609",
+    "ti": "Gaʻtâm",
+    "le": "גַּעְתָּם",
+    "pl": "Gatám",
+    "ps": "gah-tawm'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Gatam, un edomita: <font color='%COLOR_BLUE%'>Gatam.</font>"
+  },
+  {
+    "id": "H1610",
+    "ti": "gaph",
+    "le": "גַּף",
+    "pl": "gaf",
+    "ps": "gaf",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa arquear; espalda; por extensión cuerpo o ser: <font color='%COLOR_BLUE%'>sobre, solo.</font>"
+  },
+  {
+    "id": "H1611",
+    "ti": "gaph",
+    "le": "גַּף",
+    "pl": "gaf",
+    "ps": "gaf",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1610')}>H1610</span>; ala: <font color='%COLOR_BLUE%'>ala.</font>"
+  },
+  {
+    "id": "H1612",
+    "ti": "gephen",
+    "le": "גֶּפֶן",
+    "pl": "guéfen",
+    "ps": "gheh'-fen",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa doblar; viña (como aparejado), específicamente uva: <font color='%COLOR_BLUE%'>parra, uva, vid, viña.</font>"
+  },
+  {
+    "id": "H1613",
+    "ti": "gôpher",
+    "le": "גֹּפֶר",
+    "pl": "gófer",
+    "ps": "go'-fer",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que probablemente significa alojar; un tipo de árbol o madera (como usada para construir), aparentemente ciprés: <font color='%COLOR_BLUE%'>Gofer.</font>"
+  },
+  {
+    "id": "H1614",
+    "ti": "gophrîyth",
+    "le": "גׇּפְרִית",
+    "pl": "gofrít",
+    "ps": "gof-reeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1613')}>H1613</span>; propiamente resina de ciprés; por analogía sulfuro (por igualmente inflamable): <font color='%COLOR_BLUE%'>azufre, piedra de azufre.</font>"
+  },
+  {
+    "id": "H1615",
+    "ti": "gir",
+    "le": "גִּר",
+    "pl": "guir",
+    "ps": "gheer",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3564')}>H3564</span>; cal (por quemada en horno): <font color='%COLOR_BLUE%'>cal, piedras de cal.</font>"
+  },
+  {
+    "id": "H1616",
+    "ti": "gêr",
+    "le": "גֵּר",
+    "pl": "guer",
+    "ps": "gare",
+    "df": "<font color='%COLOR_GREEN%'></font>o (compl.) <font color='%COLOR_GREEN%'><b>גיר</b></font> <font color='%COLOR_PURPLE%'>gueir</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1481')}>H1481</span>; propiamente invitado; por implicación extranjero: <font color='%COLOR_BLUE%'>extranjero, forastero, morar en tierra ajena.</font><p></p><font color='%COLOR_GREEN%'><b>גר</b></font> <font color='%COLOR_PURPLE%'>gur.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1482')}>H1482</span>."
+  },
+  {
+    "id": "H1617",
+    "ti": "Gêrâʼ",
+    "le": "גֵּרָא",
+    "pl": "Guerá",
+    "ps": "gay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1626')}>H1626</span>; grano; Gera, nombre de seis israelitas: <font color='%COLOR_BLUE%'>Gera.</font>"
+  },
+  {
+    "id": "H1618",
+    "ti": "gârâb",
+    "le": "גָּרָב",
+    "pl": "garáb",
+    "ps": "gaw-rawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa rascar; caspa (por la picazón): <font color='%COLOR_BLUE%'>sarna.</font>"
+  },
+  {
+    "id": "H1619",
+    "ti": "Gârêb",
+    "le": "גָּרֵב",
+    "pl": "Garéb",
+    "ps": "gaw-rabe'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1618')}>H1618</span>; costroso; Gareb, nombre de un israelita, también de una colina cerca de Jerusalén: <font color='%COLOR_BLUE%'>Gareb.</font>"
+  },
+  {
+    "id": "H1620",
+    "ti": "gargar",
+    "le": "גַּרְגַּר",
+    "pl": "gargár",
+    "ps": "gar-gar'",
+    "df": "<font color='%COLOR_GREEN%'></font>por reduplicación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1641')}>H1641</span>; frutilla (como bolo al rumiar): <font color='%COLOR_BLUE%'>fruto.</font>"
+  },
+  {
+    "id": "H1621",
+    "ti": "gargᵉrôwth",
+    "le": "גַּרְגְּרֹות",
+    "pl": "garguerót",
+    "ps": "gar-gher-owth'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1641')}>H1641</span>; garganta (como usada al rumiar): <font color='%COLOR_BLUE%'>cuello.</font>"
+  },
+  {
+    "id": "H1622",
+    "ti": "Girgâshîy",
+    "le": "גִּרְגָּשִׁי",
+    "pl": "guirgashí",
+    "ps": "ghir-gaw-shee'",
+    "df": "<font color='%COLOR_GREEN%'></font>gentilicio de un nombre que no se usa [de derivación incierta]; guirgashita, una de las tribus nativas de Canaán: <font color='%COLOR_BLUE%'>gergeseo.</font>"
+  },
+  {
+    "id": "H1623",
+    "ti": "gârad",
+    "le": "גָּרַד",
+    "pl": "garád",
+    "ps": "gaw-rad'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; raer: <font color='%COLOR_BLUE%'>rascar.</font>"
+  },
+  {
+    "id": "H1624",
+    "ti": "gârâh",
+    "le": "גָּרָה",
+    "pl": "gará",
+    "ps": "gaw-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente exacerbar, i.e. (figurativamente) encolerizar: <font color='%COLOR_BLUE%'>airar, -se, contender, contienda, empeñarse, entrar, levantar, meter, promover, provocar, suscitar.</font>"
+  },
+  {
+    "id": "H1625",
+    "ti": "gêrâh",
+    "le": "גֵּרָה",
+    "pl": "guerá",
+    "ps": "gay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1641')}>H1641</span>; bolo alimenticio (como raspando la garganta): <font color='%COLOR_BLUE%'>rumiar.</font>"
+  },
+  {
+    "id": "H1626",
+    "ti": "gêrâh",
+    "le": "גֵּרָה",
+    "pl": "guerá",
+    "ps": "gay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1641')}>H1641</span> (como en <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1625')}>H1625</span>); propiamente (como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1620')}>H1620</span>) grano (redondo como raspado), i.e. un gera o peso pequeño (y moneda): <font color='%COLOR_BLUE%'>Gera.</font><p></p><font color='%COLOR_GREEN%'><b>גירה</b></font> <font color='%COLOR_PURPLE%'>gorá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1484')}>H1484</span>."
+  },
+  {
+    "id": "H1627",
+    "ti": "gârôwn",
+    "le": "גָּרֹון",
+    "pl": "garón",
+    "ps": "gaw-rone'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviación) <font color='%COLOR_GREEN%'><b>גרין</b></font> <font color='%COLOR_PURPLE%'>garón</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1641')}>H1641</span>; garganta [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1621')}>H1621</span>] (como endurecida por tragar): <font color='%COLOR_BLUE%'>garganta, cuello.</font>"
+  },
+  {
+    "id": "H1628",
+    "ti": "gêrûwth",
+    "le": "גֵּרוּת",
+    "pl": "guerút",
+    "ps": "gay-rooth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1481')}>H1481</span>; residencia (temporal): <font color='%COLOR_BLUE%'>casa.</font>"
+  },
+  {
+    "id": "H1629",
+    "ti": "gâraz",
+    "le": "גָּרַז",
+    "pl": "garáz",
+    "ps": "gaw-raz'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; cercenar: <font color='%COLOR_BLUE%'>cortar.</font>"
+  },
+  {
+    "id": "H1630",
+    "ti": "Gᵉrizîym",
+    "le": "גְּרִזִים",
+    "pl": "Guerizím",
+    "ps": "gher-ee-zeem'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de un sust. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1629')}>H1629</span> que no se usa [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1511')}>H1511</span>], cortado (i.e. rocoso); Guerizim, montaña de Palestina: <font color='%COLOR_BLUE%'>Gerizim.</font>"
+  },
+  {
+    "id": "H1631",
+    "ti": "garzen",
+    "le": "גַּרְזֶן",
+    "pl": "garzén",
+    "ps": "gar-zen'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1629')}>H1629</span>; hacha: <font color='%COLOR_BLUE%'>hacha.</font>"
+  },
+  {
+    "id": "H1632",
+    "ti": "gârôl",
+    "le": "גָּרֹל",
+    "pl": "garól",
+    "ps": "gaw-role'",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1486')}>H1486</span>; áspero: <font color='%COLOR_BLUE%'>de grande (ira).</font><p></p><font color='%COLOR_GREEN%'><b>גירל</b></font> <font color='%COLOR_PURPLE%'>gorál.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1486')}>H1486</span>."
+  },
+  {
+    "id": "H1633",
+    "ti": "gâram",
+    "le": "גָּרַם",
+    "pl": "garám",
+    "ps": "gaw-ram'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; ser enjuto o como esqueleto; usado solo como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1634')}>H1634</span>; (causativo) deshuesar, i.e. desnudar (por extensión crujir) los huesos: <font color='%COLOR_BLUE%'>desmenuzar, no dejar hueso, quebrar.</font>"
+  },
+  {
+    "id": "H1634",
+    "ti": "gerem",
+    "le": "גֶּרֶם",
+    "pl": "guérem",
+    "ps": "gheh'-rem",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1633')}>H1633</span>; hueso (como esqueleto del cuerpo); de aquí, ser, i.e. (figurativamente) muy: <font color='%COLOR_BLUE%'>alto, fuerte, hueso, miembro.</font>"
+  },
+  {
+    "id": "H1635",
+    "ti": "gerem",
+    "le": "גֶּרֶם",
+    "pl": "guérem",
+    "ps": "gheh'-rem",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1634')}>H1634</span>; hueso: <font color='%COLOR_BLUE%'>hueso.</font>"
+  },
+  {
+    "id": "H1636",
+    "ti": "Garmîy",
+    "le": "גַּרְמִי",
+    "pl": "garmí",
+    "ps": "gar-mee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1634')}>H1634</span>; huesudo, i.e. fuerte: <font color='%COLOR_BLUE%'>garmita.</font>"
+  },
+  {
+    "id": "H1637",
+    "ti": "gôren",
+    "le": "גֹּרֶן",
+    "pl": "góren",
+    "ps": "go'-ren",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa suavizar; era para trillar (como nivelada); por analogía cualquier área abierta: <font color='%COLOR_BLUE%'>era, granero, parva.</font><p></p><font color='%COLOR_GREEN%'><b>גרין</b></font> <font color='%COLOR_PURPLE%'>garón.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1627')}>H1627</span>."
+  },
+  {
+    "id": "H1638",
+    "ti": "gâraç",
+    "le": "גָּרַס",
+    "pl": "garás",
+    "ps": "gaw-ras'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; triturar; también (intransitivamente y figurativamente) disolver: <font color='%COLOR_BLUE%'>quebrantar, quebrar.</font>"
+  },
+  {
+    "id": "H1639",
+    "ti": "gâraʻ",
+    "le": "גָּרַע",
+    "pl": "gará",
+    "ps": "gaw-rah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; raspar, rasquetear; por implicación afeitar, remover, disminuir o retener: <font color='%COLOR_BLUE%'>apartar, atraer, disminuir, impedir, limitar, menoscabar, quebrantar, quitar, raer, rebajar, retener.</font>"
+  },
+  {
+    "id": "H1640",
+    "ti": "gâraph",
+    "le": "גָּרַף",
+    "pl": "garáf",
+    "ps": "gaw-raf'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; llevarse violentamente: <font color='%COLOR_BLUE%'>barrer.</font>"
+  },
+  {
+    "id": "H1641",
+    "ti": "gârar",
+    "le": "גָּרַר",
+    "pl": "garár",
+    "ps": "gaw-rar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; arrastrar con dureza; por implicación volver a sacar el bolo alimenticio (i.e. rumiar); por analogía aserrar: <font color='%COLOR_BLUE%'>ajustar, destruir.</font>"
+  },
+  {
+    "id": "H1642",
+    "ti": "Gᵉrâr",
+    "le": "גְּרָר",
+    "pl": "Guerár",
+    "ps": "gher-awr'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1641')}>H1641</span>; país montañoso; Guerar, ciudad filistea: <font color='%COLOR_BLUE%'>Gerar.</font>"
+  },
+  {
+    "id": "H1643",
+    "ti": "geres",
+    "le": "גֶּרֶשׂ",
+    "pl": "guéres",
+    "ps": "gheh'-res",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa descascarar, desvainar; grano (colectivamente), i.e. grano: <font color='%COLOR_BLUE%'>desmenuzar el grano.</font>"
+  },
+  {
+    "id": "H1644",
+    "ti": "gârash",
+    "le": "גָּרַשׁ",
+    "pl": "garásh",
+    "ps": "gaw-rash'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; expulsar de una posesión; específicamente expatriar o divorciar: <font color='%COLOR_BLUE%'>arrojar, echar, expulsar, repudiada, repudiar, saquear.</font>"
+  },
+  {
+    "id": "H1645",
+    "ti": "geresh",
+    "le": "גֶּרֶשׁ",
+    "pl": "guéresh",
+    "ps": "gheh'-resh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1644')}>H1644</span>; producto (como expulsado): <font color='%COLOR_BLUE%'>producto.</font>"
+  },
+  {
+    "id": "H1646",
+    "ti": "gᵉrushâh",
+    "le": "גְרֻשָׁה",
+    "pl": "guerushá",
+    "ps": "gher-oo-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio femenino pasivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1644')}>H1644</span>; (abstractamente) desposeimiento: <font color='%COLOR_BLUE%'>imposición.</font>"
+  },
+  {
+    "id": "H1647",
+    "ti": "Gêrᵉshôm",
+    "le": "גֵּרְשֹׁם",
+    "pl": "Guereshóm",
+    "ps": "gay-resh-ome'",
+    "df": "<font color='%COLOR_GREEN%'></font>por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1648')}>H1648</span>; Gereshom, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Gersón.</font>"
+  },
+  {
+    "id": "H1648",
+    "ti": "Gêrᵉshôwn",
+    "le": "גֵּרְשֹׁון",
+    "pl": "Guereshón",
+    "ps": "gay-resh-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>גרשוים</b></font> <font color='%COLOR_PURPLE%'>Guereshóm</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1644')}>H1644</span>; refugio; Gereshón o Gereshóm, un israelita: <font color='%COLOR_BLUE%'>Gersón.</font>"
+  },
+  {
+    "id": "H1649",
+    "ti": "Gêrᵉshunnîy",
+    "le": "גֵּרְשֻׁנִּי",
+    "pl": "guereshunní",
+    "ps": "gay-resh-oon-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1648')}>H1648</span>; guereshonita o descendiente de Gereshón: <font color='%COLOR_BLUE%'>de Gersón, gersonita.</font>"
+  },
+  {
+    "id": "H1650",
+    "ti": "Gᵉshûwr",
+    "le": "גְּשׁוּר",
+    "pl": "Gueshúr",
+    "ps": "ghesh-oor'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa (que significa unir); puente; Geshur, distrito de Siria: <font color='%COLOR_BLUE%'>Gesur.</font>"
+  }
+]

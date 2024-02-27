@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G2651",
+    "ti": "katamónas",
+    "le": "καταμόνας",
+    "pl": "katamónas",
+    "ps": "kat-am-on'-as",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y acusativo plural femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3441')}>G3441</span> (con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span> implicación); de acuerdo a lugares solos, i.e. (adverbio) separadamente: <font color='%COLOR_BLUE%'>solo.</font>"
+  },
+  {
+    "id": "G2652",
+    "ti": "katanáthema",
+    "le": "κατανάθεμα",
+    "pl": "katanádsema",
+    "ps": "kat-an-ath'-em-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> (intes.) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G331')}>G331</span>; imprecación: <font color='%COLOR_BLUE%'>maldición.</font>"
+  },
+  {
+    "id": "G2653",
+    "ti": "katanathematízō",
+    "le": "καταναθεματίζω",
+    "pl": "katanadsematízo",
+    "ps": "kat-an-ath-em-at-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> (intes.) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G332')}>G332</span>; imprecar: <font color='%COLOR_BLUE%'>maldecir.</font>"
+  },
+  {
+    "id": "G2654",
+    "ti": "katanalískō",
+    "le": "καταναλίσκω",
+    "pl": "katanalisko",
+    "ps": "kat-an-al-is'-ko",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G355')}>G355</span>; consumir absolutamente: <font color='%COLOR_BLUE%'>consumir.</font>"
+  },
+  {
+    "id": "G2655",
+    "ti": "katanarkáō",
+    "le": "καταναρκάω",
+    "pl": "katanarkáo",
+    "ps": "kat-an-ar-kah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <b>ναρκάω</b> <font color='%COLOR_PURPLE%'>narkáo</font> (estar entumido); llegar a estar absolutamente aletargado, i.e. (por implicación) holgazán (figurativamente costoso): <font color='%COLOR_BLUE%'>ser carga, ser gravoso.</font>"
+  },
+  {
+    "id": "G2656",
+    "ti": "kataneúō",
+    "le": "κατανεύω",
+    "pl": "kataneúo",
+    "ps": "kat-an-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3506')}>G3506</span>; asentir (hacia), i.e. (por analogía) hacer señas a: <font color='%COLOR_BLUE%'>hacer seña.</font>"
+  },
+  {
+    "id": "G2657",
+    "ti": "katanoéō",
+    "le": "κατανοέω",
+    "pl": "katanoéo",
+    "ps": "kat-an-o-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3539')}>G3539</span>; observar completamente: <font color='%COLOR_BLUE%'>observar, ver, comprender, considerar, echar (de ver), mirar.</font>"
+  },
+  {
+    "id": "G2658",
+    "ti": "katantáō",
+    "le": "καταντάω",
+    "pl": "katantáo",
+    "ps": "kat-an-tah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G473')}>G473</span>; encontrarse contra, i.e. arribar, llegar a (literalmente o figurativamente): <font color='%COLOR_BLUE%'>llegar, alcanzar, arribar, venir.</font>"
+  },
+  {
+    "id": "G2659",
+    "ti": "katányxis",
+    "le": "κατάνυξις",
+    "pl": "katánuxis",
+    "ps": "kat-an'-oox-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2660')}>G2660</span>; escozor, picazón (sensación, como cuando las extremedidades se duermen), i.e. (por implicación) [tal vez por alguna confusión con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3506')}>G3506</span> o incluso con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3571')}>G3571</span>]) estupor (letargo): <font color='%COLOR_BLUE%'>estupor.</font>"
+  },
+  {
+    "id": "G2660",
+    "ti": "katanýssō",
+    "le": "κατανύσσω",
+    "pl": "katanússo",
+    "ps": "kat-an-oos'-so",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3572')}>G3572</span>; perforar hasta atravesar, i.e. (figurativamente) agitar violentamente («herir en lo vivo»): <font color='%COLOR_BLUE%'>compungir.</font>"
+  },
+  {
+    "id": "G2661",
+    "ti": "kataxióō",
+    "le": "καταξιόω",
+    "pl": "kataxióo",
+    "ps": "kat-ax-ee-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G515')}>G515</span>; estimar enteramente merecedor: <font color='%COLOR_BLUE%'>tener por digno.</font>"
+  },
+  {
+    "id": "G2662",
+    "ti": "katapatéō",
+    "le": "καταπατέω",
+    "pl": "katapatéo",
+    "ps": "kat-ap-at-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3961')}>G3961</span>; pisotear; figurativamente rechazar con desdén: <font color='%COLOR_BLUE%'>pisotear, atropellar, hollar.</font>"
+  },
+  {
+    "id": "G2663",
+    "ti": "katápausis",
+    "le": "κατάπαυσις",
+    "pl": "katápausis",
+    "ps": "kat-ap'-ow-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2664')}>G2664</span>; reposar, i.e. (por hebraísmo) morar: <font color='%COLOR_BLUE%'>reposar, reposo.</font>"
+  },
+  {
+    "id": "G2664",
+    "ti": "katapaúō",
+    "le": "καταπαύω",
+    "pl": "katapaúo",
+    "ps": "kat-ap-ow'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3973')}>G3973</span>; establecerse, i.e. (literalmente) colonizar, o (figurativamente) (hacer) desistir: <font color='%COLOR_BLUE%'>reposar, impedir, dar (reposo).</font>"
+  },
+  {
+    "id": "G2665",
+    "ti": "katapétasma",
+    "le": "καταπέτασμα",
+    "pl": "katapétasma",
+    "ps": "kat-ap-et'-as-mah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un similar de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4072')}>G4072</span>; algo estirado completamente, i.e. (específicamente) el velo (al Lugar Santísimo) en el templo judío: <font color='%COLOR_BLUE%'>velo.</font>"
+  },
+  {
+    "id": "G2666",
+    "ti": "katapínō",
+    "le": "καταπίνω",
+    "pl": "katapíno",
+    "ps": "kat-ap-ee'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4095')}>G4095</span>; beber, i.e. tragar entero (literalmente o figurativamente): <font color='%COLOR_BLUE%'>sorber, tragar, absorber, ahogar, consumir, devorar.</font>"
+  },
+  {
+    "id": "G2667",
+    "ti": "katapíptō",
+    "le": "καταπίπτω",
+    "pl": "katapípto",
+    "ps": "kat-ap-ip'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4098')}>G4098</span>; caer: <font color='%COLOR_BLUE%'>caer.</font>"
+  },
+  {
+    "id": "G2668",
+    "ti": "katapléō",
+    "le": "καταπλέω",
+    "pl": "katapléo",
+    "ps": "kat-ap-leh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4126')}>G4126</span>; navegar hasta un lugar, i.e. desembarcar en: <font color='%COLOR_BLUE%'>arribar.</font>"
+  },
+  {
+    "id": "G2669",
+    "ti": "kataponéō",
+    "le": "καταπονέω",
+    "pl": "kataponéo",
+    "ps": "kat-ap-on-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4192')}>G4192</span>; laborar, i.e. gastar con sudor (figurativamente hostigar): <font color='%COLOR_BLUE%'>abrumar, oprimir.</font>"
+  },
+  {
+    "id": "G2670",
+    "ti": "katapontízō",
+    "le": "καταποντίζω",
+    "pl": "katapontízo",
+    "ps": "kat-ap-on-tid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4195')}>G4195</span>; hundir, i.e. sumergir: <font color='%COLOR_BLUE%'>hundir.</font>"
+  },
+  {
+    "id": "G2671",
+    "ti": "katára",
+    "le": "κατάρα",
+    "pl": "katára",
+    "ps": "kat-ar'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> (intensivo) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G685')}>G685</span>; imprecación, execración: <font color='%COLOR_BLUE%'>maldecir, maldición.</font>"
+  },
+  {
+    "id": "G2672",
+    "ti": "kataráomai",
+    "le": "καταράομαι",
+    "pl": "kataráomai",
+    "ps": "kat-ar-ah'-om-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2671')}>G2671</span>; execrar; por analogía arruinar, condenar: <font color='%COLOR_BLUE%'>maldecir, maldito.</font>"
+  },
+  {
+    "id": "G2673",
+    "ti": "katargéō",
+    "le": "καταργέω",
+    "pl": "katargéo",
+    "ps": "kat-arg-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G691')}>G691</span>; estar (dejar) enteramente inmóvil (inútil), literalmente o figurativamente: <font color='%COLOR_BLUE%'>inutilizar, invalidar, libre, abolir, acabar, dejar, deshacer, desligar, destruir, perecer, quitar, suprimir.</font>"
+  },
+  {
+    "id": "G2674",
+    "ti": "katarithméō",
+    "le": "καταριθμέω",
+    "pl": "kataridsméo",
+    "ps": "kat-ar-ith-meh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G705')}>G705</span>; reconocer entre: <font color='%COLOR_BLUE%'>contar.</font>"
+  },
+  {
+    "id": "G2675",
+    "ti": "katartízō",
+    "le": "καταρτίζω",
+    "pl": "katartízo",
+    "ps": "kat-ar-tid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G739')}>G739</span>; completar totalmente, i.e. reparar (literalmente o figurativamente) o ajustar: <font color='%COLOR_BLUE%'>hacer apto, completar, constituir, perfeccionar, perfectamente, preparar, remendar, restaurar, unir.</font>"
+  },
+  {
+    "id": "G2676",
+    "ti": "katártisis",
+    "le": "κατάρτισις",
+    "pl": "katártisis",
+    "ps": "kat-ar'-tis-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2675')}>G2675</span>; equiparse por completo (subjectivamente): <font color='%COLOR_BLUE%'>perfección.</font>"
+  },
+  {
+    "id": "G2677",
+    "ti": "katartismós",
+    "le": "καταρτισμός",
+    "pl": "katartismós",
+    "ps": "kat-ar-tis-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2675')}>G2675</span>; mobiliario completo (objectivamente): <font color='%COLOR_BLUE%'>perfeccionar.</font>"
+  },
+  {
+    "id": "G2678",
+    "ti": "kataseíō",
+    "le": "κατασείω",
+    "pl": "kataseío",
+    "ps": "kat-as-i'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4579')}>G4579</span>; oscilar hacia abajo, i.e. hacer una señal: <font color='%COLOR_BLUE%'>pedir (silencio), hacer señal.</font>"
+  },
+  {
+    "id": "G2679",
+    "ti": "kataskáptō",
+    "le": "κατασκάπτω",
+    "pl": "kataskápto",
+    "ps": "kat-as-kap'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4626')}>G4626</span>; socavar, i.e. (por implicación) destruir: <font color='%COLOR_BLUE%'>derribar, ruina.</font>"
+  },
+  {
+    "id": "G2680",
+    "ti": "kataskeuázō",
+    "le": "κατασκευάζω",
+    "pl": "kataskeuázo",
+    "ps": "kat-ask-yoo-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4632')}>G4632</span>; preparar completamente (propiamente por equipo externo; en tanto que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2090')}>G2090</span> se refiere más bien a capacidad interna); por implicación construir, crear: <font color='%COLOR_BLUE%'>preparar, disponer, hacer.</font>"
+  },
+  {
+    "id": "G2681",
+    "ti": "kataskēnóō",
+    "le": "κατασκηνόω",
+    "pl": "kataskenóo",
+    "ps": "kat-as-kay-no'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4637')}>G4637</span>; acampar, i.e. anidar; figurativamente permanecer, quedarse: <font color='%COLOR_BLUE%'>morar, anidar, descansar, hacer nido, reposar.</font>"
+  },
+  {
+    "id": "G2682",
+    "ti": "kataskḗnōsis",
+    "le": "κατασκήνωσις",
+    "pl": "kataskénosis",
+    "ps": "kat-as-kay'-no-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2681')}>G2681</span>; campamento, i.e. (figurativamente) percha, posición elevada: <font color='%COLOR_BLUE%'>nido.</font>"
+  },
+  {
+    "id": "G2683",
+    "ti": "kataskiázō",
+    "le": "κατασκιάζω",
+    "pl": "kataskiázo",
+    "ps": "kat-as-kee-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4639')}>G4639</span>; hacer sombra, i.e., cubrir: <font color='%COLOR_BLUE%'>cubrir.</font>"
+  },
+  {
+    "id": "G2684",
+    "ti": "kataskopéō",
+    "le": "κατασκοπέω",
+    "pl": "kataskopéo",
+    "ps": "kat-as-kop-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2685')}>G2685</span>; ser centinela, i.e. inspeccionar insidiosamente: <font color='%COLOR_BLUE%'>espiar.</font>"
+  },
+  {
+    "id": "G2685",
+    "ti": "katáskopos",
+    "le": "κατάσκοπος",
+    "pl": "katáskopos",
+    "ps": "kat-as'-kop-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> (intensivo) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4649')}>G4649</span> (en el sentido de vigilante); explorador: <font color='%COLOR_BLUE%'>espía.</font>"
+  },
+  {
+    "id": "G2686",
+    "ti": "katasophízomai",
+    "le": "κατασοφίζομαι",
+    "pl": "katasofízomai",
+    "ps": "kat-as-of-id'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4679')}>G4679</span>; ser astuto contra, i.e. burlar, esquivar: <font color='%COLOR_BLUE%'>astucia.</font>"
+  },
+  {
+    "id": "G2687",
+    "ti": "katastéllō",
+    "le": "καταστέλλω",
+    "pl": "katastélo",
+    "ps": "kat-as-tel'-lo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4724')}>G4724</span>; apagar, i.e. sofocar: <font color='%COLOR_BLUE%'>apaciguar.</font>"
+  },
+  {
+    "id": "G2688",
+    "ti": "katástēma",
+    "le": "κατάστημα",
+    "pl": "katástema",
+    "ps": "kat-as'-tay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2525')}>G2525</span>; propiamente posición o condición, i.e. (subjectivamente) semblante, expresión de la cara: <font color='%COLOR_BLUE%'>porte.</font>"
+  },
+  {
+    "id": "G2689",
+    "ti": "katastolḗ",
+    "le": "καταστολή",
+    "pl": "katastolé",
+    "ps": "kat-as-tol-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2687')}>G2687</span>; depósito, i.e. (específicamente) disfraz: <font color='%COLOR_BLUE%'>ropa.</font>"
+  },
+  {
+    "id": "G2690",
+    "ti": "katastréphō",
+    "le": "καταστρέφω",
+    "pl": "katastréfo",
+    "ps": "kat-as-tref'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4762')}>G4762</span>; voltear patas arriba, i.e. trastornar: <font color='%COLOR_BLUE%'>volcar.</font>"
+  },
+  {
+    "id": "G2691",
+    "ti": "katastrēniáō",
+    "le": "καταστρηνιάω",
+    "pl": "katastreniáo",
+    "ps": "kat-as-tray-nee-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4763')}>G4763</span>; llegar a ser voluptuoso contra: <font color='%COLOR_BLUE%'>impulsado por el deseo.</font>"
+  },
+  {
+    "id": "G2692",
+    "ti": "katastrophḗ",
+    "le": "καταστροφή",
+    "pl": "katastrofé",
+    "ps": "kat-as-trof-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2690')}>G2690</span>; trastorno («catástrofe»), i.e. demolición; figurativamente apostasía: <font color='%COLOR_BLUE%'>destrucción, perdición.</font>"
+  },
+  {
+    "id": "G2693",
+    "ti": "katastrṓnnymi",
+    "le": "καταστρώννυμι",
+    "pl": "katastrónnumi",
+    "ps": "kat-as-trone'-noo-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4766')}>G4766</span>; derramar, i.e. (por implicación) postrar (matar): <font color='%COLOR_BLUE%'>postrar.</font>"
+  },
+  {
+    "id": "G2694",
+    "ti": "katasýrō",
+    "le": "κατασύρω",
+    "pl": "katasúro",
+    "ps": "kat-as-oo'-ro",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4951')}>G4951</span>; arrastrar, i.e. arrestar judicialmente: <font color='%COLOR_BLUE%'>arrastrar.</font>"
+  },
+  {
+    "id": "G2695",
+    "ti": "kataspháttō",
+    "le": "κατασφάττω",
+    "pl": "katasfátto",
+    "ps": "kat-as-fat'-to",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4969')}>G4969</span>; matar, i.e. asesinar: <font color='%COLOR_BLUE%'>decapitar.</font>"
+  },
+  {
+    "id": "G2696",
+    "ti": "katasphragízō",
+    "le": "κατασφραγίζω",
+    "pl": "katasfragízo",
+    "ps": "kat-as-frag-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4972')}>G4972</span>; sellar herméticamente: <font color='%COLOR_BLUE%'>sellado.</font>"
+  },
+  {
+    "id": "G2697",
+    "ti": "katáschesis",
+    "le": "κατάσχεσις",
+    "pl": "katásjesis",
+    "ps": "kat-as'-khes-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2722')}>G2722</span>; sostener, i.e. ocupación: <font color='%COLOR_BLUE%'>posesión, tomar.</font>"
+  },
+  {
+    "id": "G2698",
+    "ti": "katatíthēmi",
+    "le": "κατατίθημι",
+    "pl": "katatídsemi",
+    "ps": "kat-at-ith'-ay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; poner abajo, i.e. depositar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>poner, congraciarse.</font>"
+  },
+  {
+    "id": "G2699",
+    "ti": "katatomḗ",
+    "le": "κατατομή",
+    "pl": "katatomé",
+    "ps": "kat-at-om-ay'",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <b>τέμνω</b> <font color='%COLOR_PURPLE%'>témno</font> (cortar); corte (cercenar), i.e. mutilación (irónicamente): <font color='%COLOR_BLUE%'>mutilador.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H609')}>H609</span>."
+  },
+  {
+    "id": "G2700",
+    "ti": "katatoxeúō",
+    "le": "κατατοξεύω",
+    "pl": "katatoxeúo",
+    "ps": "kat-at-ox-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5115')}>G5115</span>; derribar con una flecha u otro proyectil: <font color='%COLOR_BLUE%'>pasar (con dardo).</font>"
+  },
+  {
+    "id": "G2701",
+    "ti": "katatréchō",
+    "le": "κατατρέχω",
+    "pl": "katatréjo",
+    "ps": "kat-at-rekh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5143')}>G5143</span>; derribar, i.e. precipitarse de una torre: <font color='%COLOR_BLUE%'>correr.</font><p></p><b>καταφάγω</b> <font color='%COLOR_PURPLE%'>katafágo.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2719')}>G2719</span>."
+  },
+  {
+    "id": "G2702",
+    "ti": "kataphérō",
+    "le": "καταφέρω",
+    "pl": "kataféro",
+    "ps": "kat-af-er'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span> (incluído su alternado); llevar hacia abajo, i.e. (figurativamente) vencer (con modorra); específicamente echar un voto: <font color='%COLOR_BLUE%'>dar (voto), vencer.</font>"
+  },
+  {
+    "id": "G2703",
+    "ti": "katapheúgō",
+    "le": "καταφεύγω",
+    "pl": "katafeúgo",
+    "ps": "kat-af-yoo'-go",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5343')}>G5343</span>; huir (escapar): <font color='%COLOR_BLUE%'>acudir, huir.</font>"
+  },
+  {
+    "id": "G2704",
+    "ti": "kataphtheírō",
+    "le": "καταφθείρω",
+    "pl": "katafdseíro",
+    "ps": "kat-af-thi'-ro",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5351')}>G5351</span>; arruinar enteramente, i.e. (literalmente) destruir; o (figurativamente) depravar: <font color='%COLOR_BLUE%'>corrupto, perecer.</font>"
+  },
+  {
+    "id": "G2705",
+    "ti": "kataphiléō",
+    "le": "καταφιλέω",
+    "pl": "katafiléo",
+    "ps": "kat-af-ee-leh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5368')}>G5368</span>; besar ardientemente: <font color='%COLOR_BLUE%'>besar.</font>"
+  },
+  {
+    "id": "G2706",
+    "ti": "kataphronéō",
+    "le": "καταφρονέω",
+    "pl": "katafronéo",
+    "ps": "kat-af-ron-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5426')}>G5426</span>; pensar en contra, i.e. desestimar: <font color='%COLOR_BLUE%'>(tener en) menos, menospreciar, despreciar.</font>"
+  },
+  {
+    "id": "G2707",
+    "ti": "kataphrontḗs",
+    "le": "καταφροντής",
+    "pl": "katafrontés",
+    "ps": "kat-af-ron-tace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2706')}>G2706</span>; menospreciador: <font color='%COLOR_BLUE%'>menospreciador.</font>"
+  },
+  {
+    "id": "G2708",
+    "ti": "katachéō",
+    "le": "καταχέω",
+    "pl": "katajéo",
+    "ps": "kat-akh-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <b>χέω</b> <font color='%COLOR_PURPLE%'>jéo</font> (verter, derramar); derramar, regar: <font color='%COLOR_BLUE%'>derramar.</font>"
+  },
+  {
+    "id": "G2709",
+    "ti": "katachthónios",
+    "le": "καταχθόνιος",
+    "pl": "katajdsónios",
+    "ps": "kat-akh-thon'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <b>χθών</b> <font color='%COLOR_PURPLE%'>jdsón</font> (la tierra); subterráneo, i.e. infernal (perteneciente al mundo de los espíritus que han partido): <font color='%COLOR_BLUE%'>(debajo de la) tierra.</font>"
+  },
+  {
+    "id": "G2710",
+    "ti": "katachráomai",
+    "le": "καταχράομαι",
+    "pl": "katajráomai",
+    "ps": "kat-akh-rah'-om-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5530')}>G5530</span>; usar en demasía, i.e. usar mal: <font color='%COLOR_BLUE%'>abusar.</font>"
+  },
+  {
+    "id": "G2711",
+    "ti": "katapsýchō",
+    "le": "καταψύχω",
+    "pl": "katapsújo",
+    "ps": "kat-ap-soo'-kho",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5594')}>G5594</span>; enfriar (-se), i.e. refrescarse: <font color='%COLOR_BLUE%'>refrescar, -se.</font>"
+  },
+  {
+    "id": "G2712",
+    "ti": "kateídōlos",
+    "le": "κατείδωλος",
+    "pl": "kateídolos",
+    "ps": "kat-i'-do-los",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> (intensivo) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1497')}>G1497</span>; totalmente idólatra: <font color='%COLOR_BLUE%'>idolatría.</font><p></p><b>κατελεύθω</b> <font color='%COLOR_PURPLE%'>kateleúdso.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2718')}>G2718</span>."
+  },
+  {
+    "id": "G2713",
+    "ti": "katénanti",
+    "le": "κατέναντι",
+    "pl": "katénanti",
+    "ps": "kat-en'-an-tee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1725')}>G1725</span>; directamente opuesto: <font color='%COLOR_BLUE%'>enfrente.</font><p></p><b>κατενέγκω</b> <font color='%COLOR_PURPLE%'>katenénko.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2702')}>G2702</span>."
+  },
+  {
+    "id": "G2714",
+    "ti": "katenṓpion",
+    "le": "κατενώπιον",
+    "pl": "katenópion",
+    "ps": "kat-en-o'-pee-on",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1799')}>G1799</span>; directamente en frente de: <font color='%COLOR_BLUE%'>delante.</font>"
+  },
+  {
+    "id": "G2715",
+    "ti": "katexousiázō",
+    "le": "κατεξουσιάζω",
+    "pl": "katexousiázo",
+    "ps": "kat-ex-oo-see-ad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1850')}>G1850</span>; tener (al esgrimir) pleno privilegio sobre: <font color='%COLOR_BLUE%'>potestad.</font>"
+  },
+  {
+    "id": "G2716",
+    "ti": "katergázomai",
+    "le": "κατεργάζομαι",
+    "pl": "katergázomai",
+    "ps": "kat-er-gad'-zom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2038')}>G2038</span>; trabajar completamente, i.e. lograr, conseguir, lograr; por implicación terminar, moda: <font color='%COLOR_BLUE%'>obrar, ocupar, producir, hacer, hecho, acabar, cometer.</font>"
+  },
+  {
+    "id": "G2717",
+    "ti": "－",
+    "le": "－",
+    "pl": null,
+    "ps": "－",
+    "df": "Debido a algunos cambios en el sistema de numeración (mientras el trabajo original estaba en progreso) no se incluyeron palabras griegas para <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2717')}>G2717</span> ni para <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3203')}>G3203</span>-<span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3302')}>G3302</span>. Estos números fueron dejados fuera por completo. Esto no causará ningún problema en el sistema de numeración de Strong. No se ha dejado fuera ninguna palabra griega. Debido a que tantas obras de referencia usan este sistema de numeración, no se lo ha revisado. Si se revisara, ciertamente resultaría en mucha confusión."
+  },
+  {
+    "id": "G2718",
+    "ti": "katérchomai",
+    "le": "κατέρχομαι",
+    "pl": "katérjomai",
+    "ps": "kat-er'-khom-ahee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2064')}>G2064</span>; (incluído su alternado); venir (o ir) hacia abajo (literalmente o figurativamente): <font color='%COLOR_BLUE%'>venir, arribar, descender.</font>"
+  },
+  {
+    "id": "G2719",
+    "ti": "katesthíō",
+    "le": "κατεσθίω",
+    "pl": "katesdsío",
+    "ps": "kat-es-thee'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2068')}>G2068</span> (incluído su alternado) comer, i.e. devorar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>comer, consumir, devorar.</font>"
+  },
+  {
+    "id": "G2720",
+    "ti": "kateuthýnō",
+    "le": "κατευθύνω",
+    "pl": "kateudsúno",
+    "ps": "kat-yoo-thoo'-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2116')}>G2116</span>; enderezar totalmente, i.e. (figurativamente) dirigir: <font color='%COLOR_BLUE%'>encaminar, dirigir.</font>"
+  },
+  {
+    "id": "G2721",
+    "ti": "katephístēmi",
+    "le": "κατεφίστημι",
+    "pl": "katefístemi",
+    "ps": "kat-ef-is'-tay-mee",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2186')}>G2186</span>; levantarse en contra, i.e., apresurarse sobre (asaltar): <font color='%COLOR_BLUE%'>levantar.</font>"
+  },
+  {
+    "id": "G2722",
+    "ti": "katéchō",
+    "le": "κατέχω",
+    "pl": "katéjo",
+    "ps": "kat-ekh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2192')}>G2192</span>; sostener abajo (sujetar), en varias aplicaciones (literalmente o figurativamente): <font color='%COLOR_BLUE%'>ocupar, poseer, retener, sujetar, tener, enfilar (hacia), mantener firme, apoderarse, detener.</font>"
+  },
+  {
+    "id": "G2723",
+    "ti": "katēgoréō",
+    "le": "κατηγορέω",
+    "pl": "kategoréo",
+    "ps": "kat-ay-gor-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2725')}>G2725</span>; demandante, i.e. acusar de alguna ofensa: <font color='%COLOR_BLUE%'>acusación, acusado, acusar.</font>"
+  },
+  {
+    "id": "G2724",
+    "ti": "katēgoría",
+    "le": "κατηγορία",
+    "pl": "kategoría",
+    "ps": "kat-ay-gor-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2725')}>G2725</span>; queja («categoría»), i e. acusación criminal: <font color='%COLOR_BLUE%'>acusación, acusar.</font>"
+  },
+  {
+    "id": "G2725",
+    "ti": "katḗgoros",
+    "le": "κατήγορος",
+    "pl": "katégoros",
+    "ps": "kat-ay'-gor-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G58')}>G58</span>; contra uno de la asamblea, i.e. quejoso ante la ley; específicamente Satanás: <font color='%COLOR_BLUE%'>acusador.</font>"
+  },
+  {
+    "id": "G2726",
+    "ti": "katḗpheia",
+    "le": "κατήφεια",
+    "pl": "katéfeia",
+    "ps": "kat-ay'-fi-ah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y tal vez un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5316')}>G5316</span> (sig. alicaído en su aspecto); gravedad, i.e. (por implicación) tristezas: <font color='%COLOR_BLUE%'>tristeza.</font>"
+  },
+  {
+    "id": "G2727",
+    "ti": "katēchéō",
+    "le": "κατηχέω",
+    "pl": "katejéo",
+    "ps": "kat-ay-kheh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2279')}>G2279</span>; sonar dentro de las orejas, i.e. (por implicación) endoctrinar («catequizar») o (generalmente) informar de: <font color='%COLOR_BLUE%'>enseñar, informar, instruir.</font>"
+  },
+  {
+    "id": "G2728",
+    "ti": "katióō",
+    "le": "κατιόω",
+    "pl": "katióo",
+    "ps": "kat-ee-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2447')}>G2447</span>; oxidar, herrumbrar, i.e. corroer: <font color='%COLOR_BLUE%'>enmohecer.</font>"
+  },
+  {
+    "id": "G2729",
+    "ti": "katischýō",
+    "le": "κατισχύω",
+    "pl": "katisjúo",
+    "ps": "kat-is-khoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2480')}>G2480</span>; superar, vencer, derrotar: <font color='%COLOR_BLUE%'>prevalecer.</font>"
+  },
+  {
+    "id": "G2730",
+    "ti": "katoikéō",
+    "le": "κατοικέω",
+    "pl": "katoikéo",
+    "ps": "kat-oy-keh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3611')}>G3611</span>; alojarse permanentemente, i.e. residir (literalmente o figurativamente): <font color='%COLOR_BLUE%'>habitante, habitar, morador, morar.</font>"
+  },
+  {
+    "id": "G2731",
+    "ti": "katoíkēsis",
+    "le": "κατοίκησις",
+    "pl": "katoíkesis",
+    "ps": "kat-oy'-kay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2730')}>G2730</span>; residencia (propiamente el acto; pero por implicación concretamente la mansión.): <font color='%COLOR_BLUE%'>morada.</font>"
+  },
+  {
+    "id": "G2732",
+    "ti": "katoikētḗrion",
+    "le": "κατοικητήριον",
+    "pl": "katoiketérion",
+    "ps": "kat-oy-kay-tay'-ree-on",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2730')}>G2730</span>; morada: <font color='%COLOR_BLUE%'>habitación, morada.</font>"
+  },
+  {
+    "id": "G2733",
+    "ti": "katoikía",
+    "le": "κατοικία",
+    "pl": "katoikía",
+    "ps": "kat-oy-kee'-ah",
+    "df": "residencia (propiamente la condición; pero por implicación la morada misma): <font color='%COLOR_BLUE%'>habitación.</font>"
+  },
+  {
+    "id": "G2734",
+    "ti": "katoptrízomai",
+    "le": "κατοπτρίζομαι",
+    "pl": "katoptrízomai",
+    "ps": "kat-op-trid'-zom-ahee",
+    "df": "voz media de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span> [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2072')}>G2072</span>]; verse uno mismo, i.e. verse reflejado (figurativamente): <font color='%COLOR_BLUE%'>mirarse al espejo.</font>"
+  },
+  {
+    "id": "G2735",
+    "ti": "katórthōma",
+    "le": "κατόρθωμα",
+    "pl": "katórdsoma",
+    "ps": "kat-or'-tho-mah",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3717')}>G3717</span> [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1357')}>G1357</span>]; algo enderezado por completo, i.e. (figurativamente) rectificación (específicamente buena administración pública): <font color='%COLOR_BLUE%'>cosa bien (gobernada).</font>"
+  },
+  {
+    "id": "G2736",
+    "ti": "kátō",
+    "le": "κάτω",
+    "pl": "káto",
+    "ps": "kat'-o",
+    "df": "también (comparativo) <b>κατωτέρω</b> <font color='%COLOR_PURPLE%'>katotéro</font>; [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2737')}>G2737</span>]; adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2596')}>G2596</span>; hacia abajo: <font color='%COLOR_BLUE%'>menor, abajo.</font>"
+  },
+  {
+    "id": "G2737",
+    "ti": "katṓteros",
+    "le": "κατώτερος",
+    "pl": "katóteros",
+    "ps": "kat-o'-ter-os",
+    "df": "comparativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2736')}>G2736</span>; inferior (localmente, de Hades): <font color='%COLOR_BLUE%'>bajo.</font>"
+  },
+  {
+    "id": "G2738",
+    "ti": "kaûma",
+    "le": "καῦμα",
+    "pl": "kaúma",
+    "ps": "kow'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2545')}>G2545</span>; propiamente arder (concretamente) pero usado (abstractamente) de un resplandor: <font color='%COLOR_BLUE%'>calor.</font>"
+  },
+  {
+    "id": "G2739",
+    "ti": "kaumatízō",
+    "le": "καυματίζω",
+    "pl": "kaumatízo",
+    "ps": "kow-mat-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2738')}>G2738</span>; arder; quemar: <font color='%COLOR_BLUE%'>quemar.</font>"
+  },
+  {
+    "id": "G2740",
+    "ti": "kaûsis",
+    "le": "καῦσις",
+    "pl": "kaúsis",
+    "ps": "kow'-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2545')}>G2545</span>; arder (el acto): <font color='%COLOR_BLUE%'>quemada.</font>"
+  },
+  {
+    "id": "G2741",
+    "ti": "kausóō",
+    "le": "καυσόω",
+    "pl": "kausóo",
+    "ps": "kow-so'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2740')}>G2740</span>; incendiar: <font color='%COLOR_BLUE%'>arder, fundir.</font>"
+  },
+  {
+    "id": "G2742",
+    "ti": "kaúsōn",
+    "le": "καύσων",
+    "pl": "kaúson",
+    "ps": "kow'-sone",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2741')}>G2741</span>; resplandor, brillo: <font color='%COLOR_BLUE%'>abrasador, calor.</font>"
+  },
+  {
+    "id": "G2743",
+    "ti": "kautēriázō",
+    "le": "καυτηριάζω",
+    "pl": "kauteriázo",
+    "ps": "kow-tay-ree-ad'-zo",
+    "df": "o <b>καυστηριάζω</b> <font color='%COLOR_PURPLE%'>kausteriázo</font>; de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2545')}>G2545</span>; marcar («cauterizar»), i.e. (por implicación) dejar insensible (figurativamente): <font color='%COLOR_BLUE%'>cauterizar.</font>"
+  },
+  {
+    "id": "G2744",
+    "ti": "kaucháomai",
+    "le": "καυχάομαι",
+    "pl": "kaujáomai",
+    "ps": "kow-khah'-om-ahee",
+    "df": "de una base (obsoleto) semejante a la de <b>αὐχέω</b> <font color='%COLOR_PURPLE%'>aujéo</font> (jactarse, fanfarronear) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2172')}>G2172</span> jactarse, hacer alarde de (en buen o mal sentido): <font color='%COLOR_BLUE%'>gloriarse, jactarse.</font>"
+  },
+  {
+    "id": "G2745",
+    "ti": "kaúchēma",
+    "le": "καύχημα",
+    "pl": "kaújema",
+    "ps": "kow'-khay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2744')}>G2744</span>; jactancia (propiamente el objectivamente; por implicación el acto) en buen o mal sentido: <font color='%COLOR_BLUE%'>gloria, gloriarse, jactancia.</font>"
+  },
+  {
+    "id": "G2746",
+    "ti": "kaúchēsis",
+    "le": "καύχησις",
+    "pl": "kaújesis",
+    "ps": "kow'-khay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2744')}>G2744</span>; jactarse (propiamente el acto; por implicación el objectivamente) en buen o mal sentido: <font color='%COLOR_BLUE%'>gloria, gloriarse, jactancia.</font>"
+  },
+  {
+    "id": "G2747",
+    "ti": "Kenchreaí",
+    "le": "Κεγχρεαί",
+    "pl": "Kenjreaí",
+    "ps": "keng-khreh-a'-hee",
+    "df": "probablemente de <b>κέγχρος</b> <font color='%COLOR_PURPLE%'>kénjros</font> (mijo); Cencrea, puerto de Corinto: <font color='%COLOR_BLUE%'>Cencrea.</font>"
+  },
+  {
+    "id": "G2748",
+    "ti": "Kedrṓn",
+    "le": "Κεδρών",
+    "pl": "Kedrón",
+    "ps": "ked-rone'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6939')}>H6939</span>]; Cedrón, un arroyo cerca de Jerusalén: <font color='%COLOR_BLUE%'>Cedrón.</font>"
+  },
+  {
+    "id": "G2749",
+    "ti": "keîmai",
+    "le": "κεῖμαι",
+    "pl": "keímai",
+    "ps": "ki'-mahee",
+    "df": "voz media de un verbo primario; yacer estirado (literalmente o figurativamente): <font color='%COLOR_BLUE%'>hallar establecido, guardar, acostar, asentar, bajo, dar, poner.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5087')}>H5087</span>."
+  },
+  {
+    "id": "G2750",
+    "ti": "keiría",
+    "le": "κειρία",
+    "pl": "keiría",
+    "ps": "ki-ree'-ah",
+    "df": "de afinidad incierta; vendas, i.e. sábana envuelta: <font color='%COLOR_BLUE%'>venda.</font>"
+  },
+  {
+    "id": "G2751",
+    "ti": "keírō",
+    "le": "κείρω",
+    "pl": "keíro",
+    "ps": "ki'-ro",
+    "df": "verbo primario; trasquilar: <font color='%COLOR_BLUE%'>cortar el cabello, rapar, trasquilar.</font>"
+  },
+  {
+    "id": "G2752",
+    "ti": "kéleuma",
+    "le": "κέλευμα",
+    "pl": "kéleuma",
+    "ps": "kel'-yoo-mah",
+    "df": "o <b>κέλευσμα</b> <font color='%COLOR_PURPLE%'>kéleusma</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2753')}>G2753</span>; grito de incitación: <font color='%COLOR_BLUE%'>voz.</font>"
+  },
+  {
+    "id": "G2753",
+    "ti": "keleúō",
+    "le": "κελεύω",
+    "pl": "keleúo",
+    "ps": "kel-yoo'-o",
+    "df": "de un primario <b>κέλλω</b> <font color='%COLOR_PURPLE%'>kéllo</font> (instar a); vitorear; incitar por palabra, i.e. ordenar: <font color='%COLOR_BLUE%'>mandar, mandato, ordenar.</font>"
+  },
+  {
+    "id": "G2754",
+    "ti": "kenodoxía",
+    "le": "κενοδοξία",
+    "pl": "kenodoxía",
+    "ps": "ken-od-ox-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2755')}>G2755</span>; gloriarse vanamente, i.e. vanagloria: <font color='%COLOR_BLUE%'>vanagloria.</font>"
+  },
+  {
+    "id": "G2755",
+    "ti": "kenódoxos",
+    "le": "κενόδοξος",
+    "pl": "kenódoxos",
+    "ps": "ken-od'-ox-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2756')}>G2756</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1391')}>G1391</span>; gloriarse vanamente i.e. vanaglorioso: <font color='%COLOR_BLUE%'>vanagloria.</font>"
+  },
+  {
+    "id": "G2756",
+    "ti": "kenós",
+    "le": "κενός",
+    "pl": "kenós",
+    "ps": "ken-os'",
+    "df": "aparentemente palabra primaria; vacío (literalmente o figurativamente): <font color='%COLOR_BLUE%'>vacío, vano, hueco.</font>"
+  },
+  {
+    "id": "G2757",
+    "ti": "kenophōnía",
+    "le": "κενοφωνία",
+    "pl": "kenofonía",
+    "ps": "ken-of-o-nee'-ah",
+    "df": "de un compuesto presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2756')}>G2756</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5456')}>G5456</span>; sonar vacío, i.e. discusión inútil: <font color='%COLOR_BLUE%'>palabrería, plática vano.</font>"
+  },
+  {
+    "id": "G2758",
+    "ti": "kenóō",
+    "le": "κενόω",
+    "pl": "kenóo",
+    "ps": "ken-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2756')}>G2756</span>; vaciar i.e. (figurativamente) denigrar, neutralizar, falsificar: <font color='%COLOR_BLUE%'>(fe) vana, hacer (vana), despojar, desvanecer.</font>"
+  },
+  {
+    "id": "G2759",
+    "ti": "kéntron",
+    "le": "κέντρον",
+    "pl": "kéntron",
+    "ps": "ken'-tron",
+    "df": "de <b>κεντέω</b> <font color='%COLOR_PURPLE%'>kentéo</font> (perforar)  un punto («centro»), i.e. aguijón (figurativamente veneno)  o aguijada (figurativamente impulso divino): <font color='%COLOR_BLUE%'>aguijón.</font>"
+  },
+  {
+    "id": "G2760",
+    "ti": "kentyríōn",
+    "le": "κεντυρίων",
+    "pl": "kenturíon",
+    "ps": "ken-too-ree'-ohn",
+    "df": "de origen latín centurión, i.e. capitán de cien soldados: <font color='%COLOR_BLUE%'>centurión.</font>"
+  },
+  {
+    "id": "G2761",
+    "ti": "kenōs",
+    "le": "κενῶς",
+    "pl": "kenós",
+    "ps": "ken-oce'",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2756')}>G2756</span>; vanamente, i.e. sin propósito: <font color='%COLOR_BLUE%'>vano.</font>"
+  },
+  {
+    "id": "G2762",
+    "ti": "keraía",
+    "le": "κεραία",
+    "pl": "keraía",
+    "ps": "ker-ah'-yah",
+    "df": "femenino de un derivado presunto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2768')}>G2768</span>; algo parecido a cuerno, i.e. (específicamente) el apéx de una letra hebreo (figurativamente la partícula más pequeña: <font color='%COLOR_BLUE%'>tilde.</font>"
+  },
+  {
+    "id": "G2763",
+    "ti": "kerameús",
+    "le": "κεραμεύς",
+    "pl": "kerameús",
+    "ps": "ker-am-yooce'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2766')}>G2766</span>; alfarero: <font color='%COLOR_BLUE%'>alfarero.</font>"
+  },
+  {
+    "id": "G2764",
+    "ti": "keramikós",
+    "le": "κεραμικός",
+    "pl": "keramikós",
+    "ps": "ker-am-ik-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2766')}>G2766</span>; hecho de barro, i.e. de tierra: <font color='%COLOR_BLUE%'>(vaso de) alfarero.</font>"
+  },
+  {
+    "id": "G2765",
+    "ti": "kerámion",
+    "le": "κεράμιον",
+    "pl": "kerámion",
+    "ps": "ker-am'-ee-on",
+    "df": "neutro de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2766')}>G2766</span>; vasija de barro, i.e. jarra, envase: <font color='%COLOR_BLUE%'>cántaro.</font>"
+  },
+  {
+    "id": "G2766",
+    "ti": "kéramos",
+    "le": "κέραμος",
+    "pl": "kéramos",
+    "ps": "ker'-am-os",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2767')}>G2767</span> (mediante la idea de mezclar barro y agua); trastos de barro, i.e. baldosa, loceta, teja (por analogía techo o toldo de metal): <font color='%COLOR_BLUE%'>tejado.</font>"
+  },
+  {
+    "id": "G2767",
+    "ti": "keránnymi",
+    "le": "κεράννυμι",
+    "pl": "keránnumi",
+    "ps": "ker-an'-noo-mee",
+    "df": "forma prolongada de un más primario <b>κεράω</b> <font color='%COLOR_PURPLE%'>keráo</font> (que se usa en ciertos tiempos); mezclarse, entreverar, i.e. (por implicación) vaciar (para beber): <font color='%COLOR_BLUE%'>(preparar) bebida, vaciar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3396')}>H3396</span>."
+  },
+  {
+    "id": "G2768",
+    "ti": "kéras",
+    "le": "κέρας",
+    "pl": "kéras",
+    "ps": "ker'-as",
+    "df": "de un primario <b>κάρ</b> <font color='%COLOR_PURPLE%'>kár</font> (pelo de la cabeza); cuerno (literalmente o figurativamente): <font color='%COLOR_BLUE%'>cuerno.</font>"
+  },
+  {
+    "id": "G2769",
+    "ti": "kerátion",
+    "le": "κεράτιον",
+    "pl": "kerátion",
+    "ps": "ker-at'-ee-on",
+    "df": "neutro de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2768')}>G2768</span>; algo con cuernos, i.e. (específicamente) vaina de la algarroba: <font color='%COLOR_BLUE%'>algarroba.</font><p></p><b>κεράω</b> <font color='%COLOR_PURPLE%'>keráo.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2767')}>G2767</span>."
+  },
+  {
+    "id": "G2770",
+    "ti": "kerdaínō",
+    "le": "κερδαίνω",
+    "pl": "kerdaíno",
+    "ps": "ker-dah'-ee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2771')}>G2771</span>; ganancia (literalmente o figurativamente): <font color='%COLOR_BLUE%'>gana, ganado, ganar.</font>"
+  },
+  {
+    "id": "G2771",
+    "ti": "kérdos",
+    "le": "κέρδος",
+    "pl": "kérdos",
+    "ps": "ker'-dos",
+    "df": "de afinidad incierta; ganancia (pecuniaria o general): <font color='%COLOR_BLUE%'>ganancia.</font>"
+  },
+  {
+    "id": "G2772",
+    "ti": "kérma",
+    "le": "κέρμα",
+    "pl": "kérma",
+    "ps": "ker'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2751')}>G2751</span>; retazo, pedazo (mordida), i.e. (específicamente) moneda: <font color='%COLOR_BLUE%'>moneda.</font>"
+  },
+  {
+    "id": "G2773",
+    "ti": "kermatistḗs",
+    "le": "κερματιστής",
+    "pl": "kermatistés",
+    "ps": "ker-mat-is-tace'",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2772')}>G2772</span>; manejador de monedas, i.e. cambista de monedas: <font color='%COLOR_BLUE%'>cambista.</font>"
+  },
+  {
+    "id": "G2774",
+    "ti": "kephálaion",
+    "le": "κεφάλαιον",
+    "pl": "kefálaion",
+    "ps": "kef-al'-ah-yon",
+    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2776')}>G2776</span>; cosa principal, i.e. punto principal; específicamente cantidad (de dinero): <font color='%COLOR_BLUE%'>(punto) principal, suma.</font>"
+  },
+  {
+    "id": "G2775",
+    "ti": "kephalaióō",
+    "le": "κεφαλαιόω",
+    "pl": "kefalaióo",
+    "ps": "kef-al-ahee-o'-o",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2774')}>G2774</span>; (específicamente) golpe en la cabeza: <font color='%COLOR_BLUE%'>herir la cabeza.</font>"
+  },
+  {
+    "id": "G2776",
+    "ti": "kephalḗ",
+    "le": "κεφαλή",
+    "pl": "kefalé",
+    "ps": "kef-al-ay'",
+    "df": "probablemente del primario <b>κάπτω</b> <font color='%COLOR_PURPLE%'>kápto</font> (en el sentido de atrapar); cabeza (como la parte que se puede agarrar más prontamente), literalmente o figurativamente: <font color='%COLOR_BLUE%'>(cabeza del) ángulo, cabecera, cabeza.</font>"
+  },
+  {
+    "id": "G2777",
+    "ti": "kephalís",
+    "le": "κεφαλίς",
+    "pl": "kefalís",
+    "ps": "kef-al-is'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2776')}>G2776</span>; probablemente perilla, i.e. (por implicación) rollo (por extensión del extremo de una vara en el cual se enrolló el MS): <font color='%COLOR_BLUE%'>rollo.</font>"
+  },
+  {
+    "id": "G2778",
+    "ti": "kēnsos",
+    "le": "κῆνσος",
+    "pl": "kénsos",
+    "ps": "kane'-sos",
+    "df": "de origen latín; propiamente matrícula («censo»), i.e. (por implicación) impuesto: <font color='%COLOR_BLUE%'>tributo, impuesto.</font>"
+  },
+  {
+    "id": "G2779",
+    "ti": "kēpos",
+    "le": "κῆπος",
+    "pl": "képos",
+    "ps": "kay'-pos",
+    "df": "de afinidad incierta; huerto, jardín: <font color='%COLOR_BLUE%'>huerto.</font>"
+  },
+  {
+    "id": "G2780",
+    "ti": "kēpourós",
+    "le": "κηπουρός",
+    "pl": "kepourós",
+    "ps": "kay-poo-ros'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2779')}>G2779</span> y <b>οὖρος</b> <font color='%COLOR_PURPLE%'>oúros</font> (guardián); hortelano, i.e. jardinero: <font color='%COLOR_BLUE%'>hortelano.</font>"
+  },
+  {
+    "id": "G2781",
+    "ti": "kēríon",
+    "le": "κηρίον",
+    "pl": "keríon",
+    "ps": "kay-ree'-on",
+    "df": "diminutivo de <b>κηός</b> <font color='%COLOR_PURPLE%'>keós</font> (cera); cavidad para miel, i.e. (colectivamente) panal: <font color='%COLOR_BLUE%'>panal.</font>"
+  },
+  {
+    "id": "G2782",
+    "ti": "kḗrygma",
+    "le": "κήρυγμα",
+    "pl": "kérugma",
+    "ps": "kay'-roog-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2784')}>G2784</span>; proclamación (específicamente del evangelio; por implicación el evangelio mismo): <font color='%COLOR_BLUE%'>predicación.</font>"
+  },
+  {
+    "id": "G2783",
+    "ti": "kēryx",
+    "le": "κῆρυξ",
+    "pl": "kérux",
+    "ps": "kay'-roox",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2784')}>G2784</span>; heraldo, i.e. de la verdad divina (específicamente del evangelio): <font color='%COLOR_BLUE%'>predicador, pregonero.</font>"
+  },
+  {
+    "id": "G2784",
+    "ti": "kērýssō",
+    "le": "κηρύσσω",
+    "pl": "kerússo",
+    "ps": "kay-roos'-so",
+    "df": "de afinidad incierta; proclamar (como proclamador público), específicamente verdad divina (el evangelio): <font color='%COLOR_BLUE%'>predicar, pregonar, proclamar, publicar, heraldo, divulgar.</font>"
+  },
+  {
+    "id": "G2785",
+    "ti": "kētos",
+    "le": "κῆτος",
+    "pl": "kétos",
+    "ps": "kay'-tos",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span>; pez enorme (como boqueando por la presa): <font color='%COLOR_BLUE%'>pez.</font>"
+  },
+  {
+    "id": "G2786",
+    "ti": "Kēphâs",
+    "le": "Κηφᾶς",
+    "pl": "Kefás",
+    "ps": "kay-fas'",
+    "df": "de origen caldeo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3710')}>H3710</span>]; Roca; Cefas, sobrenombre de Pedro: <font color='%COLOR_BLUE%'>Cefas.</font>"
+  },
+  {
+    "id": "G2787",
+    "ti": "kibōtós",
+    "le": "κιβωτός",
+    "pl": "kibotós",
+    "ps": "kib-o-tos'",
+    "df": "de derivación incierta; caja, i.e. el arca sagrada y la de Noé: <font color='%COLOR_BLUE%'>arca.</font>"
+  },
+  {
+    "id": "G2788",
+    "ti": "kithára",
+    "le": "κιθάρα",
+    "pl": "kidsára",
+    "ps": "kith-ar'-ah",
+    "df": "de afinidad incierta; lira: <font color='%COLOR_BLUE%'>arpa, cítara.</font>"
+  },
+  {
+    "id": "G2789",
+    "ti": "kitharízō",
+    "le": "κιθαρίζω",
+    "pl": "kidsarízo",
+    "ps": "kith-ar-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2788')}>G2788</span>; tocar una lira: <font color='%COLOR_BLUE%'>arpa, cítara.</font>"
+  },
+  {
+    "id": "G2790",
+    "ti": "kitharōidós",
+    "le": "κιθαρῳδός",
+    "pl": "kidsarodós",
+    "ps": "kith-ar-o'-dos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2788')}>G2788</span> y un derivado de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5603')}>G5603</span>; cantor de lira (que toca), i.e. arpista: <font color='%COLOR_BLUE%'>arpista.</font>"
+  },
+  {
+    "id": "G2791",
+    "ti": "Kilikía",
+    "le": "Κιλικία",
+    "pl": "Kilikía",
+    "ps": "kil-ik-ee'-ah",
+    "df": "probablemente de origen extranjero; Cilicia, region de Asia Menor: <font color='%COLOR_BLUE%'>Cilicia.</font>"
+  },
+  {
+    "id": "G2792",
+    "ti": "kinámōmon",
+    "le": "κινάμωμον",
+    "pl": "kinámomon",
+    "ps": "kin-am'-o-mon",
+    "df": "de origen extranjero [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7076')}>H7076</span>]; canela: <font color='%COLOR_BLUE%'>canela.</font>"
+  },
+  {
+    "id": "G2793",
+    "ti": "kindyneúō",
+    "le": "κινδυνεύω",
+    "pl": "kinduneúo",
+    "ps": "kin-doon-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2794')}>G2794</span>; estar bajo peligro: <font color='%COLOR_BLUE%'>peligrar, peligro.</font>"
+  },
+  {
+    "id": "G2794",
+    "ti": "kíndynos",
+    "le": "κίνδυνος",
+    "pl": "kíndunos",
+    "ps": "kin'-doo-nos",
+    "df": "de derivación incierta; peligro: <font color='%COLOR_BLUE%'>peligro.</font>"
+  },
+  {
+    "id": "G2795",
+    "ti": "kinéō",
+    "le": "κινέω",
+    "pl": "kinéo",
+    "ps": "kin-eh'-o",
+    "df": "de <b>κίω</b> <font color='%COLOR_PURPLE%'>kío</font> (poético de <b>εἶμι</b> <font color='%COLOR_PURPLE%'>eími</font>, ir); agitar (transitivamente), literalmente o figurativamente: <font color='%COLOR_BLUE%'>conmover, menear, mover, promotor, quitar, remover.</font>"
+  },
+  {
+    "id": "G2796",
+    "ti": "kínēsis",
+    "le": "κίνησις",
+    "pl": "kínesis",
+    "ps": "kin'-ay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2795')}>G2795</span>; agitar: <font color='%COLOR_BLUE%'>movimiento.</font>"
+  },
+  {
+    "id": "G2797",
+    "ti": "Kís",
+    "le": "Κίς",
+    "pl": "Kís",
+    "ps": "kis",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7027')}>H7027</span>]; Cis, un israelita: <font color='%COLOR_BLUE%'>Cis.</font><p></p><b>κίχρημι</b> <font color='%COLOR_PURPLE%'>kíjremi.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5531')}>G5531</span>."
+  },
+  {
+    "id": "G2798",
+    "ti": "kládos",
+    "le": "κλάδος",
+    "pl": "kládos",
+    "ps": "klad'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2806')}>G2806</span>; rama (como cortada): <font color='%COLOR_BLUE%'>rama.</font>"
+  },
+  {
+    "id": "G2799",
+    "ti": "klaíō",
+    "le": "κλαίω",
+    "pl": "klaío",
+    "ps": "klah'-yo",
+    "df": "de afinidad incierta; gemir, i.e. llorar a gritos (en tanto que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1145')}>G1145</span> es más bien llorar en silencio): <font color='%COLOR_BLUE%'>llorar.</font>"
+  },
+  {
+    "id": "G2800",
+    "ti": "klásis",
+    "le": "κλάσις",
+    "pl": "klásis",
+    "ps": "klas'-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2806')}>G2806</span>; fracturar (el acto): <font color='%COLOR_BLUE%'>partimiento, partir.</font>"
+  }
+]

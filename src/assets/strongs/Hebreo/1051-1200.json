@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "H1051",
+    "ti": "Bêyth Râphâʼ",
+    "le": "בֵּית רָפָא",
+    "pl": "Beit Rafa",
+    "ps": "bayth raw-faw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7497')}>H7497</span>; casa de (el) gigante; Bet Rafa, un israelita: <font color='%COLOR_BLUE%'>Bet-rafa.</font>"
+  },
+  {
+    "id": "H1052",
+    "ti": "Bêyth Shᵉʼân",
+    "le": "בֵּית שְׁאָן",
+    "pl": "Beit Shean",
+    "ps": "bayth she-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>בית שן</b></font> <font color='%COLOR_PURPLE%'> Beit Shan</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7599')}>H7599</span>; casa de tranquilidad; Bet Shean o Bet Shan, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bet-sán, Bet-seán.</font>"
+  },
+  {
+    "id": "H1053",
+    "ti": "Bêyth Shemesh",
+    "le": "בֵּית שֶׁמֶשׁ",
+    "pl": "Beit Shémesh",
+    "ps": "bayth sheh'-mesh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8121')}>H8121</span>; casa de (el) sol; Bet Shemesh, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bet-semes.</font>"
+  },
+  {
+    "id": "H1054",
+    "ti": "Bêyth Tappûwach",
+    "le": "בֵּית תַּפּוּחַ",
+    "pl": "Beit Tappuakj",
+    "ps": "bayth tap-poo'-akh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8598')}>H8598</span>; casa de (la) manzana; Bet Tappuakj, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bet-tapúa.</font>"
+  },
+  {
+    "id": "H1055",
+    "ti": "bîythân",
+    "le": "בִּיתָן",
+    "pl": "bitán",
+    "ps": "bee-thawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span>; palacio (i.e. casa grande): <font color='%COLOR_BLUE%'>palacio.</font>"
+  },
+  {
+    "id": "H1056",
+    "ti": "Bâkâʼ",
+    "le": "בָּכָא",
+    "pl": "Baká",
+    "ps": "baw-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1058')}>H1058</span>, llorando; Baca, valle en Palestina: <font color='%COLOR_BLUE%'>Baca, lágrima.</font>"
+  },
+  {
+    "id": "H1057",
+    "ti": "bâkâʼ",
+    "le": "בָּכָא",
+    "pl": "baká",
+    "ps": "baw-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1056')}>H1056</span>; árbol que llora (algún tipo de árbol que destila goma, tal vez el bálsamo): <font color='%COLOR_BLUE%'>bálsamo.</font>"
+  },
+  {
+    "id": "H1058",
+    "ti": "bâkâh",
+    "le": "בָּכָה",
+    "pl": "baká",
+    "ps": "baw-kaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; llorar; generalmente lamentar: <font color='%COLOR_BLUE%'>(hacer) duelo, endechar, lamentador, lamentar, llanto, llorar, luto.</font>"
+  },
+  {
+    "id": "H1059",
+    "ti": "bekeh",
+    "le": "בֶּכֶה",
+    "pl": "béke",
+    "ps": "beh'-keh",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1058')}>H1058</span>; lamento: <font color='%COLOR_BLUE%'>lloro.</font>"
+  },
+  {
+    "id": "H1060",
+    "ti": "bᵉkôwr",
+    "le": "בְּכֹור",
+    "pl": "bekor",
+    "ps": "bek-ore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1069')}>H1069</span>; primogénito; de aquí, jefe: <font color='%COLOR_BLUE%'>mayor, primero, primicia, primogénito, primogenitura.</font>"
+  },
+  {
+    "id": "H1061",
+    "ti": "bikkûwr",
+    "le": "בִּכּוּר",
+    "pl": "bikkur",
+    "ps": "bik-koor'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1069')}>H1069</span>; primeros frutos de cosecha: <font color='%COLOR_BLUE%'>primeros frutos, primicia, fruta temprana.</font>"
+  },
+  {
+    "id": "H1062",
+    "ti": "bᵉkôwrâh",
+    "le": "בְּכֹורָה",
+    "pl": "bekorá",
+    "ps": "bek-o-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (abreviación) <font color='%COLOR_GREEN%'><b>בכירה</b></font> <font color='%COLOR_PURPLE%'>bekorá</font>; femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1060')}>H1060</span>; primogénito de hombre o bestia; abstractamente primogenitura: <font color='%COLOR_BLUE%'>derecho, primicia, primogénito, primogenitura.</font>"
+  },
+  {
+    "id": "H1063",
+    "ti": "bikkûwrâh",
+    "le": "בִּכּוּרָה",
+    "pl": "bikkurá",
+    "ps": "bik-koo-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1061')}>H1061</span>; figurativamente temprana: <font color='%COLOR_BLUE%'>fruta temprana.</font>"
+  },
+  {
+    "id": "H1064",
+    "ti": "Bᵉkôwrath",
+    "le": "בְּכֹורַת",
+    "pl": "Bekorat",
+    "ps": "bek-o-rath'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1062')}>H1062</span>; primogenitura; Bekorat, un israelita: <font color='%COLOR_BLUE%'>Becorat.</font>"
+  },
+  {
+    "id": "H1065",
+    "ti": "Bᵉkîy",
+    "le": "בְּכִי",
+    "pl": "Bekí",
+    "ps": "bek-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1058')}>H1058</span>; llanto; por analogía goteo: <font color='%COLOR_BLUE%'>deshacerse en llanto, lágrima, llorar, lloro.</font>"
+  },
+  {
+    "id": "H1066",
+    "ti": "Bôkîym",
+    "le": "בֹּכִים",
+    "pl": "Bokím",
+    "ps": "bo-keem'",
+    "df": "<font color='%COLOR_GREEN%'></font>participio plural activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1058')}>H1058</span>; (con el artículo) los que lloran; Bokim, un lugar en Palestina: <font color='%COLOR_BLUE%'>Boquim.</font>"
+  },
+  {
+    "id": "H1067",
+    "ti": "bᵉkîyrâh",
+    "le": "בְּכִירָה",
+    "pl": "bekirá",
+    "ps": "bek-ee-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1069')}>H1069</span>; hija mayor: <font color='%COLOR_BLUE%'>la mayor.</font>"
+  },
+  {
+    "id": "H1068",
+    "ti": "bᵉkîyth",
+    "le": "בְּכִית",
+    "pl": "bekít",
+    "ps": "bek-eeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1058')}>H1058</span>; llanto: <font color='%COLOR_BLUE%'>luto.</font>"
+  },
+  {
+    "id": "H1069",
+    "ti": "bâkar",
+    "le": "בָּכַר",
+    "pl": "bakar",
+    "ps": "baw-kar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente reventar el vientre, i.e. (causativo) dar a luz o hacer fruto temprano (de una mujer o un árbol); también (como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1061')}>H1061</span>) dar la primogenitura: <font color='%COLOR_BLUE%'>madurar, primeriza, dar la primogenitura, ser el primogénito.</font>"
+  },
+  {
+    "id": "H1070",
+    "ti": "beker",
+    "le": "בֶּכֶר",
+    "pl": "beker",
+    "ps": "beh'-ker",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1069')}>H1069</span> (en el sentido de juventud); camello joven: <font color='%COLOR_BLUE%'>dromedario.</font>"
+  },
+  {
+    "id": "H1071",
+    "ti": "Beker",
+    "le": "בֶכֶר",
+    "pl": "Beker",
+    "ps": "beh'-ker",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1070')}>H1070</span>; Beker, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Béquer.</font>"
+  },
+  {
+    "id": "H1072",
+    "ti": "bikrâh",
+    "le": "בִּכְרָה",
+    "pl": "bikrá",
+    "ps": "bik-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1070')}>H1070</span>; camella joven: <font color='%COLOR_BLUE%'>dromedaria.</font><p></p><font color='%COLOR_GREEN%'><b>בכירה</b></font> <font color='%COLOR_PURPLE%'>bekorá.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1062')}>H1062</span>."
+  },
+  {
+    "id": "H1073",
+    "ti": "bakkurâh",
+    "le": "בַּכֻּרָה",
+    "pl": "bakkurá",
+    "ps": "bak-koo-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>por variación ortográfica de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1063')}>H1063</span>; madurez primera figurativamente: <font color='%COLOR_BLUE%'>fruta temprana.</font>"
+  },
+  {
+    "id": "H1074",
+    "ti": "Bôkᵉrûw",
+    "le": "בֹּכְרוּ",
+    "pl": "Bokerú",
+    "ps": "bo-ker-oo'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1069')}>H1069</span>; primogénito; Bokerú, un israelita: <font color='%COLOR_BLUE%'>Bocru.</font>"
+  },
+  {
+    "id": "H1075",
+    "ti": "Bikrîy",
+    "le": "בִּכְרִי",
+    "pl": "Bikrí",
+    "ps": "bik-ree'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1069')}>H1069</span>; lleno de juventud; Bikri, un israelita: <font color='%COLOR_BLUE%'>Bicri.</font>"
+  },
+  {
+    "id": "H1076",
+    "ti": "Bakrîy",
+    "le": "בַּכְרִי",
+    "pl": "bakrí",
+    "ps": "bak-ree'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1071')}>H1071</span>; bakrita (colectivamente) o descendiente de Beker: <font color='%COLOR_BLUE%'>bequerita.</font>"
+  },
+  {
+    "id": "H1077",
+    "ti": "bal",
+    "le": "בַּל",
+    "pl": "bal",
+    "ps": "bal",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span>; propiamente falta; por implicación nada; usualmente (adv) no; también no sea que: <font color='%COLOR_BLUE%'>no, ninguno, nada, tampoco.</font>"
+  },
+  {
+    "id": "H1078",
+    "ti": "Bêl",
+    "le": "בֵּל",
+    "pl": "Bel",
+    "ps": "bale",
+    "df": "<font color='%COLOR_GREEN%'></font>por contracción de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span>; Bel, Baal de los babilonios: <font color='%COLOR_BLUE%'>Bel.</font>"
+  },
+  {
+    "id": "H1079",
+    "ti": "bâl",
+    "le": "בָּל",
+    "pl": "bal",
+    "ps": "bawl",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo) de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1080')}>H1080</span>; propiamente ansiedad, i.e. (por implicación) corazón (como su asiento): <font color='%COLOR_BLUE%'>resolver.</font>"
+  },
+  {
+    "id": "H1080",
+    "ti": "bᵉlâʼ",
+    "le": "בְּלָא",
+    "pl": "belá",
+    "ps": "bel-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span> (pero usado solo en un sentido mentalmente); afligir: <font color='%COLOR_BLUE%'>quebrantar.</font>"
+  },
+  {
+    "id": "H1081",
+    "ti": "Balʼădân",
+    "le": "בַּלְאֲדָן",
+    "pl": "Baladán",
+    "ps": "bal-ad-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1078')}>H1078</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H113')}>H113</span> (contracción); Bel (es su) señor; Baladán, nombre de un príncipe babilonio: <font color='%COLOR_BLUE%'>Baladán.</font>"
+  },
+  {
+    "id": "H1082",
+    "ti": "bâlag",
+    "le": "בָּלַג",
+    "pl": "Balag",
+    "ps": "baw-lag'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; romper o perder (en un sentido favorable o desfavorable), i.e. desistir (del dolor) o invadir (con destrucción): <font color='%COLOR_BLUE%'>consolar, dar esfuerzo, dar fuerza, esforzar.</font>"
+  },
+  {
+    "id": "H1083",
+    "ti": "Bilgah",
+    "le": "בִּלְגַה",
+    "pl": "Bilgá",
+    "ps": "bil-gaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1082')}>H1082</span>; desistir; Bilgá, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Bilga.</font>"
+  },
+  {
+    "id": "H1084",
+    "ti": "Bilgay",
+    "le": "בִּלְגַּי",
+    "pl": "Bilgai",
+    "ps": "bil-gah'ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1082')}>H1082</span>; desistente; Bilgai, un israelita: <font color='%COLOR_BLUE%'>Bilgai.</font>"
+  },
+  {
+    "id": "H1085",
+    "ti": "Bildad",
+    "le": "בִּלְדַּד",
+    "pl": "Bildad",
+    "ps": "bil-dad'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Bildad, uno de los amigos de Job: <font color='%COLOR_BLUE%'>Bildad.</font>"
+  },
+  {
+    "id": "H1086",
+    "ti": "bâlâh",
+    "le": "בָּלָה",
+    "pl": "balá",
+    "ps": "baw-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; fallar; por implicación desgastar, decaer (causativo que se consuma, gastar): <font color='%COLOR_BLUE%'>consumir, -se, disfrutar, envejecer, gastar, -se, viejo.</font>"
+  },
+  {
+    "id": "H1087",
+    "ti": "bâleh",
+    "le": "בָּלֶה",
+    "pl": "balé",
+    "ps": "baw-leh'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span>; gastado: <font color='%COLOR_BLUE%'>envejecer, viejo.</font>"
+  },
+  {
+    "id": "H1088",
+    "ti": "Bâlâh",
+    "le": "בָּלָה",
+    "pl": "Balá",
+    "ps": "baw-law'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1087')}>H1087</span>; falta; Balá, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bala.</font>"
+  },
+  {
+    "id": "H1089",
+    "ti": "bâlahh",
+    "le": "בָּלַהּ",
+    "pl": "baláj",
+    "ps": "baw-lah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria [más por transposición de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H926')}>H926</span>]; palpitar; de aquí, (causativo) aterrorizar: <font color='%COLOR_BLUE%'>desanimar.</font>"
+  },
+  {
+    "id": "H1090",
+    "ti": "Bilhâh",
+    "le": "בִּלְהָה",
+    "pl": "Biljá",
+    "ps": "bil-haw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1089')}>H1089</span>; timido; Biljá, nombre de una de las concubinas de Jacob; también lugar en Palestina: <font color='%COLOR_BLUE%'>Bilha.</font>"
+  },
+  {
+    "id": "H1091",
+    "ti": "ballâhâh",
+    "le": "בַּלָּהָה",
+    "pl": "balajá",
+    "ps": "bal-law-haw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1089')}>H1089</span>; alarma; de aquí, destrucción: <font color='%COLOR_BLUE%'>asombrar, espanto, temor, terror, turbación.</font>"
+  },
+  {
+    "id": "H1092",
+    "ti": "Bilhân",
+    "le": "בִּלְהָן",
+    "pl": "Bilján",
+    "ps": "bil-hawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1089')}>H1089</span>; tímido; Bilján, nombre de un edomita y de un israelita: <font color='%COLOR_BLUE%'>Bilhán.</font>"
+  },
+  {
+    "id": "H1093",
+    "ti": "bᵉlôw",
+    "le": "בְּלֹו",
+    "pl": "beló",
+    "ps": "bel-o'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo) de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span>; impuesto (sobre artículos de consumo): <font color='%COLOR_BLUE%'>contribución, impuesto, tributo.</font>"
+  },
+  {
+    "id": "H1094",
+    "ti": "bᵉlôwʼ",
+    "le": "בְּלֹוא",
+    "pl": "beló",
+    "ps": "bel-o'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (compl.) <font color='%COLOR_GREEN%'><b>בלויי</b></font> <font color='%COLOR_PURPLE%'>belói</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span>; (solo en construcción plural) trapos: <font color='%COLOR_BLUE%'>trapos viejos.</font>"
+  },
+  {
+    "id": "H1095",
+    "ti": "Bêlṭᵉshaʼtstsar",
+    "le": "בֵּלְטְשַׁאצַּר",
+    "pl": "Belteshatstsar",
+    "ps": "bale-tesh-ats-tsar'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivado extranjero; Belteshatstsar, nombre babilonio de Daniel: <font color='%COLOR_BLUE%'>Beltsasar.</font>"
+  },
+  {
+    "id": "H1096",
+    "ti": "Bêlṭᵉshaʼtstsar",
+    "le": "בֵּלְטְשַׁאצַּר",
+    "pl": "Belteshatstsar",
+    "ps": "bale-tesh-ats-tsar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1095')}>H1095</span>: <font color='%COLOR_BLUE%'>Beltsasar.</font>"
+  },
+  {
+    "id": "H1097",
+    "ti": "bᵉlîy",
+    "le": "בְּלִי",
+    "pl": "belí",
+    "ps": "bel-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span>; propiamente falta, i.e. nada o destrucción; usualmente (con preposición) sin, aún no, porque no, mientras que, etc.: <font color='%COLOR_BLUE%'>corrupción, exento, donde no, falta, no, por accidente, por falta de, faltar, sin, sin intención, sin nombre, si no.</font>"
+  },
+  {
+    "id": "H1098",
+    "ti": "bᵉlîyl",
+    "le": "בְּלִיל",
+    "pl": "belíl",
+    "ps": "bel-eel'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1101')}>H1101</span>; mezclado, i.e. (específicamente) alimentar (para ganado): <font color='%COLOR_BLUE%'>grano, pasto.</font>"
+  },
+  {
+    "id": "H1099",
+    "ti": "bᵉlîymâh",
+    "le": "בְּלִימָה",
+    "pl": "belimá",
+    "ps": "bel-ee-mah'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1097')}>H1097</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4100')}>H4100</span>; (como indefinida) nada absolutamente: <font color='%COLOR_BLUE%'>nada.</font>"
+  },
+  {
+    "id": "H1100",
+    "ti": "bᵉlîyaʻal",
+    "le": "בְּלִיַּעַל",
+    "pl": "beliyaal",
+    "ps": "bel-e-yah'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1097')}>H1097</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3276')}>H3276</span>; sin ganancia, inutilidad; por extensión destrucción, maldad (frecuente en conexión con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H376')}>H376</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H802')}>H802</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span>, etc.): <font color='%COLOR_BLUE%'>impío, injusto, malo, malvado, perversidad, perverso, pestilencial.</font>"
+  },
+  {
+    "id": "H1101",
+    "ti": "bâlal",
+    "le": "בָּלַל",
+    "pl": "balal",
+    "ps": "baw-lal'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; inundar (específicamente con aceite); por implicación mezclar; también (denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1098')}>H1098</span>) dar forraje: <font color='%COLOR_BLUE%'>amasar, caer, comer, dar de comer, mezclarse, ungir, untar.</font>"
+  },
+  {
+    "id": "H1102",
+    "ti": "bâlam",
+    "le": "בָּלַם",
+    "pl": "balam",
+    "ps": "baw-lam'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; poner bozal: <font color='%COLOR_BLUE%'>sujetar.</font>"
+  },
+  {
+    "id": "H1103",
+    "ti": "bâlaç",
+    "le": "בָּלַס",
+    "pl": "balás",
+    "ps": "baw-las'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; pinchar higos de sicómoro (proceso necesario para su maduración): <font color='%COLOR_BLUE%'>recoger.</font>"
+  },
+  {
+    "id": "H1104",
+    "ti": "bâlaʻ",
+    "le": "בָּלַע",
+    "pl": "bala",
+    "ps": "baw-lah'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; llevarse (específicamente tragando); generalmente destruir: <font color='%COLOR_BLUE%'>abismar, arrancar, arruinar, comérsela, cubrir, deshacer, destrucción, destruidor, destruir, devorar, disipar, encubrir, perder, ruina, tragar.</font>"
+  },
+  {
+    "id": "H1105",
+    "ti": "belaʻ",
+    "le": "בֶּלַע",
+    "pl": "bela",
+    "ps": "beh'-lah",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1104')}>H1104</span>; trago; figurativamente destrucción: <font color='%COLOR_BLUE%'>perniciosa, lo que ha tragado.</font>"
+  },
+  {
+    "id": "H1106",
+    "ti": "Belaʻ",
+    "le": "בֶּלַע",
+    "pl": "Bela",
+    "ps": "beh'-lah",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1105')}>H1105</span>; Bela, nombre de un lugar, también de un edomita y dos israelitas: <font color='%COLOR_BLUE%'>Bela.</font>"
+  },
+  {
+    "id": "H1107",
+    "ti": "bilʻădêy",
+    "le": "בִּלְעֲדֵי",
+    "pl": "biladeí",
+    "ps": "bil-ad-ay'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>בלעדי</b></font> <font color='%COLOR_PURPLE%'>baladeí</font>; construcción plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1077')}>H1077</span> y la <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5703')}>H5703</span>, no hasta, i.e. (como preposición o adverbio) excepto, sin, además: <font color='%COLOR_BLUE%'>además de, excepto, sin.</font>"
+  },
+  {
+    "id": "H1108",
+    "ti": "Balʻîy",
+    "le": "בַּלְעִי",
+    "pl": "balí",
+    "ps": "bel-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1106')}>H1106</span>; belaíta (colectivamente) o descendiente de Bela: <font color='%COLOR_BLUE%'>belaíta.</font>"
+  },
+  {
+    "id": "H1109",
+    "ti": "Bilʻâm",
+    "le": "בִּלְעָם",
+    "pl": "Bilam",
+    "ps": "bil-awm'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1077')}>H1077</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span>; no (de la) gentilicioe, i.e. extranjero; Bilam, profeta de Mesopotamia; también lugar en Palestina: <font color='%COLOR_BLUE%'>Balaam, Bileam.</font>"
+  },
+  {
+    "id": "H1110",
+    "ti": "bâlaq",
+    "le": "בָּלַק",
+    "pl": "balac",
+    "ps": "baw-lak'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; aniquilar: <font color='%COLOR_BLUE%'>desnudar, desolar, vaciar.</font>"
+  },
+  {
+    "id": "H1111",
+    "ti": "Bâlâq",
+    "le": "בָּלָק",
+    "pl": "Balac",
+    "ps": "baw-lawk'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1110')}>H1110</span>; desperdiciador; Balac, rey moabita: <font color='%COLOR_BLUE%'>Balac.</font>"
+  },
+  {
+    "id": "H1112",
+    "ti": "Bêlshaʼtstsar",
+    "le": "בֵּלְשַׁאצַּר",
+    "pl": "Belshatstsar",
+    "ps": "bale-shats-tsar'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>בלאשצר</b></font> <font color='%COLOR_PURPLE%'>Belshatstsar</font>; de origen extranjero (Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1095')}>H1095</span>); Belshatstsar, rey babilonio: <font color='%COLOR_BLUE%'>Belsasar.</font>"
+  },
+  {
+    "id": "H1113",
+    "ti": "Bêlshaʼtstsar",
+    "le": "בֵּלְשַׁאצַּר",
+    "pl": "Belshatstsar",
+    "ps": "bale-shats-tsar'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1112')}>H1112</span>: <font color='%COLOR_BLUE%'>Belsasar.</font>"
+  },
+  {
+    "id": "H1114",
+    "ti": "Bilshân",
+    "le": "בִּלְשָׁן",
+    "pl": "Bilshán",
+    "ps": "bil-shawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de derivación incierta; Bilsán, un israelita: <font color='%COLOR_BLUE%'>Bilsán.</font>"
+  },
+  {
+    "id": "H1115",
+    "ti": "biltîy",
+    "le": "בִּלְתִּי",
+    "pl": "biltí",
+    "ps": "bil-tee'",
+    "df": "<font color='%COLOR_GREEN%'></font>construcción femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1086')}>H1086</span> (equivalente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1097')}>H1097</span>); propiamente falta de, i.e. (usado solo como partícula negativa, usualmente con preposición como prefijo) no, excepto, sin, a menos que, además, porque no, hasta, etc.: <font color='%COLOR_BLUE%'>a menos que, excepto, hasta que, nada, no, sin.</font>"
+  },
+  {
+    "id": "H1116",
+    "ti": "bâmâh",
+    "le": "בָּמָה",
+    "pl": "bamá",
+    "ps": "bam-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa (que significa ser alto); elevación: <font color='%COLOR_BLUE%'>altura, cumbre, lugar alto, ola.</font>"
+  },
+  {
+    "id": "H1117",
+    "ti": "Bâmâh",
+    "le": "בָּמָה",
+    "pl": "Bamá",
+    "ps": "baw-maw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1116')}>H1116</span>; Bamá, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bama.</font> Véase también <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1120')}>H1120</span>."
+  },
+  {
+    "id": "H1118",
+    "ti": "Bimhâl",
+    "le": "בִּמְהָל",
+    "pl": "Bimjál",
+    "ps": "bim-hawl'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4107')}>H4107</span> con preposición prefijo; con acción de podar; Bimjal, un israelita: <font color='%COLOR_BLUE%'>Bimhal.</font>"
+  },
+  {
+    "id": "H1119",
+    "ti": "bᵉmôw",
+    "le": "בְּמֹו",
+    "pl": "bemó",
+    "ps": "bem-o'",
+    "df": "<font color='%COLOR_GREEN%'></font>prolongado de preposición como prefijo; en, con, por, etc: <font color='%COLOR_BLUE%'>con, en, por.</font>"
+  },
+  {
+    "id": "H1120",
+    "ti": "Bâmôwth",
+    "le": "בָּמֹות",
+    "pl": "Bamot",
+    "ps": "baw-moth'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1116')}>H1116</span>; alturas; o (compl.) <font color='%COLOR_GREEN%'><b>במוית בעל</b></font> <font color='%COLOR_PURPLE%'> Bamot Baal</font>; de lo mismo y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span>; alturas de Baal; Bamot o Bamot Baal, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>Bamot, Bamot-Baal.</font>"
+  },
+  {
+    "id": "H1121",
+    "ti": "bên",
+    "le": "בֵּן",
+    "pl": "ben",
+    "ps": "bane",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; hijo (como constructor del nombre de familia), en el sentido más amplio (de relación literalmente y figurativamente incluído nieto, súbdito, nación, calidad o condición, etc., [como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1')}>H1</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H251')}>H251</span>, etc.]): <font color='%COLOR_BLUE%'>afligido, aventado, becerro, cabrito, corderito, cría, criado nacido en, desvalido, digno, de edad de, edificador, extranjero, extraño, familia, hijo, -a, hombre, joven, mayordomo, merecer, muchacho, nacer, nacido en, nieto, niño, noble, novillo, plebeyo, poderoso, pollino, pollo, primero, rama, rehén, renuevo, saeta, sentenciado, tener... años, ungido, valiente, vástago.</font>"
+  },
+  {
+    "id": "H1122",
+    "ti": "Bên",
+    "le": "בֵּן",
+    "pl": "Ben",
+    "ps": "bane",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span>; Ben, un israelita: <font color='%COLOR_BLUE%'>Ben.</font>"
+  },
+  {
+    "id": "H1123",
+    "ti": "bên",
+    "le": "בֵּן",
+    "pl": "ben",
+    "ps": "bane",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo), veneno; correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span>: <font color='%COLOR_BLUE%'>hijo.</font>"
+  },
+  {
+    "id": "H1124",
+    "ti": "bᵉnâʼ",
+    "le": "בְּנָא",
+    "pl": "bená",
+    "ps": "ben-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); o <font color='%COLOR_GREEN%'><b>בנה</b></font> <font color='%COLOR_PURPLE%'>bená</font> (caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; construir: <font color='%COLOR_BLUE%'>edificar, hacer, reedificar.</font>"
+  },
+  {
+    "id": "H1125",
+    "ti": "Ben-ʼĂbîynâdâb",
+    "le": "בֶּן־אֲבִינָדָב",
+    "pl": "Ben Abinadab",
+    "ps": "ben-ab-ee''-naw-dawb'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H40')}>H40</span>; hijo de Abinadab; Ben Abinadab, un israelita: <font color='%COLOR_BLUE%'>hijo de Abinadab.</font>"
+  },
+  {
+    "id": "H1126",
+    "ti": "Ben-ʼÔwnîy",
+    "le": "בֶּן־אֹונִי",
+    "pl": "Ben Oní",
+    "ps": "ben-o-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H205')}>H205</span>; hijo de mi lamento; Ben Oni, nombre origen de Benjamín: <font color='%COLOR_BLUE%'>Benoni.</font>"
+  },
+  {
+    "id": "H1127",
+    "ti": "Ben-Geber",
+    "le": "בֶּן־גֶּבֶר",
+    "pl": "Ben Gueber",
+    "ps": "ben-gheh'-ber",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1397')}>H1397</span>; hijo de (el) héroe; Ben Gueber, un israelita: <font color='%COLOR_BLUE%'>hijo de Geber.</font>"
+  },
+  {
+    "id": "H1128",
+    "ti": "Ben-Deqer",
+    "le": "בֶּן־דֶּקֶר",
+    "pl": "Ben Dequer",
+    "ps": "ben-deh'-ker",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y una derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1856')}>H1856</span>; hijo de perforación (o de una lanza); Ben Dequer, un israelita: <font color='%COLOR_BLUE%'>hijo de Decar.</font>"
+  },
+  {
+    "id": "H1129",
+    "ti": "bânâh",
+    "le": "בָּנָה",
+    "pl": "baná",
+    "ps": "baw-naw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; construir (lit y figurativamente): <font color='%COLOR_BLUE%'>albañil, canterón, poner cimientos, construir, edificador, edificar, edificio, fabricar, fortificar, hacer, tener hijo, labrar, levantar, maestro, obra, poner, properar, reedificar, reparar, restablecer, restaurar.</font>"
+  },
+  {
+    "id": "H1130",
+    "ti": "Ben-Hădad",
+    "le": "בֶּן־הֲדַד",
+    "pl": "Ben Jadad",
+    "ps": "ben-had-ad'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1908')}>H1908</span>; hijo de Jadad; Ben Jadad, nombre de varios reyes asirios: <font color='%COLOR_BLUE%'>Ben-Adad.</font>"
+  },
+  {
+    "id": "H1131",
+    "ti": "Binnûwy",
+    "le": "בִּנּוּי",
+    "pl": "Binnuí",
+    "ps": "bin-noo'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; construido; Binnuí, un israelita: <font color='%COLOR_BLUE%'>Binúi.</font>"
+  },
+  {
+    "id": "H1132",
+    "ti": "Ben-Zôwchêth",
+    "le": "בֶּן־זֹוחֵת",
+    "pl": "Ben Zokjet",
+    "ps": "ben-zo-khayth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2105')}>H2105</span>; hijo de Zokjet; Ben Zokjet, un israelita: <font color='%COLOR_BLUE%'>Benzohet.</font>"
+  },
+  {
+    "id": "H1133",
+    "ti": "Ben-Chûwr",
+    "le": "בֶּן־חוּר",
+    "pl": "Ben Kjur",
+    "ps": "ben-khoor'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2354')}>H2354</span>; hijo de Kjur; Ben Kjur, un israelita: <font color='%COLOR_BLUE%'>hijo de Hur.</font>"
+  },
+  {
+    "id": "H1134",
+    "ti": "Ben-Chayil",
+    "le": "בֶּן־חַיִל",
+    "pl": "Ben Kjáil",
+    "ps": "ben-khah'-yil",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2428')}>H2428</span>; hijo de poder; Ben Kjail, un israelita: <font color='%COLOR_BLUE%'>Ben-hail.</font>"
+  },
+  {
+    "id": "H1135",
+    "ti": "Ben-Chânân",
+    "le": "בֶּן־חָנָן",
+    "pl": "Ben Kjanán",
+    "ps": "ben-khaw-nawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2605')}>H2605</span>; hijo de Kjanán; Ben Kjanán, un israelita: <font color='%COLOR_BLUE%'>Ben-hanán.</font>"
+  },
+  {
+    "id": "H1136",
+    "ti": "Ben-Cheçed",
+    "le": "בֶּן־חֶסֶד",
+    "pl": "Ben Kjésed",
+    "ps": "ben-kheh'-sed",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2617')}>H2617</span>; hijo de bondad; Ben Kjésed, un israelita: <font color='%COLOR_BLUE%'>hijo de Hesed.</font>"
+  },
+  {
+    "id": "H1137",
+    "ti": "Bânîy",
+    "le": "בָּנִי",
+    "pl": "Baní",
+    "ps": "baw-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; construido; Baní, nombre de cinco israelitas: <font color='%COLOR_BLUE%'>Bani.</font>"
+  },
+  {
+    "id": "H1138",
+    "ti": "Bunnîy",
+    "le": "בֻּנִּי",
+    "pl": "Bunní",
+    "ps": "boon-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (más compl.) <font color='%COLOR_GREEN%'><b>בוני</b></font> <font color='%COLOR_PURPLE%'>Buní</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; construido; Bunni o Buni, un israelita: <font color='%COLOR_BLUE%'>Buni.</font>"
+  },
+  {
+    "id": "H1139",
+    "ti": "Bᵉnêy-Bᵉraq",
+    "le": "בְּנֵי־בְּרַק",
+    "pl": "Benei berác",
+    "ps": "ben-ay'-ber-ak'",
+    "df": "<font color='%COLOR_GREEN%'></font>del construcción plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1300')}>H1300</span>; hijos de relámpago; Benei berác, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bene-Berac.</font>"
+  },
+  {
+    "id": "H1140",
+    "ti": "binyâh",
+    "le": "בִּנְיָה",
+    "pl": "biniá",
+    "ps": "bin-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; estructura: <font color='%COLOR_BLUE%'>edificio.</font>"
+  },
+  {
+    "id": "H1141",
+    "ti": "Bᵉnâyâh",
+    "le": "בְּנָיָה",
+    "pl": "Benayá",
+    "ps": "ben-aw-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o (prolongado) <font color='%COLOR_GREEN%'><b>בניהו</b></font> <font color='%COLOR_PURPLE%'>Benayáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span> y la <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha construido; Benaía, nombre de doce israelitas: <font color='%COLOR_BLUE%'>Benaía.</font>"
+  },
+  {
+    "id": "H1142",
+    "ti": "Bᵉnêy Yaʻăqân",
+    "le": "בְּנֵי יַעֲקָן",
+    "pl": "Benei Yaacán",
+    "ps": "ben-ay' yah-ak-awn'",
+    "df": "<font color='%COLOR_GREEN%'></font>del plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3292')}>H3292</span>; hijos de Yaacán; Bene Yaacán, un lugar en el desierto: <font color='%COLOR_BLUE%'>Bene-Jaacán.</font>"
+  },
+  {
+    "id": "H1143",
+    "ti": "bênayim",
+    "le": "בֵּנַיִם",
+    "pl": "benáyim",
+    "ps": "bay-nah'-yim",
+    "df": "<font color='%COLOR_GREEN%'></font>dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H996')}>H996</span>; intervalo doble, i.e. espacio entre dos ejércitos: <font color='%COLOR_BLUE%'>paladín entre dos campamentos.</font>"
+  },
+  {
+    "id": "H1144",
+    "ti": "Binyâmîyn",
+    "le": "בִּנְיָמִין",
+    "pl": "Binyamín",
+    "ps": "bin-yaw-mene'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3225')}>H3225</span>; hijo de (la) mano derecha; Binyamín, hijo menor de Jacob; también la tribu que descendió de él y su territorio: <font color='%COLOR_BLUE%'>Benjamín.</font>"
+  },
+  {
+    "id": "H1145",
+    "ti": "Ben-yᵉmîynîy",
+    "le": "בֶּן־יְמִינִי",
+    "pl": "Ben yemini",
+    "ps": "ben-yem-ee-nee'",
+    "df": "<font color='%COLOR_GREEN%'></font>algunas veces (con el artículo insertado) <font color='%COLOR_GREEN%'><b>בן־הימיני</b></font> <font color='%COLOR_PURPLE%'> Ben jayeminí</font>; con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H376')}>H376</span> insertado (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>1Sa 9:1</span>) <font color='%COLOR_GREEN%'><b>בן־איש ימיני</b></font> <font color='%COLOR_PURPLE%'> Ben Ish Yeminí</font>; hijo de un hombre de Yemini; o abreviado (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>1Sa 9:4</span>; <span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Est 2:5</span>) <font color='%COLOR_GREEN%'><b>איש ימיני</b></font> <font color='%COLOR_PURPLE%'> Ish Yeminí</font>; hombre de Yemini, o (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>1Sa 20:1</span>) simplemente <font color='%COLOR_GREEN%'><b>ימיני</b></font> <font color='%COLOR_PURPLE%'>yeminí</font>; yeminita; (plural) <font color='%COLOR_GREEN%'><b>בני ימיני</b></font> <font color='%COLOR_PURPLE%'> Bení Yeminí</font>; patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1144')}>H1144</span>; benjaminita o descendiente de Benjamín: <font color='%COLOR_BLUE%'>de Benjamín, benjamita.</font>"
+  },
+  {
+    "id": "H1146",
+    "ti": "binyân",
+    "le": "בִּנְיָן",
+    "pl": "binián",
+    "ps": "bin-yawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1129')}>H1129</span>; edificio: <font color='%COLOR_BLUE%'>edificio, muro.</font>"
+  },
+  {
+    "id": "H1147",
+    "ti": "binyân",
+    "le": "בִּנְיָן",
+    "pl": "binián",
+    "ps": "bin-yawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1146')}>H1146</span>: <font color='%COLOR_BLUE%'>edificio.</font>"
+  },
+  {
+    "id": "H1148",
+    "ti": "Bᵉnîynûw",
+    "le": "בְּנִינוּ",
+    "pl": "Beninú",
+    "ps": "ben-ee-noo'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> con pronombre como sufijo; nuestro hijo; Beninu, un israelita: <font color='%COLOR_BLUE%'>Beninu.</font>"
+  },
+  {
+    "id": "H1149",
+    "ti": "bᵉnaç",
+    "le": "בְּנַס",
+    "pl": "benás",
+    "ps": "ben-as'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo) de afinidad incierto; estar encolerizado: <font color='%COLOR_BLUE%'>enojado, con ira.</font>"
+  },
+  {
+    "id": "H1150",
+    "ti": "Binʻâʼ",
+    "le": "בִּנְעָא",
+    "pl": "Biná",
+    "ps": "bin-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>בנעה</b></font> <font color='%COLOR_PURPLE%'>Biná</font>; de derivación incierta; Bina o Biná, un israelita: <font color='%COLOR_BLUE%'>Bina.</font>"
+  },
+  {
+    "id": "H1151",
+    "ti": "Ben-ʻAmmîy",
+    "le": "בֶּן־עַמִּי",
+    "pl": "Ben Ammí",
+    "ps": "ben-am-mee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1121')}>H1121</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span> con pronombre como sufijo; hijo de mi pueblo; Ben Ammi, un hijo de Lot: <font color='%COLOR_BLUE%'>Ben-ammi.</font>"
+  },
+  {
+    "id": "H1152",
+    "ti": "Bᵉçôwdᵉyâh",
+    "le": "בְּסֹודְיָה",
+    "pl": "Besodiá",
+    "ps": "bes-o-deh-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5475')}>H5475</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span> con preposición como prefijo; en (el) consejo de Jehová; Besodiá, un israelita: <font color='%COLOR_BLUE%'>Besodías.</font>"
+  },
+  {
+    "id": "H1153",
+    "ti": "Bᵉçay",
+    "le": "בְּסַי",
+    "pl": "Besai",
+    "ps": "bes-ah'-ee",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H947')}>H947</span> dominante; Besai, uno de los sirvientes del templo: <font color='%COLOR_BLUE%'>Besai.</font>"
+  },
+  {
+    "id": "H1154",
+    "ti": "beçer",
+    "le": "בֶּסֶר",
+    "pl": "béser",
+    "ps": "beh'-ser",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa que significa ser ácido; uva sin madurar: <font color='%COLOR_BLUE%'>uva agraz.</font>"
+  },
+  {
+    "id": "H1155",
+    "ti": "bôçer",
+    "le": "בֹּסֶר",
+    "pl": "bóser",
+    "ps": "bo'ser",
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1154')}>H1154</span>: <font color='%COLOR_BLUE%'>uva agria.</font>"
+  },
+  {
+    "id": "H1156",
+    "ti": "bᵉʻâʼ",
+    "le": "בְּעָא",
+    "pl": "beá",
+    "ps": "beh-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); o <font color='%COLOR_GREEN%'><b>בעה</b></font> <font color='%COLOR_PURPLE%'>beá</font> (caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1158')}>H1158</span>; buscar o preguntar: <font color='%COLOR_BLUE%'>buscar, demandar, hacer [petición], orar, pedir, preguntar, solicitar.</font>"
+  },
+  {
+    "id": "H1157",
+    "ti": "bᵉʻad",
+    "le": "בְּעַד",
+    "pl": "bead",
+    "ps": "beh-ad'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5704')}>H5704</span> con preposición como prefijo; metido hasta o al contrario; generalmente en, al lado, entre, detrás, por, etc.: <font color='%COLOR_BLUE%'>a, a causa de, al contrario, al lado, alrededor de, a través, cerrar, cubrir, dentro, desde, entre, mediante, por (medio de), por ti, por sí mismo, sobre, tras.</font>"
+  },
+  {
+    "id": "H1158",
+    "ti": "bâʻâh",
+    "le": "בָּעָה",
+    "pl": "baá",
+    "ps": "baw-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; salir en chorros sobre, i.e. hinchar; (figurativamente) desear intensamente; por implicación preguntar: <font color='%COLOR_BLUE%'>buscar, extender, hervir.</font>"
+  },
+  {
+    "id": "H1159",
+    "ti": "bâʻûw",
+    "le": "בָּעוּ",
+    "pl": "beú",
+    "ps": "baw-oo'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1156')}>H1156</span>; solicitud: <font color='%COLOR_BLUE%'>petición.</font>"
+  },
+  {
+    "id": "H1160",
+    "ti": "Bᵉʻôwr",
+    "le": "בְּעֹור",
+    "pl": "Beor",
+    "ps": "beh-ore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1197')}>H1197</span> (en el sentido de incendio); lámpara; Beor, nombre del padre de un rey edomita; también el de Balaam: <font color='%COLOR_BLUE%'>Beor.</font>"
+  },
+  {
+    "id": "H1161",
+    "ti": "biʻûwthîym",
+    "le": "בִּעוּתִים",
+    "pl": "biutim",
+    "ps": "be-oo-theme'",
+    "df": "<font color='%COLOR_GREEN%'></font>masculino plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1204')}>H1204</span>; alarmas: <font color='%COLOR_BLUE%'>terrores.</font>"
+  },
+  {
+    "id": "H1162",
+    "ti": "Bôʻaz",
+    "le": "בֹּעַז",
+    "pl": "Boaz",
+    "ps": "bo'-az",
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa de significa do incierto; Boaz, antepasado de David; también nombre de un pilar a la entrada del templo: <font color='%COLOR_BLUE%'>Boaz, Booz.</font>"
+  },
+  {
+    "id": "H1163",
+    "ti": "bâʻaṭ",
+    "le": "בָּעַט",
+    "pl": "baat",
+    "ps": "baw-at'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; pisotear, i.e. (figurativamente) despreciar: <font color='%COLOR_BLUE%'>tirar coz, hollar,.</font>"
+  },
+  {
+    "id": "H1164",
+    "ti": "bᵉʻîy",
+    "le": "בְּעִי",
+    "pl": "beí",
+    "ps": "beh-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1158')}>H1158</span>; oración: <font color='%COLOR_BLUE%'>sepulcro.</font>"
+  },
+  {
+    "id": "H1165",
+    "ti": "bᵉʻîyr",
+    "le": "בְּעִיר",
+    "pl": "beír",
+    "ps": "beh-ere'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1197')}>H1197</span> (en el sentido de comer); ganado: <font color='%COLOR_BLUE%'>bestia, ganado.</font>"
+  },
+  {
+    "id": "H1166",
+    "ti": "bâʻal",
+    "le": "בָּעַל",
+    "pl": "baal",
+    "ps": "baw-al'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria ser maestro; de aquí, (como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span>) casarse: <font color='%COLOR_BLUE%'>casado, -a, desposar, dominar, enseñorear, esposo, llegarse a ella, y ser su marido, tener dominio (sobre).</font>"
+  },
+  {
+    "id": "H1167",
+    "ti": "baʻal",
+    "le": "בַּעַל",
+    "pl": "baal",
+    "ps": "bah'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1166')}>H1166</span>; maestro; de aquí, esposo, o (figurativamente) dueño (frecuentemente usado con otro sustantivo en modificaciones de este último sentido): <font color='%COLOR_BLUE%'>gente, hombre, lleno, marido, morador, adversario, aliado, arquero, ave, capitán, compañero, deber, dueño, poseedor, poseer, señor, soñador, tener, varón, vecino.</font>"
+  },
+  {
+    "id": "H1168",
+    "ti": "Baʻal",
+    "le": "בַּעַל",
+    "pl": "Baal",
+    "ps": "bah'-al",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span>; Baal, deidad fenicia: <font color='%COLOR_BLUE%'>Baal, ídolo.</font>"
+  },
+  {
+    "id": "H1169",
+    "ti": "bᵉʻêl",
+    "le": "בְּעֵל",
+    "pl": "beel",
+    "ps": "beh-ale'",
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span>: <font color='%COLOR_BLUE%'>gobernador, juez, canciller.</font>"
+  },
+  {
+    "id": "H1170",
+    "ti": "Baʻal Bᵉrîyth",
+    "le": "בַּעַל בְּרִית",
+    "pl": "Baal Berít",
+    "ps": "bah'-al ber-eeth'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1285')}>H1285</span>; Baal de (el) pacto; Baal Berit, deidad especial de los siquemitas: <font color='%COLOR_BLUE%'>Baal-berit.</font>"
+  },
+  {
+    "id": "H1171",
+    "ti": "Baʻal Gâd",
+    "le": "בַּעַל גָּד",
+    "pl": "Baal Gad",
+    "ps": "bah'-al gawd",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1409')}>H1409</span>; Baal de Fortuna; Baal Gad, un lugar en Siria: <font color='%COLOR_BLUE%'>Baal-gad.</font>"
+  },
+  {
+    "id": "H1172",
+    "ti": "baʻălâh",
+    "le": "בַּעֲלָה",
+    "pl": "baalá",
+    "ps": "bah-al-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span>; señora: <font color='%COLOR_BLUE%'>ama, maestra en, que tenga.</font>"
+  },
+  {
+    "id": "H1173",
+    "ti": "Baʻălâh",
+    "le": "בַּעֲלָה",
+    "pl": "Baalá",
+    "ps": "bah-al-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1172')}>H1172</span>; Baalá, nombre de tres lugares en Palestina: <font color='%COLOR_BLUE%'>Baala.</font>"
+  },
+  {
+    "id": "H1174",
+    "ti": "Baʻal Hâmôwn",
+    "le": "בַּעַל הָמֹון",
+    "pl": "Baal Jamón",
+    "ps": "bah'-al haw-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1995')}>H1995</span>; poseedor de una multitud; Baal Jamón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baal-hamón.</font>"
+  },
+  {
+    "id": "H1175",
+    "ti": "Bᵉʻâlôwth",
+    "le": "בְּעָלֹות",
+    "pl": "Bealot",
+    "ps": "beh-aw-loth'",
+    "df": "<font color='%COLOR_GREEN%'></font>plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1172')}>H1172</span>; señoras; Bealot, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bealot, en Alot [por error por plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5927')}>H5927</span></font> con preposición prefijo]."
+  },
+  {
+    "id": "H1176",
+    "ti": "Baʻal Zᵉbûwb",
+    "le": "בַּעַל זְבוּב",
+    "pl": "Baal Zebub",
+    "ps": "bah'-al zeb-oob'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2070')}>H2070</span>; Baal de (la) mosca; Baal Zebub, deidad especial de los ecronitas: <font color='%COLOR_BLUE%'>Baal-zebub.</font>"
+  },
+  {
+    "id": "H1177",
+    "ti": "Baʻal Chânân",
+    "le": "בַּעַל חָנָן",
+    "pl": "Baal Kjanán",
+    "ps": "bah'-al khaw-nawn'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y la <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2603')}>H2603</span>; poseedor de gracia; Baal Chanan, nombre de un edomita, también de un israelita: <font color='%COLOR_BLUE%'>Baal-hanán.</font>"
+  },
+  {
+    "id": "H1178",
+    "ti": "Baʻal Châtsôwr",
+    "le": "בַּעַל חָצֹור",
+    "pl": "Baal Kjatsor",
+    "ps": "bah'-al khaw-tsore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y una modificación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2691')}>H2691</span>; poseedor de un pueblo; Baal Kjatsor, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baal-hazor.</font>"
+  },
+  {
+    "id": "H1179",
+    "ti": "Baʻal Chermôwn",
+    "le": "בַּעַל חֶרְמֹון",
+    "pl": "Baal Kjermón",
+    "ps": "bah'-al kher-mone'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2768')}>H2768</span>; poseedor de Kjermón; Baal Kjermón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baal-hermón.</font>"
+  },
+  {
+    "id": "H1180",
+    "ti": "Baʻălîy",
+    "le": "בַּעֲלִי",
+    "pl": "Baalí",
+    "ps": "bah-al-ee'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> con pronombre como sufijo; mi maestro; Baalí, nombre simbólico de Jehová: <font color='%COLOR_BLUE%'>Baali.</font>"
+  },
+  {
+    "id": "H1181",
+    "ti": "Baʻălêy Bâmôwth",
+    "le": "בַּעֲלֵי בָּמֹות",
+    "pl": "Baalí Bamot",
+    "ps": "bah-al-ay' baw-moth'",
+    "df": "<font color='%COLOR_GREEN%'></font>del plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y el plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1116')}>H1116</span>; Baales de (las) alturas; Baalí Bamot, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>señores de las alturas.</font>"
+  },
+  {
+    "id": "H1182",
+    "ti": "Bᵉʻelyâdâʻ",
+    "le": "בְּעֶלְיָדָע",
+    "pl": "Beeliada",
+    "ps": "beh-el-yaw-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3045')}>H3045</span>; Baal ha sabido; Beeliada, un israelita: <font color='%COLOR_BLUE%'>Beeliada.</font>"
+  },
+  {
+    "id": "H1183",
+    "ti": "Bᵉʻalyâh",
+    "le": "בְּעַלְיָה",
+    "pl": "Bealiá",
+    "ps": "beh-al-yaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah (es) maestro; Bealiá, un israelita: <font color='%COLOR_BLUE%'>Bealías.</font>"
+  },
+  {
+    "id": "H1184",
+    "ti": "Baʻălêy Yᵉhûwdâh",
+    "le": "בַּעֲלֵי יְהוּדָה",
+    "pl": "Baalei Yejudá",
+    "ps": "bah-al-ay' yeh-hoo-daw'",
+    "df": "<font color='%COLOR_GREEN%'></font>del plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3063')}>H3063</span>; maestros de Judá; Baalí Yejudá, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baala de Judá.</font>"
+  },
+  {
+    "id": "H1185",
+    "ti": "Baʻălîyç",
+    "le": "בַּעֲלִיס",
+    "pl": "Baalís",
+    "ps": "bah-al-ece'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de una derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5965')}>H5965</span> con preposición como prefijo; en exaltación; Baalís, rey amonita: <font color='%COLOR_BLUE%'>Baalis.</font>"
+  },
+  {
+    "id": "H1186",
+    "ti": "Baʻal Mᵉʻôwn",
+    "le": "בַּעַל מְעֹון",
+    "pl": "Baal Meón",
+    "ps": "bah-al meh-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4583')}>H4583</span>; Baal de (la) habitación (de) [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1010')}>H1010</span>]; Baal Meón, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>Baal-meón.</font>"
+  },
+  {
+    "id": "H1187",
+    "ti": "Baʻal Pᵉʻôwr",
+    "le": "בַּעַל פְּעֹור",
+    "pl": "Baal Peor",
+    "ps": "bah'-al peh-ore'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6465')}>H6465</span>; Baal de Peor; Baal Peor, deidad moabita: <font color='%COLOR_BLUE%'>Baal-peor.</font>"
+  },
+  {
+    "id": "H1188",
+    "ti": "Baʻal Pᵉrâtsîym",
+    "le": "בַּעַל פְּרָצִים",
+    "pl": "Baal Peratsím",
+    "ps": "bah'-al per-aw-tseem'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y el plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6556')}>H6556</span>; poseedor de roturas; Baal Peratsim, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baal-perazim.</font>"
+  },
+  {
+    "id": "H1189",
+    "ti": "Baʻal Tsᵉphôwn",
+    "le": "בַּעַל צְפֹון",
+    "pl": "Baal Tsefón",
+    "ps": "bah'-al tsef-one'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6828')}>H6828</span> (en el sentido de frío) [según otros es forma egipcia del Tifón, destructor]; Baal del invierno; Baal Tsefón, un lugar en Egipto: <font color='%COLOR_BLUE%'>Baal-zefón.</font>"
+  },
+  {
+    "id": "H1190",
+    "ti": "Baʻal Shâlishâh",
+    "le": "בַּעַל שָׁלִשָׁה",
+    "pl": "Baal Shalishá",
+    "ps": "bah'-al shaw-lee-shaw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1168')}>H1168</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8031')}>H8031</span>; Baal de Shalishá, Baal Shalishá, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baal-salisa.</font>"
+  },
+  {
+    "id": "H1191",
+    "ti": "Baʻălâth",
+    "le": "בַּעֲלָת",
+    "pl": "Baalat",
+    "ps": "bah-al-awth'",
+    "df": "<font color='%COLOR_GREEN%'></font>modificación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1172')}>H1172</span>; condición de señora; Baalat, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baalat.</font>"
+  },
+  {
+    "id": "H1192",
+    "ti": "Baʻălath Bᵉʼêr",
+    "le": "בַּעֲלַת בְּאֵר",
+    "pl": "Baalat Beer",
+    "ps": "bah-al-ath' beh-ayr'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1172')}>H1172</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H875')}>H875</span>; señora de un pozo; Baalat Beer, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baalat-beer.</font>"
+  },
+  {
+    "id": "H1193",
+    "ti": "Baʻal Tâmâr",
+    "le": "בַּעַל תָּמָר",
+    "pl": "Baal Tamar",
+    "ps": "bah'-al taw-mawr'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1167')}>H1167</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8558')}>H8558</span>; poseedor de (la) palmera; Baal Tamar, un lugar en Palestina: <font color='%COLOR_BLUE%'>Baal-tamar.</font>"
+  },
+  {
+    "id": "H1194",
+    "ti": "Bᵉʻôn",
+    "le": "בְּעֹן",
+    "pl": "Beón",
+    "ps": "beh-ohn'",
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente contracción de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1010')}>H1010</span>; Beón, un lugar al E. del Jordán: <font color='%COLOR_BLUE%'>Beón.</font>"
+  },
+  {
+    "id": "H1195",
+    "ti": "Baʻănâʼ",
+    "le": "בַּעֲנָא",
+    "pl": "Baaná",
+    "ps": "bah-an-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1196')}>H1196</span>; Baana, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Baana.</font>"
+  },
+  {
+    "id": "H1196",
+    "ti": "Baʻănâh",
+    "le": "בַּעֲנָה",
+    "pl": "Baaná",
+    "ps": "bah-an-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de una derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6031')}>H6031</span> con preposición como prefijo; en aflicción; Baaná, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Baana.</font>"
+  },
+  {
+    "id": "H1197",
+    "ti": "bâʻar",
+    "le": "בָּעַר",
+    "pl": "baar",
+    "ps": "baw-ar'",
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; encender, i.e. consumir (por fuego o comiendo); también (como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1198')}>H1198</span>) ser (hacerse) brutal: <font color='%COLOR_BLUE%'>abrasar, arder, ardiente, barrer, consumir, destruir, desvanecer, devastación, devorar, echar, embrutecer, encender, fuego, gastar, infatuar, inflamar, necio, hacer pastar, quemar, quitar, rudo, sacar, temerario.</font>"
+  },
+  {
+    "id": "H1198",
+    "ti": "baʻar",
+    "le": "בַּעַר",
+    "pl": "baar",
+    "ps": "bah'-ar",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1197')}>H1197</span>; propiamente comida (como consumida); i.e. (por exten.) brutalidad del ganado; (concretamente) necio: <font color='%COLOR_BLUE%'>torpe, ignorante.</font>"
+  },
+  {
+    "id": "H1199",
+    "ti": "Bâʻărâʼ",
+    "le": "בָּעֲרָא",
+    "pl": "Baará",
+    "ps": "bah-ar-aw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1198')}>H1198</span>; brutal; Baara, una israelita: <font color='%COLOR_BLUE%'>Baara.</font>"
+  },
+  {
+    "id": "H1200",
+    "ti": "bᵉʻêrâh",
+    "le": "בְּעֵרָה",
+    "pl": "beerá",
+    "ps": "be-ay-raw'",
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1197')}>H1197</span>; incendio: <font color='%COLOR_BLUE%'>fuego.</font>"
+  }
+]

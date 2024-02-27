@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G5351",
+    "ti": "phtheírō",
+    "le": "φθείρω",
+    "pl": "fdseíro",
+    "ps": "fthi'-ro",
+    "df": "probablemente fortificado de <b>φθίω</b> <font color='%COLOR_PURPLE%'>fdsío</font> (languidecer o consumirse); propiamente agostarse, o secarse, i.e. arruinarse (por cualquier proceso) o (genitivo) arruinar (específicamente figurativamente, por influencias moralmente, depravar): <font color='%COLOR_BLUE%'>corromper, destruir, extraviar, viciado.</font>"
+  },
+  {
+    "id": "G5352",
+    "ti": "phthinopōrinós",
+    "le": "φθινοπωρινός",
+    "pl": "fdsinoporinós",
+    "ps": "fthin-op-o-ree-nos'",
+    "df": "de derivado de <b>φθίνω</b> <font color='%COLOR_PURPLE%'>fdsíno</font> (languidecer; similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5351')}>G5351</span>) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3703')}>G3703</span> (significa tarde enb el otoño; otoñal (como desprovisto de hojas): <font color='%COLOR_BLUE%'>otoñal.</font>"
+  },
+  {
+    "id": "G5353",
+    "ti": "phthóngos",
+    "le": "φθόγγος",
+    "pl": "fdsóngos",
+    "ps": "ftong'-gos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5350')}>G5350</span>; enunciado, i.e. nota musical (vocal o instrumental): <font color='%COLOR_BLUE%'>voz.</font>"
+  },
+  {
+    "id": "G5354",
+    "ti": "phthonéō",
+    "le": "φθονέω",
+    "pl": "fdsonéo",
+    "ps": "fthon-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5355')}>G5355</span>; estar celoso de: <font color='%COLOR_BLUE%'>envidiar.</font>"
+  },
+  {
+    "id": "G5355",
+    "ti": "phthónos",
+    "le": "φθόνος",
+    "pl": "fdsonos",
+    "ps": "fthon'-os",
+    "df": "probablemente similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5351')}>G5351</span>; mala voluntad (como detracción), i.e. celos (ojeriza): <font color='%COLOR_BLUE%'>envidia, celosamente.</font>"
+  },
+  {
+    "id": "G5356",
+    "ti": "phthorá",
+    "le": "φθορά",
+    "pl": "fdsorá",
+    "ps": "fthor-ah'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5351')}>G5351</span>; decaimiento, i.e. ruina (espontánea o inflingida, literalmente o figurativamente): <font color='%COLOR_BLUE%'>perdición, corrupción, destrucción, destruir.</font>"
+  },
+  {
+    "id": "G5357",
+    "ti": "phiálē",
+    "le": "φιάλη",
+    "pl": "fiále",
+    "ps": "fee-al'-ay",
+    "df": "de afín. incierta; taza ancha y de poco fondo («vial»): <font color='%COLOR_BLUE%'>copa.</font>"
+  },
+  {
+    "id": "G5358",
+    "ti": "philágathos",
+    "le": "φιλάγαθος",
+    "pl": "filágadsos",
+    "ps": "fil-ag'-ath-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G18')}>G18</span>; anhelando el bien, i.e. promotor de virtud: <font color='%COLOR_BLUE%'>bueno.</font>"
+  },
+  {
+    "id": "G5359",
+    "ti": "Philadélpheia",
+    "le": "Φιλαδέλφεια",
+    "pl": "Filadélfeia",
+    "ps": "fil-ad-el'-fee-ah",
+    "df": "de <b>Φιλάδελφος</b> <font color='%COLOR_PURPLE%'>Filádelfos</font> (lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5361')}>G5361</span>), un rey de Pérgamo; Filadelfia, un lugar en Asia Menor: <font color='%COLOR_BLUE%'>Filadelfia.</font>"
+  },
+  {
+    "id": "G5360",
+    "ti": "philadelphía",
+    "le": "φιλαδελφία",
+    "pl": "filadelfía",
+    "ps": "fil-ad-el-fee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5361')}>G5361</span>; afecto fraternal: <font color='%COLOR_BLUE%'>amor fraternal, afecto.</font>"
+  },
+  {
+    "id": "G5361",
+    "ti": "philádelphos",
+    "le": "φιλάδελφος",
+    "pl": "filádelfos",
+    "ps": "fil-ad'-el-fos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G80')}>G80</span>; que ama a los hermanos, i.e. fraternal: <font color='%COLOR_BLUE%'>amar fraternalmente.</font>"
+  },
+  {
+    "id": "G5362",
+    "ti": "phílandros",
+    "le": "φίλανδρος",
+    "pl": "fílandros",
+    "ps": "fil'-an-dros",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G435')}>G435</span>; que ama al hombre, i.e. afectivo como una esposa: <font color='%COLOR_BLUE%'>amar a su marido.</font>"
+  },
+  {
+    "id": "G5363",
+    "ti": "philanthrōpía",
+    "le": "φιλανθρωπία",
+    "pl": "filandsropía",
+    "ps": "fil-an-thro-pee'-ah",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5364')}>G5364</span>; que ama a la humanidad, i.e. benevolencia («filantropía»): <font color='%COLOR_BLUE%'>amor para con los hombres, humanidad.</font>"
+  },
+  {
+    "id": "G5364",
+    "ti": "philanthrṓpōs",
+    "le": "φιλανθρώπως",
+    "pl": "filandsrópos",
+    "ps": "fil-an-thro'-poce",
+    "df": "adverbio de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G444')}>G444</span>; que ama al hombre («filantrópicalmente»), i.e. humanamente: <font color='%COLOR_BLUE%'>humanamente.</font>"
+  },
+  {
+    "id": "G5365",
+    "ti": "philargyría",
+    "le": "φιλαργυρία",
+    "pl": "filarguría",
+    "ps": "fil-ar-goo-ree'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5366')}>G5366</span>; avaricia: <font color='%COLOR_BLUE%'>amor al dinero.</font>"
+  },
+  {
+    "id": "G5366",
+    "ti": "philárgyros",
+    "le": "φιλάργυρος",
+    "pl": "filárguros",
+    "ps": "fil-ar'-goo-ros",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G696')}>G696</span>; que ama la plata (dinero), i.e. avaro: <font color='%COLOR_BLUE%'>avaro.</font>"
+  },
+  {
+    "id": "G5367",
+    "ti": "phílautos",
+    "le": "φίλαυτος",
+    "pl": "fílautos",
+    "ps": "fil'-ow-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G846')}>G846</span>; que se ama a sí mismo, i.e. egoísta: <font color='%COLOR_BLUE%'>amador de sí mismo.</font>"
+  },
+  {
+    "id": "G5368",
+    "ti": "philéō",
+    "le": "φιλέω",
+    "pl": "filéo",
+    "ps": "fil-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span>; ser amigo de (amar a [un individual o un objectivamente]), i.e. tener afecto por (denotando apego personal, como asunto de sentimiento o emoción; en tanto que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G25')}>G25</span> es más amplio, abarcando específicamente el juicio y el asentimiento deliberado de la voluntad como asunto de principio, deber y propiedad: los dos así están muy relacionados como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2309')}>G2309</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1014')}>G1014</span>, o como <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2372')}>G2372</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3563')}>G3563</span> respectivamente; el anterior siendo principalmente del corazón y el último de la cabeza; específicamente besar (como señal de ternura): <font color='%COLOR_BLUE%'>amar, besar.</font>"
+  },
+  {
+    "id": "G5369",
+    "ti": "philḗdonos",
+    "le": "φιλήδονος",
+    "pl": "filédonos",
+    "ps": "fil-ay'-don-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2237')}>G2237</span>; que ama el placer, i.e. voluptuoso: <font color='%COLOR_BLUE%'>amador de los deleite.</font>"
+  },
+  {
+    "id": "G5370",
+    "ti": "phílēma",
+    "le": "φίλημα",
+    "pl": "fílema",
+    "ps": "fil'-ay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5368')}>G5368</span>; beso: <font color='%COLOR_BLUE%'>ósculo, besar, beso.</font>"
+  },
+  {
+    "id": "G5371",
+    "ti": "Philḗmōn",
+    "le": "Φιλήμων",
+    "pl": "Filémon",
+    "ps": "fil-ay'-mone",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5368')}>G5368</span>; amistoso; Filemón, un cristiano: <font color='%COLOR_BLUE%'>Filemón.</font>"
+  },
+  {
+    "id": "G5372",
+    "ti": "Phílētos",
+    "le": "Φίλητος",
+    "pl": "Filetós",
+    "ps": "fil-ay-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5368')}>G5368</span>; amigable; Fileto, uno que se oponía al cristianismo: <font color='%COLOR_BLUE%'>Fileto.</font>"
+  },
+  {
+    "id": "G5373",
+    "ti": "philía",
+    "le": "φιλία",
+    "pl": "filía",
+    "ps": "fil-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span>; mucho cariño: <font color='%COLOR_BLUE%'>amistad.</font>"
+  },
+  {
+    "id": "G5374",
+    "ti": "Philippḗsios",
+    "le": "Φιλιππήσιος",
+    "pl": "filippésios",
+    "ps": "fil-ip-pay'-see-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5375')}>G5375</span>; filipense, i.e. nativo de Filipos: <font color='%COLOR_BLUE%'>Filipenses.</font>"
+  },
+  {
+    "id": "G5375",
+    "ti": "Phílippoi",
+    "le": "Φίλιπποι",
+    "pl": "Fílippoi",
+    "ps": "fil'-ip-poy",
+    "df": "plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5376')}>G5376</span>; Filipos, un lugar en Macedonia: <font color='%COLOR_BLUE%'>Filipos.</font>"
+  },
+  {
+    "id": "G5376",
+    "ti": "Phílippos",
+    "le": "Φίλιππος",
+    "pl": "Fílippos",
+    "ps": "fil'-ip-pos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2462')}>G2462</span>; encariñado con los caballos; Felipe, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Felipe.</font>"
+  },
+  {
+    "id": "G5377",
+    "ti": "philótheos",
+    "le": "φιλόθεος",
+    "pl": "filódseos",
+    "ps": "fil-oth'-eh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span>; que ama a Dios, i.e. piadoso: <font color='%COLOR_BLUE%'>amador de Dios.</font>"
+  },
+  {
+    "id": "G5378",
+    "ti": "Philólogos",
+    "le": "Φιλόλογος",
+    "pl": "Filólogos",
+    "ps": "fil-ol'-og-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span>; que ama las palabras, i.e. charlatán (argumentador, educado, «filológico»); Filólogo, un cristiano: <font color='%COLOR_BLUE%'>Filólogo.</font>"
+  },
+  {
+    "id": "G5379",
+    "ti": "philoneikía",
+    "le": "φιλονεικία",
+    "pl": "filoneikía",
+    "ps": "fil-on-i-kee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5380')}>G5380</span>; peleonero, i.e. una disputa: <font color='%COLOR_BLUE%'>disputa.</font>"
+  },
+  {
+    "id": "G5380",
+    "ti": "philóneikos",
+    "le": "φιλόνεικος",
+    "pl": "filóneikos",
+    "ps": "fil-on'-i-kos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <b>νεῖκος</b> <font color='%COLOR_PURPLE%'>neíkos</font> (pelea; probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3534')}>G3534</span>); que le gusta pelear, i.e. disputador: <font color='%COLOR_BLUE%'>contencioso.</font>"
+  },
+  {
+    "id": "G5381",
+    "ti": "philonexía",
+    "le": "φιλονεξία",
+    "pl": "filonexía",
+    "ps": "fil-on-ex-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5382')}>G5382</span>; hospitalidad: <font color='%COLOR_BLUE%'>hospitalidad.</font>"
+  },
+  {
+    "id": "G5382",
+    "ti": "philóxenos",
+    "le": "φιλόξενος",
+    "pl": "filóxenos",
+    "ps": "fil-ox'-en-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3581')}>G3581</span>; que quiere a sus huéspedes, i.e. hospitalario: <font color='%COLOR_BLUE%'>hospedador, hospedar.</font>"
+  },
+  {
+    "id": "G5383",
+    "ti": "philoprōteúō",
+    "le": "φιλοπρωτεύω",
+    "pl": "filoproteúo",
+    "ps": "fil-op-rote-yoo'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4413')}>G4413</span>; que le gusta ser el primero, i.e. ambicioso de distinción: <font color='%COLOR_BLUE%'>le gusta tener el primer lugar.</font>"
+  },
+  {
+    "id": "G5384",
+    "ti": "phílos",
+    "le": "φίλος",
+    "pl": "fílos",
+    "ps": "fee'-los",
+    "df": "propiamente querido, i.e. amigo; activamente amar, i.e. amistoso (todavía como sustantivo, asociado, vecino, etc.): <font color='%COLOR_BLUE%'>amigo.</font>"
+  },
+  {
+    "id": "G5385",
+    "ti": "philosophía",
+    "le": "φιλοσοφία",
+    "pl": "filosofía",
+    "ps": "fil-os-of-ee'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5386')}>G5386</span>; «filosofía», i.e. (específicamente) sofisma judío: <font color='%COLOR_BLUE%'>filosofía.</font>"
+  },
+  {
+    "id": "G5386",
+    "ti": "philósophos",
+    "le": "φιλόσοφος",
+    "pl": "filósofos",
+    "ps": "fil-os'-of-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4680')}>G4680</span>; que ama las cosas sabias, i.e. a «filósofo»: <font color='%COLOR_BLUE%'>filósofo.</font>"
+  },
+  {
+    "id": "G5387",
+    "ti": "philóstorgos",
+    "le": "φιλόστοργος",
+    "pl": "filóstorgos",
+    "ps": "fil-os'-tor-gos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <b>στοργή</b> <font color='%COLOR_PURPLE%'>storgé</font> (amor a los familiares de uno, específicamente padres o hijos); que ama a los padres, i.e. afectuoso hacia los otros cristiana: <font color='%COLOR_BLUE%'>amar.</font>"
+  },
+  {
+    "id": "G5388",
+    "ti": "philóteknos",
+    "le": "φιλότεκνος",
+    "pl": "filóteknos",
+    "ps": "fil-ot'-ek-nos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5043')}>G5043</span>; amante de los hijos de uno mismo, i.e. maternal: <font color='%COLOR_BLUE%'>amor a los hijos.</font>"
+  },
+  {
+    "id": "G5389",
+    "ti": "philotiméomai",
+    "le": "φιλοτιμέομαι",
+    "pl": "filotiempóomai",
+    "ps": "fil-ot-im-eh'-om-ahee",
+    "df": "voz media de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5092')}>G5092</span>; anhelar honor, i.e. émulo (ansioso o ferviente para hacer algo): <font color='%COLOR_BLUE%'>esforzarse.</font>"
+  },
+  {
+    "id": "G5390",
+    "ti": "philophrónōs",
+    "le": "φιλοφρόνως",
+    "pl": "filofrónos",
+    "ps": "fil-of-ron'-oce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5391')}>G5391</span>; con amistad de mente, i.e. bondadoso: <font color='%COLOR_BLUE%'>solícitamente.</font>"
+  },
+  {
+    "id": "G5391",
+    "ti": "philóphrōn",
+    "le": "φιλόφρων",
+    "pl": "filófron",
+    "ps": "fil-of'-rone",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span>; amistoso de mente, i.e. amable: <font color='%COLOR_BLUE%'>amigable.</font>"
+  },
+  {
+    "id": "G5392",
+    "ti": "phimóō",
+    "le": "φιμόω",
+    "pl": "fimóo",
+    "ps": "fee-mo'-o",
+    "df": "de <b>φιμός</b> <font color='%COLOR_PURPLE%'>fimós</font>, (bozal); poner bozal: <font color='%COLOR_BLUE%'>enmudecer, bozal, callar.</font>"
+  },
+  {
+    "id": "G5393",
+    "ti": "Phlégōn",
+    "le": "Φλέγων",
+    "pl": "Flégon",
+    "ps": "fleg'-one",
+    "df": "participio activo de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5395')}>G5395</span>; ardiente; Flegón, un cristiano: <font color='%COLOR_BLUE%'>Flegonte.</font>"
+  },
+  {
+    "id": "G5394",
+    "ti": "phlogízō",
+    "le": "φλογίζω",
+    "pl": "flogízo",
+    "ps": "flog-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5395')}>G5395</span>; hacer arder, i.e. encender (figurativamente inflamar con pasión): <font color='%COLOR_BLUE%'>inflamar.</font>"
+  },
+  {
+    "id": "G5395",
+    "ti": "phlóx",
+    "le": "φλόξ",
+    "pl": "flóx",
+    "ps": "flox",
+    "df": "del primario <b>φλέγω</b> <font color='%COLOR_PURPLE%'>flégo</font>, (echar llama); llama: <font color='%COLOR_BLUE%'>llama.</font>"
+  },
+  {
+    "id": "G5396",
+    "ti": "phlyaréō",
+    "le": "φλυαρέω",
+    "pl": "fluaréo",
+    "ps": "floo-ar-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5397')}>G5397</span>; ser palabrero o hablar por hablar, i.e. (por implicación) regañar excesiva o maliciosamente: <font color='%COLOR_BLUE%'>parlotear en contra.</font>"
+  },
+  {
+    "id": "G5397",
+    "ti": "phlýaros",
+    "le": "φλύαρος",
+    "pl": "flúaros",
+    "ps": "floo'-ar-os",
+    "df": "de <b>φλύω</b> <font color='%COLOR_PURPLE%'>flúo</font>, (burbujear); persona palabrera, i.e. parlanchín: <font color='%COLOR_BLUE%'>chismoso.</font>"
+  },
+  {
+    "id": "G5398",
+    "ti": "phoberós",
+    "le": "φοβερός",
+    "pl": "foberós",
+    "ps": "fob-er-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5401')}>G5401</span>; aterrador, i.e. (objectivamente) formidable: <font color='%COLOR_BLUE%'>horrenda, terrible.</font>"
+  },
+  {
+    "id": "G5399",
+    "ti": "phobéō",
+    "le": "φοβέω",
+    "pl": "fobéo",
+    "ps": "fob-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5401')}>G5401</span>; atemorizar, i.e. (pasivamente) alarmarse; por analogía quedar asombrado de, i.e. reverenciar: <font color='%COLOR_BLUE%'>respetar, temblar, temer, temeroso, temor, espanto, miedo, amedrentar, atemorizar.</font>"
+  },
+  {
+    "id": "G5400",
+    "ti": "phóbētron",
+    "le": "φόβητρον",
+    "pl": "fóbetron",
+    "ps": "fob'-ay-tron",
+    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5399')}>G5399</span>; cosa atemorizante, i.e. portento aterrador: <font color='%COLOR_BLUE%'>terror.</font>"
+  },
+  {
+    "id": "G5401",
+    "ti": "phóbos",
+    "le": "φόβος",
+    "pl": "fóbos",
+    "ps": "fob'-os",
+    "df": "del primario <b>φέβομαι</b> <font color='%COLOR_PURPLE%'>fébomai</font> (ser puesto en temor); alarma, o susto: <font color='%COLOR_BLUE%'>respeto, respetuosa, temer, temor, miedo.</font>"
+  },
+  {
+    "id": "G5402",
+    "ti": "Phoíbē",
+    "le": "Φοίβη",
+    "pl": "Foíbe",
+    "ps": "foy'-bay",
+    "df": "femenino de <b>φοῖβος</b> <font color='%COLOR_PURPLE%'>foíbos</font>, (brillante; probablemente similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5457')}>G5457</span>); Febe, una cristiana: <font color='%COLOR_BLUE%'>Febe.</font>"
+  },
+  {
+    "id": "G5403",
+    "ti": "Phoiníkē",
+    "le": "Φοινίκη",
+    "pl": "Foiníke",
+    "ps": "foy-nee'-kay",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5404')}>G5404</span>; país de palma; Fenicia, una región de Palestina: <font color='%COLOR_BLUE%'>Fenicia.</font>"
+  },
+  {
+    "id": "G5404",
+    "ti": "phoînix",
+    "le": "φοῖνιξ",
+    "pl": "foínix",
+    "ps": "foy'-nix",
+    "df": "de derivación incierta; palma (el árbol): <font color='%COLOR_BLUE%'>palma, palmera.</font>"
+  },
+  {
+    "id": "G5405",
+    "ti": "Phoînix",
+    "le": "Φοῖνιξ",
+    "pl": "Foínix",
+    "ps": "foy'-nix",
+    "df": "probablemente lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5404')}>G5404</span>; Fenice, un lugar en Creta: <font color='%COLOR_BLUE%'>Fenice.</font>"
+  },
+  {
+    "id": "G5406",
+    "ti": "phoneús",
+    "le": "φονεύς",
+    "pl": "foneús",
+    "ps": "fon-yooce'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5408')}>G5408</span>; homicida (siempre de homicidio criminal [o por lo menos intencional]; lo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G443')}>G443</span> no necesariamente implica; mientras que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4607')}>G4607</span> es un término especial para un bandido público): <font color='%COLOR_BLUE%'>homicida, matador.</font>"
+  },
+  {
+    "id": "G5407",
+    "ti": "phoneúō",
+    "le": "φονεύω",
+    "pl": "foneúo",
+    "ps": "fon-yoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5406')}>G5406</span>; ser asesino (de): <font color='%COLOR_BLUE%'>dar muerte, matar.</font>"
+  },
+  {
+    "id": "G5408",
+    "ti": "phónos",
+    "le": "φόνος",
+    "pl": "fónos",
+    "ps": "fon'-os",
+    "df": "de un obsoleto primario <b>φένω</b> <font color='%COLOR_PURPLE%'>féno</font> (matar); asesinato: <font color='%COLOR_BLUE%'>homicidio, muerte.</font>"
+  },
+  {
+    "id": "G5409",
+    "ti": "phoréō",
+    "le": "φορέω",
+    "pl": "foréo",
+    "ps": "for-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5411')}>G5411</span>; tener una carga, i.e. (por analogía) llevar o vestir como ropa o acompañamiento constante: <font color='%COLOR_BLUE%'>traer, llevar.</font>"
+  },
+  {
+    "id": "G5410",
+    "ti": "Phóron",
+    "le": "Φόρον",
+    "pl": "Fóron",
+    "ps": "for'-on",
+    "df": "de origen latín; foro o plaza; solo en comparación con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G675')}>G675</span>; estación en la vía Apia: <font color='%COLOR_BLUE%'>Foro.</font>"
+  },
+  {
+    "id": "G5411",
+    "ti": "phóros",
+    "le": "φόρος",
+    "pl": "fóros",
+    "ps": "for'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; carga (como llevada), i.e. (figurativamente) impuesto (propiamente avalúo individual de personas o propiedad; en tanto que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5056')}>G5056</span> es por lo general un gravamen generalmente sobre los bienes o viajes): <font color='%COLOR_BLUE%'>tributo.</font>"
+  },
+  {
+    "id": "G5412",
+    "ti": "phortízō",
+    "le": "φορτίζω",
+    "pl": "fortízo",
+    "ps": "for-tid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5414')}>G5414</span>; cargar (propiamente como un barco o un animal), i.e. (figurativamente) sobrecargar con ceremonialmente (o ansiedad espiritual): <font color='%COLOR_BLUE%'>cargar.</font>"
+  },
+  {
+    "id": "G5413",
+    "ti": "phortíon",
+    "le": "φορτίον",
+    "pl": "fortíon",
+    "ps": "for-tee'-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5414')}>G5414</span>; factura (como parte de la carga), i.e. (figurativamente) tarea o servicio: <font color='%COLOR_BLUE%'>carga.</font>"
+  },
+  {
+    "id": "G5414",
+    "ti": "phórtos",
+    "le": "φόρτος",
+    "pl": "fórtos",
+    "ps": "for'-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; algo llevado, i.e. carga de una nave: <font color='%COLOR_BLUE%'>cargamento.</font>"
+  },
+  {
+    "id": "G5415",
+    "ti": "Phortounâtos",
+    "le": "Φορτουνᾶτος",
+    "pl": "Fortounátos",
+    "ps": "for-too-nat'-os",
+    "df": "de origen latín; «afortunado» Fortunato, un cristiano: <font color='%COLOR_BLUE%'>Fortunato.</font>"
+  },
+  {
+    "id": "G5416",
+    "ti": "phragéllion",
+    "le": "φραγέλλιον",
+    "pl": "fragélion",
+    "ps": "frag-el'-le-on",
+    "df": "neutro de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5417')}>G5417</span>; látigo, i.e. romano flagelo como castigo público: <font color='%COLOR_BLUE%'>azote.</font>"
+  },
+  {
+    "id": "G5417",
+    "ti": "phragellóō",
+    "le": "φραγελλόω",
+    "pl": "fragelóo",
+    "ps": "frag-el-lo'-o",
+    "df": "de un equivalente presunto del flagelo latín; azotar, i.e. flagelar como castigo público: <font color='%COLOR_BLUE%'>azotar.</font>"
+  },
+  {
+    "id": "G5418",
+    "ti": "phragmós",
+    "le": "φραγμός",
+    "pl": "fragmós",
+    "ps": "frag-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5420')}>G5420</span>; cerca, o barrera que encierra (literalmente o figurativamente): <font color='%COLOR_BLUE%'>separación, vallado, cercar.</font>"
+  },
+  {
+    "id": "G5419",
+    "ti": "phrázō",
+    "le": "φράζω",
+    "pl": "frázo",
+    "ps": "frad'-zo",
+    "df": "probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5420')}>G5420</span> mediante la idea de definir; indicar (por palabra o acción), i.e. (específicamente) exponer: <font color='%COLOR_BLUE%'>explicar.</font>"
+  },
+  {
+    "id": "G5420",
+    "ti": "phrássō",
+    "le": "φράσσω",
+    "pl": "frásso",
+    "ps": "fras'-so",
+    "df": "aparentemente forma fortificada de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span>; cercar o encerrar, i.e. (específicamente) bloquear (figurativamente silenciar): <font color='%COLOR_BLUE%'>tapar, cerrar.</font>"
+  },
+  {
+    "id": "G5421",
+    "ti": "phréar",
+    "le": "φρέαρ",
+    "pl": "fréar",
+    "ps": "freh'-ar",
+    "df": "de derivación incierta; hueco en la tierra (cavado para obtener o retener agua u otros propósitos), i.e. cisterna o pozo; figurativamente abismo (como prisión): <font color='%COLOR_BLUE%'>pozo.</font>"
+  },
+  {
+    "id": "G5422",
+    "ti": "phrenapatáō",
+    "le": "φρεναπατάω",
+    "pl": "frenapatáo",
+    "ps": "fren-ap-at-ah'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5423')}>G5423</span>; ser uno que confunde la mente, i.e. engaño: <font color='%COLOR_BLUE%'>engañar.</font>"
+  },
+  {
+    "id": "G5423",
+    "ti": "phrenapátēs",
+    "le": "φρεναπάτης",
+    "pl": "frenapátes",
+    "ps": "fren-ap-at'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G539')}>G539</span>; que descarría la mente, i.e. seductor: <font color='%COLOR_BLUE%'>engañador.</font>"
+  },
+  {
+    "id": "G5424",
+    "ti": "phrḗn",
+    "le": "φρήν",
+    "pl": "frén",
+    "ps": "frane",
+    "df": "probablemente de un obsoleto <b>φράω</b> <font color='%COLOR_PURPLE%'>fráo</font> (reinar en o frenar; Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5420')}>G5420</span>); cintura (como división del cuerpo), i.e. (figurativamente y por implicación de lástima) las emociones (o naturaleza sensible; por extensión [también en el plural] la mente o facultades cognoscitivas): <font color='%COLOR_BLUE%'>modo de pensar.</font>"
+  },
+  {
+    "id": "G5425",
+    "ti": "phríssō",
+    "le": "φρίσσω",
+    "pl": "frísso",
+    "ps": "fris'-so",
+    "df": "aparentemente verbo primario; «tiritar» o sentir frío, i.e. temblar (de temor): <font color='%COLOR_BLUE%'>temblar.</font>"
+  },
+  {
+    "id": "G5426",
+    "ti": "phronéō",
+    "le": "φρονέω",
+    "pl": "fronéo",
+    "ps": "fron-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span>; ejercitar la mente, i.e. entretener o tener un sentimiento u opinión; por implicación estar dispuesto (mentalmente) (más o menos fervientemente en una cierta dirección); intensivo interesarse uno mismo en (con preocupación u obediencia): <font color='%COLOR_BLUE%'>pensar, sentir, tener un mismo sentir, sentir la misma cosa, solícito, poner la mira, modo, hacer caso, cuidado.</font>"
+  },
+  {
+    "id": "G5427",
+    "ti": "phrónēma",
+    "le": "φρόνημα",
+    "pl": "frónema",
+    "ps": "fron'-ay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5426')}>G5426</span>; inclinación (mental) o propósito: <font color='%COLOR_BLUE%'>intención.</font>"
+  },
+  {
+    "id": "G5428",
+    "ti": "phrónēsis",
+    "le": "φρόνησις",
+    "pl": "frónesis",
+    "ps": "fron'-ay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5426')}>G5426</span>; acción o actividad mental, i.e. visión o noción intelectual o moralmente: <font color='%COLOR_BLUE%'>inteligencia, prudencia.</font>"
+  },
+  {
+    "id": "G5429",
+    "ti": "phrónimos",
+    "le": "φρόνιμος",
+    "pl": "frónimos",
+    "ps": "fron'-ee-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span>; sensato, i.e. sagaz o discreto (implicando carácter cauto; mientras que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4680')}>G4680</span> denota habilidad práctica o ácumen; y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4908')}>G4908</span> indica más bien inteligencia o adquisición mental); en un sentido malo arrogante (también en el comparativo): <font color='%COLOR_BLUE%'>prudente, sensato, arrogante, cuerdo.</font>"
+  },
+  {
+    "id": "G5430",
+    "ti": "phronímōs",
+    "le": "φρονίμως",
+    "pl": "fronímos",
+    "ps": "fron-im'-oce",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5429')}>G5429</span>; prudentemente: <font color='%COLOR_BLUE%'>sagazmente.</font>"
+  },
+  {
+    "id": "G5431",
+    "ti": "phrontízō",
+    "le": "φροντίζω",
+    "pl": "frontízo",
+    "ps": "fron-tid'-zo",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span>; ejercer pensamiento, i.e. estar con ansia: <font color='%COLOR_BLUE%'>procurar.</font>"
+  },
+  {
+    "id": "G5432",
+    "ti": "phrouréō",
+    "le": "φρουρέω",
+    "pl": "frouréo",
+    "ps": "froo-reh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4253')}>G4253</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3708')}>G3708</span>; ser un vigilante, i.e. montar guardia como centinela (poner espías en las puertas); figurativamente cercar, proteger: <font color='%COLOR_BLUE%'>guardar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5083')}>G5083</span>."
+  },
+  {
+    "id": "G5433",
+    "ti": "phryássō",
+    "le": "φρυάσσω",
+    "pl": "fruásso",
+    "ps": "froo-as'-so",
+    "df": "afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1032')}>G1032</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1031')}>G1031</span>; resoplar (como caballo brioso), i.e. (figurativamente) hacer tumulto: <font color='%COLOR_BLUE%'>amotinar.</font>"
+  },
+  {
+    "id": "G5434",
+    "ti": "phrýganon",
+    "le": "φρύγανον",
+    "pl": "frúganon",
+    "ps": "froo'-gan-on",
+    "df": "neutro de un derivado presunto de <b>φρύγω</b> <font color='%COLOR_PURPLE%'>frúgo</font> (asar o tostar; similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5395')}>G5395</span>); algo disecado, i.e. rama seca: <font color='%COLOR_BLUE%'>rama seca.</font>"
+  },
+  {
+    "id": "G5435",
+    "ti": "Phrygía",
+    "le": "Φρυγία",
+    "pl": "Frugía",
+    "ps": "froog-ee'-ah",
+    "df": "probablemente de origen extranjero; Frigia, una región de Asia Menor: <font color='%COLOR_BLUE%'>Frigia.</font>"
+  },
+  {
+    "id": "G5436",
+    "ti": "Phýgellos",
+    "le": "Φύγελλος",
+    "pl": "Fúgellos",
+    "ps": "foog'-el-los",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5343')}>G5343</span>; fugitivo; Figelo, un cristiano apóstata.: <font color='%COLOR_BLUE%'>Figelo.</font>"
+  },
+  {
+    "id": "G5437",
+    "ti": "phygḗ",
+    "le": "φυγή",
+    "pl": "fugé",
+    "ps": "foog-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5343')}>G5343</span>; «huir», i.e. escapar: <font color='%COLOR_BLUE%'>huida.</font>"
+  },
+  {
+    "id": "G5438",
+    "ti": "phylakḗ",
+    "le": "φυλακή",
+    "pl": "fulaké",
+    "ps": "foo-lak-ay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5442')}>G5442</span>; guardia o (concretamente guarda), el acto, la persona; figurativamente el lugar, la condición, o (específicamente) el tiempo (como una división de día o la noche), literalmente o figurativamente: <font color='%COLOR_BLUE%'>albergue, calabozo, cárcel, encarcelar, guardia, guarida, hora, prisión, velar, vigilia.</font>"
+  },
+  {
+    "id": "G5439",
+    "ti": "phylakízō",
+    "le": "φυλακίζω",
+    "pl": "fulakízo",
+    "ps": "foo-lak-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5441')}>G5441</span>; encarcelar: <font color='%COLOR_BLUE%'>encarcelar.</font>"
+  },
+  {
+    "id": "G5440",
+    "ti": "phylaktḗrion",
+    "le": "φυλακτήριον",
+    "pl": "fulaktérion",
+    "ps": "foo-lak-tay'-ree-on",
+    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5442')}>G5442</span>; estuche para guardar, i.e. «filacterías» para llevar tiras de pasajes de las Escrituras: <font color='%COLOR_BLUE%'>filacteria.</font>"
+  },
+  {
+    "id": "G5441",
+    "ti": "phýlax",
+    "le": "φύλαξ",
+    "pl": "fúlax",
+    "ps": "foo'-lax",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5442')}>G5442</span>; vigía o centinela: <font color='%COLOR_BLUE%'>guarda.</font>"
+  },
+  {
+    "id": "G5442",
+    "ti": "phylássō",
+    "le": "φυλάσσω",
+    "pl": "fulásso",
+    "ps": "foo-las'-so",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5443')}>G5443</span> mediante la idea de aislamiento; vigilar, i.e. estar de guardia (literalmente o figurativamente); por implicación preservar, obedecer, evadir: <font color='%COLOR_BLUE%'>abstenerse, custodiar, guardar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5083')}>G5083</span>."
+  },
+  {
+    "id": "G5443",
+    "ti": "phylḗ",
+    "le": "φυλή",
+    "pl": "fulé",
+    "ps": "foo-lay'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5453')}>G5453</span> (Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5444')}>G5444</span>); retoño, i.e. raza o clan: <font color='%COLOR_BLUE%'>linaje, tribu.</font>"
+  },
+  {
+    "id": "G5444",
+    "ti": "phýllon",
+    "le": "φύλλον",
+    "pl": "fúlon",
+    "ps": "fool'-lon",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5443')}>G5443</span>; brote, i.e. hoja: <font color='%COLOR_BLUE%'>hoja.</font>"
+  },
+  {
+    "id": "G5445",
+    "ti": "phýrama",
+    "le": "φύραμα",
+    "pl": "fúrama",
+    "ps": "foo'-ram-ah",
+    "df": "de forma prolongada de <b>φύρω</b> <font color='%COLOR_PURPLE%'>fúro</font> (mezclar un líquido con un sólido; tal vez afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5453')}>G5453</span> mediante la idea de hinchar en bulto), significa ndo amasar; masa de harina: <font color='%COLOR_BLUE%'>masa restante.</font>"
+  },
+  {
+    "id": "G5446",
+    "ti": "physikós",
+    "le": "φυσικός",
+    "pl": "fusikós",
+    "ps": "foo-see-kos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5449')}>G5449</span>; «físico», i.e. (por implicación) instintivo: <font color='%COLOR_BLUE%'>natural.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5591')}>G5591</span>."
+  },
+  {
+    "id": "G5447",
+    "ti": "physikōs",
+    "le": "φυσικῶς",
+    "pl": "fusikós",
+    "ps": "foo-see-koce'",
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5446')}>G5446</span>; «físicamente», i.e. (por implicación) instintivamente: <font color='%COLOR_BLUE%'>por naturaleza.</font>"
+  },
+  {
+    "id": "G5448",
+    "ti": "physióō",
+    "le": "φυσιόω",
+    "pl": "fusióo",
+    "ps": "foo-see-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5449')}>G5449</span> en el sentido primario de soplar; inflar, i.e. (figurativamente) hacer orgulloso (altanero): <font color='%COLOR_BLUE%'>andar envanecido, envanecerse, hincharse.</font>"
+  },
+  {
+    "id": "G5449",
+    "ti": "phýsis",
+    "le": "φύσις",
+    "pl": "fúsis",
+    "ps": "foo'-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5453')}>G5453</span>; crecimiento (por germinación o expansión), i.e. (por implicación) producción natural (descendencia lineal); por extensión genio o suerte; figurativamente disposición natural, constitución o uso: <font color='%COLOR_BLUE%'>de nacimiento, natural, naturaleza humana.</font>"
+  },
+  {
+    "id": "G5450",
+    "ti": "physíōsis",
+    "le": "φυσίωσις",
+    "pl": "fusíosis",
+    "ps": "foo-see'-o-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5448')}>G5448</span>; inflación, i.e. (figurativamente) altanería: <font color='%COLOR_BLUE%'>soberbia.</font>"
+  },
+  {
+    "id": "G5451",
+    "ti": "phyteía",
+    "le": "φυτεία",
+    "pl": "futeía",
+    "ps": "foo-ti'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5452')}>G5452</span>; transplantar, i.e. (concretamente) arbusto o vegetal: <font color='%COLOR_BLUE%'>planta.</font>"
+  },
+  {
+    "id": "G5452",
+    "ti": "phyteúō",
+    "le": "φυτεύω",
+    "pl": "futeúo",
+    "ps": "foot-yoo'-o",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5453')}>G5453</span>; fijar en la tierra, i.e. plantar; figurativamente instilar doctrina: <font color='%COLOR_BLUE%'>plantar, cavar.</font>"
+  },
+  {
+    "id": "G5453",
+    "ti": "phýō",
+    "le": "φύω",
+    "pl": "fúo",
+    "ps": "foo'-o",
+    "df": "verbo primario; probablemente origen soplar, i.e. hincharse; pero solo usado en el sentido implicación, germinar o crecer (brotar, producir), literalmente o figurativamente: <font color='%COLOR_BLUE%'>brotar, nacer.</font>"
+  },
+  {
+    "id": "G5454",
+    "ti": "phōleós",
+    "le": "φωλεός",
+    "pl": "foleós",
+    "ps": "fo-leh-os'",
+    "df": "de derivación incierta; guarida o lugar para acechar: <font color='%COLOR_BLUE%'>guarida.</font>"
+  },
+  {
+    "id": "G5455",
+    "ti": "phōnéō",
+    "le": "φωνέω",
+    "pl": "fonéo",
+    "ps": "fo-neh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5456')}>G5456</span>; emitir un sonido (animal, humano o instrumental); por implicación dirigir en palabras o por nombre, también en imitación: <font color='%COLOR_BLUE%'>llamar, cantar, clamar, dar voces.</font>"
+  },
+  {
+    "id": "G5456",
+    "ti": "phōnḗ",
+    "le": "φωνή",
+    "pl": "foné",
+    "ps": "fo-nay'",
+    "df": "probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5316')}>G5316</span> mediante la idea de revelación; tono (articulado, bestial o artificial); por implicación discurso (por cualquier propósito), dicho o lenguaje: <font color='%COLOR_BLUE%'>palabra, ruido, sonido, tono, toque, dar voces, estruendo, grito, idioma.</font>"
+  },
+  {
+    "id": "G5457",
+    "ti": "phōs",
+    "le": "φῶς",
+    "pl": "fós",
+    "ps": "foce",
+    "df": "de un obsoleto <b>φάω</b> <font color='%COLOR_PURPLE%'>fáo</font> (brillar, o hacer manifiesto, específicamente por rayos; Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5316')}>G5316</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5346')}>G5346</span>); luminosidad (en la aplicación más amplia, natural o artificial, abstractamente o concretamente, literalmente o figurativamente): <font color='%COLOR_BLUE%'>fuego, luz, resplandor.</font>"
+  },
+  {
+    "id": "G5458",
+    "ti": "phōstḗr",
+    "le": "φωστήρ",
+    "pl": "fostér",
+    "ps": "foce-tare'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5457')}>G5457</span>; iluminador, i.e. (concretamente) luminaria, o (abstractamente) brillo: <font color='%COLOR_BLUE%'>fulgor, luminar.</font>"
+  },
+  {
+    "id": "G5459",
+    "ti": "phōsphóros",
+    "le": "φωσφόρος",
+    "pl": "fosfóros",
+    "ps": "foce-for'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5457')}>G5457</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; que lleva luz («fósforo»), i.e. (específicamente) la estrella de la mañana (figurativamente): <font color='%COLOR_BLUE%'>lucero de la mañana.</font>"
+  },
+  {
+    "id": "G5460",
+    "ti": "phōteinós",
+    "le": "φωτεινός",
+    "pl": "foteinós",
+    "ps": "fo-ti-nos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5457')}>G5457</span>; lustroso, i.e. transparente o bien iluminado (figurativamente): <font color='%COLOR_BLUE%'>lleno de luz, luminoso.</font>"
+  },
+  {
+    "id": "G5461",
+    "ti": "phōtízō",
+    "le": "φωτίζω",
+    "pl": "fotízo",
+    "ps": "fo-tid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5457')}>G5457</span>; emitir rayos, i.e. brillar o (transitivamente) iluminar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>iluminar, sacar a luz, aclarar, alumbrar, resplandor.</font>"
+  },
+  {
+    "id": "G5462",
+    "ti": "phōtismós",
+    "le": "φωτισμός",
+    "pl": "fotismós",
+    "ps": "fo-tis-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5461')}>G5461</span>; iluminación (figurativamente): <font color='%COLOR_BLUE%'>iluminación, luz.</font>"
+  },
+  {
+    "id": "G5463",
+    "ti": "chaírō",
+    "le": "χαίρω",
+    "pl": "jaíro",
+    "ps": "khah'-ee-ro",
+    "df": "verbo primario; estar alegre, i.e. feliz calmadamente o bien; impersonalmente específicamente como saludo (al encontrarse o despedirse), que estés bien: <font color='%COLOR_BLUE%'>gozar, gozo, gozoso, alegrar, regocijar, salud, salve.</font>"
+  },
+  {
+    "id": "G5464",
+    "ti": "chálaza",
+    "le": "χάλαζα",
+    "pl": "jálaza",
+    "ps": "khal'-ad-zah",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5465')}>G5465</span>; granizo: <font color='%COLOR_BLUE%'>granizo.</font>"
+  },
+  {
+    "id": "G5465",
+    "ti": "chaláō",
+    "le": "χαλάω",
+    "pl": "jaláo",
+    "ps": "khal-ah'-o",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span>; bajar (como a un vacío): <font color='%COLOR_BLUE%'>echar, arriar, bajar, descolgar.</font>"
+  },
+  {
+    "id": "G5466",
+    "ti": "Chaldaîos",
+    "le": "Χαλδαῖος",
+    "pl": "Jaldaíos",
+    "ps": "khal-dah'-yos",
+    "df": "probablemente de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3778')}>H3778</span>]; caldeo, o nativo o la región del bajo éufrates: <font color='%COLOR_BLUE%'>caldeo.</font>"
+  },
+  {
+    "id": "G5467",
+    "ti": "chalepós",
+    "le": "χαλεπός",
+    "pl": "jalepós",
+    "ps": "khal-ep-os'",
+    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5465')}>G5465</span> mediante la idea de reducir la fuerza; difícil, i.e. peligroso, o (por implicación) furioso: <font color='%COLOR_BLUE%'>peligroso.</font>"
+  },
+  {
+    "id": "G5468",
+    "ti": "chalinagōgéō",
+    "le": "χαλιναγωγέω",
+    "pl": "jalinagogéo",
+    "ps": "khal-in-ag-ogue-eh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5469')}>G5469</span> y la forma reduplicación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; ser el que dirige el freno, i.e. frenar (figurativamente): <font color='%COLOR_BLUE%'>refrenar.</font>"
+  },
+  {
+    "id": "G5469",
+    "ti": "chalinós",
+    "le": "χαλινός",
+    "pl": "jalinós",
+    "ps": "khal-ee-nos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5465')}>G5465</span>; freno o establo (como frenando el espíritu): <font color='%COLOR_BLUE%'>freno, refrenar.</font>"
+  },
+  {
+    "id": "G5470",
+    "ti": "chálkeos",
+    "le": "χάλκεος",
+    "pl": "jálkeos",
+    "ps": "khal'-keh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5475')}>G5475</span>; de cobre: <font color='%COLOR_BLUE%'>de bronce.</font>"
+  },
+  {
+    "id": "G5471",
+    "ti": "chalkeús",
+    "le": "χαλκεύς",
+    "pl": "jalkeús",
+    "ps": "khalk-yooce'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5475')}>G5475</span>; trabajador en cobre o bronce; brasero: <font color='%COLOR_BLUE%'>calderero.</font>"
+  },
+  {
+    "id": "G5472",
+    "ti": "chalkēdṓn",
+    "le": "χαλκηδών",
+    "pl": "jalkedón",
+    "ps": "khal-kay-dohn'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5475')}>G5475</span> y tal vez <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1491')}>G1491</span>; parecido a cobre, i.e. «calcedonia»: <font color='%COLOR_BLUE%'>ágata.</font>"
+  },
+  {
+    "id": "G5473",
+    "ti": "chalkíon",
+    "le": "χαλκίον",
+    "pl": "jalkíon",
+    "ps": "khal-kee'-on",
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5475')}>G5475</span>; plato de cobre: <font color='%COLOR_BLUE%'>utensilio de metal.</font>"
+  },
+  {
+    "id": "G5474",
+    "ti": "chalkolíbanon",
+    "le": "χαλκολίβανον",
+    "pl": "jalkolíbanon",
+    "ps": "khal-kol-ib'-an-on",
+    "df": "neutro de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5475')}>G5475</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3030')}>G3030</span> (en el significa implicación de blancura o brillo); cobre bruñido, aleación de cobre (u oro) y plata que tiene lustre brillante: <font color='%COLOR_BLUE%'>bronce.</font>"
+  },
+  {
+    "id": "G5475",
+    "ti": "chalkós",
+    "le": "χαλκός",
+    "pl": "jalkós",
+    "ps": "khal-kos'",
+    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5465')}>G5465</span> mediante la idea de repujar como una vasija (este metal siendo principalmente usado para ese propósito); cobre (la substancia, o algún implemento o moneda hecha con él): <font color='%COLOR_BLUE%'>cobre, dinero, metal.</font>"
+  },
+  {
+    "id": "G5476",
+    "ti": "chamaí",
+    "le": "χαμαί",
+    "pl": "jamaí",
+    "ps": "kham-ah'-ee",
+    "df": "adverbio tal vez de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span> mediante la idea de fisura en el suelo; hacia tierra, i.e. postrado: <font color='%COLOR_BLUE%'>en tierra.</font>"
+  },
+  {
+    "id": "G5477",
+    "ti": "Chanaán",
+    "le": "Χαναάν",
+    "pl": "Janaán",
+    "ps": "khan-ah-an'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3667')}>H3667</span>]; Canaán (i.e. Kenaán), nombre anterior de Palestina: <font color='%COLOR_BLUE%'>Canaán.</font>"
+  },
+  {
+    "id": "G5478",
+    "ti": "Chanaanaîos",
+    "le": "Χανααναῖος",
+    "pl": "janaanaíos",
+    "ps": "khan-ah-an-ah'-yos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5477')}>G5477</span>; a cananeo (i.e. Kenaanita), o nativo de Palestina gentil.: <font color='%COLOR_BLUE%'>cananeo.</font>"
+  },
+  {
+    "id": "G5479",
+    "ti": "chará",
+    "le": "χαρά",
+    "pl": "jará",
+    "ps": "khar-ah'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5463')}>G5463</span>; alegría, i.e. deleite calmo: <font color='%COLOR_BLUE%'>alegría, gozo, gozoso.</font>"
+  },
+  {
+    "id": "G5480",
+    "ti": "cháragma",
+    "le": "χάραγμα",
+    "pl": "járagma",
+    "ps": "khar'-ag-mah",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5482')}>G5482</span>; rasguño o picazón, i.e. sello (como etiqueta de servidumbre), o figura esculpida (estatua): <font color='%COLOR_BLUE%'>escultura, marca.</font>"
+  },
+  {
+    "id": "G5481",
+    "ti": "charaktḗr",
+    "le": "χαρακτήρ",
+    "pl": "jaraktér",
+    "ps": "khar-ak-tare'",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5482')}>G5482</span>; grabador (la herramienta o la persona), i.e. (por implicación) grabar ([«carácter»], la figura estampada, i.e. copia o [figurativamente] representación) exacta: <font color='%COLOR_BLUE%'>imagen misma.</font>"
+  },
+  {
+    "id": "G5482",
+    "ti": "chárax",
+    "le": "χάραξ",
+    "pl": "járax",
+    "ps": "khar'-ax",
+    "df": "de <b>χαράσσω</b> <font color='%COLOR_PURPLE%'>jarásso</font> (afilar, hasta hacer punta; afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1125')}>G1125</span> mediante la idea de escarbar); estaca, i.e. (por implicación) palizada o baluarte (terraplén militar para circunvalación en un asedio): <font color='%COLOR_BLUE%'>vallado.</font>"
+  },
+  {
+    "id": "G5483",
+    "ti": "charízomai",
+    "le": "χαρίζομαι",
+    "pl": "jarízomai",
+    "ps": "khar-id'-zom-ahee",
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5485')}>G5485</span>; conceder como favor, i.e. gratuitamente, en bondad, perdón o rescate: <font color='%COLOR_BLUE%'>perdonar, entregar, conceder, dar.</font>"
+  },
+  {
+    "id": "G5484",
+    "ti": "chárin",
+    "le": "χάριν",
+    "pl": "járin",
+    "ps": "khar'-in",
+    "df": "acusativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5485')}>G5485</span> como preposición; mediante favor de, i.e. a cuenta de: <font color='%COLOR_BLUE%'>causa.</font>"
+  },
+  {
+    "id": "G5485",
+    "ti": "cháris",
+    "le": "χάρις",
+    "pl": "járis",
+    "ps": "khar'-ece",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5463')}>G5463</span>; gracia (como gratificante), de manera o acción (abstractamente o concretamente; literalmente, figurativamente o espiritual; específicamente la influencia divina sobre el corazón, y su reflejo en la vida; incluído gratitud): <font color='%COLOR_BLUE%'>merecer aprobación, aprobar, congraciarte, donativo, favor, gozo, gracia, gratitud, mérito.</font>"
+  },
+  {
+    "id": "G5486",
+    "ti": "chárisma",
+    "le": "χάρισμα",
+    "pl": "járisma",
+    "ps": "khar'-is-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5483')}>G5483</span>; dádiva (divina), i.e. liberación (de peligro o pasión); (específicamente) concesión (espiritual), i.e. (subjectivamente) calificación religiosa, o (objectivamente) facultad milagrosa: <font color='%COLOR_BLUE%'>dádiva, don.</font>"
+  },
+  {
+    "id": "G5487",
+    "ti": "charitóō",
+    "le": "χαριτόω",
+    "pl": "jaritóo",
+    "ps": "khar-ee-to'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5485')}>G5485</span>; otorgar gracia, i.e. investir con honor especial: <font color='%COLOR_BLUE%'>hacer acepto, muy favorecida.</font>"
+  },
+  {
+    "id": "G5488",
+    "ti": "Charrhán",
+    "le": "Χαῤῥάν",
+    "pl": "Jarrán",
+    "ps": "khar-hran'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2771')}>H2771</span>]; Harán, un lugar en Mesopotamia: <font color='%COLOR_BLUE%'>Harán.</font>"
+  },
+  {
+    "id": "G5489",
+    "ti": "chártēs",
+    "le": "χάρτης",
+    "pl": "jártes",
+    "ps": "khar'-tace",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5482')}>G5482</span>; hoja («cuadro») de material para escribir (como para que se escriba encima): <font color='%COLOR_BLUE%'>papel.</font>"
+  },
+  {
+    "id": "G5490",
+    "ti": "chásma",
+    "le": "χάσμα",
+    "pl": "jásma",
+    "ps": "khas'-mah",
+    "df": "de una forma de un obsoleto primario <b>χάω</b> <font color='%COLOR_PURPLE%'>jáo</font>, («abrir la boca» o «bostezar»); «cisma» o vacancia (intervalo impasable): <font color='%COLOR_BLUE%'>sima.</font>"
+  },
+  {
+    "id": "G5491",
+    "ti": "cheîlos",
+    "le": "χεῖλος",
+    "pl": "jeílos",
+    "ps": "khi'-los",
+    "df": "de una forma de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span>; labio (como lugar que derrama); figurativamente margen (de agua): <font color='%COLOR_BLUE%'>labio, orilla.</font>"
+  },
+  {
+    "id": "G5492",
+    "ti": "cheimázō",
+    "le": "χειμάζω",
+    "pl": "jeimázo",
+    "ps": "khi-mad'-zo",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5494')}>G5494</span>; irrumpir, i.e. (pasivamente) trabajar bajo una tempestad: <font color='%COLOR_BLUE%'>combatido por una tempestad.</font>"
+  },
+  {
+    "id": "G5493",
+    "ti": "cheímarrhos",
+    "le": "χείμαῤῥος",
+    "pl": "jeímarros",
+    "ps": "khi'-mar-hros",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5494')}>G5494</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4482')}>G4482</span>; correntada de tormenta, i.e. torrente de invierno: <font color='%COLOR_BLUE%'>torrente.</font>"
+  },
+  {
+    "id": "G5494",
+    "ti": "cheimṓn",
+    "le": "χειμών",
+    "pl": "jeimón",
+    "ps": "khi-mone'",
+    "df": "de un derivado de <b>χέω</b> <font color='%COLOR_PURPLE%'>jéo</font>, (derramar; similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span> mediante la idea de canal), significa tormenta (como derramando lluvia); por implicación la estación lluviosa, i.e. invierno: <font color='%COLOR_BLUE%'>tempestad, invierno.</font>"
+  },
+  {
+    "id": "G5495",
+    "ti": "cheír",
+    "le": "χείρ",
+    "pl": "jeír",
+    "ps": "khire",
+    "df": "tal vez de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5494')}>G5494</span> en el sentido de su congénere la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5490')}>G5490</span> (mediante la idea de cavidad para agarrar); mano (literalmente o figurativamente [poder]; específicamente [por hebraísmo] medio o instrumento): <font color='%COLOR_BLUE%'>mano.</font>"
+  },
+  {
+    "id": "G5496",
+    "ti": "cheiragōgéō",
+    "le": "χειραγωγέω",
+    "pl": "jeiragogéo",
+    "ps": "khi-rag-ogue-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5497')}>G5497</span>; ser un líder de mano, i.e. guiar (a un ciego): <font color='%COLOR_BLUE%'>llevar de la mano.</font>"
+  },
+  {
+    "id": "G5497",
+    "ti": "cheiragōgós",
+    "le": "χειραγωγός",
+    "pl": "jeiragogós",
+    "ps": "khi-rag-o-gos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5495')}>G5495</span> y a forma reduplicación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; líder de mano, i.e. conductor personal (de un ciego): <font color='%COLOR_BLUE%'>conducir de la mano.</font>"
+  },
+  {
+    "id": "G5498",
+    "ti": "cheirógraphon",
+    "le": "χειρόγραφον",
+    "pl": "jeirógrafon",
+    "ps": "khi-rog'-raf-on",
+    "df": "neutro de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5495')}>G5495</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1125')}>G1125</span>; algo escrito a mano («quirógrafo»), i.e. manuscrito (específicamente documento o bono legal [figurativamente]): <font color='%COLOR_BLUE%'>acta.</font>"
+  },
+  {
+    "id": "G5499",
+    "ti": "cheiropoíētos",
+    "le": "χειροποίητος",
+    "pl": "jeiropoíetos",
+    "ps": "khi-rop-oy'-ay-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5495')}>G5495</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4160')}>G4160</span>; manufacturado, i.e. de construcción humana: <font color='%COLOR_BLUE%'>hacer a (o de) mano.</font>"
+  },
+  {
+    "id": "G5500",
+    "ti": "cheirotonéō",
+    "le": "χειροτονέω",
+    "pl": "jeirotonéo",
+    "ps": "khi-rot-on-eh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5495')}>G5495</span> y <b>τείνω</b> <font color='%COLOR_PURPLE%'>teíno</font> (estirar); ser uno que alcanza con la mano, o votante (por levantar la mano), i.e. (genitivo) seleccionar o nombrar: <font color='%COLOR_BLUE%'>constituir, designar.</font>"
+  }
+]

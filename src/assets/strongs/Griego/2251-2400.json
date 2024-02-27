@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "G2251",
+    "ti": "hēméteros",
+    "le": "ἡμέτερος",
+    "pl": "jeméteros",
+    "ps": "hay-met'-er-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2349')}>G2349</span>; nuestro: <font color='%COLOR_BLUE%'>nuestro.</font>"
+  },
+  {
+    "id": "G2252",
+    "ti": "ḗmēn",
+    "le": "ἤμην",
+    "pl": "émen",
+    "ps": "ay'-mane",
+    "df": "forma prolongada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2358')}>G2358</span>; yo era: <font color='%COLOR_BLUE%'>encarcelar. [A veces no expresado].</font>"
+  },
+  {
+    "id": "G2253",
+    "ti": "hēmithanḗs",
+    "le": "ἡμιθανής",
+    "pl": "jemidsanés",
+    "ps": "hay-mee-than-ace'",
+    "df": "de un presunto compuesto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2255')}>G2255</span>y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2348')}>G2348</span>; medio muerto, i.e. enteramente exhausto: <font color='%COLOR_BLUE%'>medio muerto.</font>"
+  },
+  {
+    "id": "G2254",
+    "ti": "hēmîn",
+    "le": "ἡμῖν",
+    "pl": "jemín",
+    "ps": "hay-meen'",
+    "df": "dativo plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1473')}>G1473</span>; a (o por, con, por medio de) nosotros: <font color='%COLOR_BLUE%'>nosotros.</font>"
+  },
+  {
+    "id": "G2255",
+    "ti": "hḗmisy",
+    "le": "ἥμισυ",
+    "pl": "jémisu",
+    "ps": "hay'-mee-soo",
+    "df": "neutro dativo de un derivado de un prefijo inseparable semejante a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G260')}>G260</span> (mediante la idea de partición incluyendo en la conexión)  y significa semi-; (como sustantivo) mitad: <font color='%COLOR_BLUE%'>medio, mitad.</font>"
+  },
+  {
+    "id": "G2256",
+    "ti": "hēmiṓrion",
+    "le": "ἡμιώριον",
+    "pl": "jemiórion",
+    "ps": "hay-mee-o'-ree-on",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2255')}>G2255</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5610')}>G5610</span>; media hora: <font color='%COLOR_BLUE%'>media hora.</font>"
+  },
+  {
+    "id": "G2257",
+    "ti": "hēmōn",
+    "le": "ἡμῶν",
+    "pl": "jemón",
+    "ps": "hay-mone'",
+    "df": "genitivo plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1473')}>G1473</span>; de nosotros: <font color='%COLOR_BLUE%'>nuestro.</font>"
+  },
+  {
+    "id": "G2258",
+    "ti": "ēn",
+    "le": "ἦν",
+    "pl": "jén",
+    "ps": "ane",
+    "df": "imperfecto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1510')}>G1510</span>; Yo (tú, etc.) estaba (estabas, estabamos): <font color='%COLOR_BLUE%'>(yo) era, estuviere, (tú) eras, estuvieres, fui, fuimos.</font>"
+  },
+  {
+    "id": "G2259",
+    "ti": "hēníka",
+    "le": "ἡνίκα",
+    "pl": "jeníka",
+    "ps": "hay-nee'-kah",
+    "df": "de afinidad incierta; en ese tiempo: <font color='%COLOR_BLUE%'>cuando.</font>"
+  },
+  {
+    "id": "G2260",
+    "ti": "ḗper",
+    "le": "ἤπερ",
+    "pl": "éper",
+    "ps": "ay'-per",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2228')}>G2228</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4007')}>G4007</span>; que de todo (o que tal vez, eso en verdad): <font color='%COLOR_BLUE%'>que.</font>"
+  },
+  {
+    "id": "G2261",
+    "ti": "ḗpios",
+    "le": "ἤπιος",
+    "pl": "épios",
+    "ps": "ay'-pee-os",
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2031')}>G2031</span>; propiamente afable, i.e. suave o bondadoso: <font color='%COLOR_BLUE%'>amable, tierno.</font>"
+  },
+  {
+    "id": "G2262",
+    "ti": "Ḗr",
+    "le": "Ἤρ",
+    "pl": "ér",
+    "ps": "ayr",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6147')}>H6147</span>]; Er, un israelita: <font color='%COLOR_BLUE%'>Er.</font>"
+  },
+  {
+    "id": "G2263",
+    "ti": "ḗremos",
+    "le": "ἤρεμος",
+    "pl": "éremos",
+    "ps": "ay'-rem-os",
+    "df": "tal vez por transposición de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2048')}>G2048</span> (mediante la idea de quietud); tranquilo: <font color='%COLOR_BLUE%'>quieto.</font>"
+  },
+  {
+    "id": "G2264",
+    "ti": "Hērṓdēs",
+    "le": "Ἡρώδης",
+    "pl": "Jeródes",
+    "ps": "hay-ro'-dace",
+    "df": "compuesto de <b>ἥρως</b> <font color='%COLOR_PURPLE%'>jéros</font> («héroe»)  y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1491')}>G1491</span>; heroico; Herodes, nombre de cuatro reyes judíos: <font color='%COLOR_BLUE%'>Herodes.</font>"
+  },
+  {
+    "id": "G2265",
+    "ti": "Hērōdianoí",
+    "le": "Ἡρωδιανοί",
+    "pl": "Jerodianoí",
+    "ps": "hay-ro-dee-an-oy'",
+    "df": "plural de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2264')}>G2264</span>; herodianos, i.e. partidarios de Herodes: <font color='%COLOR_BLUE%'>herodianos.</font>"
+  },
+  {
+    "id": "G2266",
+    "ti": "Hērōdiás",
+    "le": "Ἡρωδιάς",
+    "pl": "Jerodiás",
+    "ps": "hay-ro-dee-as'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2264')}>G2264</span>; Herodías, mujer de la familia de Herodes: <font color='%COLOR_BLUE%'>Herodías.</font>"
+  },
+  {
+    "id": "G2267",
+    "ti": "Hērōdíōn",
+    "le": "Ἡρωδίων",
+    "pl": "Jerodíon",
+    "ps": "hay-ro-dee'-ohn",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2264')}>G2264</span>; Herodión, un cristiano: <font color='%COLOR_BLUE%'>Herodión.</font>"
+  },
+  {
+    "id": "G2268",
+    "ti": "Hēsaḯas",
+    "le": "Ἡσαΐας",
+    "pl": "Jesaías",
+    "ps": "hay-sah-ee'-as",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3470')}>H3470</span>]; Jesaías, un israelita: <font color='%COLOR_BLUE%'>Isaías.</font>"
+  },
+  {
+    "id": "G2269",
+    "ti": "Ēsaû",
+    "le": "Ἠσαῦ",
+    "pl": "Esaú",
+    "ps": "ay-sow'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6215')}>H6215</span>]; Esaú, un idumeo: <font color='%COLOR_BLUE%'>Esaú.</font>"
+  },
+  {
+    "id": "G2270",
+    "ti": "hēsycházō",
+    "le": "ἡσυχάζω",
+    "pl": "jesujázo",
+    "ps": "hay-soo-khad'-zo",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2272')}>G2272</span>; mantener quieto (intransitivamente), i.e. abstenerse de trabajo, entremeterse o hablar: <font color='%COLOR_BLUE%'>callar, descansar, desistir, tranquilidad.</font>"
+  },
+  {
+    "id": "G2271",
+    "ti": "hēsychía",
+    "le": "ἡσυχία",
+    "pl": "jesujía",
+    "ps": "hay-soo-khee'-ah",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2272')}>G2272</span>: <font color='%COLOR_BLUE%'>silencio, sosegadamente.</font>"
+  },
+  {
+    "id": "G2272",
+    "ti": "hēsýchios",
+    "le": "ἡσύχιος",
+    "pl": "jesújios",
+    "ps": "hay-soo'-khee-os",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2272')}>G2272</span>; (como sustantivo) quietud, i.e. desistir de actividad o lenguaje: <font color='%COLOR_BLUE%'>apacible, reposadamente.</font>"
+  },
+  {
+    "id": "G2273",
+    "ti": "ḗtoi",
+    "le": "ἤτοι",
+    "pl": "étoi",
+    "ps": "ay'-toy",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2228')}>G2228</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5104')}>G5104</span>; cualquiera en verdad: <font color='%COLOR_BLUE%'>sea.</font>"
+  },
+  {
+    "id": "G2274",
+    "ti": "hēttáō",
+    "le": "ἡττάω",
+    "pl": "jettáo",
+    "ps": "hayt-tah'-o",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2276')}>G2276</span>; empeorar, i.e. desterrar (literalmente o figurativamente); por implicación calificar más bajo: <font color='%COLOR_BLUE%'>menos, vencido.</font>"
+  },
+  {
+    "id": "G2275",
+    "ti": "hḗttēma",
+    "le": "ἥττημα",
+    "pl": "jéttema",
+    "ps": "hayt'-tay-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2272')}>G2272</span>; deterioro, i.e. (objectivamente) fracaso o (subjectivamente) pérdida: <font color='%COLOR_BLUE%'>falta.</font>"
+  },
+  {
+    "id": "G2276",
+    "ti": "hḗtton",
+    "le": "ἥττον",
+    "pl": "jétton",
+    "ps": "hate'-ton",
+    "df": "neutro de Compare de <b>ἧκα</b> <font color='%COLOR_PURPLE%'>jéka</font> (ligeramente)  usado por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2256')}>G2256</span>; peor (como sustantivo); por implicación menos (como adverbio): <font color='%COLOR_BLUE%'>menos, peor.</font>"
+  },
+  {
+    "id": "G2277",
+    "ti": "ḗtō",
+    "le": "ἤτω",
+    "pl": "éto",
+    "ps": "ay'-to",
+    "df": "tercera persona singular imperativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1510')}>G1510</span>; déjelo: <font color='%COLOR_BLUE%'>vaya.</font>"
+  },
+  {
+    "id": "G2278",
+    "ti": "ēchéō",
+    "le": "ἠχέω",
+    "pl": "ejéo",
+    "ps": "ay-kheh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2279')}>G2279</span>; hacer ruido fuerte, i.e. reverberar: <font color='%COLOR_BLUE%'>bramido.</font>"
+  },
+  {
+    "id": "G2279",
+    "ti": "ēchos",
+    "le": "ἦχος",
+    "pl": "éjos",
+    "ps": "ay'-khos",
+    "df": "de afinidad incierta; ruido fuerte o confuso («eco»), i.e. rugir; figurativamente rumor: <font color='%COLOR_BLUE%'>estruendo, fama, sonido.</font>"
+  },
+  {
+    "id": "G2280",
+    "ti": "Thaddaîos",
+    "le": "Θαδδαῖος",
+    "pl": "Dsaddaios",
+    "ps": "thad-dah'-yos",
+    "df": "de origen incierto; Tadeo, uno de los apóstoles: <font color='%COLOR_BLUE%'>Tadeo.</font>"
+  },
+  {
+    "id": "G2281",
+    "ti": "thálassa",
+    "le": "θάλασσα",
+    "pl": "dsálassa",
+    "ps": "thal'-as-sah",
+    "df": "probablemente prolongado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G251')}>G251</span>; mar (generalmente o específicamente): <font color='%COLOR_BLUE%'>mar.</font>"
+  },
+  {
+    "id": "G2282",
+    "ti": "thálpō",
+    "le": "θάλπω",
+    "pl": "dsálpo",
+    "ps": "thal'-po",
+    "df": "semejante a <b>θάλλω</b> <font color='%COLOR_PURPLE%'>dsálo</font> (calentar); empollar, i.e. (figurativamente) promover, fomentar: <font color='%COLOR_BLUE%'>ternura, cuidar.</font>"
+  },
+  {
+    "id": "G2283",
+    "ti": "Thámar",
+    "le": "Θάμαρ",
+    "pl": "Dsámar",
+    "ps": "tham'-ar",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8559')}>H8559</span>]; Tamar, una israelita: <font color='%COLOR_BLUE%'>Tamar.</font>"
+  },
+  {
+    "id": "G2284",
+    "ti": "thambéō",
+    "le": "θαμβέω",
+    "pl": "dsambéo",
+    "ps": "tham-beh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2285')}>G2285</span>; dejar estupefacto (con sorpresa), i.e. dejar atónito: <font color='%COLOR_BLUE%'>asombrar, temeroso.</font>"
+  },
+  {
+    "id": "G2285",
+    "ti": "thámbos",
+    "le": "θάμβος",
+    "pl": "dsámbos",
+    "ps": "tham'-bos",
+    "df": "semejante a un obsoleto <b>τάφω</b> <font color='%COLOR_PURPLE%'>táfo</font> (dejar atónito); estupefacción (por sorpresa), i.e. aturdimiento: <font color='%COLOR_BLUE%'>temor, apoderarse (de temor), asombro, maravillarse.</font>"
+  },
+  {
+    "id": "G2286",
+    "ti": "thanásimos",
+    "le": "θανάσιμος",
+    "pl": "dsanásimos",
+    "ps": "than-as'-ee-mos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2288')}>G2288</span>; fatal, i.e. venenoso: <font color='%COLOR_BLUE%'>mortífera.</font>"
+  },
+  {
+    "id": "G2287",
+    "ti": "thanatḗphoros",
+    "le": "θανατήφορος",
+    "pl": "dsanatéforos",
+    "ps": "than-at-ay'-for-os",
+    "df": "de (la forma femenino de) <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2288')}>G2288</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span>; mortal, i.e. fatal: <font color='%COLOR_BLUE%'>mortal.</font>"
+  },
+  {
+    "id": "G2288",
+    "ti": "thánatos",
+    "le": "θάνατος",
+    "pl": "dsánatos",
+    "ps": "than'-at-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2348')}>G2348</span>; (propiamente adjetivo usado como sustantivo) muerte (literalmente o figurativamente): <font color='%COLOR_BLUE%'>mortal, mortandad, muerte, muerto, -a.</font>"
+  },
+  {
+    "id": "G2289",
+    "ti": "thanatóō",
+    "le": "θανατόω",
+    "pl": "dsanatóo",
+    "ps": "than-at-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2288')}>G2288</span>; matar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>entregar (a muerte), hacer (morir), matar, morir.</font><p></p><b>θάνω</b> <font color='%COLOR_PURPLE%'>dsáno.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2348')}>G2348</span>."
+  },
+  {
+    "id": "G2290",
+    "ti": "tháptō",
+    "le": "θάπτω",
+    "pl": "dsápto",
+    "ps": "thap'-to",
+    "df": "verbo primario; celebrar ritos fúnebres, i.e. enterrar: <font color='%COLOR_BLUE%'>enterrar, sepultar.</font>"
+  },
+  {
+    "id": "G2291",
+    "ti": "Thára",
+    "le": "Θάρα",
+    "pl": "Dsára",
+    "ps": "thar'-ah",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8646')}>H8646</span>]; Taré, padre de Abraham: <font color='%COLOR_BLUE%'>Taré.</font>"
+  },
+  {
+    "id": "G2292",
+    "ti": "tharrhéō",
+    "le": "θαῤῥέω",
+    "pl": "dsarréo",
+    "ps": "thar-hreh'-o",
+    "df": "otra forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2293')}>G2293</span>; ejercer valor: <font color='%COLOR_BLUE%'>confiadamente, confiado, confianza, confiar, osado.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5111')}>H5111</span>."
+  },
+  {
+    "id": "G2293",
+    "ti": "tharséō",
+    "le": "θαρσέω",
+    "pl": "dsarséo",
+    "ps": "thar-seh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2294')}>G2294</span>; tener valor: <font color='%COLOR_BLUE%'>ánimo, confianza, confiar.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2292')}>H2292</span>."
+  },
+  {
+    "id": "G2294",
+    "ti": "thársos",
+    "le": "θάρσος",
+    "pl": "dsársos",
+    "ps": "thar'-sos",
+    "df": "afín (por transposición) a <b>θράσος</b> <font color='%COLOR_PURPLE%'>dsrásos</font> (atrevido): intrepidez (subj): <font color='%COLOR_BLUE%'>aliento.</font>"
+  },
+  {
+    "id": "G2295",
+    "ti": "thaûma",
+    "le": "θαῦμα",
+    "pl": "dsaúma",
+    "ps": "thos'-mah",
+    "df": "aparentemente de una forma de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2300')}>G2300</span>; maravillar (propiamente concretamente; pero por implicación abstractamente): <font color='%COLOR_BLUE%'>asombro.</font>"
+  },
+  {
+    "id": "G2296",
+    "ti": "thaumázō",
+    "le": "θαυμάζω",
+    "pl": "dsaumázo",
+    "ps": "thou-mad'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2295')}>G2295</span>; maravillar; por implicación admirar: <font color='%COLOR_BLUE%'>extrañar, maravillarse, admirar, adular, asombrar, asombro, sorprender.</font>"
+  },
+  {
+    "id": "G2297",
+    "ti": "thaumásios",
+    "le": "θαυμάσιος",
+    "pl": "dsaumásios",
+    "ps": "thow-mas'-ee-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2295')}>G2295</span>; maravilloso, i.e. (neutro como sustantivo) milagro: <font color='%COLOR_BLUE%'>maravilla.</font>"
+  },
+  {
+    "id": "G2298",
+    "ti": "thaumastós",
+    "le": "θαυμαστός",
+    "pl": "dsaumastós",
+    "ps": "thow-mas-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2296')}>G2296</span>; maravillado por, i.e. (por implicación) maravilloso: <font color='%COLOR_BLUE%'>maravilla, maravilloso, admirable.</font>"
+  },
+  {
+    "id": "G2299",
+    "ti": "theá",
+    "le": "θεά",
+    "pl": "dseá",
+    "ps": "theh-ah'",
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span>; deidad femenina: <font color='%COLOR_BLUE%'>diosa.</font>"
+  },
+  {
+    "id": "G2300",
+    "ti": "theáomai",
+    "le": "θεάομαι",
+    "pl": "dseáomai",
+    "ps": "theh-ah'-om-ahee",
+    "df": "forma prolongada de un verbo primario; mirar de cerca de, i.e. (por implicación) percibir (literalmente o figurativamente); por extensión visitar: <font color='%COLOR_BLUE%'>contemplar, ver.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3700')}>G3700</span>."
+  },
+  {
+    "id": "G2301",
+    "ti": "theatrízō",
+    "le": "θεατρίζω",
+    "pl": "dseatrízo",
+    "ps": "theh-at-rid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2302')}>G2302</span>; exponer como espectáculo: <font color='%COLOR_BLUE%'>hacer espectáculo.</font>"
+  },
+  {
+    "id": "G2302",
+    "ti": "théatron",
+    "le": "θέατρον",
+    "pl": "dséatron",
+    "ps": "theh'-at-ron",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2300')}>G2300</span>; lugar para espectáculo público («teatro»), i.e., salón de auditorio general; por implicación el espectáculo mismo (figurativamente): <font color='%COLOR_BLUE%'>espectáculo, teatro.</font>"
+  },
+  {
+    "id": "G2303",
+    "ti": "theîon",
+    "le": "θεῖον",
+    "pl": "dseíon",
+    "ps": "thi'-on",
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2304')}>G2304</span> (en su sentido origen de centellear); azufre: <font color='%COLOR_BLUE%'>azufre.</font>"
+  },
+  {
+    "id": "G2304",
+    "ti": "theîos",
+    "le": "θεῖος",
+    "pl": "dseíos",
+    "ps": "thi'-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span>; parecido a dios (neutro como sustantivo, divinidad): <font color='%COLOR_BLUE%'>divinidad, divino.</font>"
+  },
+  {
+    "id": "G2305",
+    "ti": "theiótēs",
+    "le": "θειότης",
+    "pl": "dseiótes",
+    "ps": "thi-ot'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2304')}>G2304</span>; divinidad (abstractamente): <font color='%COLOR_BLUE%'>deidad.</font>"
+  },
+  {
+    "id": "G2306",
+    "ti": "theiṓdēs",
+    "le": "θειώδης",
+    "pl": "dseiódes",
+    "ps": "thi-o'-dace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2303')}>G2303</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1491')}>G1491</span>; parecido a azufre, i.e. sulfuroso: <font color='%COLOR_BLUE%'>azufre.</font><p></p><b>θελέω</b> <font color='%COLOR_PURPLE%'>dseléo.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2309')}>G2309</span>."
+  },
+  {
+    "id": "G2307",
+    "ti": "thélēma",
+    "le": "θέλημα",
+    "pl": "dsélema",
+    "ps": "thel'-ay-mah",
+    "df": "de la forma prolongada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2309')}>G2309</span>; determinación (propiamente la cosa), i.e., (activamente) elección, alternativa (específicamente propósito, decreto; abstractamente voluntad)  o (pasivamente) inclinación: <font color='%COLOR_BLUE%'>querer, voluntad, agradar.</font>"
+  },
+  {
+    "id": "G2308",
+    "ti": "thélēsis",
+    "le": "θέλησις",
+    "pl": "dsélesis",
+    "ps": "thel'-ay-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2309')}>G2309</span>; determinación (propiamente el acto), i.e. opción: <font color='%COLOR_BLUE%'>voluntad.</font>"
+  },
+  {
+    "id": "G2309",
+    "ti": "thélō",
+    "le": "θέλω",
+    "pl": "dsélo",
+    "ps": "thel'-o",
+    "df": "o <b>ἐθέλω</b> <font color='%COLOR_PURPLE%'>edsélo</font>; en ciertos tiempos <b>θελέω</b> <font color='%COLOR_PURPLE%'>dseléo</font>; y <b>ἐθελέω</b> <font color='%COLOR_PURPLE%'>edseléo</font> que son de otra manera obsoleto; aparentemente fortificado de la forma alternada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>; para determinar (como opción de la voz activa desde impulso subjectivo; en tanto que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1014')}>G1014</span> propiamente denota más bien una aquiescencia de la voz pasiva en consideraciones objectivas), i.e. escoger o preferir (literalmente o figurativamente); por implicación desear, i.e., inclinarse a (a veces adverbio alegremente); impersonalmente por el tiempo futuro, estar a punto de; por el hebreo deleitarse en: <font color='%COLOR_BLUE%'>preferir, querer, voluntad, voluntariamente, voluntario, desear, gustar, gusto.</font>"
+  },
+  {
+    "id": "G2310",
+    "ti": "themélios",
+    "le": "θεμέλιος",
+    "pl": "dsemélios",
+    "ps": "them-el'-ee-os",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; algo derribado, i.e., derribar (un edificio, etc.), (literalmente o figurativamente): <font color='%COLOR_BLUE%'>fundamento, cimiento.</font>"
+  },
+  {
+    "id": "G2311",
+    "ti": "themelióō",
+    "le": "θεμελιόω",
+    "pl": "dsemelióo",
+    "ps": "them-el-ee-o'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2310')}>G2310</span>; colocar una base para, i.e. (literalmente) erigir, o (figurativamente) consolidar: <font color='%COLOR_BLUE%'>cimentar, fundar.</font>"
+  },
+  {
+    "id": "G2312",
+    "ti": "theodídaktos",
+    "le": "θεοδίδακτος",
+    "pl": "dseodídaktos",
+    "ps": "theh-od-id'-ak-tos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1321')}>G1321</span>; divinamente instruido: <font color='%COLOR_BLUE%'>aprender de Dios.</font>"
+  },
+  {
+    "id": "G2313",
+    "ti": "theomachéō",
+    "le": "θεομαχέω",
+    "pl": "dseomajéo",
+    "ps": "theh-o-makh-eh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2314')}>G2314</span>; resistir a la deidad: <font color='%COLOR_BLUE%'>resistir a Dios.</font>"
+  },
+  {
+    "id": "G2314",
+    "ti": "theomáchos",
+    "le": "θεομάχος",
+    "pl": "dseómajos",
+    "ps": "theh-om'-akh-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3164')}>G3164</span>; oponente de la deidad: <font color='%COLOR_BLUE%'>luchar contra Dios.</font>"
+  },
+  {
+    "id": "G2315",
+    "ti": "theópneustos",
+    "le": "θεόπνευστος",
+    "pl": "dseópneustos",
+    "ps": "theh-op'-nyoo-stos",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span> y de un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4154')}>G4154</span>; divinamente soplado en: <font color='%COLOR_BLUE%'>inspirar.</font>"
+  },
+  {
+    "id": "G2316",
+    "ti": "theós",
+    "le": "θεός",
+    "pl": "dseós",
+    "ps": "theh'-os",
+    "df": "de afinidad incierta; deidad, específicamente (con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3588')}>G3588</span>) la Divinidad suprema; figurativamente magistrado; de hebreo muy: <font color='%COLOR_BLUE%'>Señor, Dios.</font>"
+  },
+  {
+    "id": "G2317",
+    "ti": "theosébeia",
+    "le": "θεοσέβεια",
+    "pl": "dseosébeia",
+    "ps": "theh-os-eb'-i-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2318')}>G2318</span>; devoción, i.e., piedad: <font color='%COLOR_BLUE%'>piedad.</font>"
+  },
+  {
+    "id": "G2318",
+    "ti": "theosebḗs",
+    "le": "θεοσεβής",
+    "pl": "dseosebés",
+    "ps": "theh-os-eb-ace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4576')}>G4576</span>; reverente a Dios, i. e, piadoso: <font color='%COLOR_BLUE%'>temeroso de Dios.</font>"
+  },
+  {
+    "id": "G2319",
+    "ti": "theostygḗs",
+    "le": "θεοστυγής",
+    "pl": "dseostugés",
+    "ps": "theh-os-too-gace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4767')}>G4767</span>; que odia a Dios, i.e. impío: <font color='%COLOR_BLUE%'>aborrecedor de Dios.</font>"
+  },
+  {
+    "id": "G2320",
+    "ti": "theótēs",
+    "le": "θεότης",
+    "pl": "dseótes",
+    "ps": "theh-ot'-ace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span>; divinidad (abstractamente): <font color='%COLOR_BLUE%'>deidad.</font>"
+  },
+  {
+    "id": "G2321",
+    "ti": "Theóphilos",
+    "le": "Θεόφιλος",
+    "pl": "Dseófilos",
+    "ps": "theh-of'-il-os",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2316')}>G2316</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5384')}>G5384</span>; amigo de Dios; Teófilo, un cristiano: <font color='%COLOR_BLUE%'>Teófilo.</font>"
+  },
+  {
+    "id": "G2322",
+    "ti": "therapeía",
+    "le": "θεραπεία",
+    "pl": "dserapeía",
+    "ps": "ther-ap-i'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2323')}>G2323</span>; atención, asistencia (específicamente médica, i.e. cura); figurativamente y colec. doméstico: <font color='%COLOR_BLUE%'>sanidad, casa.</font>"
+  },
+  {
+    "id": "G2323",
+    "ti": "therapeúō",
+    "le": "θεραπεύω",
+    "pl": "dserapeúo",
+    "ps": "ther-ap-yoo'-o",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2324')}>G2324</span>; servir servilmente, i.e. (figurativamente) adorar (a Dios), o (específicamente) aliviar (de enfermedad): <font color='%COLOR_BLUE%'>curar, honrar, sanar.</font>"
+  },
+  {
+    "id": "G2324",
+    "ti": "therápōn",
+    "le": "θεράπων",
+    "pl": "dserápon",
+    "ps": "ther-ap'-ohn",
+    "df": "aparentemente participio de un derivado de otra manera obsoleto de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2330')}>G2330</span>; servidor de baja categoría (como si alegrando): <font color='%COLOR_BLUE%'>siervo.</font>"
+  },
+  {
+    "id": "G2325",
+    "ti": "therízō",
+    "le": "θερίζω",
+    "pl": "dserízo",
+    "ps": "ther-id'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2330')}>G2330</span> (en el sentido de la cosecha); cosechar: <font color='%COLOR_BLUE%'>segar.</font>"
+  },
+  {
+    "id": "G2326",
+    "ti": "therismós",
+    "le": "θερισμός",
+    "pl": "dserismós",
+    "ps": "ther-is-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2325')}>G2325</span>; segar, i.e. la siega: <font color='%COLOR_BLUE%'>siega, mies.</font>"
+  },
+  {
+    "id": "G2327",
+    "ti": "theristḗs",
+    "le": "θεριστής",
+    "pl": "dseristés",
+    "ps": "ther-is-tace'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2325')}>G2325</span>; segador: <font color='%COLOR_BLUE%'>segador.</font>"
+  },
+  {
+    "id": "G2328",
+    "ti": "thermaínō",
+    "le": "θερμαίνω",
+    "pl": "dsermaíno",
+    "ps": "ther-mah'-ee-no",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2329')}>G2329</span>; calentar(se): <font color='%COLOR_BLUE%'>calentar.</font>"
+  },
+  {
+    "id": "G2329",
+    "ti": "thérmē",
+    "le": "θέρμη",
+    "pl": "dsérme",
+    "ps": "ther'-may",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2330')}>G2330</span>; calor: <font color='%COLOR_BLUE%'>calor.</font>"
+  },
+  {
+    "id": "G2330",
+    "ti": "théros",
+    "le": "θέρος",
+    "pl": "dséros",
+    "ps": "ther'-os",
+    "df": "de un primario <b>θέρω</b> d<font color='%COLOR_PURPLE%'>séro</font> (calentar); propiamente calor, i.e. verano: <font color='%COLOR_BLUE%'>verano.</font>"
+  },
+  {
+    "id": "G2331",
+    "ti": "Thessalonikeús",
+    "le": "Θεσσαλονικεύς",
+    "pl": "Dsessalonikeús",
+    "ps": "thes-sal-on-ik-yoos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2332')}>G2332</span>; tesalonicense, i.e. habit. de Tesalónica: <font color='%COLOR_BLUE%'>(de) Tesalónica, tesalonicense.</font>"
+  },
+  {
+    "id": "G2332",
+    "ti": "Thessaloníkē",
+    "le": "Θεσσαλονίκη",
+    "pl": "Dsessaloníke",
+    "ps": "thes-sal-on-ee'-kay",
+    "df": "de <b>Θεσσαλός</b> <font color='%COLOR_PURPLE%'>Dsesalós</font> (un tesalonicense)  y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3529')}>G3529</span>; tesalonicense, lugar en Asia Menor: <font color='%COLOR_BLUE%'>Tesalónica.</font>"
+  },
+  {
+    "id": "G2333",
+    "ti": "Theudâs",
+    "le": "Θευδᾶς",
+    "pl": "Dseudás",
+    "ps": "thyoo-das'",
+    "df": "de origen incierto; Teudas, un israelita: <font color='%COLOR_BLUE%'>Teudas.</font><p></p><b>θέω</b> <font color='%COLOR_PURPLE%'>Téo.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>."
+  },
+  {
+    "id": "G2334",
+    "ti": "theōréō",
+    "le": "θεωρέω",
+    "pl": "dseoréo",
+    "ps": "theh-o-reh'-o",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2300')}>G2300</span> (tal vez por ad. de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3708')}>G3708</span>); ser un espectador de i.e., discernir, (literalmente, figurativamente [experiencia] o intensivo [reconocimiento]: <font color='%COLOR_BLUE%'>considerar, mirar, observar, parecer, ver.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3700')}>H3700</span>."
+  },
+  {
+    "id": "G2335",
+    "ti": "theōría",
+    "le": "θεωρία",
+    "pl": "dseoría",
+    "ps": "theh-o-ree'-ah",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2334')}>G2334</span>; espectadores, i.e. (concretamente) espectáculo: <font color='%COLOR_BLUE%'>espectáculo.</font>"
+  },
+  {
+    "id": "G2336",
+    "ti": "thḗkē",
+    "le": "θήκη",
+    "pl": "dséke",
+    "ps": "thay'-kay",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; receptáculo, i.e. vaina (de espada): <font color='%COLOR_BLUE%'>vaina.</font>"
+  },
+  {
+    "id": "G2337",
+    "ti": "thēlázō",
+    "le": "θηλάζω",
+    "pl": "dselázo",
+    "ps": "thay-lad'-zo",
+    "df": "de <b>θηλή</b> <font color='%COLOR_PURPLE%'>dselé</font> (pezón); mamar, (por implicación) mamar, chupar: <font color='%COLOR_BLUE%'>criar, mamar.</font>"
+  },
+  {
+    "id": "G2338",
+    "ti": "thēlys",
+    "le": "θῆλυς",
+    "pl": "dsélus",
+    "ps": "thay'-loos",
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2337')}>G2337</span>; mujer, femenina: <font color='%COLOR_BLUE%'>hembra, mujer.</font>"
+  },
+  {
+    "id": "G2339",
+    "ti": "thḗra",
+    "le": "θήρα",
+    "pl": "dséra",
+    "ps": "thay'-rah",
+    "df": "de <b>θήρ</b> <font color='%COLOR_PURPLE%'>dsér</font>; (animal salvaje, como de caza), cacería, i.e. (figurativamente) destrucción: <font color='%COLOR_BLUE%'>trampa.</font>"
+  },
+  {
+    "id": "G2340",
+    "ti": "thēreúō",
+    "le": "θηρεύω",
+    "pl": "dsereúo",
+    "ps": "thay-ryoo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2339')}>G2339</span>; cazar (un animal), i.e. (figurativamente) quejarse de: <font color='%COLOR_BLUE%'>cazar.</font>"
+  },
+  {
+    "id": "G2341",
+    "ti": "thēriomachéō",
+    "le": "θηριομαχέω",
+    "pl": "dseriomajéo",
+    "ps": "thay-ree-om-akh-eh'-o",
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2342')}>G2342</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3164')}>G3164</span>; ser uno que lucha contra bestias (en el espectáculo de gladiadores), i.e. (figurativamente) encuentro (con hombres furiosos): <font color='%COLOR_BLUE%'>batallar con fieras.</font>"
+  },
+  {
+    "id": "G2342",
+    "ti": "thēríon",
+    "le": "θηρίον",
+    "pl": "dseríon",
+    "ps": "thay-ree'-on",
+    "df": "diminutivo de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2339')}>G2339</span>; animal peligroso: <font color='%COLOR_BLUE%'>bestia, fiero, víbora.</font>"
+  },
+  {
+    "id": "G2343",
+    "ti": "thēsaurízō",
+    "le": "θησαυρίζω",
+    "pl": "dsesaurízo",
+    "ps": "thay-sow-rid'-zo",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2344')}>G2344</span>; amasar o reservar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>tesoro, guardar, hacer (tesoros), acumular, atesorar.</font>"
+  },
+  {
+    "id": "G2344",
+    "ti": "thēsaurós",
+    "le": "θησαυρός",
+    "pl": "dsesaurós",
+    "ps": "thay-sow-ros'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; depósito, i.e. riqueza (literalmente o figurativamente): <font color='%COLOR_BLUE%'>tesoro.</font>"
+  },
+  {
+    "id": "G2345",
+    "ti": "thingánō",
+    "le": "θιγγάνω",
+    "pl": "dsingáno",
+    "ps": "thing-gan'-o",
+    "df": "forma prolongada de un primario obsoleto <b>θίγω</b> <font color='%COLOR_PURPLE%'>dsígo</font> (tocar con los dedos); manipular, i.e. tener que ver con; por implicación lastimar, herir: <font color='%COLOR_BLUE%'>tocar.</font>"
+  },
+  {
+    "id": "G2346",
+    "ti": "thlíbō",
+    "le": "θλίβω",
+    "pl": "dslíbo",
+    "ps": "thlee'-bo",
+    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5147')}>G5147</span>; amontonar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>oprimir, tribulación, afligir, angosto, angustiar, atribular.</font>"
+  },
+  {
+    "id": "G2347",
+    "ti": "thlîpsis",
+    "le": "θλῖψις",
+    "pl": "dslípsis",
+    "ps": "thlip'-sis",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2346')}>G2346</span>; presión (literalmente o figurativamente): <font color='%COLOR_BLUE%'>estrechez, aflicción, angustia, atribular, persecución, tribulación.</font>"
+  },
+  {
+    "id": "G2348",
+    "ti": "thnḗskō",
+    "le": "θνήσκω",
+    "pl": "dsnésko",
+    "ps": "thnay'-sko",
+    "df": "forma fortificada de un primario más sencillo <b>θάνω</b> <font color='%COLOR_PURPLE%'>dsáno</font> (que se usa solo por él en ciertos tiempos); morir (literalmente o figurativamente): <font color='%COLOR_BLUE%'>difunto, morir, muerto.</font>"
+  },
+  {
+    "id": "G2349",
+    "ti": "thnētós",
+    "le": "θνητός",
+    "pl": "dsnetós",
+    "ps": "thnay-tos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2348')}>G2348</span>; culpable de muerte: <font color='%COLOR_BLUE%'>mortal.</font>"
+  },
+  {
+    "id": "G2350",
+    "ti": "thorybéō",
+    "le": "θορυβέω",
+    "pl": "dsorubéo",
+    "ps": "thor-oo-beh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2351')}>G2351</span>; estar en tumulto, i.e. perturbar, clamor: <font color='%COLOR_BLUE%'>alarmar, alborotar, hacer alboroto.</font>"
+  },
+  {
+    "id": "G2351",
+    "ti": "thórybos",
+    "le": "θόρυβος",
+    "pl": "dsórubos",
+    "ps": "thor'-oo-bos",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2360')}>G2360</span>; disturbio: <font color='%COLOR_BLUE%'>alboroto.</font>"
+  },
+  {
+    "id": "G2352",
+    "ti": "thraúō",
+    "le": "θραύω",
+    "pl": "dsraúo",
+    "ps": "throw'-o",
+    "df": "verbo primario; triturar: <font color='%COLOR_BLUE%'>oprimir.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4486')}>H4486</span>."
+  },
+  {
+    "id": "G2353",
+    "ti": "thrémma",
+    "le": "θρέμμα",
+    "pl": "dsrémma",
+    "ps": "threm'-mah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5142')}>G5142</span>; ganado (como criado en una granja): <font color='%COLOR_BLUE%'>ganado.</font>"
+  },
+  {
+    "id": "G2354",
+    "ti": "thrēnéō",
+    "le": "θρηνέω",
+    "pl": "dsrenéo",
+    "ps": "thray-neh'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2355')}>G2355</span>; lamentar: <font color='%COLOR_BLUE%'>hacer lamentación, lamentar.</font>"
+  },
+  {
+    "id": "G2355",
+    "ti": "thrēnos",
+    "le": "θρῆνος",
+    "pl": "dsrénos",
+    "ps": "thray'-nos",
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2360')}>G2360</span>; lamentación: <font color='%COLOR_BLUE%'>lamentación.</font>"
+  },
+  {
+    "id": "G2356",
+    "ti": "thrēskeía",
+    "le": "θρησκεία",
+    "pl": "dsreskeía",
+    "ps": "thrace-ki'-ah",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2357')}>G2357</span>; observación ceremonial: <font color='%COLOR_BLUE%'>religión, culto.</font>"
+  },
+  {
+    "id": "G2357",
+    "ti": "thrēskós",
+    "le": "θρησκός",
+    "pl": "dsréskos",
+    "ps": "thrace'-kos",
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2360')}>G2360</span>; ceremonioso en la adoración (como demostrativo), i.e., piadoso: <font color='%COLOR_BLUE%'>religioso.</font>"
+  },
+  {
+    "id": "G2358",
+    "ti": "thriambeúō",
+    "le": "θριαμβεύω",
+    "pl": "dsriambeúo",
+    "ps": "three-am-byoo'-o",
+    "df": "de un compuesto prolongado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2360')}>G2360</span>; y derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G680')}>G680</span> (significa yámbico ruidoso, cantado en honor a Baco); hacer una procesión aclamatoria, i.e. (figurativamente) conquistar o (por hebraísmo) dar victoria: <font color='%COLOR_BLUE%'>triunfar, triunfo.</font>"
+  },
+  {
+    "id": "G2359",
+    "ti": "thríx",
+    "le": "θρίξ",
+    "pl": "dsríx",
+    "ps": "threeks",
+    "df": "generalmente <b>τριχός</b> <font color='%COLOR_PURPLE%'>tricós</font>, etc.; de derivación incierta; pelo, cabello: <font color='%COLOR_BLUE%'>cabello, pelo.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2864')}>H2864</span>."
+  },
+  {
+    "id": "G2360",
+    "ti": "throéō",
+    "le": "θροέω",
+    "pl": "dsroéo",
+    "ps": "thro-eh'-o",
+    "df": "de <b>θρέομαι</b> <font color='%COLOR_PURPLE%'>dsréomai</font> lamentar; clamor, i.e. (por implicación) aterrar: <font color='%COLOR_BLUE%'>turbar, conturbar.</font>"
+  },
+  {
+    "id": "G2361",
+    "ti": "thrómbos",
+    "le": "θρόμβος",
+    "pl": "dsrómbos",
+    "ps": "throm'-bos",
+    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5142')}>G5142</span> (en el sentido de espesar); coágulo, grumo: <font color='%COLOR_BLUE%'>gota.</font>"
+  },
+  {
+    "id": "G2362",
+    "ti": "thrónos",
+    "le": "θρόνος",
+    "pl": "dsrónos",
+    "ps": "thron'-os",
+    "df": "de <b>θράω</b> <font color='%COLOR_PURPLE%'>dsráo</font> (sentarse); asiento (destacado) («trono»); por implicación poder o (concretamente) potentado: <font color='%COLOR_BLUE%'>trono.</font>"
+  },
+  {
+    "id": "G2363",
+    "ti": "Thyáteira",
+    "le": "Θυάτειρα",
+    "pl": "Dsuáteira",
+    "ps": "thoo-at'-i-rah",
+    "df": "de derivación incierta; Tiatira, lugar en Asia Menor: <font color='%COLOR_BLUE%'>Tiatira.</font>"
+  },
+  {
+    "id": "G2364",
+    "ti": "thygátēr",
+    "le": "θυγάτηρ",
+    "pl": "dsugáter",
+    "ps": "thoo-gat'-air",
+    "df": "aparentemente palabra primaria; hija, o (por hebraísmo) descendiente (o habitante): <font color='%COLOR_BLUE%'>hija.</font>"
+  },
+  {
+    "id": "G2365",
+    "ti": "thygátrion",
+    "le": "θυγάτριον",
+    "pl": "dsugátrion",
+    "ps": "thoo-gat'-ree-on",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2364')}>G2364</span>; hijita: <font color='%COLOR_BLUE%'>hija.</font>"
+  },
+  {
+    "id": "G2366",
+    "ti": "thýella",
+    "le": "θύελλα",
+    "pl": "dsúella",
+    "ps": "thoo'-el-lah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2380')}>G2380</span> (en el sentido de soplar)  tormenta: <font color='%COLOR_BLUE%'>tempestad.</font>"
+  },
+  {
+    "id": "G2367",
+    "ti": "thýïnos",
+    "le": "θύϊνος",
+    "pl": "dsúinos",
+    "ps": "thoo'-ee-nos",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2380')}>G2380</span> (en el sentido de soplar; denotando un cierto árbol fragante); hecho de madera de cedro: <font color='%COLOR_BLUE%'>madera olorosa.</font>"
+  },
+  {
+    "id": "G2368",
+    "ti": "thymíama",
+    "le": "θυμίαμα",
+    "pl": "dsumíama",
+    "ps": "thoo-mee'-am-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2370')}>G2370</span>; aroma, i.e., polvo fragante quemado en el culto religioso.; por implicación el acto de quemar en sí mismo: <font color='%COLOR_BLUE%'>especias aromáticas, incienso.</font>"
+  },
+  {
+    "id": "G2369",
+    "ti": "thymiastḗrion",
+    "le": "θυμιαστήριον",
+    "pl": "dsumiastérion",
+    "ps": "thoo-mee-as-tay'-ree-on",
+    "df": "o <b>θυμιατήριον</b> <font color='%COLOR_PURPLE%'>dsumiatérion</font>; de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2370')}>G2370</span>; lugar de fumigación, i.e. altar del incienso (en el templo): <font color='%COLOR_BLUE%'>incensario.</font>"
+  },
+  {
+    "id": "G2370",
+    "ti": "thymiáō",
+    "le": "θυμιάω",
+    "pl": "dsumiáo",
+    "ps": "thoo-mee-ah'-o",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2380')}>G2380</span> (en el sentido de humear); fumigar, i.e. ofrecer humo aromático: <font color='%COLOR_BLUE%'>ofrecer incienso.</font>"
+  },
+  {
+    "id": "G2371",
+    "ti": "thymomachéō",
+    "le": "θυμομαχέω",
+    "pl": "dsumomajéo",
+    "ps": "thoo-mom-akh-eh'-o",
+    "df": "de un compuesto presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2372')}>G2372</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3164')}>G3164</span>; estar en una lucha furiosa, i.e. (figurativamente) estar exasperado: <font color='%COLOR_BLUE%'>enojar.</font>"
+  },
+  {
+    "id": "G2372",
+    "ti": "thymós",
+    "le": "θυμός",
+    "pl": "dsumós",
+    "ps": "thoo-mos'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2380')}>G2380</span>; pasión (como respirando fuerte): <font color='%COLOR_BLUE%'>furor, ira, ardor.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5590')}>G5590</span>."
+  },
+  {
+    "id": "G2373",
+    "ti": "thymóō",
+    "le": "θυμόω",
+    "pl": "dsumóo",
+    "ps": "tho-mo'-o",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2372')}>G2372</span>; poner en pasión, i.e. encolerizarse, enfurecerse: <font color='%COLOR_BLUE%'>enojar.</font>"
+  },
+  {
+    "id": "G2374",
+    "ti": "thýra",
+    "le": "θύρα",
+    "pl": "dsúra",
+    "ps": "thoo'-rah",
+    "df": "aparentemente de una palabra primaria; portal o entrada (el abrir o cerrar, literalmente o figurativamente): <font color='%COLOR_BLUE%'>entrada, puerta.</font>"
+  },
+  {
+    "id": "G2375",
+    "ti": "thyreós",
+    "le": "θυρεός",
+    "pl": "dsureós",
+    "ps": "thoo-reh-os'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2374')}>G2374</span>; escudo grande (como de forma de puerta): <font color='%COLOR_BLUE%'>escudo.</font>"
+  },
+  {
+    "id": "G2376",
+    "ti": "thyrís",
+    "le": "θυρίς",
+    "pl": "dsurís",
+    "ps": "thoo-rece'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2374')}>G2374</span>; apertura, i.e. ventana: <font color='%COLOR_BLUE%'>ventana.</font>"
+  },
+  {
+    "id": "G2377",
+    "ti": "thyrōrós",
+    "le": "θυρωρός",
+    "pl": "dsurorós",
+    "ps": "thoo-ro-ros'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2374')}>G2374</span>; y <b>οὖρος</b> <font color='%COLOR_PURPLE%'>oúros</font> (vigilante); portero: <font color='%COLOR_BLUE%'>portero.</font>"
+  },
+  {
+    "id": "G2378",
+    "ti": "thysía",
+    "le": "θυσία",
+    "pl": "dsusía",
+    "ps": "thoo-see'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2380')}>G2380</span>; sacrificio (el acto o la víctima, literalmente o figurativamente): <font color='%COLOR_BLUE%'>sacrificio.</font>"
+  },
+  {
+    "id": "G2379",
+    "ti": "thysiastḗrion",
+    "le": "θυσιαστήριον",
+    "pl": "dsusiastérion",
+    "ps": "thoo-see-as-tay'-ree-on",
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2378')}>G2378</span>; lugar de sacrificio, i.e. altar (específicamente o generalmente, literalmente o figurativamente): <font color='%COLOR_BLUE%'>altar.</font>"
+  },
+  {
+    "id": "G2380",
+    "ti": "thýō",
+    "le": "θύω",
+    "pl": "dsúo",
+    "ps": "thoo'-o",
+    "df": "verbo primario; propiamente ímpetu (respirar fuertemente, soplar, humear), i.e. (por implicación) sacrificar (propiamente por fuego, pero generalmente); por extensión inmolar (matar por cualquier propósito): <font color='%COLOR_BLUE%'>matar, sacrificar, sacrificio.</font>"
+  },
+  {
+    "id": "G2381",
+    "ti": "Thōmâs",
+    "le": "Θωμᾶς",
+    "pl": "Dsomás",
+    "ps": "tho-mas'",
+    "df": "de origen caldeo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8380')}>H8380</span>]; gemelo; Tomás, un cristiano: <font color='%COLOR_BLUE%'>Tomás.</font>"
+  },
+  {
+    "id": "G2382",
+    "ti": "thṓrax",
+    "le": "θώραξ",
+    "pl": "dsórax",
+    "ps": "tho'-rax",
+    "df": "de afinidad incierta; pecho («tórax»), i.e., (por implicación) coselete, faja: <font color='%COLOR_BLUE%'>coraza.</font>"
+  },
+  {
+    "id": "G2383",
+    "ti": "Iáeiros",
+    "le": "Ἰάειρος",
+    "pl": "Iáeiros",
+    "ps": "ee-ah'-i-ros",
+    "df": "o <b>Ἰάϊρος</b> <font color='%COLOR_PURPLE%'>Iáiros</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2971')}>H2971</span>]; Jairo, un israelita: <font color='%COLOR_BLUE%'>Jairo.</font>"
+  },
+  {
+    "id": "G2384",
+    "ti": "Iakṓb",
+    "le": "Ἰακώβ",
+    "pl": "Iakób",
+    "ps": "ee-ak-obe'",
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3290')}>H3290</span>]; Jacob, progenitor de los israelitas; también un isr,: <font color='%COLOR_BLUE%'>Jacob.</font>"
+  },
+  {
+    "id": "G2385",
+    "ti": "Iákōbos",
+    "le": "Ἰάκωβος",
+    "pl": "Iákobos",
+    "ps": "ee-ak'-o-bos",
+    "df": "lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2384')}>G2384</span> con pronunciación griega; Jacobo, nombre de tres israelitas: <font color='%COLOR_BLUE%'>Santiago, Jacobo.</font>"
+  },
+  {
+    "id": "G2386",
+    "ti": "íama",
+    "le": "ἴαμα",
+    "pl": "iama",
+    "ps": "ee'-am-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2390')}>G2390</span>; curar (el efecto): <font color='%COLOR_BLUE%'>sanar, sanidad.</font>"
+  },
+  {
+    "id": "G2387",
+    "ti": "Iambrēs",
+    "le": "Ἰαμβρῆς",
+    "pl": "Iambrés",
+    "ps": "ee-am-brace'",
+    "df": "de origen egipcio; Jambres, un egipcio: <font color='%COLOR_BLUE%'>Jambres.</font>"
+  },
+  {
+    "id": "G2388",
+    "ti": "Ianná",
+    "le": "Ἰαννά",
+    "pl": "Ianná",
+    "ps": "ee-an-nah'",
+    "df": "probablemente de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3238')}>H3238</span>]; Jana, un israelita: <font color='%COLOR_BLUE%'>Jana.</font>"
+  },
+  {
+    "id": "G2389",
+    "ti": "Iannēs",
+    "le": "Ἰαννῆς",
+    "pl": "Iannés",
+    "ps": "ee-an-nace'",
+    "df": "de origen egipcio; Janes, un egipcio: <font color='%COLOR_BLUE%'>Janes.</font>"
+  },
+  {
+    "id": "G2390",
+    "ti": "iáomai",
+    "le": "ἰάομαι",
+    "pl": "iáomai",
+    "ps": "ee-ah'-om-ahee",
+    "df": "voz media aparentemente de un verbo primario; cura (literalmente o figurativamente): <font color='%COLOR_BLUE%'>curar, sanar, sano.</font>"
+  },
+  {
+    "id": "G2391",
+    "ti": "Iáred",
+    "le": "Ἰάρεδ",
+    "pl": "Iáred",
+    "ps": "ee-ar'-ed",
+    "df": "o <b>Ἰάρετ</b> <font color='%COLOR_PURPLE%'>Iaret</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3382')}>H3382</span>]; Jared, un antediluviano: <font color='%COLOR_BLUE%'>Jared.</font>"
+  },
+  {
+    "id": "G2392",
+    "ti": "íasis",
+    "le": "ἴασις",
+    "pl": "íasis",
+    "ps": "ee'-as-is",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2390')}>G2390</span>; curar (el acto): <font color='%COLOR_BLUE%'>curación, sanar, sanidad.</font>"
+  },
+  {
+    "id": "G2393",
+    "ti": "íaspis",
+    "le": "ἴασπις",
+    "pl": "íaspis",
+    "ps": "ee'-as-pis",
+    "df": "probablemente de origen extranjero [Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3471')}>H3471</span>]; «jaspe», una gema: <font color='%COLOR_BLUE%'>jaspe.</font>"
+  },
+  {
+    "id": "G2394",
+    "ti": "Iásōn",
+    "le": "Ἰάσων",
+    "pl": "Iáson",
+    "ps": "ee-as'-oan",
+    "df": "participio activo futuro masculino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2390')}>G2390</span>; acerca de la cura; Jasón, un cristiano: <font color='%COLOR_BLUE%'>Jasón.</font>"
+  },
+  {
+    "id": "G2395",
+    "ti": "iatrós",
+    "le": "ἰατρός",
+    "pl": "iatrós",
+    "ps": "ee-at-ros'",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2390')}>G2390</span>; médico: <font color='%COLOR_BLUE%'>médico.</font>"
+  },
+  {
+    "id": "G2396",
+    "ti": "íde",
+    "le": "ἴδε",
+    "pl": "ide",
+    "ps": "id'-eh",
+    "df": "segunda persona singular imperativo activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1492')}>G1492</span>; usado como interjección para denotar sorpresa; ¡He aquí!: <font color='%COLOR_BLUE%'>mirar.</font>"
+  },
+  {
+    "id": "G2397",
+    "ti": "idéa",
+    "le": "ἰδέα",
+    "pl": "idéa",
+    "ps": "id-eh'-ah",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1492')}>G1492</span>; vista [Compare figurativamente «idea»]; i.e., aspecto: <font color='%COLOR_BLUE%'>aspecto.</font>"
+  },
+  {
+    "id": "G2398",
+    "ti": "ídios",
+    "le": "ἴδιος",
+    "pl": "ídios",
+    "ps": "id'-ee-os",
+    "df": "de afinidad incierta; pertinente a uno mismo, i.e. propio de uno; por implicación privado o separado: <font color='%COLOR_BLUE%'>(por su) lado, (su) casa, debido (orden), (vuestros) negocios, privado, propio, suyo.</font>"
+  },
+  {
+    "id": "G2399",
+    "ti": "idiṓtēs",
+    "le": "ἰδιώτης",
+    "pl": "idiótes",
+    "ps": "id-ee-o'-tace",
+    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2398')}>G2398</span>; persona privada, i.e. (por implicación) ignorante (Compare «idiota»): <font color='%COLOR_BLUE%'>simple oyente, tosco, indocto.</font>"
+  },
+  {
+    "id": "G2400",
+    "ti": "idoú",
+    "le": "ἰδού",
+    "pl": "idoú",
+    "ps": "id-oo'",
+    "df": "segunda persona singular imperativo voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1492')}>G1492</span>; usado como imperativo ¡he aquí!: <font color='%COLOR_BLUE%'>mirar, presentar, suceder, ver.</font>"
+  }
+]
