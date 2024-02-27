@@ -21,6 +21,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
             <h2 className="text-xl mt-3 font-semibold mb-4">Diccionario Strong</h2>
             <Tabs />
           </div>
+          <div className="bg-white h-6 dark:bg-gray-800 dark:text-white sticky ml-4 -bottom-4 w-[92%] sm:w-[95%] sm:ml-[14px] border-1 border-t m-auto border-gray-300 dark:border-gray-600 "></div>
         </div>
       </div>
     </div>
