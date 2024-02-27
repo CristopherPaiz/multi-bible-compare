@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TabHebrew from "./TabHebrew";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -28,7 +29,7 @@ const Tabs = () => {
         </div>
       </div>
       <div className="p-5 border border-gray-300 dark:border-gray-600 border-t-0 rounded-b-md">
-        {activeTab === 0 && <div>Contenido de Hebreo próximamente...</div>}
+        {activeTab === 0 && <TabHebrew />}
         {activeTab === 1 && <div>Contenido de Griego próximamente...</div>}
       </div>
     </>
