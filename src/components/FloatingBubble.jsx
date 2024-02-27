@@ -1,15 +1,18 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import ModalStrong from "../components/ModalStrong";
 import DICTIONARY from "/diccionario2.png";
 import "../styles/Animations.css";
 
 const FloattingBubble = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
   const bubbleRef = useRef(null);
+  const modalRef = useRef(null);
   const startPosition = useRef({ x: 0, y: 0 });
   const startOffset = useRef({ x: 0, y: 0 });
 
   const handleMouseDown = (event) => {
+    setIsDragging(true);
     startPosition.current = { x: event.clientX, y: event.clientY };
     startOffset.current = {
       x: bubbleRef.current.offsetLeft,
@@ -36,6 +39,7 @@ const FloattingBubble = () => {
   };
 
   const handleMouseUp = (event) => {
+    setIsDragging(false);
     const deltaX = event.clientX - startPosition.current.x;
     const deltaY = event.clientY - startPosition.current.y;
     const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
@@ -53,6 +57,7 @@ const FloattingBubble = () => {
 
   const handleTouchStart = (event) => {
     const touch = event.touches[0];
+    setIsDragging(true);
     startPosition.current = { x: touch.clientX, y: touch.clientY };
     startOffset.current = {
       x: bubbleRef.current.offsetLeft,
@@ -80,6 +85,7 @@ const FloattingBubble = () => {
   };
 
   const handleTouchEnd = () => {
+    setIsDragging(false);
     autoMoveToEdgeWithAnimation();
 
     document.removeEventListener("touchmove", handleTouchMove);
@@ -103,33 +109,52 @@ const FloattingBubble = () => {
     bubble.style.left = `${newX}px`;
   };
 
+  const handleClickOutsideModal = (event) => {
+    if (!isDragging && modalRef.current && !modalRef.current.contains(event.target)) {
+      setIsModalOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutsideModal);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideModal);
+    };
+  }, [isDragging]);
+
   return (
-    <div
-      ref={bubbleRef}
-      style={{
-        position: "fixed",
-        top: "22%",
-        right: -5,
-        width: 60,
-        height: 60,
-        backgroundColor: "transparent",
-        borderRadius: "50%",
-        cursor: "pointer",
-        zIndex: 9999,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        userSelect: "none",
-        touchAction: "none",
-        animation: "float 1s 2 linear",
-      }}
-      onMouseDown={handleMouseDown}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-    >
-      <div className="bg-transparent absolute size-[60px] rounded-full" />
-      <img src={DICTIONARY} className="w-[45px] h-[45px]" />
-      {isModalOpen && <ModalStrong isOpen={isModalOpen} onClose={handleModalClose} />}
+    <div>
+      <div
+        ref={bubbleRef}
+        style={{
+          position: "fixed",
+          top: "22%",
+          right: -5,
+          width: 60,
+          height: 60,
+          backgroundColor: "transparent",
+          borderRadius: "50%",
+          cursor: "pointer",
+          zIndex: 9999,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          userSelect: "none",
+          touchAction: "none",
+          animation: "float 1s 2 linear",
+        }}
+        onMouseDown={handleMouseDown}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div className="bg-transparent absolute size-[60px] rounded-full" />
+        <img src={DICTIONARY} className="w-[45px] h-[45px]" />
+      </div>
+      {isModalOpen && (
+        <div ref={modalRef} className="modal-background">
+          <ModalStrong isOpen={isModalOpen} onClose={handleModalClose} />
+        </div>
+      )}
     </div>
   );
 };

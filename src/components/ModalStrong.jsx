@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import Tabs from "./Tabs";
 
 const ModalStrong = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed z-50 inset-0 overflow-y-auto flex justify-center items-center">
+    <div className="z-[9999] fixed inset-0 overflow-y-auto flex justify-center items-center">
       <div className="absolute z-40 inset-0 bg-black/50"></div>
       <div className="absolute z-50 flex justify-center items-center inset-0">
         <div className="relative bg-white w-[80%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-3/4 sm:h-[85%] p-8 rounded-lg shadow-lg">
@@ -23,6 +24,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
               Griego - Hebreo
             </h2>
             <p className="text-gray-700 mt-14">Próximamente...</p>
+            <Tabs />
           </div>
         </div>
       </div>
