@@ -22,9 +22,9 @@ const Tabs = () => {
       {/* Contenido de las pestañas */}
       <div className="tab-content">
         {/* Contenido para la pestaña 1 */}
-        {activeTab === 0 && <div>Contenido de Griego próximamente...</div>}
+        {activeTab === 0 && <div>Contenido de Hebreo próximamente...</div>}
         {/* Contenido para la pestaña 2 */}
-        {activeTab === 1 && <div>Contenido de Hebreo próximamente...</div>}
+        {activeTab === 1 && <div>Contenido de Griego próximamente...</div>}
       </div>
     </div>
   );
