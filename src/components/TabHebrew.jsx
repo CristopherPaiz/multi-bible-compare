@@ -49,7 +49,12 @@ const TabHebrew = () => {
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
             .toLowerCase();
-          return leNormalized.includes(normalizedSearchTerm) || plNormalized.includes(normalizedSearchTerm);
+          const idNormalized = item.id.toLowerCase();
+          return (
+            leNormalized.includes(normalizedSearchTerm) ||
+            plNormalized.includes(normalizedSearchTerm) ||
+            idNormalized.includes(normalizedSearchTerm)
+          );
         });
 
         setFilteredResults(results.slice(0, visibleResults));
@@ -119,14 +124,14 @@ const TabHebrew = () => {
     <>
       <div
         id="busqueda"
-        className="sticky -top-2 dark:bg-gray-800 flex-1 pt-3 -mt-3 h-20 flex justify-center items-center"
+        className="sticky -top-2 backdrop-blur-md flex-1 pt-3 -mt-3 h-20 flex justify-center items-center"
       >
         <input
           className="text-black mb-3 dark:text-white px-4 py-2 rounded-md w-[100%] bg-neutral-100 dark:bg-neutral-800 border-2 border-black dark:border-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-500 "
           type="text"
           value={searchTerm}
           onChange={handleSearchTermChange}
-          placeholder="Buscar en hebreo..."
+          placeholder="Buscar en hebreo, por ID, lexema o transliteración..."
         />
       </div>
       {isLoading ? (
@@ -134,10 +139,14 @@ const TabHebrew = () => {
       ) : filteredResults.length > 0 ? (
         <>
           {filteredResults.map((result) => (
-            <div className="bg-neutral-100 dark:bg-neutral-700 p-2 m-1" key={result.id}>
-              <p>Lexema: {result.le} </p>
-              <p>Pronunciacón: {result.pl} </p>
-            </div>
+            <button
+              className="bg-neutral-100 flex dark:bg-neutral-700 p-3 m-1 rounded-lg w-full text-left cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600 transition-colors duration-200 focus:outline-none focus:ring focus:ring-blue-400 dark:focus:ring-blue-400"
+              key={result.id}
+            >
+              <span className="w-14">{result.id} </span>
+              <span className="flex-1 flex-nowrap text-ellipsis">{result.pl} </span>
+              <span className="w-20 text-right text-sm">{result.le} </span>
+            </button>
           ))}
           {filteredResults.length < INITIAL_RESULTS ? null : (
             <div className="flex justify-center m-auto mt-4">

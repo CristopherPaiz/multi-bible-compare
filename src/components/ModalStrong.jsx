@@ -12,7 +12,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
           <div className="absolute top-0 right-0">
             <button
               onClick={onClose}
-              className="bg-gray-200 text-gray-600 rounded-full w-8 h-8 mt-4 mr-4 flex items-center justify-center hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-400 dark:bg-black dark:text-gray-400"
+              className=" bg-gray-200 text-gray-600 rounded-full w-8 h-8 mt-4 mr-4 flex items-center justify-center hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-400 dark:bg-black dark:text-gray-400"
             >
               &times;
             </button>
