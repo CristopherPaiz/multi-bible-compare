@@ -23,7 +23,6 @@ const ModalStrong = ({ isOpen, onClose }) => {
               <p />
               Griego - Hebreo
             </h2>
-            <p className="text-gray-700 mt-14">Próximamente...</p>
             <Tabs />
           </div>
         </div>

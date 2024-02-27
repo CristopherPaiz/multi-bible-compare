@@ -13,18 +13,18 @@ const Tabs = () => {
       <div className="tabs">
         {/* Pestañas */}
         <div className={`tab ${activeTab === 0 ? "active" : ""}`} onClick={() => changeTab(0)}>
-          Tab 1
+          Hebreo
         </div>
         <div className={`tab ${activeTab === 1 ? "active" : ""}`} onClick={() => changeTab(1)}>
-          Tab 2
+          Griego
         </div>
       </div>
       {/* Contenido de las pestañas */}
       <div className="tab-content">
         {/* Contenido para la pestaña 1 */}
-        {activeTab === 0 && <div>Contenido de la pestaña 1</div>}
+        {activeTab === 0 && <div>Contenido de Griego próximamente...</div>}
         {/* Contenido para la pestaña 2 */}
-        {activeTab === 1 && <div>Contenido de la pestaña 2</div>}
+        {activeTab === 1 && <div>Contenido de Hebreo próximamente...</div>}
       </div>
     </div>
   );
