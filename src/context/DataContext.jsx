@@ -20,8 +20,10 @@ export const DataProvider = ({ children }) => {
   const [history, setHistory] = useState([]);
 
   //STRONGS
-  const [strong, setStrong] = useState([]);
+  const [strong, strongFunc] = useState([]);
   const [modalStrong, setModalStrong] = useState(false);
+  const [strongData, setStrongData] = useState({});
+  const [cargandoStrong, setCargandoStrong] = useState(false);
 
   //useStateModals
   //----------------------------------------------------
@@ -222,8 +224,45 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     if (strong.length > 0) {
       setModalStrong(true);
+    } else {
+      setModalStrong(false);
     }
-  }, [strong, setStrong, modalStrong, setModalStrong]);
+  }, [strong, strongFunc, modalStrong, setModalStrong]);
+
+  useEffect(() => {
+    const conseguirStrong = async () => {
+      if (strong.length > 0) {
+        const ruta = "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/src/assets/strongs";
+        setCargandoStrong(true);
+        try {
+          if (strong.includes("H")) {
+            const Tipo = strong.split("H")[1];
+            const rango = Math.floor(Tipo / 150) * 150 + 1;
+            const casiRango = rango.toString().padStart(4, "0");
+            const url = `${ruta}/Hebreo/${casiRango}.json`;
+
+            const res = await fetch(url);
+            const data = await res.json();
+            setStrongData(data);
+            setCargandoStrong(false);
+          } else if (strong.includes("G")) {
+            const Tipo = strong.split("G")[1];
+            const rango = Math.floor(Tipo / 150) * 150 + 1;
+            const casiRango = rango.toString().padStart(4, "0");
+            const url = `${ruta}/Griego/${casiRango}.json`;
+
+            const res = await fetch(url);
+            const data = await res.json();
+            setStrongData(data);
+            setCargandoStrong(false);
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    };
+    conseguirStrong();
+  }, [strong]);
 
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
@@ -254,9 +293,11 @@ export const DataProvider = ({ children }) => {
         setearHistorial,
         setHistory,
         strong,
-        setStrong,
+        strongFunc,
         modalStrong,
         setModalStrong,
+        strongData,
+        cargandoStrong,
         //return modals
         //------------
         modalLibros,

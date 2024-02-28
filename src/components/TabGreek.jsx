@@ -14,7 +14,7 @@ const TabGreek = () => {
   const [showLoadMoreButton, setShowLoadMoreButton] = useState(true);
 
   const { t } = useContext(LanguageContext);
-  const { setStrong } = useContext(DataContext);
+  const { strongFunc } = useContext(DataContext);
 
   const handleSearchTermChange = (event) => {
     const term = event.target.value.toLowerCase();
@@ -128,7 +128,7 @@ const TabGreek = () => {
             <button
               className="w-full relative my-[10px] hover:scale-110 sm:hover:scale-105"
               key={result.id}
-              onClick={() => setStrong(result.id)}
+              onClick={() => strongFunc(result.id)}
             >
               <div className="relative flex justify-center">
                 <div className="w-full h-[46px] rounded-2xl flex justify-between px-2 items-center bg-slate-100 bg-gradient-to-r from-yellow-300 to-violet-200 dark:bg-gradient-to-r dark:from-yellow-800 dark:to-purple-800">
