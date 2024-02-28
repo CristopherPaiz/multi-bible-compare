@@ -19,6 +19,10 @@ export const DataProvider = ({ children }) => {
   const [paginaInicio, setPaginaInicio] = useState("/");
   const [history, setHistory] = useState([]);
 
+  //STRONGS
+  const [strong, setStrong] = useState([]);
+  const [modalStrong, setModalStrong] = useState(false);
+
   //useStateModals
   //----------------------------------------------------
   const [modalLibros, setModalLibros] = useState(false);
@@ -214,6 +218,14 @@ export const DataProvider = ({ children }) => {
     setVersiculoSeleccionadoNumero(data.versiculoSeleccionadoNumero);
   };
 
+  //USEFFECT QUE CAMBIARA EL STRONG SELECCIONADO
+  useEffect(() => {
+    if (strong.length > 0) {
+      setModalStrong(true);
+      console.log(strong);
+    }
+  }, [strong, setStrong, modalStrong, setModalStrong]);
+
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
     <DataContext.Provider
@@ -242,6 +254,10 @@ export const DataProvider = ({ children }) => {
         eliminarElementoHistorial,
         setearHistorial,
         setHistory,
+        strong,
+        setStrong,
+        modalStrong,
+        setModalStrong,
         //return modals
         //------------
         modalLibros,
