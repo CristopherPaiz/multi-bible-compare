@@ -4,7 +4,14 @@ import LanguageContext from "../context/LanguageContext";
 import LEFT_ICON from "/left.png";
 
 const ListVerses = () => {
-  const { modalVerses, setModalVerses, setModalLibros, setModalChapters, versiculoSeleccionado, setVersiculoSeleccionadoNumero } = useContext(DataContext);
+  const {
+    modalVerses,
+    setModalVerses,
+    setModalLibros,
+    setModalChapters,
+    versiculoSeleccionado,
+    setVersiculoSeleccionadoNumero,
+  } = useContext(DataContext);
   const [selectedVerse, setSelectedVerse] = useState("");
   const { t } = useContext(LanguageContext);
   const modalRef = useRef(null);
@@ -29,13 +36,19 @@ const ListVerses = () => {
   return (
     <>
       {modalVerses && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
-          <div ref={modalRef} className="bg-white p-4 rounded shadow-md w-11/12 h-4/6 flex flex-col dark:bg-black dark:text-white sm:w-[550px]">
+        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-[999999]">
+          <div
+            ref={modalRef}
+            className="bg-white p-4 rounded shadow-md w-11/12 h-4/6 flex flex-col dark:bg-black dark:text-white sm:w-[550px]"
+          >
             <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
             </button>
             <h1 className="text-xl font-bold mb-4 text-center">{t("SeleccioneElVersiculo")}</h1>
-            <div className="flex flex-wrap gap-2 justify-center overflow-y-scroll no-scrollbar flex-1" style={{ alignContent: "flex-start" }}>
+            <div
+              className="flex flex-wrap gap-2 justify-center overflow-y-scroll no-scrollbar flex-1"
+              style={{ alignContent: "flex-start" }}
+            >
               {versiculoSeleccionado.length > 0 &&
                 versiculoSeleccionado.map((key) => (
                   <div
@@ -49,7 +62,10 @@ const ListVerses = () => {
                 ))}
             </div>
             <div className="bg-white justify-center flex pt-3 gap-3 dark:bg-black">
-              <button className="p-2 bg-red-500 text-white rounded text-sm flex flex-row gap-2 px-7 py-3" onClick={closeModal}>
+              <button
+                className="p-2 bg-red-500 text-white rounded text-sm flex flex-row gap-2 px-7 py-3"
+                onClick={closeModal}
+              >
                 <img className="h-4 mt-1 invert" src={LEFT_ICON} />
                 {t("Regresar")}
               </button>

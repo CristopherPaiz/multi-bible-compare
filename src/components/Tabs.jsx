@@ -16,7 +16,7 @@ const Tabs = () => {
       <div className="flex border-b border-gray-300 dark:border-gray-600 gap-x-1">
         <div
           className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
-            activeTab === 0 ? "bg-white dark:bg-neutral-600" : "bg-gray-200 dark:bg-transparent opacity-40"
+            activeTab === 0 ? "bg-yellow-200 dark:bg-purple-600" : "bg-yellow-100/30 dark:bg-purple-950 opacity-40"
           }`}
           onClick={() => changeTab(0)}
         >
@@ -24,7 +24,7 @@ const Tabs = () => {
         </div>
         <div
           className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
-            activeTab === 1 ? "bg-white dark:bg-neutral-600" : "bg-gray-200 dark:bg-transparent opacity-40"
+            activeTab === 1 ? "bg-yellow-200 dark:bg-purple-600" : "bg-yellow-100/30 dark:bg-purple-950 opacity-40"
           }`}
           onClick={() => changeTab(1)}
         >
@@ -32,7 +32,7 @@ const Tabs = () => {
         </div>
         <div
           className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
-            activeTab === 2 ? "bg-white dark:bg-neutral-600" : "bg-gray-200 dark:bg-transparent opacity-40"
+            activeTab === 2 ? "bg-yellow-200 dark:bg-purple-600" : "bg-yellow-100/30 dark:bg-purple-950 opacity-40"
           }`}
           onClick={() => changeTab(2)}
         >

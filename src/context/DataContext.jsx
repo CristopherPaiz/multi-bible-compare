@@ -222,7 +222,6 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     if (strong.length > 0) {
       setModalStrong(true);
-      console.log(strong);
     }
   }, [strong, setStrong, modalStrong, setModalStrong]);
 
