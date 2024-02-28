@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 import Tabs from "./Tabs";
+import { useContext } from "react";
+import LanguageContext from "../context/LanguageContext";
 
 const ModalStrong = ({ isOpen, onClose }) => {
+  const { t } = useContext(LanguageContext);
+
   if (!isOpen) return null;
 
   return (
@@ -18,7 +22,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
             </button>
           </div>
           <div className="min-w-full w-full pl-4 pr-3">
-            <h2 className="text-xl mt-3 font-semibold mb-4">Diccionario Strong</h2>
+            <h2 className="text-xl mt-3 font-semibold mb-4">{t("DiccionarioStrong")}</h2>
             <Tabs />
           </div>
           <div className="bg-white h-6 dark:bg-gray-800 dark:text-white sticky ml-4 -bottom-4 w-[92%] sm:w-[95%] sm:ml-[14px] border-1 border-t m-auto border-gray-300 dark:border-gray-600 "></div>

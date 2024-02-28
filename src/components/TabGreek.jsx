@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
-import HEBREO from "../assets/strongs/IndexHebrew.json";
+import GRIEGO from "../assets/strongs/IndexGreek.json";
 import LanguageContext from "../context/LanguageContext";
 
 var INITIAL_RESULTS = 10;
 var INCREMENT = 30;
 
-const TabHebrew = () => {
+const TabGreek = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredResults, setFilteredResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -31,19 +31,19 @@ const TabHebrew = () => {
     setIsLoading(true);
 
     if (term === "") {
-      setFilteredResults(HEBREO.slice(0, visibleResults));
+      setFilteredResults(GRIEGO.slice(0, visibleResults));
       setIsLoading(false);
     } else {
       setFilteredResults([]);
       setIsLoading(true);
 
       const normalizedSearchTerm = term
-        ?.normalize("NFD")
-        ?.replace(/[\u0300-\u036f]/g, "")
-        ?.toLowerCase();
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
 
       const searchTimeout = setTimeout(() => {
-        const results = HEBREO.filter((item) => {
+        const results = GRIEGO.filter((item) => {
           const leNormalized = item.le
             ?.normalize("NFD")
             ?.replace(/[\u0300-\u036f]/g, "")
@@ -54,9 +54,9 @@ const TabHebrew = () => {
             ?.toLowerCase();
           const idNormalized = item.id.toLowerCase();
           return (
-            leNormalized.includes(normalizedSearchTerm) ||
-            plNormalized.includes(normalizedSearchTerm) ||
-            idNormalized.includes(normalizedSearchTerm)
+            leNormalized?.includes(normalizedSearchTerm) ||
+            plNormalized?.includes(normalizedSearchTerm) ||
+            idNormalized?.includes(normalizedSearchTerm)
           );
         });
 
@@ -72,7 +72,7 @@ const TabHebrew = () => {
     if (searchTerm === "") {
       setVisibleResults((prev) => prev + INCREMENT);
     } else {
-      const results = HEBREO.filter((item) => {
+      const results = GRIEGO.filter((item) => {
         const leNormalized = item.le
           ?.normalize("NFD")
           ?.replace(/[\u0300-\u036f]/g, "")
@@ -100,9 +100,9 @@ const TabHebrew = () => {
 
   useEffect(() => {
     if (searchTerm === "") {
-      setFilteredResults(HEBREO.slice(0, visibleResults));
+      setFilteredResults(GRIEGO.slice(0, visibleResults));
     } else {
-      const results = HEBREO.filter((item) => {
+      const results = GRIEGO.filter((item) => {
         const leNormalized = item.le
           ?.normalize("NFD")
           ?.replace(/[\u0300-\u036f]/g, "")
@@ -138,7 +138,7 @@ const TabHebrew = () => {
           type="text"
           value={searchTerm}
           onChange={handleSearchTermChange}
-          placeholder={t("PlaceholderInputStrongHebreo")}
+          placeholder={t("PlaceholderInputStrongGriego")}
         />
       </div>
       {isLoading ? (
@@ -178,4 +178,4 @@ const TabHebrew = () => {
   );
 };
 
-export default TabHebrew;
+export default TabGreek;

@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import TabHebrew from "./TabHebrew";
+import LanguageContext from "../context/LanguageContext";
+import TabGreek from "./TabGreek";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const { t } = useContext(LanguageContext);
 
   const changeTab = (index) => {
     setActiveTab(index);
@@ -17,7 +20,7 @@ const Tabs = () => {
           }`}
           onClick={() => changeTab(0)}
         >
-          Hebreo
+          {t("Hebreo")}
         </div>
         <div
           className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
@@ -25,12 +28,21 @@ const Tabs = () => {
           }`}
           onClick={() => changeTab(1)}
         >
-          Griego
+          {t("Griego")}
+        </div>
+        <div
+          className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
+            activeTab === 2 ? "bg-white dark:bg-neutral-600" : "bg-gray-200 dark:bg-transparent opacity-40"
+          }`}
+          onClick={() => changeTab(2)}
+        >
+          {t("Cognados")}
         </div>
       </div>
       <div className="p-5 border border-gray-300 dark:border-gray-600 border-t-0 rounded-b-md">
         {activeTab === 0 && <TabHebrew />}
-        {activeTab === 1 && <div>Contenido de Griego próximamente...</div>}
+        {activeTab === 1 && <TabGreek />}
+        {activeTab === 2 && <div>{t("Cognados")}</div>}
       </div>
     </>
   );
