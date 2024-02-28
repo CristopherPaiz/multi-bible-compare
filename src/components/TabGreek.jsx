@@ -110,7 +110,7 @@ const TabGreek = () => {
       <div className="sticky -top-2 backdrop-blur-3xl flex-1 pt-3 -mt-3 h-20 flex justify-center items-center z-10 mb-3">
         <div className="relative rounded-lg w-64 overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-yellow-100 dark:before:bg-yellow-900 before:rounded-full before:blur-lg  after:absolute after:-z-10 after:w-20 after:h-20 after:content[''] after:bg-purple-100  dark:after:bg-purple-900 after:right-12 after:top-3 after:rounded-full after:blur-lg">
           <input
-            className="relative bg-transparent ring-0 outline-none border border-neutral-500 text-neutral-900 dark:text-neutral-100 placeholder-violet-700 dark:placeholder-violet-300 text-sm rounded-lg focus:ring-violet-500 placeholder-opacity-60 focus:border-violet-500 block w-full p-4 checked:bg-emerald-500"
+            className="relative bg-transparent ring-0 outline-none border border-yellow-700 dark:border-purple-300 text-neutral-900 dark:text-neutral-100 placeholder-yellow-700 dark:placeholder-violet-300 text-sm rounded-lg focus:ring-yellow-500 dark:focus:ring-purple-500 placeholder-opacity-60 focus:border-yellow-500 dark:focus:border-purple-500  block w-full p-4 checked:bg-emerald-500"
             type="text"
             value={searchTerm}
             onChange={handleSearchTermChange}
@@ -125,15 +125,19 @@ const TabGreek = () => {
       ) : filteredResults.length > 0 ? (
         <>
           {filteredResults.map((result) => (
-            <button className="w-full relative my-[10px]" key={result.id} onClick={() => setStrong(result.id)}>
+            <button
+              className="w-full relative my-[10px] hover:scale-110 sm:hover:scale-105"
+              key={result.id}
+              onClick={() => setStrong(result.id)}
+            >
               <div className="relative flex justify-center">
-                <div className="w-full h-14 rounded-2xl flex justify-between px-2 items-center bg-slate-100 bg-gradient-to-r from-yellow-300 to-violet-200 dark:bg-gradient-to-r dark:from-yellow-800 dark:to-purple-800">
+                <div className="w-full h-[46px] rounded-2xl flex justify-between px-2 items-center bg-slate-100 bg-gradient-to-r from-yellow-300 to-violet-200 dark:bg-gradient-to-r dark:from-yellow-800 dark:to-purple-800">
                   <span className="text-center w-[50px]">{result.id}</span>
                   <span className="w-[50px] min-w-[50px] text-center text-sm pl-1 text-wrap p-1 text-ellipsis overflow-hidden dark:text-pink-200">
                     {result.le}
                   </span>
                 </div>
-                <div className="absolute flex px-2 items-center top-0 h-16 -my-1 rounded-2xl mr-[5px] sm:mr-[20px] bg-white border border-neutral-400 dark:border-white dark:bg-gray-800 w-[calc(100%-120px)] sm:w-[calc(100%-150px)]">
+                <div className="absolute flex px-2 items-center top-0 h-[50px] -my-[2px] rounded-2xl mr-[5px] sm:mr-[20px] bg-white border border-neutral-400 dark:border-white dark:bg-[#1c0330] w-[calc(100%-120px)] sm:w-[calc(100%-150px)]">
                   <span className="flex-1 overflow-hidden text-ellipsis text-wrap">{result.pl} </span>
                 </div>
               </div>

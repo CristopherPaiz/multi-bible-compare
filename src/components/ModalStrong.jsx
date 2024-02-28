@@ -1,10 +1,29 @@
 import PropTypes from "prop-types";
 import Tabs from "./Tabs";
-import { useContext } from "react";
+import { useContext, useRef, useEffect } from "react";
 import LanguageContext from "../context/LanguageContext";
 
 const ModalStrong = ({ isOpen, onClose }) => {
   const { t } = useContext(LanguageContext);
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -12,7 +31,10 @@ const ModalStrong = ({ isOpen, onClose }) => {
     <div className="z-[9999] fixed inset-0 overflow-y-auto flex justify-center items-center">
       <div className="absolute z-40 inset-0 bg-black/60"></div>
       <div className="absolute z-50 flex justify-center items-center inset-0 ">
-        <div className="relative bg-yellow-50 w-[90%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-[85%] sm:h-[85%] p-2 rounded-lg shadow-lg dark:bg-[#1c0330] dark:text-white overflow-y-scroll no-scrollbar">
+        <div
+          ref={modalRef}
+          className="relative bg-yellow-50 w-[90%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-[85%] sm:h-[85%] p-2 rounded-lg shadow-lg dark:bg-[#1c0330] dark:text-white overflow-y-scroll no-scrollbar"
+        >
           <div className="absolute top-0 right-0">
             <button
               onClick={onClose}
