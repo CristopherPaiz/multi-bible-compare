@@ -9,7 +9,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
   const { t } = useContext(LanguageContext);
   const modalRef = useRef(null);
 
-  const { modalStrong, strongFunc, setModalStrong } = useContext(DataContext);
+  const { modalStrong, strongFun, setModalStrong } = useContext(DataContext);
 
   // useEffect(() => {
   //   const handleClickOutside = (event) => {
@@ -19,7 +19,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
   //       !modalRef.current.querySelector(".strong-single").contains(event.target)
   //     ) {
   //       if (modalStrong) {
-  //         strongFunc([]); // Limpia el array de strongs
+  //         strongFun([]); // Limpia el array de strongs
   //         setModalStrong(false); // Cierra el modal hijo si está abierto
   //       } else {
   //         onClose(); // Cierra el modal padre si el modal hijo está cerrado

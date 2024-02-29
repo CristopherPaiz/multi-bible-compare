@@ -14,7 +14,7 @@ const TabHebrew = () => {
   const [showLoadMoreButton, setShowLoadMoreButton] = useState(true);
 
   const { t } = useContext(LanguageContext);
-  const { strongFunc } = useContext(DataContext);
+  const { strongFun } = useContext(DataContext);
 
   const handleSearchTermChange = (event) => {
     const term = event.target.value.toLowerCase();
@@ -128,7 +128,7 @@ const TabHebrew = () => {
             <button
               className="w-full relative my-[10px] hover:scale-110 sm:hover:scale-105"
               key={result.id}
-              onClick={() => strongFunc(result.id)}
+              onClick={() => strongFun(result.id)}
             >
               <div className="relative flex justify-center">
                 <div className="w-full h-[46px] rounded-2xl flex justify-between px-2 items-center bg-slate-100 bg-gradient-to-r from-violet-300 to-yellow-200 dark:bg-gradient-to-r dark:from-purple-800 dark:to-yellow-800">

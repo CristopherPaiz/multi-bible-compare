@@ -20,7 +20,7 @@ export const DataProvider = ({ children }) => {
   const [history, setHistory] = useState([]);
 
   //STRONGS
-  const [strong, strongFunc] = useState([]);
+  const [strong, strongFun] = useState([]);
   const [modalStrong, setModalStrong] = useState(false);
   const [strongData, setStrongData] = useState({});
   const [cargandoStrong, setCargandoStrong] = useState(false);
@@ -227,7 +227,11 @@ export const DataProvider = ({ children }) => {
     } else {
       setModalStrong(false);
     }
-  }, [strong, strongFunc, modalStrong, setModalStrong]);
+  }, [strong, strongFun]);
+
+  useEffect(() => {
+    strongFun("");
+  }, [setModalStrong]);
 
   useEffect(() => {
     const conseguirStrong = async () => {
@@ -294,7 +298,7 @@ export const DataProvider = ({ children }) => {
         setearHistorial,
         setHistory,
         strong,
-        strongFunc,
+        strongFun,
         modalStrong,
         setModalStrong,
         strongData,
