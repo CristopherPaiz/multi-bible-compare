@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState, createElement } from "react";
 import DataContext from "../context/DataContext";
+import "../styles/Strongs.css";
 
 const processText = (html, strongFun) => {
   const doc = new DOMParser().parseFromString(html, "text/html");
@@ -90,7 +91,10 @@ const StrongSingle = () => {
             <h1>DEFINICIÓN: {processedHtml}</h1>
             <button
               className="px-5 py-2 bg-slate-500 text-white m-auto rounded-md"
-              onClick={() => setModalStrong(false)}
+              onClick={() => {
+                setModalStrong(false);
+                strongFun("");
+              }}
             >
               Cerrar modal
             </button>

@@ -235,7 +235,6 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => {
     const conseguirStrong = async () => {
-      console.log("Cambio a:", strong);
       if (strong.length > 0) {
         const ruta = "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/src/assets/strongs";
         setCargandoStrong(true);

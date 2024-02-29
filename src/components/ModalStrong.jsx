@@ -1,46 +1,34 @@
 import PropTypes from "prop-types";
 import Tabs from "./Tabs";
-import { useContext, useRef, useEffect } from "react";
+import { useContext, useRef, useEffect, useState } from "react";
 import LanguageContext from "../context/LanguageContext";
 import DataContext from "../context/DataContext";
 import StrongSingle from "./StrongSingle";
+import "../styles/Strongs.css";
 
 const ModalStrong = ({ isOpen, onClose }) => {
   const { t } = useContext(LanguageContext);
   const modalRef = useRef(null);
 
-  const { modalStrong, strongFun, setModalStrong } = useContext(DataContext);
+  const { modalStrong } = useContext(DataContext);
 
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (
-  //       modalRef.current &&
-  //       !modalRef.current.contains(event.target) &&
-  //       !modalRef.current.querySelector(".strong-single").contains(event.target)
-  //     ) {
-  //       if (modalStrong) {
-  //         strongFun([]); // Limpia el array de strongs
-  //         setModalStrong(false); // Cierra el modal hijo si está abierto
-  //       } else {
-  //         onClose(); // Cierra el modal padre si el modal hijo está cerrado
-  //       }
-  //     }
-  //   };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
 
-  //   if (isOpen) {
-  //     document.addEventListener("mousedown", handleClickOutside);
-  //   } else {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   }
+    if (isOpen && !modalStrong) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
 
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, [isOpen, onClose, modalStrong, setModalStrong, strongFunc]);
-
-  // useEffect(() => {
-  //   setModalStrong(false);
-  // }, [setModalStrong]);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen, onClose, modalStrong]);
 
   if (!isOpen) return null;
 
