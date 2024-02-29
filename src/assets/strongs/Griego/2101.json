@@ -5,7 +5,7 @@
     "le": "εὐάρεστος",
     "pl": "euárestos",
     "ps": "yoo-ar'-es-tos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G701')}>G701</span>; completamente agradable: <font color='%COLOR_BLUE%'>agradable, agradar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G701')>G701</span>; completamente agradable: <font color='%COLOR_BLUE%'>agradable, agradar.</font>"
   },
   {
     "id": "G2102",
@@ -13,7 +13,7 @@
     "le": "εὐαρέστως",
     "pl": "euaréstos",
     "ps": "yoo-ar-es'-toce",
-    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2101')}>G2101</span>; muy agradable: <font color='%COLOR_BLUE%'>agradar.</font>"
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2101')>G2101</span>; muy agradable: <font color='%COLOR_BLUE%'>agradar.</font>"
   },
   {
     "id": "G2103",
@@ -21,7 +21,7 @@
     "le": "Εὔβουλος",
     "pl": "Eúboulos",
     "ps": "yoo'-boo-los",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1014')}>G1014</span>; de buena voluntad; Eubulo, un cristiano: <font color='%COLOR_BLUE%'>Eubulo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1014')>G1014</span>; de buena voluntad; Eubulo, un cristiano: <font color='%COLOR_BLUE%'>Eubulo.</font>"
   },
   {
     "id": "G2104",
@@ -29,7 +29,7 @@
     "le": "εὐγενής",
     "pl": "eugénes",
     "ps": "yoog-en'-ace",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1096')}>G1096</span>; bien nacido, i.e. (literalmente) alto en rango, o (figurativamente) generoso: <font color='%COLOR_BLUE%'>noble.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1096')>G1096</span>; bien nacido, i.e. (literalmente) alto en rango, o (figurativamente) generoso: <font color='%COLOR_BLUE%'>noble.</font>"
   },
   {
     "id": "G2105",
@@ -37,7 +37,7 @@
     "le": "εὐδία",
     "pl": "eudía",
     "ps": "yoo-dee'-ah",
-    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y del alterno de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2203')}>G2203</span> (como dios del tiempo); cielo claro, i.e. buen tiempo: <font color='%COLOR_BLUE%'>buen tiempo.</font>"
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y del alterno de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2203')>G2203</span> (como dios del tiempo); cielo claro, i.e. buen tiempo: <font color='%COLOR_BLUE%'>buen tiempo.</font>"
   },
   {
     "id": "G2106",
@@ -45,7 +45,7 @@
     "le": "εὐδοκέω",
     "pl": "eudokéo",
     "ps": "yoo-dok-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1380')}>G1380</span>; pensar bien de, i.e., aprobar, (un acto); específicamente aprobado (persona o cosa): <font color='%COLOR_BLUE%'>acordar, agradar, complacencia, complacer, gozar, gozo, parecer, placer.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1380')>G1380</span>; pensar bien de, i.e., aprobar, (un acto); específicamente aprobado (persona o cosa): <font color='%COLOR_BLUE%'>acordar, agradar, complacencia, complacer, gozar, gozo, parecer, placer.</font>"
   },
   {
     "id": "G2107",
@@ -53,7 +53,7 @@
     "le": "εὐδοκία",
     "pl": "eudokía",
     "ps": "yoo-dok-ee'-ah",
-    "df": "de un presunto compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span>y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1380')}>G1380</span>; satisfacción, i.e. (subj.) deleite, u (objectivamente) amabilidad, deseo, propósito: <font color='%COLOR_BLUE%'>voluntad, afecto, agradar, anhelo, beneplácito, buen tiempo.</font>"
+    "df": "de un presunto compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span>y la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1380')>G1380</span>; satisfacción, i.e. (subj.) deleite, u (objectivamente) amabilidad, deseo, propósito: <font color='%COLOR_BLUE%'>voluntad, afecto, agradar, anhelo, beneplácito, buen tiempo.</font>"
   },
   {
     "id": "G2108",
@@ -61,7 +61,7 @@
     "le": "εὐεργεσία",
     "pl": "euerguesía",
     "ps": "yoo-erg-es-ee'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2110')}>G2110</span>; beneficencia (generalmente o específicamente): <font color='%COLOR_BLUE%'>hacer beneficio.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2110')>G2110</span>; beneficencia (generalmente o específicamente): <font color='%COLOR_BLUE%'>hacer beneficio.</font>"
   },
   {
     "id": "G2109",
@@ -69,7 +69,7 @@
     "le": "εὐεργετέω",
     "pl": "euerguetéo",
     "ps": "yoo-erg-et-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2110')}>G2110</span>; ser filántropico: <font color='%COLOR_BLUE%'>hacer bienes.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2110')>G2110</span>; ser filántropico: <font color='%COLOR_BLUE%'>hacer bienes.</font>"
   },
   {
     "id": "G2110",
@@ -77,7 +77,7 @@
     "le": "εὐεργέτης",
     "pl": "euerguétes",
     "ps": "yoo-erg-et'-ace",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2041')}>G2041</span>; obrador de bien, i.e. (específicamente) filántropo: <font color='%COLOR_BLUE%'>bienhechor.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2041')>G2041</span>; obrador de bien, i.e. (específicamente) filántropo: <font color='%COLOR_BLUE%'>bienhechor.</font>"
   },
   {
     "id": "G2111",
@@ -85,7 +85,7 @@
     "le": "εὔθετος",
     "pl": "eúdsetos",
     "ps": "yoo'-thet-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; bien colocado, i.e. (fig) apropiado: <font color='%COLOR_BLUE%'>apto.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5087')>G5087</span>; bien colocado, i.e. (fig) apropiado: <font color='%COLOR_BLUE%'>apto.</font>"
   },
   {
     "id": "G2112",
@@ -93,7 +93,7 @@
     "le": "εὐθέως",
     "pl": "eudséos",
     "ps": "yoo-theh'-oce",
-    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2117')}>G2117</span>; directamente, i.e. en seguida o pronto: <font color='%COLOR_BLUE%'>seguida, breve, inmediatamente, instante, momento.</font>"
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2117')>G2117</span>; directamente, i.e. en seguida o pronto: <font color='%COLOR_BLUE%'>seguida, breve, inmediatamente, instante, momento.</font>"
   },
   {
     "id": "G2113",
@@ -101,7 +101,7 @@
     "le": "εὐθυδρομέω",
     "pl": "eudsudroméo",
     "ps": "yoo-thoo-drom-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2117')}>G2117</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1408')}>G1408</span>; colocar en ruta directa, i.e. navegar directamente: <font color='%COLOR_BLUE%'>rumbo directo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2117')>G2117</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1408')>G1408</span>; colocar en ruta directa, i.e. navegar directamente: <font color='%COLOR_BLUE%'>rumbo directo.</font>"
   },
   {
     "id": "G2114",
@@ -109,7 +109,7 @@
     "le": "εὐθυμέω",
     "pl": "eudsuméo",
     "ps": "yoo-thoo-meh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2115')}>G2115</span>; alegrarse, i.e. (intransitivo) estar alegre; neutro comparativo (adverbio) más alegremente: <font color='%COLOR_BLUE%'>alegre, ánimo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2115')>G2115</span>; alegrarse, i.e. (intransitivo) estar alegre; neutro comparativo (adverbio) más alegremente: <font color='%COLOR_BLUE%'>alegre, ánimo.</font>"
   },
   {
     "id": "G2115",
@@ -117,7 +117,7 @@
     "le": "εὔθυμος",
     "pl": "eúdsumos",
     "ps": "yoo'-thoo-mos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2372')}>G2372</span>; en buen espíritu, i.e. alegre: <font color='%COLOR_BLUE%'>ánimo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2372')>G2372</span>; en buen espíritu, i.e. alegre: <font color='%COLOR_BLUE%'>ánimo.</font>"
   },
   {
     "id": "G2116",
@@ -125,7 +125,7 @@
     "le": "εὐθύνω",
     "pl": "eudsúno",
     "ps": "yoo-thoo'-no",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2117')}>G2117</span>; enderezar (nivelar); tecnicamente dirigir: <font color='%COLOR_BLUE%'>enderezar, gobernar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2117')>G2117</span>; enderezar (nivelar); tecnicamente dirigir: <font color='%COLOR_BLUE%'>enderezar, gobernar.</font>"
   },
   {
     "id": "G2117",
@@ -133,7 +133,7 @@
     "le": "εὐθύς",
     "pl": "eudsús",
     "ps": "yoo-thoos'",
-    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5087')}>G5087</span>; derecho, i.e. (literalmente) a nivel, o (figurativamente) verdadero; adverbio (de tiempo) en seguida, de inmediato: <font color='%COLOR_BLUE%'>enderezar, instante, momento, derecho, recto, seguida.</font>"
+    "df": "tal vez de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5087')>G5087</span>; derecho, i.e. (literalmente) a nivel, o (figurativamente) verdadero; adverbio (de tiempo) en seguida, de inmediato: <font color='%COLOR_BLUE%'>enderezar, instante, momento, derecho, recto, seguida.</font>"
   },
   {
     "id": "G2118",
@@ -141,7 +141,7 @@
     "le": "εὐθύτης",
     "pl": "eudsútes",
     "ps": "yoo-thoo'-tace",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2117')}>G2117</span>; rectitud: <font color='%COLOR_BLUE%'>equidad.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2117')>G2117</span>; rectitud: <font color='%COLOR_BLUE%'>equidad.</font>"
   },
   {
     "id": "G2119",
@@ -149,7 +149,7 @@
     "le": "εὐκαιρέω",
     "pl": "eukairéo",
     "ps": "yoo-kahee-reh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2121')}>G2121</span>; divertirse, i.e. oportunidad o diversión: <font color='%COLOR_BLUE%'>interesar, oportunidad.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2121')>G2121</span>; divertirse, i.e. oportunidad o diversión: <font color='%COLOR_BLUE%'>interesar, oportunidad.</font>"
   },
   {
     "id": "G2120",
@@ -157,7 +157,7 @@
     "le": "εὐκαιρία",
     "pl": "eukairía",
     "ps": "yoo-kahee-ree'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2121')}>G2121</span>; ocasión favorable: <font color='%COLOR_BLUE%'>oportunidad.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2121')>G2121</span>; ocasión favorable: <font color='%COLOR_BLUE%'>oportunidad.</font>"
   },
   {
     "id": "G2121",
@@ -165,7 +165,7 @@
     "le": "εὔκαιρος",
     "pl": "eúkairos",
     "ps": "yoo'-kahee-ros",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2540')}>G2540</span>; bien calculado, i.e. oportuno: <font color='%COLOR_BLUE%'>oportuno, tiempo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2540')>G2540</span>; bien calculado, i.e. oportuno: <font color='%COLOR_BLUE%'>oportuno, tiempo.</font>"
   },
   {
     "id": "G2122",
@@ -173,7 +173,7 @@
     "le": "εὐκαίρως",
     "pl": "eukaíros",
     "ps": "yoo-kah'-ee-roce",
-    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2121')}>G2121</span>; oportunamente: <font color='%COLOR_BLUE%'>(a) tiempo.</font>"
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2121')>G2121</span>; oportunamente: <font color='%COLOR_BLUE%'>(a) tiempo.</font>"
   },
   {
     "id": "G2123",
@@ -181,7 +181,7 @@
     "le": "εὐκοπώτερος",
     "pl": "eukopóteros",
     "ps": "yoo-kop-o'-ter-os",
-    "df": "compare de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2873')}>G2873</span>; mejor para laborar, i. e, más fácil: <font color='%COLOR_BLUE%'>fácil.</font>"
+    "df": "compare de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2873')>G2873</span>; mejor para laborar, i. e, más fácil: <font color='%COLOR_BLUE%'>fácil.</font>"
   },
   {
     "id": "G2124",
@@ -189,7 +189,7 @@
     "le": "εὐλάβεια",
     "pl": "eulábeia",
     "ps": "yoo-lab'-i-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2126')}>G2126</span>; propiamente precaución, i.e. (religiosamente) reverencia (piedad); por implicación pavor (concretamente): <font color='%COLOR_BLUE%'>reverente, temor.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2126')>G2126</span>; propiamente precaución, i.e. (religiosamente) reverencia (piedad); por implicación pavor (concretamente): <font color='%COLOR_BLUE%'>reverente, temor.</font>"
   },
   {
     "id": "G2125",
@@ -197,7 +197,7 @@
     "le": "εὐλαβέομαι",
     "pl": "eulabéomai",
     "ps": "yoo-lab-eh'-om-ahee",
-    "df": "voz media de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2126')}>G2126</span>; ser circunspecto, i.e. (por implicación) ser aprenhensivo; religiosamente a reverencia: <font color='%COLOR_BLUE%'>temor.</font>"
+    "df": "voz media de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2126')>G2126</span>; ser circunspecto, i.e. (por implicación) ser aprenhensivo; religiosamente a reverencia: <font color='%COLOR_BLUE%'>temor.</font>"
   },
   {
     "id": "G2126",
@@ -205,7 +205,7 @@
     "le": "εὐλαβής",
     "pl": "eulabés",
     "ps": "yoo-lab-ace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2983')}>G2983</span>; hablar bien (cuidadosamente), i.e. circunspecto (religiosamente, piadoso): <font color='%COLOR_BLUE%'>piadoso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2983')>G2983</span>; hablar bien (cuidadosamente), i.e. circunspecto (religiosamente, piadoso): <font color='%COLOR_BLUE%'>piadoso.</font>"
   },
   {
     "id": "G2127",
@@ -213,7 +213,7 @@
     "le": "εὐλογέω",
     "pl": "euloguéo",
     "ps": "yoo-log-eh'-o",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span>; hablar bien de, i.e. (religiosamente) bendecir (agradecer o invocar una bendición sobre, prosperar): <font color='%COLOR_BLUE%'>bendecir.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3056')>G3056</span>; hablar bien de, i.e. (religiosamente) bendecir (agradecer o invocar una bendición sobre, prosperar): <font color='%COLOR_BLUE%'>bendecir.</font>"
   },
   {
     "id": "G2128",
@@ -221,7 +221,7 @@
     "le": "εὐλογητός",
     "pl": "euloguetós",
     "ps": "yoo-log-ay-tos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2127')}>G2127</span>; adorable: <font color='%COLOR_BLUE%'>bendecir, bendición.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2127')>G2127</span>; adorable: <font color='%COLOR_BLUE%'>bendecir, bendición.</font>"
   },
   {
     "id": "G2129",
@@ -229,7 +229,7 @@
     "le": "εὐλογία",
     "pl": "eúlogía",
     "ps": "yoo-log-ee'-ah",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2127')}>G2127</span>; hablar bien, i.e. elegancia del lenguaje; elogio («elegía»), i.e. (reverentemente) adoración; religiosamente bendición; por implicación consagración; por extensión beneficio o generosidad, largueza: <font color='%COLOR_BLUE%'>alabanza, bendecir, bendición, generosamente, generosidad, lisonja, (suaves) palabras.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2127')>G2127</span>; hablar bien, i.e. elegancia del lenguaje; elogio («elegía»), i.e. (reverentemente) adoración; religiosamente bendición; por implicación consagración; por extensión beneficio o generosidad, largueza: <font color='%COLOR_BLUE%'>alabanza, bendecir, bendición, generosamente, generosidad, lisonja, (suaves) palabras.</font>"
   },
   {
     "id": "G2130",
@@ -237,7 +237,7 @@
     "le": "εὐμετάδοτος",
     "pl": "eumetádotos",
     "ps": "yoo-met-ad'-ot-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado presunto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3330')}>G3330</span>; bueno para impartir, i.e. liberal: <font color='%COLOR_BLUE%'>generoso, dadivoso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado presunto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3330')>G3330</span>; bueno para impartir, i.e. liberal: <font color='%COLOR_BLUE%'>generoso, dadivoso.</font>"
   },
   {
     "id": "G2131",
@@ -245,7 +245,7 @@
     "le": "Εὐνίκη",
     "pl": "Euníke",
     "ps": "yoo-nee'-kay",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3529')}>G3529</span>; victoriosa; Eunice, una judía: <font color='%COLOR_BLUE%'>Eunice.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3529')>G3529</span>; victoriosa; Eunice, una judía: <font color='%COLOR_BLUE%'>Eunice.</font>"
   },
   {
     "id": "G2132",
@@ -253,7 +253,7 @@
     "le": "εὐνοέω",
     "pl": "eunoéo",
     "ps": "yoo-no-eh'-o",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3563')}>G3563</span>; ser de mente buena, i.e., reconciliarse: <font color='%COLOR_BLUE%'>acuerdo.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3563')>G3563</span>; ser de mente buena, i.e., reconciliarse: <font color='%COLOR_BLUE%'>acuerdo.</font>"
   },
   {
     "id": "G2133",
@@ -261,7 +261,7 @@
     "le": "εὔνοια",
     "pl": "eúnoia",
     "ps": "yoo'-noy-ah",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2132')}>G2132</span>; amabilidad; eufemismo deber conyugal: <font color='%COLOR_BLUE%'>voluntad.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2132')>G2132</span>; amabilidad; eufemismo deber conyugal: <font color='%COLOR_BLUE%'>voluntad.</font>"
   },
   {
     "id": "G2134",
@@ -269,7 +269,7 @@
     "le": "εὐνουχίζω",
     "pl": "eunoujízo",
     "ps": "yoo-noo-khid'-zo",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2135')}>G2135</span>; castrar (figurativamente vivir sin casarse): <font color='%COLOR_BLUE%'>hacer eunuco.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2135')>G2135</span>; castrar (figurativamente vivir sin casarse): <font color='%COLOR_BLUE%'>hacer eunuco.</font>"
   },
   {
     "id": "G2135",
@@ -277,7 +277,7 @@
     "le": "εὐνοῦχος",
     "pl": "eunoújos",
     "ps": "yoo-noo'-khos",
-    "df": "de <b>εὐνή</b> <font color='%COLOR_PURPLE%'>euné</font> (cama)  y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2192')}>G2192</span>; persona castrada (siendo empleada en los dormitorios orientales); por extensión hombre impotente o soltero; por implicación chambelán (funcionario del estado): <font color='%COLOR_BLUE%'>eunuco.</font>"
+    "df": "de <b>εὐνή</b> <font color='%COLOR_PURPLE%'>euné</font> (cama)  y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2192')>G2192</span>; persona castrada (siendo empleada en los dormitorios orientales); por extensión hombre impotente o soltero; por implicación chambelán (funcionario del estado): <font color='%COLOR_BLUE%'>eunuco.</font>"
   },
   {
     "id": "G2136",
@@ -285,7 +285,7 @@
     "le": "Εὐοδία",
     "pl": "Euodía",
     "ps": "yoo-od-ee'-ah",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2137')}>G2137</span>; viaje bueno; Evodia, mujer cristiana: <font color='%COLOR_BLUE%'>Evodia.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2137')>G2137</span>; viaje bueno; Evodia, mujer cristiana: <font color='%COLOR_BLUE%'>Evodia.</font>"
   },
   {
     "id": "G2137",
@@ -293,7 +293,7 @@
     "le": "εὐοδόω",
     "pl": "euodóo",
     "ps": "yoo-od-o'-o",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3598')}>G3598</span>; ayudar en el camino, i.e. (pasivamente) lograr alcanzar; figurativamente triunfar en los negocios: <font color='%COLOR_BLUE%'>prosperar, próspero, viaje.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3598')>G3598</span>; ayudar en el camino, i.e. (pasivamente) lograr alcanzar; figurativamente triunfar en los negocios: <font color='%COLOR_BLUE%'>prosperar, próspero, viaje.</font>"
   },
   {
     "id": "G2138",
@@ -301,7 +301,7 @@
     "le": "εὐπειθής",
     "pl": "eupeidsés",
     "ps": "yoo-pi-thace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3982')}>G3982</span>; bueno para persuasión, i.e. (intransitivo) queja: <font color='%COLOR_BLUE%'>benigno.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3982')>G3982</span>; bueno para persuasión, i.e. (intransitivo) queja: <font color='%COLOR_BLUE%'>benigno.</font>"
   },
   {
     "id": "G2139",
@@ -309,7 +309,7 @@
     "le": "εὐπερίστατος",
     "pl": "euperístatos",
     "ps": "yoo-per-is'-tat-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de un presunto compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4012')}>G4012</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; rodear por todo lado, i.e. (competidor) estorbar (a un corredor) en toda dirección (figurativamente del pecado en general ): <font color='%COLOR_BLUE%'>asediar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de un presunto compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4012')>G4012</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2476')>G2476</span>; rodear por todo lado, i.e. (competidor) estorbar (a un corredor) en toda dirección (figurativamente del pecado en general ): <font color='%COLOR_BLUE%'>asediar.</font>"
   },
   {
     "id": "G2140",
@@ -317,7 +317,7 @@
     "le": "εὐποιΐα",
     "pl": "eupoiía",
     "ps": "yoo-poy-ee'-ah",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4160')}>G4160</span>; hacer bien, i.e. beneficencia: <font color='%COLOR_BLUE%'>hacer bien.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4160')>G4160</span>; hacer bien, i.e. beneficencia: <font color='%COLOR_BLUE%'>hacer bien.</font>"
   },
   {
     "id": "G2141",
@@ -325,7 +325,7 @@
     "le": "εὐπορέω",
     "pl": "euporéo",
     "ps": "yoo-por-eh'-o",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2090')}>G2090</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4197')}>G4197</span>; (intransitivo) ser bueno para pasar, i.e. (fig) tener medios pecuniarios: <font color='%COLOR_BLUE%'>lo que tenía.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2090')>G2090</span> y la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4197')>G4197</span>; (intransitivo) ser bueno para pasar, i.e. (fig) tener medios pecuniarios: <font color='%COLOR_BLUE%'>lo que tenía.</font>"
   },
   {
     "id": "G2142",
@@ -333,7 +333,7 @@
     "le": "εὐπορία",
     "pl": "euporía",
     "ps": "yoo-por-ee'-ah",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2141')}>G2141</span>; recursos pecuniarios: <font color='%COLOR_BLUE%'>riqueza.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2141')>G2141</span>; recursos pecuniarios: <font color='%COLOR_BLUE%'>riqueza.</font>"
   },
   {
     "id": "G2143",
@@ -341,7 +341,7 @@
     "le": "εὐπρέπεια",
     "pl": "euprépeia",
     "ps": "yoo-prep'-i-ah",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4241')}>G4241</span>; buena conveniencia, i.e. agraciado: <font color='%COLOR_BLUE%'>hermosa apariencia.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4241')>G4241</span>; buena conveniencia, i.e. agraciado: <font color='%COLOR_BLUE%'>hermosa apariencia.</font>"
   },
   {
     "id": "G2144",
@@ -349,7 +349,7 @@
     "le": "εὐπρόσδεκτος",
     "pl": "euprósdektos",
     "ps": "yoo-pros'-dek-tos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4327')}>G4327</span>; bien recibido, i.e. aprobado, favorable: <font color='%COLOR_BLUE%'>aceptable, acepto, agradable.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4327')>G4327</span>; bien recibido, i.e. aprobado, favorable: <font color='%COLOR_BLUE%'>aceptable, acepto, agradable.</font>"
   },
   {
     "id": "G2145",
@@ -357,7 +357,7 @@
     "le": "εὐπρόσεδρος",
     "pl": "euprósedros",
     "ps": "yoo-pros'-ed-ros",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4332')}>G4332</span>; quedar bien hacia, i.e. (figurativamente) asiduo (neutro servicio diligente): <font color='%COLOR_BLUE%'>acercar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4332')>G4332</span>; quedar bien hacia, i.e. (figurativamente) asiduo (neutro servicio diligente): <font color='%COLOR_BLUE%'>acercar.</font>"
   },
   {
     "id": "G2146",
@@ -365,7 +365,7 @@
     "le": "εὐπροσωπέω",
     "pl": "euprosopéo",
     "ps": "yoo-pros-o-peh'-o",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4383')}>G4383</span>; ser de buen semblante, i e. (figurativamente) hacer una exhibición, exhibir: <font color='%COLOR_BLUE%'>agradar.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4383')>G4383</span>; ser de buen semblante, i e. (figurativamente) hacer una exhibición, exhibir: <font color='%COLOR_BLUE%'>agradar.</font>"
   },
   {
     "id": "G2147",
@@ -381,7 +381,7 @@
     "le": "Εὐροκλύδων",
     "pl": "Euroklúdon",
     "ps": "yoo-rok-loo'-dohn",
-    "df": "de <b>Εὖρος</b> <font color='%COLOR_PURPLE%'>Eúros</font> (viento oriental)  y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2830')}>G2830</span>; tormenta del este (o sureste), i.e. (en frase moderna) del Levante: <font color='%COLOR_BLUE%'>Euroclidón.</font>"
+    "df": "de <b>Εὖρος</b> <font color='%COLOR_PURPLE%'>Eúros</font> (viento oriental)  y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2830')>G2830</span>; tormenta del este (o sureste), i.e. (en frase moderna) del Levante: <font color='%COLOR_BLUE%'>Euroclidón.</font>"
   },
   {
     "id": "G2149",
@@ -389,7 +389,7 @@
     "le": "εὐρύχωρος",
     "pl": "eurújoros",
     "ps": "yoo-roo'-kho-ros",
-    "df": "de <b>εὐρύς</b> <font color='%COLOR_PURPLE%'>eurús</font> (amplio) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5561')}>G5561</span>; espacioso: <font color='%COLOR_BLUE%'>espacioso.</font>"
+    "df": "de <b>εὐρύς</b> <font color='%COLOR_PURPLE%'>eurús</font> (amplio) y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5561')>G5561</span>; espacioso: <font color='%COLOR_BLUE%'>espacioso.</font>"
   },
   {
     "id": "G2150",
@@ -397,7 +397,7 @@
     "le": "εὐσέβεια",
     "pl": "eusébeia",
     "ps": "yoo-seb'-i-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2152')}>G2152</span>; piedad; específicamente esquema del evangelio: <font color='%COLOR_BLUE%'>piadoso, piedad.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2152')>G2152</span>; piedad; específicamente esquema del evangelio: <font color='%COLOR_BLUE%'>piadoso, piedad.</font>"
   },
   {
     "id": "G2151",
@@ -405,7 +405,7 @@
     "le": "εὐσεβέω",
     "pl": "eusebéo",
     "ps": "yoo-seb-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2152')}>G2152</span>; ser piadoso, i.e. (hacia Dios) adorar, o (hacia los padres) respetar (sostener, respaldar): <font color='%COLOR_BLUE%'>piadoso, adorar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2152')>G2152</span>; ser piadoso, i.e. (hacia Dios) adorar, o (hacia los padres) respetar (sostener, respaldar): <font color='%COLOR_BLUE%'>piadoso, adorar.</font>"
   },
   {
     "id": "G2152",
@@ -413,7 +413,7 @@
     "le": "εὐσεβής",
     "pl": "eusebés",
     "ps": "yoo-seb-ace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4576')}>G4576</span>; bien reverente, i.e. piadoso: <font color='%COLOR_BLUE%'>devoto, piadoso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4576')>G4576</span>; bien reverente, i.e. piadoso: <font color='%COLOR_BLUE%'>devoto, piadoso.</font>"
   },
   {
     "id": "G2153",
@@ -421,7 +421,7 @@
     "le": "εὐσεβῶς",
     "pl": "eusebós",
     "ps": "yoo-seb-oce'",
-    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2152')}>G2152</span>; piadosamente: <font color='%COLOR_BLUE%'>piadosamente.</font>"
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2152')>G2152</span>; piadosamente: <font color='%COLOR_BLUE%'>piadosamente.</font>"
   },
   {
     "id": "G2154",
@@ -429,7 +429,7 @@
     "le": "εὔσημος",
     "pl": "eúsemos",
     "ps": "yoo'-say-mos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4591')}>G4591</span>; bien indicado, i.e. (figurativamente) significa nte: <font color='%COLOR_BLUE%'>bien comprensible.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4591')>G4591</span>; bien indicado, i.e. (figurativamente) significa nte: <font color='%COLOR_BLUE%'>bien comprensible.</font>"
   },
   {
     "id": "G2155",
@@ -437,7 +437,7 @@
     "le": "εὔσπλαγχνος",
     "pl": "eúsplanjnos",
     "ps": "yoo'-splangkh-nos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4698')}>G4698</span>; bien compasivo, i.e. con simpatía: <font color='%COLOR_BLUE%'>misericordioso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4698')>G4698</span>; bien compasivo, i.e. con simpatía: <font color='%COLOR_BLUE%'>misericordioso.</font>"
   },
   {
     "id": "G2156",
@@ -445,7 +445,7 @@
     "le": "εὐσχημόνως",
     "pl": "eusjemónos",
     "ps": "yoo-skhay-mon'-ose",
-    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2158')}>G2158</span>; decorosamente: <font color='%COLOR_BLUE%'>honestamente, honradamente, decentemente.</font>"
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2158')>G2158</span>; decorosamente: <font color='%COLOR_BLUE%'>honestamente, honradamente, decentemente.</font>"
   },
   {
     "id": "G2157",
@@ -453,7 +453,7 @@
     "le": "εὐσχημοσύνη",
     "pl": "eusjemosúne",
     "ps": "yoo-skhay-mos-oo'-nay",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2158')}>G2158</span>; decoro: <font color='%COLOR_BLUE%'>decoro.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2158')>G2158</span>; decoro: <font color='%COLOR_BLUE%'>decoro.</font>"
   },
   {
     "id": "G2158",
@@ -461,7 +461,7 @@
     "le": "εὐσχήμων",
     "pl": "eusjémon",
     "ps": "yoo-skhay'-mone",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4976')}>G4976</span>; bien formado, i.e. (figurativamente) decoro, noble (en rango): <font color='%COLOR_BLUE%'>noble, decente, decoroso, distinción, distinguido.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4976')>G4976</span>; bien formado, i.e. (figurativamente) decoro, noble (en rango): <font color='%COLOR_BLUE%'>noble, decente, decoroso, distinción, distinguido.</font>"
   },
   {
     "id": "G2159",
@@ -469,7 +469,7 @@
     "le": "εὐτόνως",
     "pl": "eutónos",
     "ps": "yoo-ton'-oce",
-    "df": "adverbio de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de <b>τείνω</b> <font color='%COLOR_PURPLE%'>teíno</font> (estirar); de manera bien ordenada, i.e. (figurativamente) intensamente (en buen sentido, convincentemente; en mal sentido, ferozmente): <font color='%COLOR_BLUE%'>vehemencia.</font>"
+    "df": "adverbio de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de <b>τείνω</b> <font color='%COLOR_PURPLE%'>teíno</font> (estirar); de manera bien ordenada, i.e. (figurativamente) intensamente (en buen sentido, convincentemente; en mal sentido, ferozmente): <font color='%COLOR_BLUE%'>vehemencia.</font>"
   },
   {
     "id": "G2160",
@@ -477,7 +477,7 @@
     "le": "εὐτραπελία",
     "pl": "eutrapelía",
     "ps": "yoo-trap-el-ee'-ah",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5157')}>G5157</span> (sig. bien avenido, i.e. listo en jocosidad, jocoso); comicidad, i.e. (en sentido vulgar) obscenidad: <font color='%COLOR_BLUE%'>truhanería.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5157')>G5157</span> (sig. bien avenido, i.e. listo en jocosidad, jocoso); comicidad, i.e. (en sentido vulgar) obscenidad: <font color='%COLOR_BLUE%'>truhanería.</font>"
   },
   {
     "id": "G2161",
@@ -485,7 +485,7 @@
     "le": "Εὔτυχος",
     "pl": "Eútujos",
     "ps": "yoo'-too-khos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5177')}>G5177</span>; bien engordado, i.e. afortunado; Eutico, un joven: <font color='%COLOR_BLUE%'>Eutico.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5177')>G5177</span>; bien engordado, i.e. afortunado; Eutico, un joven: <font color='%COLOR_BLUE%'>Eutico.</font>"
   },
   {
     "id": "G2162",
@@ -493,7 +493,7 @@
     "le": "εὐφημία",
     "pl": "eufemía",
     "ps": "yoo-fay-mee'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2163')}>G2163</span>; buen lenguaje; («eufemia»), i.e. alabanza (reputación, fama): <font color='%COLOR_BLUE%'>bueno.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2163')>G2163</span>; buen lenguaje; («eufemia»), i.e. alabanza (reputación, fama): <font color='%COLOR_BLUE%'>bueno.</font>"
   },
   {
     "id": "G2163",
@@ -501,7 +501,7 @@
     "le": "εὔφημος",
     "pl": "eúfemos",
     "ps": "yoo'-fay-mos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5345')}>G5345</span>; habla buena de, i.e., reputable, de toda confianza: <font color='%COLOR_BLUE%'>buen nombre.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5345')>G5345</span>; habla buena de, i.e., reputable, de toda confianza: <font color='%COLOR_BLUE%'>buen nombre.</font>"
   },
   {
     "id": "G2164",
@@ -509,7 +509,7 @@
     "le": "εὐφορέω",
     "pl": "euforéo",
     "ps": "yoo-for-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5409')}>G5409</span>; soportar bien, i.e., ser fértil: <font color='%COLOR_BLUE%'>producir (mucho).</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5409')>G5409</span>; soportar bien, i.e., ser fértil: <font color='%COLOR_BLUE%'>producir (mucho).</font>"
   },
   {
     "id": "G2165",
@@ -517,7 +517,7 @@
     "le": "εὐφραίνω",
     "pl": "eufraíno",
     "ps": "yoo-frah'-ee-no",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5424')}>G5424</span>; poner (media o pasivamente ser) de buen marco mental, i.e. regocijarse: <font color='%COLOR_BLUE%'>regocijar, -se, alegrar, -se, (hacer) banquete, (hacer) fiesta, gozar, -se.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5424')>G5424</span>; poner (media o pasivamente ser) de buen marco mental, i.e. regocijarse: <font color='%COLOR_BLUE%'>regocijar, -se, alegrar, -se, (hacer) banquete, (hacer) fiesta, gozar, -se.</font>"
   },
   {
     "id": "G2166",
@@ -525,7 +525,7 @@
     "le": "Εὐφράτης",
     "pl": "Eufrátes",
     "ps": "yoo-frat'-ace",
-    "df": "de origen extranjero o [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G6578')}>G6578</span>]; éufrates, río de Asia: <font color='%COLOR_BLUE%'> éufrates.</font>"
+    "df": "de origen extranjero o [Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G6578')>G6578</span>]; éufrates, río de Asia: <font color='%COLOR_BLUE%'> éufrates.</font>"
   },
   {
     "id": "G2167",
@@ -533,7 +533,7 @@
     "le": "εὐφροσύνη",
     "pl": "eufrosúne",
     "ps": "yoo-fros-oo'-nay",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2165')}>G2165</span>; alegía, gozo: <font color='%COLOR_BLUE%'>gozo, alegría.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2165')>G2165</span>; alegía, gozo: <font color='%COLOR_BLUE%'>gozo, alegría.</font>"
   },
   {
     "id": "G2168",
@@ -541,7 +541,7 @@
     "le": "εὐχαριστέω",
     "pl": "eujaristéo",
     "ps": "yoo-khar-is-teh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2170')}>G2170</span>; ser agradecido, i.e. (activamente) expresar gratitud (hacia); específicamente dar gracias antes de la comida: <font color='%COLOR_BLUE%'>agradecimiento, dar gracias.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2170')>G2170</span>; ser agradecido, i.e. (activamente) expresar gratitud (hacia); específicamente dar gracias antes de la comida: <font color='%COLOR_BLUE%'>agradecimiento, dar gracias.</font>"
   },
   {
     "id": "G2169",
@@ -549,7 +549,7 @@
     "le": "εὐχαριστία",
     "pl": "eujaristía",
     "ps": "yoo-khar-is-tee'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2170')}>G2170</span>; gratitud; activamente lenguaje de gratitud (a Dios, como acto de adoración): <font color='%COLOR_BLUE%'>gracia, gratitud.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2170')>G2170</span>; gratitud; activamente lenguaje de gratitud (a Dios, como acto de adoración): <font color='%COLOR_BLUE%'>gracia, gratitud.</font>"
   },
   {
     "id": "G2170",
@@ -557,7 +557,7 @@
     "le": "εὐχάριστος",
     "pl": "eujáristos",
     "ps": "yoo-khar'-is-tos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5483')}>G5483</span>; bien favorecido, i.e. (por implicación) agradecido: <font color='%COLOR_BLUE%'>agradecido.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5483')>G5483</span>; bien favorecido, i.e. (por implicación) agradecido: <font color='%COLOR_BLUE%'>agradecido.</font>"
   },
   {
     "id": "G2171",
@@ -565,7 +565,7 @@
     "le": "εὐχή",
     "pl": "eujé",
     "ps": "yoo-khay'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2172')}>G2172</span>; propiamente deseo, expresado como petición a Dios, o en obligación votiva: <font color='%COLOR_BLUE%'>oración, voto.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2172')>G2172</span>; propiamente deseo, expresado como petición a Dios, o en obligación votiva: <font color='%COLOR_BLUE%'>oración, voto.</font>"
   },
   {
     "id": "G2172",
@@ -581,7 +581,7 @@
     "le": "εὔχρηστος",
     "pl": "eújrestos",
     "ps": "yoo'-khrays-tos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5543')}>G5543</span>; usado fácilmente, i.e. útil: <font color='%COLOR_BLUE%'>útil.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5543')>G5543</span>; usado fácilmente, i.e. útil: <font color='%COLOR_BLUE%'>útil.</font>"
   },
   {
     "id": "G2174",
@@ -589,7 +589,7 @@
     "le": "εὐψυχέω",
     "pl": "eupsujéo",
     "ps": "yoo-psoo-kheh'-o",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span>y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5590')}>G5590</span>; estar de buen espíritu, i.e. sentirse animado: <font color='%COLOR_BLUE%'>ánimo.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span>y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5590')>G5590</span>; estar de buen espíritu, i.e. sentirse animado: <font color='%COLOR_BLUE%'>ánimo.</font>"
   },
   {
     "id": "G2175",
@@ -597,7 +597,7 @@
     "le": "εὐωδία",
     "pl": "euodía",
     "ps": "yoo-o-dee'-ah",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3605')}>G3605</span>; buen aroma, i.e. fragancia: <font color='%COLOR_BLUE%'>fragante, gratísimo, grato olor.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3605')>G3605</span>; buen aroma, i.e. fragancia: <font color='%COLOR_BLUE%'>fragante, gratísimo, grato olor.</font>"
   },
   {
     "id": "G2176",
@@ -605,7 +605,7 @@
     "le": "εὐώνυμος",
     "pl": "euónumos",
     "ps": "yoo-o'-noo-mos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2095')}>G2095</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3686')}>G3686</span>; propiamente bien nombrado (buen augurio), i.e. izquierda (que era el lado de la suerte entre los griegos paganos); neutro como adverbio a mano izquierda.: <font color='%COLOR_BLUE%'>izquierdo, mano (izquierda).</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2095')>G2095</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3686')>G3686</span>; propiamente bien nombrado (buen augurio), i.e. izquierda (que era el lado de la suerte entre los griegos paganos); neutro como adverbio a mano izquierda.: <font color='%COLOR_BLUE%'>izquierdo, mano (izquierda).</font>"
   },
   {
     "id": "G2177",
@@ -613,7 +613,7 @@
     "le": "ἐφάλλομαι",
     "pl": "efálomai",
     "ps": "ef-al'-lom-ahee",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G242')}>G242</span>; brotar, saltar: <font color='%COLOR_BLUE%'>saltar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1909')>G1909</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G242')>G242</span>; brotar, saltar: <font color='%COLOR_BLUE%'>saltar.</font>"
   },
   {
     "id": "G2178",
@@ -621,7 +621,7 @@
     "le": "ἐφάπαξ",
     "pl": "efápax",
     "ps": "ef-ap'-ax",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G530')}>G530</span>; (solo) en una ocasión: <font color='%COLOR_BLUE%'>una vez.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1909')>G1909</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G530')>G530</span>; (solo) en una ocasión: <font color='%COLOR_BLUE%'>una vez.</font>"
   },
   {
     "id": "G2179",
@@ -629,7 +629,7 @@
     "le": "Ἐφεσῖνος",
     "pl": "Efesínos",
     "ps": "ef-es-ee'-nos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2181')}>G2181</span>; efesio, o situado en éfeso: <font color='%COLOR_BLUE%'>en éfeso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2181')>G2181</span>; efesio, o situado en éfeso: <font color='%COLOR_BLUE%'>en éfeso.</font>"
   },
   {
     "id": "G2180",
@@ -637,7 +637,7 @@
     "le": "Ἐφέσιος",
     "pl": "Efésios",
     "ps": "ef-es'-ee-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2181')}>G2181</span>; efesio o habitante de éfeso: <font color='%COLOR_BLUE%'>Efesio, éfeso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2181')>G2181</span>; efesio o habitante de éfeso: <font color='%COLOR_BLUE%'>Efesio, éfeso.</font>"
   },
   {
     "id": "G2181",
@@ -653,7 +653,7 @@
     "le": "ἐφευρετής",
     "pl": "efeurétes",
     "ps": "ef-yoo-ret'-ace",
-    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2147')}>G2147</span>; descubridor, i.e., inventor: <font color='%COLOR_BLUE%'>inventor.</font>"
+    "df": "de un compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1909')>G1909</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2147')>G2147</span>; descubridor, i.e., inventor: <font color='%COLOR_BLUE%'>inventor.</font>"
   },
   {
     "id": "G2183",
@@ -661,7 +661,7 @@
     "le": "ἐφημερία",
     "pl": "efemepía",
     "ps": "ef-ay-mer-ee'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2184')}>G2184</span>; diurno, i.e. (específicamente) rotación o clase cotidiana del servicio de sacerdotes judíos en el templo, según la distribución por familias: <font color='%COLOR_BLUE%'>clase.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2184')>G2184</span>; diurno, i.e. (específicamente) rotación o clase cotidiana del servicio de sacerdotes judíos en el templo, según la distribución por familias: <font color='%COLOR_BLUE%'>clase.</font>"
   },
   {
     "id": "G2184",
@@ -669,7 +669,7 @@
     "le": "ἐφήμερος",
     "pl": "efémeros",
     "ps": "ef-ay'-mer-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2250')}>G2250</span>; por un día («efímero»), i.e. diurno: <font color='%COLOR_BLUE%'>día.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1909')>G1909</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2250')>G2250</span>; por un día («efímero»), i.e. diurno: <font color='%COLOR_BLUE%'>día.</font>"
   },
   {
     "id": "G2185",
@@ -677,7 +677,7 @@
     "le": "ἐφικνέομαι",
     "pl": "efiknéomai",
     "ps": "ef-ik-neh'-om-ahee",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y un cognado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2240')}>G2240</span>; llegar a, i.e. extender a: <font color='%COLOR_BLUE%'>llegar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1909')>G1909</span> y un cognado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2240')>G2240</span>; llegar a, i.e. extender a: <font color='%COLOR_BLUE%'>llegar.</font>"
   },
   {
     "id": "G2186",
@@ -685,7 +685,7 @@
     "le": "ἐφίστημι",
     "pl": "efístemi",
     "ps": "ef-is'-tay-mee",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1909')}>G1909</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2476')}>G2476</span>; pararse sobre, i.e. estar presente (en varias aplicaciones, amistosas o de otra manera, por lo general literalmente): <font color='%COLOR_BLUE%'>acercar, acudir, arremeter, asaltar, inclinar, instar, llegar, parar, presentar, presente, venir.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1909')>G1909</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2476')>G2476</span>; pararse sobre, i.e. estar presente (en varias aplicaciones, amistosas o de otra manera, por lo general literalmente): <font color='%COLOR_BLUE%'>acercar, acudir, arremeter, asaltar, inclinar, instar, llegar, parar, presentar, presente, venir.</font>"
   },
   {
     "id": "G2187",
@@ -693,7 +693,7 @@
     "le": "Ἐφραίμ",
     "pl": "Efraím",
     "ps": "ef-rah-im'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H669')}>H669</span> o major <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G6085')}>G6085</span>]; Efraín, lugar en Palestina: <font color='%COLOR_BLUE%'>Efraín.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H669')>H669</span> o major <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G6085')>G6085</span>]; Efraín, lugar en Palestina: <font color='%COLOR_BLUE%'>Efraín.</font>"
   },
   {
     "id": "G2188",
@@ -701,7 +701,7 @@
     "le": "ἐφφαθά",
     "pl": "effadsá",
     "ps": "ef-fath-ah'",
-    "df": "de origen cal. [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('G6606')}>G6606</span>]; ¡ábrete!: <font color='%COLOR_BLUE%'>Efata.</font>"
+    "df": "de origen cal. [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G6606')>G6606</span>]; ¡ábrete!: <font color='%COLOR_BLUE%'>Efata.</font>"
   },
   {
     "id": "G2189",
@@ -709,7 +709,7 @@
     "le": "ἔχθρα",
     "pl": "éjdsra",
     "ps": "ekh'-thrah",
-    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2190')}>G2190</span>; hostilidad; por implicación razón para oposición: <font color='%COLOR_BLUE%'>enemistad, enemistado.</font>"
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2190')>G2190</span>; hostilidad; por implicación razón para oposición: <font color='%COLOR_BLUE%'>enemistad, enemistado.</font>"
   },
   {
     "id": "G2190",
@@ -749,7 +749,7 @@
     "le": "Ζαβουλών",
     "pl": "Zaboulón",
     "ps": "dzab-oo-lone'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2074')}>H2074</span>]; Zabulón, región en Palestina: <font color='%COLOR_BLUE%'>Zabulón.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2074')>H2074</span>]; Zabulón, región en Palestina: <font color='%COLOR_BLUE%'>Zabulón.</font>"
   },
   {
     "id": "G2195",
@@ -757,7 +757,7 @@
     "le": "Ζακχαῖος",
     "pl": "Zakjaíos",
     "ps": "dzak-chah'-ee-yos",
-    "df": "de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2140')}>H2140</span>]; Zaqueo, un israelita: <font color='%COLOR_BLUE%'>Zaqueo.</font>"
+    "df": "de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2140')>H2140</span>]; Zaqueo, un israelita: <font color='%COLOR_BLUE%'>Zaqueo.</font>"
   },
   {
     "id": "G2196",
@@ -765,7 +765,7 @@
     "le": "Ζαρά",
     "pl": "Zará",
     "ps": "dzar-ah'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2226')}>H2226</span>]; Zera, un israelita: <font color='%COLOR_BLUE%'>Zara.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2226')>H2226</span>]; Zera, un israelita: <font color='%COLOR_BLUE%'>Zara.</font>"
   },
   {
     "id": "G2197",
@@ -773,7 +773,7 @@
     "le": "Ζαχαρίας",
     "pl": "Zajarías",
     "ps": "dzakh-ar-ee'-as",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2148')}>H2148</span>]; Zacarías, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Zacarías.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2148')>H2148</span>]; Zacarías, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Zacarías.</font>"
   },
   {
     "id": "G2198",
@@ -789,7 +789,7 @@
     "le": "Ζεβεδαῖος",
     "pl": "Zebedaíos",
     "ps": "dzeb-ed-ah'-yos",
-    "df": "de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2068')}>H2068</span>]; Zebedeo, un israelita: <font color='%COLOR_BLUE%'>Zebedeo.</font>"
+    "df": "de origen hebreo [Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2068')>H2068</span>]; Zebedeo, un israelita: <font color='%COLOR_BLUE%'>Zebedeo.</font>"
   },
   {
     "id": "G2200",
@@ -797,7 +797,7 @@
     "le": "ζεστός",
     "pl": "zestós",
     "ps": "dzes-tos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2204')}>G2204</span>; hervido, i.e. (por implicación) cálido (figurativamente ferviente): <font color='%COLOR_BLUE%'>caliente.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2204')>G2204</span>; hervido, i.e. (por implicación) cálido (figurativamente ferviente): <font color='%COLOR_BLUE%'>caliente.</font>"
   },
   {
     "id": "G2201",
@@ -805,7 +805,7 @@
     "le": "ζεῦγος",
     "pl": "zeúgos",
     "ps": "dzyoo'-gos",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2218')}>G2218</span>; pareja, i.e. equipo, yunta (de bueyes uncidos) o pareja (de aves unidas): <font color='%COLOR_BLUE%'>par, yunta.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2218')>G2218</span>; pareja, i.e. equipo, yunta (de bueyes uncidos) o pareja (de aves unidas): <font color='%COLOR_BLUE%'>par, yunta.</font>"
   },
   {
     "id": "G2202",
@@ -813,7 +813,7 @@
     "le": "ζευκτηρία",
     "pl": "zeuktería",
     "ps": "dzook-tay-ree'-ah",
-    "df": "femenino de un derivado (en segunda etapa) de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2218')}>G2218</span>; sujetador (cuerdas de amarras): <font color='%COLOR_BLUE%'>amarra.</font>"
+    "df": "femenino de un derivado (en segunda etapa) de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2218')>G2218</span>; sujetador (cuerdas de amarras): <font color='%COLOR_BLUE%'>amarra.</font>"
   },
   {
     "id": "G2203",
@@ -837,7 +837,7 @@
     "le": "ζῆλος",
     "pl": "zélos",
     "ps": "dzay'-los",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2204')}>G2204</span>; propiamente calor, i.e. (figurativamente) «celo» (en sentido favorable, ardor; en sentido desfavorable, celos, como un esposo [figurativamente de Dios], o de un enemigo, malicia: <font color='%COLOR_BLUE%'>solicitud, envidia, hervor, celo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2204')>G2204</span>; propiamente calor, i.e. (figurativamente) «celo» (en sentido favorable, ardor; en sentido desfavorable, celos, como un esposo [figurativamente de Dios], o de un enemigo, malicia: <font color='%COLOR_BLUE%'>solicitud, envidia, hervor, celo.</font>"
   },
   {
     "id": "G2206",
@@ -845,7 +845,7 @@
     "le": "ζηλόω",
     "pl": "zelóo",
     "ps": "dzay-lo'-o",
-    "df": "o <b>ζηλεύω</b> <font color='%COLOR_PURPLE%'>zeleúo</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2205')}>G2205</span>; tener calor de sentimiento por o en contra de: <font color='%COLOR_BLUE%'>arder, celar, celo, celoso, desear, envidia, mostrar (celo), mover (por envidia), procurar.</font>"
+    "df": "o <b>ζηλεύω</b> <font color='%COLOR_PURPLE%'>zeleúo</font>; de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2205')>G2205</span>; tener calor de sentimiento por o en contra de: <font color='%COLOR_BLUE%'>arder, celar, celo, celoso, desear, envidia, mostrar (celo), mover (por envidia), procurar.</font>"
   },
   {
     "id": "G2207",
@@ -853,7 +853,7 @@
     "le": "ζηλωτής",
     "pl": "zelotés",
     "ps": "dzay-lo-tace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2206')}>G2206</span>; «zelote»: <font color='%COLOR_BLUE%'>anhelar, celoso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2206')>G2206</span>; «zelote»: <font color='%COLOR_BLUE%'>anhelar, celoso.</font>"
   },
   {
     "id": "G2208",
@@ -861,7 +861,7 @@
     "le": "Ζηλωτής",
     "pl": "Zelotés",
     "ps": "dzay-lo-tace'",
-    "df": "lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2207')}>G2207</span>; zelote, i.e. (específicamente) partidario de la independencia política judía: <font color='%COLOR_BLUE%'>zelote.</font>"
+    "df": "lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2207')>G2207</span>; zelote, i.e. (específicamente) partidario de la independencia política judía: <font color='%COLOR_BLUE%'>zelote.</font>"
   },
   {
     "id": "G2209",
@@ -869,7 +869,7 @@
     "le": "ζημία",
     "pl": "zemía",
     "ps": "dzay-mee'-ah",
-    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1150')}>G1150</span> (mediante la idea de violencia); detrimento: <font color='%COLOR_BLUE%'>perder, pérdida.</font>"
+    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1150')>G1150</span> (mediante la idea de violencia); detrimento: <font color='%COLOR_BLUE%'>perder, pérdida.</font>"
   },
   {
     "id": "G2210",
@@ -877,7 +877,7 @@
     "le": "ζημιόω",
     "pl": "zemióo",
     "ps": "dzay-mee-o'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2209')}>G2209</span>; lastimar, herir, i.e. (reflexivamente o pasivamente) experimentar detrimento: <font color='%COLOR_BLUE%'>padecer, perder, pérdida, sufrir, destruir.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2209')>G2209</span>; lastimar, herir, i.e. (reflexivamente o pasivamente) experimentar detrimento: <font color='%COLOR_BLUE%'>padecer, perder, pérdida, sufrir, destruir.</font>"
   },
   {
     "id": "G2211",
@@ -885,7 +885,7 @@
     "le": "Ζηνᾶς",
     "pl": "Zenás",
     "ps": "dzay-nas'",
-    "df": "probablemente extraído de una forma poética de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2203')}>G2203</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1435')}>G1435</span>; dado por Jove; Zenas, un cristiano: <font color='%COLOR_BLUE%'>Zenas.</font>"
+    "df": "probablemente extraído de una forma poética de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2203')>G2203</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1435')>G1435</span>; dado por Jove; Zenas, un cristiano: <font color='%COLOR_BLUE%'>Zenas.</font>"
   },
   {
     "id": "G2212",
@@ -893,7 +893,7 @@
     "le": "ζητέω",
     "pl": "zetéo",
     "ps": "dzay-teh'-o",
-    "df": "de afinidad incierta; buscar (literalmente o figurativamente) específicamente (por hebraísmo) adorar (a Dios), o (en un mal sentido) complotar (contra la vida): <font color='%COLOR_BLUE%'>pedir (señal), preguntar, preocupar, procurar, querer, requerir, buscar, demandar, ir.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H4441')}>H4441</span>."
+    "df": "de afinidad incierta; buscar (literalmente o figurativamente) específicamente (por hebraísmo) adorar (a Dios), o (en un mal sentido) complotar (contra la vida): <font color='%COLOR_BLUE%'>pedir (señal), preguntar, preocupar, procurar, querer, requerir, buscar, demandar, ir.</font> Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H4441')>H4441</span>."
   },
   {
     "id": "G2213",
@@ -901,7 +901,7 @@
     "le": "ζήτημα",
     "pl": "zétema",
     "ps": "dzay'-tay-mah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2212')}>G2212</span>; búsqueda (propiamente concretamente), i.e. (en palabras) debate: <font color='%COLOR_BLUE%'>cuestión.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2212')>G2212</span>; búsqueda (propiamente concretamente), i.e. (en palabras) debate: <font color='%COLOR_BLUE%'>cuestión.</font>"
   },
   {
     "id": "G2214",
@@ -909,7 +909,7 @@
     "le": "ζήτησις",
     "pl": "zétesis",
     "ps": "dzay'-tay-sis",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2212')}>G2212</span>; búsqueda (propiamente el acto), i.e., disputa o su tema: <font color='%COLOR_BLUE%'>cuestión, discusión, disputa.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2212')>G2212</span>; búsqueda (propiamente el acto), i.e., disputa o su tema: <font color='%COLOR_BLUE%'>cuestión, discusión, disputa.</font>"
   },
   {
     "id": "G2215",
@@ -925,7 +925,7 @@
     "le": "Ζοροβάβελ",
     "pl": "Zorobábel",
     "ps": "dzor-ob-ab'-el",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2216')}>H2216</span>]; Zorobabel, un israelita: <font color='%COLOR_BLUE%'>Zorobabel.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2216')>H2216</span>]; Zorobabel, un israelita: <font color='%COLOR_BLUE%'>Zorobabel.</font>"
   },
   {
     "id": "G2217",
@@ -933,7 +933,7 @@
     "le": "ζόφος",
     "pl": "zófos",
     "ps": "dzof'-os",
-    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3509')}>G3509</span>; lóbrego (como cubriendo como una nube): <font color='%COLOR_BLUE%'>oscuridad, densa (oscuridad).</font>"
+    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3509')>G3509</span>; lóbrego (como cubriendo como una nube): <font color='%COLOR_BLUE%'>oscuridad, densa (oscuridad).</font>"
   },
   {
     "id": "G2218",
@@ -949,7 +949,7 @@
     "le": "ζύμη",
     "pl": "zúme",
     "ps": "dzoo'-may",
-    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2204')}>G2204</span>; fermento (como hirviendo): <font color='%COLOR_BLUE%'>levadura.</font>"
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2204')>G2204</span>; fermento (como hirviendo): <font color='%COLOR_BLUE%'>levadura.</font>"
   },
   {
     "id": "G2220",
@@ -957,7 +957,7 @@
     "le": "ζυμόω",
     "pl": "zumóo",
     "ps": "dzoo-mo'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2219')}>G2219</span>; hacer fermentar: <font color='%COLOR_BLUE%'>fermentar, leudar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2219')>G2219</span>; hacer fermentar: <font color='%COLOR_BLUE%'>fermentar, leudar.</font>"
   },
   {
     "id": "G2221",
@@ -965,7 +965,7 @@
     "le": "ζωγρέω",
     "pl": "zogréo",
     "ps": "dzogue-reh'-o",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2226')}>G2226</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G64')}>G64</span>; tomar vivo (hacer prisionero de guerra), i.e. (figurativamente) capturar o entrampar: <font color='%COLOR_BLUE%'>pescador, cautivo.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2226')>G2226</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G64')>G64</span>; tomar vivo (hacer prisionero de guerra), i.e. (figurativamente) capturar o entrampar: <font color='%COLOR_BLUE%'>pescador, cautivo.</font>"
   },
   {
     "id": "G2222",
@@ -973,7 +973,7 @@
     "le": "ζωή",
     "pl": "zoé",
     "ps": "dzo-ay'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2198')}>G2198</span>; vida (literalmente o figurativamente): <font color='%COLOR_BLUE%'>vida, vivir.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5590')}>H5590</span>."
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2198')>G2198</span>; vida (literalmente o figurativamente): <font color='%COLOR_BLUE%'>vida, vivir.</font> Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H5590')>H5590</span>."
   },
   {
     "id": "G2223",
@@ -981,7 +981,7 @@
     "le": "ζώνη",
     "pl": "zóne",
     "ps": "dzo'-nay",
-    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2218')}>G2218</span>; cinturón, por implicación bolsillo: <font color='%COLOR_BLUE%'>cinto.</font>"
+    "df": "similar a la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2218')>G2218</span>; cinturón, por implicación bolsillo: <font color='%COLOR_BLUE%'>cinto.</font>"
   },
   {
     "id": "G2224",
@@ -989,7 +989,7 @@
     "le": "ζώννυμι",
     "pl": "zónnumi",
     "ps": "dzone'-noo-mi",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2223')}>G2223</span>; atar, ceñir, sujetar alrededor (específicamente con un cinturón): <font color='%COLOR_BLUE%'>ceñir.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2223')>G2223</span>; atar, ceñir, sujetar alrededor (específicamente con un cinturón): <font color='%COLOR_BLUE%'>ceñir.</font>"
   },
   {
     "id": "G2225",
@@ -997,7 +997,7 @@
     "le": "ζωογονέω",
     "pl": "zoogonéo",
     "ps": "dzo-og-on-eh'-o",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2226')}>G2226</span> y un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1096')}>G1096</span>; engendrar vivo, i.e. (por analogía) rescatar (pasivamente ser salvado)  de muerte: <font color='%COLOR_BLUE%'>muerte.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2226')>G2226</span> y un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1096')>G1096</span>; engendrar vivo, i.e. (por analogía) rescatar (pasivamente ser salvado)  de muerte: <font color='%COLOR_BLUE%'>muerte.</font>"
   },
   {
     "id": "G2226",
@@ -1005,7 +1005,7 @@
     "le": "ζῶον",
     "pl": "zón",
     "ps": "dzo'-on",
-    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2198')}>G2198</span>; cosa viva, i.e. animal: <font color='%COLOR_BLUE%'>animal, ser viviente.</font>"
+    "df": "neutro de un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2198')>G2198</span>; cosa viva, i.e. animal: <font color='%COLOR_BLUE%'>animal, ser viviente.</font>"
   },
   {
     "id": "G2227",
@@ -1013,7 +1013,7 @@
     "le": "ζωοποιέω",
     "pl": "zoopoiéo",
     "ps": "dzo-op-oy-eh'-o",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2226')}>G2226</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4160')}>G4160</span>; (re-) vitalizar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>dar vida, vivificante, vivificar.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2226')>G2226</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4160')>G4160</span>; (re-) vitalizar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>dar vida, vivificante, vivificar.</font>"
   },
   {
     "id": "G2228",
@@ -1021,7 +1021,7 @@
     "le": "ἤ",
     "pl": "e",
     "ps": "ay",
-    "df": "partícula primaria de distinción entre dos términos conectados; disyuntiva, o; comparativa, que: <font color='%COLOR_BLUE%'>o, ni. A menudo usada en conexión con otras partículas.</font> Compare especialmente <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2235')}>H2235</span>; <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2260')}>H2260</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2273')}>H2273</span>."
+    "df": "partícula primaria de distinción entre dos términos conectados; disyuntiva, o; comparativa, que: <font color='%COLOR_BLUE%'>o, ni. A menudo usada en conexión con otras partículas.</font> Compare especialmente <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2235')>H2235</span>; <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2260')>H2260</span>, <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2273')>H2273</span>."
   },
   {
     "id": "G2229",
@@ -1029,7 +1029,7 @@
     "le": "ἦ",
     "pl": "e",
     "ps": "ay",
-    "df": "adverbio de confirmación; tal vez intensivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2228')}>G2228</span>; usado solo (en el N.T.) antes de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3303')}>G3303</span>; con toda certeza: <font color='%COLOR_BLUE%'>de cierto.</font><p></p><b>ἡ</b> <font color='%COLOR_PURPLE%'>jé.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3588')}>G3588</span>.<p></p><b>ἡ</b> <font color='%COLOR_PURPLE%'>jé.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3739')}>G3739</span>.<p></p><b>η</b> <font color='%COLOR_PURPLE%'>é.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5600')}>G5600</span>."
+    "df": "adverbio de confirmación; tal vez intensivo de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2228')>G2228</span>; usado solo (en el N.T.) antes de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3303')>G3303</span>; con toda certeza: <font color='%COLOR_BLUE%'>de cierto.</font><p></p><b>ἡ</b> <font color='%COLOR_PURPLE%'>jé.</font> Véase <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3588')>G3588</span>.<p></p><b>ἡ</b> <font color='%COLOR_PURPLE%'>jé.</font> Véase <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3739')>G3739</span>.<p></p><b>η</b> <font color='%COLOR_PURPLE%'>é.</font> Véase <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5600')>G5600</span>."
   },
   {
     "id": "G2230",
@@ -1037,7 +1037,7 @@
     "le": "ἡγεμονεύω",
     "pl": "jegemoneúo",
     "ps": "hayg-em-on-yoo'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2232')}>G2232</span>; actuar como gobernante: <font color='%COLOR_BLUE%'>gobernador.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2232')>G2232</span>; actuar como gobernante: <font color='%COLOR_BLUE%'>gobernador.</font>"
   },
   {
     "id": "G2231",
@@ -1045,7 +1045,7 @@
     "le": "ἡγεμονία",
     "pl": "jeguemonía",
     "ps": "hayg-em-on-ee'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2232')}>G2232</span>; gobierno, i.e. (en tiempo) término oficial: <font color='%COLOR_BLUE%'>imperio.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2232')>G2232</span>; gobierno, i.e. (en tiempo) término oficial: <font color='%COLOR_BLUE%'>imperio.</font>"
   },
   {
     "id": "G2232",
@@ -1053,7 +1053,7 @@
     "le": "ἡγεμών",
     "pl": "jeguemón",
     "ps": "hayg-em-ohn'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2233')}>G2233</span>; líder, i.e. persona principal (o lugar figurativamente) de una provincia: <font color='%COLOR_BLUE%'>gobernador, príncipe.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2233')>G2233</span>; líder, i.e. persona principal (o lugar figurativamente) de una provincia: <font color='%COLOR_BLUE%'>gobernador, príncipe.</font>"
   },
   {
     "id": "G2233",
@@ -1061,7 +1061,7 @@
     "le": "ἡγέομαι",
     "pl": "jeguéomai",
     "ps": "hayg-eh'-om-ahee",
-    "df": "voz media de una forma (presumiblemente) más fuerte de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G71')}>G71</span>; dirigir, i.e. comandar, mandar (con autoridad oficial); figurativamente estimar, i.e., considerar: <font color='%COLOR_BLUE%'>principal, creer, dirigir, entendido, estima, estimar, gobernador, guiador.</font>"
+    "df": "voz media de una forma (presumiblemente) más fuerte de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G71')>G71</span>; dirigir, i.e. comandar, mandar (con autoridad oficial); figurativamente estimar, i.e., considerar: <font color='%COLOR_BLUE%'>principal, creer, dirigir, entendido, estima, estimar, gobernador, guiador.</font>"
   },
   {
     "id": "G2234",
@@ -1069,7 +1069,7 @@
     "le": "ἡδέως",
     "pl": "jedéos",
     "ps": "hay-deh'-oce",
-    "df": "adverbio de un derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2237')}>G2237</span>; dulcemente, i.e. (figurativamente) con placer: <font color='%COLOR_BLUE%'>buena gana.</font>"
+    "df": "adverbio de un derivado de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2237')>G2237</span>; dulcemente, i.e. (figurativamente) con placer: <font color='%COLOR_BLUE%'>buena gana.</font>"
   },
   {
     "id": "G2235",
@@ -1077,7 +1077,7 @@
     "le": "ἤδη",
     "pl": "jéde",
     "ps": "ay'-day",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2228')}>G2228</span> (o posiblemente <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2229')}>G2229</span>) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1211')}>G1211</span>; incluso ahora: <font color='%COLOR_BLUE%'>ya.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2228')>G2228</span> (o posiblemente <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2229')>G2229</span>) y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1211')>G1211</span>; incluso ahora: <font color='%COLOR_BLUE%'>ya.</font>"
   },
   {
     "id": "G2236",
@@ -1085,7 +1085,7 @@
     "le": "ἥδιστα",
     "pl": "jédista",
     "ps": "hay'-dis-tah",
-    "df": "neutro plural de un superlativo de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2234')}>G2234</span>; con gran placer: <font color='%COLOR_BLUE%'>mayor placer, buena gana.</font>"
+    "df": "neutro plural de un superlativo de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2234')>G2234</span>; con gran placer: <font color='%COLOR_BLUE%'>mayor placer, buena gana.</font>"
   },
   {
     "id": "G2237",
@@ -1101,7 +1101,7 @@
     "le": "ἡδύοσμον",
     "pl": "jedúosmon",
     "ps": "hay-doo'-os-mon",
-    "df": "neutro del compuesto de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2234')}>G2234</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3744')}>G3744</span>; planta de aroma dulce, i.e. menta: <font color='%COLOR_BLUE%'>menta.</font>"
+    "df": "neutro del compuesto de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2234')>G2234</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3744')>G3744</span>; planta de aroma dulce, i.e. menta: <font color='%COLOR_BLUE%'>menta.</font>"
   },
   {
     "id": "G2239",
@@ -1109,7 +1109,7 @@
     "le": "ἦθος",
     "pl": "jédsos",
     "ps": "ay'-thos",
-    "df": "forma fortificada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1485')}>G1485</span>; uso, i.e. (plural) hábitos morales: <font color='%COLOR_BLUE%'>costumbre.</font>"
+    "df": "forma fortificada de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1485')>G1485</span>; uso, i.e. (plural) hábitos morales: <font color='%COLOR_BLUE%'>costumbre.</font>"
   },
   {
     "id": "G2240",
@@ -1125,7 +1125,7 @@
     "le": "ἠλί",
     "pl": "elí",
     "ps": "ay-lee'",
-    "df": "o <b>ἐλοι</b> <font color='%COLOR_PURPLE%'>eloi</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span> con pronombre sufijo]; Dios mío: <font color='%COLOR_BLUE%'>Elí.</font>"
+    "df": "o <b>ἐλοι</b> <font color='%COLOR_PURPLE%'>eloi</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H410')>H410</span> con pronombre sufijo]; Dios mío: <font color='%COLOR_BLUE%'>Elí.</font>"
   },
   {
     "id": "G2242",
@@ -1133,7 +1133,7 @@
     "le": "Ἡλί",
     "pl": "Jélí",
     "ps": "hay-lee'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5941')}>H5941</span>]; Elí, un israelita: <font color='%COLOR_BLUE%'>Elí.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H5941')>H5941</span>]; Elí, un israelita: <font color='%COLOR_BLUE%'>Elí.</font>"
   },
   {
     "id": "G2243",
@@ -1141,7 +1141,7 @@
     "le": "Ἡλίας",
     "pl": "Jelías",
     "ps": "hay-lee'-as",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H452')}>H452</span>]; Elías, un israelita: <font color='%COLOR_BLUE%'>Elías.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H452')>H452</span>]; Elías, un israelita: <font color='%COLOR_BLUE%'>Elías.</font>"
   },
   {
     "id": "G2244",
@@ -1149,7 +1149,7 @@
     "le": "ἡλικία",
     "pl": "jelikía",
     "ps": "hay-lik-ee'-ah",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G2245')}>G2245</span>; madurez (en años o tamaño): <font color='%COLOR_BLUE%'>edad, estatura.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G2245')>G2245</span>; madurez (en años o tamaño): <font color='%COLOR_BLUE%'>edad, estatura.</font>"
   },
   {
     "id": "G2245",
@@ -1165,7 +1165,7 @@
     "le": "ἥλιος",
     "pl": "jélios",
     "ps": "hay'-lee-os",
-    "df": "de <b>ἕλη</b> <font color='%COLOR_PURPLE%'>jéle</font> (rayo; tal vez semejante al alternado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G138')}>G138</span>); sol; por implicación luz: <font color='%COLOR_BLUE%'>sol.</font>"
+    "df": "de <b>ἕλη</b> <font color='%COLOR_PURPLE%'>jéle</font> (rayo; tal vez semejante al alternado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G138')>G138</span>); sol; por implicación luz: <font color='%COLOR_BLUE%'>sol.</font>"
   },
   {
     "id": "G2247",
@@ -1181,7 +1181,7 @@
     "le": "ἡμᾶς",
     "pl": "jemás",
     "ps": "hay-mas'",
-    "df": "acusativo plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1473')}>G1473</span>; nosotros: <font color='%COLOR_BLUE%'>nosotros, nuestro.</font>"
+    "df": "acusativo plural de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1473')>G1473</span>; nosotros: <font color='%COLOR_BLUE%'>nosotros, nuestro.</font>"
   },
   {
     "id": "G2249",
@@ -1189,7 +1189,7 @@
     "le": "ἡμεῖς",
     "pl": "jemeís",
     "ps": "hay-mice'",
-    "df": "denominativo plural de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1473')}>G1473</span>; nosotros (usado solo cuando énf.): <font color='%COLOR_BLUE%'>nosotros.</font>"
+    "df": "denominativo plural de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1473')>G1473</span>; nosotros (usado solo cuando énf.): <font color='%COLOR_BLUE%'>nosotros.</font>"
   },
   {
     "id": "G2250",
@@ -1197,6 +1197,6 @@
     "le": "ἡμέρα",
     "pl": "jeméra",
     "ps": "hay-mer'-ah",
-    "df": "femenino (con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5610')}>G5610</span> implicación) de un derivado de <b>ἧμαι</b> <font color='%COLOR_PURPLE%'>jémai</font> (sentarse; similar a la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1476')}>G1476</span>) significa manso, i.e. gentil; día, i.e. (literalmente) espacio de tiempo entre el amanecer y la noche, o las <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H24')}>H24</span> horas enteras (pero los judíos por lo general consideraban varios días como incluyendo parte de ambos extremos); figurativamente período (siempre definido más o menos claramente por el contexto): <font color='%COLOR_BLUE%'>edad, fiesta, hoy, mediodía, amanecer, día, tiempo, tribunal.</font>"
+    "df": "femenino (con <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5610')>G5610</span> implicación) de un derivado de <b>ἧμαι</b> <font color='%COLOR_PURPLE%'>jémai</font> (sentarse; similar a la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1476')>G1476</span>) significa manso, i.e. gentil; día, i.e. (literalmente) espacio de tiempo entre el amanecer y la noche, o las <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H24')>H24</span> horas enteras (pero los judíos por lo general consideraban varios días como incluyendo parte de ambos extremos); figurativamente período (siempre definido más o menos claramente por el contexto): <font color='%COLOR_BLUE%'>edad, fiesta, hoy, mediodía, amanecer, día, tiempo, tribunal.</font>"
   }
 ]

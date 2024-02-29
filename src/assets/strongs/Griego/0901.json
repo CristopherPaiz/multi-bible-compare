@@ -5,7 +5,7 @@
     "le": "βαθύς",
     "pl": "badsús",
     "ps": "bath-oos'",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; profundo (como descendiendo), literalmente o figurativamente: <font color='%COLOR_BLUE%'>profundo, hondo, muy de mañana.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span>; profundo (como descendiendo), literalmente o figurativamente: <font color='%COLOR_BLUE%'>profundo, hondo, muy de mañana.</font>"
   },
   {
     "id": "G902",
@@ -13,7 +13,7 @@
     "le": "βαΐον",
     "pl": "baíon",
     "ps": "bah-ee'-on",
-    "df": "diminutivo de un derivado probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; rama de palma (como que sobresale lejos): <font color='%COLOR_BLUE%'>rama.</font>"
+    "df": "diminutivo de un derivado probablemente de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span>; rama de palma (como que sobresale lejos): <font color='%COLOR_BLUE%'>rama.</font>"
   },
   {
     "id": "G903",
@@ -21,7 +21,7 @@
     "le": "Βαλαάμ",
     "pl": "Balaam",
     "ps": "bal-ah-am'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1109')}>H1109</span>]; Balaam, un mesopotamio (simbólico del maestro falso): <font color='%COLOR_BLUE%'>Balaam.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1109')>H1109</span>]; Balaam, un mesopotamio (simbólico del maestro falso): <font color='%COLOR_BLUE%'>Balaam.</font>"
   },
   {
     "id": "G904",
@@ -29,7 +29,7 @@
     "le": "Βαλάκ",
     "pl": "Balác",
     "ps": "bal-ak'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1111')}>H1111</span>]; Balac, un moabita: <font color='%COLOR_BLUE%'>Balac.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1111')>H1111</span>]; Balac, un moabita: <font color='%COLOR_BLUE%'>Balac.</font>"
   },
   {
     "id": "G905",
@@ -37,7 +37,7 @@
     "le": "βαλάντιον",
     "pl": "balántion",
     "ps": "bal-an'-tee-on",
-    "df": "probablemente remotamente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span> (como depósito); bolsa, cartera (para dinero): <font color='%COLOR_BLUE%'>bolsa.</font>"
+    "df": "probablemente remotamente de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G906')>G906</span> (como depósito); bolsa, cartera (para dinero): <font color='%COLOR_BLUE%'>bolsa.</font>"
   },
   {
     "id": "G906",
@@ -45,7 +45,7 @@
     "le": "βάλλω",
     "pl": "balo",
     "ps": "bal'-lo",
-    "df": "verbo primario, lanzar, echar (en varias aplicaciones, más o menos violento o intenso): <font color='%COLOR_BLUE%'>poner, precipitar, sembrar, tender, echar, encarcelar, imponer, lanzar, meter, acostar, arrojar, caer, dar, dejar, derramar, derribar, poner.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4496')}>G4496</span>."
+    "df": "verbo primario, lanzar, echar (en varias aplicaciones, más o menos violento o intenso): <font color='%COLOR_BLUE%'>poner, precipitar, sembrar, tender, echar, encarcelar, imponer, lanzar, meter, acostar, arrojar, caer, dar, dejar, derramar, derribar, poner.</font> Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4496')>G4496</span>."
   },
   {
     "id": "G907",
@@ -53,7 +53,7 @@
     "le": "βαπτίζω",
     "pl": "baptízo",
     "ps": "bap-tid'-zo",
-    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G911')}>G911</span>; dejar abrumado (i.e. completamente mojado); usado solo (en el N.T.) de la ablución ceremonial, específicamente (tecnicamente) de la ordenanza del bautismo crist: <font color='%COLOR_BLUE%'>bautismo, bautizar, lavar.</font>"
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G911')>G911</span>; dejar abrumado (i.e. completamente mojado); usado solo (en el N.T.) de la ablución ceremonial, específicamente (tecnicamente) de la ordenanza del bautismo crist: <font color='%COLOR_BLUE%'>bautismo, bautizar, lavar.</font>"
   },
   {
     "id": "G908",
@@ -61,7 +61,7 @@
     "le": "βάπτισμα",
     "pl": "báptisma",
     "ps": "bap'-tis-mah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G907')}>G907</span>; bautismo (tecnicamente o figurativamente): <font color='%COLOR_BLUE%'>bautismo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G907')>G907</span>; bautismo (tecnicamente o figurativamente): <font color='%COLOR_BLUE%'>bautismo.</font>"
   },
   {
     "id": "G909",
@@ -69,7 +69,7 @@
     "le": "βαπτισμός",
     "pl": "baptismós",
     "ps": "bap-tis-mos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G907')}>G907</span>; ablución (ceremonialmente o cristiana): <font color='%COLOR_BLUE%'>ablución, bautismo, lavamiento.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G907')>G907</span>; ablución (ceremonialmente o cristiana): <font color='%COLOR_BLUE%'>ablución, bautismo, lavamiento.</font>"
   },
   {
     "id": "G910",
@@ -77,7 +77,7 @@
     "le": "Βαπτιστής",
     "pl": "Baptistés",
     "ps": "bap-tis-tace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G907')}>G907</span>; bautizador, como epíteto del precursor de Cristo: <font color='%COLOR_BLUE%'>bautista.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G907')>G907</span>; bautizador, como epíteto del precursor de Cristo: <font color='%COLOR_BLUE%'>bautista.</font>"
   },
   {
     "id": "G911",
@@ -93,7 +93,7 @@
     "le": "Βαραββᾶς",
     "pl": "Barabás",
     "ps": "bar-ab-bas'",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1347')}>H1347</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5')}>G5</span>]; hijo de Aba; Barrabás, un israelita: <font color='%COLOR_BLUE%'>Barrabás.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1347')>H1347</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5')>G5</span>]; hijo de Aba; Barrabás, un israelita: <font color='%COLOR_BLUE%'>Barrabás.</font>"
   },
   {
     "id": "G913",
@@ -101,7 +101,7 @@
     "le": "Βαράκ",
     "pl": "Barac",
     "ps": "bar-ak'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1301')}>H1301</span>]; Barac, un israelita: <font color='%COLOR_BLUE%'>Barac.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1301')>H1301</span>]; Barac, un israelita: <font color='%COLOR_BLUE%'>Barac.</font>"
   },
   {
     "id": "G914",
@@ -109,7 +109,7 @@
     "le": "Βαραχίας",
     "pl": "Barajías",
     "ps": "bar-akh-ee'-as",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1296')}>H1296</span>]; Baraquías (i.e. Berequías), un israelita: <font color='%COLOR_BLUE%'>Berequías.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1296')>H1296</span>]; Baraquías (i.e. Berequías), un israelita: <font color='%COLOR_BLUE%'>Berequías.</font>"
   },
   {
     "id": "G915",
@@ -125,7 +125,7 @@
     "le": "βαρέω",
     "pl": "baréo",
     "ps": "bar-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G926')}>G926</span>; pesar (figurativamente): <font color='%COLOR_BLUE%'>rendirse de sueño, gravar, abrumar, cargado de sueño.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G926')>G926</span>; pesar (figurativamente): <font color='%COLOR_BLUE%'>rendirse de sueño, gravar, abrumar, cargado de sueño.</font>"
   },
   {
     "id": "G917",
@@ -133,7 +133,7 @@
     "le": "βαρέως",
     "pl": "baréos",
     "ps": "bar-eh'-oce",
-    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G926')}>G926</span>; pesadamente (figurativamente): <font color='%COLOR_BLUE%'>pesadamente.</font>"
+    "df": "adverbio de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G926')>G926</span>; pesadamente (figurativamente): <font color='%COLOR_BLUE%'>pesadamente.</font>"
   },
   {
     "id": "G918",
@@ -141,7 +141,7 @@
     "le": "Βαρθολομαῖος",
     "pl": "Bardsolomaíos",
     "ps": "bar-thol-om-ah'-yos",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1247')}>H1247</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8526')}>H8526</span>]; hijo de Tolmai; Bartolomé, un apóstol cristiana: <font color='%COLOR_BLUE%'>Bartolomé.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1247')>H1247</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H8526')>H8526</span>]; hijo de Tolmai; Bartolomé, un apóstol cristiana: <font color='%COLOR_BLUE%'>Bartolomé.</font>"
   },
   {
     "id": "G919",
@@ -149,7 +149,7 @@
     "le": "Βαριησοῦς",
     "pl": "Bariesús",
     "ps": "bar-ee-ay-sooce'",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1247')}>H1247</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3091')}>H3091</span>]; hijo de Jesús (o Josué); Barjesús, un israelita: <font color='%COLOR_BLUE%'>Barjesús.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1247')>H1247</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H3091')>H3091</span>]; hijo de Jesús (o Josué); Barjesús, un israelita: <font color='%COLOR_BLUE%'>Barjesús.</font>"
   },
   {
     "id": "G920",
@@ -157,7 +157,7 @@
     "le": "Βαριωνᾶς",
     "pl": "Barionás",
     "ps": "bar-ee-oo-nas'",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1247')}>H1247</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3124')}>H3124</span>]; hijo de Jonás; Barjonás, un israelita: <font color='%COLOR_BLUE%'>hijo de Jonás.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1247')>H1247</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H3124')>H3124</span>]; hijo de Jonás; Barjonás, un israelita: <font color='%COLOR_BLUE%'>hijo de Jonás.</font>"
   },
   {
     "id": "G921",
@@ -165,7 +165,7 @@
     "le": "Βαρνάβας",
     "pl": "Barnábas",
     "ps": "bar-nab'-as",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1247')}>H1247</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5029')}>H5029</span>]; hijo de Nabas (i.e. profecía); Bernabé, un israelita: <font color='%COLOR_BLUE%'>Bernabé.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1247')>H1247</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H5029')>H5029</span>]; hijo de Nabas (i.e. profecía); Bernabé, un israelita: <font color='%COLOR_BLUE%'>Bernabé.</font>"
   },
   {
     "id": "G922",
@@ -173,7 +173,7 @@
     "le": "βάρος",
     "pl": "baros",
     "ps": "bar'-os",
-    "df": "probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span> (mediante la noción de bajar; Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G899')}>G899</span>); peso; en el N.T. solo figurativamente carga, abundancia, autoridad: <font color='%COLOR_BLUE%'>carga, peso.</font>"
+    "df": "probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span> (mediante la noción de bajar; Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G899')>G899</span>); peso; en el N.T. solo figurativamente carga, abundancia, autoridad: <font color='%COLOR_BLUE%'>carga, peso.</font>"
   },
   {
     "id": "G923",
@@ -181,7 +181,7 @@
     "le": "Βαρσαβᾶς",
     "pl": "Barsabás",
     "ps": "bar-sab-as'",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1247')}>H1247</span> y probablemente <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6634')}>H6634</span>]; hijo de Sabás (o Tsaba); Barsabás, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Barsabás.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1247')>H1247</span> y probablemente <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H6634')>H6634</span>]; hijo de Sabás (o Tsaba); Barsabás, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Barsabás.</font>"
   },
   {
     "id": "G924",
@@ -189,7 +189,7 @@
     "le": "Βαρτιμαῖος",
     "pl": "Bartimaíos",
     "ps": "bar-tim-ah'-yos",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1247')}>H1247</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2931')}>H2931</span>]; hijo de Timeo (o el impuro); Bartimeo, un israelita: <font color='%COLOR_BLUE%'>Bartimeo.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1247')>H1247</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2931')>H2931</span>]; hijo de Timeo (o el impuro); Bartimeo, un israelita: <font color='%COLOR_BLUE%'>Bartimeo.</font>"
   },
   {
     "id": "G925",
@@ -197,7 +197,7 @@
     "le": "βαρύνω",
     "pl": "barúno",
     "ps": "bar-oo'-no",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G926')}>G926</span>; cargar, agobiar (figurativamente): <font color='%COLOR_BLUE%'>cargar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G926')>G926</span>; cargar, agobiar (figurativamente): <font color='%COLOR_BLUE%'>cargar.</font>"
   },
   {
     "id": "G926",
@@ -205,7 +205,7 @@
     "le": "βαρύς",
     "pl": "barús",
     "ps": "bar-ooce'",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G922')}>G922</span>; pesado, i.e. (fig) cargoso, grave: <font color='%COLOR_BLUE%'>grave, gravoso, lo más importante, duro, pesado, rapaz.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G922')>G922</span>; pesado, i.e. (fig) cargoso, grave: <font color='%COLOR_BLUE%'>grave, gravoso, lo más importante, duro, pesado, rapaz.</font>"
   },
   {
     "id": "G927",
@@ -213,7 +213,7 @@
     "le": "βαρύτιμος",
     "pl": "barútimos",
     "ps": "bar-oo'-tim-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G926')}>G926</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5092')}>G5092</span>; altamente valioso: <font color='%COLOR_BLUE%'>de gran precio.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G926')>G926</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5092')>G5092</span>; altamente valioso: <font color='%COLOR_BLUE%'>de gran precio.</font>"
   },
   {
     "id": "G928",
@@ -221,7 +221,7 @@
     "le": "βασανίζω",
     "pl": "basanízo",
     "ps": "bas-an-id'-zo",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G931')}>G931</span>; torturar: <font color='%COLOR_BLUE%'>afligir, atormentar, azotar, fatiga.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G931')>G931</span>; torturar: <font color='%COLOR_BLUE%'>afligir, atormentar, azotar, fatiga.</font>"
   },
   {
     "id": "G929",
@@ -229,7 +229,7 @@
     "le": "βασανισμός",
     "pl": "basanismós",
     "ps": "bas-an-is-mos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G928')}>G928</span>; tortura: <font color='%COLOR_BLUE%'>tormento.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G928')>G928</span>; tortura: <font color='%COLOR_BLUE%'>tormento.</font>"
   },
   {
     "id": "G930",
@@ -237,7 +237,7 @@
     "le": "βασανιστής",
     "pl": "basanistés",
     "ps": "bas-an-is-tace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G928')}>G928</span>; torturador: <font color='%COLOR_BLUE%'>verdugo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G928')>G928</span>; torturador: <font color='%COLOR_BLUE%'>verdugo.</font>"
   },
   {
     "id": "G931",
@@ -245,7 +245,7 @@
     "le": "βάσανος",
     "pl": "basanos",
     "ps": "bas'-an-os",
-    "df": "tal vez remotamente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span> (mediante la noción de irse al fondo); piedra de tormento, i.e. (por analogía) tortura: <font color='%COLOR_BLUE%'>tormento.</font>"
+    "df": "tal vez remotamente de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span> (mediante la noción de irse al fondo); piedra de tormento, i.e. (por analogía) tortura: <font color='%COLOR_BLUE%'>tormento.</font>"
   },
   {
     "id": "G932",
@@ -253,7 +253,7 @@
     "le": "βασιλεία",
     "pl": "basileía",
     "ps": "bas-il-i'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G935')}>G935</span>; propiamente realeza, i.e. (abstractamente) reinar, gobernar, o (concretamente) campo, ámbito (literalmente o figurativamente): <font color='%COLOR_BLUE%'>reinar, reino.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G935')>G935</span>; propiamente realeza, i.e. (abstractamente) reinar, gobernar, o (concretamente) campo, ámbito (literalmente o figurativamente): <font color='%COLOR_BLUE%'>reinar, reino.</font>"
   },
   {
     "id": "G933",
@@ -261,7 +261,7 @@
     "le": "βασίλειον",
     "pl": "basíleion",
     "ps": "bas-il'-i-on",
-    "df": "neutro de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G934')}>G934</span>; palacio: <font color='%COLOR_BLUE%'>palacio de los reyes.</font>"
+    "df": "neutro de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G934')>G934</span>; palacio: <font color='%COLOR_BLUE%'>palacio de los reyes.</font>"
   },
   {
     "id": "G934",
@@ -269,7 +269,7 @@
     "le": "βασίλειος",
     "pl": "basíleios",
     "ps": "bas-il'-i-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G935')}>G935</span>; real (del rey, en naturaleza): <font color='%COLOR_BLUE%'>real.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G935')>G935</span>; real (del rey, en naturaleza): <font color='%COLOR_BLUE%'>real.</font>"
   },
   {
     "id": "G935",
@@ -277,7 +277,7 @@
     "le": "βασιλεύς",
     "pl": "basileús",
     "ps": "bas-il-yooce'",
-    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span> (mediante la noción del cimiento de poder); soberano (abstractamente, relativamente, o figurativamente): <font color='%COLOR_BLUE%'>rey.</font>"
+    "df": "probablemente de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span> (mediante la noción del cimiento de poder); soberano (abstractamente, relativamente, o figurativamente): <font color='%COLOR_BLUE%'>rey.</font>"
   },
   {
     "id": "G936",
@@ -285,7 +285,7 @@
     "le": "βασιλεύω",
     "pl": "basileúo",
     "ps": "bas-il-yoo'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G935')}>G935</span>; gobernar, reinar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>reinar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G935')>G935</span>; gobernar, reinar (literalmente o figurativamente): <font color='%COLOR_BLUE%'>reinar.</font>"
   },
   {
     "id": "G937",
@@ -293,7 +293,7 @@
     "le": "βασιλικός",
     "pl": "basilikós",
     "ps": "bas-il-ee-kos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G935')}>G935</span>; real (en relación), i.e. (literalmente) perteneciente al (o apropiado para) el soberano (como tierra, vestidos, o un mensajero), o (figurativamente) preeminente: <font color='%COLOR_BLUE%'>oficial del rey, real.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G935')>G935</span>; real (en relación), i.e. (literalmente) perteneciente al (o apropiado para) el soberano (como tierra, vestidos, o un mensajero), o (figurativamente) preeminente: <font color='%COLOR_BLUE%'>oficial del rey, real.</font>"
   },
   {
     "id": "G938",
@@ -301,7 +301,7 @@
     "le": "βασίλισσα",
     "pl": "basílissa",
     "ps": "bas-il'-is-sah",
-    "df": "femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G936')}>G936</span>; reina: <font color='%COLOR_BLUE%'>reina.</font>"
+    "df": "femenino de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G936')>G936</span>; reina: <font color='%COLOR_BLUE%'>reina.</font>"
   },
   {
     "id": "G939",
@@ -317,7 +317,7 @@
     "le": "βασκαίνω",
     "pl": "baskaíno",
     "ps": "bas-kah'-ee-no",
-    "df": "afín de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5335')}>G5335</span>; calumniar, difamar, i.e. (por extensión) fascinar (mediante falsas representaciones): <font color='%COLOR_BLUE%'>fascinar.</font>"
+    "df": "afín de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5335')>G5335</span>; calumniar, difamar, i.e. (por extensión) fascinar (mediante falsas representaciones): <font color='%COLOR_BLUE%'>fascinar.</font>"
   },
   {
     "id": "G941",
@@ -325,7 +325,7 @@
     "le": "βαστάζω",
     "pl": "bastázo",
     "ps": "bas-tad'-zo",
-    "df": "tal vez remotamente derivado de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span> (mediante la idea de remoción); levantar, alzar, literalmente o figurativamente (durar, declarar, sustentar, recibir, etc.): <font color='%COLOR_BLUE%'>cargar, llevar, en peso, sobrellevar, soportar, sufrir, sustentar, tomar, traer.</font>"
+    "df": "tal vez remotamente derivado de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span> (mediante la idea de remoción); levantar, alzar, literalmente o figurativamente (durar, declarar, sustentar, recibir, etc.): <font color='%COLOR_BLUE%'>cargar, llevar, en peso, sobrellevar, soportar, sufrir, sustentar, tomar, traer.</font>"
   },
   {
     "id": "G942",
@@ -341,7 +341,7 @@
     "le": "βάτος",
     "pl": "bátos",
     "ps": "bat'-os",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1324')}>H1324</span>]; baño, o bato, medida para líquidos: <font color='%COLOR_BLUE%'>barril.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1324')>H1324</span>]; baño, o bato, medida para líquidos: <font color='%COLOR_BLUE%'>barril.</font>"
   },
   {
     "id": "G944",
@@ -357,7 +357,7 @@
     "le": "βαττολογέω",
     "pl": "battologéo",
     "ps": "bat-tol-og-eh'-o",
-    "df": "de <b>Βάττος</b> <font color='%COLOR_PURPLE%'>Báttos</font> (tartamudo proverbial) y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3056')}>G3056</span>; tartamudear, i.e. (por implicación) charlar tediosamente: <font color='%COLOR_BLUE%'>vana repetición.</font>"
+    "df": "de <b>Βάττος</b> <font color='%COLOR_PURPLE%'>Báttos</font> (tartamudo proverbial) y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3056')>G3056</span>; tartamudear, i.e. (por implicación) charlar tediosamente: <font color='%COLOR_BLUE%'>vana repetición.</font>"
   },
   {
     "id": "G946",
@@ -365,7 +365,7 @@
     "le": "βδέλυγμα",
     "pl": "bdélugma",
     "ps": "bdel'-oog-mah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G948')}>G948</span>; una cosa detestable, i.e. (específicamente) idolatría: <font color='%COLOR_BLUE%'>abominación.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G948')>G948</span>; una cosa detestable, i.e. (específicamente) idolatría: <font color='%COLOR_BLUE%'>abominación.</font>"
   },
   {
     "id": "G947",
@@ -373,7 +373,7 @@
     "le": "βδελυκτός",
     "pl": "bdeluktós",
     "ps": "bdel-ook-tos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G948')}>G948</span>; detestable, i.e. (específicamente) idólatra: <font color='%COLOR_BLUE%'>abominable.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G948')>G948</span>; detestable, i.e. (específicamente) idólatra: <font color='%COLOR_BLUE%'>abominable.</font>"
   },
   {
     "id": "G948",
@@ -389,7 +389,7 @@
     "le": "βέβαιος",
     "pl": "bébaios",
     "ps": "beb'-ah-yos",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span> (mediante la idea de base); estable (literalmente o figurativamente): <font color='%COLOR_BLUE%'>confirmar, firme, seguro.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span> (mediante la idea de base); estable (literalmente o figurativamente): <font color='%COLOR_BLUE%'>confirmar, firme, seguro.</font>"
   },
   {
     "id": "G950",
@@ -397,7 +397,7 @@
     "le": "βεβαιόω",
     "pl": "bebaióo",
     "ps": "beb-ah-yo'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G949')}>G949</span>; estabilizar (figurativamente): <font color='%COLOR_BLUE%'>afirmar, confirmar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G949')>G949</span>; estabilizar (figurativamente): <font color='%COLOR_BLUE%'>afirmar, confirmar.</font>"
   },
   {
     "id": "G951",
@@ -405,7 +405,7 @@
     "le": "βεβαίωσις",
     "pl": "bebaíosis",
     "ps": "beb-ah'-yo-sis",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G950')}>G950</span>; estabilidad: <font color='%COLOR_BLUE%'>confirmación.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G950')>G950</span>; estabilidad: <font color='%COLOR_BLUE%'>confirmación.</font>"
   },
   {
     "id": "G952",
@@ -413,7 +413,7 @@
     "le": "βέβηλος",
     "pl": "bébelos",
     "ps": "beb'-ay-los",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span> y <b>βηλός</b> <font color='%COLOR_PURPLE%'>belós</font> (umbral); accesible (como cruzando la entrada), i.e. (por implicación de nociones judías) pagano, malo, malvado: <font color='%COLOR_BLUE%'>profano.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span> y <b>βηλός</b> <font color='%COLOR_PURPLE%'>belós</font> (umbral); accesible (como cruzando la entrada), i.e. (por implicación de nociones judías) pagano, malo, malvado: <font color='%COLOR_BLUE%'>profano.</font>"
   },
   {
     "id": "G953",
@@ -421,7 +421,7 @@
     "le": "βεβηλόω",
     "pl": "bebelóo",
     "ps": "beb-ay-lo'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G952')}>G952</span>; profanar: <font color='%COLOR_BLUE%'>profanar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G952')>G952</span>; profanar: <font color='%COLOR_BLUE%'>profanar.</font>"
   },
   {
     "id": "G954",
@@ -429,7 +429,7 @@
     "le": "Βεελζεβούλ",
     "pl": "Beelzeboúl",
     "ps": "beh-el-zeb-ool'",
-    "df": "de origen caldeo [por parodia de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1176')}>H1176</span>]; dios de estiércol; Beelzebú, nombre de Satanás: <font color='%COLOR_BLUE%'>Beelzebú.</font>"
+    "df": "de origen caldeo [por parodia de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1176')>H1176</span>]; dios de estiércol; Beelzebú, nombre de Satanás: <font color='%COLOR_BLUE%'>Beelzebú.</font>"
   },
   {
     "id": "G955",
@@ -437,7 +437,7 @@
     "le": "Βελίαλ",
     "pl": "Belíal",
     "ps": "bel-ee'-al",
-    "df": "o <b>Βελιάρ</b> <font color='%COLOR_PURPLE%'>Beliár</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1100')}>H1100</span>]; indignidad; Belial, como epíteto de Satanás: <font color='%COLOR_BLUE%'>Belial.</font>"
+    "df": "o <b>Βελιάρ</b> <font color='%COLOR_PURPLE%'>Beliár</font>; de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1100')>H1100</span>]; indignidad; Belial, como epíteto de Satanás: <font color='%COLOR_BLUE%'>Belial.</font>"
   },
   {
     "id": "G956",
@@ -445,7 +445,7 @@
     "le": "βέλος",
     "pl": "bélos",
     "ps": "bel'-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; proyectil, i.e. lanza o flecha: <font color='%COLOR_BLUE%'>dardo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G906')>G906</span>; proyectil, i.e. lanza o flecha: <font color='%COLOR_BLUE%'>dardo.</font>"
   },
   {
     "id": "G957",
@@ -453,7 +453,7 @@
     "le": "βελτίον",
     "pl": "beltíon",
     "ps": "bel-tee'-on",
-    "df": "neutro de un comparativo de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span> (usado por el comparativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G18')}>G18</span>); mejor: <font color='%COLOR_BLUE%'>mejor.</font>"
+    "df": "neutro de un comparativo de un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G906')>G906</span> (usado por el comparativo de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G18')>G18</span>); mejor: <font color='%COLOR_BLUE%'>mejor.</font>"
   },
   {
     "id": "G958",
@@ -461,7 +461,7 @@
     "le": "Βενιαμίν",
     "pl": "Beniamín",
     "ps": "ben-ee-am-een'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1144')}>H1144</span>]; Benjamín, un israelita: <font color='%COLOR_BLUE%'>Benjamín.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1144')>H1144</span>]; Benjamín, un israelita: <font color='%COLOR_BLUE%'>Benjamín.</font>"
   },
   {
     "id": "G959",
@@ -469,7 +469,7 @@
     "le": "Βερνίκη",
     "pl": "Berníke",
     "ps": "ber-nee'-kay",
-    "df": "de una forma provincial de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5342')}>G5342</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G3529')}>G3529</span>; victoriosa; Berenice, miembro de la familia de Herodes: <font color='%COLOR_BLUE%'>Berenice.</font>"
+    "df": "de una forma provincial de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5342')>G5342</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G3529')>G3529</span>; victoriosa; Berenice, miembro de la familia de Herodes: <font color='%COLOR_BLUE%'>Berenice.</font>"
   },
   {
     "id": "G960",
@@ -477,7 +477,7 @@
     "le": "Βέροια",
     "pl": "Béroia",
     "ps": "ber'-oy-ah",
-    "df": "tal vez provincial de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4008')}>G4008</span> [Perea, i.e. la región más allá de la orilla costera]; Berea, un lugar en Macedonia: <font color='%COLOR_BLUE%'>Berea.</font>"
+    "df": "tal vez provincial de un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4008')>G4008</span> [Perea, i.e. la región más allá de la orilla costera]; Berea, un lugar en Macedonia: <font color='%COLOR_BLUE%'>Berea.</font>"
   },
   {
     "id": "G961",
@@ -485,7 +485,7 @@
     "le": "Βεροιαῖος",
     "pl": "Beroiaíos",
     "ps": "ber-oy-ah'-yos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G960')}>G960</span>; bereano o nativo de Berea: <font color='%COLOR_BLUE%'>de Berea, bereano.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G960')>G960</span>; bereano o nativo de Berea: <font color='%COLOR_BLUE%'>de Berea, bereano.</font>"
   },
   {
     "id": "G962",
@@ -493,7 +493,7 @@
     "le": "Βηθαβαρά",
     "pl": "Bedsabará",
     "ps": "bay-thab-ar-ah'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5679')}>H5679</span>]; casa de trasbordador; Betábara, un lugar en el Jordán: <font color='%COLOR_BLUE%'>Betábara.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1004')>H1004</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H5679')>H5679</span>]; casa de trasbordador; Betábara, un lugar en el Jordán: <font color='%COLOR_BLUE%'>Betábara.</font>"
   },
   {
     "id": "G963",
@@ -509,7 +509,7 @@
     "le": "Βηθεσδά",
     "pl": "Bedsesdá",
     "ps": "bay-thes-dah'",
-    "df": "de origen caldeo [compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2617')}>H2617</span>]; casa de bondad; Betesda, estanque en Jerusalén: <font color='%COLOR_BLUE%'>Betesda.</font>"
+    "df": "de origen caldeo [compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1004')>H1004</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2617')>H2617</span>]; casa de bondad; Betesda, estanque en Jerusalén: <font color='%COLOR_BLUE%'>Betesda.</font>"
   },
   {
     "id": "G965",
@@ -517,7 +517,7 @@
     "le": "Βηθλεέμ",
     "pl": "Bedsleém",
     "ps": "bayth-leh-em'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1036')}>H1036</span>]; Belén, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bélen.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1036')>H1036</span>]; Belén, un lugar en Palestina: <font color='%COLOR_BLUE%'>Bélen.</font>"
   },
   {
     "id": "G966",
@@ -525,7 +525,7 @@
     "le": "Βηθσαϊδά",
     "pl": "Bedssaidá",
     "ps": "bayth-sahee-dah'",
-    "df": "de origen caldeo [compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6719')}>H6719</span>]; casa de pesca; Betsaida, un lugar en Palestina: <font color='%COLOR_BLUE%'>Betsaida.</font>"
+    "df": "de origen caldeo [compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1004')>H1004</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H6719')>H6719</span>]; casa de pesca; Betsaida, un lugar en Palestina: <font color='%COLOR_BLUE%'>Betsaida.</font>"
   },
   {
     "id": "G967",
@@ -533,7 +533,7 @@
     "le": "Βηθφαγή",
     "pl": "Bedsfagé",
     "ps": "bayth-fag-ay'",
-    "df": "de origen caldeo [compuesto de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1004')}>H1004</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6291')}>H6291</span>]; casa de higos; Betfagé, un lugar en Palestina: <font color='%COLOR_BLUE%'>Betfagé.</font>"
+    "df": "de origen caldeo [compuesto de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1004')>H1004</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H6291')>H6291</span>]; casa de higos; Betfagé, un lugar en Palestina: <font color='%COLOR_BLUE%'>Betfagé.</font>"
   },
   {
     "id": "G968",
@@ -541,7 +541,7 @@
     "le": "βῆμα",
     "pl": "béma",
     "ps": "bay'-ma",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; escalón, i.e. del ancho del pie; por implicación tribuna, i.e. tribunal: <font color='%COLOR_BLUE%'>tribunal.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span>; escalón, i.e. del ancho del pie; por implicación tribuna, i.e. tribunal: <font color='%COLOR_BLUE%'>tribunal.</font>"
   },
   {
     "id": "G969",
@@ -557,7 +557,7 @@
     "le": "βία",
     "pl": "bia",
     "ps": "bee'-ah",
-    "df": "probablemente afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G979')}>G979</span> (mediante la idea de actividad vital); fuerza: <font color='%COLOR_BLUE%'>violencia.</font>"
+    "df": "probablemente afín a <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G979')>G979</span> (mediante la idea de actividad vital); fuerza: <font color='%COLOR_BLUE%'>violencia.</font>"
   },
   {
     "id": "G971",
@@ -565,7 +565,7 @@
     "le": "βιάζω",
     "pl": "biázo",
     "ps": "bee-ad'-zo",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G970')}>G970</span>; forzar, i.e. (reflexivamente) meterse a la fuerza (en), o (pasivamente) ser atrapado: <font color='%COLOR_BLUE%'>sufrir violencia, esforzarse.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G970')>G970</span>; forzar, i.e. (reflexivamente) meterse a la fuerza (en), o (pasivamente) ser atrapado: <font color='%COLOR_BLUE%'>sufrir violencia, esforzarse.</font>"
   },
   {
     "id": "G972",
@@ -573,7 +573,7 @@
     "le": "βίαιος",
     "pl": "bíaios",
     "ps": "bee'-ah-yos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G970')}>G970</span>; violento: <font color='%COLOR_BLUE%'>recio.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G970')>G970</span>; violento: <font color='%COLOR_BLUE%'>recio.</font>"
   },
   {
     "id": "G973",
@@ -581,7 +581,7 @@
     "le": "βιαστής",
     "pl": "biastés",
     "ps": "bee-as-tace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G971')}>G971</span>; forzador, i.e. (figurativamente) energético: <font color='%COLOR_BLUE%'>violento.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G971')>G971</span>; forzador, i.e. (figurativamente) energético: <font color='%COLOR_BLUE%'>violento.</font>"
   },
   {
     "id": "G974",
@@ -589,7 +589,7 @@
     "le": "βιβλιαρίδιον",
     "pl": "bibliarídion",
     "ps": "bib-lee-ar-id'-ee-on",
-    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G975')}>G975</span>; librito: <font color='%COLOR_BLUE%'>librito.</font>"
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G975')>G975</span>; librito: <font color='%COLOR_BLUE%'>librito.</font>"
   },
   {
     "id": "G975",
@@ -597,7 +597,7 @@
     "le": "βιβλίον",
     "pl": "biblíon",
     "ps": "bib-lee'-on",
-    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G976')}>G976</span>; rollo: <font color='%COLOR_BLUE%'>libro, carta, pergamino.</font>"
+    "df": "diminutivo de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G976')>G976</span>; rollo: <font color='%COLOR_BLUE%'>libro, carta, pergamino.</font>"
   },
   {
     "id": "G976",
@@ -613,7 +613,7 @@
     "le": "βιβρώσκω",
     "pl": "bibrósko",
     "ps": "bib-ro'-sko",
-    "df": "forma reduplicación y prolongado de un verbo primario obsoleto [tal vez causativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1006')}>G1006</span>]; comer: <font color='%COLOR_BLUE%'>comer.</font>"
+    "df": "forma reduplicación y prolongado de un verbo primario obsoleto [tal vez causativo de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1006')>G1006</span>]; comer: <font color='%COLOR_BLUE%'>comer.</font>"
   },
   {
     "id": "G978",
@@ -637,7 +637,7 @@
     "le": "βιόω",
     "pl": "bióo",
     "ps": "bee-o'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G979')}>G979</span>; gastar la existencia: <font color='%COLOR_BLUE%'>vivir.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G979')>G979</span>; gastar la existencia: <font color='%COLOR_BLUE%'>vivir.</font>"
   },
   {
     "id": "G981",
@@ -645,7 +645,7 @@
     "le": "βίωσις",
     "pl": "bíosis",
     "ps": "bee'-o-sis",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G980')}>G980</span>; vivir (propiamente el acto, por implicación el modo): <font color='%COLOR_BLUE%'>(forma de) vida.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G980')>G980</span>; vivir (propiamente el acto, por implicación el modo): <font color='%COLOR_BLUE%'>(forma de) vida.</font>"
   },
   {
     "id": "G982",
@@ -653,7 +653,7 @@
     "le": "βιωτικός",
     "pl": "biotikós",
     "ps": "bee-o-tee-kos'",
-    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G980')}>G980</span>; relativo a la presente existencia: <font color='%COLOR_BLUE%'>vida.</font>"
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G980')>G980</span>; relativo a la presente existencia: <font color='%COLOR_BLUE%'>vida.</font>"
   },
   {
     "id": "G983",
@@ -661,7 +661,7 @@
     "le": "βλαβερός",
     "pl": "blaberós",
     "ps": "blab-er-os'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G984')}>G984</span>; injurioso: <font color='%COLOR_BLUE%'>dañoso.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G984')>G984</span>; injurioso: <font color='%COLOR_BLUE%'>dañoso.</font>"
   },
   {
     "id": "G984",
@@ -685,7 +685,7 @@
     "le": "Βλάστος",
     "pl": "Blástos",
     "ps": "blas'-tos",
-    "df": "tal vez lo mismo que la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G985')}>G985</span>; Blasto, oficial de Herodes Agripa: <font color='%COLOR_BLUE%'>Blasto.</font>"
+    "df": "tal vez lo mismo que la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G985')>G985</span>; Blasto, oficial de Herodes Agripa: <font color='%COLOR_BLUE%'>Blasto.</font>"
   },
   {
     "id": "G987",
@@ -693,7 +693,7 @@
     "le": "βλασφημέω",
     "pl": "blasfeméo",
     "ps": "blas-fay-meh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G989')}>G989</span>; vilipendiar; específicamente hablar impíamente: <font color='%COLOR_BLUE%'>hablar mal, injuriar, blasfemador, blasfemar, calumnia, calumniar, decir mal, difamar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G989')>G989</span>; vilipendiar; específicamente hablar impíamente: <font color='%COLOR_BLUE%'>hablar mal, injuriar, blasfemador, blasfemar, calumnia, calumniar, decir mal, difamar.</font>"
   },
   {
     "id": "G988",
@@ -701,7 +701,7 @@
     "le": "βλασφημία",
     "pl": "blasfemía",
     "ps": "blas-fay-me'-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G989')}>G989</span>; vilipendio (específicamente contra Dios): <font color='%COLOR_BLUE%'>blasfemia, maldición, maledicencia.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G989')>G989</span>; vilipendio (específicamente contra Dios): <font color='%COLOR_BLUE%'>blasfemia, maldición, maledicencia.</font>"
   },
   {
     "id": "G989",
@@ -709,7 +709,7 @@
     "le": "βλάσφημος",
     "pl": "blásfemos",
     "ps": "blas'-fay-mos",
-    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G984')}>G984</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5345')}>G5345</span>; difamatorio, i.e. calumnioso (contra el hombre), o (específicamente) impío (contra Dios): <font color='%COLOR_BLUE%'>maldición, blasfemo.</font>"
+    "df": "de un derivado de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G984')>G984</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5345')>G5345</span>; difamatorio, i.e. calumnioso (contra el hombre), o (específicamente) impío (contra Dios): <font color='%COLOR_BLUE%'>maldición, blasfemo.</font>"
   },
   {
     "id": "G990",
@@ -717,7 +717,7 @@
     "le": "βλέμμα",
     "pl": "blémma",
     "ps": "blem'-mah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G991')}>G991</span>; visión (propiamente concretamente; por implicación abstractamente): <font color='%COLOR_BLUE%'>ver.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G991')>G991</span>; visión (propiamente concretamente; por implicación abstractamente): <font color='%COLOR_BLUE%'>ver.</font>"
   },
   {
     "id": "G991",
@@ -733,7 +733,7 @@
     "le": "βλητέος",
     "pl": "bletéos",
     "ps": "blay-teh'-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; apropiado para ser echado (i.e. aplicado): <font color='%COLOR_BLUE%'>echar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G906')>G906</span>; apropiado para ser echado (i.e. aplicado): <font color='%COLOR_BLUE%'>echar.</font>"
   },
   {
     "id": "G993",
@@ -741,7 +741,7 @@
     "le": "Βοανεργές",
     "pl": "Boanergés",
     "ps": "bo-an-erg-es'",
-    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1123')}>H1123</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7266')}>H7266</span>]; hijos de conmoción; Boanerges, epíteto de dos de los apóstoles: <font color='%COLOR_BLUE%'>Boanerges.</font>"
+    "df": "de origen caldeo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1123')>H1123</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H7266')>H7266</span>]; hijos de conmoción; Boanerges, epíteto de dos de los apóstoles: <font color='%COLOR_BLUE%'>Boanerges.</font>"
   },
   {
     "id": "G994",
@@ -757,7 +757,7 @@
     "le": "βοή",
     "pl": "boé",
     "ps": "bo-ay'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G994')}>G994</span>; un grito, i.e. llamar (pidiendo ayuda, etc.): <font color='%COLOR_BLUE%'>clamor.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G994')>G994</span>; un grito, i.e. llamar (pidiendo ayuda, etc.): <font color='%COLOR_BLUE%'>clamor.</font>"
   },
   {
     "id": "G996",
@@ -765,7 +765,7 @@
     "le": "βοήθεια",
     "pl": "boédseia",
     "ps": "bo-ay'-thi-ah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G998')}>G998</span>; ayuda, auxilio; específicamente una cuerda o cadena para reforzar un barco: <font color='%COLOR_BLUE%'>refuerzo, socorro.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G998')>G998</span>; ayuda, auxilio; específicamente una cuerda o cadena para reforzar un barco: <font color='%COLOR_BLUE%'>refuerzo, socorro.</font>"
   },
   {
     "id": "G997",
@@ -773,7 +773,7 @@
     "le": "βοηθέω",
     "pl": "boedséo",
     "ps": "bo-ay-theh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G998')}>G998</span>; auxiliar o aliviar: <font color='%COLOR_BLUE%'>socorrer, ayuda, ayudar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G998')>G998</span>; auxiliar o aliviar: <font color='%COLOR_BLUE%'>socorrer, ayuda, ayudar.</font>"
   },
   {
     "id": "G998",
@@ -781,7 +781,7 @@
     "le": "βοηθός",
     "pl": "boedsós",
     "ps": "bo-ay-thos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G995')}>G995</span> y <b>θέω</b> <font color='%COLOR_PURPLE%'>dséo</font> (correr); auxiliador: <font color='%COLOR_BLUE%'>ayudador.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G995')>G995</span> y <b>θέω</b> <font color='%COLOR_PURPLE%'>dséo</font> (correr); auxiliador: <font color='%COLOR_BLUE%'>ayudador.</font>"
   },
   {
     "id": "G999",
@@ -789,7 +789,7 @@
     "le": "βόθυνος",
     "pl": "bódsunos",
     "ps": "both'-oo-nos",
-    "df": "afín a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G900')}>G900</span>; hueco, agujero (en la tierra); específicamente cisterna: <font color='%COLOR_BLUE%'>hoyo.</font>"
+    "df": "afín a <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G900')>G900</span>; hueco, agujero (en la tierra); específicamente cisterna: <font color='%COLOR_BLUE%'>hoyo.</font>"
   },
   {
     "id": "G1000",
@@ -797,7 +797,7 @@
     "le": "βολή",
     "pl": "bolé",
     "ps": "bol-ay'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; tiro (como medida de distancia): <font color='%COLOR_BLUE%'>distancia, tiro.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G906')>G906</span>; tiro (como medida de distancia): <font color='%COLOR_BLUE%'>distancia, tiro.</font>"
   },
   {
     "id": "G1001",
@@ -805,7 +805,7 @@
     "le": "βολίζω",
     "pl": "bolízo",
     "ps": "bol-id'-zo",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1002')}>G1002</span>; echar la sonda: <font color='%COLOR_BLUE%'>echar la sonda.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1002')>G1002</span>; echar la sonda: <font color='%COLOR_BLUE%'>echar la sonda.</font>"
   },
   {
     "id": "G1002",
@@ -813,7 +813,7 @@
     "le": "βολίς",
     "pl": "bolís",
     "ps": "bol-ece'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G906')}>G906</span>; proyectil, i.e., javalina: <font color='%COLOR_BLUE%'>dardo.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G906')>G906</span>; proyectil, i.e., javalina: <font color='%COLOR_BLUE%'>dardo.</font>"
   },
   {
     "id": "G1003",
@@ -821,7 +821,7 @@
     "le": "Βοόζ",
     "pl": "Boóz",
     "ps": "bo-oz'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1162')}>H1162</span>]; Booz, un israelita: <font color='%COLOR_BLUE%'>Booz.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1162')>H1162</span>]; Booz, un israelita: <font color='%COLOR_BLUE%'>Booz.</font>"
   },
   {
     "id": "G1004",
@@ -845,7 +845,7 @@
     "le": "βόσκω",
     "pl": "bósko",
     "ps": "bos'-ko",
-    "df": "forma prolongada de un verbo primario [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G977')}>G977</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1016')}>G1016</span>]; pastar; por extensión dar de comer; reflexivamente pacer, apacentar: <font color='%COLOR_BLUE%'>apacentar, pacer.</font>"
+    "df": "forma prolongada de un verbo primario [Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G977')>G977</span>, <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1016')>G1016</span>]; pastar; por extensión dar de comer; reflexivamente pacer, apacentar: <font color='%COLOR_BLUE%'>apacentar, pacer.</font>"
   },
   {
     "id": "G1007",
@@ -853,7 +853,7 @@
     "le": "Βοσόρ",
     "pl": "Bosór",
     "ps": "bos-or'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1160')}>H1160</span>]; Bosor, un moabita: <font color='%COLOR_BLUE%'>Beor.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1160')>H1160</span>]; Bosor, un moabita: <font color='%COLOR_BLUE%'>Beor.</font>"
   },
   {
     "id": "G1008",
@@ -861,7 +861,7 @@
     "le": "βοτάνη",
     "pl": "botáne",
     "ps": "bot-an'-ay",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1006')}>G1006</span>; hierba (como para pacer): <font color='%COLOR_BLUE%'>hierba.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1006')>G1006</span>; hierba (como para pacer): <font color='%COLOR_BLUE%'>hierba.</font>"
   },
   {
     "id": "G1009",
@@ -877,7 +877,7 @@
     "le": "βουλευτής",
     "pl": "bouleutés",
     "ps": "bool-yoo-tace'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1011')}>G1011</span>; asesor, consejero, i.e. (específicamente) consejero o miembro del sanedrín judío: <font color='%COLOR_BLUE%'>concilio.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1011')>G1011</span>; asesor, consejero, i.e. (específicamente) consejero o miembro del sanedrín judío: <font color='%COLOR_BLUE%'>concilio.</font>"
   },
   {
     "id": "G1011",
@@ -885,7 +885,7 @@
     "le": "βουλεύω",
     "pl": "bouleúo",
     "ps": "bool-yoo'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1012')}>G1012</span>; aconsejar, i.e. (reflexivamente) deliberar, o (por implicación) resolver, decidir: <font color='%COLOR_BLUE%'>acordar, considerar, pensar, proponer, querer.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1012')>G1012</span>; aconsejar, i.e. (reflexivamente) deliberar, o (por implicación) resolver, decidir: <font color='%COLOR_BLUE%'>acordar, considerar, pensar, proponer, querer.</font>"
   },
   {
     "id": "G1012",
@@ -893,7 +893,7 @@
     "le": "βουλή",
     "pl": "boulé",
     "ps": "boo-lay'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1014')}>G1014</span>; voluntad, i.e. (objectivamente) aconsejar, o (por implicación) propósito: <font color='%COLOR_BLUE%'>voluntad, acordar, acuerdo, concejo, designio, intención.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1014')>G1014</span>; voluntad, i.e. (objectivamente) aconsejar, o (por implicación) propósito: <font color='%COLOR_BLUE%'>voluntad, acordar, acuerdo, concejo, designio, intención.</font>"
   },
   {
     "id": "G1013",
@@ -901,7 +901,7 @@
     "le": "βούλημα",
     "pl": "boúlema",
     "ps": "boo'-lay-mah",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1014')}>G1014</span>; resolución, voluntad: <font color='%COLOR_BLUE%'>intento, voluntad.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1014')>G1014</span>; resolución, voluntad: <font color='%COLOR_BLUE%'>intento, voluntad.</font>"
   },
   {
     "id": "G1014",
@@ -909,7 +909,7 @@
     "le": "βούλομαι",
     "pl": "boúlomai",
     "ps": "boo'-lom-ahee",
-    "df": "voz media de un verbo primario «desear», i.e. (reflexivamente) estar dispuesto: <font color='%COLOR_BLUE%'>querer, voluntad.</font> Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2309')}>H2309</span>."
+    "df": "voz media de un verbo primario «desear», i.e. (reflexivamente) estar dispuesto: <font color='%COLOR_BLUE%'>querer, voluntad.</font> Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H2309')>H2309</span>."
   },
   {
     "id": "G1015",
@@ -925,7 +925,7 @@
     "le": "βοῦς",
     "pl": "boús",
     "ps": "booce",
-    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1006')}>G1006</span>; buey (como paciendo), i.e., animal de esa especie («res»): <font color='%COLOR_BLUE%'>buey.</font>"
+    "df": "probablemente de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1006')>G1006</span>; buey (como paciendo), i.e., animal de esa especie («res»): <font color='%COLOR_BLUE%'>buey.</font>"
   },
   {
     "id": "G1017",
@@ -941,7 +941,7 @@
     "le": "βραβεύω",
     "pl": "brabeúo",
     "ps": "brab-yoo'-o",
-    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1017')}>G1017</span>; arbitrar, i.e. (generalmente) gobernar (figurativamente prevalecer): <font color='%COLOR_BLUE%'>gobernar.</font>"
+    "df": "de lo mismo que <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1017')>G1017</span>; arbitrar, i.e. (generalmente) gobernar (figurativamente prevalecer): <font color='%COLOR_BLUE%'>gobernar.</font>"
   },
   {
     "id": "G1019",
@@ -949,7 +949,7 @@
     "le": "βραδύνω",
     "pl": "bradúno",
     "ps": "brad-oo'-no",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1021')}>G1021</span>; demorar, retrasar: <font color='%COLOR_BLUE%'>retardar.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1021')>G1021</span>; demorar, retrasar: <font color='%COLOR_BLUE%'>retardar.</font>"
   },
   {
     "id": "G1020",
@@ -957,7 +957,7 @@
     "le": "βραδυπλοέω",
     "pl": "braduploéo",
     "ps": "brad-oo-plo-eh'-o",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1021')}>G1021</span> y una forma prolongada de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G4126')}>G4126</span>; navegar lentamente: <font color='%COLOR_BLUE%'>navegar despacio.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1021')>G1021</span> y una forma prolongada de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G4126')>G4126</span>; navegar lentamente: <font color='%COLOR_BLUE%'>navegar despacio.</font>"
   },
   {
     "id": "G1021",
@@ -973,7 +973,7 @@
     "le": "βραδύτης",
     "pl": "bradútes",
     "ps": "brad-oo'-tace",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1021')}>G1021</span>; tardanza: <font color='%COLOR_BLUE%'>tardanza.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1021')>G1021</span>; tardanza: <font color='%COLOR_BLUE%'>tardanza.</font>"
   },
   {
     "id": "G1023",
@@ -981,7 +981,7 @@
     "le": "βραχίων",
     "pl": "brajíon",
     "ps": "brakh-ee'-own",
-    "df": "propiamente comparativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1024')}>G1024</span>, pero aparentemente en el sentido de <b>βράσσω</b> <font color='%COLOR_PURPLE%'>brazo</font> (empuñar); brazo, i.e. (figurativamente) fuerza: <font color='%COLOR_BLUE%'>brazo.</font>"
+    "df": "propiamente comparativo de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1024')>G1024</span>, pero aparentemente en el sentido de <b>βράσσω</b> <font color='%COLOR_PURPLE%'>brazo</font> (empuñar); brazo, i.e. (figurativamente) fuerza: <font color='%COLOR_BLUE%'>brazo.</font>"
   },
   {
     "id": "G1024",
@@ -1021,7 +1021,7 @@
     "le": "βροχή",
     "pl": "brojé",
     "ps": "brokh-ay'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1026')}>G1026</span>; lluvia: <font color='%COLOR_BLUE%'>lluvia.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1026')>G1026</span>; lluvia: <font color='%COLOR_BLUE%'>lluvia.</font>"
   },
   {
     "id": "G1029",
@@ -1037,7 +1037,7 @@
     "le": "βρυγμός",
     "pl": "brugmós",
     "ps": "broog-mos'",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1031')}>G1031</span>; crujir (de dientes): <font color='%COLOR_BLUE%'>crujir (de dientes).</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1031')>G1031</span>; crujir (de dientes): <font color='%COLOR_BLUE%'>crujir (de dientes).</font>"
   },
   {
     "id": "G1031",
@@ -1061,7 +1061,7 @@
     "le": "βρῶμα",
     "pl": "broma",
     "ps": "bro'-mah",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G977')}>G977</span>; comida (literalmente o figurativamente) específicamente (ciertos) artículos permitidos o prohibidos por la ley judía: <font color='%COLOR_BLUE%'>alimento, carne, comer, comida, vianda.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G977')>G977</span>; comida (literalmente o figurativamente) específicamente (ciertos) artículos permitidos o prohibidos por la ley judía: <font color='%COLOR_BLUE%'>alimento, carne, comer, comida, vianda.</font>"
   },
   {
     "id": "G1034",
@@ -1069,7 +1069,7 @@
     "le": "βρώσιμος",
     "pl": "brósimos",
     "ps": "bro'-sim-os",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1035')}>G1035</span>; comestible, comedero: <font color='%COLOR_BLUE%'>(algo de) comer.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1035')>G1035</span>; comestible, comedero: <font color='%COLOR_BLUE%'>(algo de) comer.</font>"
   },
   {
     "id": "G1035",
@@ -1077,7 +1077,7 @@
     "le": "βρῶσις",
     "pl": "brosis",
     "ps": "bro'-sis",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G977')}>G977</span>; (abstractamente) comer (literalmente o figurativamente) por extensión (concretamente) alimento, comida (literalmente o figurativamente): <font color='%COLOR_BLUE%'>comer, comida, orín, vianda.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G977')>G977</span>; (abstractamente) comer (literalmente o figurativamente) por extensión (concretamente) alimento, comida (literalmente o figurativamente): <font color='%COLOR_BLUE%'>comer, comida, orín, vianda.</font>"
   },
   {
     "id": "G1036",
@@ -1085,7 +1085,7 @@
     "le": "βυθίζω",
     "pl": "budsízo",
     "ps": "boo-thid'-zo",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1037')}>G1037</span>; hundir; por implicación ahogar, -se: <font color='%COLOR_BLUE%'>hundir.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1037')>G1037</span>; hundir; por implicación ahogar, -se: <font color='%COLOR_BLUE%'>hundir.</font>"
   },
   {
     "id": "G1037",
@@ -1093,7 +1093,7 @@
     "le": "βυθός",
     "pl": "budsós",
     "ps": "boo-thos'",
-    "df": "variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G899')}>G899</span>; profundidad, hondo, i.e. (por implicación) el mar: <font color='%COLOR_BLUE%'>alta mar.</font>"
+    "df": "variación de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G899')>G899</span>; profundidad, hondo, i.e. (por implicación) el mar: <font color='%COLOR_BLUE%'>alta mar.</font>"
   },
   {
     "id": "G1038",
@@ -1109,7 +1109,7 @@
     "le": "βύσσινος",
     "pl": "bússinos",
     "ps": "boos'-see-nos",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1040')}>G1040</span>; hecho de lino (neutro tela de lino): <font color='%COLOR_BLUE%'>lino.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1040')>G1040</span>; hecho de lino (neutro tela de lino): <font color='%COLOR_BLUE%'>lino.</font>"
   },
   {
     "id": "G1040",
@@ -1117,7 +1117,7 @@
     "le": "βύσσος",
     "pl": "Bússos",
     "ps": "boos'-sos",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H948')}>H948</span>]; lino blanco: <font color='%COLOR_BLUE%'>lino.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H948')>H948</span>]; lino blanco: <font color='%COLOR_BLUE%'>lino.</font>"
   },
   {
     "id": "G1041",
@@ -1125,7 +1125,7 @@
     "le": "βωμός",
     "pl": "bomos",
     "ps": "bo'-mos",
-    "df": "de la base de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G939')}>G939</span>; propiamente atril, i.e. (específicamente) altar: <font color='%COLOR_BLUE%'>altar.</font>"
+    "df": "de la base de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G939')>G939</span>; propiamente atril, i.e. (específicamente) altar: <font color='%COLOR_BLUE%'>altar.</font>"
   },
   {
     "id": "G1042",
@@ -1133,7 +1133,7 @@
     "le": "γαββαθά",
     "pl": "gabbadsá",
     "ps": "gab-bath-ah'",
-    "df": "de origen cal. [Compare <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1355')}>H1355</span>]; otero, montículo, gábata, término vernacular para referirse al tribunal romano en Jerusalén: <font color='%COLOR_BLUE%'>Gábata.</font>"
+    "df": "de origen cal. [Compare <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1355')>H1355</span>]; otero, montículo, gábata, término vernacular para referirse al tribunal romano en Jerusalén: <font color='%COLOR_BLUE%'>Gábata.</font>"
   },
   {
     "id": "G1043",
@@ -1141,7 +1141,7 @@
     "le": "Γαβριήλ",
     "pl": "Gabriél",
     "ps": "gab-ree-ale'",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1403')}>H1403</span>]; Gabriel, un arcángel: <font color='%COLOR_BLUE%'>Gabriel.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1403')>H1403</span>]; Gabriel, un arcángel: <font color='%COLOR_BLUE%'>Gabriel.</font>"
   },
   {
     "id": "G1044",
@@ -1157,7 +1157,7 @@
     "le": "Γάδ",
     "pl": "Gád",
     "ps": "gad",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1410')}>H1410</span>]; Gad; tribu de israelitas: <font color='%COLOR_BLUE%'>Gad.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H1410')>H1410</span>]; Gad; tribu de israelitas: <font color='%COLOR_BLUE%'>Gad.</font>"
   },
   {
     "id": "G1046",
@@ -1181,7 +1181,7 @@
     "le": "Γάζα",
     "pl": "Gáza",
     "ps": "gad'-zah",
-    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5804')}>H5804</span>]; Gaza, lugar en Palestina: <font color='%COLOR_BLUE%'>Gaza.</font>"
+    "df": "de origen hebreo [<span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('H5804')>H5804</span>]; Gaza, lugar en Palestina: <font color='%COLOR_BLUE%'>Gaza.</font>"
   },
   {
     "id": "G1049",
@@ -1189,7 +1189,7 @@
     "le": "γαζοφυλάκιον",
     "pl": "gazofulákion",
     "ps": "gad-zof-oo-lak'-ee-on",
-    "df": "de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G1047')}>G1047</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('G5438')}>G5438</span>; casa del tesoro, i.e., atrio en el templo para los cofres de las ofrendas: <font color='%COLOR_BLUE%'>arca.</font>"
+    "df": "de <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G1047')>G1047</span> y <span style='color: #0000FF; cursor: pointer' class='Slink' onClick=strongFun('G5438')>G5438</span>; casa del tesoro, i.e., atrio en el templo para los cofres de las ofrendas: <font color='%COLOR_BLUE%'>arca.</font>"
   },
   {
     "id": "G1050",
