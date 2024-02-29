@@ -5,7 +5,7 @@
     "le": "יְשִׁימַה",
     "pl": "yeshimá",
     "ps": "yesh-ee-maw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3456')}>H3456</span>; desolación: <font color='%COLOR_BLUE%'>que la muerte los sorprenda.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3456')>H3456</span>; desolación: <font color='%COLOR_BLUE%'>que la muerte los sorprenda.</font>"
   },
   {
     "id": "H3452",
@@ -13,7 +13,7 @@
     "le": "יְשִׁימֹון",
     "pl": "yeshimón",
     "ps": "yesh-ee-mone'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3456')}>H3456</span>; desolación: <font color='%COLOR_BLUE%'>desierto, soledad, yermo.</font><p></p><font color='%COLOR_GREEN%'><b>ישימוית</b></font> <font color='%COLOR_PURPLE%'>yeshimot.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1020')}>H1020</span>, <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3451')}>H3451</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3456')>H3456</span>; desolación: <font color='%COLOR_BLUE%'>desierto, soledad, yermo.</font><p></p><font color='%COLOR_GREEN%'><b>ישימוית</b></font> <font color='%COLOR_PURPLE%'>yeshimot.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H1020')>H1020</span>, <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3451')>H3451</span>."
   },
   {
     "id": "H3453",
@@ -21,7 +21,7 @@
     "le": "יָשִׁישׁ",
     "pl": "yashísh",
     "ps": "yaw-sheesh'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3486')}>H3486</span>; viejo: <font color='%COLOR_BLUE%'>anciano.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3486')>H3486</span>; viejo: <font color='%COLOR_BLUE%'>anciano.</font>"
   },
   {
     "id": "H3454",
@@ -29,7 +29,7 @@
     "le": "יְשִׁישָׁי",
     "pl": "Yeshishái",
     "ps": "yesh-ee-shah'-ee",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3453')}>H3453</span>; envejecido; Jesisai, un israelita: <font color='%COLOR_BLUE%'>Jesisai.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3453')>H3453</span>; envejecido; Jesisai, un israelita: <font color='%COLOR_BLUE%'>Jesisai.</font>"
   },
   {
     "id": "H3455",
@@ -53,7 +53,7 @@
     "le": "יִשְׁמָא",
     "pl": "Yismá",
     "ps": "yish-maw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3456')}>H3456</span>; desolado; Jisma, un israelita: <font color='%COLOR_BLUE%'>Isma.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3456')>H3456</span>; desolado; Jisma, un israelita: <font color='%COLOR_BLUE%'>Isma.</font>"
   },
   {
     "id": "H3458",
@@ -61,7 +61,7 @@
     "le": "יִשְׁמָעֵאל",
     "pl": "Yishmaél",
     "ps": "yish-maw-ale'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8085')}>H8085</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; Dios oirá; Jismael, nombre del hijo mayor de Abraham, y de cinco israelitas: <font color='%COLOR_BLUE%'>Ismael.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8085')>H8085</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H410')>H410</span>; Dios oirá; Jismael, nombre del hijo mayor de Abraham, y de cinco israelitas: <font color='%COLOR_BLUE%'>Ismael.</font>"
   },
   {
     "id": "H3459",
@@ -69,7 +69,7 @@
     "le": "יִשְׁמָעֵאלִי",
     "pl": "yishmaelí",
     "ps": "yish-maw-ay-lee'",
-    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3458')}>H3458</span>; ismaelita o descendiente de Jishmael: <font color='%COLOR_BLUE%'>ismaelita.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3458')>H3458</span>; ismaelita o descendiente de Jishmael: <font color='%COLOR_BLUE%'>ismaelita.</font>"
   },
   {
     "id": "H3460",
@@ -77,7 +77,7 @@
     "le": "יִשְׁמַעְיָה",
     "pl": "Yishmayá",
     "ps": "yish-mah-yaw'",
-    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ישמעיהו</b></font> <font color='%COLOR_PURPLE%'>Yishmayáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8085')}>H8085</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah oirá; Jismaía, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Ismaías.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ישמעיהו</b></font> <font color='%COLOR_PURPLE%'>Yishmayáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8085')>H8085</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3050')>H3050</span>; Jah oirá; Jismaía, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Ismaías.</font>"
   },
   {
     "id": "H3461",
@@ -85,7 +85,7 @@
     "le": "יִשְׁמְרַי",
     "pl": "Yishmerái",
     "ps": "yish-mer-ah'-ee",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8104')}>H8104</span>; preservativo; Jismerai, un israelita: <font color='%COLOR_BLUE%'>Ismerai.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8104')>H8104</span>; preservativo; Jismerai, un israelita: <font color='%COLOR_BLUE%'>Ismerai.</font>"
   },
   {
     "id": "H3462",
@@ -101,7 +101,7 @@
     "le": "יָשֵׁן",
     "pl": "yashén",
     "ps": "yaw-shane'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3462')}>H3462</span>; adormilado: <font color='%COLOR_BLUE%'>sueño, dormir.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3462')>H3462</span>; adormilado: <font color='%COLOR_BLUE%'>sueño, dormir.</font>"
   },
   {
     "id": "H3464",
@@ -109,7 +109,7 @@
     "le": "יָשֵׁן",
     "pl": "Yashén",
     "ps": "yaw-shane'",
-    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3463')}>H3463</span>; Jasén, un israelita: <font color='%COLOR_BLUE%'>Jasén.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3463')>H3463</span>; Jasén, un israelita: <font color='%COLOR_BLUE%'>Jasén.</font>"
   },
   {
     "id": "H3465",
@@ -117,7 +117,7 @@
     "le": "יָשָׁן",
     "pl": "yashán",
     "ps": "yaw-shawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3462')}>H3462</span>; viejo: <font color='%COLOR_BLUE%'>viejo, añejo.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3462')>H3462</span>; viejo: <font color='%COLOR_BLUE%'>viejo, añejo.</font>"
   },
   {
     "id": "H3466",
@@ -125,7 +125,7 @@
     "le": "יְשָׁנָה",
     "pl": "Yeshaná",
     "ps": "yesh-aw-naw'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3465')}>H3465</span>; Jesana, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jesana.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3465')>H3465</span>; Jesana, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jesana.</font>"
   },
   {
     "id": "H3467",
@@ -141,7 +141,7 @@
     "le": "יֶשַׁע",
     "pl": "yeshá",
     "ps": "yeh'-shah",
-    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ישע</b></font> <font color='%COLOR_PURPLE%'>yashá</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3467')}>H3467</span>; libertad, liberación, prosperidad: <font color='%COLOR_BLUE%'>salvación, salvador, salvo, seguridad, socorrer.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ישע</b></font> <font color='%COLOR_PURPLE%'>yashá</font>; de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3467')>H3467</span>; libertad, liberación, prosperidad: <font color='%COLOR_BLUE%'>salvación, salvador, salvo, seguridad, socorrer.</font>"
   },
   {
     "id": "H3469",
@@ -149,7 +149,7 @@
     "le": "יִשְׁעִי",
     "pl": "Yishí",
     "ps": "yish-ee'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3467')}>H3467</span>; salvar; Jisi, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Isi.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3467')>H3467</span>; salvar; Jisi, nombre de cuatro israelitas: <font color='%COLOR_BLUE%'>Isi.</font>"
   },
   {
     "id": "H3470",
@@ -157,7 +157,7 @@
     "le": "יְשַׁעְיָה",
     "pl": "Yesayá",
     "ps": "yesh-ah-yaw'",
-    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ישעיהו</b></font> <font color='%COLOR_PURPLE%'>Yeshayáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3467')}>H3467</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha salvado; Jesaiá, nombre de siete israelitas: <font color='%COLOR_BLUE%'>Isaías.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>ישעיהו</b></font> <font color='%COLOR_PURPLE%'>Yeshayáju</font>; de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3467')>H3467</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3050')>H3050</span>; Jah ha salvado; Jesaiá, nombre de siete israelitas: <font color='%COLOR_BLUE%'>Isaías.</font>"
   },
   {
     "id": "H3471",
@@ -173,7 +173,7 @@
     "le": "יִשְׁפָּה",
     "pl": "Yishpá",
     "ps": "yish-paw'",
-    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8192')}>H8192</span>; él rascará; Jispa, un israelita: <font color='%COLOR_BLUE%'>Ispa.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8192')>H8192</span>; él rascará; Jispa, un israelita: <font color='%COLOR_BLUE%'>Ispa.</font>"
   },
   {
     "id": "H3473",
@@ -181,7 +181,7 @@
     "le": "יִשְׁפָּן",
     "pl": "Yishpán",
     "ps": "yish-pawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8227')}>H8227</span>; él esconderá; Jispán, un israelita: <font color='%COLOR_BLUE%'>Ispán.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8227')>H8227</span>; él esconderá; Jispán, un israelita: <font color='%COLOR_BLUE%'>Ispán.</font>"
   },
   {
     "id": "H3474",
@@ -197,7 +197,7 @@
     "le": "יֵשֶׁר",
     "pl": "Yésher",
     "ps": "yay'-sher",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3474')}>H3474</span>; derecho; Jeser, un israelita: <font color='%COLOR_BLUE%'>Jeser.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3474')>H3474</span>; derecho; Jeser, un israelita: <font color='%COLOR_BLUE%'>Jeser.</font>"
   },
   {
     "id": "H3476",
@@ -205,7 +205,7 @@
     "le": "יֹשֶׁר",
     "pl": "yósher",
     "ps": "yo'-sher",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3474')}>H3474</span>; derecho: <font color='%COLOR_BLUE%'>deber, derecho, equidad, justo, rectamente, rectitud, recto.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3474')>H3474</span>; derecho: <font color='%COLOR_BLUE%'>deber, derecho, equidad, justo, rectamente, rectitud, recto.</font>"
   },
   {
     "id": "H3477",
@@ -213,7 +213,7 @@
     "le": "יָשָׁר",
     "pl": "yashár",
     "ps": "yaw-shawr'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3474')}>H3474</span>; recto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>bien, cómodo, convenio, derecho, hombre íntegro, Jaser, justo, parecer, razonable, rectamente, rectitud, recto.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3474')>H3474</span>; recto (literalmente o figurativamente): <font color='%COLOR_BLUE%'>bien, cómodo, convenio, derecho, hombre íntegro, Jaser, justo, parecer, razonable, rectamente, rectitud, recto.</font>"
   },
   {
     "id": "H3478",
@@ -221,7 +221,7 @@
     "le": "יִשְׂרָאֵל",
     "pl": "Yisraél",
     "ps": "yis-raw-ale'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8280')}>H8280</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; él gobernará (como) Dios; Jisrael, nombre símb. de Jacob; también (tipicamente) de su posteridad: <font color='%COLOR_BLUE%'>Israel.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8280')>H8280</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H410')>H410</span>; él gobernará (como) Dios; Jisrael, nombre símb. de Jacob; también (tipicamente) de su posteridad: <font color='%COLOR_BLUE%'>Israel.</font>"
   },
   {
     "id": "H3479",
@@ -229,7 +229,7 @@
     "le": "יִשְׂרָאֵל",
     "pl": "Yisraél",
     "ps": "yis-raw-ale'",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3478')}>H3478</span>: <font color='%COLOR_BLUE%'>Israel.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3478')>H3478</span>: <font color='%COLOR_BLUE%'>Israel.</font>"
   },
   {
     "id": "H3480",
@@ -237,7 +237,7 @@
     "le": "יְשַׂרְאֵלָה",
     "pl": "Yesarelá",
     "ps": "yes-ar-ale'-aw",
-    "df": "<font color='%COLOR_GREEN%'></font>por variación de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3477')}>H3477</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span> con enclítica directiva; recto hacia Dios; Jesarela, un israelita: <font color='%COLOR_BLUE%'>Jerasela.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H841')}>H841</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>por variación de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3477')>H3477</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H410')>H410</span> con enclítica directiva; recto hacia Dios; Jesarela, un israelita: <font color='%COLOR_BLUE%'>Jerasela.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H841')>H841</span>."
   },
   {
     "id": "H3481",
@@ -245,7 +245,7 @@
     "le": "יִשְׂרְאֵלִי",
     "pl": "yisreelí",
     "ps": "yis-reh-ay-lee'",
-    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3478')}>H3478</span>; jisreelita o descendiente de Jisrael: <font color='%COLOR_BLUE%'>de Israel, israelita.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3478')>H3478</span>; jisreelita o descendiente de Jisrael: <font color='%COLOR_BLUE%'>de Israel, israelita.</font>"
   },
   {
     "id": "H3482",
@@ -253,7 +253,7 @@
     "le": "יִשְׂרְאֵלִית",
     "pl": "yisreelít",
     "ps": "yis-reh-ay-leeth'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3481')}>H3481</span>; una jisreelita o descendiente femenina de Jisrael: <font color='%COLOR_BLUE%'>[mujer] israelita.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3481')>H3481</span>; una jisreelita o descendiente femenina de Jisrael: <font color='%COLOR_BLUE%'>[mujer] israelita.</font>"
   },
   {
     "id": "H3483",
@@ -261,7 +261,7 @@
     "le": "יִשְׁרָה",
     "pl": "yishrá",
     "ps": "yish-raw'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino o <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3477')}>H3477</span>; rectitud: <font color='%COLOR_BLUE%'>rectitud.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino o <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3477')>H3477</span>; rectitud: <font color='%COLOR_BLUE%'>rectitud.</font>"
   },
   {
     "id": "H3484",
@@ -269,7 +269,7 @@
     "le": "יְשֻׁרוּן",
     "pl": "Yeshurúm",
     "ps": "yesh-oo-roon'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3474')}>H3474</span>; recto, vertical; Jesurún, nombre simbólico para Israel: <font color='%COLOR_BLUE%'>Jesurún.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3474')>H3474</span>; recto, vertical; Jesurún, nombre simbólico para Israel: <font color='%COLOR_BLUE%'>Jesurún.</font>"
   },
   {
     "id": "H3485",
@@ -277,7 +277,7 @@
     "le": "יִשָּׂשכָר",
     "pl": "Yissaskár",
     "ps": "yis-saw-kawr'",
-    "df": "<font color='%COLOR_GREEN%'></font>(estrictamente Yisascar), de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5375')}>H5375</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7939')}>H7939</span>; él traerá una recompensa; Jissascar, un hijo de Jacob: <font color='%COLOR_BLUE%'>Isacar.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(estrictamente Yisascar), de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H5375')>H5375</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H7939')>H7939</span>; él traerá una recompensa; Jissascar, un hijo de Jacob: <font color='%COLOR_BLUE%'>Isacar.</font>"
   },
   {
     "id": "H3486",
@@ -293,7 +293,7 @@
     "le": "יַת",
     "pl": "yat",
     "ps": "yath",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H853')}>H853</span>; señala el objeto del verbo: <font color='%COLOR_BLUE%'>quien.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H853')>H853</span>; señala el objeto del verbo: <font color='%COLOR_BLUE%'>quien.</font>"
   },
   {
     "id": "H3488",
@@ -301,7 +301,7 @@
     "le": "יְתִב",
     "pl": "yetíb",
     "ps": "yeth-eeb'",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3427')}>H3427</span>; sentar o morar: <font color='%COLOR_BLUE%'>habitar, hacer sentar.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3427')>H3427</span>; sentar o morar: <font color='%COLOR_BLUE%'>habitar, hacer sentar.</font>"
   },
   {
     "id": "H3489",
@@ -325,7 +325,7 @@
     "le": "יָתוּר",
     "pl": "yatúr",
     "ps": "yaw-thoor'",
-    "df": "<font color='%COLOR_GREEN%'></font>participio pasivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3498')}>H3498</span>; propiamente lo que se deja, i.e. (por implicación) rebusco: <font color='%COLOR_BLUE%'>lo oculto.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>participio pasivo de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3498')>H3498</span>; propiamente lo que se deja, i.e. (por implicación) rebusco: <font color='%COLOR_BLUE%'>lo oculto.</font>"
   },
   {
     "id": "H3492",
@@ -333,7 +333,7 @@
     "le": "יַתִּיר",
     "pl": "Yattír",
     "ps": "yat-teer'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3498')}>H3498</span>; redundante; Jattir, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jatir.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3498')>H3498</span>; redundante; Jattir, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jatir.</font>"
   },
   {
     "id": "H3493",
@@ -341,7 +341,7 @@
     "le": "יַתִּיר",
     "pl": "yatiír",
     "ps": "yat-teer'",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3492')}>H3492</span>; preeminente; adverbio muy: <font color='%COLOR_BLUE%'>mayor, sublime, superior.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3492')>H3492</span>; preeminente; adverbio muy: <font color='%COLOR_BLUE%'>mayor, sublime, superior.</font>"
   },
   {
     "id": "H3494",
@@ -349,7 +349,7 @@
     "le": "יִתְלָה",
     "pl": "Yitlá",
     "ps": "yith-law'",
-    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8518')}>H8518</span>; él colgará, i.e. estar alto; Jitla, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jetla.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8518')>H8518</span>; él colgará, i.e. estar alto; Jitla, un lugar en Palestina: <font color='%COLOR_BLUE%'>Jetla.</font>"
   },
   {
     "id": "H3495",
@@ -357,7 +357,7 @@
     "le": "יִתְמָה",
     "pl": "Yitmá",
     "ps": "yith-maw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3490')}>H3490</span>; orfanato; Jitma, un israelita: <font color='%COLOR_BLUE%'>Itma.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3490')>H3490</span>; orfanato; Jitma, un israelita: <font color='%COLOR_BLUE%'>Itma.</font>"
   },
   {
     "id": "H3496",
@@ -365,7 +365,7 @@
     "le": "יַתְנִיאֵל",
     "pl": "Yatniel",
     "ps": "yath-nee-ale'",
-    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa resistir, y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H410')}>H410</span>; continuado de Dios; Jatniel, un israelita: <font color='%COLOR_BLUE%'>Jatniel.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa resistir, y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H410')>H410</span>; continuado de Dios; Jatniel, un israelita: <font color='%COLOR_BLUE%'>Jatniel.</font>"
   },
   {
     "id": "H3497",
@@ -373,7 +373,7 @@
     "le": "יִתְנָן",
     "pl": "Yitnán",
     "ps": "yith-nawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H8577')}>H8577</span>; extensivo; Jitnan, un lugar en Palestina: <font color='%COLOR_BLUE%'>Itnán.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H8577')>H8577</span>; extensivo; Jitnan, un lugar en Palestina: <font color='%COLOR_BLUE%'>Itnán.</font>"
   },
   {
     "id": "H3498",
@@ -389,7 +389,7 @@
     "le": "יֶתֶר",
     "pl": "yéter",
     "ps": "yeh'-ther",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3498')}>H3498</span>; propiamente voladizo, i.e. (por implicación) exceso, superioridad, restante; también soga pequeña (que cuelga libremente): <font color='%COLOR_BLUE%'>abundantemente, altilocuencia, cuerda, excelente, mimbre, paz, principal, quedar, remanente, restar, resto, sobrar.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3498')>H3498</span>; propiamente voladizo, i.e. (por implicación) exceso, superioridad, restante; también soga pequeña (que cuelga libremente): <font color='%COLOR_BLUE%'>abundantemente, altilocuencia, cuerda, excelente, mimbre, paz, principal, quedar, remanente, restar, resto, sobrar.</font>"
   },
   {
     "id": "H3500",
@@ -397,7 +397,7 @@
     "le": "יֶתֶר",
     "pl": "Yéter",
     "ps": "yeh'-ther",
-    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3499')}>H3499</span>; Jeter, nombre de cinco o seis israelitas y de un madianita: <font color='%COLOR_BLUE%'>Jeter.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3503')}>H3503</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3499')>H3499</span>; Jeter, nombre de cinco o seis israelitas y de un madianita: <font color='%COLOR_BLUE%'>Jeter.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3503')>H3503</span>."
   },
   {
     "id": "H3501",
@@ -405,7 +405,7 @@
     "le": "יִתְרָא",
     "pl": "Yitrá",
     "ps": "yith-raw'",
-    "df": "<font color='%COLOR_GREEN%'></font>por variación por <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3502')}>H3502</span>; Jitra, un israelita (o ismaelita): <font color='%COLOR_BLUE%'>Itra.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>por variación por <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3502')>H3502</span>; Jitra, un israelita (o ismaelita): <font color='%COLOR_BLUE%'>Itra.</font>"
   },
   {
     "id": "H3502",
@@ -413,7 +413,7 @@
     "le": "יִתְרָה",
     "pl": "yitrá",
     "ps": "yith-raw'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3499')}>H3499</span>; propiamente excelencia, i.e. (por implicación) riqueza: <font color='%COLOR_BLUE%'>riqueza.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3499')>H3499</span>; propiamente excelencia, i.e. (por implicación) riqueza: <font color='%COLOR_BLUE%'>riqueza.</font>"
   },
   {
     "id": "H3503",
@@ -421,7 +421,7 @@
     "le": "יִתְרֹו",
     "pl": "Yitró",
     "ps": "yith-ro'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3499')}>H3499</span> con con el sufijo pronominal; su excelencia; Jetro, suegro de Moisés: <font color='%COLOR_BLUE%'>Jetro.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3500')}>H3500</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3499')>H3499</span> con con el sufijo pronominal; su excelencia; Jetro, suegro de Moisés: <font color='%COLOR_BLUE%'>Jetro.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3500')>H3500</span>."
   },
   {
     "id": "H3504",
@@ -429,7 +429,7 @@
     "le": "יִתְרֹון",
     "pl": "yitrón",
     "ps": "yith-rone'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3498')}>H3498</span>; preeminencia, ganancia: <font color='%COLOR_BLUE%'>aprovechar, exceder, provecho, provechoso, sobrepasar.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3498')>H3498</span>; preeminencia, ganancia: <font color='%COLOR_BLUE%'>aprovechar, exceder, provecho, provechoso, sobrepasar.</font>"
   },
   {
     "id": "H3505",
@@ -437,7 +437,7 @@
     "le": "יִתְרִי",
     "pl": "yitríi",
     "ps": "yith-ree'",
-    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3500')}>H3500</span>; jitrita o descendiente de Jeter: <font color='%COLOR_BLUE%'>Itrita.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3500')>H3500</span>; jitrita o descendiente de Jeter: <font color='%COLOR_BLUE%'>Itrita.</font>"
   },
   {
     "id": "H3506",
@@ -445,7 +445,7 @@
     "le": "יִתְרָן",
     "pl": "Yitrán",
     "ps": "yith-rawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3498')}>H3498</span>; excelente; Jitrán, nombre de un edomita y de un israelita: <font color='%COLOR_BLUE%'>Itrán.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3498')>H3498</span>; excelente; Jitrán, nombre de un edomita y de un israelita: <font color='%COLOR_BLUE%'>Itrán.</font>"
   },
   {
     "id": "H3507",
@@ -453,7 +453,7 @@
     "le": "יִתְרְעָם",
     "pl": "Yitream",
     "ps": "yith-reh-awm'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3499')}>H3499</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H5971')}>H5971</span>; excelencia de pueblo; Jitream, hijo David: <font color='%COLOR_BLUE%'>Itream.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3499')>H3499</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H5971')>H5971</span>; excelencia de pueblo; Jitream, hijo David: <font color='%COLOR_BLUE%'>Itream.</font>"
   },
   {
     "id": "H3508",
@@ -461,7 +461,7 @@
     "le": "יֹתֶרֶת",
     "pl": "yoterét",
     "ps": "yo-theh'-reth",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3498')}>H3498</span>; lóbulo o faldilla del hígado (son redundante o sobresaliente): <font color='%COLOR_BLUE%'>grosura.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino participio activo de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3498')>H3498</span>; lóbulo o faldilla del hígado (son redundante o sobresaliente): <font color='%COLOR_BLUE%'>grosura.</font>"
   },
   {
     "id": "H3509",
@@ -485,7 +485,7 @@
     "le": "כְּאֵב",
     "pl": "keéb",
     "ps": "keh-abe'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3510')}>H3510</span>; sufrimiento (físicamente o mentalmente), adversidad: <font color='%COLOR_BLUE%'>dolor.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3510')>H3510</span>; sufrimiento (físicamente o mentalmente), adversidad: <font color='%COLOR_BLUE%'>dolor.</font>"
   },
   {
     "id": "H3512",
@@ -509,7 +509,7 @@
     "le": "כֹּבֶד",
     "pl": "kóbed",
     "ps": "ko'-bed",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3513')}>H3513</span>; peso, multitud, vehemencia: <font color='%COLOR_BLUE%'>devorador, multitud, pesada, peso.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3513')>H3513</span>; peso, multitud, vehemencia: <font color='%COLOR_BLUE%'>devorador, multitud, pesada, peso.</font>"
   },
   {
     "id": "H3515",
@@ -517,7 +517,7 @@
     "le": "כָּבֵד",
     "pl": "kabéd",
     "ps": "kaw-bade'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3513')}>H3513</span>; pesado; figurativamente en buen sentido (numeroso) o en sentido malo (severo, difícil, necio): <font color='%COLOR_BLUE%'>cansar, cantidad, cargar, difícil, duro, endurecer, espeso, grave, gravísima, molestísima, muchísimo, pesado, tardo, triste.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3513')>H3513</span>; pesado; figurativamente en buen sentido (numeroso) o en sentido malo (severo, difícil, necio): <font color='%COLOR_BLUE%'>cansar, cantidad, cargar, difícil, duro, endurecer, espeso, grave, gravísima, molestísima, muchísimo, pesado, tardo, triste.</font>"
   },
   {
     "id": "H3516",
@@ -525,7 +525,7 @@
     "le": "כָּבֵד",
     "pl": "kabéd",
     "ps": "kaw-bade'",
-    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3515')}>H3515</span>; hígado (como la víscera más pesada): <font color='%COLOR_BLUE%'>corazón, hígado.</font><p></p><font color='%COLOR_GREEN%'><b>כביד</b></font> <font color='%COLOR_PURPLE%'>kabód.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3519')}>H3519</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3515')>H3515</span>; hígado (como la víscera más pesada): <font color='%COLOR_BLUE%'>corazón, hígado.</font><p></p><font color='%COLOR_GREEN%'><b>כביד</b></font> <font color='%COLOR_PURPLE%'>kabód.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3519')>H3519</span>."
   },
   {
     "id": "H3517",
@@ -533,7 +533,7 @@
     "le": "כְּבֵדֻת",
     "pl": "kebedút",
     "ps": "keb-ay-dooth'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3515')}>H3515</span>; dificultad: <font color='%COLOR_BLUE%'>gravemente.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3515')>H3515</span>; dificultad: <font color='%COLOR_BLUE%'>gravemente.</font>"
   },
   {
     "id": "H3518",
@@ -549,7 +549,7 @@
     "le": "כָּבֹוד",
     "pl": "kabód",
     "ps": "kaw-bode'",
-    "df": "<font color='%COLOR_GREEN%'></font>rara vez<font color='%COLOR_GREEN%'><b>כביד</b></font> <font color='%COLOR_PURPLE%'>kabód</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3513')}>H3513</span>; propiamente peso, pero solo figurativamente en buen sentido, esplendor o copiosidad: <font color='%COLOR_BLUE%'>flor, gloria, glorificar, glorioso, honor, honorable, honra, honrar, majestad, noble, poder, riqueza, suntuosidad.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>rara vez<font color='%COLOR_GREEN%'><b>כביד</b></font> <font color='%COLOR_PURPLE%'>kabód</font>; de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3513')>H3513</span>; propiamente peso, pero solo figurativamente en buen sentido, esplendor o copiosidad: <font color='%COLOR_BLUE%'>flor, gloria, glorificar, glorioso, honor, honorable, honra, honrar, majestad, noble, poder, riqueza, suntuosidad.</font>"
   },
   {
     "id": "H3520",
@@ -557,7 +557,7 @@
     "le": "כְּבוּדָּה",
     "pl": "kebuddá",
     "ps": "keb-ood-daw'",
-    "df": "<font color='%COLOR_GREEN%'></font>irregular femenino participio pasivo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3513')}>H3513</span>; peso, i.e. magnificencia, riqueza: <font color='%COLOR_BLUE%'>bagaje, glorioso, suntuoso.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>irregular femenino participio pasivo de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3513')>H3513</span>; peso, i.e. magnificencia, riqueza: <font color='%COLOR_BLUE%'>bagaje, glorioso, suntuoso.</font>"
   },
   {
     "id": "H3521",
@@ -565,7 +565,7 @@
     "le": "כָּבוּל",
     "pl": "Kabúl",
     "ps": "kaw-bool'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3525')}>H3525</span> en el sentido de limitación; estéril; Cabul, nombre de dos lugares en Palestina: <font color='%COLOR_BLUE%'>Cabul.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3525')>H3525</span> en el sentido de limitación; estéril; Cabul, nombre de dos lugares en Palestina: <font color='%COLOR_BLUE%'>Cabul.</font>"
   },
   {
     "id": "H3522",
@@ -581,7 +581,7 @@
     "le": "כְּבִיר",
     "pl": "Kebír",
     "ps": "keb-eer",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3527')}>H3527</span> en el sentido origen de trenzar; matriz (de materiales entretejidos): <font color='%COLOR_BLUE%'>almohada.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3527')>H3527</span> en el sentido origen de trenzar; matriz (de materiales entretejidos): <font color='%COLOR_BLUE%'>almohada.</font>"
   },
   {
     "id": "H3524",
@@ -589,7 +589,7 @@
     "le": "כַּבִּיר",
     "pl": "kabbír",
     "ps": "kab-beer'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3527')}>H3527</span>; vasto, sea en extención (figurativamente de poder, poderoso; de tiempo, envejecido), o en número, muchos: <font color='%COLOR_BLUE%'>débil, fuerte, grande, impetuoso, poderoso, recio, valiente.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3527')>H3527</span>; vasto, sea en extención (figurativamente de poder, poderoso; de tiempo, envejecido), o en número, muchos: <font color='%COLOR_BLUE%'>débil, fuerte, grande, impetuoso, poderoso, recio, valiente.</font>"
   },
   {
     "id": "H3525",
@@ -621,7 +621,7 @@
     "le": "כְּבָר",
     "pl": "kebár",
     "ps": "keb-awr'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3527')}>H3527</span>; propiamente extensión de tiempo, i.e. un gran rato; de aquí, hace mucho tiempo, anteriormente, en ese entonces: <font color='%COLOR_BLUE%'>ya, desde hace tiempo.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3527')>H3527</span>; propiamente extensión de tiempo, i.e. un gran rato; de aquí, hace mucho tiempo, anteriormente, en ese entonces: <font color='%COLOR_BLUE%'>ya, desde hace tiempo.</font>"
   },
   {
     "id": "H3529",
@@ -629,7 +629,7 @@
     "le": "כְּבָר",
     "pl": "Kebár",
     "ps": "keb-awr'",
-    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3528')}>H3528</span>; largo; Kebar, río de Mesopotamia: <font color='%COLOR_BLUE%'>Quebar.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2249')}>H2249</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3528')>H3528</span>; largo; Kebar, río de Mesopotamia: <font color='%COLOR_BLUE%'>Quebar.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H2249')>H2249</span>."
   },
   {
     "id": "H3530",
@@ -637,7 +637,7 @@
     "le": "כִּבְרָה",
     "pl": "kibrá",
     "ps": "kib-raw'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3528')}>H3528</span>; propiamente longitud, i.e. medida (de dimensión incierto): <font color='%COLOR_BLUE%'>media legua.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3528')>H3528</span>; propiamente longitud, i.e. medida (de dimensión incierto): <font color='%COLOR_BLUE%'>media legua.</font>"
   },
   {
     "id": "H3531",
@@ -645,7 +645,7 @@
     "le": "כְּבָרָה",
     "pl": "kebará",
     "ps": "keb-aw-raw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3527')}>H3527</span> en su sentido origen; cedazo (como red): <font color='%COLOR_BLUE%'>criba.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3527')>H3527</span> en su sentido origen; cedazo (como red): <font color='%COLOR_BLUE%'>criba.</font>"
   },
   {
     "id": "H3532",
@@ -669,7 +669,7 @@
     "le": "כֶּבֶשׁ",
     "pl": "kébesh",
     "ps": "keh'-besh",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3533')}>H3533</span>; estrado (como que se pisa encima de él): <font color='%COLOR_BLUE%'>estrado.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3533')>H3533</span>; estrado (como que se pisa encima de él): <font color='%COLOR_BLUE%'>estrado.</font>"
   },
   {
     "id": "H3535",
@@ -677,7 +677,7 @@
     "le": "כִּבְשָׂה",
     "pl": "kibsá",
     "ps": "kib-saw'",
-    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>כבשה</b></font> <font color='%COLOR_PURPLE%'>kabsá</font>; femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3532')}>H3532</span>; cordera: <font color='%COLOR_BLUE%'>cordera, corderita, cordero.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>כבשה</b></font> <font color='%COLOR_PURPLE%'>kabsá</font>; femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3532')>H3532</span>; cordera: <font color='%COLOR_BLUE%'>cordera, corderita, cordero.</font>"
   },
   {
     "id": "H3536",
@@ -685,7 +685,7 @@
     "le": "כִּבְשָׁן",
     "pl": "kibsán",
     "ps": "kib-shawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3533')}>H3533</span>; horno de fundición (como reduciendo metales): <font color='%COLOR_BLUE%'>horno.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3533')>H3533</span>; horno de fundición (como reduciendo metales): <font color='%COLOR_BLUE%'>horno.</font>"
   },
   {
     "id": "H3537",
@@ -701,7 +701,7 @@
     "le": "כְּדַב",
     "pl": "kedáb",
     "ps": "ked-ab'",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3576')}>H3576</span>; falsa: <font color='%COLOR_BLUE%'>mentiroso.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3576')>H3576</span>; falsa: <font color='%COLOR_BLUE%'>mentiroso.</font>"
   },
   {
     "id": "H3539",
@@ -709,7 +709,7 @@
     "le": "כַּדְכֹּד",
     "pl": "kadkód",
     "ps": "kad-kode'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3537')}>H3537</span> en el sentido de fuego centelleante de un metal forjado; una gema centelleante, probablemente rubí: <font color='%COLOR_BLUE%'>rubíes.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3537')>H3537</span> en el sentido de fuego centelleante de un metal forjado; una gema centelleante, probablemente rubí: <font color='%COLOR_BLUE%'>rubíes.</font>"
   },
   {
     "id": "H3540",
@@ -725,7 +725,7 @@
     "le": "כֹּה",
     "pl": "koj",
     "ps": "ko",
-    "df": "<font color='%COLOR_GREEN%'></font>del prefijo k y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1931')}>H1931</span>; propiamente como eso, i.e. por implicación (de esta manera) así (o así); también (de lugar) aquí (o más acá); o (de tiempo) ahora: <font color='%COLOR_BLUE%'>aquí, allí, así, a todas partes, a un lado... al otro, como, de una manera, en esto, hasta ahora, hasta allí, mirad que, porque, por tanto.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>del prefijo k y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H1931')>H1931</span>; propiamente como eso, i.e. por implicación (de esta manera) así (o así); también (de lugar) aquí (o más acá); o (de tiempo) ahora: <font color='%COLOR_BLUE%'>aquí, allí, así, a todas partes, a un lado... al otro, como, de una manera, en esto, hasta ahora, hasta allí, mirad que, porque, por tanto.</font>"
   },
   {
     "id": "H3542",
@@ -733,7 +733,7 @@
     "le": "כָּה",
     "pl": "ka",
     "ps": "kaw",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3541')}>H3541</span>: <font color='%COLOR_BLUE%'>aquí.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3541')>H3541</span>: <font color='%COLOR_BLUE%'>aquí.</font>"
   },
   {
     "id": "H3543",
@@ -749,7 +749,7 @@
     "le": "כֵּהֶה",
     "pl": "kejé",
     "ps": "kay-heh'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3543')}>H3543</span>; débil, oscuro: <font color='%COLOR_BLUE%'>angustiar, humear, oscurecer, oscuro.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3543')>H3543</span>; débil, oscuro: <font color='%COLOR_BLUE%'>angustiar, humear, oscurecer, oscuro.</font>"
   },
   {
     "id": "H3545",
@@ -757,7 +757,7 @@
     "le": "כֵּהָה",
     "pl": "Kejá",
     "ps": "kay-haw'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3544')}>H3544</span>; propiamente debilitamiento; figurativamente alivio, i.e. cura: <font color='%COLOR_BLUE%'>medicina.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3544')>H3544</span>; propiamente debilitamiento; figurativamente alivio, i.e. cura: <font color='%COLOR_BLUE%'>medicina.</font>"
   },
   {
     "id": "H3546",
@@ -765,7 +765,7 @@
     "le": "כְּהַל",
     "pl": "kejál",
     "ps": "keh-hal'",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3201')}>H3201</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3557')}>H3557</span>; ser capaz: <font color='%COLOR_BLUE%'>poder.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3201')>H3201</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3557')>H3557</span>; ser capaz: <font color='%COLOR_BLUE%'>poder.</font>"
   },
   {
     "id": "H3547",
@@ -773,7 +773,7 @@
     "le": "כָּהַן",
     "pl": "kaján",
     "ps": "kaw-han'",
-    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria, aparentemente significa mediar en cultos religiosos.; pero usada solo como denominativo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3548')}>H3548</span>; oficiar como sacerdote; figurativamente vestirse vestidos suntuosos: <font color='%COLOR_BLUE%'>ataviar, consagrar, ejercer el ministerio, ministrar, sacerdocio, sacerdote.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria, aparentemente significa mediar en cultos religiosos.; pero usada solo como denominativo de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3548')>H3548</span>; oficiar como sacerdote; figurativamente vestirse vestidos suntuosos: <font color='%COLOR_BLUE%'>ataviar, consagrar, ejercer el ministerio, ministrar, sacerdocio, sacerdote.</font>"
   },
   {
     "id": "H3548",
@@ -781,7 +781,7 @@
     "le": "כֹּהֵן",
     "pl": "kojén",
     "ps": "ko-hane'",
-    "df": "<font color='%COLOR_GREEN%'></font>participio activo de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3547')}>H3547</span>; literalmente el que oficia, sacerdote; también (por cortesía) sacerdote actuante (aunque sea laico): <font color='%COLOR_BLUE%'>ministro, principal, príncipe, sacerdocio, sacerdotal, sacerdote.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>participio activo de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3547')>H3547</span>; literalmente el que oficia, sacerdote; también (por cortesía) sacerdote actuante (aunque sea laico): <font color='%COLOR_BLUE%'>ministro, principal, príncipe, sacerdocio, sacerdotal, sacerdote.</font>"
   },
   {
     "id": "H3549",
@@ -789,7 +789,7 @@
     "le": "כָּהֵן",
     "pl": "kajén",
     "ps": "kaw-hane'",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3548')}>H3548</span>: <font color='%COLOR_BLUE%'>sacerdote.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3548')>H3548</span>: <font color='%COLOR_BLUE%'>sacerdote.</font>"
   },
   {
     "id": "H3550",
@@ -797,7 +797,7 @@
     "le": "כְּהֻנָּה",
     "pl": "kejunná",
     "ps": "keh-hoon-naw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3547')}>H3547</span>; sacerdocio: <font color='%COLOR_BLUE%'>ministerio, sacerdocio.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3547')>H3547</span>; sacerdocio: <font color='%COLOR_BLUE%'>ministerio, sacerdocio.</font>"
   },
   {
     "id": "H3551",
@@ -805,7 +805,7 @@
     "le": "כַּו",
     "pl": "kav",
     "ps": "kav",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3854')}>H3854</span> en el sentido de perforar; ventana (como perforación): <font color='%COLOR_BLUE%'>ventana.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); de una raíz correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3854')>H3854</span> en el sentido de perforar; ventana (como perforación): <font color='%COLOR_BLUE%'>ventana.</font>"
   },
   {
     "id": "H3552",
@@ -821,7 +821,7 @@
     "le": "כֹּובַע",
     "pl": "kóba",
     "ps": "ko'-bah",
-    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa ser alto o redondo; casco (como arqueado): <font color='%COLOR_BLUE%'>casco, yelmo.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6959')}>H6959</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa ser alto o redondo; casco (como arqueado): <font color='%COLOR_BLUE%'>casco, yelmo.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H6959')>H6959</span>."
   },
   {
     "id": "H3554",
@@ -829,7 +829,7 @@
     "le": "כָּוָה",
     "pl": "kavá",
     "ps": "kaw-vaw'",
-    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente punzar o penetrar; de aquí, ampollar (as carcomer): <font color='%COLOR_BLUE%'>quemar.</font><p></p><font color='%COLOR_GREEN%'><b>כויח</b></font> <font color='%COLOR_PURPLE%'>koákj.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3581')}>H3581</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>raíz primaria; propiamente punzar o penetrar; de aquí, ampollar (as carcomer): <font color='%COLOR_BLUE%'>quemar.</font><p></p><font color='%COLOR_GREEN%'><b>כויח</b></font> <font color='%COLOR_PURPLE%'>koákj.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3581')>H3581</span>."
   },
   {
     "id": "H3555",
@@ -837,7 +837,7 @@
     "le": "כְּוִיָּה",
     "pl": "keviyá",
     "ps": "kev-ee-yaw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3554')}>H3554</span>; marcar: <font color='%COLOR_BLUE%'>quemadura.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3554')>H3554</span>; marcar: <font color='%COLOR_BLUE%'>quemadura.</font>"
   },
   {
     "id": "H3556",
@@ -845,7 +845,7 @@
     "le": "כֹּוכָב",
     "pl": "kokáb",
     "ps": "ko-kawb'",
-    "df": "<font color='%COLOR_GREEN%'></font>probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3522')}>H3522</span> (en el sentido de rodar) o <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3554')}>H3554</span> (en el sentido de arder); estrella, astro (por lo redondo o como brillando); figurativamente príncipe: <font color='%COLOR_BLUE%'>estrella, los que observan las estrellas.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3522')>H3522</span> (en el sentido de rodar) o <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3554')>H3554</span> (en el sentido de arder); estrella, astro (por lo redondo o como brillando); figurativamente príncipe: <font color='%COLOR_BLUE%'>estrella, los que observan las estrellas.</font>"
   },
   {
     "id": "H3557",
@@ -877,7 +877,7 @@
     "le": "כּוּן",
     "pl": "Kun",
     "ps": "koon",
-    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3559')}>H3559</span>; establecido; Kun, un lugar en Siria: <font color='%COLOR_BLUE%'>Cun.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>probablemente de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3559')>H3559</span>; establecido; Kun, un lugar en Siria: <font color='%COLOR_BLUE%'>Cun.</font>"
   },
   {
     "id": "H3561",
@@ -885,7 +885,7 @@
     "le": "כַּוָּן",
     "pl": "kaván",
     "ps": "kav-vawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3559')}>H3559</span>; algo preparado, i.e. torta sacrificial: <font color='%COLOR_BLUE%'>torta.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3559')>H3559</span>; algo preparado, i.e. torta sacrificial: <font color='%COLOR_BLUE%'>torta.</font>"
   },
   {
     "id": "H3562",
@@ -893,7 +893,7 @@
     "le": "כֹּונַנְיָהוּ",
     "pl": "Konanyáju",
     "ps": "ko-nan-yaw'-hoo",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3559')}>H3559</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3050')}>H3050</span>; Jah ha sustentado; Conaniá, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Conanías.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3663')}>H3663</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3559')>H3559</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3050')>H3050</span>; Jah ha sustentado; Conaniá, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Conanías.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3663')>H3663</span>."
   },
   {
     "id": "H3563",
@@ -901,7 +901,7 @@
     "le": "כֹּוס",
     "pl": "kos",
     "ps": "koce",
-    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa mantener junto; taza (como recipiente), a menudo figurativamente lote (como porción); también un ave impura, probablemente búho (tal vez de la cavidad de los ojos que parece taza): <font color='%COLOR_BLUE%'>búho, cáliz, copa, taza, vaso.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3599')}>H3599</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa mantener junto; taza (como recipiente), a menudo figurativamente lote (como porción); también un ave impura, probablemente búho (tal vez de la cavidad de los ojos que parece taza): <font color='%COLOR_BLUE%'>búho, cáliz, copa, taza, vaso.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3599')>H3599</span>."
   },
   {
     "id": "H3564",
@@ -909,7 +909,7 @@
     "le": "כּוּר",
     "pl": "kur",
     "ps": "koor",
-    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa propiamente cavar a través; olla u horno (como excavado): <font color='%COLOR_BLUE%'>hornaza, horno.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3600')}>H3600</span>.<p></p><font color='%COLOR_GREEN%'><b>כויר</b></font> <font color='%COLOR_PURPLE%'>kor.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3733')}>H3733</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>de una raíz que no se usa significa propiamente cavar a través; olla u horno (como excavado): <font color='%COLOR_BLUE%'>hornaza, horno.</font> Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3600')>H3600</span>.<p></p><font color='%COLOR_GREEN%'><b>כויר</b></font> <font color='%COLOR_PURPLE%'>kor.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3733')>H3733</span>."
   },
   {
     "id": "H3565",
@@ -917,7 +917,7 @@
     "le": "כֹּור עָשָׁן",
     "pl": "Kor Asán",
     "ps": "kore aw-shawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3564')}>H3564</span> y <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H6227')}>H6227</span>; horno de humo; Cor Asán, un lugar en Palestina: <font color='%COLOR_BLUE%'>Corasán.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3564')>H3564</span> y <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H6227')>H6227</span>; horno de humo; Cor Asán, un lugar en Palestina: <font color='%COLOR_BLUE%'>Corasán.</font>"
   },
   {
     "id": "H3566",
@@ -925,7 +925,7 @@
     "le": "כֹּורֶשׁ",
     "pl": "Kóresh",
     "ps": "ko'-resh",
-    "df": "<font color='%COLOR_GREEN%'></font>o (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Esd 1:1</span> [última vez], 2) <font color='%COLOR_GREEN%'><b>כירש</b></font> <font color='%COLOR_PURPLE%'>Kóresh</font>; del pers.; Cores (o Ciro), rey pers.: <font color='%COLOR_BLUE%'>Ciro.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o (<span style='color: #0000FF; cursor: pointer' onClick=strongFun('')>Esd 1:1</span> [última vez], 2) <font color='%COLOR_GREEN%'><b>כירש</b></font> <font color='%COLOR_PURPLE%'>Kóresh</font>; del pers.; Cores (o Ciro), rey pers.: <font color='%COLOR_BLUE%'>Ciro.</font>"
   },
   {
     "id": "H3567",
@@ -933,7 +933,7 @@
     "le": "כֹּורֶשׁ",
     "pl": "Kóresh",
     "ps": "ko'-resh",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3566')}>H3566</span>: <font color='%COLOR_BLUE%'>Ciro.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3566')>H3566</span>: <font color='%COLOR_BLUE%'>Ciro.</font>"
   },
   {
     "id": "H3568",
@@ -949,7 +949,7 @@
     "le": "כּוּשִׁי",
     "pl": "kushí",
     "ps": "koo-shee'",
-    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3568')}>H3568</span>; cusita, o descendiente de Cus: <font color='%COLOR_BLUE%'>etíope, de Etiopía.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>patronímico de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3568')>H3568</span>; cusita, o descendiente de Cus: <font color='%COLOR_BLUE%'>etíope, de Etiopía.</font>"
   },
   {
     "id": "H3570",
@@ -957,7 +957,7 @@
     "le": "כּוּשִׁי",
     "pl": "Kushí",
     "ps": "koo-shee'",
-    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3569')}>H3569</span>; Cusi, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Cusi.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3569')>H3569</span>; Cusi, nombre de dos israelitas: <font color='%COLOR_BLUE%'>Cusi.</font>"
   },
   {
     "id": "H3571",
@@ -965,7 +965,7 @@
     "le": "כּוּשִׁית",
     "pl": "kushít",
     "ps": "koo-sheeth'",
-    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3569')}>H3569</span>; mujer cusita: <font color='%COLOR_BLUE%'>mujer cusita.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>femenino de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3569')>H3569</span>; mujer cusita: <font color='%COLOR_BLUE%'>mujer cusita.</font>"
   },
   {
     "id": "H3572",
@@ -973,7 +973,7 @@
     "le": "כּוּשָׁן",
     "pl": "Kushán",
     "ps": "koo-shawn'",
-    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3568')}>H3568</span>; Cusán, región de Arabia: <font color='%COLOR_BLUE%'>Cusán.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>tal vez de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3568')>H3568</span>; Cusán, región de Arabia: <font color='%COLOR_BLUE%'>Cusán.</font>"
   },
   {
     "id": "H3573",
@@ -981,7 +981,7 @@
     "le": "כּוּשַׁן רִשְׁעָתַיִם",
     "pl": "Kushán Rishataím",
     "ps": "koo-shan' rish-awthah'-yim",
-    "df": "<font color='%COLOR_GREEN%'></font>aparentemente de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3572')}>H3572</span> y dual de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H7564')}>H7564</span>; Cusán de doble maldad; Cusán Risataim, rey de Mesopotamia: <font color='%COLOR_BLUE%'>Cusan-Risataim.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>aparentemente de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3572')>H3572</span> y dual de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H7564')>H7564</span>; Cusán de doble maldad; Cusán Risataim, rey de Mesopotamia: <font color='%COLOR_BLUE%'>Cusan-Risataim.</font>"
   },
   {
     "id": "H3574",
@@ -989,7 +989,7 @@
     "le": "כֹּושָׁרָה",
     "pl": "koshaurá",
     "ps": "ko-shaw-raw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3787')}>H3787</span>; prosperidad; en plural libertad: <font color='%COLOR_BLUE%'>cautivos.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3787')>H3787</span>; prosperidad; en plural libertad: <font color='%COLOR_BLUE%'>cautivos.</font>"
   },
   {
     "id": "H3575",
@@ -1013,7 +1013,7 @@
     "le": "כָּזָב",
     "pl": "kazáb",
     "ps": "kaw-zawb'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3576')}>H3576</span>; falsedad; literalmente (no verdad) o figurativamente (ídolo): <font color='%COLOR_BLUE%'>engañoso, mentira, mentiroso.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3576')>H3576</span>; falsedad; literalmente (no verdad) o figurativamente (ídolo): <font color='%COLOR_BLUE%'>engañoso, mentira, mentiroso.</font>"
   },
   {
     "id": "H3578",
@@ -1021,7 +1021,7 @@
     "le": "כֹּזְבָא",
     "pl": "Kozebá",
     "ps": "ko-zeb-aw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3576')}>H3576</span>; falaz; Cozeba, un lugar en Palestina: <font color='%COLOR_BLUE%'>Cozeba.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3576')>H3576</span>; falaz; Cozeba, un lugar en Palestina: <font color='%COLOR_BLUE%'>Cozeba.</font>"
   },
   {
     "id": "H3579",
@@ -1029,7 +1029,7 @@
     "le": "כֹּזְבִי",
     "pl": "Kosbbí",
     "ps": "koz-bee'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3576')}>H3576</span>; falso; Cozbi, una madianita: <font color='%COLOR_BLUE%'>Cozbi.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3576')>H3576</span>; falso; Cozbi, una madianita: <font color='%COLOR_BLUE%'>Cozbi.</font>"
   },
   {
     "id": "H3580",
@@ -1037,7 +1037,7 @@
     "le": "כְּזִיב",
     "pl": "Kezíb",
     "ps": "kez-eeb'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3576')}>H3576</span>; falsificado; Kezib, un lugar en Palestina: <font color='%COLOR_BLUE%'>Quezib.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3576')>H3576</span>; falsificado; Kezib, un lugar en Palestina: <font color='%COLOR_BLUE%'>Quezib.</font>"
   },
   {
     "id": "H3581",
@@ -1045,7 +1045,7 @@
     "le": "כֹּחַ",
     "pl": "kóakj",
     "ps": "ko'-akh",
-    "df": "<font color='%COLOR_GREEN%'></font>o (<span style='color: #0000FF; cursor: pointer' onClick={strongFun('')}>Dan 11:6</span>) <font color='%COLOR_GREEN%'><b>כויח</b></font> <font color='%COLOR_PURPLE%'>kóakj</font>; de una raíz que no se usa significa ser firme; vigor, literalmente (fuerza, en sentido bueno o malo) o figurativamente (capacidad, medios, producir); también (de su dureza) un lagarto grande: <font color='%COLOR_BLUE%'>capaz, cocodrilo, esforzar, esfuerzo, fortalecer, fortaleza, fuerte, fuertemente, fuerza, hacienda, idóneo, poder, poderoso, potencia, vigor, violencia.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o (<span style='color: #0000FF; cursor: pointer' onClick=strongFun('')>Dan 11:6</span>) <font color='%COLOR_GREEN%'><b>כויח</b></font> <font color='%COLOR_PURPLE%'>kóakj</font>; de una raíz que no se usa significa ser firme; vigor, literalmente (fuerza, en sentido bueno o malo) o figurativamente (capacidad, medios, producir); también (de su dureza) un lagarto grande: <font color='%COLOR_BLUE%'>capaz, cocodrilo, esforzar, esfuerzo, fortalecer, fortaleza, fuerte, fuertemente, fuerza, hacienda, idóneo, poder, poderoso, potencia, vigor, violencia.</font>"
   },
   {
     "id": "H3582",
@@ -1077,7 +1077,7 @@
     "le": "כַּחַשׁ",
     "pl": "kakjásh",
     "ps": "kakh'-ash",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3584')}>H3584</span>; literalmente fracaso de carne, i.e. flacura; figurativamente hipocresía: <font color='%COLOR_BLUE%'>flacura, mentir, -a.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3584')>H3584</span>; literalmente fracaso de carne, i.e. flacura; figurativamente hipocresía: <font color='%COLOR_BLUE%'>flacura, mentir, -a.</font>"
   },
   {
     "id": "H3586",
@@ -1085,7 +1085,7 @@
     "le": "כֶּחָשׁ",
     "pl": "kekjásh",
     "ps": "kekh-awsh'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3584')}>H3584</span>; sin fe: <font color='%COLOR_BLUE%'>mentiroso.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3584')>H3584</span>; sin fe: <font color='%COLOR_BLUE%'>mentiroso.</font>"
   },
   {
     "id": "H3587",
@@ -1093,7 +1093,7 @@
     "le": "כִּי",
     "pl": "ki",
     "ps": "kee",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3554')}>H3554</span>; cicatriz o marca: <font color='%COLOR_BLUE%'>quemadura.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3554')>H3554</span>; cicatriz o marca: <font color='%COLOR_BLUE%'>quemadura.</font>"
   },
   {
     "id": "H3588",
@@ -1117,7 +1117,7 @@
     "le": "כִידֹוד",
     "pl": "kidód",
     "ps": "kee-dode'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3589')}>H3589</span> [Compárese con <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3539')}>H3539</span>]; propiamente algo sacado a golpes, i.e. chispa (como al golpe): <font color='%COLOR_BLUE%'>centella.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3589')>H3589</span> [Compárese con <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3539')>H3539</span>]; propiamente algo sacado a golpes, i.e. chispa (como al golpe): <font color='%COLOR_BLUE%'>centella.</font>"
   },
   {
     "id": "H3591",
@@ -1125,7 +1125,7 @@
     "le": "כִּידֹון",
     "pl": "kidón",
     "ps": "kee-dohn'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3589')}>H3589</span>; propiamente algo con que golpear, i.e. dardo (tal vez más pequeño que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H2595')}>H2595</span>): <font color='%COLOR_BLUE%'>jabalina, lanza.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3589')>H3589</span>; propiamente algo con que golpear, i.e. dardo (tal vez más pequeño que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H2595')>H2595</span>): <font color='%COLOR_BLUE%'>jabalina, lanza.</font>"
   },
   {
     "id": "H3592",
@@ -1133,7 +1133,7 @@
     "le": "כִּידֹון",
     "pl": "Kidón",
     "ps": "kee-dohn'",
-    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3591')}>H3591</span>; Kidón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Quidón.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3591')>H3591</span>; Kidón, un lugar en Palestina: <font color='%COLOR_BLUE%'>Quidón.</font>"
   },
   {
     "id": "H3593",
@@ -1149,7 +1149,7 @@
     "le": "כִּיּוּן",
     "pl": "Kiún",
     "ps": "kee-yoon'",
-    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3559')}>H3559</span>; propiamente estatua, i.e. ídolo; pero usada (por eufemismo) para alguna deidad pagana (tal vez correspondiente a Priapo o Baal-peor): <font color='%COLOR_BLUE%'>Quiún.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3559')>H3559</span>; propiamente estatua, i.e. ídolo; pero usada (por eufemismo) para alguna deidad pagana (tal vez correspondiente a Priapo o Baal-peor): <font color='%COLOR_BLUE%'>Quiún.</font>"
   },
   {
     "id": "H3595",
@@ -1157,7 +1157,7 @@
     "le": "כִּיֹּור",
     "pl": "kiór",
     "ps": "kee-yore'",
-    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>כייר</b></font> <font color='%COLOR_PURPLE%'>kiór</font>; de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3564')}>H3564</span>; propiamente algo redondo (como excavado o perforado), i.e. plato hondo para brasas o caldero para cocinar; de aquí, (de similitud de forma) lavacara; también (por la misma razón) púlpito o plataforma: <font color='%COLOR_BLUE%'>brasero, estrado, fuente, perol.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>כייר</b></font> <font color='%COLOR_PURPLE%'>kiór</font>; de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3564')>H3564</span>; propiamente algo redondo (como excavado o perforado), i.e. plato hondo para brasas o caldero para cocinar; de aquí, (de similitud de forma) lavacara; también (por la misma razón) púlpito o plataforma: <font color='%COLOR_BLUE%'>brasero, estrado, fuente, perol.</font>"
   },
   {
     "id": "H3596",
@@ -1165,7 +1165,7 @@
     "le": "כִּילַי",
     "pl": "kilái",
     "ps": "kee-lah'-ee",
-    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>כלי</b></font> <font color='%COLOR_PURPLE%'>kelái</font>; de <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3557')}>H3557</span> en el sentido de retener; avariento: <font color='%COLOR_BLUE%'>tramposo.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>o <font color='%COLOR_GREEN%'><b>כלי</b></font> <font color='%COLOR_PURPLE%'>kelái</font>; de <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3557')>H3557</span> en el sentido de retener; avariento: <font color='%COLOR_BLUE%'>tramposo.</font>"
   },
   {
     "id": "H3597",
@@ -1181,7 +1181,7 @@
     "le": "כִּימָה",
     "pl": "Kimá",
     "ps": "kee-maw'",
-    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3558')}>H3558</span>; conjunto de estrellas, i.e. las Pléyades: <font color='%COLOR_BLUE%'>Pléyades.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>de lo mismo que <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3558')>H3558</span>; conjunto de estrellas, i.e. las Pléyades: <font color='%COLOR_BLUE%'>Pléyades.</font>"
   },
   {
     "id": "H3599",
@@ -1189,7 +1189,7 @@
     "le": "כִּיס",
     "pl": "kis",
     "ps": "keece",
-    "df": "<font color='%COLOR_GREEN%'></font>forma para <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3563')}>H3563</span>; raza; también bolsa para dinero o pesas: <font color='%COLOR_BLUE%'>bolsa, copa.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>forma para <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3563')>H3563</span>; raza; también bolsa para dinero o pesas: <font color='%COLOR_BLUE%'>bolsa, copa.</font>"
   },
   {
     "id": "H3600",
@@ -1197,6 +1197,6 @@
     "le": "כִּיר",
     "pl": "kir",
     "ps": "keer",
-    "df": "<font color='%COLOR_GREEN%'></font>forma para <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3564')}>H3564</span> (solo en dual); estufa para cocinar (consistiendo en dos piedras paralelas, encima de las cuales se colocar la olla): <font color='%COLOR_BLUE%'>hornillo.</font><p></p><font color='%COLOR_GREEN%'><b>כייר</b></font> <font color='%COLOR_PURPLE%'>kiyór.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3595')}>H3595</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>forma para <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3564')>H3564</span> (solo en dual); estufa para cocinar (consistiendo en dos piedras paralelas, encima de las cuales se colocar la olla): <font color='%COLOR_BLUE%'>hornillo.</font><p></p><font color='%COLOR_GREEN%'><b>כייר</b></font> <font color='%COLOR_PURPLE%'>kiyór.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick=strongFun('H3595')>H3595</span>."
   }
 ]
