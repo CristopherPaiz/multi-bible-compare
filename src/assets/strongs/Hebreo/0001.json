@@ -13,7 +13,7 @@
     "le": "אַב",
     "pl": "ab",
     "ps": "ab",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H1')}>H1</span>: <font color='%COLOR_BLUE%'>padre.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick='strongFun('H1')'>H1</span>: <font color='%COLOR_BLUE%'>padre.</font>"
   },
   {
     "id": "H3",
@@ -21,7 +21,7 @@
     "le": "אֵב",
     "pl": "eb",
     "ps": "abe",
-    "df": "<font color='%COLOR_GREEN%'></font>del mismo que <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H24')}>H24</span>; planta verde: <font color='%COLOR_BLUE%'>fruto, verdor.</font>"
+    "df": "<font color='%COLOR_GREEN%'></font>del mismo que <span style='color: #0000FF; cursor: pointer' onClick='strongFun('H24')'>H24</span>; planta verde: <font color='%COLOR_BLUE%'>fruto, verdor.</font>"
   },
   {
     "id": "H4",
@@ -29,7 +29,7 @@
     "le": "אֵב",
     "pl": "eb",
     "ps": "abe",
-    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H3')}>H3</span>: <font color='%COLOR_BLUE%'>fruto.</font><p></p><font color='%COLOR_GREEN%'><b>איב</b></font> <font color='%COLOR_PURPLE%'>ob.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick={strongFun('H178')}>H178</span>."
+    "df": "<font color='%COLOR_GREEN%'></font>(caldeo); correspondiente a <span style='color: #0000FF; cursor: pointer' onClick='strongFun('H3')'>H3</span>: <font color='%COLOR_BLUE%'>fruto.</font><p></p><font color='%COLOR_GREEN%'><b>איב</b></font> <font color='%COLOR_PURPLE%'>ob.</font> Véase <span style='color: #0000FF; cursor: pointer' onClick='strongFun('H178')'>H178</span>."
   },
   {
     "id": "H5",

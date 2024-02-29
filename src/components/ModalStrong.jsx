@@ -11,32 +11,36 @@ const ModalStrong = ({ isOpen, onClose }) => {
 
   const { modalStrong, strongFunc, setModalStrong } = useContext(DataContext);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
-        if (modalStrong) {
-          strongFunc([]); // Limpia el array de strongs
-          setModalStrong(false); // Cierra el modal hijo si está abierto
-        } else {
-          onClose(); // Cierra el modal padre si el modal hijo está cerrado
-        }
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (
+  //       modalRef.current &&
+  //       !modalRef.current.contains(event.target) &&
+  //       !modalRef.current.querySelector(".strong-single").contains(event.target)
+  //     ) {
+  //       if (modalStrong) {
+  //         strongFunc([]); // Limpia el array de strongs
+  //         setModalStrong(false); // Cierra el modal hijo si está abierto
+  //       } else {
+  //         onClose(); // Cierra el modal padre si el modal hijo está cerrado
+  //       }
+  //     }
+  //   };
 
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
+  //   if (isOpen) {
+  //     document.addEventListener("mousedown", handleClickOutside);
+  //   } else {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   }
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isOpen, onClose, modalStrong, setModalStrong, strongFunc]);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [isOpen, onClose, modalStrong, setModalStrong, strongFunc]);
 
-  useEffect(() => {
-    setModalStrong(false);
-  }, [setModalStrong]);
+  // useEffect(() => {
+  //   setModalStrong(false);
+  // }, [setModalStrong]);
 
   if (!isOpen) return null;
 

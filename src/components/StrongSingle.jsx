@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import DataContext from "../context/DataContext";
-// import ReactHtmlParser from "react-html-parser";
 
 const StrongSingle = () => {
   const { strongData, cargandoStrong, strong } = useContext(DataContext);
@@ -27,9 +26,8 @@ const StrongSingle = () => {
             <h1>LEXEMA: {strongIndividual.le}</h1>
             <h1>TRANSLITERACIÓN: {strongIndividual.pl}</h1>
             <h1>PRONUNCIACIÓN: {strongIndividual.ps}</h1>
-            <h1>TI: {strongIndividual.ti}</h1>
+            <h1>TITULO: {strongIndividual.ti}</h1>
             <div dangerouslySetInnerHTML={{ __html: strongIndividual.df }}></div>
-            {/* <div>{ReactHtmlParser(strongIndividual.df)}</div> */}
           </div>
         )}
       </div>
