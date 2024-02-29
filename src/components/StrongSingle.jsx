@@ -83,12 +83,18 @@ const StrongSingle = () => {
           <p>Cargando...</p>
         ) : (
           <div className="">
-            <h1>ID: {strongIndividual.id}</h1>
-            <h1>LEXEMA: {strongIndividual.le}</h1>
-            <h1>TRANSLITERACIÓN: {strongIndividual.pl}</h1>
-            <h1>PRONUNCIACIÓN: {strongIndividual.ps}</h1>
-            <h1>TITULO: {strongIndividual.ti}</h1>
-            <h1>DEFINICIÓN: {processedHtml}</h1>
+            <h1 className="font-semibold inline-flex mr-2">ID:</h1> <span> {strongIndividual.id}</span>
+            <br />
+            <h1 className="font-semibold inline-flex mr-2">LEXEMA:</h1> <span> {strongIndividual.le}</span>
+            <br />
+            <h1 className="font-semibold inline-flex mr-2">TRANSLITERACIÓN:</h1> <span> {strongIndividual.pl}</span>
+            <br />
+            <h1 className="font-semibold inline-flex mr-2">PRONUNCIACIÓN:</h1> <span> {strongIndividual.ps}</span>
+            <br />
+            <h1 className="font-semibold inline-flex mr-2">TÍTULO:</h1> <span> {strongIndividual.ti}</span>
+            <br />
+            <h1 className="font-semibold inline-flex mr-2">DEFINICIÓN:</h1> <span> {processedHtml}</span>
+            <br />
             <button
               className="px-5 py-2 bg-slate-500 text-white m-auto rounded-md"
               onClick={() => {

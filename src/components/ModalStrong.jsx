@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Tabs from "./Tabs";
-import { useContext, useRef, useEffect, useState } from "react";
+import { useContext, useRef, useEffect } from "react";
 import LanguageContext from "../context/LanguageContext";
 import DataContext from "../context/DataContext";
 import StrongSingle from "./StrongSingle";
