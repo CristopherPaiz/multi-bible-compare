@@ -1,12 +1,12 @@
 .Slink {
-  background: linear-gradient(120deg, #fae100 30%, #ffffff 38%, #ffffff 40%, #fae100 48%);
+  background: linear-gradient(120deg, #cc00ff 30%, #e683ff 38%, #e683ff 40%, #cc00ff 48%);
   background-size: 200% 100%;
   background-position: 100% 0;
-  color: black !important;
+  color: white !important;
   padding: 2px 7px !important;
   border-radius: 7px;
   font-weight: 600;
-  margin: 5px 1px;
+  margin: 5px 2px;
   animation: load89234 2s 1;
 }
 
@@ -17,26 +17,26 @@
 }
 
 [color="%COLOR_PURPLE%"] {
-  color: #8700c2;
+  color: #a6b3ff;
 }
 
 [color="%COLOR_RED%"] {
-  color: #000dff;
+  color: #9096ff;
 }
 
 [color="%COLOR_BLUE%"] {
-  color: #ff0000;
+  color: #ff7d7d;
   font-weight: 700;
 }
 
 [color="%COLOR_GREEN%"] {
-  color: #0fb500;
+  color: #15ff00;
 }
 
 [color="%COLOR_ORANGE%"] {
-  color: #ffbb00;
+  color: #ffdf87;
 }
 
 [color="%COLOR_YELLOW%"] {
-  color: #f2ff00;
+  color: #f9ff8e;
 }

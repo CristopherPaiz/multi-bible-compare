@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState, createElement } from "react";
 import DataContext from "../context/DataContext";
-import "../styles/Strongs.css";
+import ThemeContext from "../context/ThemeContext";
+// import "../styles/Strongs.css";
 
 const processText = (html, strongFun) => {
   const doc = new DOMParser().parseFromString(html, "text/html");
@@ -29,6 +30,7 @@ const processText = (html, strongFun) => {
               key={key}
               onClick={() => strongFun(arg)}
               style={{ color: node.style.color, cursor: node.style.cursor }}
+              className={"Slink"}
             >
               {processText(node.innerHTML, strongFun)}
             </span>
@@ -63,6 +65,42 @@ const escapeHTML = (str) =>
 const StrongSingle = () => {
   const { strongData, cargandoStrong, strong, strongFun, setModalStrong } = useContext(DataContext);
   const [strongIndividual, setStrongIndividual] = useState("");
+  const { theme } = useContext(ThemeContext);
+  const [image, setImage] = useState(null);
+
+  //USEEFFECT FOR THEME CSS AND IMAGE
+  useEffect(() => {
+    const ImageUrls = {
+      light: "/light.webp",
+      dark: "/dark.webp",
+    };
+
+    if (theme === "light") {
+      import("../styles/Strongs.css");
+      const fetchImage = async () => {
+        const imageUrl = ImageUrls[theme];
+        const response = await fetch(imageUrl);
+        const blob = await response.blob();
+        const imageURL = URL.createObjectURL(blob);
+        setImage(imageURL);
+      };
+
+      fetchImage();
+      return () => URL.revokeObjectURL(image);
+    } else {
+      import("../styles/StrongsDark.css");
+      const fetchImage = async () => {
+        const imageUrl = ImageUrls[theme];
+        const response = await fetch(imageUrl);
+        const blob = await response.blob();
+        const imageURL = URL.createObjectURL(blob);
+        setImage(imageURL);
+      };
+
+      fetchImage();
+      return () => URL.revokeObjectURL(image);
+    }
+  }, [theme]);
 
   useEffect(() => {
     if (!cargandoStrong) {
@@ -78,31 +116,52 @@ const StrongSingle = () => {
 
   return (
     <>
-      <div className="z-[9999999] h-[50%] w-[80%] border border-yellow-500 dark:border-purple-500 bg-yellow-300 dark:bg-purple-300 text-black dark:text-white overflow-y-scroll no-scrollbar">
+      <div className="z-[9999999] h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] text-black dark:text-white">
         {cargandoStrong ? (
-          <p>Cargando...</p>
+          <div className="h-full w-full flex flex-col items-center justify-center gap-4">
+            <div className="flex flex-row gap-2">
+              <div className="w-4 h-4 rounded-full bg-black dark:bg-white animate-bounce [animation-delay:.7s]"></div>
+              <div className="w-4 h-4 rounded-full bg-black dark:bg-white animate-bounce [animation-delay:.3s]"></div>
+              <div className="w-4 h-4 rounded-full bg-black dark:bg-white animate-bounce [animation-delay:.7s]"></div>
+            </div>
+            <p>Cargando...</p>
+          </div>
         ) : (
-          <div className="">
-            <h1 className="font-semibold inline-flex mr-2">ID:</h1> <span> {strongIndividual.id}</span>
-            <br />
-            <h1 className="font-semibold inline-flex mr-2">LEXEMA:</h1> <span> {strongIndividual.le}</span>
-            <br />
-            <h1 className="font-semibold inline-flex mr-2">TRANSLITERACIÓN:</h1> <span> {strongIndividual.pl}</span>
-            <br />
-            <h1 className="font-semibold inline-flex mr-2">PRONUNCIACIÓN:</h1> <span> {strongIndividual.ps}</span>
-            <br />
-            <h1 className="font-semibold inline-flex mr-2">TÍTULO:</h1> <span> {strongIndividual.ti}</span>
-            <br />
-            <h1 className="font-semibold inline-flex mr-2">DEFINICIÓN:</h1> <span> {processedHtml}</span>
-            <br />
+          <div className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative">
+            <img src={image} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" />
+            <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar">
+              {/* <h1 className="font-semibold inline-flex mr-2">ID:</h1> <span> {strongIndividual.id}</span>
+              <h1 className="font-semibold inline-flex mr-2">LEXEMA:</h1> <span> {strongIndividual.le}</span>
+              <h1 className="font-semibold inline-flex mr-2">TRANSLITERACIÓN:</h1> <span> {strongIndividual.pl}</span>
+              <h1 className="font-semibold inline-flex mr-2">PRONUNCIACIÓN:</h1> <span> {strongIndividual.ps}</span>
+              <h1 className="font-semibold inline-flex mr-2">TÍTULO:</h1> <span> {strongIndividual.ti}</span>
+              <h1 className="font-semibold inline-flex mr-2">DEFINICIÓN:</h1> <span> {processedHtml}</span> */}
+              <div className="text-left mr-2">
+                <table>
+                  <tr className="flex text-2xl text-balance px-3 text-center justify-center font-bold -ml-4 mb-3">
+                    {strongIndividual.id} - {strongIndividual.le}
+                  </tr>
+                  <tr className="flex text-2xl text-balance px-3 text-center justify-center font-bold -ml-4">
+                    {strongIndividual.pl} ({strongIndividual.ti})
+                  </tr>
+                  <br />
+                  <tr className="font-thin text-lg py-4 my-4">
+                    Pronunciación: <b className="font-bold">{strongIndividual.ps}</b>
+                  </tr>
+                  <br />
+                  <tr className="py-4 my-4">Definición:</tr>
+                  <tr className="">{processedHtml}</tr>
+                </table>
+              </div>
+            </div>
             <button
-              className="px-5 py-2 bg-slate-500 text-white m-auto rounded-md"
+              className="px-5 py-2 bg-red-500 text-white m-auto text-2xl  size-14 sm:size-16 bottom-[55px] left-[153px] sm:left-[230px] sm:bottom-[60px] text-center absolute rounded-full"
               onClick={() => {
                 setModalStrong(false);
                 strongFun("");
               }}
             >
-              Cerrar modal
+              X
             </button>
           </div>
         )}
