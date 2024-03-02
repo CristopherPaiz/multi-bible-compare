@@ -105,7 +105,7 @@ const StrongSingle = () => {
                       </tr>
                       <br />
                       <tr className="font-thin text-lg py-4 my-4">
-                        Pronunciación: <b className="font-bold">{strongIndividual.ps}</b>
+                        Pronunciación: <b className="font-bold text-xl">{strongIndividual.ps}</b>
                       </tr>
                       <br />
                       <tr className="py-4 my-4">Definición:</tr>
