@@ -1,7 +1,7 @@
 {
   "name": "multi-bible",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,6 @@
     "@translate-tools/core": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-jsx-parser": "^1.29.0",
     "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
