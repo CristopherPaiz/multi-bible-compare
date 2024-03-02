@@ -295,8 +295,10 @@ export const DataProvider = ({ children }) => {
 
         if (theme === "light") {
           import("../styles/Strongs.css");
-        } else {
+        } else if (theme === "dark") {
           import("../styles/StrongsDark.css");
+        } else {
+          import("../styles/Strongs.css");
         }
         setCargandoImagen(false);
       } catch (error) {
@@ -305,6 +307,20 @@ export const DataProvider = ({ children }) => {
     };
     cambiarEstiloStrong();
   }, [theme]);
+
+  useEffect(() => {
+    const cambiarEstiloStrong = async () => {
+      if (theme === "light") {
+        import("../styles/Strongs.css");
+      } else if (theme === "dark") {
+        import("../styles/StrongsDark.css");
+      } else {
+        import("../styles/Strongs.css");
+      }
+      setCargandoImagen(false);
+    };
+    cambiarEstiloStrong();
+  }, []);
 
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
