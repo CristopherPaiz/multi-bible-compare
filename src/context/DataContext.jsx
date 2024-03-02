@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import LanguageContext from "./LanguageContext";
 import bibleData from "../assets/bibles/JSON_DATA/01. English - Amplified (2015).json";
+import ThemeContext from "./ThemeContext";
 
 const DataContext = createContext();
 
@@ -268,6 +269,43 @@ export const DataProvider = ({ children }) => {
     conseguirStrong();
   }, [strong]);
 
+  //TEMA STRONG SINGLE
+  const [image, setImage] = useState(null);
+  const [cargandoImagen, setCargandoImagen] = useState(true);
+  const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    const cambiarEstiloStrong = async () => {
+      const ImageUrls = {
+        light: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/light.webp",
+        dark: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/dark.webp",
+      };
+
+      const imageUrl = ImageUrls[theme];
+      setCargandoImagen(true);
+
+      try {
+        const response = await fetch(imageUrl);
+        if (!response.ok) {
+          throw new Error("Failed to load image");
+        }
+
+        setImage(imageUrl);
+        setCargandoImagen(true);
+
+        if (theme === "light") {
+          import("../styles/Strongs.css");
+        } else {
+          import("../styles/StrongsDark.css");
+        }
+        setCargandoImagen(false);
+      } catch (error) {
+        console.error("Error loading image:", error);
+      }
+    };
+    cambiarEstiloStrong();
+  }, [theme]);
+
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
     <DataContext.Provider
@@ -301,7 +339,10 @@ export const DataProvider = ({ children }) => {
         modalStrong,
         setModalStrong,
         strongData,
+        setCargandoStrong,
         cargandoStrong,
+        image,
+        cargandoImagen,
         //return modals
         //------------
         modalLibros,
