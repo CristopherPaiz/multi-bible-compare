@@ -293,25 +293,28 @@ export const DataProvider = ({ children }) => {
         setImage(imageUrl);
         setCargandoImagen(true);
 
-        // Eliminar el estilo existente
-        const existingStyle = document.querySelector(
-          'link[href="../styles/Strongs.css"], link[href="../styles/StrongsDark.css"]'
-        );
-        if (existingStyle) {
-          existingStyle.parentNode.removeChild(existingStyle);
+        let styleSheetUrl;
+        if (theme === "light") {
+          styleSheetUrl = "../styles/Strongs.css";
+        } else if (theme === "dark") {
+          styleSheetUrl = "../styles/StrongsDark.css";
+        } else {
+          styleSheetUrl = "../styles/Strongs.css";
         }
 
-        // Agregar el estilo correspondiente al tema actual
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        if (theme === "light") {
-          link.href = "../styles/Strongs.css";
-        } else if (theme === "dark") {
-          link.href = "../styles/StrongsDark.css";
-        } else {
-          link.href = "../styles/Strongs.css";
+        // Eliminar estilos previos si existen
+        const existingStyleSheet = document.querySelector(
+          'link[href="../styles/Strongs.css"], link[href="../styles/StrongsDark.css"]'
+        );
+        if (existingStyleSheet) {
+          existingStyleSheet.remove();
         }
-        document.head.appendChild(link);
+
+        // Cargar nuevo estilo
+        const styleSheet = document.createElement("link");
+        styleSheet.rel = "stylesheet";
+        styleSheet.href = styleSheetUrl;
+        document.head.appendChild(styleSheet);
 
         setCargandoImagen(false);
       } catch (error) {
