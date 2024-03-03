@@ -294,11 +294,23 @@ export const DataProvider = ({ children }) => {
         setCargandoImagen(true);
 
         if (theme === "light") {
-          import("../styles/Strongs.css");
+          // Agregar el estilo light directamente al DOM
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "../styles/Strongs.css";
+          document.head.appendChild(link);
         } else if (theme === "dark") {
-          import("../styles/StrongsDark.css");
+          // Agregar el estilo dark directamente al DOM
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "../styles/StrongsDark.css";
+          document.head.appendChild(link);
         } else {
-          import("../styles/Strongs.css");
+          // Agregar el estilo por defecto al DOM
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "../styles/Strongs.css";
+          document.head.appendChild(link);
         }
         setCargandoImagen(false);
       } catch (error) {
@@ -307,20 +319,6 @@ export const DataProvider = ({ children }) => {
     };
     cambiarEstiloStrong();
   }, [theme]);
-
-  useEffect(() => {
-    const cambiarEstiloStrong = async () => {
-      if (theme === "light") {
-        import("../styles/Strongs.css");
-      } else if (theme === "dark") {
-        import("../styles/StrongsDark.css");
-      } else {
-        import("../styles/Strongs.css");
-      }
-      setCargandoImagen(false);
-    };
-    cambiarEstiloStrong();
-  }, []);
 
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
