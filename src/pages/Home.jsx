@@ -18,6 +18,7 @@ const Home = () => {
   return (
     <div className="mt-6 p-8 flex-col flex items-center justify-center text-white mb-6">
       <div
+        className="animate-fade-in"
         style={{
           position: "fixed",
           zIndex: -5,
@@ -28,8 +29,8 @@ const Home = () => {
           backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3))",
         }}
       ></div>
-      <img src={BG} className="fixed -z-20 object-cover h-full sm:h-auto sm:w-full bottom-0" />
-      <article className="sm:max-w-[600px] px-4 flex flex-col justify-center items-center">
+      <img src={BG} className="animate-fade-in fixed -z-20 object-cover h-full sm:h-auto sm:w-full bottom-0" />
+      <article className="animate-fade-in sm:max-w-[600px] px-4 flex flex-col justify-center items-center">
         <h1 className="mt-10 sm:mt-4 text-7xl sm:text-8xl font-bold text-center mb-2">Biblian</h1>
         <p className="text-center font-bold sm:font-extrabold w-[260px] sm:w-[320px] mb-12">{t("Compara")}</p>
         <p className="text-center text-balance">{t("PS_parrafo1")}</p>

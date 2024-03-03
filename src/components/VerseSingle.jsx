@@ -166,6 +166,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                     padding: "1rem",
                     margin: "-1rem",
                   }}
+                  className="animate-slide-in-bottom animate-duration-150"
                 >
                   <span>
                     <span style={{ fontWeight: "bold" }}>{versiculo}:</span> {contenido}
@@ -173,7 +174,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                 </p>
               ))
           ) : typeof textoTraducido === "string" ? (
-            <div className="font-bold max-w-[390px] min-w-[230px] px-2 text-center text-[#ff0000] dark:text-orange-500">
+            <div className="animate-slide-in-bottom font-bold max-w-[390px] min-w-[230px] px-2 text-center text-[#ff0000] dark:text-orange-500">
               {textoTraducido}
             </div>
           ) : (

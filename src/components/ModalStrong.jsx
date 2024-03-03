@@ -39,7 +39,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
         {/* MODAL PRINCIPAL */}
         <div
           ref={modalRef}
-          className="relative bg-yellow-50 w-[90%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-[85%] sm:h-[85%] p-2 rounded-lg shadow-lg dark:bg-[#1c0330] dark:text-white overflow-y-scroll no-scrollbar"
+          className="animate-slide-in-top animate-duration-300 relative bg-yellow-50 w-[90%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-[85%] sm:h-[85%] p-2 rounded-lg shadow-lg dark:bg-[#1c0330] dark:text-white overflow-y-scroll no-scrollbar"
         >
           <div className="absolute top-0 right-0">
             <button

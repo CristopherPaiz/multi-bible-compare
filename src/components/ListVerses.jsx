@@ -36,7 +36,7 @@ const ListVerses = () => {
   return (
     <>
       {modalVerses && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-[999999]">
+        <div className="animate-fade-in-right animate-duration-150 fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-[999999]">
           <div
             ref={modalRef}
             className="bg-white p-4 rounded shadow-md w-11/12 h-4/6 flex flex-col dark:bg-black dark:text-white sm:w-[550px]"

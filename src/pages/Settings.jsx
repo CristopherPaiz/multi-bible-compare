@@ -13,8 +13,10 @@ const Settings = () => {
   const { handleTipoTraductor, tipoTraductor, paginaInicio, handlePaginaInicio } = useContext(DataContext);
   return (
     <>
-      <h1 className="text-xl font-bold flex justify-center text-center mt-7 dark:text-white">{t("Ajustes")}</h1>
-      <div className="flex gap-3 mt-4 flex-col w-full justify-center">
+      <h1 className="animate-fade-in text-xl font-bold flex justify-center text-center mt-7 dark:text-white">
+        {t("Ajustes")}
+      </h1>
+      <div className="animate-fade-in flex gap-3 mt-4 flex-col w-full justify-center">
         {/* PÁGINA DE INICIO */}
         <div className="p-4 rounded-md bg-pink-200 dark:bg-pink-900 m-auto justify-center w-60">
           <h1 className="text-sm font-medium flex justify-center mb-3 text-center dark:text-white">

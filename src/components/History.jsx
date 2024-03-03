@@ -52,7 +52,7 @@ const History = () => {
   const reversedKeys = Object.keys(history).reverse();
 
   return (
-    <article className="bg-[#ffe8bd] dark:bg-[#332154] mt-8 border-2 border-[#ae7c20] dark:border-[#9054ff] rounded max-h-[55vh] min-h-[55vh] h-[55vh] w-10/12 sm:min-w-[400px] sm:max-w-[400px] m-auto">
+    <article className="animate-fade-in bg-[#ffe8bd] dark:bg-[#332154] mt-8 border-2 border-[#ae7c20] dark:border-[#9054ff] rounded max-h-[55vh] min-h-[55vh] h-[55vh] w-10/12 sm:min-w-[400px] sm:max-w-[400px] m-auto">
       <div className="w-full h-10 flex items-center justify-center text-black dark:text-white bg-[#ffbb3c] dark:bg-[#7d3ef3]">
         <h1 className="text-center font-bold text-md">{t("UltimoVersiculoTitulo")}</h1>
       </div>

@@ -92,19 +92,19 @@ const StrongSingle = () => {
                 <p className="text-white">Cargando...</p>
               </div>
             ) : (
-              <div className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative">
+              <div className="animate-pop animate-duration-100 h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative">
                 <img src={image} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" />
                 <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar">
                   <div className="text-left mr-2">
                     <table>
-                      <tr className="flex text-2xl text-balance px-3 text-center justify-center font-bold -ml-4 mb-3">
+                      <tr className="animate-slide-in-top animate-duration-100 animate-delay-0 flex text-2xl text-balance px-3 text-center justify-center font-bold -ml-4 mb-3">
                         {strongIndividual.id} - {strongIndividual.le}
                       </tr>
-                      <tr className="flex text-2xl text-balance px-3 text-center justify-center font-bold -ml-4">
+                      <tr className="animate-slide-in-top animate-duration-100 animate-delay-100 flex text-2xl text-balance px-3 text-center justify-center font-bold -ml-4">
                         {strongIndividual.pl} ({strongIndividual.ti})
                       </tr>
                       <br />
-                      <tr className="font-thin text-lg py-4 my-4">
+                      <tr className="font-thin text-lg py-4 my-4 animate-slide-in-top animate-duration-100 animate-delay-200">
                         Pronunciación: <b className="font-bold text-xl">{strongIndividual.ps}</b>
                       </tr>
                       <br />

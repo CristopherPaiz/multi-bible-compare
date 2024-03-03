@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@midudev/tailwind-animations": "^0.0.7",
     "@translate-tools/core": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

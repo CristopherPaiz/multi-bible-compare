@@ -28,7 +28,7 @@ const ListSubBooks = () => {
   return (
     <>
       {modalLibros && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-[9999999]">
+        <div className="animate-slide-in-top animate-duration-100 fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-[9999999]">
           <div
             ref={modalRef}
             className="bg-white p-4 rounded shadow-md w-11/12 h-[85%] sm:h-[95%] flex flex-col dark:bg-black dark:text-white sm:w-[550px]"
