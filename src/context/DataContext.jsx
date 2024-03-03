@@ -293,25 +293,26 @@ export const DataProvider = ({ children }) => {
         setImage(imageUrl);
         setCargandoImagen(true);
 
-        if (theme === "light") {
-          // Agregar el estilo light directamente al DOM
-          const link = document.createElement("link");
-          link.rel = "stylesheet";
-          link.href = "../styles/Strongs.css";
-          document.head.appendChild(link);
-        } else if (theme === "dark") {
-          // Agregar el estilo dark directamente al DOM
-          const link = document.createElement("link");
-          link.rel = "stylesheet";
-          link.href = "../styles/StrongsDark.css";
-          document.head.appendChild(link);
-        } else {
-          // Agregar el estilo por defecto al DOM
-          const link = document.createElement("link");
-          link.rel = "stylesheet";
-          link.href = "../styles/Strongs.css";
-          document.head.appendChild(link);
+        // Eliminar el estilo existente
+        const existingStyle = document.querySelector(
+          'link[href="../styles/Strongs.css"], link[href="../styles/StrongsDark.css"]'
+        );
+        if (existingStyle) {
+          existingStyle.parentNode.removeChild(existingStyle);
         }
+
+        // Agregar el estilo correspondiente al tema actual
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        if (theme === "light") {
+          link.href = "../styles/Strongs.css";
+        } else if (theme === "dark") {
+          link.href = "../styles/StrongsDark.css";
+        } else {
+          link.href = "../styles/Strongs.css";
+        }
+        document.head.appendChild(link);
+
         setCargandoImagen(false);
       } catch (error) {
         console.error("Error loading image:", error);
