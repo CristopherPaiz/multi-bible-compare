@@ -50,9 +50,9 @@ const ListSubBooks = () => {
               X
             </button>
             <h1 className="text-xl font-bold mb-4 m-auto">{t("SeleccioneLibro")}</h1>
-            <label>
-              <input type="checkbox" checked={modoCompacto} onChange={handleModoCompacto} />{" "}
-              <span className="slider">Modo compacto</span>
+            <label className="flex justify-end mr-3 items-center gap-1">
+              <input type="checkbox" checked={modoCompacto} onChange={handleModoCompacto} />
+              <span className="slider">{t("ModoCompacto")}</span>
             </label>
 
             {modoCompacto ? (
