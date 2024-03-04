@@ -12,7 +12,7 @@ const Compare = () => {
     useContext(DataContext);
 
   return (
-    <div className="animate-fade-in dark:text-white">
+    <div className="dark:text-white">
       <ListBooks />
       {bibliasSeleccionadas.length > 0 && <ListSubBooks />}
       {libroSeleccionado.length > 0 && <ListChapters />}

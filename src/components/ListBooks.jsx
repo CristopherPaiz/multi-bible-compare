@@ -372,17 +372,17 @@ const ListBooks = () => {
         <ReadMore openModal={openModal} />
       </div>
       {isModalOpen && (
-        <div className="animate-slide-in-top animate-duration-100 z-[99999] fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center">
+        <div className="z-[9999999] fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center">
           <div
             ref={modalRef}
-            className="bg-white p-4 rounded shadow-md w-11/12 h-[85%] sm:h-[95%] flex flex-col  dark:bg-neutral-950 dark:text-white sm:w-[500px]"
+            className="bg-white p-4 rounded shadow-md z-[9999] w-11/12 h-[85%] sm:h-[95%] flex flex-col  dark:bg-neutral-950 dark:text-white sm:w-[500px]"
           >
             <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
             </button>
             <h1 className="text-2xl text-center font-bold mb-4">{t("SeleccionarLibro")}</h1>
 
-            <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar">
+            <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar z-[9999]">
               <div className="gap-2">
                 <details>
                   <summary
