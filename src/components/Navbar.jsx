@@ -168,7 +168,7 @@ const Navbar = () => {
         </div>
       </nav>
       {versiculoSeleccionadoNumero !== 0 && (
-        <nav className={`sticky ${isFixed ? "fixed top-0" : ""} z-50 gap-4 text-base lg:text-xl`}>
+        <nav className={`sticky ${isFixed ? "fixed top-0" : ""} -z-10 gap-4 text-base lg:text-xl`}>
           <ol className="flex items-center w-full py-3 p-6 justify-center bg-[#fbefda] dark:text-white dark:bg-[#693BCC]">
             <li className="flex items-center text-black dark:text-white">
               {TipoTestamento(libroSeleccionado)}
