@@ -119,7 +119,7 @@ const ListBooks = () => {
   const BOOKS = {
     spanish: {
       "Biblia Español": { ruta: "61. Español - (1569)", new: true, old: true, year: 1569 },
-      "Biblia Peshitta": { ruta: "80. Español - Biblia Peshitta (1600)", new: true, old: false, year: 1600 },
+      "Biblia Peshitta": { ruta: "80. Español - Biblia Peshitta [BP] (1600)", new: true, old: false, year: 1600 },
       "Reina Valera [RVNT]": {
         ruta: "62. Español - Reina Valera Nueva Traduccción [RVNT] (1858)",
         new: true,
