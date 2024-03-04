@@ -35,6 +35,19 @@ export const DataProvider = ({ children }) => {
   //----------------------------------------------------
   const [modalVerses, setModalVerses] = useState(false);
 
+  //cargar modoCompacto al inicio
+  useEffect(() => {
+    const modoCompactoGuardado = localStorage.getItem("modoCompacto");
+    if (modoCompactoGuardado) {
+      setModoCompacto(JSON.parse(modoCompactoGuardado));
+    }
+  }, []);
+
+  //guardar modoCompacto en localStorage al cambiar
+  useEffect(() => {
+    localStorage.setItem("modoCompacto", JSON.stringify(modoCompacto));
+  }, [modoCompacto]);
+
   //actualizar el idioma de los libros cuando cambia idioma
   useEffect(() => {
     if (modoCompacto) {

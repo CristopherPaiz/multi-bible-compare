@@ -33,7 +33,7 @@ const ListSubBooks = () => {
     }, 150);
   };
 
-  //CHANGE SWITCH
+  // CHANGE SWITCH
   const handleModoCompacto = () => {
     setModoCompacto(!modoCompacto);
   };
