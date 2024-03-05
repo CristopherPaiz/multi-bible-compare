@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState, createElement } from "react";
 import DataContext from "../context/DataContext";
+import ThemeContext from "../context/ThemeContext";
 
 const processText = (html, strongFun) => {
   const doc = new DOMParser().parseFromString(html, "text/html");
@@ -65,6 +66,8 @@ const StrongSingle = () => {
     useContext(DataContext);
   const [strongIndividual, setStrongIndividual] = useState("");
 
+  const { theme, setTheme } = useContext(ThemeContext);
+
   useEffect(() => {
     if (!cargandoStrong) {
       const obtenerStrong = () => {
@@ -76,6 +79,21 @@ const StrongSingle = () => {
   }, [strongData, strong, cargandoStrong]);
 
   const processedHtml = processText(strongIndividual.df, strongFun);
+
+  //import ../styles/Strongs.css or ../styles/StrongsDark.css dinamically depends theme
+  useEffect(() => {
+    if (theme === "dark") {
+      //remove previous css
+      const prevCss = document.getElementById("Strongs");
+      prevCss && prevCss.remove();
+      import(`../styles/StrongsDark.css`);
+    } else if (theme === "light") {
+      //remove previous css
+      const prevCss = document.getElementById("StrongsDark");
+      prevCss && prevCss.remove();
+      import(`../styles/Strongs.css`);
+    }
+  }, [theme, setTheme]);
 
   return (
     <>

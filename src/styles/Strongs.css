@@ -18,19 +18,22 @@
 
 [color="%COLOR_PURPLE%"] {
   color: #b300ff;
+  font-weight: 900;
 }
 
 [color="%COLOR_RED%"] {
-  color: #000dff;
+  color: #bb00ff;
+  font-weight: 900;
 }
 
 [color="%COLOR_BLUE%"] {
-  color: #0093cd;
-  font-weight: 700;
+  color: #091cb0;
+  font-weight: 900;
 }
 
 [color="%COLOR_GREEN%"] {
-  color: #10c500;
+  color: #037932;
+  font-weight: 900;
 }
 
 [color="%COLOR_ORANGE%"] {

@@ -376,36 +376,12 @@ export const DataProvider = ({ children }) => {
         }
 
         setImage(imageUrl);
-        setCargandoImagen(true);
-
-        let styleSheetUrl;
-        if (theme === "light") {
-          styleSheetUrl = "../styles/Strongs.css";
-        } else if (theme === "dark") {
-          styleSheetUrl = "../styles/StrongsDark.css";
-        } else {
-          styleSheetUrl = "../styles/Strongs.css";
-        }
-
-        // Eliminar estilos previos si existen
-        const existingStyleSheet = document.querySelector(
-          'link[href="../styles/Strongs.css"], link[href="../styles/StrongsDark.css"]'
-        );
-        if (existingStyleSheet) {
-          existingStyleSheet.remove();
-        }
-
-        // Cargar nuevo estilo
-        const styleSheet = document.createElement("link");
-        styleSheet.rel = "stylesheet";
-        styleSheet.href = styleSheetUrl;
-        document.head.appendChild(styleSheet);
-
         setCargandoImagen(false);
       } catch (error) {
         console.error("Error loading image:", error);
       }
     };
+
     cambiarEstiloStrong();
   }, [theme]);
 
