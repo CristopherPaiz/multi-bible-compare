@@ -9,7 +9,8 @@ import SHARE from "/share.png";
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
-  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor } = useContext(DataContext);
+  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse } =
+    useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
 
@@ -123,10 +124,8 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           </div>
           {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso ? (
             <div className="flex flex-nowrap items-center">
-              <button>
-                <button>
-                  <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
-                </button>
+              <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
+                <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
               </button>
               <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank" rel="nofollow noopener noreferrer">
@@ -138,13 +137,13 @@ const VerseSingle = ({ texto, nombre, iso }) => {
               </button>
             </div>
           ) : (
-            <div className="flex flex-nowrap items-center">
-              <button>
-                <button>
+            typeof textoTraducido !== "string" && (
+              <div className="flex flex-nowrap items-center">
+                <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
                   <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
                 </button>
-              </button>
-            </div>
+              </div>
+            )
           )}
         </div>
         <div

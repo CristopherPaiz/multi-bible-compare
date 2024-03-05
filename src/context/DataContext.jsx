@@ -409,6 +409,18 @@ export const DataProvider = ({ children }) => {
     cambiarEstiloStrong();
   }, [theme]);
 
+  const [compartir, setCompartir] = useState(false);
+  const [textoCompartir, setTextoCompartir] = useState("");
+  const [versiculoCompartir, setVersiculoCompartir] = useState("");
+  const [nombreBibliaCompartir, setNombreBibliaCompartir] = useState("");
+
+  const setCompartirVerse = (texto, versiculo, nombre) => {
+    setTextoCompartir(texto);
+    setVersiculoCompartir(versiculo);
+    setCompartir(true);
+    setNombreBibliaCompartir(nombre);
+  };
+
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
     <DataContext.Provider
@@ -448,6 +460,12 @@ export const DataProvider = ({ children }) => {
         cargandoImagen,
         modoCompacto,
         setModoCompacto,
+        setCompartir,
+        compartir,
+        setCompartirVerse,
+        textoCompartir,
+        versiculoCompartir,
+        nombreBibliaCompartir,
         //return modals
         //------------
         modalLibros,
