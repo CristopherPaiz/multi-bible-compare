@@ -372,6 +372,16 @@ const ListBooks = () => {
     }
   };
 
+  //timeout 2 seconds
+  const [ocultar, setOcultar] = useState("opacity-1");
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setOcultar("opacity-0");
+    }, 4000);
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <div className="flex w-full justify-center mt-9">
@@ -388,7 +398,7 @@ const ListBooks = () => {
             </button>
             <h1 className="text-2xl text-center font-bold mb-4">{t("SeleccionarLibro")}</h1>
 
-            <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar z-[9999]">
+            <div className="flex flex-col flex-1 overflow-y-scroll no-scrollbar">
               <div className="gap-2">
                 <details>
                   <summary
@@ -520,8 +530,10 @@ const ListBooks = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col pt-5 gap-3 relative">
-              <div className="-mt-12 -ml-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="flex flex-col pt-5 gap-3 relative z-[99999]">
+              <div
+                className={`-mt-12 -ml-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${ocultar}`}
+              >
                 <Scroll />
               </div>
               <div className="bg-white justify-center flex flex-row pt-1 gap-3 dark:bg-neutral-950">

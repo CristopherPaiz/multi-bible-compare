@@ -121,7 +121,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
           </div>
-          {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso && (
+          {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso ? (
             <div className="flex flex-nowrap items-center">
               <button>
                 <button>
@@ -135,6 +135,14 @@ const VerseSingle = ({ texto, nombre, iso }) => {
               </button>
               <button disabled={isTranslating ? true : false} onClick={() => handleTranslate(iso)}>
                 <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt="Translate"></img>
+              </button>
+            </div>
+          ) : (
+            <div className="flex flex-nowrap items-center">
+              <button>
+                <button>
+                  <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
+                </button>
               </button>
             </div>
           )}
