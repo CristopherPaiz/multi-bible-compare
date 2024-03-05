@@ -5,6 +5,7 @@ import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import TRANSLATE from "/translationBeta.png";
 import TRANSLATEGOOGLE from "/google.png";
+import SHARE from "/share.png";
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
@@ -122,6 +123,11 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           </div>
           {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso && (
             <div className="flex flex-nowrap items-center">
+              <button>
+                <button>
+                  <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
+                </button>
+              </button>
               <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank" rel="nofollow noopener noreferrer">
                   <img className="mt-1 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>

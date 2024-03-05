@@ -175,6 +175,12 @@ const ListBooks = () => {
         old: true,
         year: 2010,
       },
+      "Biblia Kadosh Israelita Mesiánica": {
+        ruta: "81. Español - Kadosh Israelita Mesiánica [KIM] (2014)",
+        new: true,
+        old: true,
+        year: 2014,
+      },
       "Versión Biblia Gratis [VBG]": {
         ruta: "78. Español - Versión Biblia Gratis [VBG] (2018)",
         new: true,
