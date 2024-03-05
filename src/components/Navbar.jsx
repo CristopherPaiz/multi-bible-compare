@@ -111,7 +111,7 @@ const Navbar = () => {
       <nav className="flex bg-[#fbefda] dark:bg-[#693BCC] justify-center sm:hidden">
         <div className="max-w-full w-full px-4 py-2 mt-1 mx-auto">
           <div className="flex items-center justify-center">
-            <ul className="flex flex-row font-medium mt-0 space-x-4 text-sm">
+            <ul className="flex flex-row font-medium mt-0 space-x-3 text-sm">
               <li>
                 <Link
                   to="/"
