@@ -125,7 +125,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso ? (
             <div className="flex flex-nowrap items-center">
               <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
-                <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
+                <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Sahre verse from Biblian"></img>
               </button>
               <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank" rel="nofollow noopener noreferrer">
@@ -140,7 +140,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             typeof textoTraducido !== "string" && (
               <div className="flex flex-nowrap items-center">
                 <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
-                  <img className="mt-3 mr-3 w-6 h-6" src={SHARE} alt="Sahre verse from Biblian"></img>
+                  <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Sahre verse from Biblian"></img>
                 </button>
               </div>
             )
