@@ -182,7 +182,8 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                   className="animate-slide-in-bottom"
                 >
                   <span>
-                    <span style={{ fontWeight: "bold" }}>{versiculo}:</span> {contenido}
+                    <span style={{ fontWeight: "bold" }}>{versiculo}:</span>{" "}
+                    <span dangerouslySetInnerHTML={{ __html: contenido }}></span>
                   </span>
                 </p>
               ))
