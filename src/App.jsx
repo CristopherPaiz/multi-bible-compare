@@ -121,7 +121,10 @@ const App = () => {
                     className="text-balance"
                     style={{ fontSize: determinarTamaño(textoArray[versiculoCompartir - 1]) }}
                   >
-                    {capitalizeFirstLetter(textoArray[versiculoCompartir - 1])}
+                    <span
+                      dangerouslySetInnerHTML={{ __html: capitalizeFirstLetter(textoArray[versiculoCompartir - 1]) }}
+                    ></span>
+                    {/* {capitalizeFirstLetter(textoArray[versiculoCompartir - 1])} */}
                   </span>
                   <span className="font-extrabold text-lg">&quot;</span>
                 </div>
