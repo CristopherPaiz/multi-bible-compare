@@ -119,349 +119,427 @@ const ListBooks = () => {
   const BOOKS = {
     spanish: {
       "Reina Valera [RV60]": { ruta: "75. Español - Reina Valera [RV60] (1960)", new: true, old: true, year: 1960 },
-      "Biblia al día": {
+      "Biblia al día (1989)": {
         ruta: "001. Español - Biblia al día (1989)",
         new: true,
         old: true,
         year: "1989",
       },
-      "Biblia Biblia Corona de Jerusalen": {
+      "Biblia Biblia Corona de Jerusalen (1937)": {
         ruta: "002. Español - Biblia Biblia Corona de Jerusalen (1937)",
         new: true,
         old: true,
         year: "1937",
       },
-      "Biblia Bizantino Español-Griego": {
+      "Biblia Bizantino Español-Griego (1551)": {
         ruta: "003. Español - Biblia Bizantino Español-Griego (1551)",
         new: true,
         old: false,
         year: "1551",
       },
-      "Biblia Brit Xadasha Judia Ortodoxa": {
+      "Biblia Brit Xadasha Judia Ortodoxa (1999)": {
         ruta: "004. Español - Biblia Brit Xadasha Judia Ortodoxa (1999)",
         new: true,
         old: false,
         year: "1999",
       },
-      "Biblia Castilian": {
+      "Biblia Castilian (2003)": {
         ruta: "005. Español - Biblia Castilian (2003)",
         new: true,
         old: true,
         year: "2003",
       },
-      "Biblia de Jerusalem": {
+      "Biblia de Jerusalem (2010)": {
         ruta: "006. Español - Biblia de Jerusalem (2010)",
         new: true,
         old: true,
         year: "2010",
       },
-      "Biblia de Jerusalén": {
+      "Biblia de Jerusalén (1998)": {
         ruta: "007. Español - Biblia de Jerusalén (1998)",
         new: true,
         old: true,
         year: "1998",
       },
-      "Biblia de Jerusalén 3ra Edición": {
+      "Biblia de Jerusalén 3ra Edición (2013)": {
         ruta: "008. Español - Biblia de Jerusalén 3ra Edición (2013)",
         new: true,
         old: true,
         year: "2013",
       },
-      "Biblia de las Américas": {
+      "Biblia de las Américas (1997)": {
         ruta: "009. Español - Biblia de las Américas (1997)",
         new: true,
         old: true,
         year: "1997",
       },
-      "Biblia de nuestro Pueblo": {
+      "Biblia de nuestro Pueblo (2005)": {
         ruta: "010. Español - Biblia de nuestro Pueblo (2005)",
         new: true,
         old: true,
         year: "2005",
       },
-      "Biblia del Oso": {
+      "Biblia del Oso (1569)": {
         ruta: "011. Español - Biblia del Oso (1569)",
         new: true,
         old: true,
         year: "1569",
       },
-      "Biblia del Siglo de Oro": {
+      "Biblia del Siglo de Oro (2009)": {
         ruta: "012. Español - Biblia del Siglo de Oro (2009)",
         new: true,
         old: true,
         year: "2009",
       },
-      "Biblia El Codigo Real": {
+      "Biblia El Codigo Real (2019)": {
         ruta: "013. Español - Biblia El Codigo Real (2019)",
         new: true,
         old: false,
         year: "2019",
       },
-      "Biblia El Libro del Pueblo de Dios": {
+      "Biblia El Libro del Pueblo de Dios (2017)": {
         ruta: "014. Español - Biblia El Libro del Pueblo de Dios (2017)",
         new: true,
         old: true,
         year: "2017",
       },
-      "Biblia Jünemann Septuaginta": {
+      "Biblia Jünemann Septuaginta (1928)": {
         ruta: "015. Español - Biblia Jünemann Septuaginta (1928)",
         new: true,
         old: true,
         year: "1928",
       },
-      "Biblia Kadosh Israelita Mesiánica": {
+      "Biblia Kadosh Israelita Mesiánica (2014)": {
         ruta: "016. Español - Biblia Kadosh Israelita Mesiánica (2014)",
         new: true,
         old: true,
         year: "2014",
       },
-      "Biblia La Palabra de Dios para Todos": {
+      "Biblia La Palabra de Dios para Todos (2012)": {
         ruta: "017. Español - Biblia La Palabra de Dios para Todos (2012)",
         new: true,
         old: true,
         year: "2012",
       },
-      "Biblia La Palabra Española": {
+      "Biblia La Palabra Española (2010)": {
         ruta: "018. Español - Biblia La Palabra Española (2010)",
         new: true,
         old: true,
         year: "2010",
       },
-      "Biblia La Palabra Hispanoamericana": {
+      "Biblia La Palabra Hispanoamericana (2010)": {
         ruta: "019. Español - Biblia La Palabra Hispanoamericana (2010)",
         new: true,
         old: true,
         year: "2010",
       },
-      "Biblia Latinoamericana": {
+      "Biblia Latinoamericana (1995)": {
         ruta: "020. Español - Biblia Latinoamericana (1995)",
         new: true,
         old: true,
         year: "1995",
       },
-      "Biblia Lenguaje Sencillo": {
+      "Biblia Lenguaje Sencillo (2000)": {
         ruta: "021. Español - Biblia Lenguaje Sencillo (2000)",
         new: true,
         old: false,
         year: "2000",
       },
-      "Biblia Martin Nieto": {
+      "Biblia Martin Nieto (2017)": {
         ruta: "022. Español - Biblia Martin Nieto (2017)",
         new: true,
         old: true,
         year: "2017",
       },
-      "Biblia Nestle-Aland 27 Español-Griego": {
+      "Biblia Nestle-Aland 27 Español-Griego (2009)": {
         ruta: "023. Español - Biblia Nestle-Aland 27 Español-Griego (2009)",
         new: true,
         old: false,
         year: "2009",
       },
-      "Biblia Nueva Reina Valera": {
+      "Biblia Nueva Reina Valera (2015)": {
         ruta: "024. Español - Biblia Nueva Reina Valera (2015)",
         new: true,
         old: true,
         year: "2015",
       },
-      "Biblia Nueva Reina Valera Adventista": {
+      "Biblia Nueva Reina Valera Adventista (1990)": {
         ruta: "025. Español - Biblia Nueva Reina Valera Adventista (1990)",
         new: true,
         old: true,
         year: "1990",
       },
-      "Biblia Nueva Traducción Viviente": {
+      "Biblia Nueva Traducción Viviente (2009)": {
+        ruta: "026. Español - Biblia Nueva Traducción Viviente (2009)",
+        new: true,
+        old: true,
+        year: "2009",
+      },
+      "Biblia Nueva Traducción Viviente (2010)": {
         ruta: "027. Español - Biblia Nueva Traducción Viviente (2010)",
         new: true,
         old: true,
         year: "2010",
       },
-      "Biblia Palabla de Dios para ti": {
+      "Biblia Palabla de Dios para ti (2017)": {
         ruta: "028. Español - Biblia Palabla de Dios para ti (2017)",
         new: true,
         old: true,
         year: "2017",
       },
-      "Biblia para todos": {
+      "Biblia para todos (2003)": {
         ruta: "029. Español - Biblia para todos (2003)",
         new: true,
         old: true,
         year: "2003",
       },
-      "Biblia Peshita": {
+      "Biblia Peshita (1600)": {
         ruta: "030. Español - Biblia Peshita (1600)",
         new: true,
         old: false,
         year: "1600",
       },
-      "Biblia Reina Valera": {
+      "Biblia Reina Valera (1862)": {
+        ruta: "031. Español - Biblia Reina Valera (1862)",
+        new: true,
+        old: true,
+        year: "1862",
+      },
+      "Biblia Reina Valera (1865)": {
+        ruta: "032. Español - Biblia Reina Valera (1865)",
+        new: true,
+        old: true,
+        year: "1865",
+      },
+      "Biblia Reina Valera (1909)": {
+        ruta: "033. Español - Biblia Reina Valera (1909)",
+        new: true,
+        old: true,
+        year: "1909",
+      },
+      "Biblia Reina Valera (1960)": {
+        ruta: "034. Español - Biblia Reina Valera (1960)",
+        new: true,
+        old: true,
+        year: "1960",
+      },
+      "Biblia Reina Valera (1977)": {
+        ruta: "035. Español - Biblia Reina Valera (1977)",
+        new: true,
+        old: true,
+        year: "1977",
+      },
+      "Biblia Reina Valera (1995)": {
+        ruta: "036. Español - Biblia Reina Valera (1995)",
+        new: true,
+        old: true,
+        year: "1995",
+      },
+      "Biblia Reina Valera (2000)": {
+        ruta: "037. Español - Biblia Reina Valera (2000)",
+        new: true,
+        old: true,
+        year: "2000",
+      },
+      "Biblia Reina Valera (2004)": {
+        ruta: "038. Español - Biblia Reina Valera (2004)",
+        new: true,
+        old: true,
+        year: "2004",
+      },
+      "Biblia Reina Valera (2017)": {
+        ruta: "039. Español - Biblia Reina Valera (2017)",
+        new: true,
+        old: true,
+        year: "2017",
+      },
+      "Biblia Reina Valera (2020)": {
         ruta: "040. Español - Biblia Reina Valera (2020)",
         new: true,
         old: true,
         year: "2020",
       },
-      "Biblia Reina Valera Actualizada": {
+      "Biblia Reina Valera Actualizada (1989)": {
+        ruta: "041. Español - Biblia Reina Valera Actualizada (1989)",
+        new: true,
+        old: true,
+        year: "1989",
+      },
+      "Biblia Reina Valera Actualizada (2015)": {
         ruta: "042. Español - Biblia Reina Valera Actualizada (2015)",
         new: true,
         old: true,
         year: "2015",
       },
-      "Biblia Reina Valera Antigua": {
+      "Biblia Reina Valera Antigua (1602)": {
         ruta: "043. Español - Biblia Reina Valera Antigua (1602)",
         new: true,
         old: true,
         year: "1602",
       },
-      "Biblia Reina Valera Contemporánea": {
+      "Biblia Reina Valera Contemporánea (2011)": {
         ruta: "044. Español - Biblia Reina Valera Contemporánea (2011)",
         new: true,
         old: true,
         year: "2011",
       },
-      "Biblia Reina Valera Gómez": {
+      "Biblia Reina Valera Gómez (2004)": {
+        ruta: "045. Español - Biblia Reina Valera Gómez (2004)",
+        new: true,
+        old: true,
+        year: "2004",
+      },
+      "Biblia Reina Valera Gómez (2010)": {
         ruta: "046. Español - Biblia Reina Valera Gómez (2010)",
         new: true,
         old: true,
         year: "2010",
       },
-      "Biblia Reina Valera Independiente": {
+      "Biblia Reina Valera Independiente (2012)": {
         ruta: "047. Español - Biblia Reina Valera Independiente (2012)",
         new: true,
         old: true,
         year: "2012",
       },
-      "Biblia Reina Valera Purificada": {
+      "Biblia Reina Valera Purificada (1602)": {
         ruta: "048. Español - Biblia Reina Valera Purificada (1602)",
         new: true,
         old: true,
         year: "1602",
       },
-      "Biblia Reina Valera Revisada": {
+      "Biblia Reina Valera Revisada (1960)": {
         ruta: "049. Español - Biblia Reina Valera Revisada (1960)",
         new: true,
         old: true,
         year: "1960",
       },
-      "Biblia Reina Valera Sociedad Trinitaria": {
+      "Biblia Reina Valera Sociedad Trinitaria (2023) (": {
         ruta: "050. Español - Biblia Reina Valera Sociedad Trinitaria (2023) (",
         new: true,
         old: false,
         year: "2023",
       },
-      "Biblia Sagradas Escrituras": {
+      "Biblia Sagradas Escrituras (1569)": {
         ruta: "051. Español - Biblia Sagradas Escrituras (1569)",
         new: true,
         old: true,
         year: "1569",
       },
-      "Biblia Sagradas Escrituras Version Antigua": {
+      "Biblia Sagradas Escrituras Version Antigua (2001)": {
         ruta: "052. Español - Biblia Sagradas Escrituras Version Antigua (2001)",
         new: true,
         old: true,
         year: "2001",
       },
-      "Biblia Según el Texto Bizantino": {
+      "Biblia Según el Texto Bizantino (2005)": {
         ruta: "053. Español - Biblia Según el Texto Bizantino (2005)",
         new: true,
         old: false,
         year: "2005",
       },
-      "Biblia Septuaginta al Español [LXX]": {
+      "Biblia Septuaginta al Español [LXX] (2009)": {
         ruta: "054. Español - Biblia Septuaginta al Español [LXX] (2009)",
         new: true,
         old: true,
         year: "2009",
       },
-      "Biblia Serafín de Ausejo": {
+      "Biblia Serafín de Ausejo (1975)": {
         ruta: "055. Español - Biblia Serafín de Ausejo (1975)",
         new: true,
         old: true,
         year: "1975",
       },
-      "Biblia Textual": {
+      "Biblia Textual (1999)": {
         ruta: "056. Español - Biblia Textual (1999)",
         new: true,
         old: true,
         year: "1999",
       },
-      "Biblia Textual 3a Edicion": {
+      "Biblia Textual 3a Edicion (2010)": {
         ruta: "057. Español - Biblia Textual 3a Edicion (2010)",
         new: true,
         old: true,
         year: "2010",
       },
-      "Biblia Textual IV edición": {
+      "Biblia Textual IV edición (2015)": {
         ruta: "058. Español - Biblia Textual IV edición (2015)",
         new: true,
         old: true,
         year: "2015",
       },
-      "Biblia Tischendorf Español-Griego": {
+      "Biblia Tischendorf Español-Griego (1874)": {
         ruta: "059. Español - Biblia Tischendorf Español-Griego (1874)",
         new: true,
         old: false,
         year: "1874",
       },
-      "Biblia Version Moderna": {
+      "Biblia Version Moderna (1929)": {
         ruta: "060. Español - Biblia Version Moderna (1929)",
         new: true,
         old: true,
         year: "1929",
       },
-      "Biblia Versión Israelita Nazarena": {
+      "Biblia Versión Israelita Nazarena (2011)": {
+        ruta: "061. Español - Biblia Versión Israelita Nazarena (2011)",
+        new: true,
+        old: true,
+        year: "2011",
+      },
+      "Biblia Versión Israelita Nazarena (2023)": {
         ruta: "062. Español - Biblia Versión Israelita Nazarena (2023)",
         new: true,
         old: true,
         year: "2023",
       },
-      "Biblia Westcott y Hort Español-Griego": {
+      "Biblia Westcott y Hort Español-Griego (2014)": {
         ruta: "063. Español - Biblia Westcott y Hort Español-Griego (2014)",
         new: true,
         old: false,
         year: "2014",
       },
-      "Bilbia Sagradas Escrituras": {
+      "Bilbia Sagradas Escrituras (1975)": {
         ruta: "064. Español - Bilbia Sagradas Escrituras (1975)",
         new: true,
         old: true,
         year: "1975",
       },
-      "La Santa Biblia": {
+      "La Santa Biblia (2008)": {
         ruta: "065. Español - La Santa Biblia (2008)",
         new: true,
         old: true,
         year: "2008",
       },
-      "Nueva Biblia de las Américas": {
+      "Nueva Biblia de las Américas (1986)": {
         ruta: "066. Español - Nueva Biblia de las Américas (1986)",
         new: true,
         old: true,
         year: "1986",
       },
-      "Nueva Biblia Española": {
+      "Nueva Biblia Española (1975)": {
         ruta: "067. Español - Nueva Biblia Española (1975)",
         new: true,
         old: true,
         year: "1975",
       },
-      "Nueva Biblia Viva": {
+      "Nueva Biblia Viva (2006)": {
         ruta: "068. Español - Nueva Biblia Viva (2006)",
         new: true,
         old: true,
         year: "2006",
       },
-      "Nueva Versión Internacional": {
+      "Nueva Versión Internacional (2015)": {
         ruta: "069. Español - Nueva Versión Internacional (2015)",
         new: true,
         old: true,
         year: "2015",
       },
-      "Nueva Versión Internacional Castellano": {
+      "Nueva Versión Internacional Castellano (2017)": {
         ruta: "070. Español - Nueva Versión Internacional Castellano (2017)",
         new: true,
         old: true,
         year: "2017",
       },
-      "Nueva Versión Internacional Simplificada": {
+      "Nueva Versión Internacional Simplificada (2019)": {
         ruta: "071. Español - Nueva Versión Internacional Simplificada (2019)",
         new: true,
         old: false,
@@ -473,7 +551,7 @@ const ListBooks = () => {
         old: true,
         year: "1986",
       },
-      "Versión Biblia Libre": {
+      "Versión Biblia Libre (2022)": {
         ruta: "073. Español - Versión Biblia Libre (2022)",
         new: true,
         old: true,
@@ -481,25 +559,31 @@ const ListBooks = () => {
       },
     },
     guatemala: {
-      "Biblia Chuj San Sebastian": {
+      "Biblia Chuj San Sebastian (1999)": {
         ruta: "093. Guatemala - Biblia Chuj San Sebastian (1999)",
         new: true,
         old: true,
         year: "1999",
       },
-      "Biblia en Chuj de San Mateo Ixtatán": {
+      "Biblia en Chuj de San Mateo Ixtatán (2007)": {
         ruta: "094. Guatemala - Biblia en Chuj de San Mateo Ixtatán (2007)",
         new: true,
         old: true,
         year: "2007",
       },
-      "Biblia en Poqomchí Santo Laj Huuj": {
+      "Biblia en Poqomchí Santo Laj Huuj (2009)": {
         ruta: "095. Guatemala - Biblia en Poqomchí Santo Laj Huuj (2009)",
         new: true,
         old: true,
         year: "2009",
       },
-      "Biblia Mam de Huehuetenango": {
+      "Biblia Mam de Huehuetenango (1993)": {
+        ruta: "096. Guatemala - Biblia Mam de Huehuetenango (1993)",
+        new: true,
+        old: true,
+        year: "1993",
+      },
+      "Biblia Mam de Huehuetenango (2011)": {
         ruta: "097. Guatemala - Biblia Mam de Huehuetenango (2011)",
         new: true,
         old: true,
@@ -511,25 +595,31 @@ const ListBooks = () => {
         old: true,
         year: "1999",
       },
-      "Biblia Mam de Todos Santos": {
+      "Biblia Mam de Todos Santos (2002)": {
         ruta: "099. Guatemala - Biblia Mam de Todos Santos (2002)",
         new: true,
         old: false,
         year: "2002",
       },
-      "Biblia Q'anjob'al": {
+      "Biblia Q'anjob'al (1989)": {
         ruta: "100. Guatemala - Biblia Q'anjob'al (1989)",
         new: true,
         old: true,
         year: "1989",
       },
-      "Biblia Q'eqchi": {
+      "Biblia Q'eqchi (2000)": {
+        ruta: "101. Guatemala - Biblia Q'eqchi (2000)",
+        new: true,
+        old: true,
+        year: "2000",
+      },
+      "Biblia Q'eqchi (2005)": {
         ruta: "102. Guatemala - Biblia Q'eqchi (2005)",
         new: true,
         old: true,
         year: "2005",
       },
-      "Biblia Quiché": {
+      "Biblia Quiché (1995)": {
         ruta: "103. Guatemala - Biblia Quiché (1995)",
         new: true,
         old: true,
@@ -537,115 +627,115 @@ const ListBooks = () => {
       },
     },
     greek: {
-      "Analytic Septuagint": {
+      "Analytic Septuagint (2014)": {
         ruta: "074. Greek - Analytic Septuagint (2014)",
         new: false,
         old: true,
         year: "2014",
       },
-      "Apostolic Bible Polyglot": {
+      "Apostolic Bible Polyglot (2015)": {
         ruta: "075. Greek - Apostolic Bible Polyglot (2015)",
         new: true,
         old: true,
         year: "2015",
       },
-      "Berean Greek Bible": {
+      "Berean Greek Bible (2019)": {
         ruta: "076. Greek - Berean Greek Bible (2019)",
         new: true,
         old: false,
         year: "2019",
       },
-      "Berean Interlinear": {
+      "Berean Interlinear (2016)": {
         ruta: "077. Greek - Berean Interlinear (2016)",
         new: true,
         old: false,
         year: "2016",
       },
-      BHP: {
+      "BHP (2019)": {
         ruta: "078. Greek - BHP (2019)",
         new: true,
         old: false,
         year: "2019",
       },
-      "BHP Medieval": {
+      "BHP Medieval (2019)": {
         ruta: "079. Greek - BHP Medieval (2019)",
         new: true,
         old: false,
         year: "2019",
       },
-      "Bible combine Textus Receptus, Scrivener, Byzantine Majority, Alexandrian-Critical": {
+      "Bible combine Textus Receptus, Scrivener, Byzantine Majority, Alexandrian-Critical (2014)": {
         ruta: "080. Greek - Bible combine Textus Receptus, Scrivener, Byzantine Majority, Alexandrian-Critical (2014)",
         new: true,
         old: false,
         year: "2014",
       },
-      Byzantine: {
+      "Byzantine (2005)": {
         ruta: "081. Greek - Byzantine (2005)",
         new: true,
         old: false,
         year: "2005",
       },
-      "Byzantine + Nestle-Aland": {
+      "Byzantine + Nestle-Aland (2005)": {
         ruta: "082. Greek - Byzantine + Nestle-Aland (2005)",
         new: true,
         old: false,
         year: "2005",
       },
-      "Byzantine F35": {
+      "Byzantine F35 (2015)": {
         ruta: "083. Greek - Byzantine F35 (2015)",
         new: true,
         old: false,
         year: "2015",
       },
-      "Codex Alexandrinus": {
+      "Codex Alexandrinus (1782)": {
         ruta: "084. Greek - Codex Alexandrinus (1782)",
         new: true,
         old: false,
         year: "1782",
       },
-      "Codex Sinaiticus": {
+      "Codex Sinaiticus (1862)": {
         ruta: "085. Greek - Codex Sinaiticus (1862)",
         new: true,
         old: false,
         year: "1862",
       },
-      "Critical NT text": {
+      "Critical NT text (2014)": {
         ruta: "086. Greek - Critical NT text (2014)",
         new: true,
         old: false,
         year: "2014",
       },
-      "F35 with Notes": {
+      "F35 with Notes (2015)": {
         ruta: "087. Greek - F35 with Notes (2015)",
         new: true,
         old: false,
         year: "2015",
       },
-      "Filos Pergamos": {
+      "Filos Pergamos (2017)": {
         ruta: "088. Greek - Filos Pergamos (2017)",
         new: true,
         old: true,
         year: "2017",
       },
-      "King James Textus Receptus": {
+      "King James Textus Receptus (2014)": {
         ruta: "089. Greek - King James Textus Receptus (2014)",
         new: true,
         old: false,
         year: "2014",
       },
-      Nestle: {
+      "Nestle (1904)": {
         ruta: "090. Greek - Nestle (1904)",
         new: true,
         old: false,
         year: "1904",
       },
-      Stephanus: {
+      "Stephanus (1550)": {
         ruta: "091. Greek - Stephanus (1550)",
         new: true,
         old: false,
         year: "1550",
       },
-      "Wescott and Hort": {
+      "Wescott and Hort (1885)": {
         ruta: "092. Greek - Wescott and Hort (1885)",
         new: true,
         old: false,
@@ -653,19 +743,25 @@ const ListBooks = () => {
       },
     },
     hebrew: {
-      "Delitzsch's": {
+      "Delitzsch's (1877)": {
+        ruta: "104. Hebrew - Delitzsch's (1877)",
+        new: true,
+        old: false,
+        year: "1877",
+      },
+      "Delitzsch's (1885)": {
         ruta: "105. Hebrew - Delitzsch's (1885)",
         new: true,
         old: false,
         year: "1885",
       },
-      "Delitzsch's Consonants": {
+      "Delitzsch's Consonants (1885)": {
         ruta: "106. Hebrew - Delitzsch's Consonants (1885)",
         new: true,
         old: false,
         year: "1885",
       },
-      "Delitzsch's Consonats": {
+      "Delitzsch's Consonats (1877)": {
         ruta: "107. Hebrew - Delitzsch's Consonats (1877)",
         new: true,
         old: false,
@@ -677,43 +773,67 @@ const ListBooks = () => {
         old: false,
         year: "2009",
       },
-      "Leningrad Codex": {
+      "Leningrad Codex (1976)": {
         ruta: "109. Hebrew - Leningrad Codex (1976)",
         new: true,
         old: true,
         year: "1976",
       },
-      "Open Scriptures": {
+      "Open Scriptures (1989)": {
+        ruta: "110. Hebrew - Open Scriptures (1989)",
+        new: false,
+        old: true,
+        year: "1989",
+      },
+      "Open Scriptures (1998)": {
         ruta: "111. Hebrew - Open Scriptures (1998)",
         new: false,
         old: true,
         year: "1998",
       },
-      "Stuttgartensia [Strongs]": {
+      "Stuttgartensia [Strongs] (2022)": {
         ruta: "112. Hebrew - Stuttgartensia [Strongs] (2022)",
         new: true,
         old: true,
         year: "2022",
       },
-      "Tanach and Delitzsch's": {
+      "Tanach and Delitzsch's (2021)": {
         ruta: "113. Hebrew - Tanach and Delitzsch's (2021)",
         new: true,
         old: true,
         year: "2021",
       },
-      "Tanach and Modern": {
+      "Tanach and Modern (2017)": {
         ruta: "114. Hebrew - Tanach and Modern (2017)",
         new: true,
         old: true,
         year: "2017",
       },
-      "Tanah Aleppo Codex": {
+      "Tanah Aleppo Codex (920)": {
         ruta: "115. Hebrew - Tanah Aleppo Codex (920)",
         new: false,
         old: true,
         year: "920",
       },
-      "Westminster Leningrad Codex with vowels": {
+      "Westminster Leningrad Codex with vowels (2014)": {
+        ruta: "116. Hebrew - Westminster Leningrad Codex with vowels (2014)",
+        new: false,
+        old: true,
+        year: "2014",
+      },
+      "Westminster Leningrad Codex with vowels (2015)": {
+        ruta: "117. Hebrew - Westminster Leningrad Codex with vowels (2015)",
+        new: false,
+        old: true,
+        year: "2015",
+      },
+      "Westminster Leningrad Codex with vowels (2016)": {
+        ruta: "118. Hebrew - Westminster Leningrad Codex with vowels (2016)",
+        new: false,
+        old: true,
+        year: "2016",
+      },
+      "Westminster Leningrad Codex with vowels (2017)": {
         ruta: "119. Hebrew - Westminster Leningrad Codex with vowels (2017)",
         new: false,
         old: true,
