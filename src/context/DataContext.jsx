@@ -397,6 +397,100 @@ export const DataProvider = ({ children }) => {
     setNombreBibliaCompartir(nombre);
   };
 
+  //TAMAÑOS VERSESINGLE
+  const tamaniosAncho = {
+    small: {
+      min: "min-w-[250px]",
+      max: "max-w-[390px]",
+    },
+    medium: {
+      min: "min-w-[250px]",
+      max: "max-w-[600px]",
+    },
+    large: {
+      min: "min-w-[250px]",
+      max: "max-w-[1000px]",
+    },
+  };
+
+  const tamaniosAlto = {
+    small: {
+      def: "h-[260px]",
+    },
+    medium: {
+      def: "h-[400px]",
+    },
+    large: {
+      def: "h-[600px]",
+    },
+  };
+
+  const [tamanioVerseAncho, setTamanioVerseAncho] = useState(tamaniosAncho.small);
+  const [tamanioVerseAlto, setTamanioVerseAlto] = useState(tamaniosAlto.small);
+
+  const cambiarAnchoVentana = (tamanio) => {
+    if (tamanio === "1") {
+      setTamanioVerseAncho(tamaniosAncho.small);
+    } else if (tamanio === "2") {
+      setTamanioVerseAncho(tamaniosAncho.medium);
+    } else {
+      setTamanioVerseAncho(tamaniosAncho.large);
+    }
+  };
+
+  const cambiarAltoVentana = (tamanio) => {
+    if (tamanio === "1") {
+      setTamanioVerseAlto(tamaniosAlto.small);
+    } else if (tamanio === "2") {
+      setTamanioVerseAlto(tamaniosAlto.medium);
+    } else {
+      setTamanioVerseAlto(tamaniosAlto.large);
+    }
+  };
+
+  //useEffect para cuando se cambie cambiarAnchoVentana al localStorage y al cargar por primera vez
+  useEffect(() => {
+    const tamanioAnchoGuardado = localStorage.getItem("tamanioAncho");
+
+    if (tamanioAnchoGuardado) {
+      if (tamanioAnchoGuardado === "1") {
+        setTamanioVerseAncho(tamaniosAncho.small);
+      } else if (tamanioAnchoGuardado === "2") {
+        setTamanioVerseAncho(tamaniosAncho.medium);
+      } else {
+        setTamanioVerseAncho(tamaniosAncho.large);
+      }
+    } else {
+      setTamanioVerseAncho(tamaniosAncho.small);
+      localStorage.setItem("tamanioAncho", JSON.stringify(tamaniosAncho.small));
+    }
+  }, []);
+
+  useEffect(() => {
+    const tamanioAltoGuardado = localStorage.getItem("tamanioAlto");
+
+    if (tamanioAltoGuardado) {
+      if (tamanioAltoGuardado === "1") {
+        setTamanioVerseAlto(tamaniosAlto.small);
+      } else if (tamanioAltoGuardado === "2") {
+        setTamanioVerseAlto(tamaniosAlto.medium);
+      } else {
+        setTamanioVerseAlto(tamaniosAlto.large);
+      }
+    } else {
+      setTamanioVerseAlto(tamaniosAlto.small);
+      localStorage.setItem("tamanioAlto", JSON.stringify(tamaniosAlto.small));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("tamanioAncho", JSON.stringify(tamanioVerseAncho));
+  }, [tamanioVerseAncho]);
+
+  useEffect(() => {
+    localStorage.setItem("tamanioAlto", JSON.stringify(tamanioVerseAlto));
+  }, [tamanioVerseAlto]);
+
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
     <DataContext.Provider
@@ -442,6 +536,10 @@ export const DataProvider = ({ children }) => {
         textoCompartir,
         versiculoCompartir,
         nombreBibliaCompartir,
+        cambiarAnchoVentana,
+        cambiarAltoVentana,
+        tamanioVerseAncho,
+        tamanioVerseAlto,
         //return modals
         //------------
         modalLibros,

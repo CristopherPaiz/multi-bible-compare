@@ -166,13 +166,13 @@ const App = () => {
             <div className="flex gap-3 mt-3 justify-center w-full">
               <button
                 onClick={() => setCompartir(false)}
-                className="bg-red-500 text-center text-black  py-3 rounded-lg px-5 sm:w-[250px]"
+                className="bg-red-500 text-center text-black  py-3 rounded-lg px-5"
               >
                 X
               </button>
               <button
                 onClick={htmlToImageConvert}
-                className="bg-green-500 text-center text-black  py-3 rounded-lg w-1/2 sm:w-[250px]"
+                className="bg-green-500 text-center text-black  py-3 rounded-lg w-1/2"
               >
                 Guardar
               </button>

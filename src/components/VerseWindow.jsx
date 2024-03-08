@@ -83,9 +83,9 @@ const VerseWindow = ({ biblia }) => {
   }, [biblia]);
 
   return (
-    <div>
+    <>
       <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} />
-    </div>
+    </>
   );
 };
 

@@ -10,7 +10,14 @@ import DataContext from "../context/DataContext";
 const Settings = () => {
   const { t, cambiarIdioma, idiomaNavegador } = useContext(LanguageContext);
   const { changeTheme, theme } = useContext(ThemeContext);
-  const { handleTipoTraductor, tipoTraductor, paginaInicio, handlePaginaInicio } = useContext(DataContext);
+  const {
+    handleTipoTraductor,
+    tipoTraductor,
+    paginaInicio,
+    handlePaginaInicio,
+    cambiarAnchoVentana,
+    cambiarAltoVentana,
+  } = useContext(DataContext);
   return (
     <>
       <h1 className="animate-fade-in text-xl font-bold flex justify-center text-center mt-7 dark:text-white">
@@ -53,6 +60,58 @@ const Settings = () => {
               <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-yellow-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-yellow-600 dark:peer-checked:bg-purple-600"></div>
             </label>
             <span className="text-sm font-medium text-gray-900 dark:text-gray-300">v2</span>
+          </div>
+        </div>
+        {/* TAMAÑO DE VENTANA ANCHO */}
+        <div className="p-4 rounded-md bg-yellow-300 dark:bg-yellow-500 m-auto justify-center w-60">
+          <h1 className="text-sm font-medium flex justify-center mb-3 text-center dark:text-white">
+            Tamaño de la ventana Ancho
+          </h1>
+          <div className="flex items-center justify-center gap-2">
+            <button
+              onClick={() => cambiarAnchoVentana("1")}
+              className="text-[10px] font-medium text-gray-900 dark:text-black-300 bg-slate-300 px-3 py-2 rounded-md"
+            >
+              Pequeño
+            </button>
+            <button
+              onClick={() => cambiarAnchoVentana("2")}
+              className="text-[10px] font-medium text-gray-900 dark:text-black-300 bg-slate-300 px-3 py-2 rounded-md"
+            >
+              Mediano
+            </button>
+            <button
+              onClick={() => cambiarAnchoVentana("3")}
+              className="text-[10px] font-medium text-gray-900 dark:text-black-300 bg-slate-300 px-3 py-2 rounded-md"
+            >
+              Grande
+            </button>
+          </div>
+        </div>
+        {/* TAMAÑO DE VENTANA ANCHO */}
+        <div className="p-4 rounded-md bg-pink-300 dark:bg-pink-500 m-auto justify-center w-60">
+          <h1 className="text-sm font-medium flex justify-center mb-3 text-center dark:text-white">
+            Tamaño de la ventana Alto
+          </h1>
+          <div className="flex items-center justify-center gap-2">
+            <button
+              onClick={() => cambiarAltoVentana("1")}
+              className="text-[10px] font-medium text-gray-900 dark:text-black-300 bg-slate-300 px-3 py-2 rounded-md"
+            >
+              Pequeño
+            </button>
+            <button
+              onClick={() => cambiarAltoVentana("2")}
+              className="text-[10px] font-medium text-gray-900 dark:text-black-300 bg-slate-300 px-3 py-2 rounded-md"
+            >
+              Mediano
+            </button>
+            <button
+              onClick={() => cambiarAltoVentana("3")}
+              className="text-[10px] font-medium text-gray-900 dark:text-black-300 bg-slate-300 px-3 py-2 rounded-md"
+            >
+              Grande
+            </button>
           </div>
         </div>
         {/* CAMBIAR A INGLÉS */}

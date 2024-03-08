@@ -9,8 +9,14 @@ import SHARE from "/share.png";
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
-  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse } =
-    useContext(DataContext);
+  const {
+    versiculoSeleccionadoNumero,
+    setVersiculoSeleccionadoNumero,
+    tipoTraductor,
+    setCompartirVerse,
+    tamanioVerseAncho,
+    tamanioVerseAlto,
+  } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
 
@@ -114,10 +120,13 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     )}`;
   };
 
+  //TAMAÑOS
   return (
     <>
       <div className="flex flex-col border-neutral-400 rounded-md border relative bg-white dark:bg-[#0f0f0f]">
-        <div className="max-w-[390px] min-w-[250px] text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row">
+        <div
+          className={`${tamanioVerseAncho.min} ${tamanioVerseAncho.max} text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row`}
+        >
           <div className="flex flex-col">
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
@@ -148,8 +157,8 @@ const VerseSingle = ({ texto, nombre, iso }) => {
         </div>
         <div
           ref={containerRef}
-          className={`p-3 overflow-y-auto no-scrollbarVerse max-w-[390px] min-w-[250px] ${
-            typeof textoTraducido === "string" ? "h-fit" : "h-[260px]"
+          className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${
+            typeof textoTraducido === "string" ? "h-fit" : tamanioVerseAlto.def
           }`}
           style={{ position: "relative" }}
         >
@@ -182,13 +191,15 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                   className="animate-slide-in-bottom"
                 >
                   <span>
-                    <span style={{ fontWeight: "bold" }}>{versiculo}:</span>
+                    <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
                     <span dangerouslySetInnerHTML={{ __html: contenido }}></span>
                   </span>
                 </p>
               ))
           ) : typeof textoTraducido === "string" ? (
-            <div className="animate-slide-in-bottom font-bold max-w-[390px] min-w-[230px] px-2 text-center text-[#ff0000] dark:text-orange-500">
+            <div
+              className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}
+            >
               {textoTraducido}
             </div>
           ) : (
