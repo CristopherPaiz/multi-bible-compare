@@ -427,23 +427,31 @@ export const DataProvider = ({ children }) => {
 
   const [tamanioVerseAncho, setTamanioVerseAncho] = useState(tamaniosAncho.small);
   const [tamanioVerseAlto, setTamanioVerseAlto] = useState(tamaniosAlto.small);
+  const [anchoVentana, setAnchoVentana] = useState("1");
+  const [altoVentana, setAltoVentana] = useState("1");
 
   const cambiarAnchoVentana = (tamanio) => {
     if (tamanio === "1") {
+      setAnchoVentana("1");
       setTamanioVerseAncho(tamaniosAncho.small);
     } else if (tamanio === "2") {
+      setAnchoVentana("2");
       setTamanioVerseAncho(tamaniosAncho.medium);
     } else {
+      setAnchoVentana("3");
       setTamanioVerseAncho(tamaniosAncho.large);
     }
   };
 
   const cambiarAltoVentana = (tamanio) => {
     if (tamanio === "1") {
+      setAltoVentana("1");
       setTamanioVerseAlto(tamaniosAlto.small);
     } else if (tamanio === "2") {
+      setAltoVentana("2");
       setTamanioVerseAlto(tamaniosAlto.medium);
     } else {
+      setAltoVentana("3");
       setTamanioVerseAlto(tamaniosAlto.large);
     }
   };
@@ -540,6 +548,8 @@ export const DataProvider = ({ children }) => {
         cambiarAltoVentana,
         tamanioVerseAncho,
         tamanioVerseAlto,
+        anchoVentana,
+        altoVentana,
         //return modals
         //------------
         modalLibros,
