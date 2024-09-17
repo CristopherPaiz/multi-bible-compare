@@ -45,6 +45,7 @@ const StrongSingle = () => {
   const { strongData, cargandoStrong, strong, strongFun, setModalStrong, image, cargandoImagen } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const [strongIndividual, setStrongIndividual] = useState(null);
+  const [audio, setAudio] = useState(null);
 
   useEffect(() => {
     if (!cargandoStrong && strongData) {
@@ -52,6 +53,29 @@ const StrongSingle = () => {
       setStrongIndividual(obtenerStrong());
     }
   }, [strongData, strong, cargandoStrong]);
+
+  useEffect(() => {
+    if (strongIndividual) {
+      const audioFolder = strongIndividual.id.startsWith("H") ? "hebrew" : "greek";
+      const audioNumber = strongIndividual.id.slice(1);
+      const audioUrl = `https://www.bibliatodo.com/assets/audio/strong/${audioFolder}/${audioNumber}.mp3`;
+
+      fetch(audioUrl, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+          Referer: "https://www.bibliatodo.com/",
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            setAudio(new Audio(audioUrl));
+          } else {
+            setAudio(null);
+          }
+        })
+        .catch(() => setAudio(null));
+    }
+  }, [strongIndividual]);
 
   const processedHtml = useMemo(() => (strongIndividual?.df ? processText(strongIndividual.df, strongFun) : null), [strongIndividual, strongFun]);
 
@@ -98,6 +122,12 @@ const StrongSingle = () => {
 
   const currentStyles = styles[theme];
 
+  const playAudio = () => {
+    if (audio) {
+      audio.play();
+    }
+  };
+
   if (cargandoImagen || cargandoStrong || !strongIndividual) {
     return (
       <div className="h-full w-full flex flex-col items-center justify-center gap-4 text-white">
@@ -131,8 +161,17 @@ const StrongSingle = () => {
               <h2 className="animate-slide-in-top animate-duration-100 animate-delay-100 text-2xl text-balance px-3 text-center justify-center font-bold">
                 {strongIndividual.pl} ({strongIndividual.ti})
               </h2>
-              <p className="font-thin text-lg py-2 my-2 animate-slide-in-top animate-duration-100 animate-delay-200">
-                Pronunciación: <strong className="font-bold text-xl">{strongIndividual.ps}</strong>
+              <p className="font-thin text-lg py-2 my-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">
+                Pronunciación: <strong className="font-bold text-xl ml-2">{strongIndividual.ps}</strong>
+                {audio && (
+                  <button
+                    onClick={playAudio}
+                    className="ml-2 p-1 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors text-white"
+                    title="Reproducir audio"
+                  >
+                    ▶
+                  </button>
+                )}
               </p>
               <p className="">Definición:</p>
               <div>
