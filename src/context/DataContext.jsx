@@ -456,48 +456,41 @@ export const DataProvider = ({ children }) => {
     }
   };
 
-  //useEffect para cuando se cambie cambiarAnchoVentana al localStorage y al cargar por primera vez
+  // Recupera y asigna el ancho correctamente desde localStorage
   useEffect(() => {
     const tamanioAnchoGuardado = localStorage.getItem("tamanioAncho");
+    const tamanioAnchoNumeroGuardado = localStorage.getItem("tamanioAnchoNumero");
 
-    if (tamanioAnchoGuardado) {
-      if (tamanioAnchoGuardado === "1") {
-        setTamanioVerseAncho(tamaniosAncho.small);
-      } else if (tamanioAnchoGuardado === "2") {
-        setTamanioVerseAncho(tamaniosAncho.medium);
-      } else {
-        setTamanioVerseAncho(tamaniosAncho.large);
-      }
-    } else {
-      setTamanioVerseAncho(tamaniosAncho.small);
-      localStorage.setItem("tamanioAncho", JSON.stringify(tamaniosAncho.small));
+    if (tamanioAnchoGuardado && tamanioAnchoNumeroGuardado) {
+      const tamanioAnchoParsed = JSON.parse(tamanioAnchoGuardado);
+      const tamanioAnchoNumeroParsed = JSON.parse(tamanioAnchoNumeroGuardado);
+      setTamanioVerseAncho(tamanioAnchoParsed);
+      setAnchoVentana(tamanioAnchoNumeroParsed);
     }
   }, []);
 
+  // Recupera y asigna el alto correctamente desde localStorage
   useEffect(() => {
     const tamanioAltoGuardado = localStorage.getItem("tamanioAlto");
+    const tamanioAltoNumeroGuardado = localStorage.getItem("tamanioAltoNumero");
 
-    if (tamanioAltoGuardado) {
-      if (tamanioAltoGuardado === "1") {
-        setTamanioVerseAlto(tamaniosAlto.small);
-      } else if (tamanioAltoGuardado === "2") {
-        setTamanioVerseAlto(tamaniosAlto.medium);
-      } else {
-        setTamanioVerseAlto(tamaniosAlto.large);
-      }
-    } else {
-      setTamanioVerseAlto(tamaniosAlto.small);
-      localStorage.setItem("tamanioAlto", JSON.stringify(tamaniosAlto.small));
+    if (tamanioAltoGuardado && tamanioAltoNumeroGuardado) {
+      const tamanioAltoParsed = JSON.parse(tamanioAltoGuardado);
+      const tamanioAltoNumeroParsed = JSON.parse(tamanioAltoNumeroGuardado);
+      setTamanioVerseAlto(tamanioAltoParsed);
+      setAltoVentana(tamanioAltoNumeroParsed);
     }
   }, []);
 
   useEffect(() => {
     localStorage.setItem("tamanioAncho", JSON.stringify(tamanioVerseAncho));
-  }, [tamanioVerseAncho]);
+    localStorage.setItem("tamanioAnchoNumero", JSON.stringify(anchoVentana));
+  }, [tamanioVerseAncho, anchoVentana]);
 
   useEffect(() => {
     localStorage.setItem("tamanioAlto", JSON.stringify(tamanioVerseAlto));
-  }, [tamanioVerseAlto]);
+    localStorage.setItem("tamanioAltoNumero", JSON.stringify(altoVentana));
+  }, [tamanioVerseAlto, altoVentana]);
 
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
