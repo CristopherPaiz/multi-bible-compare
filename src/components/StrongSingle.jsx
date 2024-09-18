@@ -42,16 +42,48 @@ const processText = (html, strongFun) => {
 const escapeHTML = (str) => str.replace(/[&<>"'/]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" }[char]));
 
 const StrongSingle = () => {
-  const { strongData, cargandoStrong, strong, strongFun, setModalStrong, image, cargandoImagen } = useContext(DataContext);
+  const { strongData, cargandoStrong, strong, strongFun, setModalStrong } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const [strongIndividual, setStrongIndividual] = useState(null);
   const [audio, setAudio] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const ImageUrls = useMemo(
+    () => ({
+      light: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/light.webp",
+      dark: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/dark.webp",
+    }),
+    []
+  );
+
+  const currentImage = useMemo(() => ImageUrls[theme], [ImageUrls, theme]);
+
+  // Precarga de imágenes
+  useEffect(() => {
+    const preloadImages = () => {
+      Object.values(ImageUrls).forEach((url) => {
+        const img = new Image();
+        img.src = url;
+      });
+    };
+    preloadImages();
+  }, [ImageUrls]);
 
   useEffect(() => {
-    if (!cargandoStrong && strongData) {
-      const obtenerStrong = () => strongData.find((obj) => obj.id === strong) || null;
-      setStrongIndividual(obtenerStrong());
-    }
+    const loadResources = async () => {
+      setIsLoading(true);
+
+      // Cargar datos de Strong
+      if (!cargandoStrong && strongData) {
+        const obtenerStrong = () => strongData.find((obj) => obj.id === strong) || null;
+        setStrongIndividual(obtenerStrong());
+      }
+
+      setIsLoading(false);
+    };
+
+    loadResources();
   }, [strongData, strong, cargandoStrong]);
 
   useEffect(() => {
@@ -73,6 +105,28 @@ const StrongSingle = () => {
   }, [strongIndividual]);
 
   const processedHtml = useMemo(() => (strongIndividual?.df ? processText(strongIndividual.df, strongFun) : null), [strongIndividual, strongFun]);
+
+  useEffect(() => {
+    if (audio) {
+      audio.addEventListener("ended", () => setIsPlaying(false));
+      return () => {
+        audio.removeEventListener("ended", () => setIsPlaying(false));
+      };
+    }
+  }, [audio]);
+
+  const toggleAudio = () => {
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+        audio.currentTime = 0;
+        setIsPlaying(false);
+      } else {
+        audio.play();
+        setIsPlaying(true);
+      }
+    }
+  };
 
   const styles = {
     light: {
@@ -117,13 +171,7 @@ const StrongSingle = () => {
 
   const currentStyles = styles[theme];
 
-  const playAudio = () => {
-    if (audio) {
-      audio.play();
-    }
-  };
-
-  if (cargandoImagen || cargandoStrong || !strongIndividual) {
+  if (isLoading || !strongIndividual) {
     return (
       <div className="h-full w-full flex flex-col items-center justify-center gap-4 text-white">
         <div className="flex flex-row gap-2">
@@ -131,7 +179,7 @@ const StrongSingle = () => {
             <div key={index} className={`w-4 h-4 rounded-full bg-white animate-bounce`} style={{ animationDelay: `${delay}s` }} />
           ))}
         </div>
-        <p className="text-white">Cargando...</p>
+        <p className="text-black dark:text-white">Cargando texto...</p>
       </div>
     );
   }
@@ -147,7 +195,7 @@ const StrongSingle = () => {
       </style>
       <div className="z-[9999999] h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] text-black dark:text-white">
         <div className="animate-pop animate-duration-100 h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative">
-          <img src={image} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" alt="Background" />
+          <img src={currentImage} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" alt="Background" />
           <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar">
             <div className="text-left mr-2">
               <h1 className="animate-slide-in-top animate-duration-100 animate-delay-0 text-2xl text-balance px-3 text-center justify-center font-bold mb-3">
@@ -160,11 +208,11 @@ const StrongSingle = () => {
                 Pronunciación: <strong className="font-bold text-xl ml-2">{strongIndividual.ps}</strong>
                 {audio && (
                   <button
-                    onClick={playAudio}
-                    className="ml-2 p-1 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors text-white"
-                    title="Reproducir audio"
+                    onClick={toggleAudio}
+                    className="ml-2 w-6 h-6 text-center flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 text-white outline-none select-none"
+                    title={isPlaying ? "Detener audio" : "Reproducir audio"}
                   >
-                    ▶
+                    {isPlaying ? "⏸" : "⏵"}
                   </button>
                 )}
               </p>
