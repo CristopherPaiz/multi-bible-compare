@@ -56,16 +56,11 @@ const StrongSingle = () => {
 
   useEffect(() => {
     if (strongIndividual) {
-      const audioFolder = strongIndividual.id.startsWith("H") ? "hebrew" : "greek";
+      const audioFolder = strongIndividual.id.startsWith("H") ? "Audio_Hebreo" : "Audio_Griego";
       const audioNumber = strongIndividual.id.slice(1);
-      const audioUrl = `https://www.bibliatodo.com/assets/audio/strong/${audioFolder}/${audioNumber}.mp3`;
+      const audioUrl = `https://music-fragments.s3.fr-par.scw.cloud/${audioFolder}/${audioNumber}.mp3`;
 
-      fetch(audioUrl, {
-        headers: {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-          Referer: "https://www.bibliatodo.com/",
-        },
-      })
+      fetch(audioUrl)
         .then((response) => {
           if (response.ok) {
             setAudio(new Audio(audioUrl));
