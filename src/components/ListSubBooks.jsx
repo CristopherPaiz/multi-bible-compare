@@ -36,7 +36,7 @@ const ListSubBooks = () => {
         <div className="animate-slide-in-top animate-duration-100 fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-[99999999]">
           <div
             ref={modalRef}
-            className="z-[99999999] bg-white p-4 rounded shadow-md w-11/12 h-[85%] sm:h-auto flex flex-col dark:bg-black dark:text-white sm:w-[550px]"
+            className="z-[99999999] bg-white p-4 rounded shadow-md w-11/12 h-[85%] sm:h-[90%] lg:h-[95%] flex flex-col dark:bg-black dark:text-white sm:w-[550px]"
           >
             <button className="absolute top-5 right-7 font-bold text-white text-4xl font-mono" onClick={closeModal}>
               X
