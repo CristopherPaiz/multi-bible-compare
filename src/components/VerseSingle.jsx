@@ -9,14 +9,8 @@ import SHARE from "/share.png";
 import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
 const VerseSingle = ({ texto, nombre, iso }) => {
-  const {
-    versiculoSeleccionadoNumero,
-    setVersiculoSeleccionadoNumero,
-    tipoTraductor,
-    setCompartirVerse,
-    tamanioVerseAncho,
-    tamanioVerseAlto,
-  } = useContext(DataContext);
+  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto } =
+    useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
 
@@ -81,17 +75,12 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const translator1 = new GoogleTranslator({
       corsProxy: "https://corsproxy.io/",
       headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
       },
     });
     const translator2 = new GoogleTranslatorTokenFree({});
     try {
-      const resultado = await translator1.translate(
-        encodeURIComponent(verso),
-        idiomaVersoTranslate,
-        idiomaNavegadorTranslate
-      );
+      const resultado = await translator1.translate(encodeURIComponent(verso), idiomaVersoTranslate, idiomaNavegadorTranslate);
       setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
       centerText();
     } catch (error) {
@@ -115,9 +104,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const idiomaVersoTranslate = iso.toString();
     const idiomaNavegadorTranslate = idiomaNavegador;
     const verso = textoOriginal[versiculoSeleccionadoNumero];
-    return `https://translate.google.com/${tipoTraductor}sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(
-      verso
-    )}`;
+    return `https://translate.google.com/${tipoTraductor}sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
   };
 
   //TAMAÑOS
@@ -134,7 +121,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
           {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso ? (
             <div className="flex flex-nowrap items-center">
               <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
-                <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Sahre verse from Biblian"></img>
+                <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Share verse from Biblian"></img>
               </button>
               <button disabled={isTranslating ? true : false}>
                 <a href={handleGoogleTranslate(iso)} target="_blank" rel="nofollow noopener noreferrer">
@@ -149,62 +136,56 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             typeof textoTraducido !== "string" && (
               <div className="flex flex-nowrap items-center">
                 <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
-                  <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Sahre verse from Biblian"></img>
+                  <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Share verse from Biblian"></img>
                 </button>
               </div>
             )
           )}
         </div>
-        <div
-          ref={containerRef}
-          className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${
-            typeof textoTraducido === "string" ? "h-fit" : tamanioVerseAlto.def
-          }`}
-          style={{ position: "relative" }}
-        >
-          {typeof textoTraducido === "object" && textoTraducido !== null ? (
-            Object.entries(textoTraducido)
-              .sort(([keyA], [keyB]) => keyA - keyB)
-              .map(([versiculo, contenido], index) => (
-                <p
-                  key={index}
-                  data-verse={versiculo}
-                  onClick={() => handleVerseClick(versiculo)}
-                  style={{
-                    cursor: "pointer",
-                    marginBottom: "0.7rem",
-                    color:
-                      parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero)
-                        ? theme === "light"
-                          ? "black"
-                          : "white"
-                        : "inherit",
-                    backgroundColor:
-                      parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero)
-                        ? theme === "light"
-                          ? "#ffe4b3"
-                          : "#693BCC"
-                        : "transparent",
-                    padding: "1rem",
-                    margin: "-1rem",
-                  }}
-                  className="animate-slide-in-bottom"
-                >
-                  <span>
-                    <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
-                    <span dangerouslySetInnerHTML={{ __html: contenido }}></span>
-                  </span>
-                </p>
-              ))
-          ) : typeof textoTraducido === "string" ? (
-            <div
-              className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}
-            >
-              {textoTraducido}
-            </div>
-          ) : (
-            <p>{t("NoObjetoNoString")}</p>
-          )}
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10"></div>
+          <div
+            ref={containerRef}
+            className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${
+              typeof textoTraducido === "string" ? "h-fit" : tamanioVerseAlto.def
+            }`}
+            style={{ position: "relative" }}
+          >
+            {typeof textoTraducido === "object" && textoTraducido !== null ? (
+              Object.entries(textoTraducido)
+                .sort(([keyA], [keyB]) => keyA - keyB)
+                .map(([versiculo, contenido], index) => (
+                  <p
+                    key={index}
+                    data-verse={versiculo}
+                    onClick={() => handleVerseClick(versiculo)}
+                    style={{
+                      cursor: "pointer",
+                      marginBottom: "0.7rem",
+                      color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
+                      backgroundColor:
+                        parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#ffe4b3" : "#693BCC") : "transparent",
+                      padding: "1rem",
+                      margin: "-1rem",
+                    }}
+                    className="animate-slide-in-bottom"
+                  >
+                    <span>
+                      <span style={{ fontWeight: "bold" }}>{versiculo}</span> <span dangerouslySetInnerHTML={{ __html: contenido }}></span>
+                    </span>
+                  </p>
+                ))
+            ) : typeof textoTraducido === "string" ? (
+              <div
+                className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}
+              >
+                {textoTraducido}
+              </div>
+            ) : (
+              <p>{t("NoObjetoNoString")}</p>
+            )}
+          </div>
         </div>
         {isTranslating && (
           <div
