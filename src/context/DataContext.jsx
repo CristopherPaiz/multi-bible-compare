@@ -390,8 +390,20 @@ export const DataProvider = ({ children }) => {
   const [versiculoCompartir, setVersiculoCompartir] = useState("");
   const [nombreBibliaCompartir, setNombreBibliaCompartir] = useState("");
 
+  const cleanObject = (obj) => {
+    return Object.fromEntries(
+      Object.entries(obj).map(([key, value]) => [
+        key,
+        value
+          .replace(/<sup>.*?<\/sup>/g, "") // Elimina las etiquetas <sup> y su contenido
+          .replace(/\s+/g, " ") // Reemplaza múltiples espacios con uno solo
+          .trim(), // Elimina espacios al inicio y al final
+      ])
+    );
+  };
+
   const setCompartirVerse = (texto, versiculo, nombre) => {
-    setTextoCompartir(texto);
+    setTextoCompartir(cleanObject(texto));
     setVersiculoCompartir(versiculo);
     setCompartir(true);
     setNombreBibliaCompartir(nombre);

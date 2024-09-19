@@ -200,5 +200,7 @@
   "PlaceholderInputStrongHebreo": "Search in Hebrew, by ID, lemma or transliteration...",
   "PlaceholderInputStrongGriego": "Search in Greek, by ID, lemma or transliteration...",
   "Cognados": "Cognates",
-  "ModoCompacto": "Compact Mode"
+  "ModoCompacto": "Compact Mode",
+  "BuscarLibros": "Search by Bible name",
+  "MaxSelectionReached": "Only up to 20 Bibles can be selected"
 }

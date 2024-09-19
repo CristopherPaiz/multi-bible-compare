@@ -200,5 +200,7 @@
   "PlaceholderInputStrongHebreo": "Buscar en hebreo, por ID, lexema o transliteración...",
   "PlaceholderInputStrongGriego": "Buscar en griego, por ID, lexema o transliteración...",
   "Cognados": "Cognados",
-  "ModoCompacto": "Modo compacto"
+  "ModoCompacto": "Modo compacto",
+  "BuscarLibros": "Busque por nombre de biblia",
+  "MaxSelectionReached": "Solo se pueden seleccionar hasta 20 biblias"
 }
