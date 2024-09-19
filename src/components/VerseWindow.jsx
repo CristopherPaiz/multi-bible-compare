@@ -5,7 +5,7 @@ import VerseSingle from "./VerseSingle";
 import LanguageContext from "../context/LanguageContext";
 
 const VerseWindow = ({ biblia }) => {
-  const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero, setCapituloSeleccionadoNumero } = useContext(DataContext);
+  const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } = useContext(DataContext);
   const [tipoTestamento, setTipoTestamento] = useState("");
   const [rutaFinal, setRutaFinal] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
