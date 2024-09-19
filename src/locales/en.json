@@ -9,7 +9,9 @@
   "CambiarTemaOscuro": "Switch to dark theme",
   "CambiarTemaClaro": "Switch to light theme",
   "SobreProyecto": "About the project",
-  "InfoSobreProyecto": "This web application was created by Cristopher Paiz, with the aim of facilitating the comparison of biblical texts. The application is open source and can be found on my GitHub https://github.com/CristopherPaiz/multi-bible-compare. However, the texts provided are not under my audit, but thanks to the collaboration of many entities that provide their work for free, they are now available to you in order to make comparisons of different passages for better understanding.",
+  "InfoSobreProyecto": "This web application was created by",
+  "InfoSobreProyectoDos": "with the aim of facilitating the comparison of biblical texts. The application is open source and can be found on my GitHub",
+  "InfoSobreProyectoTres": "However, the texts provided are not under my audit, but thanks to the collaboration of many entities that provide their work for free, they are now available to you in order to make comparisons of different passages for better understanding.",
   "MasInfoSobreProyeto": "This compiled information was thanks to 'Beblia', you can find more information on their GitHub page. I wholeheartedly appreciate their effort and also that of each of the entities that provided their work for free.",
   "Colaboradores": "Acknowledgments",
   "NuevoTestamentoInicial": "N",
@@ -202,5 +204,6 @@
   "Cognados": "Cognates",
   "ModoCompacto": "Compact Mode",
   "BuscarLibros": "Search by Bible name",
-  "MaxSelectionReached": "Only up to 20 Bibles can be selected"
+  "MaxSelectionReached": "Only up to 20 Bibles can be selected",
+  "CristopherPaiz": "Cristopher Paiz"
 }
