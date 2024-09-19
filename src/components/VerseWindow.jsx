@@ -5,7 +5,7 @@ import VerseSingle from "./VerseSingle";
 import LanguageContext from "../context/LanguageContext";
 
 const VerseWindow = ({ biblia }) => {
-  const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } = useContext(DataContext);
+  const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero, setCapituloSeleccionadoNumero } = useContext(DataContext);
   const [tipoTestamento, setTipoTestamento] = useState("");
   const [rutaFinal, setRutaFinal] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
@@ -27,10 +27,11 @@ const VerseWindow = ({ biblia }) => {
       const ruta = `https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/src/assets/bibles/${biblia}/${tipoTestamento}/${libroSeleccionado}/chapter${capituloSeleccionadoNumero}.json`;
       setRutaFinal(ruta);
     };
+
     if (tipoTestamento) {
       obtenerRuta();
     }
-  }, [biblia, capituloSeleccionadoNumero, libroSeleccionado, tipoTestamento]);
+  }, [capituloSeleccionadoNumero, tipoTestamento]);
 
   //3. Obtener el archivo JSON mediante fetch
   useEffect(() => {
