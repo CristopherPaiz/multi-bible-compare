@@ -395,7 +395,7 @@ export const DataProvider = ({ children }) => {
       Object.entries(obj).map(([key, value]) => [
         key,
         value
-          .replace(/<sup>.*?<\/sup>/g, "") // Elimina las etiquetas <sup> y su contenido
+          .replace(/<[^>]+>.*?<\/[^>]+>/gs, "") // Elimina cualquier etiqueta HTML junto con su contenido
           .replace(/\s+/g, " ") // Reemplaza múltiples espacios con uno solo
           .trim(), // Elimina espacios al inicio y al final
       ])
