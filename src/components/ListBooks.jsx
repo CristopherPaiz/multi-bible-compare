@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useEffect, useRef, useContext, useMemo, useCallback } from "react";
 import LanguageContext from "../context/LanguageContext";
 import DataContext from "../context/DataContext";
 import A from "/A.webp";
@@ -111,30 +111,43 @@ const ListBooks = () => {
     }, 150);
   };
 
-  const getInitials = (book, year) => {
-    if (book.new && book.old) {
-      return (
-        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
-          <h4 className="text-[10px] font-bold">{year}</h4>
-          {idiomaNavegador === "es" ? <img src={AN} className="size-8" /> : <img src={ON} className="size-8" />}
-        </div>
-      );
-    } else if (book.new) {
-      return (
-        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
-          <h4 className="text-[10px] font-bold">{year}</h4>
-          <img src={N} className="size-8" />
-        </div>
-      );
-    } else if (book.old) {
-      return (
-        <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
-          <h4 className="text-[10px] font-bold">{year}</h4>
-          {idiomaNavegador === "es" ? <img src={A} className="size-8" /> : <img src={O} className="size-8" />}
-        </div>
-      );
-    }
-  };
+  // Precalcular las imágenes y almacenarlas en un objeto memoizado
+  const imagesMemo = useMemo(
+    () => ({
+      AN: idiomaNavegador === "es" ? AN : ON,
+      N,
+      A: idiomaNavegador === "es" ? A : O,
+    }),
+    [idiomaNavegador]
+  );
+
+  const getInitials = useCallback(
+    (book, year) => {
+      if (book.new && book.old) {
+        return (
+          <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
+            <h4 className="text-[10px] font-bold">{year}</h4>
+            <img src={imagesMemo.AN} className="size-8" />
+          </div>
+        );
+      } else if (book.new) {
+        return (
+          <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
+            <h4 className="text-[10px] font-bold">{year}</h4>
+            <img src={imagesMemo.N} className="size-8" />
+          </div>
+        );
+      } else if (book.old) {
+        return (
+          <div className="flex flex-col items-center gap-x-1 mx-2 pr-2 w-12">
+            <h4 className="text-[10px] font-bold">{year}</h4>
+            <img src={imagesMemo.A} className="size-8" />
+          </div>
+        );
+      }
+    },
+    [imagesMemo]
+  );
 
   const unmarkAll = () => {
     setSelectedBooks([]);
