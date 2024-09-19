@@ -10,7 +10,7 @@
   "CambiarTemaClaro": "Switch to light theme",
   "SobreProyecto": "About the project",
   "InfoSobreProyecto": "This web application was created by",
-  "InfoSobreProyectoDos": "with the aim of facilitating the comparison of biblical texts. The application is open source and can be found on my GitHub",
+  "InfoSobreProyectoDos": "Was Designed with the aim of facilitating the comparison of biblical texts. The application is open source and can be found on my GitHub",
   "InfoSobreProyectoTres": "However, the texts provided are not under my audit, but thanks to the collaboration of many entities that provide their work for free, they are now available to you in order to make comparisons of different passages for better understanding.",
   "MasInfoSobreProyeto": "This compiled information was thanks to 'Beblia', you can find more information on their GitHub page. I wholeheartedly appreciate their effort and also that of each of the entities that provided their work for free.",
   "Colaboradores": "Acknowledgments",
@@ -205,5 +205,6 @@
   "ModoCompacto": "Compact Mode",
   "BuscarLibros": "Search by Bible name",
   "MaxSelectionReached": "Only up to 20 Bibles can be selected",
-  "CristopherPaiz": "Cristopher Paiz"
+  "CristopherPaiz": "Cristopher Paiz",
+  "DisclaimerBiblia": "If any Bible, image, audio, font, or any other material included in this application is your original work, we request that you notify us immediately so we can facilitate its removal. It is important to note that the distribution of copyrighted material without proper authorization is prohibited by law. Consequently, this application will not host third-party content without explicit consent."
 }

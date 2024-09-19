@@ -10,7 +10,7 @@
   "CambiarTemaClaro": "Cambiar a tema claro",
   "SobreProyecto": "Sobre el proyecto",
   "InfoSobreProyecto": "Esta aplicación web fue creada por",
-  "InfoSobreProyectoDos": "con el objetivo de facilitar la comparación de los textos bíblicos. La aplicación es de código abierto y se puede encontrar en mi GitHub:",
+  "InfoSobreProyectoDos": "Fue diseñada con el objetivo de facilitar la comparación de los textos bíblicos. La aplicación es de código abierto y se puede encontrar en mi GitHub:",
   "InfoSobreProyectoTres": "Sin embargo los textos proporcionados no son de mi auditoría, pero gracias a la colaboración de muchas entidades que proporcionan su trabajo de forma gratuita hoy llegan a usted con el fin de poder hacer comparaciones de diferentes pasajes para su mejor comprensión.",
   "MasInfoSobreProyeto": "Esta información recopilada fue gracias a 'Beblia', pueden encontrar más información en su Github, Agradezco enteramente su esfuerzo y también el de cada una de las entidades que proporcionaron su trabajo de forma gratuita.",
   "Colaboradores": "Agradecimientos",
@@ -205,5 +205,6 @@
   "ModoCompacto": "Modo compacto",
   "BuscarLibros": "Busque por nombre de biblia",
   "MaxSelectionReached": "Solo se pueden seleccionar hasta 20 biblias",
-  "CristopherPaiz": "Cristopher Paiz"
+  "CristopherPaiz": "Cristopher Paiz",
+  "DisclaimerBiblia": "Si alguna Biblia, imagen, audio, fuente o cualquier otra cosa incluida en esta aplicación es de su autoría, le solicitamos que nos notifique de inmediato para facilitar su retiro. Es importante señalar que la distribución de material protegido por derechos de autor sin la debida autorización está prohibida por ley. En consecuencia, esta aplicación no albergará contenido de terceros sin el consentimiento explícito."
 }
