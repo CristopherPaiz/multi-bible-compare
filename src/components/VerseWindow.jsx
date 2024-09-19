@@ -31,7 +31,7 @@ const VerseWindow = ({ biblia }) => {
     if (tipoTestamento) {
       obtenerRuta();
     }
-  }, [capituloSeleccionadoNumero, tipoTestamento]);
+  }, [tipoTestamento, capituloSeleccionadoNumero, libroSeleccionado, biblia]);
 
   //3. Obtener el archivo JSON mediante fetch
   useEffect(() => {
@@ -48,10 +48,10 @@ const VerseWindow = ({ biblia }) => {
         setCapituloSeleccionado(t("NoExisteVersiculoParte1") + tipoTestamentoVersiculo + t("NoExisteVersiculoParte2"));
       }
     };
-    if (rutaFinal) {
+    if (rutaFinal && capituloSeleccionadoNumero && versiculoSeleccionadoNumero) {
       obtenerJSON();
     }
-  }, [rutaFinal, versiculoSeleccionadoNumero, tipoTestamento, t]);
+  }, [rutaFinal, versiculoSeleccionadoNumero, tipoTestamento, t, capituloSeleccionadoNumero]);
 
   // Retorna el ISO code del idioma
   const IdiomaAcodigo = async (idiomaVal) => {

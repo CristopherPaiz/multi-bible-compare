@@ -16,7 +16,7 @@ const ListBooks = () => {
   const modalRef = useRef(null);
   const [selectedBooks, setSelectedBooks] = useState([]);
   const { t, idiomaNavegador } = useContext(LanguageContext);
-  const { setBibliasSeleccionadas, setModalLibros } = useContext(DataContext);
+  const { setBibliasSeleccionadas, setModalLibros, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero } = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState("");
 
   // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
@@ -103,6 +103,8 @@ const ListBooks = () => {
   const handleConfirm = () => {
     if (selectedBooks.length === 0) return alert(t("SeleccioneUnaBiblia"));
     setBibliasSeleccionadas(selectedBooks);
+    setCapituloSeleccionadoNumero(null);
+    setVersiculoSeleccionadoNumero(null);
     setTimeout(() => {
       setModalLibros(true);
       closeModal();
