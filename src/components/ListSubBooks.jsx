@@ -2,12 +2,16 @@ import { useState, useRef, useContext } from "react";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
 import LEFT_ICON from "/left.png";
+import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 
 const ListSubBooks = () => {
   const { libros, setLibroSeleccionado, libroSeleccionado, modalLibros, setModalLibros, setModalChapters, modoCompacto, setModoCompacto } =
     useContext(DataContext);
   const [selectedBook, setSelectedBook] = useState(libroSeleccionado);
   const { t } = useContext(LanguageContext);
+
+  // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
+  useHistoryBlocker(modalLibros, () => setModalLibros(false));
 
   const modalRef = useRef(null);
 

@@ -6,8 +6,10 @@ import AN from "/AN.webp";
 import N from "/N.webp";
 import O from "/O.webp";
 import ON from "/ON.webp";
-import Scroll from "./Scroll";
 import ReadMore from "./ReadMore";
+import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
+
+const MAX_SELECTIONS = 20;
 
 const ListBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,22 +17,42 @@ const ListBooks = () => {
   const [selectedBooks, setSelectedBooks] = useState([]);
   const { t, idiomaNavegador } = useContext(LanguageContext);
   const { setBibliasSeleccionadas, setModalLibros } = useContext(DataContext);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
+  useHistoryBlocker(isModalOpen, () => setIsModalOpen(false));
 
   //ESTRELLA
   const [favoriteBooks, setFavoriteBooks] = useState([]);
 
   const handleBookToggle = (ruta) => {
-    const newSelectedBooks = selectedBooks.includes(ruta)
-      ? selectedBooks.filter((book) => book !== ruta)
-      : [...selectedBooks, ruta];
-    setSelectedBooks(newSelectedBooks);
+    setSelectedBooks((prevSelected) => {
+      if (prevSelected.includes(ruta)) {
+        return prevSelected.filter((book) => book !== ruta);
+      } else {
+        const uniqueBooks = new Set([...prevSelected, ...favoriteBooks, ruta]);
+        if (uniqueBooks.size > MAX_SELECTIONS) {
+          alert(t("MaxSelectionReached", { max: MAX_SELECTIONS }));
+          return prevSelected;
+        }
+        return [...prevSelected, ruta];
+      }
+    });
   };
 
   const handleFavoriteToggle = (ruta) => {
-    const newFavoriteBooks = favoriteBooks.includes(ruta)
-      ? favoriteBooks.filter((book) => book !== ruta)
-      : [...favoriteBooks, ruta];
-    setFavoriteBooks(newFavoriteBooks);
+    setFavoriteBooks((prevFavorites) => {
+      if (prevFavorites.includes(ruta)) {
+        return prevFavorites.filter((book) => book !== ruta);
+      } else {
+        const uniqueBooks = new Set([...selectedBooks, ...prevFavorites, ruta]);
+        if (uniqueBooks.size > MAX_SELECTIONS) {
+          alert(t("MaxSelectionReached", { max: MAX_SELECTIONS }));
+          return prevFavorites;
+        }
+        return [...prevFavorites, ruta];
+      }
+    });
   };
   // FIN ESTRELLA
 
@@ -981,15 +1003,26 @@ const ListBooks = () => {
     }
   };
 
-  //timeout 2 seconds
-  const [ocultar, setOcultar] = useState("opacity-1");
+  const normalizeString = (str) => {
+    return str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  };
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setOcultar("opacity-0");
-    }, 4000);
-    return () => clearTimeout(timeout);
-  }, []);
+  const filteredBooks = Object.entries(BOOKS).reduce((acc, [language, books]) => {
+    const filteredLanguageBooks = Object.entries(books).filter(([bookTitle]) => {
+      const normalizedSearchTerm = normalizeString(searchTerm);
+      const normalizedBookTitle = normalizeString(bookTitle);
+      const normalizedLanguage = normalizeString(translateLanguage(language));
+      return normalizedBookTitle?.includes(normalizedSearchTerm) || normalizedLanguage?.includes(normalizedSearchTerm);
+    });
+
+    if (filteredLanguageBooks.length > 0) {
+      acc[language] = Object.fromEntries(filteredLanguageBooks);
+    }
+    return acc;
+  }, {});
 
   return (
     <>
@@ -1018,18 +1051,12 @@ const ListBooks = () => {
                   </summary>
                   <div className="p-2 bg-orange-100 dark:bg-yellow-950 rounded-md mb-4">
                     <div className="flex gap-2 px-2 m-auto justify-center" style={{ alignItems: "center" }}>
-                      <span className="p-2 bg-red-600 text-white text-[10px] justify-center text-center">
-                        {t("AntiguoTestamentoInicial")}
-                      </span>
+                      <span className="p-2 bg-red-600 text-white text-[10px] justify-center text-center">{t("AntiguoTestamentoInicial")}</span>
                       <p className="text-[13px] font-semibold">{t("AntiguoTestamento")}</p>
-                      <span className="p-2 bg-blue-600 text-white text-[10px] justify-center text-center">
-                        {t("NuevoTestamentoInicial")}
-                      </span>
+                      <span className="p-2 bg-blue-600 text-white text-[10px] justify-center text-center">{t("NuevoTestamentoInicial")}</span>
                       <p className="text-[13px] font-semibold text-black dark:text-white">{t("NuevoTestamento")}</p>
                     </div>
-                    <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black text-center dark:text-white">
-                      {t("ANExplicacion")}
-                    </h3>
+                    <h3 className="mt-3 mx-2 opacity-40 text-balance mb-2 text-[11px] text-black text-center dark:text-white">{t("ANExplicacion")}</h3>
                   </div>
                 </details>
                 <details>
@@ -1052,9 +1079,7 @@ const ListBooks = () => {
                         </ol>
                       </div>
                       <div className="w-full sm:w-1/2 text-sm">
-                        <h3 className="text-base font-bold my-3 text-center sm:text-left">
-                          {t("PrecisionTraduccion")}
-                        </h3>
+                        <h3 className="text-base font-bold my-3 text-center sm:text-left">{t("PrecisionTraduccion")}</h3>
                         <ol className="font-thin">
                           <li>1. Vulgate Version (405)</li>
                           <li>2. Aleppo Codex Bible (920)</li>
@@ -1064,14 +1089,38 @@ const ListBooks = () => {
                         </ol>
                       </div>
                     </div>
-                    <h3 className="text-[10px] opacity-50 mt-5 mb-2 text-center text-pretty">
-                      {t("PreferencaiUsuario")}
-                    </h3>
+                    <h3 className="text-[10px] opacity-50 mt-5 mb-2 text-center text-pretty">{t("PreferencaiUsuario")}</h3>
                   </article>
                 </details>
               </div>
 
-              {Object.entries(BOOKS).map(([language, books]) => (
+              {/* BUSQUEDA */}
+              <div className="mb-4 flex flex-row items-center gap-1 w-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+                <input
+                  type="text"
+                  placeholder={t("BuscarLibros")}
+                  className="w-full p-2 border rounded dark:bg-gray-800 dark:text-white"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+              </div>
+
+              {Object.entries(filteredBooks).map(([language, books]) => (
                 <div key={language} className="mb-8">
                   <h2 className="text-xl uppercase font-bold mb-2">{translateLanguage(language)}</h2>
                   <ul className="flex gap-2 flex-col">
@@ -1080,24 +1129,15 @@ const ListBooks = () => {
                         <button
                           style={{ alignItems: "center" }}
                           className={`flex w-full items-center py-2 rounded-lg text-left pl-2 flex-row justify-between ${
-                            selectedBooks.includes(book.ruta)
-                              ? "bg-green-300 dark:bg-green-800"
-                              : "bg-gray-100 dark:bg-gray-800"
+                            selectedBooks.includes(book.ruta) ? "bg-green-300 dark:bg-green-800" : "bg-gray-100 dark:bg-gray-800"
                           }`}
                           onClick={() => handleBookToggle(book.ruta)}
                         >
                           <div className="w-5 relative">
-                            {!selectedBooks.includes(book.ruta) && (
-                              <div className="ml-1 w-4 h-4 border border-gray-400 rounded-sm" />
-                            )}
+                            {!selectedBooks.includes(book.ruta) && <div className="ml-1 w-4 h-4 border border-gray-400 rounded-sm" />}
                             {selectedBooks.includes(book.ruta) && (
                               <span>
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 24 24"
-                                  fill="currentColor"
-                                  className="w-6 h-6"
-                                >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                   <path
                                     fillRule="evenodd"
                                     d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
@@ -1119,9 +1159,7 @@ const ListBooks = () => {
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              className={`w-6 h-6 ${
-                                favoriteBooks.includes(book.ruta) ? "text-yellow-500" : "text-gray-400"
-                              }`}
+                              className={`w-6 h-6 ${favoriteBooks.includes(book.ruta) ? "text-yellow-500" : "text-gray-400"}`}
                               fill="currentColor"
                               viewBox="0 0 24 24"
                             >
@@ -1139,46 +1177,19 @@ const ListBooks = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col pt-5 gap-3 relative z-[99999]">
-              <div
-                className={`-mt-12 -ml-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${ocultar}`}
-              >
-                <Scroll />
-              </div>
-              <div className="bg-white justify-center flex flex-row pt-1 gap-3 dark:bg-neutral-950">
-                <button
-                  className="p-2 bg-red-500 w-1/2 text-white rounded px-3 text-[11px] flex items-center gap-1 justify-center"
-                  onClick={unmarkAll}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>
-                  {t("DesmarcarTodo")}
-                </button>
-                <button
-                  className="p-2 bg-blue-500 w-1/2 text-white rounded px-3 text-sm flex items-center gap-1 justify-center"
-                  onClick={handleConfirm}
-                >
-                  {t("Continuar")}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </button>
-              </div>
+            <div className="bg-white justify-center flex flex-row pt-1 gap-3 dark:bg-neutral-950">
+              <button className="p-2 bg-red-500 w-1/2 text-white rounded px-3 text-[11px] flex items-center gap-1 justify-center" onClick={unmarkAll}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+                {t("DesmarcarTodo")}
+              </button>
+              <button className="p-2 bg-blue-500 w-1/2 text-white rounded px-3 text-sm flex items-center gap-1 justify-center" onClick={handleConfirm}>
+                {t("Continuar")}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>

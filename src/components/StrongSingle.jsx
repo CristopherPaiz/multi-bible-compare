@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState, useMemo } from "react";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
+import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 
 const processText = (html, strongFun) => {
   const doc = new DOMParser().parseFromString(html, "text/html");
@@ -48,6 +49,17 @@ const StrongSingle = () => {
   const [audio, setAudio] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
+  useHistoryBlocker(strongIndividual, () => setModalStrong(false));
+
+  //cerrar modal si se presiona por fuera
+  const handleOutsideClick = (e) => {
+    if (e.target.classList.contains("modal-overlay")) {
+      setModalStrong(false);
+      strongFun("");
+    }
+  };
 
   const ImageUrls = useMemo(
     () => ({
@@ -193,7 +205,7 @@ const StrongSingle = () => {
           }
         `}
       </style>
-      <div className="z-[9999999] h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] text-black dark:text-white">
+      <div className="z-[9999999] h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] text-black dark:text-white" onClick={(e) => e.stopPropagation()}>
         <div className="animate-pop animate-duration-100 h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative">
           <img src={currentImage} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" alt="Background" />
           <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar">
@@ -265,7 +277,7 @@ const StrongSingle = () => {
           </button>
         </div>
       </div>
-      <div className="fixed w-full h-full bg-black/40 z-[999999]"></div>
+      <div className="fixed w-full h-full bg-black/40 z-[999999] modal-overlay" onClick={handleOutsideClick}></div>
     </>
   );
 };

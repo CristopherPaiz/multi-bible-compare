@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import ModalStrong from "../components/ModalStrong";
 import DICTIONARY from "/diccionario2.png";
 import "../styles/Animations.css";
+import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 
 const FloattingBubble = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,6 +11,9 @@ const FloattingBubble = () => {
   const modalRef = useRef(null);
   const startPosition = useRef({ x: 0, y: 0 });
   const startOffset = useRef({ x: 0, y: 0 });
+
+  // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
+  useHistoryBlocker(isModalOpen, () => setIsModalOpen(false));
 
   const handleMouseDown = (event) => {
     setIsDragging(true);

@@ -2,6 +2,7 @@ import { useState, useRef, useContext } from "react";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
 import LEFT_ICON from "/left.png";
+import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 
 const ListChapters = () => {
   const { modalChapters, setModalChapters, Chapters, setModalLibros, setModalVerses, setVersiculoSeleccionado, setCapituloSeleccionadoNumero } =
@@ -9,6 +10,9 @@ const ListChapters = () => {
   const [selectedChapter, setSelectedChapter] = useState("");
   const { t } = useContext(LanguageContext);
   const modalRef = useRef(null);
+
+  // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
+  useHistoryBlocker(modalChapters, () => setModalChapters(false));
 
   const closeModal = () => {
     setModalChapters(false);
