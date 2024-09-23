@@ -135,6 +135,8 @@ const StrongSingle = () => {
         setIsPlaying(false);
       } else {
         audio.play();
+        //change pitch
+        audio.playbackRate = 1.1;
         setIsPlaying(true);
       }
     }
@@ -153,16 +155,16 @@ const StrongSingle = () => {
         margin: "5px 1px",
         animation: "load89234 2s 2",
       },
-      purple: { color: "#b300ff", fontWeight: 900 },
-      red: { color: "#bb00ff", fontWeight: 900 },
+      purple: { color: "#9a00db", fontSize: "1.2em" },
+      red: { color: "#bb00ff" },
       blue: { color: "#091cb0", fontWeight: 900 },
-      green: { color: "#037932", fontWeight: 900 },
+      green: { color: "#60ab49", fontSize: "1.5em" },
       orange: { color: "#ffbb00" },
       yellow: { color: "#f2ff00" },
     },
     dark: {
       slink: {
-        background: "linear-gradient(120deg, #cc00ff 30%, #e683ff 38%, #e683ff 40%, #cc00ff 48%)",
+        background: "linear-gradient(120deg, #dd57ff 30%, #eea8ff 38%, #eea8ff 40%, #dd57ff 48%)",
         backgroundSize: "200% 100%",
         backgroundPosition: "100% 0",
         color: "white !important",
@@ -170,14 +172,14 @@ const StrongSingle = () => {
         borderRadius: "7px",
         fontWeight: 600,
         margin: "5px 2px",
-        animation: "load89234 2s 1",
+        animation: "load89234 2s 2",
       },
-      purple: { color: "#a6b3ff" },
-      red: { color: "#9096ff" },
-      blue: { color: "#ff7d7d", fontWeight: 700 },
-      green: { color: "#15ff00" },
-      orange: { color: "#ffdf87" },
-      yellow: { color: "#f9ff8e" },
+      purple: { color: "#b3e5fc", fontSize: "1.2em" },
+      red: { color: "#e58080" },
+      blue: { color: "#ffb400", fontWeight: 700 },
+      green: { color: "#25ff1a", fontSize: "1.5em" },
+      orange: { color: "#ff5733" },
+      yellow: { color: "#ffe600" },
     },
   };
 
@@ -205,10 +207,10 @@ const StrongSingle = () => {
           }
         `}
       </style>
-      <div className="z-[9999999] h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] text-black dark:text-white" onClick={(e) => e.stopPropagation()}>
-        <div className="animate-pop animate-duration-100 h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative">
+      <div className="z-[9999999] h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] text-black dark:text-white " onClick={(e) => e.stopPropagation()}>
+        <div className="animate-pop animate-duration-100 h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] justify-center items-center relative ">
           <img src={currentImage} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" alt="Background" />
-          <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar">
+          <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar px-2">
             <div className="text-left mr-2">
               <h1 className="animate-slide-in-top animate-duration-100 animate-delay-0 text-2xl text-balance px-3 text-center justify-center font-bold mb-3">
                 {strongIndividual.id} - {strongIndividual.le}
@@ -216,8 +218,9 @@ const StrongSingle = () => {
               <h2 className="animate-slide-in-top animate-duration-100 animate-delay-100 text-2xl text-balance px-3 text-center justify-center font-bold">
                 {strongIndividual.pl} ({strongIndividual.ti})
               </h2>
-              <p className="font-thin text-lg py-2 my-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">
-                Pronunciación: <strong className="font-bold text-xl ml-2">{strongIndividual.ps}</strong>
+              <p className="font-base text-lg mt-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Pronunciación:</p>
+              <p className="font-thin text-lg mb-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">
+                <strong className="font-bold text-xl mt-1">{strongIndividual.ps}</strong>
                 {audio && (
                   <button
                     onClick={toggleAudio}
@@ -251,8 +254,8 @@ const StrongSingle = () => {
                   </button>
                 )}
               </p>
-              <p className="">Definición:</p>
-              <div>
+              <p className="font-base text-lg animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Definición:</p>
+              <div className="mb-8">
                 {React.Children.map(processedHtml, (child) => {
                   if (child.props.className === "Slink") {
                     return React.cloneElement(child, { style: { ...child.props.style, ...currentStyles.slink } });
