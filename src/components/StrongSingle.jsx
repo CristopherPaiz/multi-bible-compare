@@ -48,7 +48,7 @@ const StrongSingle = () => {
   const [strongIndividual, setStrongIndividual] = useState(null);
   const [audio, setAudio] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
   useHistoryBlocker(strongIndividual, () => setModalStrong(false));
@@ -74,9 +74,11 @@ const StrongSingle = () => {
   // Precarga de imágenes
   useEffect(() => {
     const preloadImages = () => {
+      setImageIsLoaded(false);
       Object.values(ImageUrls).forEach((url) => {
         const img = new Image();
         img.src = url;
+        img.onload = () => setImageIsLoaded(true);
       });
     };
     preloadImages();
@@ -84,15 +86,10 @@ const StrongSingle = () => {
 
   useEffect(() => {
     const loadResources = async () => {
-      setIsLoading(true);
-
-      // Cargar datos de Strong
       if (!cargandoStrong && strongData) {
         const obtenerStrong = () => strongData.find((obj) => obj.id === strong) || null;
         setStrongIndividual(obtenerStrong());
       }
-
-      setIsLoading(false);
     };
 
     loadResources();
@@ -185,20 +182,20 @@ const StrongSingle = () => {
 
   const currentStyles = styles[theme];
 
-  if (isLoading || !strongIndividual) {
-    return (
-      <div className="h-full w-full flex flex-col items-center justify-center gap-4 text-white">
-        <div className="flex flex-row gap-2">
-          {[0.7, 0.3, 0.7].map((delay, index) => (
-            <div key={index} className={`w-4 h-4 rounded-full bg-white animate-bounce`} style={{ animationDelay: `${delay}s` }} />
+  const renderLoadingState = () => (
+    <div className="h-full w-full flex flex-col items-center justify-center gap-4 bg-black/40 text-white z-[999999999] fixed top-0 left-0">
+      <div className="px-4 py-8 bg-black/60 rounded-lg flex flex-col items-center">
+        <div className="flex flex-row gap-2 mb-4">
+          {[0, 0.2, 0.4].map((delay, index) => (
+            <div key={index} className="w-4 h-4 rounded-full bg-white animate-bounce" style={{ animationDelay: `${delay}s` }} />
           ))}
         </div>
-        <p className="text-black dark:text-white">Cargando texto...</p>
+        <p className="text-white text-2xl font-bold">Cargando Strong...</p>
       </div>
-    );
-  }
+    </div>
+  );
 
-  return (
+  const renderContent = () => (
     <>
       <style>
         {`
@@ -283,6 +280,8 @@ const StrongSingle = () => {
       <div className="fixed w-full h-full bg-black/40 z-[999999] modal-overlay" onClick={handleOutsideClick}></div>
     </>
   );
+
+  return !imageIsLoaded || !strongIndividual ? renderLoadingState() : renderContent();
 };
 
 export default StrongSingle;

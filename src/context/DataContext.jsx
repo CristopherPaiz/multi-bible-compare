@@ -321,9 +321,9 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => {
     const conseguirStrong = async () => {
+      setCargandoStrong(true);
       if (strong.length > 0) {
         const ruta = "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/src/assets/strongs";
-        setCargandoStrong(true);
         try {
           if (strong.includes("H")) {
             const Tipo = strong.split("H")[1];
@@ -334,20 +334,29 @@ export const DataProvider = ({ children }) => {
             const res = await fetch(url);
             const data = await res.json();
             setStrongData(data);
-            setCargandoStrong(false);
           } else if (strong.includes("G")) {
-            const Tipo = strong.split("G")[1];
-            const rango = Math.floor(Tipo / 150) * 150 + 1;
+            const Tipo = parseInt(strong.split("G")[1]);
+            let rango;
+
+            if (Tipo <= 2400) {
+              rango = Math.floor((Tipo - 1) / 150) * 150 + 1;
+            } else if (Tipo <= 2650) {
+              rango = 2401;
+            } else {
+              const ajuste = Tipo - 2651;
+              rango = Math.floor(ajuste / 150) * 150 + 2651;
+            }
+
             const casiRango = rango.toString().padStart(4, "0");
             const url = `${ruta}/Griego/${casiRango}.json`;
-
             const res = await fetch(url);
             const data = await res.json();
             setStrongData(data);
-            setCargandoStrong(false);
           }
         } catch (error) {
           console.log(error);
+        } finally {
+          setCargandoStrong(false);
         }
       }
     };
