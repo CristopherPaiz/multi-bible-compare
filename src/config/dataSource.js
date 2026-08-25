@@ -54,31 +54,45 @@ export const AUDIO_URL = (import.meta.env.VITE_AUDIO_URL ?? "https://music-fragm
 
 const DEFAULT_SOURCE = import.meta.env.VITE_DATA_SOURCE === SOURCES.GITHUB ? SOURCES.GITHUB : SOURCES.TURSO;
 
-const isValid = (value) => value === SOURCES.TURSO || value === SOURCES.GITHUB;
-
-let current = DEFAULT_SOURCE;
-
-try {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (isValid(saved)) current = saved;
-} catch {
-  // Safari en modo privado tira excepción al tocar localStorage.
-}
-
 const listeners = new Set();
 
-export const getDataSource = () => current;
+const isValid = (value) => value === SOURCES.TURSO || value === SOURCES.GITHUB;
+
+const leerGuardada = () => {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    return isValid(saved) ? saved : null;
+  } catch {
+    // Safari en modo privado tira excepción al tocar localStorage.
+    return null;
+  }
+};
+
+/**
+ * Respaldo en memoria para cuando localStorage no está disponible.
+ * NO es la fuente de verdad: ver `getDataSource`.
+ */
+let enMemoria = leerGuardada() ?? DEFAULT_SOURCE;
+
+/**
+ * La preferencia se lee de localStorage EN CADA LLAMADA, no de una variable de
+ * módulo. Si el bundler entrega dos instancias de este archivo (pasa con
+ * imports por ruta absoluta vs relativa), cada una tendría su propia variable y
+ * el interruptor de Ajustes no afectaría a quien hace las peticiones.
+ * localStorage es compartido, así que siempre coinciden.
+ */
+export const getDataSource = () => leerGuardada() ?? enMemoria;
 
 export const setDataSource = (value) => {
-  if (!isValid(value) || value === current) return current;
-  current = value;
+  if (!isValid(value) || value === getDataSource()) return getDataSource();
+  enMemoria = value;
   try {
     localStorage.setItem(STORAGE_KEY, value);
   } catch {
     // Sin persistencia, pero el cambio aplica en esta sesión.
   }
-  listeners.forEach((listener) => listener(current));
-  return current;
+  listeners.forEach((listener) => listener(value));
+  return value;
 };
 
 /** Se notifica a los suscriptores cuando cambia la fuente. Devuelve el cancelador. */

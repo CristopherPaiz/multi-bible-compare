@@ -40,11 +40,19 @@ export const toBuffer = (value: unknown): Buffer | null => {
   return null
 }
 
-/** Convierte el array de versiculos al objeto `{ "1": "...", "2": "..." }` que ya consume la UI. */
+/**
+ * Convierte el array de versiculos al objeto `{ "1": "...", "2": "..." }` que ya
+ * consume la UI.
+ *
+ * Los versiculos vacios SI se incluyen. Algunas versiones traen claves con
+ * cadena vacia en el JSON original (p. ej. Quiche, Genesis 1:15) y omitirlas
+ * hacia que la respuesta de la API difiriera de la del CDN, rompiendo la
+ * equivalencia entre ambas fuentes.
+ */
 export const versesToRecord = (verses: string[]): Record<string, string> => {
   const record: Record<string, string> = {}
   verses.forEach((text, index) => {
-    if (text !== '') record[String(index + 1)] = text
+    record[String(index + 1)] = text
   })
   return record
 }

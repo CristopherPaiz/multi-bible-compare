@@ -26,3 +26,6 @@ dist-ssr
 # Variables locales de la UI
 .env
 .env.local
+
+# Config local del navegador de Claude Code
+.claude/launch.json
