@@ -206,5 +206,11 @@
   "BuscarLibros": "Search by Bible name",
   "MaxSelectionReached": "Only up to 20 Bibles can be selected",
   "CristopherPaiz": "Cristopher Paiz",
-  "DisclaimerBiblia": "If any Bible, image, audio, font, or any other material included in this application is your original work, we request that you notify us immediately so we can facilitate its removal. It is important to note that the distribution of copyrighted material without proper authorization is prohibited by law. Consequently, this application will not host third-party content without explicit consent."
+  "DisclaimerBiblia": "If any Bible, image, audio, font, or any other material included in this application is your original work, we request that you notify us immediately so we can facilitate its removal. It is important to note that the distribution of copyrighted material without proper authorization is prohibited by law. Consequently, this application will not host third-party content without explicit consent.",
+  "FuenteDatos": "Data source",
+  "FuenteDatosAyuda": "API is faster. CDN is the fallback if the API fails.",
+  "EstadoApi_conectada": "API connected",
+  "EstadoApi_comprobando": "Checking API...",
+  "EstadoApi_sin_respuesta": "API not responding",
+  "EstadoApi_inactiva": "Using the GitHub CDN"
 }

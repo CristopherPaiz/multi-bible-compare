@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import LanguageContext from "./LanguageContext";
 import bibleData from "../assets/bibles/JSON_DATA/01. English - Amplified (2015).json";
 import ThemeContext from "./ThemeContext";
+import { getStrongBatch } from "../services/bibleSource";
 
 const DataContext = createContext();
 
@@ -320,47 +321,32 @@ export const DataProvider = ({ children }) => {
   }, [setModalStrong]);
 
   useEffect(() => {
+    if (strong.length === 0) return;
+
+    const controller = new AbortController();
+    let cancelado = false;
+
     const conseguirStrong = async () => {
       setCargandoStrong(true);
-      if (strong.length > 0) {
-        const ruta = "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/src/assets/strongs";
-        try {
-          if (strong.includes("H")) {
-            const Tipo = strong.split("H")[1];
-            const rango = Math.floor(Tipo / 150) * 150 + 1;
-            const casiRango = rango.toString().padStart(4, "0");
-            const url = `${ruta}/Hebreo/${casiRango}.json`;
-
-            const res = await fetch(url);
-            const data = await res.json();
-            setStrongData(data);
-          } else if (strong.includes("G")) {
-            const Tipo = parseInt(strong.split("G")[1]);
-            let rango;
-
-            if (Tipo <= 2400) {
-              rango = Math.floor((Tipo - 1) / 150) * 150 + 1;
-            } else if (Tipo <= 2650) {
-              rango = 2401;
-            } else {
-              const ajuste = Tipo - 2651;
-              rango = Math.floor(ajuste / 150) * 150 + 2651;
-            }
-
-            const casiRango = rango.toString().padStart(4, "0");
-            const url = `${ruta}/Griego/${casiRango}.json`;
-            const res = await fetch(url);
-            const data = await res.json();
-            setStrongData(data);
-          }
-        } catch (error) {
-          console.log(error);
-        } finally {
-          setCargandoStrong(false);
-        }
+      try {
+        // La fuente decide de dónde sale: el CDN sirve lotes de 150 entradas y
+        // Turso una sola, pero ambas devuelven un arreglo y StrongSingle busca
+        // dentro por id. Así este componente no sabe cuál está activa.
+        const data = await getStrongBatch({ code: strong, signal: controller.signal });
+        if (!cancelado) setStrongData(data);
+      } catch (error) {
+        if (!cancelado && error?.name !== "AbortError") console.error("Error al cargar Strong:", error);
+      } finally {
+        if (!cancelado) setCargandoStrong(false);
       }
     };
+
     conseguirStrong();
+
+    return () => {
+      cancelado = true;
+      controller.abort();
+    };
   }, [strong]);
 
   //TEMA STRONG SINGLE

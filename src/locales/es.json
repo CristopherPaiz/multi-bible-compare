@@ -206,5 +206,11 @@
   "BuscarLibros": "Busque por nombre de biblia",
   "MaxSelectionReached": "Solo se pueden seleccionar hasta 20 biblias",
   "CristopherPaiz": "Cristopher Paiz",
-  "DisclaimerBiblia": "Si alguna Biblia, imagen, audio, fuente o cualquier otra cosa incluida en esta aplicación es de su autoría, le solicitamos que nos notifique de inmediato para facilitar su retiro. Es importante señalar que la distribución de material protegido por derechos de autor sin la debida autorización está prohibida por ley. En consecuencia, esta aplicación no albergará contenido de terceros sin el consentimiento explícito."
+  "DisclaimerBiblia": "Si alguna Biblia, imagen, audio, fuente o cualquier otra cosa incluida en esta aplicación es de su autoría, le solicitamos que nos notifique de inmediato para facilitar su retiro. Es importante señalar que la distribución de material protegido por derechos de autor sin la debida autorización está prohibida por ley. En consecuencia, esta aplicación no albergará contenido de terceros sin el consentimiento explícito.",
+  "FuenteDatos": "Fuente de datos",
+  "FuenteDatosAyuda": "API es más rápida. CDN es el respaldo si la API falla.",
+  "EstadoApi_conectada": "API conectada",
+  "EstadoApi_comprobando": "Comprobando API...",
+  "EstadoApi_sin_respuesta": "API sin respuesta",
+  "EstadoApi_inactiva": "Usando el CDN de GitHub"
 }

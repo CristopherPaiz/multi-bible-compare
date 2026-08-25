@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState, useMemo } from "react";
 import DataContext from "../context/DataContext";
+import { getStrongAudioUrl } from "../services/bibleSource";
 import ThemeContext from "../context/ThemeContext";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 
@@ -96,21 +97,25 @@ const StrongSingle = () => {
   }, [strongData, strong, cargandoStrong]);
 
   useEffect(() => {
-    if (strongIndividual) {
-      const audioFolder = strongIndividual.id.startsWith("H") ? "Audio_Hebreo" : "Audio_Griego";
-      const audioNumber = strongIndividual.id.slice(1);
-      const audioUrl = `https://music-fragments.s3.fr-par.scw.cloud/${audioFolder}/${audioNumber}.mp3`;
+    if (!strongIndividual) return;
 
-      fetch(audioUrl)
-        .then((response) => {
-          if (response.ok) {
-            setAudio(new Audio(audioUrl));
-          } else {
-            setAudio(null);
-          }
-        })
-        .catch(() => setAudio(null));
-    }
+    // Turso ya devuelve la URL en el payload; el CDN no, y ahí se arma por
+    // convención de nombre. Se prefiere la que venga en el dato.
+    const audioUrl = strongIndividual.audioUrl ?? getStrongAudioUrl(strongIndividual.id);
+
+    let cancelado = false;
+    fetch(audioUrl, { method: "HEAD" })
+      .then((response) => {
+        if (cancelado) return;
+        setAudio(response.ok ? new Audio(audioUrl) : null);
+      })
+      .catch(() => {
+        if (!cancelado) setAudio(null);
+      });
+
+    return () => {
+      cancelado = true;
+    };
   }, [strongIndividual]);
 
   const processedHtml = useMemo(() => (strongIndividual?.df ? processText(strongIndividual.df, strongFun) : null), [strongIndividual, strongFun]);

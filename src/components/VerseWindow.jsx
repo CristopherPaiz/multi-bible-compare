@@ -3,91 +3,72 @@ import DataContext from "../context/DataContext";
 import PropTypes from "prop-types";
 import VerseSingle from "./VerseSingle";
 import LanguageContext from "../context/LanguageContext";
+import { getChapter } from "../services/bibleSource";
+import { getDataSource, onDataSourceChange } from "../config/dataSource";
+
+const LAST_OLD_TESTAMENT_BOOK = 39;
+
+// El nombre de la carpeta trae el idioma: "034. Español - Biblia ...".
+const ISO_POR_IDIOMA = {
+  Español: "es",
+  English: "en",
+  Esperanto: "eo",
+  Greek: "el",
+  Hebrew: "iw",
+  Latin: "la",
+};
+
+const idiomaDesdeRuta = (ruta) => {
+  const idioma = ruta.split(". ")[1]?.split(" -")[0];
+  return ISO_POR_IDIOMA[idioma] ?? "no";
+};
 
 const VerseWindow = ({ biblia }) => {
   const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } = useContext(DataContext);
-  const [tipoTestamento, setTipoTestamento] = useState("");
-  const [rutaFinal, setRutaFinal] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
-  const [idioma, setIdioma] = useState("");
   const { t } = useContext(LanguageContext);
 
-  //1. Determinar el tipo de testamento
-  useEffect(() => {
-    const tipoTestamento = () => {
-      const tipo1 = libroSeleccionado.split("book")[1];
-      setTipoTestamento(tipo1 <= 39 ? "Old" : "New");
-    };
-    tipoTestamento();
-  }, [libroSeleccionado]);
+  const idioma = idiomaDesdeRuta(biblia);
 
-  //2. Obtener la ruta final para el archivo JSON
-  useEffect(() => {
-    const obtenerRuta = () => {
-      const ruta = `https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/src/assets/bibles/${biblia}/${tipoTestamento}/${libroSeleccionado}/chapter${capituloSeleccionadoNumero}.json`;
-      setRutaFinal(ruta);
-    };
+  // Se resuscribe al interruptor de fuente para recargar si cambia en Ajustes,
+  // sin obligar al usuario a refrescar la página.
+  const [fuente, setFuente] = useState(getDataSource);
+  useEffect(() => onDataSourceChange(setFuente), []);
 
-    if (tipoTestamento) {
-      obtenerRuta();
-    }
-  }, [tipoTestamento, capituloSeleccionadoNumero, libroSeleccionado, biblia]);
-
-  //3. Obtener el archivo JSON mediante fetch
   useEffect(() => {
-    const obtenerJSON = async () => {
+    if (!libroSeleccionado || !capituloSeleccionadoNumero || !versiculoSeleccionadoNumero) return;
+
+    const bookId = Number(libroSeleccionado.split("book")[1]);
+    if (!Number.isFinite(bookId)) return;
+
+    const controller = new AbortController();
+    let cancelado = false;
+
+    const cargar = async () => {
       try {
-        const response = await fetch(rutaFinal);
-        if (!response.ok) {
-          throw new Error("Error al obtener el JSON");
-        }
-        const data = await response.json();
-        setCapituloSeleccionado(data);
+        const data = await getChapter({
+          legacyPath: biblia,
+          bookId,
+          chapter: capituloSeleccionadoNumero,
+          signal: controller.signal,
+        });
+        if (!cancelado) setCapituloSeleccionado(data);
       } catch (error) {
-        const tipoTestamentoVersiculo = tipoTestamento === "Old" ? t("AntiguoTestamento") : t("NuevoTestamento");
-        setCapituloSeleccionado(t("NoExisteVersiculoParte1") + tipoTestamentoVersiculo + t("NoExisteVersiculoParte2"));
+        if (cancelado || error?.name === "AbortError") return;
+        const testamento = bookId <= LAST_OLD_TESTAMENT_BOOK ? t("AntiguoTestamento") : t("NuevoTestamento");
+        setCapituloSeleccionado(t("NoExisteVersiculoParte1") + testamento + t("NoExisteVersiculoParte2"));
       }
     };
-    if (rutaFinal && capituloSeleccionadoNumero && versiculoSeleccionadoNumero) {
-      obtenerJSON();
-    }
-  }, [rutaFinal, versiculoSeleccionadoNumero, tipoTestamento, t, capituloSeleccionadoNumero]);
 
-  // Retorna el ISO code del idioma
-  const IdiomaAcodigo = async (idiomaVal) => {
-    switch (idiomaVal) {
-      case "Español":
-        return "es";
-      case "English":
-        return "en";
-      case "Esperanto":
-        return "eo";
-      case "Greek":
-        return "el";
-      case "Hebrew":
-        return "iw";
-      case "Latin":
-        return "la";
-      default:
-        return "no";
-    }
-  };
+    cargar();
 
-  useEffect(() => {
-    // Obtener el ISO code del idioma a partir del nombre de la biblia
-    const obtenerIdioma = async () => {
-      const idiomaVal = biblia.split(". ")[1].split(" -")[0] ?? "Desconocido";
-      const code = await IdiomaAcodigo(idiomaVal);
-      setIdioma(code);
+    return () => {
+      cancelado = true;
+      controller.abort();
     };
-    obtenerIdioma();
-  }, [biblia]);
+  }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero, t, fuente]);
 
-  return (
-    <>
-      <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} />
-    </>
-  );
+  return <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} />;
 };
 
 VerseWindow.propTypes = {
