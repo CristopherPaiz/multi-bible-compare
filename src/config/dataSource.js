@@ -20,8 +20,26 @@ export const SOURCES = {
 
 const STORAGE_KEY = "dataSource";
 
-/** Base del backend. En producción se define VITE_API_URL en el build. */
-export const API_URL = (import.meta.env.VITE_API_URL ?? "http://localhost:3000").replace(/\/+$/, "");
+/** Backend desplegado. Se usa cuando la app NO corre en localhost. */
+const API_REMOTO = "https://biblian-api-rasjz3-e671c7-109-123-255-138.sslip.io";
+const API_LOCAL = "http://localhost:3000";
+
+const esLocalhost = () => {
+  if (typeof window === "undefined") return false;
+  const host = window.location.hostname;
+  return host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host.endsWith(".local");
+};
+
+/**
+ * Base del backend, en orden de prioridad:
+ *   1. VITE_API_URL, si se definió en el build (gana siempre).
+ *   2. localhost:3000, si la app se está sirviendo en local.
+ *   3. el backend desplegado.
+ *
+ * Así en desarrollo se apunta al API local sin configurar nada, y el build de
+ * producción funciona aunque nadie haya puesto la variable.
+ */
+export const API_URL = (import.meta.env.VITE_API_URL || (esLocalhost() ? API_LOCAL : API_REMOTO)).replace(/\/+$/, "");
 
 /** Rama del repo desde donde el CDN sirve los JSON originales. */
 export const CDN_URL = (
