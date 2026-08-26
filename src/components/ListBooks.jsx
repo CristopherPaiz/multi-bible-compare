@@ -8,6 +8,8 @@ import O from "/O.webp";
 import ON from "/ON.webp";
 import ReadMore from "./ReadMore";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
+import { empujarFavoritos } from "../hooks/useSync";
+import AuthContext from "../context/AuthContext";
 
 const MAX_SELECTIONS = 20;
 
@@ -16,6 +18,7 @@ const ListBooks = () => {
   const modalRef = useRef(null);
   const [selectedBooks, setSelectedBooks] = useState([]);
   const { t, idiomaNavegador } = useContext(LanguageContext);
+  const { usuario } = useContext(AuthContext);
   const { setBibliasSeleccionadas, setModalLibros, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero } = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -57,22 +60,36 @@ const ListBooks = () => {
   // FIN ESTRELLA
 
   useEffect(() => {
-    const selectedBooksString = localStorage.getItem("selectedBooks");
-    const favoriteBooksString = localStorage.getItem("favoriteBooks");
+    // Se parsea con guardas: si el valor guardado está corrupto o es `null`,
+    // `JSON.parse` devolvía null y el `.includes()` posterior reventaba.
+    const leerLista = (clave) => {
+      try {
+        const crudo = localStorage.getItem(clave);
+        if (!crudo) return [];
+        const valor = JSON.parse(crudo);
+        return Array.isArray(valor) ? valor : [];
+      } catch {
+        return [];
+      }
+    };
 
-    if (selectedBooksString) {
-      setSelectedBooks(JSON.parse(favoriteBooksString));
-    }
-
-    if (favoriteBooksString) {
-      setFavoriteBooks(JSON.parse(favoriteBooksString));
-    }
+    setSelectedBooks(leerLista("selectedBooks"));
+    setFavoriteBooks(leerLista("favoriteBooks"));
   }, []);
 
   useEffect(() => {
     localStorage.setItem("selectedBooks", JSON.stringify(selectedBooks));
     localStorage.setItem("favoriteBooks", JSON.stringify(favoriteBooks));
   }, [selectedBooks, favoriteBooks]);
+
+  // Los favoritos se replican al servidor cuando hay sesión. Se hace aparte del
+  // efecto de arriba y con retardo para no disparar una petición por cada clic
+  // mientras el usuario va marcando varias versiones seguidas.
+  useEffect(() => {
+    if (!usuario) return;
+    const id = setTimeout(() => empujarFavoritos(favoriteBooks), 800);
+    return () => clearTimeout(id);
+  }, [favoriteBooks, usuario]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

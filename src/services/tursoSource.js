@@ -53,6 +53,22 @@ export const resetCatalog = () => {
   catalogPromise = null;
 };
 
+/**
+ * Dispara la carga del catálogo al arrancar la app.
+ *
+ * Cumple dos funciones: deja el mapa ruta→id listo antes del primer capítulo, y
+ * despierta el backend. En el plan free de Render el proceso se duerme y la
+ * primera petición tarda 30-60s; hacerla mientras el usuario todavía está
+ * eligiendo versiones evita que ese costo caiga sobre la lectura.
+ */
+export const preheat = () => loadCatalog().catch(() => {});
+
+/**
+ * Mapas ruta↔id. Los necesita la sincronización de usuario: en localStorage los
+ * favoritos son nombres de carpeta y el backend los guarda como ids.
+ */
+export const getCatalogMaps = () => loadCatalog();
+
 // ---------------------------------------------------------------------------
 // Agrupador
 // ---------------------------------------------------------------------------

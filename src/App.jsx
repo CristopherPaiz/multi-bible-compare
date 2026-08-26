@@ -8,9 +8,13 @@ import Settings from "./pages/Settings";
 import ThemeContext from "./context/ThemeContext";
 import Home from "./pages/Home";
 import HistoryPage from "./pages/HistoryPage";
+import Search from "./pages/Search";
+import Account from "./pages/Account";
+import { useSync } from "./hooks/useSync";
 import FloatingBubble from "./components/FloatingBubble";
 import DataContext from "./context/DataContext";
 import ShareModal from "./components/ShareModal";
+import { preheat } from "./services/bibleSource";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -24,6 +28,15 @@ const App = () => {
   };
 
   const modalRef = useRef(null);
+
+  // Se despierta el backend en cuanto abre la app, no cuando el usuario ya
+  // quiere leer.
+  useEffect(() => {
+    preheat();
+  }, []);
+
+  // Si hay sesión, fusiona favoritos e historial con los del servidor.
+  useSync();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -56,6 +69,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/history" element={<HistoryPage />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/account" element={<Account />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

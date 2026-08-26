@@ -64,8 +64,8 @@ const StrongSingle = () => {
 
   const ImageUrls = useMemo(
     () => ({
-      light: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/light.webp",
-      dark: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/dark.webp",
+      light: "/light.webp",
+      dark: "/dark.webp",
     }),
     []
   );

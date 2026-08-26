@@ -38,10 +38,25 @@ export const LanguageProvider = ({ children }) => {
     localStorage.setItem("idioma", nuevoIdioma);
   };
 
-  const t = (clave) => {
+  /**
+   * Traduce una clave y sustituye variables con la forma `{nombre}`.
+   *
+   *   t("BuscarMinimo", { min: 3 })  ->  "Escribe al menos 3 caracteres"
+   *
+   * Antes el segundo argumento se ignoraba en silencio: llamadas como
+   * `t("MaxSelectionReached", { max })` ya lo pasaban y el número quedaba
+   * quemado en el texto traducido. Es compatible hacia atrás: sin `variables`
+   * el comportamiento es idéntico al anterior.
+   */
+  const t = (clave, variables) => {
     const traducciones = archivosIdioma.map((archivo) => archivo[clave]);
+    const texto = traducciones[indiceArchivo] || clave;
 
-    return traducciones[indiceArchivo] || clave;
+    if (!variables) return texto;
+
+    return texto.replace(/\{(\w+)\}/g, (coincidencia, nombre) =>
+      Object.prototype.hasOwnProperty.call(variables, nombre) ? String(variables[nombre]) : coincidencia
+    );
   };
 
   return <LanguageContext.Provider value={{ idiomaNavegador, cambiarIdioma, t }}>{children}</LanguageContext.Provider>;

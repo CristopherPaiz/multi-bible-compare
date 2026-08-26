@@ -4,13 +4,16 @@ import "./index.css";
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 import { DataProvider } from "./context/DataContext.jsx";
+import { AuthProvider } from "./context/AuthContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <ThemeProvider>
       <LanguageProvider>
         <DataProvider>
-          <App />
+          <AuthProvider>
+            <App />
+          </AuthProvider>
         </DataProvider>
       </LanguageProvider>
     </ThemeProvider>

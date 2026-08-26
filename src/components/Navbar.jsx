@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LOGO from "/bibleIcon.svg";
 import LanguageContext from "../context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 import INFO from "/info.png";
@@ -39,7 +40,7 @@ const Navbar = () => {
     <>
       <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex justify-between">
         <Link to="/" className="flex sm:hidden py-4 px-6 gap-2" style={{ alignItems: "center" }}>
-          <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-14 dark:invert" />
+          <img src={LOGO} alt="" className="h-14" />
           <div className="flex flex-col px-2 dark:text-white sm:flex sm:flex-wrap">
             <span className="text-xl font-extrabold">{t("Biblian")}</span>
             <span className="text-lg">{t("tituloComparar")}</span>
@@ -47,7 +48,7 @@ const Navbar = () => {
         </Link>
 
         <Link to="/" className="hidden sm:flex px-4 py-2 gap-2" style={{ alignItems: "center" }}>
-          <img src="https://cdn-icons-png.flaticon.com/512/5923/5923090.png" className="h-12 dark:invert" />
+          <img src={LOGO} alt="" className="h-12" />
           <div className="flex dark:text-white gap-2 sm:flex sm:flex-wrap">
             <span className="text-2xl font-extrabold">{t("Biblian")}</span>
             <span className="self-end text-lg font-bold">-</span>
@@ -88,11 +89,33 @@ const Navbar = () => {
               )}
               <li>
                 <Link
+                  to="/search"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  {t("Buscar")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/about"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
                   <img src={INFO} className="w-6 h-6 dark:invert m-auto" alt="Info" />
                   {t("Informacion")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/account"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                  </svg>
+                  {t("Cuenta")}
                 </Link>
               </li>
               <li>
@@ -147,11 +170,33 @@ const Navbar = () => {
               )}
               <li>
                 <Link
+                  to="/search"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  {t("Buscar")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/about"
                   className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
                 >
                   <img src={INFO} className="w-5 h-5 dark:invert m-auto" alt="Info" />
                   {t("Informacion")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/account"
+                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                  </svg>
+                  {t("Cuenta")}
                 </Link>
               </li>
               <li>

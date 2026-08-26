@@ -48,5 +48,13 @@ export const getChapter = ({ legacyPath, bookId, chapter, signal }) =>
 /** Arreglo de entradas Strong; la UI busca dentro por `id`. */
 export const getStrongBatch = ({ code, signal }) => withFallback("getStrongBatch", { code, signal });
 
+/**
+ * Precalienta la fuente activa. Sin efecto en el CDN (no hay servidor que
+ * despertar); en Turso carga el catálogo y despierta el backend.
+ */
+export const preheat = () => {
+  if (getDataSource() === SOURCES.TURSO) turso.preheat();
+};
+
 /** URL directa del mp3. No depende de la fuente. */
 export const getStrongAudioUrl = (code) => github.getStrongAudioUrl(code);

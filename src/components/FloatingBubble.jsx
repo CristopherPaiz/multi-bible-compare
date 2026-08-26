@@ -113,13 +113,16 @@ const FloattingBubble = () => {
     bubble.style.left = `${newX}px`;
   };
 
-  const handleClickOutsideModal = (event) => {
-    if (!isDragging && modalRef.current && !modalRef.current.contains(event.target)) {
-      setIsModalOpen(false);
-    }
-  };
-
   useEffect(() => {
+    // El handler se declara DENTRO del efecto: fuera se recreaba en cada render
+    // y quedaba fuera de las dependencias, así que el listener podía seguir
+    // viendo un `isDragging` viejo.
+    const handleClickOutsideModal = (event) => {
+      if (!isDragging && modalRef.current && !modalRef.current.contains(event.target)) {
+        setIsModalOpen(false);
+      }
+    };
+
     document.addEventListener("mousedown", handleClickOutsideModal);
     return () => {
       document.removeEventListener("mousedown", handleClickOutsideModal);

@@ -290,6 +290,10 @@ export const DataProvider = ({ children }) => {
       // Guardar historial actualizado en el LocalStorage
       localStorage.setItem("history", JSON.stringify(history));
     }
+    // Se depende SOLO del versículo a propósito: la entrada de historial se
+    // graba cuando el usuario elige un versículo. Incluir las demás variables
+    // haría que cambiar de biblia o de capítulo duplicara entradas.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [versiculoSeleccionadoNumero]);
 
   //Eliminar elemento del hisotrial del LS
@@ -357,8 +361,8 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     const cambiarEstiloStrong = async () => {
       const ImageUrls = {
-        light: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/light.webp",
-        dark: "https://raw.githubusercontent.com/CristopherPaiz/multi-bible-compare/main/public/dark.webp",
+        light: "/light.webp",
+        dark: "/dark.webp",
       };
 
       const imageUrl = ImageUrls[theme];
