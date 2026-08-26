@@ -12,7 +12,7 @@ import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 import { useBloquearScroll } from "../hooks/useBloquearScroll";
 import { empujarFavoritos } from "../hooks/useSync";
 import AuthContext from "../context/AuthContext";
-import { BIBLIAS, RECOMENDADAS, ORDEN_IDIOMAS } from "../data/biblias";
+import { BIBLIAS, RECOMENDADAS, CATEGORIAS_RECOMENDADAS, MAPA_RECOMENDACIONES, ORDEN_IDIOMAS } from "../data/biblias";
 
 const MAX_SELECTIONS = 20;
 const CLAVE_SECCIONES = "seccionesBibliasAbiertas";
@@ -210,6 +210,10 @@ const ListBooks = () => {
         queqchi: t("Queqchi"),
         aramaic: t("Arameo"),
         guatemala: t("Guatemala"),
+        portuguese: t("Portugues"),
+        french: t("Frances"),
+        german: t("Aleman"),
+        italian: t("Italiano"),
       })[idioma] || idioma,
     [t]
   );
@@ -441,42 +445,93 @@ const ListBooks = () => {
               )}
             </div>
 
-            {/* AYUDA */}
+            {/* AYUDA Y PRESETS DE ESTUDIO */}
             {infoAbierta && (
-              <div className="max-h-[45%] shrink-0 overflow-y-auto border-b border-gray-200 bg-gray-50 px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900">
-                <h3 className="text-sm font-bold">{t("ANSignificado")}</h3>
-                <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2">
-                  <span className="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white">{t("AntiguoTestamentoInicial")}</span>
-                  <span className="text-sm">{t("AntiguoTestamento")}</span>
-                  <span className="rounded bg-blue-600 px-2 py-1 text-xs font-bold text-white">{t("NuevoTestamentoInicial")}</span>
-                  <span className="text-sm">{t("NuevoTestamento")}</span>
+              <div className="max-h-[50%] shrink-0 overflow-y-auto border-b border-gray-200 bg-gray-50 px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900 space-y-4">
+                <div>
+                  <h3 className="text-sm font-bold text-gray-900 dark:text-gray-100">{t("ANSignificado")}</h3>
+                  <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2">
+                    <span className="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white">{t("AntiguoTestamentoInicial")}</span>
+                    <span className="text-sm text-gray-800 dark:text-gray-200">{t("AntiguoTestamento")}</span>
+                    <span className="rounded bg-blue-600 px-2 py-1 text-xs font-bold text-white">{t("NuevoTestamentoInicial")}</span>
+                    <span className="text-sm text-gray-800 dark:text-gray-200">{t("NuevoTestamento")}</span>
+                  </div>
+                  <p className="mt-2 text-xs text-gray-600 dark:text-gray-400">{t("ANExplicacion")}</p>
                 </div>
-                <p className="mt-2 text-xs text-gray-600 dark:text-gray-400">{t("ANExplicacion")}</p>
 
-                <h3 className="mt-4 text-sm font-bold">{t("Recomendaciones")}</h3>
-                <div className="mt-2 flex flex-col gap-4 sm:flex-row">
-                  <div className="sm:w-1/2">
-                    <h4 className="text-xs font-bold uppercase tracking-wide opacity-70">{t("PrecisionTeologica")}</h4>
-                    <ol className="mt-1 space-y-0.5 text-sm">
-                      <li>1. Vulgate Version (405)</li>
-                      <li>2. King James Version (1611)</li>
-                      <li>3. Aleppo Codex Bible (920)</li>
-                      <li>4. Biblia del Oso (1569)</li>
-                      <li>5. Reina Valera (1960)</li>
-                    </ol>
+                <div className="pt-2 border-t border-gray-200 dark:border-neutral-800">
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <div>
+                      <h3 className="text-sm font-bold text-gray-900 dark:text-gray-100 flex items-center gap-1.5">
+                        <span>✨</span>
+                        <span>{t("PresetsEstudio")}</span>
+                      </h3>
+                      <p className="text-xs text-gray-500 dark:text-gray-400">
+                        {t("GuiasEstudio")}
+                      </p>
+                    </div>
                   </div>
-                  <div className="sm:w-1/2">
-                    <h4 className="text-xs font-bold uppercase tracking-wide opacity-70">{t("PrecisionTraduccion")}</h4>
-                    <ol className="mt-1 space-y-0.5 text-sm">
-                      <li>1. Vulgate Version (405)</li>
-                      <li>2. Aleppo Codex Bible (920)</li>
-                      <li>3. King James Version (1611)</li>
-                      <li>4. Tyndale (1537)</li>
-                      <li>5. Biblia del Oso (1569)</li>
-                    </ol>
+
+                  <div className="space-y-3 mt-3">
+                    {CATEGORIAS_RECOMENDADAS.map((cat) => {
+                      const todasSeleccionadas = cat.versiones.every((v) => selectedBooks.includes(v.ruta));
+                      const algunaSeleccionada = cat.versiones.some((v) => selectedBooks.includes(v.ruta));
+
+                      return (
+                        <div
+                          key={cat.id}
+                          className="p-3 rounded-xl border border-gray-200 dark:border-neutral-700/80 bg-white dark:bg-neutral-800/80 shadow-xs space-y-2.5"
+                        >
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div>
+                              <h4 className="font-bold text-xs sm:text-sm text-gray-900 dark:text-gray-100 flex items-center gap-1.5">
+                                <span>{cat.icono}</span>
+                                <span>{cat.titulo}</span>
+                              </h4>
+                              <p className="text-[11px] text-gray-600 dark:text-gray-300 mt-0.5 leading-relaxed">
+                                {cat.descripcion}
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => anadirSeleccion(cat.versiones.map((v) => v.ruta))}
+                              className={`shrink-0 text-xs px-2.5 py-1 rounded-lg font-medium transition self-start sm:self-center ${
+                                todasSeleccionadas
+                                  ? "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300 border border-green-300 dark:border-green-800"
+                                  : "bg-blue-600 hover:bg-blue-700 text-white shadow-xs"
+                              }`}
+                            >
+                              {todasSeleccionadas ? "✓ Preset Activo" : t("AplicarPreset")}
+                            </button>
+                          </div>
+
+                          {/* Chips de versiones interactivas */}
+                          <div className="flex flex-wrap gap-1.5 pt-1">
+                            {cat.versiones.map((ver) => {
+                              const activa = selectedBooks.includes(ver.ruta);
+                              return (
+                                <button
+                                  key={ver.ruta}
+                                  type="button"
+                                  onClick={() => handleBookToggle(ver.ruta)}
+                                  title={`${ver.titulo} — ${ver.tag}`}
+                                  className={`text-[11px] px-2.5 py-1 rounded-lg border transition text-left flex items-center gap-1.5 ${
+                                    activa
+                                      ? "border-green-500 bg-green-50 text-green-900 dark:border-green-600 dark:bg-green-950/70 dark:text-green-200 font-semibold"
+                                      : "border-gray-200 bg-gray-50 text-gray-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-gray-300 hover:border-gray-400 dark:hover:border-neutral-500"
+                                  }`}
+                                >
+                                  <span>{activa ? "✓" : "+"}</span>
+                                  <span>{ver.titulo}</span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
-                <p className="mt-3 text-xs text-gray-600 dark:text-gray-400">{t("PreferencaiUsuario")}</p>
               </div>
             )}
 
@@ -508,6 +563,8 @@ const ListBooks = () => {
                         {libros.map(([titulo, libro]) => {
                           const seleccionada = selectedBooks.includes(libro.ruta);
                           const favorita = favoriteBooks.includes(libro.ruta);
+                          const recInfo = MAPA_RECOMENDACIONES[libro.ruta];
+
                           return (
                             <li key={titulo}>
                               <div
@@ -517,9 +574,6 @@ const ListBooks = () => {
                                     : "border-gray-200 bg-gray-50 dark:border-neutral-800 dark:bg-neutral-900"
                                 }`}
                               >
-                                {/* La estrella era un div con onClick DENTRO del botón de la
-                                    fila: un clic marcaba favorito y además seleccionaba la
-                                    versión. Ahora son dos botones hermanos. */}
                                 <button
                                   type="button"
                                   onClick={() => handleBookToggle(libro.ruta)}
@@ -544,10 +598,14 @@ const ListBooks = () => {
                                   </span>
                                   {insignia(libro)}
                                   <span className="flex-1 text-sm leading-snug">
-                                    {titulo}
-                                    {RECOMENDADAS.includes(libro.ruta) && (
-                                      <span className="ml-2 whitespace-nowrap rounded-full bg-cyan-600 px-2 py-0.5 text-[11px] font-semibold text-white">
-                                        {t("Recomendada")}
+                                    <span>{titulo}</span>
+                                    {recInfo && (
+                                      <span
+                                        title={recInfo.categoria}
+                                        className="ml-2 inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-blue-100 text-blue-900 dark:bg-blue-950/90 dark:text-blue-300 px-2 py-0.5 text-[10px] font-medium"
+                                      >
+                                        <span>{recInfo.icono}</span>
+                                        <span>{recInfo.tag}</span>
                                       </span>
                                     )}
                                   </span>

@@ -1,6 +1,6 @@
 /**
  * Catálogo detallado de colaboraciones, editoriales y licencias de derechos de autor
- * para todas las 150 versiones bíblicas disponibles en Multi Bible Compare.
+ * para todas las versiones bíblicas disponibles en Multi Bible Compare.
  *
  * Fuente original de archivos y esquemas estructurados:
  * Beblia (https://github.com/Beblia/Holy-Bible-XML-Format)
@@ -673,6 +673,24 @@ export const BIBLIAS_ATRIBUCION = {
       "link": ""
     },
     {
+      "title": "Biblia Hispanoamericana [BHTI] (2011)",
+      "language": "Español",
+      "rawDir": "130. Español - Biblia Hispanoamericana [BHTI] (2011)",
+      "editorial": "Sociedad Bíblica de España",
+      "info": "La Biblia Hispanoamericana (BHTI) Traducción Interconfesional © 2011 Sociedad Bíblica de España. Usada con permiso.",
+      "tipo": "Copyright / Sociedad Bíblica",
+      "link": "https://www.bible.com/bible/222/MAT.3.BHTI"
+    },
+    {
+      "title": "Biblia del Jubileo [JBS] (2000)",
+      "language": "Español",
+      "rawDir": "131. Español - Biblia del Jubileo [JBS] (2000)",
+      "editorial": "Ransom Press International / Russell M. Stendal",
+      "info": "Biblia del Jubileo 2000 (JBS) © 2000, 2010 por Ransom Press International, Inc.",
+      "tipo": "Copyright / Ministerio",
+      "link": "https://www.bible.com/bible/1076/MAT.3.JBS"
+    },
+    {
       "title": "Reina Valera [RV60] (1960)",
       "language": "Español",
       "rawDir": "75. Español - Reina Valera [RV60] (1960)",
@@ -790,6 +808,24 @@ export const BIBLIAS_ATRIBUCION = {
       "info": "NET Bible® copyright © 1996-2006 by Biblical Studies Press, L.L.C. (www.bible.org) All rights reserved.",
       "tipo": "Copyright / Open Study",
       "link": ""
+    },
+    {
+      "title": "Berean Standard Bible [BSB] (2020)",
+      "language": "English",
+      "rawDir": "128. English - Berean Standard Bible [BSB] (2020)",
+      "editorial": "Bible Hub / Berean Bible Translation Committee",
+      "info": "The Holy Bible, Berean Standard Bible (BSB) © 2016-2020 by Bible Hub. Dedicated to the Public Domain.",
+      "tipo": "Public Domain",
+      "link": "https://www.bible.com/bible/3034/MRK.7.BSB"
+    },
+    {
+      "title": "Amplified Bible Classic [AMPC] (1987)",
+      "language": "English",
+      "rawDir": "129. English - Amplified Bible Classic [AMPC] (1987)",
+      "editorial": "The Lockman Foundation",
+      "info": "Amplified Bible, Classic Edition (AMPC) © 1954, 1958, 1962, 1964, 1965, 1987 by The Lockman Foundation.",
+      "tipo": "Copyright / Editorial",
+      "link": "https://www.bible.com/bible/8/JHN.3.AMPC"
     },
     {
       "title": "New International Reader's Version [NIRV] (1996)",
@@ -987,7 +1023,7 @@ export const BIBLIAS_ATRIBUCION = {
       "language": "Greek",
       "rawDir": "088. Greek - Filos Pergamos (2017)",
       "editorial": "Pergamos Publications / Spyros Filos",
-      "info": "H Αγία Γραφή στη Δημοτική (Filos Pergamos) © Pergamos Publications, Averof 23, Atenas, Grecia.",
+      "info": "H Αγía Γραφή στη Δημοτική (Filos Pergamos) © Pergamos Publications, Averof 23, Atenas, Grecia.",
       "tipo": "Copyright / Editorial",
       "link": ""
     },
@@ -1273,6 +1309,86 @@ export const BIBLIAS_ATRIBUCION = {
       "info": "The Westminster Leningrad Codex with vowel points and cantillation (2017) © The J. Alan Groves Center.",
       "tipo": "Dominio Público / Académico",
       "link": ""
+    }
+  ],
+  "Português": [
+    {
+      "title": "Almeida Revista e Corrigida [ARC] (2009)",
+      "language": "Português",
+      "rawDir": "120. Português - Almeida Revista e Corrigida [ARC] (2009)",
+      "editorial": "Sociedade Bíblica do Brasil",
+      "info": "Almeida Revista e Corrigida (ARC) © 2009 Sociedade Bíblica do Brasil. Todos os direitos reservados.",
+      "tipo": "Copyright / Sociedad Bíblica",
+      "link": "https://www.bible.com/bible/212/GEN.1.ARC"
+    },
+    {
+      "title": "Almeida Século 21 [A21] (2008)",
+      "language": "Português",
+      "rawDir": "121. Português - Almeida Século 21 [A21] (2008)",
+      "editorial": "Edições Vida Nova",
+      "info": "Bíblia Almeida Século 21 (A21) © 2008 Edições Vida Nova.",
+      "tipo": "Copyright / Editorial",
+      "link": "https://www.bible.com/bible/2645/MAT.8.A21"
+    }
+  ],
+  "Français": [
+    {
+      "title": "Bible David Martin (1744)",
+      "language": "Français",
+      "rawDir": "122. Français - Bible David Martin (1744)",
+      "editorial": "David Martin",
+      "info": "La Sainte Bible: Traduction originale de David Martin (1744). Dominio Público.",
+      "tipo": "Dominio Público",
+      "link": "https://www.bible.com/bible/62/GEN.2.FMAR"
+    },
+    {
+      "title": "Bible Ostervald (1996)",
+      "language": "Français",
+      "rawDir": "123. Français - Bible Ostervald (1996)",
+      "editorial": "Jean-Frédéric Ostervald",
+      "info": "La Sainte Bible selon la révision de J. F. Ostervald (1996). Dominio Público.",
+      "tipo": "Dominio Público",
+      "link": "https://www.bible.com/bible/131/GEN.2.OST"
+    }
+  ],
+  "Deutsch": [
+    {
+      "title": "Lutherbibel (1912)",
+      "language": "Deutsch",
+      "rawDir": "124. Deutsch - Lutherbibel (1912)",
+      "editorial": "Martin Luther / Cansteinsche Bibelanstalt",
+      "info": "Die Bibel nach der deutschen Übersetzung von Martin Luther (Ausgabe 1912). Dominio Público.",
+      "tipo": "Dominio Público",
+      "link": "https://www.bible.com/bible/51/JHN.8.DELUT"
+    },
+    {
+      "title": "Elberfelder Bibel (1905)",
+      "language": "Deutsch",
+      "rawDir": "125. Deutsch - Elberfelder Bibel (1905)",
+      "editorial": "R. Brockhaus Verlag",
+      "info": "Elberfelder Bibel (Unrevidierte Fassung 1905) von J. N. Darby, Julius von Poseck und Carl Brockhaus. Dominio Público.",
+      "tipo": "Dominio Público",
+      "link": "https://www.bible.com/bible/57/JHN.8.ELB"
+    }
+  ],
+  "Italiano": [
+    {
+      "title": "Giovanni Diodati Bibbia (1885)",
+      "language": "Italiano",
+      "rawDir": "126. Italiano - Giovanni Diodati Bibbia (1885)",
+      "editorial": "Giovanni Diodati / BFBS",
+      "info": "La Sacra Bibbia tradotta in lingua italiana da Giovanni Diodati (1649, rev. 1885). Dominio Público.",
+      "tipo": "Dominio Público",
+      "link": "https://www.bible.com/bible/54/DEU.18.DB1885"
+    },
+    {
+      "title": "Bibbia Riveduta Luzzi (1927)",
+      "language": "Italiano",
+      "rawDir": "127. Italiano - Bibbia Riveduta Luzzi (1927)",
+      "editorial": "Giovanni Luzzi / Società Biblica Britannica",
+      "info": "La Sacra Bibbia: Versione Riveduta dal Dott. Giovanni Luzzi (1927). Dominio Público.",
+      "tipo": "Dominio Público",
+      "link": "https://www.bible.com/bible/141/GAL.2.RDV24"
     }
   ],
   "Esperanto": [

@@ -31,6 +31,10 @@
   "Nahuatl": "Náhuatl",
   "Queqchi": "Q'eqchi'",
   "Arameo": "Arameo",
+  "Portugues": "Portugués",
+  "Frances": "Francés",
+  "Aleman": "Alemán",
+  "Italiano": "Italiano",
   "book1": "Génesis",
   "book2": "Éxodo",
   "book3": "Levítico",
@@ -302,5 +306,10 @@
   "VerOriginal": "Ver texto original",
   "CompartirTamanoTexto": "Tamaño del texto",
   "CompartirAjustar": "Ajustar",
-  "CompartirTipografia": "Tipografía"
+  "CompartirTipografia": "Tipografía",
+  "PresetsEstudio": "Presets de Estudio Sugeridos",
+  "AplicarPreset": "Cargar este Preset",
+  "PresetCargado": "Preset cargado con éxito",
+  "GuiasEstudio": "Guía por Propósito de Estudio",
+  "RecomendadaBadge": "Recomendada"
 }
