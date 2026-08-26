@@ -1004,171 +1004,171 @@ export const BIBLIAS = {
 };
 
 /**
- * Categorías temáticas de recomendación y presets de estudio curados.
+ * Categorías temáticas de recomendación y presets de estudio curados con claves de localización.
  */
 export const CATEGORIAS_RECOMENDADAS = [
   {
     id: "historica",
-    titulo: "Contexto Histórico & Textos Antiguos",
+    tituloKey: "Categoria_historica",
+    descripcionKey: "Desc_historica",
     icono: "📜",
-    descripcion: "Manuscritos originales y las traducciones clásicas pioneras que marcaron la historia bíblica.",
     versiones: [
       {
         titulo: "Códice de Alepo (920 d.C.)",
         ruta: "115. Hebrew - Tanah Aleppo Codex (920)",
-        tag: "Manuscrito hebreo más antiguo"
+        tagKey: "Tag_Aleppo"
       },
       {
         titulo: "Biblia del Oso (1569)",
         ruta: "011. Español - Biblia del Oso (1569)",
-        tag: "Traducción clásica de Casiodoro de Reina"
+        tagKey: "Tag_Oso"
       },
       {
         titulo: "King James Version (1611)",
         ruta: "09. English - King James Version [KJV] (1611)",
-        tag: "Clásico monumental de la lengua inglesa"
+        tagKey: "Tag_KJV"
       },
       {
         titulo: "William Tyndale (1537)",
         ruta: "18. English - Tyndale (1537)",
-        tag: "Primera traducción al inglés desde originales"
+        tagKey: "Tag_Tyndale"
       },
       {
         titulo: "Vulgata Latina (405 d.C.)",
         ruta: "51. Latin - Vulgate Version (405)",
-        tag: "Traducción histórica de San Jerónimo"
+        tagKey: "Tag_Vulgate"
       },
       {
         titulo: "Reina Valera Antigua (1602)",
         ruta: "043. Español - Biblia Reina Valera Antigua (1602)",
-        tag: "Revisión histórica de Cipriano de Valera"
+        tagKey: "Tag_RVA"
       }
     ]
   },
   {
     id: "formal",
-    titulo: "Precisión Formal (Palabra por Palabra)",
+    tituloKey: "Categoria_formal",
+    descripcionKey: "Desc_formal",
     icono: "🎯",
-    descripcion: "Traducciones de equivalencia formal estricta con máxima fidelidad gramatical y léxica a los manuscritos.",
     versiones: [
       {
         titulo: "La Biblia de las Américas (LBLA)",
         ruta: "009. Español - Biblia de las Américas (1997)",
-        tag: "Referente hispano en fidelidad formal"
+        tagKey: "Tag_LBLA"
       },
       {
         titulo: "Biblia Textual (BTX IV)",
         ruta: "058. Español - Biblia Textual IV edición (2015)",
-        tag: "Restauración crítica del texto original"
+        tagKey: "Tag_BTX"
       },
       {
         titulo: "NASB (1971)",
         ruta: "10. English - New American Standard Bible [NASB] (1971)",
-        tag: "El estándar en inglés de precisión literal"
+        tagKey: "Tag_NASB"
       },
       {
         titulo: "ESV (2016)",
         ruta: "06. English - English Standard Version [ESV] (2016)",
-        tag: "Equilibrio formal y belleza literaria"
+        tagKey: "Tag_ESV"
       },
       {
         titulo: "Young's Literal Translation (1898)",
         ruta: "19. English - Young's Literal Translation [YLT] (1898)",
-        tag: "Máxima literalidad término a término"
+        tagKey: "Tag_YLT"
       }
     ]
   },
   {
     id: "dinamica",
-    titulo: "Lectura Fluida (Equivalencia Dinámica)",
+    tituloKey: "Categoria_dinamica",
+    descripcionKey: "Desc_dinamica",
     icono: "📖",
-    descripcion: "Traducciones contemporáneas orientadas a la claridad conceptual, naturalidad del idioma y lectura continua.",
     versiones: [
       {
         titulo: "Nueva Versión Internacional (NVI)",
         ruta: "069. Español - Nueva Versión Internacional (2015)",
-        tag: "La traducción dinámica moderna más extendida"
+        tagKey: "Tag_NVI"
       },
       {
         titulo: "Nueva Traducción Viviente (NTV)",
         ruta: "027. Español - Biblia Nueva Traducción Viviente (2010)",
-        tag: "Claridad y calidez devocional contemporánea"
+        tagKey: "Tag_NTV"
       },
       {
         titulo: "Traducción en Lenguaje Actual (TLA)",
         ruta: "021. Español - Biblia Lenguaje Sencillo (2000)",
-        tag: "Lenguaje directo y accesible"
+        tagKey: "Tag_TLA"
       },
       {
         titulo: "Christian Standard Bible (CSB)",
         ruta: "03. English - Christian Standard Bible [CSB] (2017)",
-        tag: "Claridad moderna equilibrada en inglés"
+        tagKey: "Tag_CSB"
       },
       {
         titulo: "Palabra de Dios para Todos (PDT)",
         ruta: "017. Español - Biblia La Palabra de Dios para Todos (2012)",
-        tag: "Enfoque pedagógico y sencillo"
+        tagKey: "Tag_PDT"
       }
     ]
   },
   {
     id: "exegesis",
-    titulo: "Estudio Exegético & Teológico",
+    tituloKey: "Categoria_exegesis",
+    descripcionKey: "Desc_exegesis",
     icono: "🏛️",
-    descripcion: "Versiones críticas con amplio respaldo ecuménico, ricas en matices de manuscritos y notas de estudio.",
     versiones: [
       {
         titulo: "Biblia de Jerusalén (1998)",
         ruta: "007. Español - Biblia de Jerusalén (1998)",
-        tag: "La obra cumbre de la Escuela Bíblica"
+        tagKey: "Tag_Jerusalem"
       },
       {
         titulo: "Biblia Hispanoamericana (BHTI)",
         ruta: "130. Español - Biblia Hispanoamericana [BHTI] (2011)",
-        tag: "Traducción interconfesional de rigor académico"
+        tagKey: "Tag_BHTI"
       },
       {
         titulo: "Berean Standard Bible (BSB)",
         ruta: "128. English - Berean Standard Bible [BSB] (2020)",
-        tag: "Texto de estudio abierto de alta precisión"
+        tagKey: "Tag_BSB"
       },
       {
         titulo: "Reina Valera (1960)",
         ruta: "75. Español - Reina Valera [RV60] (1960)",
-        tag: "El estándar histórico y devocional"
+        tagKey: "Tag_RV60"
       },
       {
         titulo: "La Palabra Española (BLP)",
         ruta: "018. Español - Biblia La Palabra Española (2010)",
-        tag: "Traducción literaria y exegética de la SBE"
+        tagKey: "Tag_BLP"
       }
     ]
   },
   {
     id: "strong",
-    titulo: "Idiomas Originales & Códigos Strong",
+    tituloKey: "Categoria_strong",
+    descripcionKey: "Desc_strong",
     icono: "🔍",
-    descripcion: "Textos en hebreo y griego con numeración Strong y morfología para análisis de vocablos originales.",
     versiones: [
       {
         titulo: "Stuttgartensia Hebrea [Strongs]",
         ruta: "112. Hebrew - Stuttgartensia [Strongs] (2022)",
-        tag: "Tanaj hebreo con morfología Strong"
+        tagKey: "Tag_Stuttgartensia"
       },
       {
         titulo: "Berean Interlinear Griego",
         ruta: "077. Greek - Berean Interlinear (2016)",
-        tag: "Nuevo Testamento interlineal"
+        tagKey: "Tag_BereanInterlinear"
       },
       {
         titulo: "Bizantino Español-Griego",
         ruta: "003. Español - Biblia Bizantino Español-Griego (1551)",
-        tag: "Texto Mayoritario con códigos Strong"
+        tagKey: "Tag_Bizantino"
       },
       {
         titulo: "Westcott and Hort (1885)",
         ruta: "092. Greek - Wescott and Hort (1885)",
-        tag: "Texto Crítico griego alejandrino"
+        tagKey: "Tag_WestcottHort"
       }
     ]
   }
@@ -1179,13 +1179,13 @@ export const RECOMENDADAS = Array.from(
   new Set(CATEGORIAS_RECOMENDADAS.flatMap((cat) => cat.versiones.map((v) => v.ruta)))
 );
 
-/** Mapa rápido de ruta -> { tag, categoria, icono } para renderizado de badges. */
+/** Mapa rápido de ruta -> { tagKey, categoriaKey, icono } para renderizado de badges. */
 export const MAPA_RECOMENDACIONES = CATEGORIAS_RECOMENDADAS.reduce((acc, cat) => {
   for (const v of cat.versiones) {
     if (!acc[v.ruta]) {
       acc[v.ruta] = {
-        tag: v.tag,
-        categoria: cat.titulo,
+        tagKey: v.tagKey,
+        categoriaKey: cat.tituloKey,
         icono: cat.icono
       };
     }
@@ -1209,3 +1209,209 @@ export const ORDEN_IDIOMAS = [
   "german",
   "italian"
 ];
+
+/**
+ * Diccionario de características especiales de marcado por versión:
+ * - strong: Números Strong interactivos
+ * - morfologia: Análisis morfológico gramatical de vocablos originales
+ * - glosas: Variantes textuales y glosas críticas
+ * - cursivas: Palabras añadidas por traductores
+ */
+export const CARACTERISTICAS_POR_BIBLIA = {
+  "003. Español - Biblia Bizantino Español-Griego (1551)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "009. Español - Biblia de las Américas (1997)": [
+    "cursivas"
+  ],
+  "016. Español - Biblia Kadosh Israelita Mesiánica (2014)": [
+    "cursivas"
+  ],
+  "017. Español - Biblia La Palabra de Dios para Todos (2012)": [
+    "glosas"
+  ],
+  "023. Español - Biblia Nestle-Aland 27 Español-Griego (2009)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "026. Español - Biblia Nueva Traducción Viviente (2009)": [
+    "glosas",
+    "cursivas"
+  ],
+  "027. Español - Biblia Nueva Traducción Viviente (2010)": [
+    "glosas",
+    "cursivas"
+  ],
+  "028. Español - Biblia Palabla de Dios para ti (2017)": [
+    "cursivas"
+  ],
+  "032. Español - Biblia Reina Valera (1865)": [
+    "cursivas"
+  ],
+  "033. Español - Biblia Reina Valera (1909)": [
+    "strong"
+  ],
+  "034. Español - Biblia Reina Valera (1960)": [
+    "strong"
+  ],
+  "039. Español - Biblia Reina Valera (2017)": [
+    "strong"
+  ],
+  "046. Español - Biblia Reina Valera Gómez (2010)": [
+    "cursivas"
+  ],
+  "047. Español - Biblia Reina Valera Independiente (2012)": [
+    "glosas"
+  ],
+  "050. Español - Biblia Reina Valera Sociedad Trinitaria (2023) (": [
+    "cursivas"
+  ],
+  "053. Español - Biblia Según el Texto Bizantino (2005)": [
+    "cursivas"
+  ],
+  "058. Español - Biblia Textual IV edición (2015)": [
+    "glosas"
+  ],
+  "059. Español - Biblia Tischendorf Español-Griego (1874)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "063. Español - Biblia Westcott y Hort Español-Griego (2014)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "065. Español - La Santa Biblia (2008)": [
+    "glosas"
+  ],
+  "066. Español - Nueva Biblia de las Américas (1986)": [
+    "cursivas"
+  ],
+  "068. Español - Nueva Biblia Viva (2006)": [
+    "glosas"
+  ],
+  "069. Español - Nueva Versión Internacional (2015)": [
+    "glosas"
+  ],
+  "072. Español - Sagrada Biblia - Versión de la LXX (1986)": [
+    "glosas",
+    "cursivas"
+  ],
+  "074. Greek - Analytic Septuagint (2014)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "075. Greek - Apostolic Bible Polyglot (2015)": [
+    "strong",
+    "glosas"
+  ],
+  "077. Greek - Berean Interlinear (2016)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "078. Greek - BHP (2019)": [
+    "strong",
+    "morfologia"
+  ],
+  "079. Greek - BHP Medieval (2019)": [
+    "strong",
+    "morfologia"
+  ],
+  "080. Greek - Bible combine Textus Receptus, Scrivener, Byzantine Majority, Alexandrian-Critical (2014)": [
+    "strong",
+    "morfologia"
+  ],
+  "082. Greek - Byzantine + Nestle-Aland (2005)": [
+    "strong",
+    "morfologia",
+    "glosas"
+  ],
+  "083. Greek - Byzantine F35 (2015)": [
+    "strong",
+    "morfologia"
+  ],
+  "084. Greek - Codex Alexandrinus (1782)": [
+    "glosas",
+    "cursivas"
+  ],
+  "085. Greek - Codex Sinaiticus (1862)": [
+    "glosas"
+  ],
+  "087. Greek - F35 with Notes (2015)": [
+    "strong",
+    "morfologia"
+  ],
+  "090. Greek - Nestle (1904)": [
+    "strong",
+    "morfologia"
+  ],
+  "108. Hebrew - Habrit Hakhadasha - Haderekh (2009)": [
+    "glosas"
+  ],
+  "110. Hebrew - Open Scriptures (1989)": [
+    "strong",
+    "morfologia",
+    "cursivas"
+  ],
+  "111. Hebrew - Open Scriptures (1998)": [
+    "strong",
+    "morfologia",
+    "cursivas"
+  ],
+  "112. Hebrew - Stuttgartensia [Strongs] (2022)": [
+    "strong",
+    "morfologia",
+    "glosas",
+    "cursivas"
+  ],
+  "113. Hebrew - Tanach and Delitzsch's (2021)": [
+    "cursivas"
+  ],
+  "114. Hebrew - Tanach and Modern (2017)": [
+    "cursivas"
+  ],
+  "116. Hebrew - Westminster Leningrad Codex with vowels (2014)": [
+    "strong",
+    "glosas"
+  ],
+  "117. Hebrew - Westminster Leningrad Codex with vowels (2015)": [
+    "strong",
+    "glosas"
+  ],
+  "118. Hebrew - Westminster Leningrad Codex with vowels (2016)": [
+    "strong"
+  ]
+};
+
+export const MAPA_CARACTERISTICAS = {
+  strong: {
+    label: "Strong",
+    icono: "🔢",
+    tooltip: "Contiene números y concordancia Strong interactiva",
+    clase: "bg-blue-50 text-blue-700 dark:bg-blue-950/80 dark:text-blue-300 border-blue-200 dark:border-blue-800"
+  },
+  morfologia: {
+    label: "Morfología",
+    icono: "🔤",
+    tooltip: "Contiene análisis gramatical y morfológico",
+    clase: "bg-purple-50 text-purple-700 dark:bg-purple-950/80 dark:text-purple-300 border-purple-200 dark:border-purple-800"
+  },
+  glosas: {
+    label: "Notas",
+    icono: "📝",
+    tooltip: "Contiene variantes críticas y notas de manuscritos",
+    clase: "bg-amber-50 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300 border-amber-200 dark:border-amber-800"
+  },
+  cursivas: {
+    label: "Cursivas",
+    icono: "📑",
+    tooltip: "Resalta palabras añadidas por traductores",
+    clase: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800"
+  }
+};

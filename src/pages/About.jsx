@@ -1,6 +1,7 @@
 import { useContext, useState, useMemo } from "react";
 import LanguageContext from "../context/LanguageContext";
 import { BEBLIA_INFO, BIBLIAS_ATRIBUCION } from "../data/colaboradores";
+import { CARACTERISTICAS_POR_BIBLIA, MAPA_CARACTERISTICAS } from "../data/biblias";
 
 const About = () => {
   const { t } = useContext(LanguageContext);
@@ -115,7 +116,7 @@ const About = () => {
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-1 text-xs font-semibold px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition whitespace-nowrap self-start sm:self-center shadow"
             >
-              Repositorio Beblia
+              {t("RepositorioBeblia")}
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
@@ -131,7 +132,7 @@ const About = () => {
             <div>
               <h2 className="text-2xl font-bold dark:text-white">{t("Colaboradores")}</h2>
               <p className="text-xs text-gray-500 dark:text-gray-400">
-                {totalVersiones} versiones registradas con sus atribuciones y licencias
+                {t("VersionesRegistradasDesc", { count: totalVersiones })}
               </p>
             </div>
 
@@ -139,7 +140,7 @@ const About = () => {
             <div className="relative w-full sm:w-64">
               <input
                 type="text"
-                placeholder="Buscar versión o licencia..."
+                placeholder={t("BuscarVersionPlaceholder")}
                 value={busqueda}
                 onChange={(e) => setBusqueda(e.target.value)}
                 className="w-full text-xs px-3 py-2 pl-8 rounded-lg bg-gray-100 dark:bg-neutral-800 dark:text-white border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -172,7 +173,7 @@ const About = () => {
                     : "bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-neutral-700"
                 }`}
               >
-                {idioma}
+                {idioma === "Todos" ? t("TodosLosIdiomas") : idioma}
               </button>
             ))}
           </div>
@@ -181,7 +182,7 @@ const About = () => {
           <div className="mt-6 space-y-6">
             {Object.keys(versionesFiltradas).length === 0 ? (
               <p className="text-center py-8 text-sm text-gray-500 dark:text-gray-400">
-                No se encontraron versiones que coincidan con la búsqueda.
+                {t("NoVersionesEncontradas")}
               </p>
             ) : (
               Object.entries(versionesFiltradas).map(([idioma, lista]) => (
@@ -196,56 +197,80 @@ const About = () => {
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {lista.map((item) => (
-                      <div
-                        key={item.rawDir}
-                        className="p-3.5 rounded-xl bg-white dark:bg-neutral-800/80 border border-gray-200 dark:border-neutral-700/80 shadow-xs hover:border-gray-300 dark:hover:border-neutral-600 transition flex flex-col justify-between"
-                      >
-                        <div>
-                          <div className="flex items-start justify-between gap-2 mb-1">
-                            <h4 className="font-semibold text-sm text-gray-900 dark:text-white leading-snug">
-                              {item.title}
-                            </h4>
-                            {item.tipo && (
-                              <span
-                                className={`text-[10px] px-2 py-0.5 rounded-full font-medium whitespace-nowrap ${
-                                  item.tipo.includes("Dominio Público") || item.tipo.includes("Public Domain")
-                                    ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300"
-                                    : "bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300"
-                                }`}
-                              >
-                                {item.tipo}
-                              </span>
+                    {lista.map((item) => {
+                      const feats = CARACTERISTICAS_POR_BIBLIA[item.rawDir] || [];
+
+                      return (
+                        <div
+                          key={item.rawDir}
+                          className="p-3.5 rounded-xl bg-white dark:bg-neutral-800/80 border border-gray-200 dark:border-neutral-700/80 shadow-xs hover:border-gray-300 dark:hover:border-neutral-600 transition flex flex-col justify-between"
+                        >
+                          <div>
+                            <div className="flex items-start justify-between gap-2 mb-1">
+                              <h4 className="font-semibold text-sm text-gray-900 dark:text-white leading-snug">
+                                {item.title}
+                              </h4>
+                              {item.tipo && (
+                                <span
+                                  className={`text-[10px] px-2 py-0.5 rounded-full font-medium whitespace-nowrap ${
+                                    item.tipo.includes("Dominio Público") || item.tipo.includes("Public Domain")
+                                      ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300"
+                                      : "bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300"
+                                  }`}
+                                >
+                                  {item.tipo}
+                                </span>
+                              )}
+                            </div>
+                            {item.editorial && (
+                              <p className="text-[11px] font-medium text-emerald-600 dark:text-emerald-400">
+                                {item.editorial}
+                              </p>
+                            )}
+                            <p className="text-xs text-gray-600 dark:text-gray-300 mt-1.5 leading-relaxed">
+                              {item.info}
+                            </p>
+
+                            {feats.length > 0 && (
+                              <div className="flex flex-wrap items-center gap-1 mt-2">
+                                {feats.map((featKey) => {
+                                  const info = MAPA_CARACTERISTICAS[featKey];
+                                  if (!info) return null;
+                                  return (
+                                    <span
+                                      key={featKey}
+                                      title={t(`Feat_${featKey}_desc`)}
+                                      className={`inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded border text-[9px] font-medium ${info.clase}`}
+                                    >
+                                      <span>{info.icono}</span>
+                                      <span>{t(`Feat_${featKey}`)}</span>
+                                    </span>
+                                  );
+                                })}
+                              </div>
                             )}
                           </div>
-                          {item.editorial && (
-                            <p className="text-[11px] font-medium text-emerald-600 dark:text-emerald-400">
-                              {item.editorial}
-                            </p>
+
+                          {item.link && (
+                            <div className="mt-2 pt-2 border-t border-gray-100 dark:border-neutral-700/50">
+                              <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-[11px] text-blue-500 hover:text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
+                              >
+                                {t("VerFuenteLicencia")}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                  <polyline points="15 3 21 3 21 9"></polyline>
+                                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                              </a>
+                            </div>
                           )}
-                          <p className="text-xs text-gray-600 dark:text-gray-300 mt-1.5 leading-relaxed">
-                            {item.info}
-                          </p>
                         </div>
-                        {item.link && (
-                          <div className="mt-2 pt-2 border-t border-gray-100 dark:border-neutral-700/50">
-                            <a
-                              href={item.link}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="text-[11px] text-blue-500 hover:text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
-                            >
-                              Ver fuente / licencia oficial
-                              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                              </svg>
-                            </a>
-                          </div>
-                        )}
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               ))

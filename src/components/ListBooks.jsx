@@ -2,17 +2,25 @@ import { useState, useEffect, useRef, useContext, useMemo, useCallback } from "r
 import PropTypes from "prop-types";
 import LanguageContext from "../context/LanguageContext";
 import DataContext from "../context/DataContext";
-import A from "/A.webp";
-import AN from "/AN.webp";
-import N from "/N.webp";
-import O from "/O.webp";
-import ON from "/ON.webp";
+import A from "../assets/badges/A.webp";
+import AN from "../assets/badges/AN.webp";
+import N from "../assets/badges/N.webp";
+import O from "../assets/badges/O.webp";
+import ON from "../assets/badges/ON.webp";
 import ReadMore from "./ReadMore";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 import { useBloquearScroll } from "../hooks/useBloquearScroll";
 import { empujarFavoritos } from "../hooks/useSync";
 import AuthContext from "../context/AuthContext";
-import { BIBLIAS, RECOMENDADAS, CATEGORIAS_RECOMENDADAS, MAPA_RECOMENDACIONES, ORDEN_IDIOMAS } from "../data/biblias";
+import {
+  BIBLIAS,
+  RECOMENDADAS,
+  CATEGORIAS_RECOMENDADAS,
+  MAPA_RECOMENDACIONES,
+  CARACTERISTICAS_POR_BIBLIA,
+  MAPA_CARACTERISTICAS,
+  ORDEN_IDIOMAS,
+} from "../data/biblias";
 
 const MAX_SELECTIONS = 20;
 const CLAVE_SECCIONES = "seccionesBibliasAbiertas";
@@ -174,7 +182,7 @@ const ListBooks = () => {
     }, 150);
   };
 
-  const imagesMemo = useMemo(
+  const imagenesBadge = useMemo(
     () => ({
       AN: idiomaNavegador === "es" ? AN : ON,
       N,
@@ -185,16 +193,17 @@ const ListBooks = () => {
 
   const insignia = useCallback(
     (libro) => {
-      const icono = libro.new && libro.old ? imagesMemo.AN : libro.new ? imagesMemo.N : libro.old ? imagesMemo.A : null;
+      const icono = libro.new && libro.old ? imagenesBadge.AN : libro.new ? imagenesBadge.N : libro.old ? imagenesBadge.A : null;
       if (!icono) return null;
+
       return (
-        <span className="flex w-11 shrink-0 flex-col items-center gap-0.5">
-          <img src={icono} className="size-7" alt="" />
+        <span className="flex w-11 shrink-0 flex-col items-center gap-0.5 select-none">
+          <img src={icono} className="size-7 object-contain" alt="" loading="eager" decoding="sync" />
           <span className="text-xs font-bold leading-none opacity-70">{libro.year}</span>
         </span>
       );
     },
-    [imagesMemo]
+    [imagenesBadge]
   );
 
   const traducirIdioma = useCallback(
@@ -446,7 +455,7 @@ const ListBooks = () => {
                           : "bg-gray-100 text-gray-700 dark:bg-neutral-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-700"
                       }`}
                     >
-                      🌟 Todas ({RECOMENDADAS.length})
+                      🌟 {t("TodasLasRecomendadas")} ({RECOMENDADAS.length})
                     </button>
 
                     {CATEGORIAS_RECOMENDADAS.map((cat) => {
@@ -463,7 +472,7 @@ const ListBooks = () => {
                           }`}
                         >
                           <span>{cat.icono}</span>
-                          <span>{cat.titulo.split("(")[0].trim()}</span>
+                          <span>{t(cat.tituloKey).split("(")[0].trim()}</span>
                           <span className="opacity-70 text-[11px]">({cat.versiones.length})</span>
                         </button>
                       );
@@ -487,7 +496,7 @@ const ListBooks = () => {
                     return (
                       <div className="mt-2 flex items-center justify-between gap-2 bg-blue-50/80 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/40 rounded-xl px-3 py-1.5">
                         <p className="text-[11px] text-blue-900 dark:text-blue-200 leading-snug line-clamp-1">
-                          {catActiva ? catActiva.descripcion : "Mostrando todas las versiones recomendadas por rigor y propósito de estudio."}
+                          {catActiva ? t(catActiva.descripcionKey) : t("Desc_todas")}
                         </p>
                         <button
                           type="button"
@@ -498,7 +507,7 @@ const ListBooks = () => {
                               : "bg-blue-600 text-white hover:bg-blue-700 shadow-xs"
                           }`}
                         >
-                          {todasSeleccionadas ? "✓ Quitar grupo" : `+ Seleccionar (${listaRutas.length})`}
+                          {todasSeleccionadas ? t("QuitarGrupo") : `+ ${t("SeleccionarGrupo")} (${listaRutas.length})`}
                         </button>
                       </div>
                     );
@@ -553,10 +562,10 @@ const ListBooks = () => {
                             <div>
                               <h4 className="font-bold text-xs sm:text-sm text-gray-900 dark:text-gray-100 flex items-center gap-1.5">
                                 <span>{cat.icono}</span>
-                                <span>{cat.titulo}</span>
+                                <span>{t(cat.tituloKey)}</span>
                               </h4>
                               <p className="text-[11px] text-gray-600 dark:text-gray-300 mt-0.5 leading-relaxed">
-                                {cat.descripcion}
+                                {t(cat.descripcionKey)}
                               </p>
                             </div>
                             <button
@@ -568,7 +577,7 @@ const ListBooks = () => {
                                   : "bg-blue-600 hover:bg-blue-700 text-white shadow-xs"
                               }`}
                             >
-                              {todasSeleccionadas ? "✓ Preset Activo" : t("AplicarPreset")}
+                              {todasSeleccionadas ? `✓ ${t("PresetActivo")}` : t("AplicarPreset")}
                             </button>
                           </div>
 
@@ -581,7 +590,7 @@ const ListBooks = () => {
                                   key={ver.ruta}
                                   type="button"
                                   onClick={() => handleBookToggle(ver.ruta)}
-                                  title={`${ver.titulo} — ${ver.tag}`}
+                                  title={`${ver.titulo} — ${t(ver.tagKey)}`}
                                   className={`text-[11px] px-2.5 py-1 rounded-lg border transition text-left flex items-center gap-1.5 ${
                                     activa
                                       ? "border-green-500 bg-green-50 text-green-900 dark:border-green-600 dark:bg-green-950/70 dark:text-green-200 font-semibold"
@@ -631,6 +640,7 @@ const ListBooks = () => {
                           const seleccionada = selectedBooks.includes(libro.ruta);
                           const favorita = favoriteBooks.includes(libro.ruta);
                           const recInfo = MAPA_RECOMENDACIONES[libro.ruta];
+                          const feats = CARACTERISTICAS_POR_BIBLIA[libro.ruta] || [];
 
                           return (
                             <li key={titulo}>
@@ -645,7 +655,7 @@ const ListBooks = () => {
                                   type="button"
                                   onClick={() => handleBookToggle(libro.ruta)}
                                   aria-pressed={seleccionada}
-                                  className="flex min-h-[52px] flex-1 items-center gap-2 px-2 py-1.5 text-left"
+                                  className="flex min-h-[52px] flex-1 items-center gap-2 px-2.5 py-2 text-left"
                                 >
                                   <span
                                     aria-hidden="true"
@@ -664,18 +674,39 @@ const ListBooks = () => {
                                     )}
                                   </span>
                                   {insignia(libro)}
-                                  <span className="flex-1 text-sm leading-snug">
-                                    <span>{titulo}</span>
-                                    {recInfo && (
-                                      <span
-                                        title={recInfo.categoria}
-                                        className="ml-2 inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-blue-100 text-blue-900 dark:bg-blue-950/90 dark:text-blue-300 px-2 py-0.5 text-[10px] font-medium"
-                                      >
-                                        <span>{recInfo.icono}</span>
-                                        <span>{recInfo.tag}</span>
-                                      </span>
+                                  <div className="flex-1 min-w-0">
+                                    <div className="flex flex-wrap items-center gap-1.5">
+                                      <span className="font-medium text-sm leading-snug">{titulo}</span>
+                                      {recInfo && (
+                                        <span
+                                          title={t(recInfo.categoriaKey)}
+                                          className="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-blue-100 text-blue-900 dark:bg-blue-950/90 dark:text-blue-300 px-2 py-0.5 text-[10px] font-medium"
+                                        >
+                                          <span>{recInfo.icono}</span>
+                                          <span>{t(recInfo.tagKey)}</span>
+                                        </span>
+                                      )}
+                                    </div>
+
+                                    {feats.length > 0 && (
+                                      <div className="flex flex-wrap items-center gap-1 mt-1">
+                                        {feats.map((featKey) => {
+                                          const info = MAPA_CARACTERISTICAS[featKey];
+                                          if (!info) return null;
+                                          return (
+                                            <span
+                                              key={featKey}
+                                              title={t(`Feat_${featKey}_desc`)}
+                                              className={`inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded border text-[9px] font-medium ${info.clase}`}
+                                            >
+                                              <span>{info.icono}</span>
+                                              <span>{t(`Feat_${featKey}`)}</span>
+                                            </span>
+                                          );
+                                        })}
+                                      </div>
                                     )}
-                                  </span>
+                                  </div>
                                 </button>
 
                                 <button
