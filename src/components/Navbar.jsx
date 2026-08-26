@@ -246,7 +246,7 @@ const Navbar = () => {
           libro. Se exige que los tres datos existan. */}
       {Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
         <nav className="sticky top-0 z-10">
-          <ol className="flex w-full items-center justify-center gap-1.5 bg-[#fbefda] px-3 py-2 text-sm dark:bg-[#693BCC] dark:text-white sm:gap-2 sm:px-6 sm:py-3 lg:text-xl">
+          <ol className="flex w-full items-center justify-center gap-1.5 bg-[#fbefda] px-3 py-2 text-sm dark:bg-[#693BCC] dark:text-white sm:gap-2 sm:px-6 sm:py-3 lg:text-xl border-t border-black/10 dark:border-white/10">
             <li className="flex shrink-0 items-center text-black dark:text-white">
               {TipoTestamento(libroSeleccionado)}
               <svg className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">

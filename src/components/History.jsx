@@ -88,12 +88,12 @@ const History = () => {
                 className="text-black dark:text-white w-full min-h-[76px] h-auto bg-white/40 border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] py-2 px-1"
               >
                 <div className="text-black dark:text-white flex items-center">
-                  <div className="w-[70px] h-14 shrink-0">
+                  <div className="w-[70px] h-16 shrink-0">
                     <span
                       id="inicial"
-                      className="text-black dark:text-white bg-white/60 dark:bg-black/20 w-[80px] h-[80px] rounded-full -ml-6 -mt-3 mr-2 flex flex-col justify-center items-center select-none"
+                      className="text-black dark:text-white bg-white/60 dark:bg-black/20 w-[85px] h-[85px] rounded-full -ml-7 -mt-3 mr-3 flex flex-col justify-center items-center select-none"
                     >
-                      <p className="ml-4 font-extrabold text-xl uppercase">{TipoTestamento(item.libroSeleccionado)}</p>
+                      <p className="ml-5 font-extrabold text-2xl uppercase">{TipoTestamento(item.libroSeleccionado)}</p>
                     </span>
                   </div>
                   <div id="texto" className="flex-grow min-w-0 overflow-hidden text-black dark:text-white pr-2">
