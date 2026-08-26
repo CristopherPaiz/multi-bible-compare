@@ -15,20 +15,26 @@ const Tabs = () => {
     <>
       <div className="flex border-b border-gray-300 dark:border-gray-600 gap-x-1">
         <div
-          className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
-            activeTab === 0 ? "bg-yellow-200 dark:bg-purple-600" : "bg-yellow-100/30 dark:bg-purple-950 opacity-40"
+          className={`flex items-center gap-2 text-black dark:text-white py-2 px-3 sm:px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg transition ${
+            activeTab === 0 ? "bg-yellow-200 dark:bg-purple-600 font-semibold" : "bg-yellow-100/30 dark:bg-purple-950 opacity-50 hover:opacity-80"
           }`}
           onClick={() => changeTab(0)}
         >
-          {t("Hebreo")}
+          <span>{t("Hebreo")}</span>
+          <span className="rounded-full bg-amber-600/15 px-2 py-0.5 text-xs font-bold text-amber-900 dark:bg-purple-300/20 dark:text-purple-200">
+            {t("StrongHebreoCount")}
+          </span>
         </div>
         <div
-          className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${
-            activeTab === 1 ? "bg-yellow-200 dark:bg-purple-600" : "bg-yellow-100/30 dark:bg-purple-950 opacity-40"
+          className={`flex items-center gap-2 text-black dark:text-white py-2 px-3 sm:px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg transition ${
+            activeTab === 1 ? "bg-yellow-200 dark:bg-purple-600 font-semibold" : "bg-yellow-100/30 dark:bg-purple-950 opacity-50 hover:opacity-80"
           }`}
           onClick={() => changeTab(1)}
         >
-          {t("Griego")}
+          <span>{t("Griego")}</span>
+          <span className="rounded-full bg-amber-600/15 px-2 py-0.5 text-xs font-bold text-amber-900 dark:bg-purple-300/20 dark:text-purple-200">
+            {t("StrongGriegoCount")}
+          </span>
         </div>
         {/* <div
           className={`text-black dark:text-white py-2 px-4 cursor-pointer border border-gray-300 dark:border-gray-600 rounded-t-lg ${

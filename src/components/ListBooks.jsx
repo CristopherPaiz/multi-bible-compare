@@ -61,7 +61,7 @@ const ListBooks = () => {
   const [favoriteBooks, setFavoriteBooks] = useState([]);
   const { t, idiomaNavegador } = useContext(LanguageContext);
   const { usuario } = useContext(AuthContext);
-  const { setBibliasSeleccionadas, setModalLibros, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero } =
+  const { bibliasSeleccionadas, setBibliasSeleccionadas, setModalLibros, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero } =
     useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [filtro, setFiltro] = useState("todas");
@@ -76,11 +76,16 @@ const ListBooks = () => {
   useBloquearScroll(isModalOpen);
 
   useEffect(() => {
-    setSelectedBooks(leerLista("selectedBooks"));
+    const guardadas = leerLista("selectedBooks");
+    const iniciales = guardadas.length > 0 ? guardadas : (bibliasSeleccionadas?.length > 0 ? bibliasSeleccionadas : []);
+    setSelectedBooks(iniciales);
+    if (guardadas.length > 0 && (!bibliasSeleccionadas || bibliasSeleccionadas.length === 0)) {
+      setBibliasSeleccionadas(guardadas);
+    }
     setFavoriteBooks(leerLista("favoriteBooks"));
 
-    const guardadas = leerLista(CLAVE_SECCIONES);
-    setSeccionesAbiertas(guardadas.length > 0 ? guardadas : [idiomaNavegador === "en" ? "english" : "spanish"]);
+    const guardadasSecciones = leerLista(CLAVE_SECCIONES);
+    setSeccionesAbiertas(guardadasSecciones.length > 0 ? guardadasSecciones : [idiomaNavegador === "en" ? "english" : "spanish"]);
     // Solo al montar: después el idioma lo cambia el usuario y no debe reabrir
     // las secciones que haya plegado a mano.
     // eslint-disable-next-line react-hooks/exhaustive-deps

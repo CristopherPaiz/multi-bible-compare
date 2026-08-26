@@ -33,7 +33,10 @@ import SHARE from "/share.png";
 /** Tope total de una traducción antes de rendirse y dejar el texto original. */
 const TIEMPO_MAXIMO_MS = 30000;
 
-const normalizarMarcado = (html) => String(html ?? "").replace(/<pb\s*\/?>/gi, '<span class="salto-parrafo"></span>');
+const normalizarMarcado = (html) =>
+  String(html ?? "")
+    .replace(/\\par\b/gi, '<span class="salto-parrafo"></span>')
+    .replace(/<pb\s*\/?>/gi, '<span class="salto-parrafo"></span>');
 
 const CLASES_STRONG = [
   "[&_sup]:cursor-pointer",

@@ -25,6 +25,7 @@ export const aTextoPlano = (html) =>
     .replace(/<sup>[\s\S]*?<\/sup>/gi, " ")
     .replace(/<m>[\s\S]*?<\/m>/gi, " ")
     .replace(/<f>[\s\S]*?<\/f>/gi, " ")
+    .replace(/\\par\b/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/\s+/g, " ")

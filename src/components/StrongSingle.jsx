@@ -303,7 +303,47 @@ const StrongSingle = () => {
     </>
   );
 
-  return !imageIsLoaded || !strongIndividual ? renderLoadingState() : renderContent();
+  const renderNotFound = () => (
+    <div
+      className="z-[9999999] h-auto max-w-[90%] w-[380px] rounded-2xl border border-gray-200 bg-white p-6 text-center shadow-2xl dark:border-neutral-800 dark:bg-neutral-900 dark:text-white"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-amber-100 text-amber-600 dark:bg-amber-900/40 dark:text-amber-400">
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 className="text-lg font-bold">Definición no disponible</h3>
+      <p className="mt-1 font-mono text-sm font-semibold text-amber-600 dark:text-amber-400">{strong}</p>
+      <p className="mt-2 text-xs text-gray-600 dark:text-gray-400">
+        Este número no se encuentra en el índice de la concordancia clásica de James Strong (H1–H8674 / G1–G5624).
+      </p>
+      <button
+        onClick={() => {
+          setModalStrong(false);
+          strongFun("");
+        }}
+        className="mt-5 rounded-lg bg-amber-600 px-5 py-2 text-xs font-semibold text-white shadow transition hover:bg-amber-700"
+      >
+        Cerrar
+      </button>
+    </div>
+  );
+
+  if (cargandoStrong || !imageIsLoaded) {
+    return renderLoadingState();
+  }
+
+  if (!strongIndividual) {
+    return (
+      <div className="z-[9999] fixed inset-0 flex items-center justify-center">
+        <div className="fixed w-full h-full bg-black/40 z-[999999] modal-overlay" onClick={handleOutsideClick}></div>
+        <div className="z-[9999999] relative">{renderNotFound()}</div>
+      </div>
+    );
+  }
+
+  return renderContent();
 };
 
 export default StrongSingle;

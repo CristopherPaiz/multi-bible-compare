@@ -52,7 +52,10 @@ const ModalStrong = ({ isOpen, onClose }) => {
             </button>
           </div>
           <div className="min-w-full w-full pl-4 pr-3">
-            <h2 className="text-xl mt-3 font-semibold mb-4">{t("DiccionarioStrong")}</h2>
+            <div className="mb-3 mt-2">
+              <h2 className="text-xl font-bold">{t("DiccionarioStrong")}</h2>
+              <p className="text-xs text-gray-600 dark:text-gray-400">{t("DiccionarioStrongSubtitulo")}</p>
+            </div>
             <Tabs />
           </div>
           <div className="bg-yellow-50 h-6 dark:bg-[#1c0330] dark:text-white sticky ml-4 -bottom-4 w-[92%] sm:w-[95%] sm:ml-[14px] border-1 border-t m-auto border-gray-300 dark:border-gray-600 "></div>

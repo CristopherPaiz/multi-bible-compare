@@ -30,7 +30,28 @@ const normalizarHistorial = (lista) =>
     }));
 
 export const DataProvider = ({ children }) => {
-  const [bibliasSeleccionadas, setBibliasSeleccionadas] = useState([]);
+  const [bibliasSeleccionadas, setBibliasSeleccionadas] = useState(() => {
+    try {
+      const guardado = localStorage.getItem("selectedBooks");
+      if (guardado) {
+        const parsed = JSON.parse(guardado);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {
+      // Ignorar errores de acceso
+    }
+    return ["75. Español - Reina Valera [RV60] (1960)"];
+  });
+
+  useEffect(() => {
+    if (Array.isArray(bibliasSeleccionadas) && bibliasSeleccionadas.length > 0) {
+      try {
+        localStorage.setItem("selectedBooks", JSON.stringify(bibliasSeleccionadas));
+      } catch {
+        // Ignorar errores
+      }
+    }
+  }, [bibliasSeleccionadas]);
 
   const [libroSeleccionado, setLibroSeleccionado] = useState("");
   const [capituloSeleccionado, setCapituloSeleccionado] = useState(0);
@@ -407,9 +428,12 @@ export const DataProvider = ({ children }) => {
         // Turso una sola, pero ambas devuelven un arreglo y StrongSingle busca
         // dentro por id. Así este componente no sabe cuál está activa.
         const data = await getStrongBatch({ code: strong, signal: controller.signal });
-        if (!cancelado) setStrongData(data);
+        if (!cancelado) setStrongData(Array.isArray(data) ? data : []);
       } catch (error) {
-        if (!cancelado && error?.name !== "AbortError") console.error("Error al cargar Strong:", error);
+        if (!cancelado && error?.name !== "AbortError") {
+          console.error("Error al cargar Strong:", error);
+          setStrongData([]);
+        }
       } finally {
         if (!cancelado) setCargandoStrong(false);
       }
