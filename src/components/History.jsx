@@ -80,33 +80,62 @@ const History = () => {
           className="w-full flex flex-col overflow-y-auto no-scrollbar"
         >
           {history.map((item) => {
+            const tieneVariosVersiculos = Array.isArray(item.versiculos) && item.versiculos.length > 1;
+
             return (
               <div
                 key={item.id}
-                className="text-black dark:text-white w-full h-20 min-h-20 max-h-20 bg-white/40  border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] "
+                className="text-black dark:text-white w-full min-h-[76px] h-auto bg-white/40 border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] py-2 px-1"
               >
                 <div className="text-black dark:text-white flex items-center">
-                  <div className="w-[70px] h-16">
+                  <div className="w-[70px] h-14 shrink-0">
                     <span
                       id="inicial"
-                      className="text-black dark:text-white bg-white/60 dark:bg-black/20 w-[85px] h-[85px] rounded-full -ml-7 -mt-3 mr-3 flex flex-col justify-center items-center"
+                      className="text-black dark:text-white bg-white/60 dark:bg-black/20 w-[80px] h-[80px] rounded-full -ml-6 -mt-3 mr-2 flex flex-col justify-center items-center select-none"
                     >
-                      <p className="ml-5 font-extrabold text-2xl uppercase">{TipoTestamento(item.libroSeleccionado)}</p>
+                      <p className="ml-4 font-extrabold text-xl uppercase">{TipoTestamento(item.libroSeleccionado)}</p>
                     </span>
                   </div>
-                  <div id="texto" className="flex-grow overflow-hidden text-black dark:text-white">
+                  <div id="texto" className="flex-grow min-w-0 overflow-hidden text-black dark:text-white pr-2">
                     <div className="flex flex-col">
-                      <div className="flex flex-wrap gap-x-1 items-center">
-                        <span className="font-semibold">{libros[item.libroSeleccionado]}</span>
-                        <span className="font-semibold">
-                          {item.capituloSeleccionadoNumero}:{item.versiculoSeleccionadoNumero}
+                      <div className="flex flex-wrap gap-x-1.5 items-center">
+                        <span className="font-bold text-sm">
+                          {libros[item.libroSeleccionado]} {item.capituloSeleccionadoNumero}
+                          {!tieneVariosVersiculos && `:${item.versiculoSeleccionadoNumero}`}
                         </span>
-                        {item.visitas > 1 && (
-                          <span className="rounded-full bg-black/10 px-1.5 text-[10px] font-bold dark:bg-white/15">×{item.visitas}</span>
+                        {item.visitadoEn > 0 && (
+                          <span className="text-[10px] opacity-50">· {cuandoFue(item.visitadoEn)}</span>
                         )}
-                        {item.visitadoEn > 0 && <span className="text-[10px] opacity-50">· {cuandoFue(item.visitadoEn)}</span>}
                       </div>
-                      <div id="biblias" className="overflow-hidden text-[10px] opacity-40 truncate text-ellipsis mr-2">
+
+                      {/* Chips interactivos de versículos visitados en este capítulo */}
+                      {tieneVariosVersiculos && (
+                        <div className="flex flex-wrap items-center gap-1 mt-1">
+                          <span className="text-[10px] font-medium opacity-70">
+                            {t("VersiculosConsultados")}
+                          </span>
+                          {item.versiculos.map((v) => (
+                            <button
+                              key={v}
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                comprobarRuta({ ...item, versiculoSeleccionadoNumero: v });
+                              }}
+                              title={`${t("IrAlVersiculo")} ${v}`}
+                              className={`px-1.5 py-0.2 rounded text-[10px] font-bold transition active:scale-95 ${
+                                v === item.versiculoSeleccionadoNumero
+                                  ? "bg-yellow-500 text-black dark:bg-purple-600 dark:text-white shadow-xs"
+                                  : "bg-black/10 text-gray-800 dark:bg-white/15 dark:text-gray-200 hover:bg-black/20"
+                              }`}
+                            >
+                              {v}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+
+                      <div id="biblias" className="overflow-hidden text-[10px] opacity-40 truncate text-ellipsis mt-0.5">
                         {item?.bibliasSeleccionadas.map((biblia, index) => (
                           <span key={index}>
                             {biblia.split(".")[1]}
@@ -116,13 +145,17 @@ const History = () => {
                       </div>
                     </div>
                   </div>
-                  <div id="iconos" className="w-16 h-16 flex flex-nowrap gap-1 items-center mr-2">
-                    <button className="hover:scale-110" onClick={() => comprobarRuta(item)}>
+                  <div id="iconos" className="w-14 shrink-0 flex flex-nowrap gap-1 items-center justify-end mr-2">
+                    <button
+                      className="p-1 hover:scale-110 active:scale-95 transition"
+                      onClick={() => comprobarRuta(item)}
+                      title={t("IrAlVersiculo")}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill={theme === "light" ? "#000" : "#FFF"}
-                        className="w-6 h-6"
+                        className="w-5 h-5"
                       >
                         <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                         <path
@@ -132,8 +165,11 @@ const History = () => {
                         />
                       </svg>
                     </button>
-                    <button className="hover:scale-110" onClick={() => eliminarElementoHistorial(item.id)}>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="w-6 h-6">
+                    <button
+                      className="p-1 hover:scale-110 active:scale-95 transition text-red-600 dark:text-red-400"
+                      onClick={() => eliminarElementoHistorial(item.id)}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                         <path
                           fillRule="evenodd"
                           d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"

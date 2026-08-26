@@ -14,19 +14,55 @@ const MARCADO_POR_DEFECTO = { morfologia: false, glosa: true };
 
 const MAX_HISTORIAL = 40;
 
-const claveReferencia = (item) => `${item.libroSeleccionado}:${item.capituloSeleccionadoNumero}:${item.versiculoSeleccionadoNumero}`;
+const claveReferencia = (item) => `${item.libroSeleccionado}:${item.capituloSeleccionadoNumero}`;
 
-/** Entradas viejas no tienen `id` ni fecha; se les completa al cargar. */
-const normalizarHistorial = (lista) =>
-  (Array.isArray(lista) ? lista : [])
-    .filter((item) => item && item.libroSeleccionado && item.versiculoSeleccionadoNumero)
-    .map((item) => ({
-      ...item,
-      id: item.id ?? claveReferencia(item),
-      visitadoEn: item.visitadoEn ?? 0,
-      visitas: item.visitas ?? 1,
-      bibliasSeleccionadas: Array.isArray(item.bibliasSeleccionadas) ? item.bibliasSeleccionadas : [],
-    }));
+/**
+ * Normaliza y agrupa entradas históricas por Libro + Capítulo,
+ * consolidando todos los versículos visitados en ese capítulo.
+ */
+const normalizarHistorial = (lista) => {
+  if (!Array.isArray(lista)) return [];
+  const mapa = new Map();
+
+  for (const item of lista) {
+    if (!item || !item.libroSeleccionado || !item.capituloSeleccionadoNumero) continue;
+
+    const id = `${item.libroSeleccionado}:${item.capituloSeleccionadoNumero}`;
+    const numVersiculo = Number(item.versiculoSeleccionadoNumero) || 1;
+    const versiculosPrevios = Array.isArray(item.versiculos)
+      ? item.versiculos.map(Number).filter((n) => n > 0)
+      : [numVersiculo];
+
+    if (mapa.has(id)) {
+      const existente = mapa.get(id);
+      existente.visitas = (existente.visitas || 1) + (item.visitas || 1);
+      existente.visitadoEn = Math.max(existente.visitadoEn || 0, item.visitadoEn || 0);
+      existente.versiculos = Array.from(
+        new Set([...existente.versiculos, ...versiculosPrevios, numVersiculo])
+      ).sort((a, b) => a - b);
+
+      if ((item.visitadoEn || 0) >= (existente.visitadoEn || 0)) {
+        existente.versiculoSeleccionadoNumero = numVersiculo;
+        if (Array.isArray(item.bibliasSeleccionadas) && item.bibliasSeleccionadas.length > 0) {
+          existente.bibliasSeleccionadas = item.bibliasSeleccionadas;
+        }
+      }
+    } else {
+      mapa.set(id, {
+        id,
+        libroSeleccionado: item.libroSeleccionado,
+        capituloSeleccionadoNumero: Number(item.capituloSeleccionadoNumero),
+        versiculoSeleccionadoNumero: numVersiculo,
+        versiculos: Array.from(new Set(versiculosPrevios)).sort((a, b) => a - b),
+        visitadoEn: item.visitadoEn ?? 0,
+        visitas: item.visitas ?? 1,
+        bibliasSeleccionadas: Array.isArray(item.bibliasSeleccionadas) ? item.bibliasSeleccionadas : [],
+      });
+    }
+  }
+
+  return Array.from(mapa.values()).sort((a, b) => (b.visitadoEn || 0) - (a.visitadoEn || 0));
+};
 
 export const DataProvider = ({ children }) => {
   const [bibliasSeleccionadas, setBibliasSeleccionadas] = useState(() => {
@@ -360,21 +396,26 @@ export const DataProvider = ({ children }) => {
     // Pequeño retardo: al recorrer versículos seguidos no tiene sentido grabar
     // cada uno por el que se pasa, solo aquel donde el usuario se detiene.
     const id = setTimeout(() => {
-      const entrada = {
-        bibliasSeleccionadas,
-        libroSeleccionado,
-        capituloSeleccionadoNumero,
-        versiculoSeleccionadoNumero,
-        visitadoEn: Date.now(),
-        visitas: 1,
-      };
-      entrada.id = claveReferencia(entrada);
+      const capId = `${libroSeleccionado}:${capituloSeleccionadoNumero}`;
+      const numVersiculo = Number(versiculoSeleccionadoNumero);
 
       setHistory((previo) => {
-        const anterior = previo.find((item) => item.id === entrada.id);
-        if (anterior) entrada.visitas = (anterior.visitas ?? 1) + 1;
+        const anterior = previo.find((item) => item.id === capId);
+        const versiculosPrevios = anterior && Array.isArray(anterior.versiculos) ? anterior.versiculos : [];
+        const versiculosActualizados = Array.from(new Set([...versiculosPrevios, numVersiculo])).sort((a, b) => a - b);
 
-        const lista = [entrada, ...previo.filter((item) => item.id !== entrada.id)].slice(0, MAX_HISTORIAL);
+        const entrada = {
+          id: capId,
+          libroSeleccionado,
+          capituloSeleccionadoNumero: Number(capituloSeleccionadoNumero),
+          versiculoSeleccionadoNumero: numVersiculo,
+          versiculos: versiculosActualizados,
+          visitadoEn: Date.now(),
+          visitas: (anterior?.visitas ?? 0) + 1,
+          bibliasSeleccionadas,
+        };
+
+        const lista = [entrada, ...previo.filter((item) => item.id !== capId)].slice(0, MAX_HISTORIAL);
         try {
           localStorage.setItem("history", JSON.stringify(lista));
         } catch {
