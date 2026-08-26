@@ -1,16 +1,15 @@
 import { useRef, useEffect, useCallback, useContext, useState } from "react";
-import { TRANSLATE_PROXY } from "../config/dataSource";
 import PropTypes from "prop-types";
+import { traducir } from "../services/translateSource";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import TRANSLATE from "/translationBeta.png";
 import TRANSLATEGOOGLE from "/google.png";
 import SHARE from "/share.png";
-import { GoogleTranslatorTokenFree, GoogleTranslator } from "@translate-tools/core/translators/GoogleTranslator";
 
-const VerseSingle = ({ texto, nombre, iso }) => {
-  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto } =
+const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
+  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto, strongFun } =
     useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
@@ -18,6 +17,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
   const [textoTraducido, setTextoTraducido] = useState(texto);
   const [textoOriginal, setTextoOriginal] = useState(texto);
   const [isTranslating, setIsTranslating] = useState(false);
+  const [errorTraduccion, setErrorTraduccion] = useState(false);
 
   const containerRef = useRef(null);
   const translatingRef = useRef(null);
@@ -62,6 +62,30 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     centerText();
   }, [textoTraducido, centerText]);
 
+  /**
+   * Los números Strong van dentro del HTML del versículo como `<sup>2424 </sup>`,
+   * así que no se les puede poner un onClick por elemento sin dejar de usar
+   * `dangerouslySetInnerHTML`. Se delega: se escucha el clic en el contenedor y
+   * se mira si el objetivo era un <sup>.
+   *
+   * El prefijo sale del testamento, no del idioma de la versión: los números del
+   * Antiguo Testamento son hebreos (H) y los del Nuevo, griegos (G).
+   */
+  const handleStrongClick = useCallback(
+    (evento) => {
+      const sup = evento.target.closest?.("sup");
+      if (!sup) return;
+
+      const numero = sup.textContent.replace(/\D/g, "");
+      if (!numero) return;
+
+      evento.stopPropagation();
+      const prefijo = Number(bookId) <= 39 ? "H" : "G";
+      strongFun(`${prefijo}${Number(numero)}`);
+    },
+    [bookId, strongFun]
+  );
+
   const handleTranslate = async (iso) => {
     if (iso === "no" || !versiculoSeleccionadoNumero) {
       return;
@@ -72,26 +96,21 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     const verso = textoOriginal[versiculoSeleccionadoNumero];
 
     setIsTranslating(true);
+    setErrorTraduccion(false);
 
-    const translator1 = new GoogleTranslator({
-      corsProxy: TRANSLATE_PROXY,
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
-      },
-    });
-    const translator2 = new GoogleTranslatorTokenFree({});
     try {
-      const resultado = await translator1.translate(encodeURIComponent(verso), idiomaVersoTranslate, idiomaNavegadorTranslate);
+      // El servicio limpia el markup `<sup>` por su cuenta: traducir los
+      // números Strong incrustados devolvía basura.
+      const resultado = await traducir({
+        texto: verso,
+        desde: idiomaVersoTranslate,
+        hacia: idiomaNavegadorTranslate,
+      });
       setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
       centerText();
     } catch (error) {
-      try {
-        const resultado = await translator2.translate(verso, idiomaVersoTranslate, idiomaNavegadorTranslate);
-        setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
-      } catch (error) {
-        console.error(error);
-      }
-      console.error(error);
+      console.error("No se pudo traducir el versículo:", error);
+      setErrorTraduccion(true);
     } finally {
       setIsTranslating(false);
     }
@@ -173,7 +192,12 @@ const VerseSingle = ({ texto, nombre, iso }) => {
                     className="animate-slide-in-bottom"
                   >
                     <span>
-                      <span style={{ fontWeight: "bold" }}>{versiculo}</span> <span dangerouslySetInnerHTML={{ __html: contenido }}></span>
+                      <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
+                      <span
+                        className="[&_sup]:cursor-pointer [&_sup]:text-blue-600 [&_sup]:font-semibold dark:[&_sup]:text-blue-400 [&_sup]:hover:underline"
+                        onClick={handleStrongClick}
+                        dangerouslySetInnerHTML={{ __html: contenido }}
+                      ></span>
                     </span>
                   </p>
                 ))
@@ -188,6 +212,17 @@ const VerseSingle = ({ texto, nombre, iso }) => {
             )}
           </div>
         </div>
+        {cargando && (
+          <div className="absolute inset-0 z-40 flex flex-col gap-2 bg-white/70 p-3 dark:bg-neutral-900/70">
+            <div className="h-3 w-1/3 animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
+            <div className="h-3 w-full animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
+            <div className="h-3 w-11/12 animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
+            <div className="h-3 w-4/5 animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
+          </div>
+        )}
+        {errorTraduccion && !isTranslating && (
+          <div className="text-center text-xs text-red-600 dark:text-red-400 my-1">{t("TraduccionFallo")}</div>
+        )}
         {isTranslating && (
           <div
             ref={translatingRef}
@@ -206,6 +241,8 @@ const VerseSingle = ({ texto, nombre, iso }) => {
 };
 
 VerseSingle.propTypes = {
+  cargando: PropTypes.bool,
+  bookId: PropTypes.number,
   texto: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   nombre: PropTypes.string.isRequired,
   iso: PropTypes.string.isRequired,

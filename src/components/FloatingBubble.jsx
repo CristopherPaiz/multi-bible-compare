@@ -1,11 +1,20 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
 import ModalStrong from "../components/ModalStrong";
 import DICTIONARY from "/diccionario2.png";
 import "../styles/Animations.css";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
+import DataContext from "../context/DataContext";
 
 const FloattingBubble = () => {
+  const { modalStrong, strongFun } = useContext(DataContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Al hacer clic en un número Strong dentro de un versículo, `strongFun` marca
+  // `modalStrong`. Este modal vive aquí, así que hay que abrirlo desde ese aviso
+  // en vez de esperar a que el usuario toque la burbuja.
+  useEffect(() => {
+    if (modalStrong) setIsModalOpen(true);
+  }, [modalStrong]);
   const [isDragging, setIsDragging] = useState(false);
   const bubbleRef = useRef(null);
   const modalRef = useRef(null);
@@ -98,6 +107,11 @@ const FloattingBubble = () => {
 
   const handleModalClose = () => {
     setIsModalOpen(false);
+    // Además de cerrar, se limpia el Strong seleccionado. Si no, `modalStrong`
+    // se queda en true y al hacer clic en OTRO número el efecto de arriba no
+    // vuelve a dispararse (React descarta el set con el mismo valor), así que
+    // el modal ya no reabriría.
+    strongFun("");
   };
 
   const autoMoveToEdgeWithAnimation = () => {

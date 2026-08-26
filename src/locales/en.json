@@ -235,5 +235,6 @@
   "CuentaOpcional": "Optional. It only syncs your favorites and history across devices.",
   "CuentaSesionDe": "Signed in as {usuario}",
   "CuentaSincronizando": "Your favorites and history sync automatically.",
-  "CuentaNoDisponible": "Accounts require the API source. There is nowhere to store data on the GitHub CDN."
+  "CuentaNoDisponible": "Accounts require the API source. There is nowhere to store data on the GitHub CDN.",
+  "TraduccionFallo": "Could not translate. Try again."
 }

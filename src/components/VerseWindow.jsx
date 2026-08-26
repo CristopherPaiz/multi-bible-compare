@@ -26,6 +26,7 @@ const idiomaDesdeRuta = (ruta) => {
 const VerseWindow = ({ biblia }) => {
   const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } = useContext(DataContext);
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
+  const [cargando, setCargando] = useState(false);
   const { t } = useContext(LanguageContext);
 
   const idioma = idiomaDesdeRuta(biblia);
@@ -45,6 +46,7 @@ const VerseWindow = ({ biblia }) => {
     let cancelado = false;
 
     const cargar = async () => {
+      setCargando(true);
       try {
         const data = await getChapter({
           legacyPath: biblia,
@@ -57,6 +59,8 @@ const VerseWindow = ({ biblia }) => {
         if (cancelado || error?.name === "AbortError") return;
         const testamento = bookId <= LAST_OLD_TESTAMENT_BOOK ? t("AntiguoTestamento") : t("NuevoTestamento");
         setCapituloSeleccionado(t("NoExisteVersiculoParte1") + testamento + t("NoExisteVersiculoParte2"));
+      } finally {
+        if (!cancelado) setCargando(false);
       }
     };
 
@@ -68,7 +72,7 @@ const VerseWindow = ({ biblia }) => {
     };
   }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero, t, fuente]);
 
-  return <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} />;
+  return <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} cargando={cargando} bookId={Number(libroSeleccionado.split("book")[1])} />;
 };
 
 VerseWindow.propTypes = {

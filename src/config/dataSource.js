@@ -108,13 +108,3 @@ export const onDataSourceChange = (listener) => {
  * free tier tarda 30-60s en despertar) no rompa la lectura.
  */
 export const AUTO_FALLBACK = import.meta.env.VITE_AUTO_FALLBACK !== "false";
-
-/**
- * Proxy CORS que usa el traductor de versículos.
- *
- * OJO: el texto del versículo pasa por un tercero. `corsproxy.io` es un
- * servicio gratuito sin garantías de disponibilidad ni de privacidad; se deja
- * como valor por defecto porque es lo que la app ya venía usando, pero queda
- * configurable para poder apuntar a un proxy propio sin tocar código.
- */
-export const TRANSLATE_PROXY = import.meta.env.VITE_TRANSLATE_PROXY ?? "https://corsproxy.io/";
