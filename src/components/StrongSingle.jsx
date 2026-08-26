@@ -103,18 +103,35 @@ const StrongSingle = () => {
     // convención de nombre. Se prefiere la que venga en el dato.
     const audioUrl = strongIndividual.audioUrl ?? getStrongAudioUrl(strongIndividual.id);
 
+    // La disponibilidad se comprueba con el propio <audio>, NO con fetch.
+    //
+    // `fetch` es una petición CORS: si el bucket no publica
+    // Access-Control-Allow-Origin, falla con "Failed to fetch" aunque el mp3
+    // sea perfectamente accesible. Un elemento multimedia no necesita CORS para
+    // reproducir, así que preguntarle a él es a la vez más fiable y una
+    // petición menos.
     let cancelado = false;
-    fetch(audioUrl, { method: "HEAD" })
-      .then((response) => {
-        if (cancelado) return;
-        setAudio(response.ok ? new Audio(audioUrl) : null);
-      })
-      .catch(() => {
-        if (!cancelado) setAudio(null);
-      });
+    const elemento = new Audio();
+    elemento.preload = "metadata";
+
+    const alCargar = () => {
+      if (!cancelado) setAudio(elemento);
+    };
+    const alFallar = () => {
+      if (!cancelado) setAudio(null);
+    };
+
+    elemento.addEventListener("loadedmetadata", alCargar, { once: true });
+    elemento.addEventListener("error", alFallar, { once: true });
+    elemento.src = audioUrl;
 
     return () => {
       cancelado = true;
+      elemento.removeEventListener("loadedmetadata", alCargar);
+      elemento.removeEventListener("error", alFallar);
+      // Se suelta la descarga si el usuario cambió de entrada antes de que
+      // terminara de cargar.
+      elemento.src = "";
     };
   }, [strongIndividual]);
 

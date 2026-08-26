@@ -32,7 +32,7 @@
  * - El rowid del indice ES la referencia biblica, sin tabla de mapeo.
  */
 import { createClient } from '@libsql/client'
-import { S3Client, PutObjectCommand, ListObjectsV2Command, CreateBucketCommand, HeadBucketCommand } from '@aws-sdk/client-s3'
+import { S3Client, PutObjectCommand, ListObjectsV2Command, CreateBucketCommand, HeadBucketCommand, PutBucketCorsCommand, GetBucketCorsCommand } from '@aws-sdk/client-s3'
 import { gzipSync } from 'node:zlib'
 import { readFileSync, readdirSync, existsSync, statSync, mkdirSync, rmSync } from 'node:fs'
 import { join, dirname, resolve } from 'node:path'
@@ -502,6 +502,37 @@ const commandAudio = async (dryRun, createBucket) => {
     console.log(`Creando bucket '${bucket}' (listado privado)...`)
     await client.send(new CreateBucketCommand({ Bucket: bucket }))
     console.log('Creado.')
+  }
+
+  // Politica CORS del bucket.
+  //
+  // Reproducir un mp3 con <audio> NO necesita CORS, y la UI lo hace asi a
+  // proposito. Pero sin esta politica, cualquier `fetch()` contra el bucket
+  // falla con "Failed to fetch", que es un pie que se puede pisar facil mas
+  // adelante (precarga, descargas, comprobaciones). Se deja configurado.
+  try {
+    await client.send(new GetBucketCorsCommand({ Bucket: bucket }))
+    console.log('El bucket ya tiene politica CORS.')
+  } catch {
+    await client.send(
+      new PutBucketCorsCommand({
+        Bucket: bucket,
+        CORSConfiguration: {
+          CORSRules: [
+            {
+              // Solo lectura y desde cualquier origen: el contenido es publico
+              // e inmutable, no hay nada que proteger con el origen.
+              AllowedMethods: ['GET', 'HEAD'],
+              AllowedOrigins: ['*'],
+              AllowedHeaders: ['*'],
+              ExposeHeaders: ['Content-Length', 'Content-Type', 'Accept-Ranges'],
+              MaxAgeSeconds: 86400
+            }
+          ]
+        }
+      })
+    )
+    console.log('Politica CORS aplicada al bucket.')
   }
 
   const sources = [
