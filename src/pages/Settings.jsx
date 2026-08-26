@@ -11,7 +11,7 @@ import { SOURCES, getDataSource, setDataSource, onDataSourceChange, API_URL } fr
 const Settings = () => {
   const { t, cambiarIdioma, idiomaNavegador } = useContext(LanguageContext);
   const { changeTheme, theme } = useContext(ThemeContext);
-  const { handleTipoTraductor, tipoTraductor, paginaInicio, handlePaginaInicio, cambiarAnchoVentana, cambiarAltoVentana, anchoVentana, altoVentana } =
+  const { paginaInicio, handlePaginaInicio, cambiarAnchoVentana, cambiarAltoVentana, anchoVentana, altoVentana } =
     useContext(DataContext);
 
   // Interruptor de fuente de datos. Existe para poder volver al CDN de GitHub
@@ -86,18 +86,6 @@ const Settings = () => {
             <span className="text-[10px] text-gray-800 dark:text-gray-300">{t(`EstadoApi_${estadoApi.replace(" ", "_")}`)}</span>
           </div>
           <p className="text-[9px] text-center mt-2 text-gray-700 dark:text-gray-400">{t("FuenteDatosAyuda")}</p>
-        </div>
-        {/* TRADUCTOR DE GOOGLE */}
-        <div className="p-4 rounded-md bg-blue-300 dark:bg-blue-500 m-auto justify-center w-60">
-          <h1 className="text-sm font-medium flex justify-center mb-3 text-center dark:text-white">{t("VersionTraductor")}</h1>
-          <div className="flex items-center justify-center gap-4">
-            <span className="text-sm font-medium text-gray-900 dark:text-gray-300">v1</span>
-            <label className="inline-flex items-center cursor-pointer">
-              <input type="checkbox" onChange={handleTipoTraductor} className="sr-only peer" checked={tipoTraductor === "?" ? true : false} />
-              <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-yellow-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-yellow-600 dark:peer-checked:bg-purple-600"></div>
-            </label>
-            <span className="text-sm font-medium text-gray-900 dark:text-gray-300">v2</span>
-          </div>
         </div>
         {/* TAMAÑO DE VENTANA ANCHO */}
         <div className="p-4 rounded-md bg-yellow-300 dark:bg-yellow-500 m-auto justify-center w-60">

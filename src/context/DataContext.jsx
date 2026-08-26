@@ -1,11 +1,33 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import LanguageContext from "./LanguageContext";
 import bibleData from "../assets/bibles/JSON_DATA/01. English - Amplified (2015).json";
 import ThemeContext from "./ThemeContext";
 import { getStrongBatch } from "../services/bibleSource";
+import { aTextoPlano, capituloATextoPlano } from "../utils/textoPlano";
 
 const DataContext = createContext();
+
+// Por defecto la glosa se muestra y la morfología no: los códigos tipo
+// `V-AAI-3S` son lo que más estorba al leer. Vive fuera del componente para no
+// recrearse en cada render y poder ser dependencia estable de los useCallback.
+const MARCADO_POR_DEFECTO = { morfologia: false, glosa: true };
+
+const MAX_HISTORIAL = 40;
+
+const claveReferencia = (item) => `${item.libroSeleccionado}:${item.capituloSeleccionadoNumero}:${item.versiculoSeleccionadoNumero}`;
+
+/** Entradas viejas no tienen `id` ni fecha; se les completa al cargar. */
+const normalizarHistorial = (lista) =>
+  (Array.isArray(lista) ? lista : [])
+    .filter((item) => item && item.libroSeleccionado && item.versiculoSeleccionadoNumero)
+    .map((item) => ({
+      ...item,
+      id: item.id ?? claveReferencia(item),
+      visitadoEn: item.visitadoEn ?? 0,
+      visitas: item.visitas ?? 1,
+      bibliasSeleccionadas: Array.isArray(item.bibliasSeleccionadas) ? item.bibliasSeleccionadas : [],
+    }));
 
 export const DataProvider = ({ children }) => {
   const [bibliasSeleccionadas, setBibliasSeleccionadas] = useState([]);
@@ -17,37 +39,46 @@ export const DataProvider = ({ children }) => {
   const [versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero] = useState(0);
   const [libros, setLibros] = useState({});
   const { t } = useContext(LanguageContext);
-  const [tipoTraductor, setTipoTraductor] = useState("m?");
   const [paginaInicio, setPaginaInicio] = useState("/");
   const [history, setHistory] = useState([]);
   const [modoCompacto, setModoCompacto] = useState(false);
 
-  // Interruptores del marcado interlineal (morfología y glosa palabra por
-  // palabra). Solo estorban en las versiones que los traen, por eso el control
-  // vive en la propia ventana de comparación y no en Ajustes.
-  const leerBool = (clave, porDefecto) => {
+  // Preferencias de marcado interlineal (morfología y glosa), POR BIBLIA.
+  //
+  // Son por panel a propósito: alguien puede querer la morfología en la
+  // interlineal griega y no en la española que tiene al lado. Un interruptor
+  // global obligaba a decidir lo mismo para todas.
+  //
+  // Forma: { "034. Español - ...": { morfologia: false, glosa: true } }
+  const [preferenciasMarcado, setPreferenciasMarcado] = useState(() => {
     try {
-      const v = localStorage.getItem(clave);
-      return v === null ? porDefecto : v === "true";
+      const crudo = localStorage.getItem("preferenciasMarcado");
+      const valor = crudo ? JSON.parse(crudo) : null;
+      return valor && typeof valor === "object" && !Array.isArray(valor) ? valor : {};
     } catch {
-      return porDefecto;
+      return {};
     }
-  };
-  const [mostrarMorfologia, setMostrarMorfologia] = useState(() => leerBool("mostrarMorfologia", false));
-  const [mostrarGlosa, setMostrarGlosa] = useState(() => leerBool("mostrarGlosa", true));
-
-  // `{ morfologia, glosa }`: qué marcado trae el versículo que está en
-  // pantalla. Sirve para no mostrar interruptores que no aplican.
-  const [marcadoDetectado, setMarcadoDetectado] = useState({ morfologia: false, glosa: false });
+  });
 
   useEffect(() => {
     try {
-      localStorage.setItem("mostrarMorfologia", String(mostrarMorfologia));
-      localStorage.setItem("mostrarGlosa", String(mostrarGlosa));
+      localStorage.setItem("preferenciasMarcado", JSON.stringify(preferenciasMarcado));
     } catch {
       // Safari privado: sin persistir, pero aplica en esta sesión.
     }
-  }, [mostrarMorfologia, mostrarGlosa]);
+  }, [preferenciasMarcado]);
+
+  const leerMarcado = useCallback(
+    (biblia) => ({ ...MARCADO_POR_DEFECTO, ...(preferenciasMarcado[biblia] ?? {}) }),
+    [preferenciasMarcado]
+  );
+
+  const alternarMarcado = useCallback((biblia, tipo) => {
+    setPreferenciasMarcado((previo) => {
+      const actual = { ...MARCADO_POR_DEFECTO, ...(previo[biblia] ?? {}) };
+      return { ...previo, [biblia]: { ...actual, [tipo]: !actual[tipo] } };
+    });
+  }, []);
 
   //STRONGS
   const [strong, strongFun] = useState([]);
@@ -245,17 +276,6 @@ export const DataProvider = ({ children }) => {
     findBookAndChapters(libroSeleccionado);
   }, [libroSeleccionado]);
 
-  //intercambiar tipoTraductor, guardar en localStorage y cargar al inicio
-  const handleTipoTraductor = () => {
-    if (tipoTraductor === "m?") {
-      setTipoTraductor("?");
-      localStorage.setItem("tipoTraductor", "?");
-    } else {
-      setTipoTraductor("m?");
-      localStorage.setItem("tipoTraductor", "m?");
-    }
-  };
-
   const handlePaginaInicio = () => {
     if (paginaInicio === "/") {
       setPaginaInicio("/compare");
@@ -267,67 +287,90 @@ export const DataProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const tipoTraductorGuardado = localStorage.getItem("tipoTraductor");
     const paginaInicio = localStorage.getItem("paginaInicio");
-    if (tipoTraductorGuardado) {
-      setTipoTraductor(tipoTraductorGuardado);
-    }
     if (paginaInicio) {
       setPaginaInicio(paginaInicio);
     }
   }, []);
 
-  //Cuando se seleccione un versiculoSeleccionadoNumero guardaremos un objeto con todos los datos en el LocalStorage
+  /**
+   * Historial de versículos visitados.
+   *
+   * Se guarda MÁS RECIENTE PRIMERO y deduplicado por referencia. Antes cada
+   * visita hacía `push`, así que ir a 3:14 → 3:16 → 3:14 dejaba tres entradas
+   * con una repetida; ahora la tercera visita solo sube 3:14 al tope y le
+   * actualiza la fecha.
+   *
+   * Además el efecto anterior escribía en localStorage pero nunca llamaba a
+   * `setHistory`, así que la lista en pantalla se quedaba vieja hasta recargar.
+   */
   useEffect(() => {
-    // Recuperar historial del LocalStorage al montar el componente
-    const storedHistory = localStorage.getItem("history");
-    if (storedHistory) {
-      const parsedHistory = JSON.parse(storedHistory);
-      setHistory(parsedHistory);
+    try {
+      const guardado = localStorage.getItem("history");
+      if (!guardado) return;
+      const lista = normalizarHistorial(JSON.parse(guardado));
+      // Las entradas viejas venían más antiguas primero; se invierte una sola
+      // vez para dejar el orden nuevo (más reciente arriba).
+      const yaOrdenado = lista.some((item) => item.visitadoEn > 0);
+      setHistory(yaOrdenado ? lista : lista.reverse());
+    } catch {
+      setHistory([]);
     }
   }, []);
 
   useEffect(() => {
-    if (versiculoSeleccionadoNumero > 0) {
-      // Recuperar historial actual del LocalStorage
-      let history = localStorage.getItem("history");
-      if (!history) {
-        history = [];
-      } else {
-        history = JSON.parse(history);
-      }
+    if (!(versiculoSeleccionadoNumero > 0) || !libroSeleccionado || !capituloSeleccionadoNumero) return;
 
-      // Crear nuevo objeto de datos
-      const newData = {
+    // Pequeño retardo: al recorrer versículos seguidos no tiene sentido grabar
+    // cada uno por el que se pasa, solo aquel donde el usuario se detiene.
+    const id = setTimeout(() => {
+      const entrada = {
         bibliasSeleccionadas,
         libroSeleccionado,
         capituloSeleccionadoNumero,
         versiculoSeleccionadoNumero,
+        visitadoEn: Date.now(),
+        visitas: 1,
       };
+      entrada.id = claveReferencia(entrada);
 
-      // Agregar nuevo dato al historial
-      history.push(newData);
+      setHistory((previo) => {
+        const anterior = previo.find((item) => item.id === entrada.id);
+        if (anterior) entrada.visitas = (anterior.visitas ?? 1) + 1;
 
-      // Verificar si hay más de 10 elementos en el historial
-      if (history.length > 40) {
-        // Eliminar el elemento más antiguo
-        history.shift();
+        const lista = [entrada, ...previo.filter((item) => item.id !== entrada.id)].slice(0, MAX_HISTORIAL);
+        try {
+          localStorage.setItem("history", JSON.stringify(lista));
+        } catch {
+          // Safari privado: se mantiene en memoria durante la sesión.
+        }
+        return lista;
+      });
+    }, 900);
+
+    return () => clearTimeout(id);
+  }, [versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionadoNumero, bibliasSeleccionadas]);
+
+  /** Se borra por `id`, no por índice: la lista se pinta y el índice no coincidía. */
+  const eliminarElementoHistorial = (id) => {
+    setHistory((previo) => {
+      const lista = previo.filter((item) => item.id !== id);
+      try {
+        localStorage.setItem("history", JSON.stringify(lista));
+      } catch {
+        // sin persistencia
       }
+      return lista;
+    });
+  };
 
-      // Guardar historial actualizado en el LocalStorage
-      localStorage.setItem("history", JSON.stringify(history));
+  const limpiarHistorial = () => {
+    setHistory([]);
+    try {
+      localStorage.removeItem("history");
+    } catch {
+      // sin persistencia
     }
-    // Se depende SOLO del versículo a propósito: la entrada de historial se
-    // graba cuando el usuario elige un versículo. Incluir las demás variables
-    // haría que cambiar de biblia o de capítulo duplicara entradas.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [versiculoSeleccionadoNumero]);
-
-  //Eliminar elemento del hisotrial del LS
-  const eliminarElementoHistorial = (index) => {
-    const newHistory = history.filter((item, i) => i !== index);
-    setHistory(newHistory);
-    localStorage.setItem("history", JSON.stringify(newHistory));
   };
 
   //Setear bibliasSeleecionadas, acpituloSeleccionadoNumero, libroSeleccionado, versiculoSeleccionadoNumero
@@ -416,20 +459,18 @@ export const DataProvider = ({ children }) => {
   const [versiculoCompartir, setVersiculoCompartir] = useState("");
   const [nombreBibliaCompartir, setNombreBibliaCompartir] = useState("");
 
-  const cleanObject = (obj) => {
-    return Object.fromEntries(
-      Object.entries(obj).map(([key, value]) => [
-        key,
-        value
-          .replace(/<[^>]+>.*?<\/[^>]+>/gs, "") // Elimina cualquier etiqueta HTML junto con su contenido
-          .replace(/\s+/g, " ") // Reemplaza múltiples espacios con uno solo
-          .trim(), // Elimina espacios al inicio y al final
-      ])
-    );
-  };
+  const [textoCompartirTraducido, setTextoCompartirTraducido] = useState(null);
 
-  const setCompartirVerse = (texto, versiculo, nombre) => {
-    setTextoCompartir(cleanObject(texto));
+  /**
+   * @param texto      capítulo original (con marcado)
+   * @param versiculo  número del versículo
+   * @param nombre     nombre de la versión
+   * @param traducido  traducción de ESE versículo, si el usuario la pidió.
+   *                   Cuando llega, el modal ofrece elegir cuál compartir.
+   */
+  const setCompartirVerse = (texto, versiculo, nombre, traducido = null) => {
+    setTextoCompartir(capituloATextoPlano(texto));
+    setTextoCompartirTraducido(traducido ? aTextoPlano(traducido) : null);
     setVersiculoCompartir(versiculo);
     setCompartir(true);
     setNombreBibliaCompartir(nombre);
@@ -550,12 +591,11 @@ export const DataProvider = ({ children }) => {
         setVersiculoSeleccionadoNumero,
         capituloSeleccionadoNumero,
         setCapituloSeleccionadoNumero,
-        tipoTraductor,
-        handleTipoTraductor,
         paginaInicio,
         handlePaginaInicio,
         history,
         eliminarElementoHistorial,
+        limpiarHistorial,
         setearHistorial,
         setHistory,
         strong,
@@ -569,16 +609,13 @@ export const DataProvider = ({ children }) => {
         cargandoImagen,
         modoCompacto,
         setModoCompacto,
-        mostrarMorfologia,
-        setMostrarMorfologia,
-        mostrarGlosa,
-        setMostrarGlosa,
-        marcadoDetectado,
-        setMarcadoDetectado,
+        leerMarcado,
+        alternarMarcado,
         setCompartir,
         compartir,
         setCompartirVerse,
         textoCompartir,
+        textoCompartirTraducido,
         versiculoCompartir,
         nombreBibliaCompartir,
         cambiarAnchoVentana,

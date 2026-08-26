@@ -30,11 +30,12 @@ const History = () => {
   };
 
   const comprobarRuta = (ruta) => {
+    // Las biblias son cadenas (nombre de carpeta), no objetos: el `biblia.id`
+    // anterior siempre daba `undefined === undefined`, o sea "iguales" aunque
+    // la selección hubiera cambiado.
     const mismasBiblias =
-      bibliasSeleccionadas.length === ruta.bibliasSeleccionadas.length &&
-      bibliasSeleccionadas.every((biblia, index) => {
-        return biblia.id === ruta.bibliasSeleccionadas[index].id;
-      });
+      bibliasSeleccionadas.length === (ruta.bibliasSeleccionadas?.length ?? 0) &&
+      bibliasSeleccionadas.every((biblia, index) => biblia === ruta.bibliasSeleccionadas[index]);
 
     if (
       mismasBiblias &&
@@ -49,7 +50,18 @@ const History = () => {
     }
   };
 
-  const reversedKeys = Object.keys(history).reverse();
+  /** "hace 5 min", "ayer"... a partir del sello de tiempo. */
+  const cuandoFue = (marca) => {
+    if (!marca) return "";
+    const segundos = Math.max(0, Math.round((Date.now() - marca) / 1000));
+    if (segundos < 60) return t("HaceUnMomento");
+    const minutos = Math.round(segundos / 60);
+    if (minutos < 60) return t("HaceMinutos", { n: minutos });
+    const horas = Math.round(minutos / 60);
+    if (horas < 24) return t("HaceHoras", { n: horas });
+    const dias = Math.round(horas / 24);
+    return t("HaceDias", { n: dias });
+  };
 
   return (
     <article className="animate-fade-in bg-[#ffe8bd] dark:bg-[#332154] mt-8 border-2 border-[#ae7c20] dark:border-[#9054ff] rounded max-h-[55vh] min-h-[55vh] h-[55vh] w-10/12 sm:min-w-[400px] sm:max-w-[400px] m-auto">
@@ -67,11 +79,10 @@ const History = () => {
           style={{ height: "calc(100% - 40px)", minHeight: "calc(100% - 40px)" }}
           className="w-full flex flex-col overflow-y-auto no-scrollbar"
         >
-          {reversedKeys.map((key, index) => {
-            const item = history[key];
+          {history.map((item) => {
             return (
               <div
-                key={index}
+                key={item.id}
                 className="text-black dark:text-white w-full h-20 min-h-20 max-h-20 bg-white/40  border-white/60 dark:bg-black/30 dark:border-black/30 flex flex-col justify-center overflow-hidden border-b-[1px] "
               >
                 <div className="text-black dark:text-white flex items-center">
@@ -86,10 +97,14 @@ const History = () => {
                   <div id="texto" className="flex-grow overflow-hidden text-black dark:text-white">
                     <div className="flex flex-col">
                       <div className="flex flex-wrap gap-x-1 items-center">
-                        <span>{libros[item.libroSeleccionado]}</span>
-                        <span>
+                        <span className="font-semibold">{libros[item.libroSeleccionado]}</span>
+                        <span className="font-semibold">
                           {item.capituloSeleccionadoNumero}:{item.versiculoSeleccionadoNumero}
                         </span>
+                        {item.visitas > 1 && (
+                          <span className="rounded-full bg-black/10 px-1.5 text-[10px] font-bold dark:bg-white/15">×{item.visitas}</span>
+                        )}
+                        {item.visitadoEn > 0 && <span className="text-[10px] opacity-50">· {cuandoFue(item.visitadoEn)}</span>}
                       </div>
                       <div id="biblias" className="overflow-hidden text-[10px] opacity-40 truncate text-ellipsis mr-2">
                         {item?.bibliasSeleccionadas.map((biblia, index) => (
@@ -117,7 +132,7 @@ const History = () => {
                         />
                       </svg>
                     </button>
-                    <button className="hover:scale-110" onClick={() => eliminarElementoHistorial(index)}>
+                    <button className="hover:scale-110" onClick={() => eliminarElementoHistorial(item.id)}>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" className="w-6 h-6">
                         <path
                           fillRule="evenodd"

@@ -22,6 +22,10 @@ const ENDPOINT = "https://translate.googleapis.com/translate_a/single";
 /** Trozo máximo por petición. Un versículo nunca lo alcanza; aplica a capítulos. */
 const LIMITE_CHUNK = 4000;
 
+/**
+ * Tope por petición. El total lo controla quien llama (VerseSingle usa 30 s
+ * para toda la traducción, troceado incluido).
+ */
 const TIEMPO_LIMITE_MS = 10000;
 
 /** Traducir el mismo versículo dos veces es común (ir y volver entre biblias). */

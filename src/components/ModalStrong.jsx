@@ -3,6 +3,7 @@ import Tabs from "./Tabs";
 import { useContext, useRef, useEffect } from "react";
 import LanguageContext from "../context/LanguageContext";
 import DataContext from "../context/DataContext";
+import { useBloquearScroll } from "../hooks/useBloquearScroll";
 import StrongSingle from "./StrongSingle";
 import "../styles/Strongs.css";
 
@@ -11,6 +12,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
   const modalRef = useRef(null);
 
   const { modalStrong } = useContext(DataContext);
+  useBloquearScroll(isOpen);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -39,7 +41,7 @@ const ModalStrong = ({ isOpen, onClose }) => {
         {/* MODAL PRINCIPAL */}
         <div
           ref={modalRef}
-          className="animate-slide-in-top animate-duration-300 relative bg-yellow-50 w-[90%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-[85%] sm:h-[85%] p-2 rounded-lg shadow-lg dark:bg-[#1c0330] dark:text-white overflow-y-scroll no-scrollbar"
+          className="animate-slide-in-top animate-duration-300 relative bg-yellow-50 w-[90%] min-w-[200px] sm:min-w-[300px] sm:w-[500px] h-[85%] sm:h-[85%] p-2 rounded-lg shadow-lg dark:bg-[#1c0330] dark:text-white overflow-y-scroll overscroll-contain no-scrollbar"
         >
           <div className="absolute top-0 right-0">
             <button

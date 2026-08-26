@@ -70,7 +70,13 @@ const VerseWindow = ({ biblia }) => {
       cancelado = true;
       controller.abort();
     };
-  }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero, t, fuente]);
+    // `versiculoSeleccionadoNumero` NO va en las dependencias: el capítulo es
+    // el mismo para todos sus versículos. Estaba aquí y re-descargaba el
+    // capítulo entero en cada clic, lo que además creaba un objeto nuevo y
+    // borraba las traducciones hechas. Sí se mantiene como guarda arriba,
+    // porque hasta que no hay versículo elegido no se muestra nada.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, t, fuente]);
 
   return <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} cargando={cargando} bookId={Number(libroSeleccionado.split("book")[1])} />;
 };

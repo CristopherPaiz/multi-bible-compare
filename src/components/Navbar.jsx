@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { Link, useLocation } from "react-router-dom";
 import LOGO from "/bibleIcon.svg";
 import LanguageContext from "../context/LanguageContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import INFO from "/info.png";
 import SETTING from "/setting.png";
 import COMPARE from "/compare.png";
@@ -9,23 +10,107 @@ import HOMEICO from "/hut.png";
 import HISTORY from "/history.png";
 import DataContext from "../context/DataContext";
 
+// Los iconos que vienen de /public son PNG; los otros dos son SVG en línea.
+// Se envuelven con la misma firma para poder recorrer las rutas como datos y no
+// repetir el mismo <li> siete veces por cada breakpoint.
+const IconoImagen = (src, alt, extraClase = "") => {
+  const Icono = ({ className }) => <img src={src} alt={alt} className={`${className} ${extraClase} dark:invert`} />;
+  Icono.propTypes = { className: PropTypes.string };
+  return Icono;
+};
+
+const IconoBuscar = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.8}
+    stroke="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+    />
+  </svg>
+);
+
+IconoBuscar.propTypes = { className: PropTypes.string };
+
+const IconoCuenta = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.8}
+    stroke="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+    />
+  </svg>
+);
+
+IconoCuenta.propTypes = { className: PropTypes.string };
+
+// En móvil solo caben unas pocas pestañas sin desbordar, así que las rutas se
+// parten en dos grupos: las principales viven en la barra inferior y el resto
+// se agrupa dentro del menú "Más" de la cabecera. En escritorio se muestran
+// todas seguidas.
+const RUTAS_PRINCIPALES = [
+  { to: "/", clave: "Inicio", Icono: IconoImagen(HOMEICO, "Inicio") },
+  { to: "/compare", clave: "Comparar", Icono: IconoImagen(COMPARE, "Comparar", "!w-9") },
+  { to: "/search", clave: "Buscar", Icono: IconoBuscar },
+  { to: "/history", clave: "Historial", Icono: IconoImagen(HISTORY, "Historial"), requiereVersiculo: true },
+];
+
+const RUTAS_SECUNDARIAS = [
+  { to: "/account", clave: "Cuenta", Icono: IconoCuenta },
+  { to: "/settings", clave: "Ajustes", Icono: IconoImagen(SETTING, "Ajustes") },
+  { to: "/about", clave: "Informacion", Icono: IconoImagen(INFO, "Info") },
+];
+
 const Navbar = () => {
-  const [isFixed, setIsFixed] = useState(false);
   const { t } = useContext(LanguageContext);
   const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionadoNumero } = useContext(DataContext);
+  const [menuAbierto, setMenuAbierto] = useState(false);
+  const menuRef = useRef(null);
+  const { pathname } = useLocation();
+
+  const hayVersiculo = versiculoSeleccionadoNumero > 0;
+  const visibles = (rutas) => rutas.filter((r) => !r.requiereVersiculo || hayVersiculo);
+  const principales = visibles(RUTAS_PRINCIPALES);
+  const todas = [...principales, ...RUTAS_SECUNDARIAS];
+
+  // El menú se cierra al cambiar de ruta: si no, al tocar "Ajustes" el panel
+  // seguiría abierto encima de la página nueva.
+  useEffect(() => {
+    setMenuAbierto(false);
+  }, [pathname]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolledToTop = window.scrollY === 0;
-      setIsFixed(!isScrolledToTop);
+    if (!menuAbierto) return;
+
+    const alTocarFuera = (evento) => {
+      if (menuRef.current && !menuRef.current.contains(evento.target)) setMenuAbierto(false);
+    };
+    const alPulsarEscape = (evento) => {
+      if (evento.key === "Escape") setMenuAbierto(false);
     };
 
-    window.addEventListener("scroll", handleScroll);
-
+    document.addEventListener("mousedown", alTocarFuera);
+    document.addEventListener("keydown", alPulsarEscape);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", alTocarFuera);
+      document.removeEventListener("keydown", alPulsarEscape);
     };
-  }, []);
+  }, [menuAbierto]);
 
   const TipoTestamento = (libro) => {
     const tipo = libro.split("book")[1];
@@ -36,189 +121,116 @@ const Navbar = () => {
     }
   };
 
+  const esActiva = (to) => (to === "/" ? pathname === "/" : pathname.startsWith(to));
+
   return (
     <>
-      <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex justify-between">
-        <Link to="/" className="flex sm:hidden py-4 px-6 gap-2" style={{ alignItems: "center" }}>
-          <img src={LOGO} alt="" className="h-14" />
-          <div className="flex flex-col px-2 dark:text-white sm:flex sm:flex-wrap">
-            <span className="text-xl font-extrabold">{t("Biblian")}</span>
-            <span className="text-lg">{t("tituloComparar")}</span>
+      <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex items-center justify-between gap-2 px-3 py-2 sm:px-4">
+        <Link to="/" className="flex items-center gap-2 min-w-0">
+          <img src={LOGO} alt="" className="h-9 shrink-0 sm:h-12" />
+          <div className="flex flex-col min-w-0 dark:text-white sm:flex-row sm:items-end sm:gap-2">
+            <span className="text-lg font-extrabold leading-tight sm:text-2xl">{t("Biblian")}</span>
+            <span className="hidden text-lg font-bold sm:inline">-</span>
+            <span className="truncate text-[11px] leading-tight sm:text-lg sm:font-semibold">
+              {t("tituloComparar")}
+            </span>
           </div>
         </Link>
 
-        <Link to="/" className="hidden sm:flex px-4 py-2 gap-2" style={{ alignItems: "center" }}>
-          <img src={LOGO} alt="" className="h-12" />
-          <div className="flex dark:text-white gap-2 sm:flex sm:flex-wrap">
-            <span className="text-2xl font-extrabold">{t("Biblian")}</span>
-            <span className="self-end text-lg font-bold">-</span>
-            <span className="self-end text-lg font-semibold">{t("tituloComparar")}</span>
-          </div>
-        </Link>
-        <div className="p-3 mr-10 mt-1 hidden sm:flex">
-          <div className="flex">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 text-[10px]">
-              <li>
-                <Link
-                  to="/"
-                  className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={HOMEICO} className="w-6 h-6 dark:invert m-auto" alt="Inicio" />
-                  {t("Inicio")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/compare"
-                  className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={COMPARE} className="w-9 h-6 dark:invert m-auto" alt="Comparar" />
-                  {t("Comparar")}
-                </Link>
-              </li>
-              {versiculoSeleccionadoNumero > 0 && (
-                <li>
+        {/* Escritorio: todas las rutas visibles a la vez. */}
+        <ul className="hidden shrink-0 flex-row space-x-8 pr-6 text-[10px] font-medium sm:flex">
+          {todas.map(({ to, clave, Icono }) => (
+            <li key={to}>
+              <Link
+                to={to}
+                aria-current={esActiva(to) ? "page" : undefined}
+                className={`flex flex-col justify-center text-center text-gray-900 hover:scale-105 hover:underline dark:text-white ${
+                  esActiva(to) ? "font-bold underline" : ""
+                }`}
+              >
+                <Icono className="w-6 h-6 m-auto" />
+                {t(clave)}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Móvil: el resto de rutas se agrupa aquí para no llenar la barra. */}
+        <div className="relative shrink-0 sm:hidden" ref={menuRef}>
+          <button
+            type="button"
+            onClick={() => setMenuAbierto((abierto) => !abierto)}
+            aria-expanded={menuAbierto}
+            aria-haspopup="menu"
+            aria-label={t("Menu")}
+            className="flex h-10 w-10 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.8}
+              stroke="currentColor"
+              className="h-6 w-6"
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+            </svg>
+          </button>
+
+          {menuAbierto && (
+            <ul
+              role="menu"
+              className="absolute right-0 z-30 mt-1 w-48 overflow-hidden rounded-xl border border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]"
+            >
+              {RUTAS_SECUNDARIAS.map(({ to, clave, Icono }) => (
+                <li key={to} role="none">
                   <Link
-                    to="/history"
-                    className="flex text-center justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
+                    role="menuitem"
+                    to={to}
+                    aria-current={esActiva(to) ? "page" : undefined}
+                    className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${
+                      esActiva(to) ? "font-bold" : ""
+                    }`}
                   >
-                    <img src={HISTORY} className="w-6 h-6 dark:invert m-auto" alt="Historial" />
-                    {t("Historial")}
+                    <Icono className="h-5 w-5 shrink-0" />
+                    {t(clave)}
                   </Link>
                 </li>
-              )}
-              <li>
-                <Link
-                  to="/search"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                  </svg>
-                  {t("Buscar")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={INFO} className="w-6 h-6 dark:invert m-auto" alt="Info" />
-                  {t("Informacion")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/account"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                  </svg>
-                  {t("Cuenta")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/settings"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={SETTING} className="w-6 h-6 dark:invert m-auto" alt="Ajustes" />
-                  {t("Ajustes")}
-                </Link>
-              </li>
+              ))}
             </ul>
-          </div>
+          )}
         </div>
       </nav>
-      <nav className="flex bg-[#fbefda] dark:bg-[#693BCC] justify-center sm:hidden">
-        <div className="max-w-full w-full px-4 py-2 mt-1 mx-auto">
-          <div className="flex items-center justify-center">
-            <ul className="flex flex-row font-medium mt-0 space-x-3 text-sm">
-              <li>
-                <Link
-                  to="/"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={HOMEICO} className="w-5 h-5 dark:invert m-auto" alt="Inicio" />
-                  {t("Inicio")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/compare"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={COMPARE} className="w-8 h-5 dark:invert m-auto text-center text-balance" alt="Comparar" />
-                  {t("Comparar")}
-                </Link>
-              </li>
-              {versiculoSeleccionadoNumero > 0 && (
-                <li>
-                  <Link
-                    to="/history"
-                    className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                  >
-                    <img
-                      src={HISTORY}
-                      className="w-5 h-5 dark:invert m-auto text-center text-balance"
-                      alt="Historial"
-                    />
-                    {t("Historial")}
-                  </Link>
-                </li>
-              )}
-              <li>
-                <Link
-                  to="/search"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                  </svg>
-                  {t("Buscar")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={INFO} className="w-5 h-5 dark:invert m-auto" alt="Info" />
-                  {t("Informacion")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/account"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6 m-auto" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                  </svg>
-                  {t("Cuenta")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/settings"
-                  className="flex justify-center flex-col text-gray-900 dark:text-white hover:scale-105 hover:underline"
-                >
-                  <img src={SETTING} className="w-5 h-5 dark:invert m-auto" alt="Ajustes" />
-                  {t("Ajustes")}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+
+      {/* Móvil: solo las rutas principales, repartidas a partes iguales para que
+          nunca se desborden aunque aparezca "Historial". */}
+      <nav className="bg-[#fbefda] dark:bg-[#693BCC] sm:hidden">
+        <ul className="flex w-full flex-row items-stretch">
+          {principales.map(({ to, clave, Icono }) => (
+            <li key={to} className="min-w-0 flex-1">
+              <Link
+                to={to}
+                aria-current={esActiva(to) ? "page" : undefined}
+                className={`flex flex-col items-center gap-0.5 px-1 py-1.5 text-gray-900 dark:text-white ${
+                  esActiva(to) ? "font-bold" : ""
+                }`}
+              >
+                <Icono className="w-5 h-5" />
+                <span className="w-full truncate text-center text-[11px] leading-tight">{t(clave)}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
+
       {versiculoSeleccionadoNumero !== 0 && (
-        <nav className={`sticky ${isFixed ? "fixed top-0" : ""} z-10 gap-4 text-base lg:text-xl`}>
-          <ol className="flex items-center w-full py-3 p-6 justify-center bg-[#fbefda] dark:text-white dark:bg-[#693BCC]">
-            <li className="flex items-center text-black dark:text-white">
+        <nav className="sticky top-0 z-10">
+          <ol className="flex w-full items-center justify-center gap-1.5 bg-[#fbefda] px-3 py-2 text-sm dark:bg-[#693BCC] dark:text-white sm:gap-2 sm:px-6 sm:py-3 lg:text-xl">
+            <li className="flex shrink-0 items-center text-black dark:text-white">
               {TipoTestamento(libroSeleccionado)}
               <svg
-                className="w-3 h-3 ms-2 sm:ms-4 mr-2"
+                className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -233,10 +245,12 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center text-black dark:text-white">
-              {t(libroSeleccionado)}
+            {/* El nombre del libro es lo único que puede ser largo, así que es lo
+                único que se recorta: la referencia numérica siempre se ve. */}
+            <li className="flex min-w-0 items-center text-black dark:text-white">
+              <span className="truncate">{t(libroSeleccionado)}</span>
               <svg
-                className="w-3 h-3 ms-2 sm:ms-4 mr-2"
+                className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -251,8 +265,8 @@ const Navbar = () => {
                 />
               </svg>
             </li>
-            <li className="flex items-center text-black dark:text-white gap-2">
-              {t("Capitulo")}
+            <li className="flex shrink-0 items-center gap-1 text-black dark:text-white sm:gap-2">
+              <span className="hidden sm:inline">{t("Capitulo")}</span>
               <span>
                 {capituloSeleccionadoNumero}:{versiculoSeleccionadoNumero}
               </span>

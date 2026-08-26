@@ -1,12 +1,12 @@
-import { useRef, useEffect, useCallback, useContext, useState } from "react";
+import { useRef, useEffect, useCallback, useContext, useState, useMemo } from "react";
 import PropTypes from "prop-types";
 import { traducir } from "../services/translateSource";
 import "../styles/BibleMarkup.css";
+import MarkupTab from "./MarkupTab";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import TRANSLATE from "/translationBeta.png";
-import TRANSLATEGOOGLE from "/google.png";
 import SHARE from "/share.png";
 
 /**
@@ -30,6 +30,9 @@ import SHARE from "/share.png";
  * Se cambia por un <span> vacío (elemento conocido y con cierre explícito),
  * que la hoja de estilos convierte en un salto de bloque.
  */
+/** Tope total de una traducción antes de rendirse y dejar el texto original. */
+const TIEMPO_MAXIMO_MS = 30000;
+
 const normalizarMarcado = (html) => String(html ?? "").replace(/<pb\s*\/?>/gi, '<span class="salto-parrafo"></span>');
 
 const CLASES_STRONG = [
@@ -52,38 +55,62 @@ const CLASES_STRONG = [
 ].join(" ");
 
 const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
-  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto, strongFun, mostrarMorfologia, mostrarGlosa, setMarcadoDetectado } =
-    useContext(DataContext);
+  const {
+    versiculoSeleccionadoNumero,
+    setVersiculoSeleccionadoNumero,
+    setCompartirVerse,
+    tamanioVerseAncho,
+    tamanioVerseAlto,
+    strongFun,
+    leerMarcado,
+    libroSeleccionado,
+    capituloSeleccionadoNumero,
+  } = useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
 
-  const [textoTraducido, setTextoTraducido] = useState(texto);
-  const [textoOriginal, setTextoOriginal] = useState(texto);
+  /**
+   * Traducciones hechas en este panel, indexadas por número de versículo.
+   *
+   * Antes se guardaba una copia completa del capítulo y se reemplazaba entera,
+   * así que al cambiar de versículo se perdía lo traducido. Con un mapa aparte
+   * las traducciones se acumulan y conviven con el texto original.
+   */
+  const [traducciones, setTraducciones] = useState({});
   const [isTranslating, setIsTranslating] = useState(false);
   const [errorTraduccion, setErrorTraduccion] = useState(false);
+  // Número del versículo que se está traduciendo ahora mismo. Solo ESE lleva el
+  // esqueleto; antes se cubría el panel entero con una capa.
+  const [versiculoTraduciendo, setVersiculoTraduciendo] = useState(null);
+
+  // El aviso de fallo se retira solo: es informativo, no requiere acción.
+  useEffect(() => {
+    if (!errorTraduccion) return;
+    const id = setTimeout(() => setErrorTraduccion(false), 4000);
+    return () => clearTimeout(id);
+  }, [errorTraduccion]);
 
   const containerRef = useRef(null);
-  const translatingRef = useRef(null);
 
-  // Se avisa al contexto si este texto trae morfología o glosa, para que la
-  // barra de la ventana de comparación muestre solo los interruptores que
-  // aplican. Se acumula con OR: basta que UNA de las versiones abiertas lo
-  // traiga para que el control tenga sentido.
-  useEffect(() => {
-    if (typeof texto !== "object" || texto === null) return;
+  // Qué marcado trae ESTE texto. Se calcula aquí y no en el contexto porque la
+  // pestaña es de este panel: un cuadro sin glosa no debe mostrarla.
+  const marcado = useMemo(() => {
+    if (typeof texto !== "object" || texto === null) return { morfologia: false, glosa: false };
     const crudo = Object.values(texto).join("");
-    const morfologia = /<m>/i.test(crudo);
-    const glosa = /<n>/i.test(crudo);
-    if (!morfologia && !glosa) return;
-    setMarcadoDetectado((previo) => ({
-      morfologia: previo.morfologia || morfologia,
-      glosa: previo.glosa || glosa,
-    }));
-  }, [texto, setMarcadoDetectado]);
+    return { morfologia: /<m>/i.test(crudo), glosa: /<n>/i.test(crudo) };
+  }, [texto]);
+
+  const preferencia = leerMarcado(nombre);
+
+  const esCapitulo = typeof texto === "object" && texto !== null;
+
+  /** Lo que se pinta: el original con las traducciones encima. */
+  const textoVisible = useMemo(() => (esCapitulo ? { ...texto, ...traducciones } : texto), [texto, traducciones, esCapitulo]);
+
+  const estaTraducido = Boolean(traducciones[versiculoSeleccionadoNumero]);
 
   // `true` mientras no haya ni un versículo que pintar.
-  const sinContenido =
-    !textoTraducido || (typeof textoTraducido === "object" && Object.keys(textoTraducido).length === 0);
+  const sinContenido = !textoVisible || (esCapitulo && Object.keys(texto).length === 0);
 
   const handleVerseClick = useCallback(
     (versiculo) => {
@@ -92,12 +119,11 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     [setVersiculoSeleccionadoNumero]
   );
 
+  // Las traducciones son de ESTE capítulo: al cambiar de libro o capítulo se
+  // descartan, pero NO al cambiar de versículo dentro del mismo.
   useEffect(() => {
-    if (texto !== textoOriginal) {
-      setTextoOriginal(texto);
-      setTextoTraducido(texto);
-    }
-  }, [texto, textoOriginal]);
+    setTraducciones({});
+  }, [libroSeleccionado, capituloSeleccionadoNumero]);
 
   const centerText = useCallback(() => {
     if (containerRef.current && versiculoSeleccionadoNumero) {
@@ -115,15 +141,8 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
   }, [versiculoSeleccionadoNumero]);
 
   useEffect(() => {
-    if (texto !== textoOriginal) {
-      setTextoOriginal(texto);
-      setTextoTraducido(texto);
-    }
-  }, [texto, textoOriginal]);
-
-  useEffect(() => {
     centerText();
-  }, [textoTraducido, centerText]);
+  }, [textoVisible, centerText]);
 
   /**
    * Los números Strong van dentro del HTML del versículo como `<sup>2424 </sup>`,
@@ -156,10 +175,16 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
 
     const idiomaVersoTranslate = iso.toString();
     const idiomaNavegadorTranslate = idiomaNavegador;
-    const verso = textoOriginal[versiculoSeleccionadoNumero];
+    const verso = texto?.[versiculoSeleccionadoNumero];
 
     setIsTranslating(true);
     setErrorTraduccion(false);
+    setVersiculoTraduciendo(versiculoSeleccionadoNumero);
+
+    // Tope duro de 30 s para TODA la traducción. Si se pasa, se deja el texto
+    // como estaba y se avisa: mejor eso que un esqueleto girando para siempre.
+    const abortador = new AbortController();
+    const corte = setTimeout(() => abortador.abort(), TIEMPO_MAXIMO_MS);
 
     try {
       // El servicio limpia el markup `<sup>` por su cuenta: traducir los
@@ -168,32 +193,38 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
         texto: verso,
         desde: idiomaVersoTranslate,
         hacia: idiomaNavegadorTranslate,
+        signal: abortador.signal,
       });
-      setTextoTraducido({ ...textoTraducido, [versiculoSeleccionadoNumero]: resultado });
+      setTraducciones((previo) => ({ ...previo, [versiculoSeleccionadoNumero]: resultado }));
       centerText();
     } catch (error) {
+      // Al abortar no se toca `traducciones`, así que el versículo se queda
+      // exactamente con lo que tenía antes.
       console.error("No se pudo traducir el versículo:", error);
       setErrorTraduccion(true);
     } finally {
+      clearTimeout(corte);
       setIsTranslating(false);
+      setVersiculoTraduciendo(null);
     }
   };
 
-  const handleGoogleTranslate = (iso) => {
-    if (iso === "no" || !versiculoSeleccionadoNumero) {
-      return;
-    }
 
-    const idiomaVersoTranslate = iso.toString();
-    const idiomaNavegadorTranslate = idiomaNavegador;
-    const verso = textoOriginal[versiculoSeleccionadoNumero];
-    return `https://translate.google.com/${tipoTraductor}sl=${idiomaVersoTranslate}&tl=${idiomaNavegadorTranslate}&q=${encodeURIComponent(verso)}`;
+  /** Descarta la traducción de este versículo y deja el original. */
+  const revertirTraduccion = () => {
+    setTraducciones((previo) => {
+      const copia = { ...previo };
+      delete copia[versiculoSeleccionadoNumero];
+      return copia;
+    });
+    setErrorTraduccion(false);
   };
 
   //TAMAÑOS
   return (
     <>
       <div className="flex flex-col border-neutral-400 rounded-md border relative bg-white dark:bg-[#0f0f0f]">
+        <MarkupTab biblia={nombre} tieneMorfologia={marcado.morfologia} tieneGlosa={marcado.glosa} />
         <div
           className={`${tamanioVerseAncho.min} ${tamanioVerseAncho.max} text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row`}
         >
@@ -201,24 +232,30 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
           </div>
-          {iso !== "no" && typeof textoTraducido !== "string" && idiomaNavegador !== iso ? (
+          {iso !== "no" && esCapitulo && idiomaNavegador !== iso ? (
             <div className="flex flex-nowrap items-center">
-              <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
+              <button onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}>
                 <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Share verse from Biblian"></img>
               </button>
-              <button disabled={isTranslating ? true : false}>
-                <a href={handleGoogleTranslate(iso)} target="_blank" rel="nofollow noopener noreferrer">
-                  <img className="mt-1 mr-3 w-6 h-9" src={TRANSLATEGOOGLE} alt="Translate in Google"></img>
-                </a>
-              </button>
-              <button disabled={isTranslating ? true : false} onClick={() => handleTranslate(iso)}>
-                <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt="Translate"></img>
+              {/* El mismo botón traduce o revierte según el estado del
+                  versículo actual, para no añadir un icono más al encabezado. */}
+              <button
+                disabled={isTranslating}
+                onClick={() => (estaTraducido ? revertirTraduccion() : handleTranslate(iso))}
+                title={estaTraducido ? t("VerOriginal") : t("Traducir")}
+                aria-label={estaTraducido ? t("VerOriginal") : t("Traducir")}
+                className="relative disabled:opacity-40"
+              >
+                <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt=""></img>
+                {estaTraducido && (
+                  <span className="absolute -right-0 -top-0 block h-2 w-2 rounded-full bg-emerald-500 ring-2 ring-neutral-300 dark:ring-neutral-800"></span>
+                )}
               </button>
             </div>
           ) : (
-            typeof textoTraducido !== "string" && (
+            esCapitulo && (
               <div className="flex flex-nowrap items-center">
-                <button onClick={() => setCompartirVerse(textoOriginal, versiculoSeleccionadoNumero, nombre)}>
+                <button onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}>
                   <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Share verse from Biblian"></img>
                 </button>
               </div>
@@ -237,7 +274,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
           <div
             ref={containerRef}
             className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${
-              typeof textoTraducido === "string" ? "h-fit" : tamanioVerseAlto.def
+              esCapitulo ? tamanioVerseAlto.def : "h-fit"
             }`}
             style={{ position: "relative" }}
           >
@@ -255,8 +292,8 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                   ></div>
                 ))}
               </div>
-            ) : typeof textoTraducido === "object" && textoTraducido !== null ? (
-              Object.entries(textoTraducido)
+            ) : esCapitulo ? (
+              Object.entries(textoVisible)
                 .sort(([keyA], [keyB]) => keyA - keyB)
                 .map(([versiculo, contenido], index) => (
                   <p
@@ -277,20 +314,20 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                     <span>
                       <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
                       <span
-                        className={`texto-biblico ${CLASES_STRONG} ${mostrarMorfologia ? "" : "sin-morfologia"} ${
-                          mostrarGlosa ? "" : "sin-glosa"
-                        }`}
+                        className={`texto-biblico ${CLASES_STRONG} ${preferencia.morfologia ? "" : "sin-morfologia"} ${
+                          preferencia.glosa ? "" : "sin-glosa"
+                        } ${String(versiculoTraduciendo) === String(versiculo) ? "traduciendo-skeleton" : ""}`}
                         onClick={handleStrongClick}
                         dangerouslySetInnerHTML={{ __html: normalizarMarcado(contenido) }}
                       ></span>
                     </span>
                   </p>
                 ))
-            ) : typeof textoTraducido === "string" ? (
+            ) : typeof textoVisible === "string" ? (
               <div
                 className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}
               >
-                {textoTraducido}
+                {textoVisible}
               </div>
             ) : (
               <p>{t("NoObjetoNoString")}</p>
@@ -298,18 +335,8 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
           </div>
         </div>
         {errorTraduccion && !isTranslating && (
-          <div className="text-center text-xs text-red-600 dark:text-red-400 my-1">{t("TraduccionFallo")}</div>
-        )}
-        {isTranslating && (
-          <div
-            ref={translatingRef}
-            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-50 flex justify-center items-center"
-            style={{ pointerEvents: "none" }}
-          >
-            <div className="text-white font-bold flex flex-col">
-              <div className="flex justify-center m-auto h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
-              <div>{t("Traduciendo")}</div>
-            </div>
+          <div role="status" className="animate-fade-in my-1 text-center text-xs text-red-600 dark:text-red-400">
+            {t("TraduccionFallo")}
           </div>
         )}
       </div>

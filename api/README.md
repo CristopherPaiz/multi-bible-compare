@@ -121,6 +121,52 @@ Antes la UI montaba un `<VerseWindow>` por versión y cada uno hacía su propio
 limit y sin caché útil. Ahora `GET /api/chapters` los resuelve en **una sola
 consulta**.
 
+## Reconstruir la base desde cero
+
+Los JSON originales de las 150 versiones siguen en el repo, bajo
+`src/assets/bibles` (y el diccionario Strong en `src/assets/strongs`). No son
+necesarios para que la app funcione — todo vive ya en Turso — pero se conservan
+para que cualquiera pueda rehacer la base sin depender de nuestra instancia.
+
+```bash
+# 1. Construir el archivo SQLite en local (~2 min, no consume cuota de Turso)
+node api/migrate.mjs build          # -> api/build/biblian.db  (~660 MB)
+
+# 2. Crear la base en Turso desde ese archivo
+#    El CLI de Turso solo existe para Linux/macOS; en Windows va por WSL.
+#    `--from-file` necesita el binario `sqlite3` en el PATH.
+turso db create <nombre> --from-file api/build/biblian.db --wait
+
+# 3. Conectar la API
+turso db show <nombre> --url        # -> TURSO_DATABASE_URL
+turso db tokens create <nombre>     # -> TURSO_AUTH_TOKEN
+
+# 4. Enlazar el catálogo con los nombres de carpeta que usa la UI
+node api/migrate.mjs link
+
+# 5. Subir el audio del diccionario a un bucket S3-compatible
+node api/migrate.mjs audio --create-bucket
+```
+
+Alternativa sin archivo local: `node api/migrate.mjs schema` crea el esquema
+vacío en una base Turso ya existente, y a partir de ahí se puede poblar como se
+prefiera.
+
+> **Por qué no se insertan los datos por red:** son 141,897 capítulos y 3.7 M
+> entradas de índice. Por HTTP tarda horas y consume casi toda la cuota mensual
+> de escrituras (el plan starter da 10 M/mes). Subir el archivo de una vez no
+> gasta ni una escritura.
+
+### Los JSON no entran al servidor de desarrollo
+
+`src/assets` son ~156,000 archivos. El dev server de Vite los trataba como
+código fuente: un watcher por archivo, y Tailwind reevaluando su glob de
+`content` en cada rebuild (4,204 ms medidos, solo para recorrer y descartarlos).
+
+Están excluidos en `vite.config.js` (`server.watch.ignored`) y en
+`tailwind.config.js` (`!./src/assets/**`). Siguen en disco y `migrate.mjs` los
+lee directamente, sin pasar por Vite.
+
 ## Deploy
 
 `render.yaml` está listo. Las credenciales van en el dashboard de Render
