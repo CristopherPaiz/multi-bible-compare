@@ -24,4 +24,14 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  /* `no-scrollbar` ya se usaba en el modal de biblias, pero nunca se llegó a
+     definir: la clase no existía y la barra se seguía viendo. */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

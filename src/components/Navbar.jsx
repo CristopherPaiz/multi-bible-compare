@@ -224,7 +224,10 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      {versiculoSeleccionadoNumero !== 0 && (
+      {/* Al confirmar biblias nuevas, capítulo y versículo se ponen a `null`, que
+          no es `!== 0`: la miga de pan quedaba visible con "NT · Capítulo :" y sin
+          libro. Se exige que los tres datos existan. */}
+      {Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
         <nav className="sticky top-0 z-10">
           <ol className="flex w-full items-center justify-center gap-1.5 bg-[#fbefda] px-3 py-2 text-sm dark:bg-[#693BCC] dark:text-white sm:gap-2 sm:px-6 sm:py-3 lg:text-xl">
             <li className="flex shrink-0 items-center text-black dark:text-white">
