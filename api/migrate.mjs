@@ -129,10 +129,22 @@ const turso = () => {
 const encodeReference = (bibleId, bookId, chapter, verse) =>
   bibleId * 16777216 + bookId * 65536 + chapter * 256 + verse
 
+/**
+ * Deja el versiculo en texto limpio para el indice FTS5.
+ *
+ * Se borra el CONTENIDO de `<sup>` (numero Strong), `<m>` (codigo morfologico)
+ * y `<f>` (marca de nota), no solo sus etiquetas: no son texto biblico y nadie
+ * los busca. La glosa `<n>` se conserva porque es la unica traduccion en
+ * espanol que tienen las versiones interlineales.
+ *
+ * Debe coincidir con `stripStrongMarkup` en src/utils/reference.helper.ts.
+ */
 const stripMarkup = (text) =>
   text
-    .replace(/<sup>[\s\S]*?<\/sup>/g, '')
-    .replace(/<[^>]+>/g, '')
+    .replace(/<sup>[\s\S]*?<\/sup>/gi, ' ')
+    .replace(/<m>[\s\S]*?<\/m>/gi, ' ')
+    .replace(/<f>[\s\S]*?<\/f>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 

@@ -22,6 +22,33 @@ export const DataProvider = ({ children }) => {
   const [history, setHistory] = useState([]);
   const [modoCompacto, setModoCompacto] = useState(false);
 
+  // Interruptores del marcado interlineal (morfología y glosa palabra por
+  // palabra). Solo estorban en las versiones que los traen, por eso el control
+  // vive en la propia ventana de comparación y no en Ajustes.
+  const leerBool = (clave, porDefecto) => {
+    try {
+      const v = localStorage.getItem(clave);
+      return v === null ? porDefecto : v === "true";
+    } catch {
+      return porDefecto;
+    }
+  };
+  const [mostrarMorfologia, setMostrarMorfologia] = useState(() => leerBool("mostrarMorfologia", false));
+  const [mostrarGlosa, setMostrarGlosa] = useState(() => leerBool("mostrarGlosa", true));
+
+  // `{ morfologia, glosa }`: qué marcado trae el versículo que está en
+  // pantalla. Sirve para no mostrar interruptores que no aplican.
+  const [marcadoDetectado, setMarcadoDetectado] = useState({ morfologia: false, glosa: false });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem("mostrarMorfologia", String(mostrarMorfologia));
+      localStorage.setItem("mostrarGlosa", String(mostrarGlosa));
+    } catch {
+      // Safari privado: sin persistir, pero aplica en esta sesión.
+    }
+  }, [mostrarMorfologia, mostrarGlosa]);
+
   //STRONGS
   const [strong, strongFun] = useState([]);
   const [modalStrong, setModalStrong] = useState(false);
@@ -542,6 +569,12 @@ export const DataProvider = ({ children }) => {
         cargandoImagen,
         modoCompacto,
         setModoCompacto,
+        mostrarMorfologia,
+        setMostrarMorfologia,
+        mostrarGlosa,
+        setMostrarGlosa,
+        marcadoDetectado,
+        setMarcadoDetectado,
         setCompartir,
         compartir,
         setCompartirVerse,

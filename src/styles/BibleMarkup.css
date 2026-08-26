@@ -1,0 +1,109 @@
+/*
+ * Estilos del marcado que traen los textos bíblicos.
+ *
+ * Los JSON vienen del formato XML de Beblia y traen etiquetas que el navegador
+ * no conoce (`<m>`, `<n>`, `<t>`, `<e>`, `<f>`, `<J>`, `<pb/>`). Como se
+ * inyectan con `dangerouslySetInnerHTML`, el navegador las deja como elementos
+ * inline SIN estilo: su contenido se mostraba pelado y mezclado con el texto.
+ * El caso peor eran las interlineales, donde griego, número Strong, morfología
+ * y glosa quedaban aplastados en una sola línea:
+ *
+ *   ουτως 779 ADV Así γαρ 1063 CONJ porque ηγαπησεν 5 V-AAI-3S amó
+ *
+ * Todo se resuelve con CSS porque el HTML ya llega con la estructura; no hace
+ * falta tocar los datos ni rehacer la migración.
+ *
+ * Nota: `<pb/>` NO se estiliza aquí. Las etiquetas desconocidas no pueden
+ * auto-cerrarse en HTML, así que `<pb/>A<pb/>B` se parsea ANIDADO
+ * (`<pb>A<pb>B</pb></pb>`) y cada salto envolvería al resto del versículo.
+ * Se normaliza antes de inyectar (ver `normalizarMarcado` en VerseSingle).
+ */
+
+/* --- Salto de párrafo (ya normalizado a <span>) ----------------------- */
+.texto-biblico .salto-parrafo {
+  display: block;
+  height: 0.55em;
+}
+
+/* --- Línea de poesía --------------------------------------------------
+   Cada <t> es un renglón del texto poético. Sangría francesa para que los
+   versos largos que se parten se distingan del inicio de línea. */
+.texto-biblico t {
+  display: block;
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+/* --- Palabras añadidas por el traductor -------------------------------
+   Convención editorial clásica: van en cursiva porque no están en el
+   original. <i> ya es HTML real, pero se iguala para que se vean idénticas. */
+.texto-biblico e,
+.texto-biblico i {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* --- Encabezado / negrita --------------------------------------------- */
+.texto-biblico b {
+  font-weight: 700;
+}
+
+/* --- Palabras de Jesús (letra roja) ------------------------------------ */
+.texto-biblico j {
+  color: #b91c1c;
+}
+:is(.dark) .texto-biblico j {
+  color: #fca5a5;
+}
+
+/* --- Marcador de nota al pie -------------------------------------------
+   Son referencias tipo ⓐ o [2]. Se achican y se apagan para que no compitan
+   con el texto, y `user-select: none` evita que se cuelen al copiar o
+   compartir un versículo. */
+.texto-biblico f {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+  opacity: 0.55;
+  user-select: none;
+}
+
+/* --- Morfología: V-AAI-3S, N-NSM, ADV... -------------------------------
+   Dato técnico, no texto bíblico: se marca como tal con una fuente
+   monoespaciada pequeña dentro de una cápsula. */
+.texto-biblico m {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.62em;
+  line-height: 1.3;
+  padding: 0 0.3em;
+  margin: 0 0.1em;
+  border-radius: 0.25rem;
+  background-color: #e5e7eb;
+  color: #4b5563;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+:is(.dark) .texto-biblico m {
+  background-color: #374151;
+  color: #d1d5db;
+}
+
+/* --- Glosa: la traducción palabra por palabra --------------------------
+   Es el equivalente en español del término original que la precede. Se
+   colorea distinto para poder seguir la correspondencia de un vistazo. */
+.texto-biblico n {
+  color: #047857;
+  font-size: 0.92em;
+}
+:is(.dark) .texto-biblico n {
+  color: #6ee7b7;
+}
+
+/* --- Interruptores de la ventana de comparación ------------------------ */
+.texto-biblico.sin-morfologia m {
+  display: none;
+}
+.texto-biblico.sin-glosa n {
+  display: none;
+}

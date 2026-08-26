@@ -236,5 +236,8 @@
   "CuentaSesionDe": "Sesión de {usuario}",
   "CuentaSincronizando": "Tus favoritos e historial se sincronizan automáticamente.",
   "CuentaNoDisponible": "La cuenta necesita la fuente API. Con el CDN de GitHub no hay dónde guardar.",
-  "TraduccionFallo": "No se pudo traducir. Intenta de nuevo."
+  "TraduccionFallo": "No se pudo traducir. Intenta de nuevo.",
+  "MostrarEnElTexto": "Mostrar:",
+  "Glosa": "Glosa",
+  "Morfologia": "Morfología"
 }

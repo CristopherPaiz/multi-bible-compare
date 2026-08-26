@@ -1,6 +1,7 @@
 import { useRef, useEffect, useCallback, useContext, useState } from "react";
 import PropTypes from "prop-types";
 import { traducir } from "../services/translateSource";
+import "../styles/BibleMarkup.css";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
@@ -21,6 +22,16 @@ import SHARE from "/share.png";
  *    área de clic también. Con padding el objetivo crece sin mover el texto
  *    (el margen negativo compensa), así deja de fallar el clic.
  */
+/**
+ * `<pb/>` marca inicio de párrafo, pero en HTML una etiqueta desconocida NO
+ * puede auto-cerrarse: el navegador parsea `<pb/>A<pb/>B` como
+ * `<pb>A<pb>B</pb></pb>`, anidando y envolviendo todo el resto del versículo.
+ *
+ * Se cambia por un <span> vacío (elemento conocido y con cierre explícito),
+ * que la hoja de estilos convierte en un salto de bloque.
+ */
+const normalizarMarcado = (html) => String(html ?? "").replace(/<pb\s*\/?>/gi, '<span class="salto-parrafo"></span>');
+
 const CLASES_STRONG = [
   "[&_sup]:cursor-pointer",
   "[&_sup]:inline-block",
@@ -41,7 +52,7 @@ const CLASES_STRONG = [
 ].join(" ");
 
 const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
-  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto, strongFun } =
+  const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto, strongFun, mostrarMorfologia, mostrarGlosa, setMarcadoDetectado } =
     useContext(DataContext);
   const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
@@ -53,6 +64,22 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
 
   const containerRef = useRef(null);
   const translatingRef = useRef(null);
+
+  // Se avisa al contexto si este texto trae morfología o glosa, para que la
+  // barra de la ventana de comparación muestre solo los interruptores que
+  // aplican. Se acumula con OR: basta que UNA de las versiones abiertas lo
+  // traiga para que el control tenga sentido.
+  useEffect(() => {
+    if (typeof texto !== "object" || texto === null) return;
+    const crudo = Object.values(texto).join("");
+    const morfologia = /<m>/i.test(crudo);
+    const glosa = /<n>/i.test(crudo);
+    if (!morfologia && !glosa) return;
+    setMarcadoDetectado((previo) => ({
+      morfologia: previo.morfologia || morfologia,
+      glosa: previo.glosa || glosa,
+    }));
+  }, [texto, setMarcadoDetectado]);
 
   // `true` mientras no haya ni un versículo que pintar.
   const sinContenido =
@@ -250,9 +277,11 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                     <span>
                       <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
                       <span
-                        className={CLASES_STRONG}
+                        className={`texto-biblico ${CLASES_STRONG} ${mostrarMorfologia ? "" : "sin-morfologia"} ${
+                          mostrarGlosa ? "" : "sin-glosa"
+                        }`}
                         onClick={handleStrongClick}
-                        dangerouslySetInnerHTML={{ __html: contenido }}
+                        dangerouslySetInnerHTML={{ __html: normalizarMarcado(contenido) }}
                       ></span>
                     </span>
                   </p>

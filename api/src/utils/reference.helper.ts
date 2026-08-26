@@ -61,14 +61,26 @@ export const bibleRowidRange = (bibleId: number): { lo: number; hi: number } => 
 }
 
 /**
- * Quita el markup `<sup>NNNN </sup>` y normaliza espacios.
+ * Deja el versiculo en texto legible para el indice y para los fragmentos de
+ * busqueda.
  *
- * El indice se llena con ESTE texto, no con el original: si no, los numeros
- * Strong quedan pegados entre palabras y rompen la tokenizacion.
+ * No basta con borrar las etiquetas: hay dos cuyo CONTENIDO tampoco es texto
+ * biblico y ensuciaba el resultado.
+ *
+ *   - `<sup>2424 </sup>` numero Strong.
+ *   - `<m>V-AAI-3S</m>`  codigo morfologico. Nadie busca "N-GSM", y dejarlo
+ *                        convertia el fragmento en sopa:
+ *                        "θεου N-GSM De Dios γαρ CONJ porque εσμεν V-PAI-1P".
+ *   - `<f>ⓐ</f>`         marca de nota al pie.
+ *
+ * La glosa `<n>Dios</n>` SI se conserva: es la traduccion palabra por palabra,
+ * o sea el unico texto en espanol que tienen las interlineales.
  */
 export const stripStrongMarkup = (text: string): string =>
   text
-    .replace(/<sup>[\s\S]*?<\/sup>/g, '')
-    .replace(/<[^>]+>/g, '')
+    .replace(/<sup>[\s\S]*?<\/sup>/gi, ' ')
+    .replace(/<m>[\s\S]*?<\/m>/gi, ' ')
+    .replace(/<f>[\s\S]*?<\/f>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
