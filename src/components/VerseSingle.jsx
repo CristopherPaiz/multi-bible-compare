@@ -1,4 +1,5 @@
 import { useRef, useEffect, useCallback, useContext, useState } from "react";
+import { TRANSLATE_PROXY } from "../config/dataSource";
 import PropTypes from "prop-types";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
@@ -73,7 +74,7 @@ const VerseSingle = ({ texto, nombre, iso }) => {
     setIsTranslating(true);
 
     const translator1 = new GoogleTranslator({
-      corsProxy: "https://corsproxy.io/",
+      corsProxy: TRANSLATE_PROXY,
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
       },
