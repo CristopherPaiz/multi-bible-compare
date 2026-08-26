@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState, useRef, useMemo, useCallback } from "react";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
-import { getStrongAudioUrl, getStrongBatch } from "../services/bibleSource";
+import { getStrongAudioUrl } from "../services/bibleSource";
 import indexHebrew from "../assets/strongs/IndexHebrew.json";
 import indexGreek from "../assets/strongs/IndexGreek.json";
 
@@ -9,11 +9,10 @@ const StrongPopup = () => {
   const { strongPopup, cerrarStrongPopup, abrirDefinicionStrong } = useContext(DataContext);
   const { t } = useContext(LanguageContext);
 
-  const [entryData, setEntryData] = useState(null);
   const [audio, setAudio] = useState(null);
   const [cargandoAudio, setCargandoAudio] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [coords, setCoords] = useState({ top: 0, left: 0, placement: "bottom" });
+  const [coords, setCoords] = useState({ top: 0, left: 0, placement: "bottom", arrowLeft: 150 });
 
   const popupRef = useRef(null);
 
@@ -21,8 +20,8 @@ const StrongPopup = () => {
   const isHebrew = code?.startsWith("H");
   const isGreek = code?.startsWith("G");
 
-  // Buscar información base inmediata desde los índices locales
-  const fastEntry = useMemo(() => {
+  // Información instantánea desde los índices locales (sin llamadas de red redundantes)
+  const entryData = useMemo(() => {
     if (!code) return null;
     if (isHebrew) {
       return indexHebrew.find((item) => item.id === code) || null;
@@ -33,40 +32,7 @@ const StrongPopup = () => {
     return null;
   }, [code, isHebrew, isGreek]);
 
-  // Cargar detalles extendidos si la API o CDN los tiene
-  useEffect(() => {
-    if (!code) {
-      setEntryData(null);
-      return;
-    }
-
-    let cancelado = false;
-    const controller = new AbortController();
-
-    // Empezamos con la info rápida local
-    setEntryData(fastEntry);
-
-    const cargarDetalle = async () => {
-      try {
-        const batch = await getStrongBatch({ code, signal: controller.signal });
-        if (!cancelado && Array.isArray(batch) && batch.length > 0) {
-          const found = batch.find((item) => item.id === code) || batch[0];
-          if (found) setEntryData((prev) => ({ ...prev, ...found }));
-        }
-      } catch {
-        // Si falla la red, conservamos la info básica de fastEntry
-      }
-    };
-
-    cargarDetalle();
-
-    return () => {
-      cancelado = true;
-      controller.abort();
-    };
-  }, [code, fastEntry]);
-
-  // Carga y preparación del audio
+  // Carga y preparación del audio únicamente desde la nueva fuente
   useEffect(() => {
     if (!code) {
       setAudio(null);
@@ -75,7 +41,7 @@ const StrongPopup = () => {
       return;
     }
 
-    const audioUrl = entryData?.audioUrl ?? getStrongAudioUrl(code);
+    const audioUrl = getStrongAudioUrl(code);
     setCargandoAudio(true);
     setIsPlaying(false);
 
@@ -109,7 +75,7 @@ const StrongPopup = () => {
       elemento.pause();
       elemento.src = "";
     };
-  }, [code, entryData?.audioUrl]);
+  }, [code]);
 
   useEffect(() => {
     if (audio) {
@@ -132,39 +98,46 @@ const StrongPopup = () => {
     }
   }, [audio, isPlaying]);
 
-  // Calcular posición inteligente del Popup según el elemento ancla
+  // Calcular posición inteligente del Popup anclado directamente sobre/bajo el número en móvil y escritorio
   useEffect(() => {
     if (!strongPopup) return;
 
     const anchor = strongPopup.anchorRect;
-    const popupWidth = 320;
-    const popupHeight = 175;
-    const margin = 12;
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    const popupWidth = Math.min(viewportWidth - 24, 310);
+    const popupHeight = 165;
+    const margin = 10;
 
-    if (!anchor || window.innerWidth < 640) {
-      setCoords({ top: 0, left: 0, placement: "bottom", arrowLeft: 160 });
+    if (!anchor) {
+      setCoords({
+        top: Math.max(margin, viewportHeight / 2 - popupHeight / 2),
+        left: Math.max(margin, viewportWidth / 2 - popupWidth / 2),
+        placement: "bottom",
+        arrowLeft: popupWidth / 2,
+      });
       return;
     }
 
     const anchorCenterX = anchor.left + anchor.width / 2;
     let left = anchorCenterX - popupWidth / 2;
 
-    // Evitar que se desborde a los bordes de la pantalla
+    // Evitar que se desborde a la izquierda o derecha de la pantalla
     if (left < margin) {
       left = margin;
-    } else if (left + popupWidth > window.innerWidth - margin) {
-      left = window.innerWidth - popupWidth - margin;
+    } else if (left + popupWidth > viewportWidth - margin) {
+      left = viewportWidth - popupWidth - margin;
     }
 
-    // Posición exacta de la flecha respecto al contenedor del popup
-    const arrowLeft = Math.max(24, Math.min(popupWidth - 24, anchorCenterX - left));
+    // Posición exacta de la flecha apuntando al centro del número presionado
+    const arrowLeft = Math.max(20, Math.min(popupWidth - 20, anchorCenterX - left));
 
-    let top = anchor.bottom + 10;
+    let top = anchor.bottom + 8;
     let placement = "bottom";
 
-    // Si no cabe abajo y sí cabe arriba, ubicarlo encima del ancla
-    if (top + popupHeight > window.innerHeight - margin && anchor.top - popupHeight - margin > 0) {
-      top = anchor.top - popupHeight - 10;
+    // Si no cabe abajo y sí cabe arriba, posicionarlo encima
+    if (top + popupHeight > viewportHeight - margin && anchor.top - popupHeight - margin > 0) {
+      top = anchor.top - popupHeight - 8;
       placement = "top";
     }
 
@@ -182,40 +155,31 @@ const StrongPopup = () => {
 
   if (!strongPopup) return null;
 
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
-
   return (
-    <div className="fixed inset-0 z-[999999] flex items-end sm:items-stretch sm:block pointer-events-auto">
+    <div className="fixed inset-0 z-[999999] pointer-events-auto">
       {/* Backdrop transparente para capturar clics afuera */}
-      <div className="fixed inset-0 bg-black/40 sm:bg-transparent backdrop-blur-[1px] sm:backdrop-blur-none" onClick={cerrarStrongPopup} />
+      <div className="fixed inset-0 bg-black/25 dark:bg-black/40 backdrop-blur-[1px]" onClick={cerrarStrongPopup} />
 
       <div
         ref={popupRef}
-        style={
-          !isMobile && coords.top > 0
-            ? {
-                top: `${coords.top}px`,
-                left: `${coords.left}px`,
-                transformOrigin: `${coords.arrowLeft}px ${coords.placement === "bottom" ? "top" : "bottom"}`,
-              }
-            : {}
-        }
-        className={`relative z-10 w-full sm:w-[320px] rounded-t-3xl sm:rounded-2xl sm:absolute border-2 border-amber-300/80 dark:border-purple-600/80 bg-white/95 dark:bg-[#1a0f26]/95 p-4 shadow-2xl backdrop-blur-md text-neutral-900 dark:text-neutral-100 transition-all animate-pop animate-duration-200 ${
-          isMobile ? "max-h-[85vh] overflow-y-auto mb-0" : ""
-        }`}
+        style={{
+          top: `${coords.top}px`,
+          left: `${coords.left}px`,
+          width: `${Math.min(typeof window !== "undefined" ? window.innerWidth - 24 : 310, 310)}px`,
+          transformOrigin: `${coords.arrowLeft}px ${coords.placement === "bottom" ? "top" : "bottom"}`,
+        }}
+        className="absolute z-10 rounded-2xl border-2 border-amber-300/90 dark:border-purple-600/90 bg-white/95 dark:bg-[#1a0f26]/95 p-3.5 shadow-2xl backdrop-blur-md text-neutral-900 dark:text-neutral-100 transition-all animate-pop animate-duration-150"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Puntero de burbuja (flecha anclada directamente al número Strong) */}
-        {!isMobile && coords.top > 0 && (
-          <div
-            style={{ left: `${coords.arrowLeft}px` }}
-            className={`absolute -translate-x-1/2 w-4 h-4 rotate-45 bg-white dark:bg-[#1a0f26] z-20 ${
-              coords.placement === "bottom"
-                ? "-top-[9px] border-t-2 border-l-2 border-amber-300/80 dark:border-purple-600/80"
-                : "-bottom-[9px] border-b-2 border-r-2 border-amber-300/80 dark:border-purple-600/80"
-            }`}
-          />
-        )}
+        <div
+          style={{ left: `${coords.arrowLeft}px` }}
+          className={`absolute -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-white dark:bg-[#1a0f26] z-20 ${
+            coords.placement === "bottom"
+              ? "-top-[8px] border-t-2 border-l-2 border-amber-300/90 dark:border-purple-600/90"
+              : "-bottom-[8px] border-b-2 border-r-2 border-amber-300/90 dark:border-purple-600/90"
+          }`}
+        />
 
         {/* Encabezado: Código + Idioma + Botón cerrar */}
         <div className="relative z-30 flex items-center justify-between border-b border-gray-100 dark:border-purple-900/60 pb-2 mb-3">
@@ -238,14 +202,21 @@ const StrongPopup = () => {
         </div>
 
         {/* Cuerpo: Palabra original + Transliteración + Audio */}
-        <div className="flex items-center justify-between gap-3 mb-4">
+        <div className="flex items-center justify-between gap-3 mb-3">
           <div className="min-w-0 flex-1">
-            <div className="text-2xl font-bold tracking-wide text-neutral-900 dark:text-white truncate">
-              {entryData?.le || fastEntry?.le || "—"}
+            <div
+              className={`font-bold tracking-wide text-neutral-900 dark:text-white break-words ${
+                (entryData?.le || "").length > 22
+                  ? "text-base leading-tight"
+                  : (entryData?.le || "").length > 14
+                  ? "text-lg leading-snug"
+                  : "text-2xl"
+              }`}
+            >
+              {entryData?.le || "—"}
             </div>
-            <div className="text-sm font-medium italic text-gray-600 dark:text-gray-300 truncate">
-              {entryData?.pl || fastEntry?.pl || ""}
-              {entryData?.ti ? ` (${entryData.ti})` : ""}
+            <div className="text-xs sm:text-sm font-medium italic text-gray-600 dark:text-gray-300 break-words mt-0.5">
+              {entryData?.pl || ""}
             </div>
           </div>
 

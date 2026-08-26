@@ -2,7 +2,6 @@ import { createContext, useContext, useState, useEffect, useCallback } from "rea
 import PropTypes from "prop-types";
 import LanguageContext from "./LanguageContext";
 import bibleData from "../assets/bibles/JSON_DATA/01. English - Amplified (2015).json";
-import ThemeContext from "./ThemeContext";
 import { getStrongBatch } from "../services/bibleSource";
 import { aTextoPlano, capituloATextoPlano } from "../utils/textoPlano";
 
@@ -463,36 +462,7 @@ export const DataProvider = ({ children }) => {
     };
   }, [strong]);
 
-  //TEMA STRONG SINGLE
-  const [image, setImage] = useState(null);
-  const [cargandoImagen, setCargandoImagen] = useState(true);
-  const { theme } = useContext(ThemeContext);
 
-  useEffect(() => {
-    const cambiarEstiloStrong = async () => {
-      const ImageUrls = {
-        light: "/light.webp",
-        dark: "/dark.webp",
-      };
-
-      const imageUrl = ImageUrls[theme];
-      setCargandoImagen(true);
-
-      try {
-        const response = await fetch(imageUrl);
-        if (!response.ok) {
-          throw new Error("Failed to load image");
-        }
-
-        setImage(imageUrl);
-        setCargandoImagen(false);
-      } catch (error) {
-        console.error("Error loading image:", error);
-      }
-    };
-
-    cambiarEstiloStrong();
-  }, [theme]);
 
   const [compartir, setCompartir] = useState(false);
   const [textoCompartir, setTextoCompartir] = useState("");
@@ -645,8 +615,6 @@ export const DataProvider = ({ children }) => {
         strongData,
         setCargandoStrong,
         cargandoStrong,
-        image,
-        cargandoImagen,
         modoCompacto,
         setModoCompacto,
         leerMarcado,

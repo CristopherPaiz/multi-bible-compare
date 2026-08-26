@@ -5,7 +5,7 @@
  * usuario compara 20 biblias, son 20 peticiones. Se conserva como respaldo para
  * poder hacer rollback sin redeploy.
  */
-import { CDN_URL, AUDIO_URL } from "../config/dataSource";
+import { CDN_URL, API_URL } from "../config/dataSource";
 
 const LAST_OLD_TESTAMENT_BOOK = 39;
 
@@ -51,8 +51,7 @@ export const getStrongBatch = async ({ code, signal }) => {
   return response.json();
 };
 
-/** El audio no depende de la fuente: siempre sale del bucket de objetos. */
+/** El audio de Strong se sirve a través del endpoint de la API nueva. */
 export const getStrongAudioUrl = (code) => {
-  const folder = code.startsWith("H") ? "Audio_Hebreo" : "Audio_Griego";
-  return `${AUDIO_URL}/${folder}/${code.slice(1)}.mp3`;
+  return `${API_URL}/api/strongs/${code}/audio`;
 };

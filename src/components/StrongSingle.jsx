@@ -50,41 +50,42 @@ const StrongSingle = () => {
   const [audio, setAudio] = useState(null);
   const [cargandoAudio, setCargandoAudio] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [imageIsLoaded, setImageIsLoaded] = useState(false);
+  const currentImage = theme === "dark" ? "/dark.webp" : "/light.webp";
+  const [imagenCargada, setImagenCargada] = useState(false);
+
+  // Asegurar que la imagen del pergamino esté 100% cargada antes de mostrar el contenido
+  useEffect(() => {
+    let cancelado = false;
+    const img = new Image();
+    img.src = currentImage;
+
+    if (img.complete) {
+      setImagenCargada(true);
+    } else {
+      setImagenCargada(false);
+      img.onload = () => {
+        if (!cancelado) setImagenCargada(true);
+      };
+      img.onerror = () => {
+        if (!cancelado) setImagenCargada(true);
+      };
+    }
+
+    return () => {
+      cancelado = true;
+    };
+  }, [currentImage]);
 
   // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
   useHistoryBlocker(strongIndividual, () => setModalStrong(false));
 
-  //cerrar modal si se presiona por fuera
+  // Cerrar modal si se presiona por fuera
   const handleOutsideClick = (e) => {
     if (e.target.classList.contains("modal-overlay")) {
       setModalStrong(false);
       strongFun("");
     }
   };
-
-  const ImageUrls = useMemo(
-    () => ({
-      light: "/light.webp",
-      dark: "/dark.webp",
-    }),
-    []
-  );
-
-  const currentImage = useMemo(() => ImageUrls[theme], [ImageUrls, theme]);
-
-  // Precarga de imágenes
-  useEffect(() => {
-    const preloadImages = () => {
-      setImageIsLoaded(false);
-      Object.values(ImageUrls).forEach((url) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = () => setImageIsLoaded(true);
-      });
-    };
-    preloadImages();
-  }, [ImageUrls]);
 
   useEffect(() => {
     const loadResources = async () => {
@@ -240,11 +241,25 @@ const StrongSingle = () => {
           <img src={currentImage} className="h-[530px] w-[350px] sm:w-[500px] sm:h-[680px] -z-10 fixed" alt="Background" />
           <div className="fixed m-14 sm:ml-16 h-[315px] w-[260px] sm:h-[410px] sm:w-[380px] mt-24 sm:mt-28 overflow-y-scroll no-scrollbar px-2">
             <div className="text-left mr-2">
-              <h1 className="animate-slide-in-top animate-duration-100 animate-delay-0 text-2xl text-balance px-3 text-center justify-center font-bold mb-3">
+              <h1
+                className={`animate-slide-in-top animate-duration-100 animate-delay-0 text-balance px-2 text-center justify-center font-bold mb-2 break-words ${
+                  (strongIndividual.le || "").length > 22
+                    ? "text-lg leading-tight"
+                    : (strongIndividual.le || "").length > 12
+                    ? "text-xl leading-snug"
+                    : "text-2xl"
+                }`}
+              >
                 {strongIndividual.id} - {strongIndividual.le}
               </h1>
-              <h2 className="animate-slide-in-top animate-duration-100 animate-delay-100 text-2xl text-balance px-3 text-center justify-center font-bold">
-                {strongIndividual.pl} ({strongIndividual.ti})
+              <h2
+                className={`animate-slide-in-top animate-duration-100 animate-delay-100 text-balance px-2 text-center justify-center font-semibold break-words ${
+                  (strongIndividual.pl || "").length > 22
+                    ? "text-sm leading-tight text-gray-700 dark:text-gray-300"
+                    : "text-base sm:text-lg text-gray-800 dark:text-gray-200"
+                }`}
+              >
+                {strongIndividual.pl} {strongIndividual.ti ? `(${strongIndividual.ti})` : ""}
               </h2>
               <p className="font-base text-lg mt-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Pronunciación:</p>
               <p className="font-thin text-lg mb-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">
@@ -362,7 +377,7 @@ const StrongSingle = () => {
     </div>
   );
 
-  if (cargandoStrong || !imageIsLoaded) {
+  if (cargandoStrong || !imagenCargada) {
     return renderLoadingState();
   }
 
