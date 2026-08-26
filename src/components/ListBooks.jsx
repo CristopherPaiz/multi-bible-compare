@@ -62,6 +62,61 @@ const Chevron = ({ abierta }) => (
 
 Chevron.propTypes = { abierta: PropTypes.bool };
 
+/**
+ * Título con marquesina suave que se activa al interactuar con cualquier parte de la tarjeta (group).
+ * Si el texto no desborda, no se desplaza.
+ */
+const TituloMarquesina = ({ titulo }) => {
+  const containerRef = useRef(null);
+  const textRef = useRef(null);
+  const [desborda, setDesborda] = useState(false);
+  const [diff, setDiff] = useState(0);
+
+  const medir = useCallback(() => {
+    if (containerRef.current && textRef.current) {
+      const d = textRef.current.scrollWidth - containerRef.current.clientWidth;
+      if (d > 2) {
+        setDesborda(true);
+        setDiff(d);
+      } else {
+        setDesborda(false);
+        setDiff(0);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    medir();
+    window.addEventListener("resize", medir);
+    return () => window.removeEventListener("resize", medir);
+  }, [titulo, medir]);
+
+  const duracion = Math.max(1.8, Math.min(8, diff / 30));
+
+  return (
+    <div
+      ref={containerRef}
+      className="w-full min-w-0 overflow-hidden whitespace-nowrap relative select-none"
+      title={titulo}
+    >
+      <span
+        ref={textRef}
+        className="inline-block font-medium text-sm leading-snug will-change-transform transition-transform ease-out duration-300 group-hover:[transform:translateX(calc(-1*var(--diff)))] group-hover:[transition:transform_var(--dur)_linear] group-active:[transform:translateX(calc(-1*var(--diff)))] group-active:[transition:transform_var(--dur)_linear]"
+        style={{
+          "--diff": desborda ? `${diff + 6}px` : "0px",
+          "--dur": `${duracion}s`,
+        }}
+      >
+        {titulo}
+      </span>
+    </div>
+  );
+};
+
+TituloMarquesina.propTypes = {
+  titulo: PropTypes.string.isRequired,
+};
+
 const ListBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
@@ -655,7 +710,7 @@ const ListBooks = () => {
                                   type="button"
                                   onClick={() => handleBookToggle(libro.ruta)}
                                   aria-pressed={seleccionada}
-                                  className="flex min-h-[52px] flex-1 items-center gap-2 px-2.5 py-2 text-left"
+                                  className="group flex min-h-[52px] flex-1 min-w-0 items-center gap-2 px-2.5 py-2 text-left overflow-hidden"
                                 >
                                   <span
                                     aria-hidden="true"
@@ -674,22 +729,23 @@ const ListBooks = () => {
                                     )}
                                   </span>
                                   {insignia(libro)}
-                                  <div className="flex-1 min-w-0">
-                                    <div className="flex flex-wrap items-center gap-1.5">
-                                      <span className="font-medium text-sm leading-snug">{titulo}</span>
-                                      {recInfo && (
-                                        <span
-                                          title={t(recInfo.categoriaKey)}
-                                          className="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-blue-100 text-blue-900 dark:bg-blue-950/90 dark:text-blue-300 px-2 py-0.5 text-[10px] font-medium"
-                                        >
-                                          <span>{recInfo.icono}</span>
-                                          <span>{t(recInfo.tagKey)}</span>
-                                        </span>
-                                      )}
-                                    </div>
+                                  <div className="flex-1 min-w-0 overflow-hidden pr-1">
+                                    {/* Primera línea: siempre el título con marquesina si desborda */}
+                                    <TituloMarquesina titulo={titulo} />
 
-                                    {feats.length > 0 && (
+                                    {/* Segunda línea: tags y características multilínea */}
+                                    {(recInfo || feats.length > 0) && (
                                       <div className="flex flex-wrap items-center gap-1 mt-1">
+                                        {recInfo && (
+                                          <span
+                                            title={t(recInfo.categoriaKey)}
+                                            className="inline-flex items-center gap-1 whitespace-nowrap rounded-full bg-blue-100 text-blue-900 dark:bg-blue-950/90 dark:text-blue-300 px-2 py-0.5 text-[10px] font-medium"
+                                          >
+                                            <span>{recInfo.icono}</span>
+                                            <span>{t(recInfo.tagKey)}</span>
+                                          </span>
+                                        )}
+
                                         {feats.map((featKey) => {
                                           const info = MAPA_CARACTERISTICAS[featKey];
                                           if (!info) return null;
@@ -697,7 +753,7 @@ const ListBooks = () => {
                                             <span
                                               key={featKey}
                                               title={t(`Feat_${featKey}_desc`)}
-                                              className={`inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded border text-[9px] font-medium ${info.clase}`}
+                                              className={`inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded border text-[9px] font-medium whitespace-nowrap ${info.clase}`}
                                             >
                                               <span>{info.icono}</span>
                                               <span>{t(`Feat_${featKey}`)}</span>
