@@ -65,6 +65,7 @@ const ListBooks = () => {
     useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [filtro, setFiltro] = useState("todas");
+  const [subFiltroRecomendada, setSubFiltroRecomendada] = useState("todas");
   const [infoAbierta, setInfoAbierta] = useState(false);
   const [aviso, setAviso] = useState("");
   // Con 150 versiones repartidas en 9 idiomas, abrirlas todas obliga a un scroll
@@ -227,10 +228,14 @@ const ListBooks = () => {
     (ruta) => {
       if (filtro === "favoritas") return favoriteBooks.includes(ruta);
       if (filtro === "seleccionadas") return selectedBooks.includes(ruta);
-      if (filtro === "recomendadas") return RECOMENDADAS.includes(ruta);
+      if (filtro === "recomendadas") {
+        if (subFiltroRecomendada === "todas") return RECOMENDADAS.includes(ruta);
+        const cat = CATEGORIAS_RECOMENDADAS.find((c) => c.id === subFiltroRecomendada);
+        return cat ? cat.versiones.some((v) => v.ruta === ruta) : false;
+      }
       return true;
     },
-    [filtro, favoriteBooks, selectedBooks]
+    [filtro, subFiltroRecomendada, favoriteBooks, selectedBooks]
   );
 
   const secciones = useMemo(() => {
@@ -416,16 +421,6 @@ const ListBooks = () => {
 
                 <span aria-hidden="true" className="h-6 w-px shrink-0 bg-gray-300 dark:bg-neutral-700" />
 
-                <button type="button" className={claseAccion} onClick={() => anadirSeleccion(RECOMENDADAS)}>
-                  + {t("Filtro_recomendadas")}
-                </button>
-                <button
-                  type="button"
-                  className={claseAccion}
-                  onClick={() => (favoriteBooks.length ? anadirSeleccion(favoriteBooks) : setAviso(t("SinFavoritos")))}
-                >
-                  + {t("Filtro_favoritas")}
-                </button>
                 <button type="button" className={claseAccion} onClick={() => setSelectedBooks([])}>
                   {t("DesmarcarTodo")}
                 </button>
@@ -437,6 +432,79 @@ const ListBooks = () => {
                   {seccionesAbiertas.length ? t("ContraerTodo") : t("ExpandirTodo")}
                 </button>
               </div>
+
+              {/* SUB-FILTROS DE RECOMENDADAS Y SELECCIÓN RÁPIDA POR TIPO */}
+              {filtro === "recomendadas" && (
+                <div className="mt-2.5 pt-2.5 border-t border-gray-100 dark:border-neutral-800/80">
+                  <div className="-mx-4 flex items-center gap-1.5 overflow-x-auto px-4 pb-1 no-scrollbar">
+                    <button
+                      type="button"
+                      onClick={() => setSubFiltroRecomendada("todas")}
+                      className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-semibold transition ${
+                        subFiltroRecomendada === "todas"
+                          ? "bg-blue-600 text-white shadow-xs"
+                          : "bg-gray-100 text-gray-700 dark:bg-neutral-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-700"
+                      }`}
+                    >
+                      🌟 Todas ({RECOMENDADAS.length})
+                    </button>
+
+                    {CATEGORIAS_RECOMENDADAS.map((cat) => {
+                      const activo = subFiltroRecomendada === cat.id;
+                      return (
+                        <button
+                          key={cat.id}
+                          type="button"
+                          onClick={() => setSubFiltroRecomendada(cat.id)}
+                          className={`shrink-0 rounded-lg px-2.5 py-1 text-xs font-medium transition flex items-center gap-1 ${
+                            activo
+                              ? "bg-blue-600 text-white font-semibold shadow-xs"
+                              : "bg-gray-100 text-gray-700 dark:bg-neutral-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-neutral-700"
+                          }`}
+                        >
+                          <span>{cat.icono}</span>
+                          <span>{cat.titulo.split("(")[0].trim()}</span>
+                          <span className="opacity-70 text-[11px]">({cat.versiones.length})</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Accion rapida para el grupo de recomendadas activo */}
+                  {(() => {
+                    const catActiva = CATEGORIAS_RECOMENDADAS.find((c) => c.id === subFiltroRecomendada);
+                    const listaRutas = catActiva ? catActiva.versiones.map((v) => v.ruta) : RECOMENDADAS;
+                    const todasSeleccionadas = listaRutas.every((r) => selectedBooks.includes(r));
+
+                    const toggleGrupo = () => {
+                      if (todasSeleccionadas) {
+                        setSelectedBooks((prev) => prev.filter((r) => !listaRutas.includes(r)));
+                      } else {
+                        anadirSeleccion(listaRutas);
+                      }
+                    };
+
+                    return (
+                      <div className="mt-2 flex items-center justify-between gap-2 bg-blue-50/80 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/40 rounded-xl px-3 py-1.5">
+                        <p className="text-[11px] text-blue-900 dark:text-blue-200 leading-snug line-clamp-1">
+                          {catActiva ? catActiva.descripcion : "Mostrando todas las versiones recomendadas por rigor y propósito de estudio."}
+                        </p>
+                        <button
+                          type="button"
+                          onClick={toggleGrupo}
+                          className={`shrink-0 text-xs px-2.5 py-1 rounded-lg font-semibold transition ${
+                            todasSeleccionadas
+                              ? "bg-green-600 text-white hover:bg-green-700"
+                              : "bg-blue-600 text-white hover:bg-blue-700 shadow-xs"
+                          }`}
+                        >
+                          {todasSeleccionadas ? "✓ Quitar grupo" : `+ Seleccionar (${listaRutas.length})`}
+                        </button>
+                      </div>
+                    );
+                  })()}
+                </div>
+              )}
 
               {aviso && (
                 <p role="status" className="mt-2 rounded-lg bg-red-100 px-3 py-2 text-xs font-medium text-red-800 dark:bg-red-950 dark:text-red-200">
@@ -475,7 +543,6 @@ const ListBooks = () => {
                   <div className="space-y-3 mt-3">
                     {CATEGORIAS_RECOMENDADAS.map((cat) => {
                       const todasSeleccionadas = cat.versiones.every((v) => selectedBooks.includes(v.ruta));
-                      const algunaSeleccionada = cat.versiones.some((v) => selectedBooks.includes(v.ruta));
 
                       return (
                         <div

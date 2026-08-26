@@ -37,10 +37,11 @@ const VerseWindow = ({ biblia }) => {
   useEffect(() => onDataSourceChange(setFuente), []);
 
   useEffect(() => {
-    if (!libroSeleccionado || !capituloSeleccionadoNumero || !versiculoSeleccionadoNumero) return;
+    if (!libroSeleccionado || !capituloSeleccionadoNumero) return;
 
     const bookId = Number(libroSeleccionado.split("book")[1]);
-    if (!Number.isFinite(bookId)) return;
+    const chapterNum = Number(capituloSeleccionadoNumero);
+    if (!Number.isFinite(bookId) || !Number.isFinite(chapterNum) || chapterNum <= 0) return;
 
     const controller = new AbortController();
     let cancelado = false;
@@ -51,7 +52,7 @@ const VerseWindow = ({ biblia }) => {
         const data = await getChapter({
           legacyPath: biblia,
           bookId,
-          chapter: capituloSeleccionadoNumero,
+          chapter: chapterNum,
           signal: controller.signal,
         });
         if (!cancelado) setCapituloSeleccionado(data);
