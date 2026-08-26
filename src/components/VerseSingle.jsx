@@ -64,7 +64,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     setCompartirVerse,
     tamanioVerseAncho,
     tamanioVerseAlto,
-    strongFun,
+    mostrarStrongPopup,
     leerMarcado,
     libroSeleccionado,
     capituloSeleccionadoNumero,
@@ -119,7 +119,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     (versiculo) => {
       setVersiculoSeleccionadoNumero(versiculo);
     },
-    [setVersiculoSeleccionadoNumero]
+    [setVersiculoSeleccionadoNumero],
   );
 
   // Las traducciones son de ESTE capítulo: al cambiar de libro o capítulo se
@@ -153,8 +153,8 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
    * `dangerouslySetInnerHTML`. Se delega: se escucha el clic en el contenedor y
    * se mira si el objetivo era un <sup>.
    *
-   * El prefijo sale del testamento, no del idioma de la versión: los números del
-   * Antiguo Testamento son hebreos (H) y los del Nuevo, griegos (G).
+   * Se determina si es Hebreo (H) o Griego (G) considerando la versión (ej. Septuaginta /
+   * Filos Pergamos en el AT es griega), el alfabeto del texto y el testamento.
    */
   const handleStrongClick = useCallback(
     (evento) => {
@@ -165,10 +165,35 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
       if (!numero) return;
 
       evento.stopPropagation();
-      const prefijo = Number(bookId) <= 39 ? "H" : "G";
-      strongFun(`${prefijo}${Number(numero)}`);
+
+      const nombreLower = (nombre || "").toLowerCase();
+      const esGriegoPorVersion = iso === "el" || iso === "grc" || nombreLower.includes("greek") || nombreLower.includes("griego") || nombreLower.includes("septuagint") || nombreLower.includes("lxx");
+
+      const esHebreoPorVersion =
+        iso === "iw" ||
+        iso === "he" ||
+        nombreLower.includes("hebrew") ||
+        nombreLower.includes("hebreo") ||
+        nombreLower.includes("stuttgartensia") ||
+        nombreLower.includes("wlc") ||
+        nombreLower.includes("tanakh");
+
+      const contenedorTexto = sup.parentElement?.textContent || "";
+      const tieneGriego = /[\u0370-\u03FF\u1F00-\u1FFF]/.test(contenedorTexto);
+      const tieneHebreo = /[\u0590-\u05FF]/.test(contenedorTexto);
+
+      let prefijo = Number(bookId) <= 39 ? "H" : "G";
+      if (esGriegoPorVersion || (tieneGriego && !tieneHebreo)) {
+        prefijo = "G";
+      } else if (esHebreoPorVersion || (tieneHebreo && !tieneGriego)) {
+        prefijo = "H";
+      }
+
+      const code = `${prefijo}${Number(numero)}`;
+      const rect = sup.getBoundingClientRect();
+      mostrarStrongPopup(code, rect);
     },
-    [bookId, strongFun]
+    [bookId, iso, nombre, mostrarStrongPopup],
   );
 
   const handleTranslate = async (iso) => {
@@ -212,7 +237,6 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     }
   };
 
-
   /** Descarta la traducción de este versículo y deja el original. */
   const revertirTraduccion = () => {
     setTraducciones((previo) => {
@@ -228,9 +252,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     <>
       <div className="flex flex-col border-neutral-400 rounded-md border relative bg-white dark:bg-[#0f0f0f]">
         <MarkupTab biblia={nombre} tieneMorfologia={marcado.morfologia} tieneGlosa={marcado.glosa} />
-        <div
-          className={`${tamanioVerseAncho.min} ${tamanioVerseAncho.max} text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row`}
-        >
+        <div className={`${tamanioVerseAncho.min} ${tamanioVerseAncho.max} text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row`}>
           <div className="flex flex-col">
             <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
             <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
@@ -250,9 +272,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                 className="relative disabled:opacity-40"
               >
                 <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt=""></img>
-                {estaTraducido && (
-                  <span className="absolute -right-0 -top-0 block h-2 w-2 rounded-full bg-emerald-500 ring-2 ring-neutral-300 dark:ring-neutral-800"></span>
-                )}
+                {estaTraducido && <span className="absolute -right-0 -top-0 block h-2 w-2 rounded-full bg-emerald-500 ring-2 ring-neutral-300 dark:ring-neutral-800"></span>}
               </button>
             </div>
           ) : (
@@ -276,9 +296,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
           <div className="absolute right-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10 pointer-events-none"></div>
           <div
             ref={containerRef}
-            className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${
-              esCapitulo ? tamanioVerseAlto.def : "h-fit"
-            }`}
+            className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${esCapitulo ? tamanioVerseAlto.def : "h-fit"}`}
             style={{ position: "relative" }}
           >
             {cargando && sinContenido ? (
@@ -288,11 +306,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
               // una capa gris hace que la app parpadee en cada versículo.
               <div className="flex flex-col gap-3 py-1" aria-hidden="true">
                 {[90, 100, 96, 82, 94, 70].map((ancho, i) => (
-                  <div
-                    key={i}
-                    className="h-3 animate-pulse rounded bg-gray-200 dark:bg-neutral-700"
-                    style={{ width: `${ancho}%`, animationDelay: `${i * 80}ms` }}
-                  ></div>
+                  <div key={i} className="h-3 animate-pulse rounded bg-gray-200 dark:bg-neutral-700" style={{ width: `${ancho}%`, animationDelay: `${i * 80}ms` }}></div>
                 ))}
               </div>
             ) : esCapitulo ? (
@@ -307,8 +321,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                       cursor: "pointer",
                       marginBottom: "0.7rem",
                       color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
-                      backgroundColor:
-                        parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#ffe4b3" : "#693BCC") : "transparent",
+                      backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#ffe4b3" : "#693BCC") : "transparent",
                       padding: "1rem",
                       margin: "-1rem",
                     }}
@@ -327,11 +340,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                   </p>
                 ))
             ) : typeof textoVisible === "string" ? (
-              <div
-                className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}
-              >
-                {textoVisible}
-              </div>
+              <div className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}>{textoVisible}</div>
             ) : (
               <p>{t("NoObjetoNoString")}</p>
             )}

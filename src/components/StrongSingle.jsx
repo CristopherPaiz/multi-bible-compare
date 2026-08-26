@@ -48,6 +48,7 @@ const StrongSingle = () => {
   const { theme } = useContext(ThemeContext);
   const [strongIndividual, setStrongIndividual] = useState(null);
   const [audio, setAudio] = useState(null);
+  const [cargandoAudio, setCargandoAudio] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
@@ -97,40 +98,41 @@ const StrongSingle = () => {
   }, [strongData, strong, cargandoStrong]);
 
   useEffect(() => {
-    if (!strongIndividual) return;
+    if (!strongIndividual) {
+      setAudio(null);
+      setCargandoAudio(false);
+      return;
+    }
 
-    // Turso ya devuelve la URL en el payload; el CDN no, y ahí se arma por
-    // convención de nombre. Se prefiere la que venga en el dato.
     const audioUrl = strongIndividual.audioUrl ?? getStrongAudioUrl(strongIndividual.id);
-
-    // La disponibilidad se comprueba con el propio <audio>, NO con fetch.
-    //
-    // `fetch` es una petición CORS: si el bucket no publica
-    // Access-Control-Allow-Origin, falla con "Failed to fetch" aunque el mp3
-    // sea perfectamente accesible. Un elemento multimedia no necesita CORS para
-    // reproducir, así que preguntarle a él es a la vez más fiable y una
-    // petición menos.
+    setCargandoAudio(true);
     let cancelado = false;
     const elemento = new Audio();
     elemento.preload = "metadata";
 
     const alCargar = () => {
-      if (!cancelado) setAudio(elemento);
+      if (!cancelado) {
+        setAudio(elemento);
+        setCargandoAudio(false);
+      }
     };
     const alFallar = () => {
-      if (!cancelado) setAudio(null);
+      if (!cancelado) {
+        setAudio(null);
+        setCargandoAudio(false);
+      }
     };
 
     elemento.addEventListener("loadedmetadata", alCargar, { once: true });
+    elemento.addEventListener("canplaythrough", alCargar, { once: true });
     elemento.addEventListener("error", alFallar, { once: true });
     elemento.src = audioUrl;
 
     return () => {
       cancelado = true;
       elemento.removeEventListener("loadedmetadata", alCargar);
+      elemento.removeEventListener("canplaythrough", alCargar);
       elemento.removeEventListener("error", alFallar);
-      // Se suelta la descarga si el usuario cambió de entrada antes de que
-      // terminara de cargar.
       elemento.src = "";
     };
   }, [strongIndividual]);
@@ -205,14 +207,21 @@ const StrongSingle = () => {
   const currentStyles = styles[theme];
 
   const renderLoadingState = () => (
-    <div className="h-full w-full flex flex-col items-center justify-center gap-4 bg-black/40 text-white z-[999999999] fixed top-0 left-0">
-      <div className="px-4 py-8 bg-black/60 rounded-lg flex flex-col items-center">
-        <div className="flex flex-row gap-2 mb-4">
-          {[0, 0.2, 0.4].map((delay, index) => (
-            <div key={index} className="w-4 h-4 rounded-full bg-white animate-bounce" style={{ animationDelay: `${delay}s` }} />
-          ))}
+    <div className="fixed inset-0 z-[999999999] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in">
+      <div
+        className="relative flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-neutral-900/95 px-8 py-7 shadow-2xl text-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="relative mb-3 flex h-14 w-14 items-center justify-center">
+          <div className="absolute inset-0 rounded-full border-4 border-amber-500/20 dark:border-purple-500/20"></div>
+          <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-amber-500 dark:border-t-purple-400 animate-spin"></div>
+          <span className="font-mono text-xs font-bold text-amber-400 dark:text-purple-300">
+            {strong || "..."}
+          </span>
         </div>
-        <p className="text-white text-2xl font-bold">Cargando Strong...</p>
+
+        <p className="text-base font-semibold text-white tracking-wide">Cargando definición...</p>
+        <p className="mt-1 text-xs text-gray-400">Consultando diccionario Strong</p>
       </div>
     </div>
   );
@@ -240,14 +249,37 @@ const StrongSingle = () => {
               <p className="font-base text-lg mt-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Pronunciación:</p>
               <p className="font-thin text-lg mb-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">
                 <strong className="font-bold text-xl mt-1">{strongIndividual.ps}</strong>
-                {audio && (
+                {cargandoAudio ? (
+                  <span
+                    className="relative ml-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/80 text-white select-none shadow-sm cursor-wait"
+                    title="Cargando audio..."
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="opacity-50"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M15 8a5 5 0 0 1 0 8" />
+                      <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+                    </svg>
+                    <span className="absolute inset-[-2px] rounded-full border-2 border-white/20 border-t-white animate-spin"></span>
+                  </span>
+                ) : audio ? (
                   <button
                     onClick={toggleAudio}
-                    className="ml-2 w-6 h-6 text-center flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 text-white outline-none select-none"
+                    className="ml-2 w-6 h-6 text-center flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 active:scale-95 text-white outline-none transition shadow-sm select-none"
                     title={isPlaying ? "Detener audio" : "Reproducir audio"}
                   >
                     {isPlaying ? (
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M9 4h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" />
                         <path d="M17 4h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" />
@@ -255,8 +287,8 @@ const StrongSingle = () => {
                     ) : (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
+                        width="16"
+                        height="16"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -271,7 +303,7 @@ const StrongSingle = () => {
                       </svg>
                     )}
                   </button>
-                )}
+                ) : null}
               </p>
               <p className="font-base text-lg animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Definición:</p>
               <div className="mb-8">

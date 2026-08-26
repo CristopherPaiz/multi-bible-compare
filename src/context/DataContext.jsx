@@ -107,6 +107,22 @@ export const DataProvider = ({ children }) => {
   const [strongData, setStrongData] = useState({});
   const [cargandoStrong, setCargandoStrong] = useState(false);
 
+  // Popup rápido de Strong al hacer clic en números del versículo
+  const [strongPopup, setStrongPopup] = useState(null);
+
+  const mostrarStrongPopup = useCallback((code, anchorRect = null) => {
+    setStrongPopup({ code, anchorRect });
+  }, []);
+
+  const cerrarStrongPopup = useCallback(() => {
+    setStrongPopup(null);
+  }, []);
+
+  const abrirDefinicionStrong = useCallback((code) => {
+    setStrongPopup(null);
+    strongFun(code);
+  }, [strongFun]);
+
   //useStateModals
   //----------------------------------------------------
   const [modalLibros, setModalLibros] = useState(false);
@@ -648,6 +664,11 @@ export const DataProvider = ({ children }) => {
         tamanioVerseAlto,
         anchoVentana,
         altoVentana,
+        // Popup rápido de Strong
+        strongPopup,
+        mostrarStrongPopup,
+        cerrarStrongPopup,
+        abrirDefinicionStrong,
         //return modals
         //------------
         modalLibros,

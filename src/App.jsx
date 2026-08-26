@@ -12,6 +12,7 @@ import Search from "./pages/Search";
 import Account from "./pages/Account";
 import { useSync } from "./hooks/useSync";
 import FloatingBubble from "./components/FloatingBubble";
+import StrongPopup from "./components/StrongPopup";
 import DataContext from "./context/DataContext";
 import ShareModal from "./components/ShareModal";
 import { preheat } from "./services/bibleSource";
@@ -59,6 +60,7 @@ const App = () => {
   return (
     <>
       <ShareModal />
+      <StrongPopup />
       <div className="backgroundPattern w-full h-full fixed -z-50" style={styles}></div>
       <BrowserRouter>
         <Navbar />
