@@ -25,35 +25,15 @@ const IconoImagen = (src, alt, extraClase = "") => {
 };
 
 const IconoBuscar = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.8}
-    stroke="currentColor"
-    className={className}
-    aria-hidden="true"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-    />
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className={className} aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
   </svg>
 );
 
 IconoBuscar.propTypes = { className: PropTypes.string };
 
 const IconoCuenta = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.8}
-    stroke="currentColor"
-    className={className}
-    aria-hidden="true"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className={className} aria-hidden="true">
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -131,15 +111,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex items-center justify-between gap-2 px-3 py-2 sm:px-4">
+      <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex items-center justify-between gap-2 px-3 py-4 sm:px-4">
         <Link to="/" className="flex items-center gap-2 min-w-0">
           <img src={LOGO} alt="" className="h-9 shrink-0 sm:h-12" />
           <div className="flex flex-col min-w-0 dark:text-white sm:flex-row sm:items-end sm:gap-2">
             <span className="text-lg font-extrabold leading-tight sm:text-2xl">{t("Biblian")}</span>
             <span className="hidden text-lg font-bold sm:inline">-</span>
-            <span className="truncate text-[11px] leading-tight sm:text-lg sm:font-semibold">
-              {t("tituloComparar")}
-            </span>
+            <span className="truncate text-[11px] leading-tight sm:text-lg sm:font-semibold">{t("tituloComparar")}</span>
           </div>
         </Link>
 
@@ -151,9 +129,7 @@ const Navbar = () => {
                 <Link
                   to={to}
                   aria-current={esActiva(to) ? "page" : undefined}
-                  className={`flex flex-col justify-center text-center text-gray-900 hover:scale-105 hover:underline dark:text-white ${
-                    esActiva(to) ? "font-bold underline" : ""
-                  }`}
+                  className={`flex flex-col justify-center text-center text-gray-900 hover:scale-105 hover:underline dark:text-white ${esActiva(to) ? "font-bold underline" : ""}`}
                 >
                   <Icono className="w-6 h-6 m-auto" />
                   {t(clave)}
@@ -170,11 +146,7 @@ const Navbar = () => {
               title={t("CambiarIdioma")}
               className="flex items-center gap-1.5 rounded-xl border border-black/10 bg-black/5 px-2.5 py-1.5 text-xs font-bold text-gray-900 transition hover:bg-black/10 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
             >
-              <img
-                src={idiomaNavegador === "es" ? USA : SPAIN}
-                alt=""
-                className="h-4 w-4 rounded-full object-cover shadow-xs"
-              />
+              <img src={idiomaNavegador === "es" ? USA : SPAIN} alt="" className="h-4 w-4 rounded-full object-cover shadow-xs" />
               <span>{idiomaNavegador === "es" ? "EN" : "ES"}</span>
             </button>
 
@@ -185,11 +157,7 @@ const Navbar = () => {
               title={theme === "light" ? t("CambiarTemaOscuro") : t("CambiarTemaClaro")}
               className="flex h-8 w-8 items-center justify-center rounded-xl border border-black/10 bg-black/5 text-gray-900 transition hover:bg-black/10 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
             >
-              <img
-                src={theme === "light" ? MOON : SUN}
-                alt=""
-                className="h-4 w-4 dark:invert"
-              />
+              <img src={theme === "light" ? MOON : SUN} alt="" className="h-4 w-4 dark:invert" />
             </button>
           </div>
         </div>
@@ -204,11 +172,7 @@ const Navbar = () => {
             aria-label={t("CambiarIdioma")}
             className="flex h-9 w-9 items-center justify-center rounded-full active:bg-black/10 dark:active:bg-white/10"
           >
-            <img
-              src={idiomaNavegador === "es" ? USA : SPAIN}
-              alt=""
-              className="h-5 w-5 rounded-full object-cover shadow-xs"
-            />
+            <img src={idiomaNavegador === "es" ? USA : SPAIN} alt="" className="h-5 w-5 rounded-full object-cover shadow-xs" />
           </button>
 
           {/* Botón de Tema Móvil */}
@@ -219,11 +183,7 @@ const Navbar = () => {
             aria-label={theme === "light" ? t("CambiarTemaOscuro") : t("CambiarTemaClaro")}
             className="flex h-9 w-9 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
           >
-            <img
-              src={theme === "light" ? MOON : SUN}
-              alt=""
-              className="h-5 w-5 dark:invert"
-            />
+            <img src={theme === "light" ? MOON : SUN} alt="" className="h-5 w-5 dark:invert" />
           </button>
 
           {/* Menú Más / Hamburguesa */}
@@ -236,33 +196,20 @@ const Navbar = () => {
               aria-label={t("Menu")}
               className="flex h-9 w-9 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.8}
-                stroke="currentColor"
-                className="h-6 w-6"
-                aria-hidden="true"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-6 w-6" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
               </svg>
             </button>
 
             {menuAbierto && (
-              <ul
-                role="menu"
-                className="absolute right-0 z-30 mt-1 w-48 overflow-hidden rounded-xl border border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]"
-              >
+              <ul role="menu" className="absolute right-0 z-30 mt-1 w-48 overflow-hidden rounded-xl border border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]">
                 {RUTAS_SECUNDARIAS.map(({ to, clave, Icono }) => (
                   <li key={to} role="none">
                     <Link
                       role="menuitem"
                       to={to}
                       aria-current={esActiva(to) ? "page" : undefined}
-                      className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${
-                        esActiva(to) ? "font-bold" : ""
-                      }`}
+                      className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${esActiva(to) ? "font-bold" : ""}`}
                     >
                       <Icono className="h-5 w-5 shrink-0" />
                       {t(clave)}
@@ -278,15 +225,13 @@ const Navbar = () => {
       {/* Móvil: solo las rutas principales, repartidas a partes iguales para que
           nunca se desborden aunque aparezca "Historial". */}
       <nav className="bg-[#fbefda] dark:bg-[#693BCC] sm:hidden">
-        <ul className="flex w-full flex-row items-stretch">
+        <ul className="flex w-full flex-row items-stretch items-center pt-1">
           {principales.map(({ to, clave, Icono }) => (
             <li key={to} className="min-w-0 flex-1">
               <Link
                 to={to}
                 aria-current={esActiva(to) ? "page" : undefined}
-                className={`flex flex-col items-center gap-0.5 px-1 py-1.5 text-gray-900 dark:text-white ${
-                  esActiva(to) ? "font-bold" : ""
-                }`}
+                className={`flex flex-col items-center gap-0.5 px-1 py-1.5 text-gray-900 dark:text-white ${esActiva(to) ? "font-bold" : ""}`}
               >
                 <Icono className="w-5 h-5" />
                 <span className="w-full truncate text-center text-[11px] leading-tight">{t(clave)}</span>
@@ -304,40 +249,16 @@ const Navbar = () => {
           <ol className="flex w-full items-center justify-center gap-1.5 bg-[#fbefda] px-3 py-2 text-sm dark:bg-[#693BCC] dark:text-white sm:gap-2 sm:px-6 sm:py-3 lg:text-xl">
             <li className="flex shrink-0 items-center text-black dark:text-white">
               {TipoTestamento(libroSeleccionado)}
-              <svg
-                className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 12 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m7 9 4-4-4-4M1 9l4-4-4-4"
-                />
+              <svg className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 9 4-4-4-4M1 9l4-4-4-4" />
               </svg>
             </li>
             {/* El nombre del libro es lo único que puede ser largo, así que es lo
                 único que se recorta: la referencia numérica siempre se ve. */}
             <li className="flex min-w-0 items-center text-black dark:text-white">
               <span className="truncate">{t(libroSeleccionado)}</span>
-              <svg
-                className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 12 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m7 9 4-4-4-4M1 9l4-4-4-4"
-                />
+              <svg className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m7 9 4-4-4-4M1 9l4-4-4-4" />
               </svg>
             </li>
             <li className="flex shrink-0 items-center gap-1 text-black dark:text-white sm:gap-2">
