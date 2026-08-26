@@ -15,17 +15,17 @@ const FloattingBubble = () => {
   useEffect(() => {
     if (modalStrong) setIsModalOpen(true);
   }, [modalStrong]);
-  const [isDragging, setIsDragging] = useState(false);
   const bubbleRef = useRef(null);
   const modalRef = useRef(null);
   const startPosition = useRef({ x: 0, y: 0 });
   const startOffset = useRef({ x: 0, y: 0 });
+  const hasMoved = useRef(false);
 
   // Hook para bloquear la navegación hacia atrás cuando el modal está abierto
   useHistoryBlocker(isModalOpen, () => setIsModalOpen(false));
 
   const handleMouseDown = (event) => {
-    setIsDragging(true);
+    hasMoved.current = false;
     startPosition.current = { x: event.clientX, y: event.clientY };
     startOffset.current = {
       x: bubbleRef.current.offsetLeft,
@@ -37,8 +37,14 @@ const FloattingBubble = () => {
   };
 
   const handleMouseMove = (event) => {
-    const newX = startOffset.current.x + event.clientX - startPosition.current.x;
-    const newY = startOffset.current.y + event.clientY - startPosition.current.y;
+    const deltaX = event.clientX - startPosition.current.x;
+    const deltaY = event.clientY - startPosition.current.y;
+    if (Math.hypot(deltaX, deltaY) > 5) {
+      hasMoved.current = true;
+    }
+
+    const newX = startOffset.current.x + deltaX;
+    const newY = startOffset.current.y + deltaY;
 
     const maxX = window.innerWidth - bubbleRef.current.offsetWidth;
     const maxY = window.innerHeight - bubbleRef.current.offsetHeight;
@@ -51,40 +57,41 @@ const FloattingBubble = () => {
     bubbleRef.current.style.top = `${boundedY}px`;
   };
 
-  const handleMouseUp = (event) => {
-    setIsDragging(false);
-    const deltaX = event.clientX - startPosition.current.x;
-    const deltaY = event.clientY - startPosition.current.y;
-    const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-
+  const handleMouseUp = () => {
     document.removeEventListener("mousemove", handleMouseMove);
     document.removeEventListener("mouseup", handleMouseUp);
-    bubbleRef.current.style.animation = "none";
+    if (bubbleRef.current) {
+      bubbleRef.current.style.animation = "none";
+    }
 
-    if (distance < 3) {
-      setIsModalOpen(!isModalOpen);
-    } else {
+    if (hasMoved.current) {
       autoMoveToEdgeWithAnimation();
     }
   };
 
   const handleTouchStart = (event) => {
     const touch = event.touches[0];
-    setIsDragging(true);
+    hasMoved.current = false;
     startPosition.current = { x: touch.clientX, y: touch.clientY };
     startOffset.current = {
       x: bubbleRef.current.offsetLeft,
       y: bubbleRef.current.offsetTop,
     };
 
-    document.addEventListener("touchmove", handleTouchMove);
+    document.addEventListener("touchmove", handleTouchMove, { passive: false });
     document.addEventListener("touchend", handleTouchEnd);
   };
 
   const handleTouchMove = (event) => {
     const touch = event.touches[0];
-    const newX = startOffset.current.x + touch.clientX - startPosition.current.x;
-    const newY = startOffset.current.y + touch.clientY - startPosition.current.y;
+    const deltaX = touch.clientX - startPosition.current.x;
+    const deltaY = touch.clientY - startPosition.current.y;
+    if (Math.hypot(deltaX, deltaY) > 6) {
+      hasMoved.current = true;
+    }
+
+    const newX = startOffset.current.x + deltaX;
+    const newY = startOffset.current.y + deltaY;
 
     const maxX = window.innerWidth - bubbleRef.current.offsetWidth - 5;
     const maxY = window.innerHeight - bubbleRef.current.offsetHeight - 5;
@@ -98,19 +105,30 @@ const FloattingBubble = () => {
   };
 
   const handleTouchEnd = () => {
-    setIsDragging(false);
-    autoMoveToEdgeWithAnimation();
-
     document.removeEventListener("touchmove", handleTouchMove);
     document.removeEventListener("touchend", handleTouchEnd);
+
+    if (hasMoved.current) {
+      autoMoveToEdgeWithAnimation();
+    }
+  };
+
+  const [anchorRect, setAnchorRect] = useState(null);
+
+  const handleClickBubble = (e) => {
+    e.stopPropagation();
+    if (hasMoved.current) return;
+    if (bubbleRef.current) {
+      setAnchorRect(bubbleRef.current.getBoundingClientRect());
+    }
+    setIsModalOpen((prev) => !prev);
   };
 
   const handleModalClose = () => {
+    if (bubbleRef.current) {
+      setAnchorRect(bubbleRef.current.getBoundingClientRect());
+    }
     setIsModalOpen(false);
-    // Además de cerrar, se limpia el Strong seleccionado. Si no, `modalStrong`
-    // se queda en true y al hacer clic en OTRO número el efecto de arriba no
-    // vuelve a dispararse (React descarta el set con el mismo valor), así que
-    // el modal ya no reabriría.
     strongFun("");
   };
 
@@ -127,21 +145,7 @@ const FloattingBubble = () => {
     bubble.style.left = `${newX}px`;
   };
 
-  useEffect(() => {
-    // El handler se declara DENTRO del efecto: fuera se recreaba en cada render
-    // y quedaba fuera de las dependencias, así que el listener podía seguir
-    // viendo un `isDragging` viejo.
-    const handleClickOutsideModal = (event) => {
-      if (!isDragging && modalRef.current && !modalRef.current.contains(event.target)) {
-        setIsModalOpen(false);
-      }
-    };
 
-    document.addEventListener("mousedown", handleClickOutsideModal);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutsideModal);
-    };
-  }, [isDragging]);
 
   return (
     <div>
@@ -167,13 +171,14 @@ const FloattingBubble = () => {
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
+        onClick={handleClickBubble}
       >
         <div className="bg-transparent absolute size-[60px] rounded-full" />
         <img src={DICTIONARY} className="w-[45px] h-[45px]" />
       </div>
       {isModalOpen && (
         <div ref={modalRef} className="modal-background">
-          <ModalStrong isOpen={isModalOpen} onClose={handleModalClose} />
+          <ModalStrong isOpen={isModalOpen} onClose={handleModalClose} anchorRect={anchorRect} />
         </div>
       )}
     </div>
