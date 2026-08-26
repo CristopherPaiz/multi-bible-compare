@@ -104,8 +104,14 @@ const flush = async () => {
 
           for (const waiter of group) {
             const verses = versesById.get(waiter.bibleId);
-            if (verses) waiter.resolve(verses);
-            else waiter.reject(new Error("El capítulo no existe en esta versión."));
+            if (verses) {
+              waiter.resolve(verses);
+            } else {
+              const err = new Error("El capítulo no existe en esta versión.");
+              err.isNotFound = true;
+              err.status = 404;
+              waiter.reject(err);
+            }
           }
         } catch (error) {
           for (const waiter of group) waiter.reject(error);

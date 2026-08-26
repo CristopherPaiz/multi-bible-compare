@@ -25,9 +25,14 @@ const withFallback = async (method, args) => {
     lastResolvedBy = source;
     return result;
   } catch (error) {
-    // Un AbortError es una cancelación nuestra, no un fallo de la fuente:
-    // reintentar sería pedir dos veces algo que ya no se necesita.
+    // Un AbortError es una cancelación nuestra, no un fallo de la fuente
     if (error?.name === "AbortError") throw error;
+
+    // Si el capítulo o versículo simplemente no existe en esta versión (ej. Nuevo Testamento pedido para un libro del AT),
+    // no se hace fallback a GitHub porque tampoco existirá allí y evitará llamadas 404 masivas.
+    if (error?.isNotFound || error?.status === 404 || error?.message?.includes("no existe en esta versión")) {
+      throw error;
+    }
 
     if (!AUTO_FALLBACK || source === SOURCES.GITHUB) throw error;
 
