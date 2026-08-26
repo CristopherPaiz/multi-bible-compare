@@ -8,6 +8,38 @@ import TRANSLATE from "/translationBeta.png";
 import TRANSLATEGOOGLE from "/google.png";
 import SHARE from "/share.png";
 
+/**
+ * Estilos de los números Strong incrustados en el versículo.
+ *
+ * Dos detalles que importan:
+ *
+ * 1. `[&_sup:hover]:` y NO `[&_sup]:hover:`. El segundo compila a
+ *    `.contenedor:hover sup`, o sea que al pasar el cursor por CUALQUIER parte
+ *    del versículo se resaltaban TODOS los números a la vez.
+ *
+ * 2. `inline-block` + padding. Un <sup> es texto en superíndice: diminuto, y su
+ *    área de clic también. Con padding el objetivo crece sin mover el texto
+ *    (el margen negativo compensa), así deja de fallar el clic.
+ */
+const CLASES_STRONG = [
+  "[&_sup]:cursor-pointer",
+  "[&_sup]:inline-block",
+  // El preflight de Tailwind pone `sub, sup { line-height: 0 }`. Con eso la
+  // caja del <sup> mide 0px de alto y el clic solo pegaba en los píxeles de
+  // los dígitos. Se le devuelve una altura real.
+  "[&_sup]:leading-[1.3]",
+  "[&_sup]:px-[3px]",
+  "[&_sup]:mx-[-1px]",
+  "[&_sup]:rounded",
+  "[&_sup]:font-semibold",
+  "[&_sup]:text-blue-600",
+  "[&_sup]:transition-colors",
+  "[&_sup:hover]:bg-blue-100",
+  "[&_sup:hover]:underline",
+  "dark:[&_sup]:text-blue-400",
+  "dark:[&_sup:hover]:bg-blue-900",
+].join(" ");
+
 const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
   const { versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero, tipoTraductor, setCompartirVerse, tamanioVerseAncho, tamanioVerseAlto, strongFun } =
     useContext(DataContext);
@@ -21,6 +53,10 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
 
   const containerRef = useRef(null);
   const translatingRef = useRef(null);
+
+  // `true` mientras no haya ni un versículo que pintar.
+  const sinContenido =
+    !textoTraducido || (typeof textoTraducido === "object" && Object.keys(textoTraducido).length === 0);
 
   const handleVerseClick = useCallback(
     (versiculo) => {
@@ -163,8 +199,14 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
           )}
         </div>
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10"></div>
+          {/*
+            Franjas invisibles en los bordes. No tienen handler ni ref: son
+            decorativas, pero al estar en z-10 sobre el texto se comían todo
+            clic en los 70px de cada lado — versículos y números Strong por
+            igual. `pointer-events-none` las deja pasar de largo.
+          */}
+          <div className="absolute left-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10 pointer-events-none"></div>
           <div
             ref={containerRef}
             className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${
@@ -172,7 +214,21 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
             }`}
             style={{ position: "relative" }}
           >
-            {typeof textoTraducido === "object" && textoTraducido !== null ? (
+            {cargando && sinContenido ? (
+              // Esqueleto SOLO en la primera carga, cuando no hay nada que
+              // mostrar todavía. Si ya hay texto en pantalla se deja tal cual y
+              // se reemplaza cuando llega el nuevo: tapar contenido válido con
+              // una capa gris hace que la app parpadee en cada versículo.
+              <div className="flex flex-col gap-3 py-1" aria-hidden="true">
+                {[90, 100, 96, 82, 94, 70].map((ancho, i) => (
+                  <div
+                    key={i}
+                    className="h-3 animate-pulse rounded bg-gray-200 dark:bg-neutral-700"
+                    style={{ width: `${ancho}%`, animationDelay: `${i * 80}ms` }}
+                  ></div>
+                ))}
+              </div>
+            ) : typeof textoTraducido === "object" && textoTraducido !== null ? (
               Object.entries(textoTraducido)
                 .sort(([keyA], [keyB]) => keyA - keyB)
                 .map(([versiculo, contenido], index) => (
@@ -194,7 +250,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                     <span>
                       <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
                       <span
-                        className="[&_sup]:cursor-pointer [&_sup]:text-blue-600 [&_sup]:font-semibold dark:[&_sup]:text-blue-400 [&_sup]:hover:underline"
+                        className={CLASES_STRONG}
                         onClick={handleStrongClick}
                         dangerouslySetInnerHTML={{ __html: contenido }}
                       ></span>
@@ -212,14 +268,6 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
             )}
           </div>
         </div>
-        {cargando && (
-          <div className="absolute inset-0 z-40 flex flex-col gap-2 bg-white/70 p-3 dark:bg-neutral-900/70">
-            <div className="h-3 w-1/3 animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
-            <div className="h-3 w-full animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
-            <div className="h-3 w-11/12 animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
-            <div className="h-3 w-4/5 animate-pulse rounded bg-gray-300 dark:bg-neutral-700"></div>
-          </div>
-        )}
         {errorTraduccion && !isTranslating && (
           <div className="text-center text-xs text-red-600 dark:text-red-400 my-1">{t("TraduccionFallo")}</div>
         )}
