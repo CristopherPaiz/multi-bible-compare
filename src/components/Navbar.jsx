@@ -2,12 +2,17 @@ import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 import LOGO from "/bibleIcon.svg";
 import LanguageContext from "../context/LanguageContext";
+import ThemeContext from "../context/ThemeContext";
 import { useContext, useEffect, useRef, useState } from "react";
 import INFO from "/info.png";
 import SETTING from "/setting.png";
 import COMPARE from "/compare.png";
 import HOMEICO from "/hut.png";
 import HISTORY from "/history.png";
+import MOON from "/moon.png";
+import SUN from "/sun.png";
+import USA from "/USA.png";
+import SPAIN from "/SPAIN.png";
 import DataContext from "../context/DataContext";
 
 // Los iconos que vienen de /public son PNG; los otros dos son SVG en línea.
@@ -77,7 +82,8 @@ const RUTAS_SECUNDARIAS = [
 ];
 
 const Navbar = () => {
-  const { t } = useContext(LanguageContext);
+  const { t, cambiarIdioma, idiomaNavegador } = useContext(LanguageContext);
+  const { theme, changeTheme } = useContext(ThemeContext);
   const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionadoNumero } = useContext(DataContext);
   const [menuAbierto, setMenuAbierto] = useState(false);
   const menuRef = useRef(null);
@@ -137,69 +143,135 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* Escritorio: todas las rutas visibles a la vez. */}
-        <ul className="hidden shrink-0 flex-row space-x-8 pr-6 text-[10px] font-medium sm:flex">
-          {todas.map(({ to, clave, Icono }) => (
-            <li key={to}>
-              <Link
-                to={to}
-                aria-current={esActiva(to) ? "page" : undefined}
-                className={`flex flex-col justify-center text-center text-gray-900 hover:scale-105 hover:underline dark:text-white ${
-                  esActiva(to) ? "font-bold underline" : ""
-                }`}
-              >
-                <Icono className="w-6 h-6 m-auto" />
-                {t(clave)}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {/* Escritorio: todas las rutas + controles de tema e idioma */}
+        <div className="hidden shrink-0 items-center gap-5 pr-2 sm:flex">
+          <ul className="flex flex-row space-x-7 text-[10px] font-medium">
+            {todas.map(({ to, clave, Icono }) => (
+              <li key={to}>
+                <Link
+                  to={to}
+                  aria-current={esActiva(to) ? "page" : undefined}
+                  className={`flex flex-col justify-center text-center text-gray-900 hover:scale-105 hover:underline dark:text-white ${
+                    esActiva(to) ? "font-bold underline" : ""
+                  }`}
+                >
+                  <Icono className="w-6 h-6 m-auto" />
+                  {t(clave)}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-        {/* Móvil: el resto de rutas se agrupa aquí para no llenar la barra. */}
-        <div className="relative shrink-0 sm:hidden" ref={menuRef}>
+          <div className="flex items-center gap-2 border-l border-black/15 pl-4 dark:border-white/15">
+            {/* Botón de Idioma Escritorio */}
+            <button
+              type="button"
+              onClick={cambiarIdioma}
+              title={t("CambiarIdioma")}
+              className="flex items-center gap-1.5 rounded-xl border border-black/10 bg-black/5 px-2.5 py-1.5 text-xs font-bold text-gray-900 transition hover:bg-black/10 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+            >
+              <img
+                src={idiomaNavegador === "es" ? USA : SPAIN}
+                alt=""
+                className="h-4 w-4 rounded-full object-cover shadow-xs"
+              />
+              <span>{idiomaNavegador === "es" ? "EN" : "ES"}</span>
+            </button>
+
+            {/* Botón de Tema Escritorio */}
+            <button
+              type="button"
+              onClick={changeTheme}
+              title={theme === "light" ? t("CambiarTemaOscuro") : t("CambiarTemaClaro")}
+              className="flex h-8 w-8 items-center justify-center rounded-xl border border-black/10 bg-black/5 text-gray-900 transition hover:bg-black/10 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+            >
+              <img
+                src={theme === "light" ? MOON : SUN}
+                alt=""
+                className="h-4 w-4 dark:invert"
+              />
+            </button>
+          </div>
+        </div>
+
+        {/* Móvil: controles rápidos de idioma, tema y menú de hamburguesa */}
+        <div className="flex items-center gap-1 sm:hidden">
+          {/* Botón de Idioma Móvil */}
           <button
             type="button"
-            onClick={() => setMenuAbierto((abierto) => !abierto)}
-            aria-expanded={menuAbierto}
-            aria-haspopup="menu"
-            aria-label={t("Menu")}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
+            onClick={cambiarIdioma}
+            title={t("CambiarIdioma")}
+            aria-label={t("CambiarIdioma")}
+            className="flex h-9 w-9 items-center justify-center rounded-full active:bg-black/10 dark:active:bg-white/10"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.8}
-              stroke="currentColor"
-              className="h-6 w-6"
-              aria-hidden="true"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
-            </svg>
+            <img
+              src={idiomaNavegador === "es" ? USA : SPAIN}
+              alt=""
+              className="h-5 w-5 rounded-full object-cover shadow-xs"
+            />
           </button>
 
-          {menuAbierto && (
-            <ul
-              role="menu"
-              className="absolute right-0 z-30 mt-1 w-48 overflow-hidden rounded-xl border border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]"
+          {/* Botón de Tema Móvil */}
+          <button
+            type="button"
+            onClick={changeTheme}
+            title={theme === "light" ? t("CambiarTemaOscuro") : t("CambiarTemaClaro")}
+            aria-label={theme === "light" ? t("CambiarTemaOscuro") : t("CambiarTemaClaro")}
+            className="flex h-9 w-9 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
+          >
+            <img
+              src={theme === "light" ? MOON : SUN}
+              alt=""
+              className="h-5 w-5 dark:invert"
+            />
+          </button>
+
+          {/* Menú Más / Hamburguesa */}
+          <div className="relative shrink-0" ref={menuRef}>
+            <button
+              type="button"
+              onClick={() => setMenuAbierto((abierto) => !abierto)}
+              aria-expanded={menuAbierto}
+              aria-haspopup="menu"
+              aria-label={t("Menu")}
+              className="flex h-9 w-9 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
             >
-              {RUTAS_SECUNDARIAS.map(({ to, clave, Icono }) => (
-                <li key={to} role="none">
-                  <Link
-                    role="menuitem"
-                    to={to}
-                    aria-current={esActiva(to) ? "page" : undefined}
-                    className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${
-                      esActiva(to) ? "font-bold" : ""
-                    }`}
-                  >
-                    <Icono className="h-5 w-5 shrink-0" />
-                    {t(clave)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.8}
+                stroke="currentColor"
+                className="h-6 w-6"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+              </svg>
+            </button>
+
+            {menuAbierto && (
+              <ul
+                role="menu"
+                className="absolute right-0 z-30 mt-1 w-48 overflow-hidden rounded-xl border border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]"
+              >
+                {RUTAS_SECUNDARIAS.map(({ to, clave, Icono }) => (
+                  <li key={to} role="none">
+                    <Link
+                      role="menuitem"
+                      to={to}
+                      aria-current={esActiva(to) ? "page" : undefined}
+                      className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${
+                        esActiva(to) ? "font-bold" : ""
+                      }`}
+                    >
+                      <Icono className="h-5 w-5 shrink-0" />
+                      {t(clave)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </nav>
 

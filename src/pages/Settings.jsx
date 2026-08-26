@@ -1,16 +1,10 @@
 import { useContext, useEffect, useState } from "react";
 import LanguageContext from "../context/LanguageContext";
-import ThemeContext from "../context/ThemeContext";
-import MOON from "/moon.png";
-import SUN from "/sun.png";
-import USA from "/USA.png";
-import SPAIN from "/SPAIN.png";
 import DataContext from "../context/DataContext";
 import { SOURCES, getDataSource, setDataSource, onDataSourceChange, API_URL } from "../config/dataSource";
 
 const Settings = () => {
-  const { t, cambiarIdioma, idiomaNavegador } = useContext(LanguageContext);
-  const { changeTheme, theme } = useContext(ThemeContext);
+  const { t } = useContext(LanguageContext);
   const { paginaInicio, handlePaginaInicio, cambiarAnchoVentana, cambiarAltoVentana, anchoVentana, altoVentana } =
     useContext(DataContext);
 
@@ -102,7 +96,7 @@ const Settings = () => {
             </button>
           </div>
         </div>
-        {/* TAMAÑO DE VENTANA ANCHO */}
+        {/* TAMAÑO DE VENTANA ALTO */}
         <div className="p-4 rounded-md bg-pink-300 dark:bg-pink-500 m-auto justify-center w-60">
           <h1 className="text-sm font-medium flex justify-center mb-3 text-center dark:text-white">Tamaño de la ventana Alto</h1>
           <div className="flex items-center justify-center gap-2">
@@ -117,35 +111,6 @@ const Settings = () => {
             </button>
           </div>
         </div>
-        {/* CAMBIAR A INGLÉS */}
-        <button
-          style={{ alignItems: "center" }}
-          className="justify-center gap-3 flex bg-[#94d67d] font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-[#3b9229] dark:text-white"
-          onClick={cambiarIdioma}
-        >
-          {t("CambiarIdioma")}
-          {idiomaNavegador === "es" ? <img src={USA} className="w-5 h-5"></img> : <img src={SPAIN} className="w-5 h-5 "></img>}
-        </button>
-        {/* CAMBIAR A TEMA */}
-        {theme === "light" ? (
-          <button
-            style={{ alignItems: "center" }}
-            className="justify-center gap-3 flex bg-[#FDD07A] font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-[#693BCC] dark:text-white"
-            onClick={changeTheme}
-          >
-            {t("CambiarTemaOscuro")}
-            <img src={MOON} className="w-5 h-5 dark:invert"></img>
-          </button>
-        ) : (
-          <button
-            style={{ alignItems: "center" }}
-            className="justify-center gap-3 flex bg-[#FDD07A] font-light py-4 px-4 rounded-lg w-60 m-auto dark:bg-[#693bcc] dark:text-white"
-            onClick={changeTheme}
-          >
-            {t("CambiarTemaClaro")}
-            <img src={SUN} className="w-5 h-5 dark:invert"></img>
-          </button>
-        )}
       </div>
     </>
   );
