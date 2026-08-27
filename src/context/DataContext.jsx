@@ -528,99 +528,50 @@ export const DataProvider = ({ children }) => {
   };
 
   //TAMAÑOS VERSESINGLE
-  const tamaniosAncho = {
-    small: {
-      min: "min-w-[250px]",
-      max: "max-w-[390px]",
-    },
-    medium: {
-      min: "min-w-[250px]",
-      max: "max-w-[600px]",
-    },
-    large: {
-      min: "min-w-[250px]",
-      max: "max-w-[1000px]",
-    },
-  };
+  /*
+   * El ancho de la ventana ya NO es un `max-width` por panel: los paneles viven
+   * en una rejilla y todos miden lo mismo, así que lo que se elige aquí es el
+   * ancho MÍNIMO de columna. La rejilla decide cuántas caben.
+   */
+  const ANCHOS_COLUMNA = { 1: 300, 2: 440, 3: 680 };
+  const ALTOS_PANEL = { 1: "h-[280px]", 2: "h-[420px]", 3: "h-[620px]" };
 
-  const tamaniosAlto = {
-    small: {
-      def: "h-[260px]",
-    },
-    medium: {
-      def: "h-[400px]",
-    },
-    large: {
-      def: "h-[600px]",
-    },
-  };
-
-  const [tamanioVerseAncho, setTamanioVerseAncho] = useState(tamaniosAncho.small);
-  const [tamanioVerseAlto, setTamanioVerseAlto] = useState(tamaniosAlto.small);
   const [anchoVentana, setAnchoVentana] = useState("1");
   const [altoVentana, setAltoVentana] = useState("1");
 
+  /*
+   * Se derivan del número en vez de guardarse aparte. Antes se persistían las
+   * clases de Tailwind ya resueltas en localStorage, así que cambiar un tamaño
+   * en el código no le llegaba a nadie que ya hubiera abierto la app: seguía
+   * leyendo las clases viejas de su navegador.
+   */
+  const anchoColumna = ANCHOS_COLUMNA[anchoVentana] ?? ANCHOS_COLUMNA[1];
+  const tamanioVerseAlto = ALTOS_PANEL[altoVentana] ?? ALTOS_PANEL[1];
+
   const cambiarAnchoVentana = (tamanio) => {
-    if (tamanio === "1") {
-      setAnchoVentana("1");
-      setTamanioVerseAncho(tamaniosAncho.small);
-    } else if (tamanio === "2") {
-      setAnchoVentana("2");
-      setTamanioVerseAncho(tamaniosAncho.medium);
-    } else {
-      setAnchoVentana("3");
-      setTamanioVerseAncho(tamaniosAncho.large);
-    }
+    setAnchoVentana(ANCHOS_COLUMNA[tamanio] ? tamanio : "1");
   };
 
   const cambiarAltoVentana = (tamanio) => {
-    if (tamanio === "1") {
-      setAltoVentana("1");
-      setTamanioVerseAlto(tamaniosAlto.small);
-    } else if (tamanio === "2") {
-      setAltoVentana("2");
-      setTamanioVerseAlto(tamaniosAlto.medium);
-    } else {
-      setAltoVentana("3");
-      setTamanioVerseAlto(tamaniosAlto.large);
-    }
+    setAltoVentana(ALTOS_PANEL[tamanio] ? tamanio : "1");
   };
 
-  // Recupera y asigna el ancho correctamente desde localStorage
+  // Solo se recupera el número elegido; el resto se calcula.
   useEffect(() => {
-    const tamanioAnchoGuardado = localStorage.getItem("tamanioAncho");
-    const tamanioAnchoNumeroGuardado = localStorage.getItem("tamanioAnchoNumero");
+    const anchoGuardado = localStorage.getItem("tamanioAnchoNumero");
+    if (anchoGuardado) setAnchoVentana(JSON.parse(anchoGuardado));
 
-    if (tamanioAnchoGuardado && tamanioAnchoNumeroGuardado) {
-      const tamanioAnchoParsed = JSON.parse(tamanioAnchoGuardado);
-      const tamanioAnchoNumeroParsed = JSON.parse(tamanioAnchoNumeroGuardado);
-      setTamanioVerseAncho(tamanioAnchoParsed);
-      setAnchoVentana(tamanioAnchoNumeroParsed);
-    }
-  }, []);
-
-  // Recupera y asigna el alto correctamente desde localStorage
-  useEffect(() => {
-    const tamanioAltoGuardado = localStorage.getItem("tamanioAlto");
-    const tamanioAltoNumeroGuardado = localStorage.getItem("tamanioAltoNumero");
-
-    if (tamanioAltoGuardado && tamanioAltoNumeroGuardado) {
-      const tamanioAltoParsed = JSON.parse(tamanioAltoGuardado);
-      const tamanioAltoNumeroParsed = JSON.parse(tamanioAltoNumeroGuardado);
-      setTamanioVerseAlto(tamanioAltoParsed);
-      setAltoVentana(tamanioAltoNumeroParsed);
-    }
+    const altoGuardado = localStorage.getItem("tamanioAltoNumero");
+    if (altoGuardado) setAltoVentana(JSON.parse(altoGuardado));
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("tamanioAncho", JSON.stringify(tamanioVerseAncho));
     localStorage.setItem("tamanioAnchoNumero", JSON.stringify(anchoVentana));
-  }, [tamanioVerseAncho, anchoVentana]);
+  }, [anchoVentana]);
 
   useEffect(() => {
-    localStorage.setItem("tamanioAlto", JSON.stringify(tamanioVerseAlto));
     localStorage.setItem("tamanioAltoNumero", JSON.stringify(altoVentana));
-  }, [tamanioVerseAlto, altoVentana]);
+  }, [altoVentana]);
 
   // funciones que rotornamos para que puedan usarse en otros lados
   return (
@@ -669,7 +620,7 @@ export const DataProvider = ({ children }) => {
         nombreBibliaCompartir,
         cambiarAnchoVentana,
         cambiarAltoVentana,
-        tamanioVerseAncho,
+        anchoColumna,
         tamanioVerseAlto,
         anchoVentana,
         altoVentana,

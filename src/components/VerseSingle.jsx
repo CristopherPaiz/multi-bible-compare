@@ -4,7 +4,6 @@ import { traducir } from "../services/translateSource";
 import "../styles/BibleMarkup.css";
 import MarkupTab from "./MarkupTab";
 import DataContext from "../context/DataContext";
-import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import TRANSLATE from "/translationBeta.png";
 import SHARE from "/share.png";
@@ -35,6 +34,10 @@ const TIEMPO_MAXIMO_MS = 30000;
 
 const normalizarMarcado = (html) =>
   String(html ?? "")
+    // Un salto de párrafo AL INICIO del versículo no separa nada: lo único que
+    // hacía era empujar el texto al renglón de abajo, dejando el número del
+    // versículo solo en su propia línea.
+    .replace(/^(?:\s|\\par\b|<pb\s*\/?>)+/i, "")
     .replace(/\\par\b/gi, '<span class="salto-parrafo"></span>')
     .replace(/<pb\s*\/?>/gi, '<span class="salto-parrafo"></span>');
 
@@ -57,19 +60,32 @@ const CLASES_STRONG = [
   "dark:[&_sup:hover]:bg-blue-900",
 ].join(" ");
 
+/**
+ * Caja común de los botones del encabezado. Son iconos de distinto tamaño y
+ * antes cada uno traía su propio margen suelto (`mt-3 mr-3`, `mt-1 mr-1`), así
+ * que ninguno quedaba alineado con el de al lado.
+ */
+const BOTON_ICONO =
+  "relative grid h-8 w-8 shrink-0 place-items-center rounded-lg transition-colors hover:bg-black/5 disabled:opacity-40 dark:hover:bg-white/10";
+
+/** "034. Español - Biblia ccc" -> { idioma: "Español", version: "Biblia cc" } */
+const partirNombre = (nombre) => {
+  const idioma = nombre.split(".")[1]?.split("-")[0]?.trim() ?? "";
+  const version = nombre.split("-")[1]?.replace("ccc", "cc").trim() || nombre;
+  return { idioma, version };
+};
+
 const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
   const {
     versiculoSeleccionadoNumero,
     setVersiculoSeleccionadoNumero,
     setCompartirVerse,
-    tamanioVerseAncho,
     tamanioVerseAlto,
     mostrarStrongPopup,
     leerMarcado,
     libroSeleccionado,
     capituloSeleccionadoNumero,
   } = useContext(DataContext);
-  const { theme } = useContext(ThemeContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
 
   /**
@@ -107,10 +123,13 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
 
   const esCapitulo = typeof texto === "object" && texto !== null;
 
+  const { idioma: idiomaEtiqueta, version } = partirNombre(nombre);
+
   /** Lo que se pinta: el original con las traducciones encima. */
   const textoVisible = useMemo(() => (esCapitulo ? { ...texto, ...traducciones } : texto), [texto, traducciones, esCapitulo]);
 
   const estaTraducido = Boolean(traducciones[versiculoSeleccionadoNumero]);
+  const puedeTraducir = iso !== "no" && esCapitulo && idiomaNavegador !== iso;
 
   // `true` mientras no haya ni un versículo que pintar.
   const sinContenido = !textoVisible || (esCapitulo && Object.keys(texto).length === 0);
@@ -247,112 +266,121 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     setErrorTraduccion(false);
   };
 
-  //TAMAÑOS
   return (
-    <>
-      <div className="flex flex-col border-neutral-400 rounded-md border relative bg-white dark:bg-[#0f0f0f]">
-        <MarkupTab biblia={nombre} tieneMorfologia={marcado.morfologia} tieneGlosa={marcado.glosa} />
-        <div className={`${tamanioVerseAncho.min} ${tamanioVerseAncho.max} text-wrap px-3 py-2 bg-neutral-300 dark:bg-neutral-800 rounded-t-md justify-between flex flex-row`}>
-          <div className="flex flex-col">
-            <h1 className="font-thin">{nombre.split(".")[1].split("-")[0]}</h1>
-            <h1 className="font-bold">{nombre.split("-")[1].replace("ccc", "cc")}</h1>
-          </div>
-          {iso !== "no" && esCapitulo && idiomaNavegador !== iso ? (
-            <div className="flex flex-nowrap items-center">
-              <button onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}>
-                <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Share verse from Biblian"></img>
-              </button>
-              {/* El mismo botón traduce o revierte según el estado del
-                  versículo actual, para no añadir un icono más al encabezado. */}
+    <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm transition-shadow hover:shadow-md dark:border-neutral-800 dark:bg-[#0f0f0f]">
+      {/*
+        El nombre de la versión se trunca a una línea a propósito: si envolviera,
+        cada encabezado mediría distinto y las cabeceras de la rejilla dejarían
+        de alinearse entre sí. El nombre completo queda en el `title`.
+      */}
+      <header className="flex items-center justify-between gap-2 border-b border-neutral-200 bg-neutral-100 px-3 py-2 dark:border-neutral-800 dark:bg-neutral-900">
+        <div className="min-w-0">
+          <p className="truncate text-[10px] font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">{idiomaEtiqueta}</p>
+          <h2 title={version} className="truncate text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+            {version}
+          </h2>
+        </div>
+
+        {esCapitulo && (
+          <div className="flex shrink-0 items-center gap-0.5">
+            <MarkupTab biblia={nombre} tieneMorfologia={marcado.morfologia} tieneGlosa={marcado.glosa} />
+            <button
+              type="button"
+              className={BOTON_ICONO}
+              onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}
+            >
+              <img className="h-[18px] w-[18px] dark:invert" src={SHARE} alt="Share verse from Biblian" />
+            </button>
+            {/* El mismo botón traduce o revierte según el estado del versículo
+                actual, para no añadir un icono más al encabezado. */}
+            {puedeTraducir && (
               <button
+                type="button"
                 disabled={isTranslating}
                 onClick={() => (estaTraducido ? revertirTraduccion() : handleTranslate(iso))}
                 title={estaTraducido ? t("VerOriginal") : t("Traducir")}
                 aria-label={estaTraducido ? t("VerOriginal") : t("Traducir")}
-                className="relative disabled:opacity-40"
+                className={BOTON_ICONO}
               >
-                <img className="mt-1 mr-1 w-6 h-8 dark:invert" src={TRANSLATE} alt=""></img>
-                {estaTraducido && <span className="absolute -right-0 -top-0 block h-2 w-2 rounded-full bg-emerald-500 ring-2 ring-neutral-300 dark:ring-neutral-800"></span>}
+                <img className={`h-[18px] w-[18px] dark:invert ${isTranslating ? "animate-pulse" : ""}`} src={TRANSLATE} alt="" />
+                {estaTraducido && <span className="absolute right-1 top-1 block h-2 w-2 rounded-full bg-emerald-500 ring-2 ring-neutral-100 dark:ring-neutral-900"></span>}
               </button>
-            </div>
-          ) : (
-            esCapitulo && (
-              <div className="flex flex-nowrap items-center">
-                <button onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}>
-                  <img className="mt-3 mr-3 w-6 h-6 dark:invert" src={SHARE} alt="Share verse from Biblian"></img>
-                </button>
-              </div>
-            )
-          )}
-        </div>
-        <div className="relative">
-          {/*
-            Franjas invisibles en los bordes. No tienen handler ni ref: son
-            decorativas, pero al estar en z-10 sobre el texto se comían todo
-            clic en los 70px de cada lado — versículos y números Strong por
-            igual. `pointer-events-none` las deja pasar de largo.
-          */}
-          <div className="absolute left-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-[70px] bg-red-500 opacity-0 z-10 pointer-events-none"></div>
-          <div
-            ref={containerRef}
-            className={`p-3 overflow-y-auto no-scrollbarVerse ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} ${esCapitulo ? tamanioVerseAlto.def : "h-fit"}`}
-            style={{ position: "relative" }}
-          >
-            {cargando && sinContenido ? (
-              // Esqueleto SOLO en la primera carga, cuando no hay nada que
-              // mostrar todavía. Si ya hay texto en pantalla se deja tal cual y
-              // se reemplaza cuando llega el nuevo: tapar contenido válido con
-              // una capa gris hace que la app parpadee en cada versículo.
-              <div className="flex flex-col gap-3 py-1" aria-hidden="true">
-                {[90, 100, 96, 82, 94, 70].map((ancho, i) => (
-                  <div key={i} className="h-3 animate-pulse rounded bg-gray-200 dark:bg-neutral-700" style={{ width: `${ancho}%`, animationDelay: `${i * 80}ms` }}></div>
-                ))}
-              </div>
-            ) : esCapitulo ? (
-              Object.entries(textoVisible)
-                .sort(([keyA], [keyB]) => keyA - keyB)
-                .map(([versiculo, contenido], index) => (
-                  <p
-                    key={index}
-                    data-verse={versiculo}
-                    onClick={() => handleVerseClick(versiculo)}
-                    style={{
-                      cursor: "pointer",
-                      marginBottom: "0.7rem",
-                      color: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "black" : "white") : "inherit",
-                      backgroundColor: parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero) ? (theme === "light" ? "#ffe4b3" : "#693BCC") : "transparent",
-                      padding: "1rem",
-                      margin: "-1rem",
-                    }}
-                    className="animate-slide-in-bottom"
-                  >
-                    <span>
-                      <span style={{ fontWeight: "bold" }}>{versiculo}</span>{" "}
-                      <span
-                        className={`texto-biblico ${CLASES_STRONG} ${preferencia.morfologia ? "" : "sin-morfologia"} ${
-                          preferencia.glosa ? "" : "sin-glosa"
-                        } ${String(versiculoTraduciendo) === String(versiculo) ? "traduciendo-skeleton" : ""}`}
-                        onClick={handleStrongClick}
-                        dangerouslySetInnerHTML={{ __html: normalizarMarcado(contenido) }}
-                      ></span>
-                    </span>
-                  </p>
-                ))
-            ) : typeof textoVisible === "string" ? (
-              <div className={`animate-slide-in-bottom font-bold ${tamanioVerseAncho.min} ${tamanioVerseAncho.max} px-2 text-center text-[#ff0000] dark:text-orange-500`}>{textoVisible}</div>
-            ) : (
-              <p>{t("NoObjetoNoString")}</p>
             )}
           </div>
-        </div>
-        {errorTraduccion && !isTranslating && (
-          <div role="status" className="animate-fade-in my-1 text-center text-xs text-red-600 dark:text-red-400">
-            {t("TraduccionFallo")}
+        )}
+      </header>
+
+      {/*
+        `relative` no es decorativo: `centerText` centra el versículo con
+        `offsetTop`, que se mide contra el ancestro posicionado más cercano. Sin
+        esto se mediría contra la página y el scroll saltaría a otro lado.
+      */}
+      {/*
+        Sin `flex-1` a propósito: en un contenedor flex vertical, `flex: 1 1 0%`
+        ignora la altura declarada y el panel crecía hasta abarcar el capítulo
+        entero (miles de píxeles) en vez de quedarse en su alto fijo y hacer
+        scroll dentro.
+      */}
+      <div ref={containerRef} className={`no-scrollbarVerse relative overflow-y-auto px-3 py-3 ${esCapitulo ? tamanioVerseAlto : "h-fit"}`}>
+        {cargando && sinContenido ? (
+          // Esqueleto mientras no hay nada que mostrar: primera carga y
+          // cambio de capítulo (`VerseWindow` vacía el texto al empezar a
+          // pedir el nuevo). Cambiar de versículo NO recarga nada, así que
+          // el texto nunca se tapa con una capa gris al leer.
+          <div className="flex flex-col gap-3 py-1" aria-hidden="true">
+            {[90, 100, 96, 82, 94, 70].map((ancho, i) => (
+              <div key={i} className="h-3 animate-pulse rounded bg-gray-200 dark:bg-neutral-700" style={{ width: `${ancho}%`, animationDelay: `${i * 80}ms` }}></div>
+            ))}
           </div>
+        ) : esCapitulo ? (
+          Object.entries(textoVisible)
+            .sort(([keyA], [keyB]) => keyA - keyB)
+            .map(([versiculo, contenido]) => {
+              const seleccionado = parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero);
+              return (
+                <p
+                  key={versiculo}
+                  data-verse={versiculo}
+                  onClick={() => handleVerseClick(versiculo)}
+                  // El borde izquierdo va siempre, transparente cuando no toca:
+                  // si apareciera solo al seleccionar, el texto se correría 3px
+                  // en cada clic.
+                  className={`animate-slide-in-bottom mb-1 cursor-pointer rounded-lg border-l-[3px] px-2 py-2 leading-relaxed transition-colors ${
+                    seleccionado
+                      ? "border-amber-500 bg-[#ffe4b3] text-black dark:border-purple-300 dark:bg-[#693BCC] dark:text-white"
+                      : "border-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800/60"
+                  }`}
+                >
+                  {/*
+                    El número va EN LÍNEA con el texto, sin columna propia: una
+                    columna fija sangraba todos los renglones y el texto se veía
+                    corrido hacia la derecha. Que la primera línea arranque al
+                    lado del número lo resuelve el CSS del marcado, no el layout.
+                  */}
+                  <span className={`mr-1.5 select-none text-xs font-bold tabular-nums ${seleccionado ? "opacity-70" : "text-amber-600 dark:text-purple-300"}`}>{versiculo}</span>
+                  <span
+                    className={`texto-biblico ${CLASES_STRONG} ${preferencia.morfologia ? "" : "sin-morfologia"} ${preferencia.glosa ? "" : "sin-glosa"} ${
+                      String(versiculoTraduciendo) === String(versiculo) ? "traduciendo-skeleton" : ""
+                    }`}
+                    onClick={handleStrongClick}
+                    dangerouslySetInnerHTML={{ __html: normalizarMarcado(contenido) }}
+                  ></span>
+                </p>
+              );
+            })
+        ) : typeof textoVisible === "string" ? (
+          <div className="animate-slide-in-bottom rounded-lg bg-red-50 px-3 py-4 text-center text-sm font-semibold text-[#ff0000] dark:bg-red-950/40 dark:text-orange-400">{textoVisible}</div>
+        ) : (
+          <p>{t("NoObjetoNoString")}</p>
         )}
       </div>
-    </>
+
+      {errorTraduccion && !isTranslating && (
+        <div role="status" className="animate-fade-in border-t border-neutral-200 py-1 text-center text-xs text-red-600 dark:border-neutral-800 dark:text-red-400">
+          {t("TraduccionFallo")}
+        </div>
+      )}
+    </article>
   );
 };
 

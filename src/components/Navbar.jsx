@@ -44,6 +44,35 @@ const IconoCuenta = ({ className }) => (
 
 IconoCuenta.propTypes = { className: PropTypes.string };
 
+/**
+ * Flecha de salto de capítulo en los extremos de la miga de pan.
+ *
+ * Deshabilitada en vez de oculta cuando no hay capítulo al que ir: si
+ * desapareciera, la referencia del centro se correría de sitio al llegar al
+ * primer o último capítulo del libro.
+ */
+const BotonCapitulo = ({ onClick, disponible, etiqueta, hacia }) => (
+  <button
+    type="button"
+    onClick={onClick}
+    disabled={!disponible}
+    title={etiqueta}
+    aria-label={etiqueta}
+    className="grid h-8 w-8 shrink-0 place-items-center rounded-lg text-black transition-colors hover:bg-black/10 disabled:pointer-events-none disabled:opacity-25 dark:text-white dark:hover:bg-white/15 sm:h-9 sm:w-9"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5" aria-hidden="true">
+      <path d={hacia === "atras" ? "M15 19 8 12l7-7" : "m9 5 7 7-7 7"} />
+    </svg>
+  </button>
+);
+
+BotonCapitulo.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  disponible: PropTypes.bool,
+  etiqueta: PropTypes.string,
+  hacia: PropTypes.oneOf(["atras", "adelante"]).isRequired,
+};
+
 // En móvil solo caben unas pocas pestañas sin desbordar, así que las rutas se
 // parten en dos grupos: las principales viven en la barra inferior y el resto
 // se agrupa dentro del menú "Más" de la cabecera. En escritorio se muestran
@@ -64,7 +93,15 @@ const RUTAS_SECUNDARIAS = [
 const Navbar = () => {
   const { t, cambiarIdioma, idiomaNavegador } = useContext(LanguageContext);
   const { theme, changeTheme } = useContext(ThemeContext);
-  const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionadoNumero } = useContext(DataContext);
+  const {
+    versiculoSeleccionadoNumero,
+    libroSeleccionado,
+    capituloSeleccionadoNumero,
+    Chapters,
+    setCapituloSeleccionadoNumero,
+    setVersiculoSeleccionado,
+    setVersiculoSeleccionadoNumero,
+  } = useContext(DataContext);
   const [menuAbierto, setMenuAbierto] = useState(false);
   const menuRef = useRef(null);
   const { pathname } = useLocation();
@@ -97,6 +134,40 @@ const Navbar = () => {
       document.removeEventListener("keydown", alPulsarEscape);
     };
   }, [menuAbierto]);
+
+  /*
+   * Salto de capítulo desde la miga de pan.
+   *
+   * `Chapters` es el mapa del libro actual: { "1": [1..51], "2": [...] }. Que
+   * exista la clave ES la comprobación de que el capítulo existe, así que no
+   * hace falta saber cuántos tiene cada libro.
+   *
+   * Solo se mueve dentro del libro: al llegar al final NO salta al siguiente
+   * libro, porque eso cambiaría el testamento y el contexto de lectura sin que
+   * el usuario lo pida. En los extremos el botón queda deshabilitado, no
+   * escondido, para que la referencia no baile de sitio.
+   */
+  const capitulos = Chapters && Chapters !== "NotFound" ? Chapters : null;
+
+  const claveCapitulo = (desplazamiento) => {
+    const destino = Number(capituloSeleccionadoNumero) + desplazamiento;
+    const clave = String(destino);
+    return capitulos?.[clave] ? clave : null;
+  };
+
+  const irACapitulo = (clave) => {
+    const versiculos = capitulos?.[clave];
+    if (!versiculos) return;
+    // El capítulo se guarda como cadena, igual que lo hace el modal de
+    // capítulos: es la clave del mapa, y hay comparaciones por identidad
+    // (historial) que se romperían con un número.
+    setCapituloSeleccionadoNumero(clave);
+    setVersiculoSeleccionado(versiculos);
+    setVersiculoSeleccionadoNumero(1);
+  };
+
+  const capituloAnterior = claveCapitulo(-1);
+  const capituloSiguiente = claveCapitulo(1);
 
   const TipoTestamento = (libro) => {
     const tipo = libro.split("book")[1];
@@ -245,8 +316,9 @@ const Navbar = () => {
           no es `!== 0`: la miga de pan quedaba visible con "NT · Capítulo :" y sin
           libro. Se exige que los tres datos existan. */}
       {Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
-        <nav className="sticky top-0 z-10">
-          <ol className="flex w-full items-center justify-center gap-1.5 bg-[#fbefda] px-3 py-2 text-sm dark:bg-[#693BCC] dark:text-white sm:gap-2 sm:px-6 sm:py-3 lg:text-xl border-t border-black/10 dark:border-white/10">
+        <nav className="sticky top-0 z-10 flex w-full items-center gap-1 border-t border-black/10 bg-[#fbefda] px-2 py-2 dark:border-white/10 dark:bg-[#693BCC] sm:gap-2 sm:px-4 sm:py-3">
+          <BotonCapitulo hacia="atras" disponible={Boolean(capituloAnterior)} etiqueta={t("CapituloAnterior")} onClick={() => irACapitulo(capituloAnterior)} />
+          <ol className="flex min-w-0 flex-1 items-center justify-center gap-1.5 text-sm dark:text-white sm:gap-2 lg:text-xl">
             <li className="flex shrink-0 items-center text-black dark:text-white">
               {TipoTestamento(libroSeleccionado)}
               <svg className="ms-1.5 mr-0.5 h-3 w-3 shrink-0 sm:ms-4 sm:mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
@@ -268,6 +340,7 @@ const Navbar = () => {
               </span>
             </li>
           </ol>
+          <BotonCapitulo hacia="adelante" disponible={Boolean(capituloSiguiente)} etiqueta={t("CapituloSiguiente")} onClick={() => irACapitulo(capituloSiguiente)} />
         </nav>
       )}
     </>

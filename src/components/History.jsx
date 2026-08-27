@@ -1,8 +1,110 @@
-import { useContext } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 import DataContext from "../context/DataContext";
 import ThemeContext from "../context/ThemeContext";
 import LanguageContext from "../context/LanguageContext";
 import { useNavigate } from "react-router-dom";
+
+/*
+ * Geometría de los chips de versículos. Los tres valores tienen que cuadrar
+ * entre sí: el alto máximo se calcula a partir de ellos para que el recorte
+ * caiga JUSTO en el borde de una fila y no parta un chip por la mitad.
+ */
+const ALTO_CHIP = 20;
+const SEPARACION = 4;
+const FILAS_VISIBLES = 1;
+const ALTO_CONTRAIDO = ALTO_CHIP * FILAS_VISIBLES + SEPARACION * (FILAS_VISIBLES - 1);
+/** Ya expandido tampoco crece sin freno: a partir de aquí el bloque hace scroll. */
+const ALTO_EXPANDIDO = ALTO_CHIP * 5 + SEPARACION * 4;
+
+/**
+ * Chips de los versículos visitados de un capítulo.
+ *
+ * Un capítulo muy leído acumula decenas: sin tope, la fila del historial crecía
+ * hasta desbordar la tarjeta entera. Se recorta a una sola fila y el resto queda
+ * detrás de un botón.
+ *
+ * El "+N" se mide, no se estima: los chips ocultos siguen maquetados (recortar
+ * con `max-height` no los saca del flujo), así que basta con mirar cuáles
+ * quedaron por debajo de la segunda fila.
+ */
+const ChipsVersiculos = ({ versiculos, activo, onIr, tituloIr }) => {
+  const { t } = useContext(LanguageContext);
+  const [expandido, setExpandido] = useState(false);
+  const [ocultos, setOcultos] = useState(0);
+  const contenedor = useRef(null);
+
+  useEffect(() => {
+    const elemento = contenedor.current;
+    if (!elemento) return;
+
+    const medir = () => {
+      const hijos = Array.from(elemento.children);
+      if (hijos.length === 0) return setOcultos(0);
+      const base = hijos[0].offsetTop;
+      setOcultos(hijos.filter((hijo) => hijo.offsetTop - base > ALTO_CONTRAIDO).length);
+    };
+
+    medir();
+    // El ancho de la tarjeta cambia con la ventana y con ello cuántos chips
+    // caben por fila, así que la cuenta se rehace sola.
+    const observador = new ResizeObserver(medir);
+    observador.observe(elemento);
+    return () => observador.disconnect();
+  }, [versiculos]);
+
+  return (
+    <div className="mt-1">
+      <div className="flex items-center gap-1">
+        <span className="text-[10px] font-medium opacity-70">{t("VersiculosConsultados")}</span>
+        {ocultos > 0 && (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setExpandido((v) => !v);
+            }}
+            aria-expanded={expandido}
+            title={expandido ? t("ContraerTodo") : t("ExpandirTodo")}
+            className="rounded px-1 text-[10px] font-bold opacity-60 transition hover:opacity-100"
+          >
+            {expandido ? "−" : `+${ocultos}`}
+          </button>
+        )}
+      </div>
+      <div
+        ref={contenedor}
+        style={{ maxHeight: expandido ? ALTO_EXPANDIDO : ALTO_CONTRAIDO, gap: SEPARACION }}
+        className={`flex flex-wrap items-start ${expandido ? "no-scrollbar overflow-y-auto" : "overflow-hidden"}`}
+      >
+        {versiculos.map((v) => (
+          <button
+            key={v}
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onIr(v);
+            }}
+            title={`${tituloIr} ${v}`}
+            style={{ height: ALTO_CHIP }}
+            className={`inline-flex shrink-0 items-center rounded px-1.5 text-[10px] font-bold transition active:scale-95 ${
+              v === activo ? "bg-yellow-500 text-black shadow-xs dark:bg-purple-600 dark:text-white" : "bg-black/10 text-gray-800 hover:bg-black/20 dark:bg-white/15 dark:text-gray-200"
+            }`}
+          >
+            {v}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+ChipsVersiculos.propTypes = {
+  versiculos: PropTypes.array.isRequired,
+  activo: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  onIr: PropTypes.func.isRequired,
+  tituloIr: PropTypes.string,
+};
 
 const History = () => {
   const navigate = useNavigate();
@@ -110,29 +212,12 @@ const History = () => {
 
                       {/* Chips interactivos de versículos visitados en este capítulo */}
                       {tieneVariosVersiculos && (
-                        <div className="flex flex-wrap items-center gap-1 mt-1">
-                          <span className="text-[10px] font-medium opacity-70">
-                            {t("VersiculosConsultados")}
-                          </span>
-                          {item.versiculos.map((v) => (
-                            <button
-                              key={v}
-                              type="button"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                comprobarRuta({ ...item, versiculoSeleccionadoNumero: v });
-                              }}
-                              title={`${t("IrAlVersiculo")} ${v}`}
-                              className={`px-1.5 py-0.2 rounded text-[10px] font-bold transition active:scale-95 ${
-                                v === item.versiculoSeleccionadoNumero
-                                  ? "bg-yellow-500 text-black dark:bg-purple-600 dark:text-white shadow-xs"
-                                  : "bg-black/10 text-gray-800 dark:bg-white/15 dark:text-gray-200 hover:bg-black/20"
-                              }`}
-                            >
-                              {v}
-                            </button>
-                          ))}
-                        </div>
+                        <ChipsVersiculos
+                          versiculos={item.versiculos}
+                          activo={item.versiculoSeleccionadoNumero}
+                          tituloIr={t("IrAlVersiculo")}
+                          onIr={(v) => comprobarRuta({ ...item, versiculoSeleccionadoNumero: v })}
+                        />
                       )}
 
                       <div id="biblias" className="overflow-hidden text-[10px] opacity-40 truncate text-ellipsis mt-0.5">

@@ -2,9 +2,8 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "biblian-ui",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "name": "biblian-dev",
+      "url": "http://localhost:5173",
       "port": 5173
     }
   ]

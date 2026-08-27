@@ -9,7 +9,7 @@ import { loginSchema, registerSchema } from '@validators/auth.schema.js'
 const router: Router = Router()
 
 // Límite específico y agresivo para credenciales: el limitador global de /api
-// (100 req / 15 min) es demasiado holgado para frenar fuerza bruta.
+// (300 req / 15 min) es demasiado holgado para frenar fuerza bruta.
 const credentialsLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 10,

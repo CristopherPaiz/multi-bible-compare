@@ -24,7 +24,7 @@ const idiomaDesdeRuta = (ruta) => {
 };
 
 const VerseWindow = ({ biblia }) => {
-  const { libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } = useContext(DataContext);
+  const { libroSeleccionado, capituloSeleccionadoNumero } = useContext(DataContext);
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
   const [cargando, setCargando] = useState(false);
   const { t } = useContext(LanguageContext);
@@ -37,17 +37,34 @@ const VerseWindow = ({ biblia }) => {
   useEffect(() => onDataSourceChange(setFuente), []);
 
   useEffect(() => {
-    if (!libroSeleccionado || !capituloSeleccionadoNumero) return;
-
-    const bookId = Number(libroSeleccionado.split("book")[1]);
+    const bookId = Number(libroSeleccionado?.split("book")[1]);
     const chapterNum = Number(capituloSeleccionadoNumero);
-    if (!Number.isFinite(bookId) || !Number.isFinite(chapterNum) || chapterNum <= 0) return;
+    const referenciaValida = Boolean(libroSeleccionado) && Number.isFinite(bookId) && Number.isFinite(chapterNum) && chapterNum > 0;
+
+    // Sin referencia válida no hay nada que pedir, pero sí hay que apagar el
+    // indicador: si se sale de aquí con `cargando` en true, el panel se queda
+    // con el esqueleto puesto para siempre.
+    if (!referenciaValida) {
+      setCargando(false);
+      return;
+    }
 
     const controller = new AbortController();
     let cancelado = false;
 
     const cargar = async () => {
       setCargando(true);
+      /*
+       * Se vacía el texto ANTES de pedir el nuevo.
+       *
+       * Este efecto solo corre cuando cambia el libro, el capítulo o la fuente
+       * (el versículo NO está en las dependencias), así que lo que hay en
+       * pantalla es de OTRO capítulo: dejarlo visible hasta que llegue el nuevo
+       * hacía que el texto se reemplazara de golpe, con el scroll y el alto de
+       * cada versículo saltando. Vacío, el panel enseña el esqueleto y el texto
+       * aparece ya montado y en su sitio.
+       */
+      setCapituloSeleccionado({});
       try {
         const data = await getChapter({
           legacyPath: biblia,
@@ -71,11 +88,10 @@ const VerseWindow = ({ biblia }) => {
       cancelado = true;
       controller.abort();
     };
-    // `versiculoSeleccionadoNumero` NO va en las dependencias: el capítulo es
-    // el mismo para todos sus versículos. Estaba aquí y re-descargaba el
+    // `versiculoSeleccionadoNumero` NO entra aquí: el capítulo es el mismo para
+    // todos sus versículos. Estaba en las dependencias y re-descargaba el
     // capítulo entero en cada clic, lo que además creaba un objeto nuevo y
-    // borraba las traducciones hechas. Sí se mantiene como guarda arriba,
-    // porque hasta que no hay versículo elegido no se muestra nada.
+    // borraba las traducciones hechas.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, t, fuente]);
 

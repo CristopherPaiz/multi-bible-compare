@@ -144,3 +144,21 @@
     background-color: rgba(128, 128, 128, 0.3);
   }
 }
+
+/* --- Primera línea del versículo --------------------------------------
+   El número del versículo se pinta EN LÍNEA, justo antes del texto. Si el
+   marcado abre con un elemento de bloque (un renglón de poesía `<t>`, un salto
+   de párrafo), ese bloque rompe la línea de entrada y el número se quedaba
+   solo en su renglón con todo el texto debajo.
+
+   Solo se desactiva el bloque de ENTRADA: del segundo en adelante siguen
+   partiendo como corresponde, que es donde el salto sí significa algo. */
+.texto-biblico > t:first-child {
+  display: inline;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.texto-biblico > .salto-parrafo:first-child {
+  display: none;
+}
