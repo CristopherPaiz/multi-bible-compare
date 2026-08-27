@@ -15,7 +15,36 @@ import react from "@vitejs/plugin-react-swc";
 const ASSETS_PESADOS = ["**/src/assets/bibles/**", "**/src/assets/strongs/**"];
 
 export default defineConfig({
-  plugins: [VitePWA(), react()],
+  plugins: [
+    /*
+     * El service worker se registra a mano desde `src/main.jsx` (por eso
+     * `injectRegister: null`): así el cliente de `virtual:pwa-register` puede
+     * recargar la pestaña sola cuando entra una versión nueva.
+     *
+     * Antes se usaba `VitePWA()` sin opciones, que es `registerType: "prompt"`:
+     * el SW nuevo se quedaba esperando en `waiting` para siempre porque nadie
+     * mostraba el prompt, y la única forma de ver un deploy era borrar la caché
+     * a mano. Con `autoUpdate` + `skipWaiting` + `clientsClaim` el SW nuevo toma
+     * el control apenas se instala.
+     */
+    VitePWA({
+      registerType: "autoUpdate",
+      injectRegister: null,
+      // El manifest real es `public/manifest.json`, enlazado desde index.html.
+      // Sin esto el plugin emite un segundo manifest vacio y compiten.
+      manifest: false,
+      workbox: {
+        clientsClaim: true,
+        skipWaiting: true,
+        // Borra los precaches de builds viejos en vez de acumularlos.
+        cleanupOutdatedCaches: true,
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,webp,woff2}"],
+        // El backend nunca debe caer en el fallback a index.html.
+        navigateFallbackDenylist: [/^\/api\//],
+      },
+    }),
+    react(),
+  ],
   server: {
     watch: {
       ignored: ASSETS_PESADOS,
