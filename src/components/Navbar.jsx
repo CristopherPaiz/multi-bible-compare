@@ -312,10 +312,15 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      {/* Al confirmar biblias nuevas, capítulo y versículo se ponen a `null`, que
-          no es `!== 0`: la miga de pan quedaba visible con "NT · Capítulo :" y sin
+      {/* Solo en Comparar: la miga describe el texto que se está leyendo y sus
+          flechas cambian de capítulo, así que fuera de esa pantalla no tiene a
+          qué referirse — en Ajustes o Buscar era una barra que ocupaba sitio y
+          cuyos botones movían algo que no estaba a la vista.
+
+          Al confirmar biblias nuevas, capítulo y versículo se ponen a `null`, que
+          no es `!== 0`: la miga quedaba visible con "NT · Capítulo :" y sin
           libro. Se exige que los tres datos existan. */}
-      {Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
+      {pathname === "/compare" && Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
         <nav className="sticky top-0 z-10 flex w-full items-center gap-1 border-t border-black/10 bg-[#fbefda] px-2 py-2 dark:border-white/10 dark:bg-[#693BCC] sm:gap-2 sm:px-4 sm:py-3">
           <BotonCapitulo hacia="atras" disponible={Boolean(capituloAnterior)} etiqueta={t("CapituloAnterior")} onClick={() => irACapitulo(capituloAnterior)} />
           <ol className="flex min-w-0 flex-1 items-center justify-center gap-1.5 text-sm dark:text-white sm:gap-2 lg:text-xl">
