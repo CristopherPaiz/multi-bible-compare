@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import VerseWindow from "./VerseWindow";
 import DataContext from "../context/DataContext";
+import IndiceBiblias from "./IndiceBiblias";
 
 /**
  * Rejilla de comparación.
@@ -24,6 +25,9 @@ const Verses = () => {
 
   return (
     <div className="mx-auto my-8 w-11/12 max-w-[1800px]">
+      {/* Solo se dibuja con cinco versiones o mas, y solo en movil. */}
+      <IndiceBiblias />
+
       <div
         // Mas separacion VERTICAL que horizontal: en movil los paneles caen en
         // una sola columna y sin aire entre ellos el final de uno y la cabecera

@@ -472,5 +472,6 @@
   "AjustesMediano": "Medium",
   "AjustesGrande": "Large",
   "AjustesMarcadoAyuda": "Applies to every version. Each panel can override it from its own markup tab.",
-  "AjustesRestablecerMarcado": "Reset the {total} version(s) with their own setting"
+  "AjustesRestablecerMarcado": "Reset the {total} version(s) with their own setting",
+  "IndiceBiblias": "Version index"
 }

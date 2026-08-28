@@ -7,6 +7,7 @@ import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
 import AnotacionesContext from "../context/AnotacionesContext";
 import { CLASES_COLOR } from "../utils/paletaAnotaciones";
+import { codigoDeVersion } from "../utils/versiones";
 import { marcarDiferencias } from "../utils/diffVersiones";
 import TRANSLATE from "/translationBeta.png";
 import SHARE from "/share.png";
@@ -280,13 +281,29 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
   };
 
   return (
-    <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm transition-shadow hover:shadow-md dark:border-neutral-800 dark:bg-[#0f0f0f]">
+    /*
+      `data-panel` con el código corto de la versión: es el ancla que usa el
+      índice lateral para saltar a este panel. Va el código y no el nombre de
+      carpeta porque ese nombre lleva puntos, paréntesis y acentos, y como
+      selector CSS habría que escaparlo entero.
+
+      El contraste de la tarjeta: en claro era blanca sobre un fondo blanco, con
+      un borde tan tenue que los paneles se fundían con la página y entre sí. El
+      texto se queda blanco —es papel, y es lo que se lee—, pero el borde sube a
+      `neutral-300` y la sombra a `shadow-md` para que el recorte se vea. En
+      oscuro pasa lo contrario: la tarjeta es más oscura que la página, así que
+      lo que separa es aclarar el borde.
+    */
+    <article
+      data-panel={codigoDeVersion(nombre) ?? ""}
+      className="flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-md transition-shadow hover:shadow-lg dark:border-neutral-700 dark:bg-[#0d0d10]"
+    >
       {/*
         El nombre de la versión se trunca a una línea a propósito: si envolviera,
         cada encabezado mediría distinto y las cabeceras de la rejilla dejarían
         de alinearse entre sí. El nombre completo queda en el `title`.
       */}
-      <header className="flex items-center justify-between gap-2 border-b border-neutral-200 bg-neutral-100 px-3 py-2 dark:border-neutral-800 dark:bg-neutral-900">
+      <header className="flex items-center justify-between gap-2 border-b border-neutral-300 bg-neutral-100 px-3 py-2 dark:border-neutral-700 dark:bg-[#191820]">
         <div className="min-w-0">
           <p className="truncate text-[10px] font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">{idiomaEtiqueta}</p>
           <h2 title={version} className="truncate text-sm font-semibold text-neutral-900 dark:text-neutral-100">
