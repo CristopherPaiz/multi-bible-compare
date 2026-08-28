@@ -220,6 +220,15 @@ const Navbar = () => {
 
   const esActiva = (to) => (to === "/" ? pathname === "/" : pathname.startsWith(to));
 
+  /**
+   * `true` cuando la pantalla actual es una de las que viven dentro del menú.
+   *
+   * Sin esto, al entrar en Ajustes o en el Atlas ninguna pestaña quedaba
+   * marcada y no había forma de saber por dónde se anda: la barra decía que no
+   * estás en ninguna parte.
+   */
+  const enSecundaria = RUTAS_SECUNDARIAS.some(({ to }) => esActiva(to));
+
   return (
     <>
       <nav className="bg-[#FDD07A] dark:bg-[#20123A] flex items-center justify-between gap-2 px-3 py-4 sm:px-4">
@@ -273,7 +282,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Móvil: controles rápidos de idioma, tema y menú de hamburguesa */}
+        {/* Móvil: solo idioma y tema. El menú bajó a la barra de pestañas. */}
         <div className="flex items-center gap-1 sm:hidden">
           {/* Botón de Idioma Móvil */}
           <button
@@ -297,46 +306,21 @@ const Navbar = () => {
             <img src={theme === "light" ? MOON : SUN} alt="" className="h-5 w-5 dark:invert" />
           </button>
 
-          {/* Menú Más / Hamburguesa */}
-          <div className="relative shrink-0" ref={menuRef}>
-            <button
-              type="button"
-              onClick={() => setMenuAbierto((abierto) => !abierto)}
-              aria-expanded={menuAbierto}
-              aria-haspopup="menu"
-              aria-label={t("Menu")}
-              className="flex h-9 w-9 items-center justify-center rounded-full text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-6 w-6" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
-              </svg>
-            </button>
-
-            {menuAbierto && (
-              <ul role="menu" className="absolute right-0 z-30 mt-1 w-48 overflow-hidden rounded-xl border border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]">
-                {RUTAS_SECUNDARIAS.map(({ to, clave, Icono }) => (
-                  <li key={to} role="none">
-                    <Link
-                      role="menuitem"
-                      to={to}
-                      aria-current={esActiva(to) ? "page" : undefined}
-                      className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${esActiva(to) ? "font-bold" : ""}`}
-                    >
-                      <Icono className="h-5 w-5 shrink-0" />
-                      {t(clave)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
         </div>
       </nav>
 
-      {/* Móvil: solo las rutas principales, repartidas a partes iguales para que
-          nunca se desborden aunque aparezca "Historial". */}
-      <nav className="bg-[#fbefda] dark:bg-[#693BCC] sm:hidden">
-        <ul className="flex w-full flex-row items-stretch items-center pt-1">
+      {/*
+        Móvil: las rutas principales más un "Menú" que abre el resto.
+
+        El menú estaba arriba, en la cabecera, separado de las pestañas por el
+        título de la app. Eso repartía la navegación en dos sitios y dejaba lo
+        de arriba fuera del alcance del pulgar. Aquí es una pestaña más: todo lo
+        que lleva a otra pantalla vive en la misma fila.
+
+        `relative` porque el desplegable se ancla a esta barra.
+      */}
+      <nav ref={menuRef} className="relative bg-[#fbefda] dark:bg-[#693BCC] sm:hidden">
+        <ul className="flex w-full flex-row items-stretch pt-1">
           {principales.map(({ to, clave, Icono }) => (
             <li key={to} className="min-w-0 flex-1">
               <Link
@@ -349,7 +333,75 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+
+          <li className="min-w-0 flex-1">
+            <button
+              type="button"
+              onClick={() => setMenuAbierto((abierto) => !abierto)}
+              aria-expanded={menuAbierto}
+              aria-haspopup="menu"
+              className={`flex w-full flex-col items-center gap-0.5 px-1 py-1.5 text-gray-900 dark:text-white ${enSecundaria || menuAbierto ? "font-bold" : ""}`}
+            >
+              <span className="relative">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="h-5 w-5" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+                </svg>
+                {/*
+                  El punto avisa de que ahí dentro hay pantallas. Un icono de
+                  hamburguesa suelto en una barra de pestañas no dice si abre
+                  algo o es un ajuste; con la marca y la etiqueta, sí.
+
+                  Desaparece cuando el menú está abierto (ya se ve lo que hay) y
+                  cuando estás dentro de una de esas pantallas (ya llegaste).
+                */}
+                {!menuAbierto && !enSecundaria && (
+                  <span className="absolute -right-1.5 -top-0.5 h-1.5 w-1.5 rounded-full bg-amber-600 dark:bg-amber-300" aria-hidden="true"></span>
+                )}
+              </span>
+              <span className="flex w-full items-center justify-center gap-0.5 text-[11px] leading-tight">
+                <span className="truncate">{t("Menu")}</span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={`h-2.5 w-2.5 shrink-0 transition-transform ${menuAbierto ? "rotate-180" : ""}`}
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+          </li>
         </ul>
+
+        {/*
+          Se despliega hacia ABAJO y a todo el ancho. La barra vive en lo alto
+          de la página, no pegada al borde inferior, así que un panel hacia
+          arriba se saldría de la pantalla.
+
+          `z-30` para pasar por encima de la miga de pan de Comparar, que es
+          `sticky z-10` y quedaría por delante del menú.
+        */}
+        {menuAbierto && (
+          <ul role="menu" className="absolute inset-x-0 top-full z-30 border-t border-black/10 bg-[#fbefda] py-1 shadow-lg dark:border-white/10 dark:bg-[#20123A]">
+            {RUTAS_SECUNDARIAS.map(({ to, clave, Icono }) => (
+              <li key={to} role="none">
+                <Link
+                  role="menuitem"
+                  to={to}
+                  aria-current={esActiva(to) ? "page" : undefined}
+                  className={`flex items-center gap-3 px-4 py-3 text-sm text-gray-900 active:bg-black/10 dark:text-white dark:active:bg-white/10 ${esActiva(to) ? "font-bold" : ""}`}
+                >
+                  <Icono className="h-5 w-5 shrink-0" />
+                  {t(clave)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
 
       {/* Solo en Comparar: la miga describe el texto que se está leyendo y sus
