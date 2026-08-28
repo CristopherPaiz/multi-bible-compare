@@ -667,19 +667,49 @@ const ListBooks = () => {
             )}
 
             {/* LISTA */}
-            <div className="flex-1 overflow-y-auto overscroll-contain px-4 py-2 no-scrollbar">
+            {/*
+              Sin `py`: el relleno superior dejaba una franja de 8 px POR ENCIMA
+              del título pegajoso —que se ancla al borde del área de scroll— y
+              por ahí se veía pasar el texto de la lista. El aire de arriba lo
+              pone ahora el propio título con su `py`.
+            */}
+            <div className="flex-1 overflow-y-auto overscroll-contain px-4 pb-2 no-scrollbar">
               {totalVisible === 0 && <p className="py-10 text-center text-sm text-gray-600 dark:text-gray-400">{t("NoResultados")}</p>}
 
               {secciones.map(({ idioma, nombre, libros }) => {
                 const abierta = estaAbierta(idioma);
                 return (
                   <section key={idioma} className="mb-3">
-                    <h3>
+                    {/*
+                      El `sticky` va AQUÍ y no en el botón.
+
+                      Un elemento pegajoso solo se desplaza dentro de la caja de
+                      su padre. Puesto en el botón, el padre era este mismo `h3`
+                      —del tamaño exacto del botón—, así que no tenía recorrido
+                      donde quedarse y se iba con la sección al desplazar.
+
+                      Colgado del `h3`, el padre pasa a ser la `section` entera:
+                      el título se queda arriba mientras quede una sola biblia
+                      de su idioma, y cuando la sección se acaba el navegador lo
+                      empuja fuera y el idioma siguiente ocupa su sitio. Ese
+                      relevo es nativo; no hace falta calcular nada.
+                    */}
+                    {/*
+                      Fondo OPACO, no `bg-white/95` con desenfoque. Un 5% de
+                      transparencia basta para leer el texto que pasa por
+                      detrás, y el desenfoque no lo tapa: lo difumina. Aquí el
+                      título tiene que ocultar lo de debajo, no velarlo.
+
+                      El `-mx-4 px-4` compensa el `px-4` del contenedor para que
+                      la banda llegue de lado a lado; sin eso quedaban dos
+                      columnas de 16 px por donde asomaba la lista.
+                    */}
+                    <h3 className="sticky top-0 z-10 -mx-4 bg-white px-4 dark:bg-neutral-950">
                       <button
                         type="button"
                         onClick={() => alternarSeccion(idioma)}
                         aria-expanded={abierta}
-                        className="sticky top-0 z-10 flex min-h-11 w-full items-center gap-2 rounded-lg bg-white/95 px-1 py-2 text-left backdrop-blur dark:bg-neutral-950/95"
+                        className="flex min-h-11 w-full items-center gap-2 rounded-lg px-1 py-2 text-left"
                       >
                         <Chevron abierta={abierta} />
                         <span className="flex-1 text-sm font-bold uppercase tracking-wide">{nombre}</span>
