@@ -6,7 +6,7 @@ import indexHebrew from "../assets/strongs/IndexHebrew.json";
 import indexGreek from "../assets/strongs/IndexGreek.json";
 
 const StrongPopup = () => {
-  const { strongPopup, cerrarStrongPopup, abrirDefinicionStrong } = useContext(DataContext);
+  const { strongPopup, cerrarStrongPopup, abrirDefinicionStrong, abrirConcordancia } = useContext(DataContext);
   const { t } = useContext(LanguageContext);
 
   const [audio, setAudio] = useState(null);
@@ -311,6 +311,19 @@ const StrongPopup = () => {
           <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
           </svg>
+        </button>
+
+        {/*
+          El diccionario dice qué significa la palabra; esto dice dónde más se
+          usa, que es la otra mitad del estudio de una palabra. Va en segundo
+          plano visual porque la definición sigue siendo lo primero que se busca
+          al pulsar un número.
+        */}
+        <button
+          onClick={() => abrirConcordancia(code)}
+          className="mt-1.5 flex w-full items-center justify-center gap-2 rounded-xl border border-amber-500/40 py-2 px-3 text-xs font-bold text-amber-700 transition hover:bg-amber-50 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-amber-400 dark:border-purple-500/40 dark:text-purple-300 dark:hover:bg-purple-950/40 dark:focus:ring-purple-400"
+        >
+          <span>{t("ConcordanciaVerDonde")}</span>
         </button>
       </div>
     </div>

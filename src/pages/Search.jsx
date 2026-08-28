@@ -1,5 +1,5 @@
 import { useContext, useEffect, useMemo, useRef, useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
 import { buscar, listarBiblias, LARGO_MINIMO } from "../services/searchSource";
@@ -24,8 +24,21 @@ const Search = () => {
   } = useContext(DataContext);
   const navigate = useNavigate();
 
-  const [texto, setTexto] = useState("");
-  const [termino, setTermino] = useState("");
+  /*
+   * `?q=` en la dirección arranca la búsqueda ya escrita.
+   *
+   * Lo usa la paleta de comandos: lo que se teclea ahí y no es una referencia
+   * se manda aquí. También hace la búsqueda compartible, que antes no lo era.
+   *
+   * Se lee solo como valor INICIAL: a partir de ahí manda el campo de texto, y
+   * mantener los dos sincronizados en ambos sentidos solo serviría para que se
+   * pisaran mientras el usuario escribe.
+   */
+  const [parametros] = useSearchParams();
+  const consultaInicial = parametros.get("q") ?? "";
+
+  const [texto, setTexto] = useState(consultaInicial);
+  const [termino, setTermino] = useState(consultaInicial.trim());
   const [bibliaId, setBibliaId] = useState(() => {
     try {
       const guardado = localStorage.getItem(CLAVE_STORAGE_BIBLIA);

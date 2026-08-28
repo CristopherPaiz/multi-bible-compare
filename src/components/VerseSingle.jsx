@@ -5,6 +5,9 @@ import "../styles/BibleMarkup.css";
 import MarkupTab from "./MarkupTab";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
+import AnotacionesContext from "../context/AnotacionesContext";
+import { CLASES_COLOR } from "../utils/paletaAnotaciones";
+import { marcarDiferencias } from "../utils/diffVersiones";
 import TRANSLATE from "/translationBeta.png";
 import SHARE from "/share.png";
 
@@ -85,8 +88,17 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     leerMarcado,
     libroSeleccionado,
     capituloSeleccionadoNumero,
+    diferenciasPorBiblia,
   } = useContext(DataContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
+  const { colorDe, notasDe } = useContext(AnotacionesContext);
+
+  /**
+   * Palabras que ESTA versión usa y las demás no. `null` cuando el modo está
+   * apagado o no hay con qué comparar; el cálculo vive en el contexto porque
+   * necesita ver los textos de todos los paneles a la vez.
+   */
+  const diferencias = diferenciasPorBiblia?.get(nombre) ?? null;
 
   /**
    * Traducciones hechas en este panel, indexadas por número de versículo.
@@ -337,6 +349,25 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
             .sort(([keyA], [keyB]) => keyA - keyB)
             .map(([versiculo, contenido]) => {
               const seleccionado = parseInt(versiculo) === parseInt(versiculoSeleccionadoNumero);
+
+              // El resaltado y las notas son del VERSÍCULO, no de la versión:
+              // subrayar Juan 3:16 lo subraya en los seis paneles, porque lo
+              // que el usuario marcó fue el pasaje y no una traducción suya.
+              const color = colorDe(bookId, capituloSeleccionadoNumero, versiculo);
+              const tieneNota = notasDe(bookId, capituloSeleccionadoNumero, versiculo).length > 0;
+
+              /*
+               * El resaltado cede ante la selección. Los dos son un fondo, y si
+               * el amarillo del resaltado pisara al de "estoy leyendo este", se
+               * perdería de vista cuál es el versículo activo — que es la
+               * referencia que enseña la barra de arriba.
+               */
+              const fondo = seleccionado
+                ? "border-amber-500 bg-[#ffe4b3] text-black dark:border-purple-300 dark:bg-[#693BCC] dark:text-white"
+                : color
+                  ? `border-transparent ${CLASES_COLOR[color] ?? ""}`
+                  : "border-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800/60";
+
               return (
                 <p
                   key={versiculo}
@@ -345,11 +376,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                   // El borde izquierdo va siempre, transparente cuando no toca:
                   // si apareciera solo al seleccionar, el texto se correría 3px
                   // en cada clic.
-                  className={`animate-slide-in-bottom mb-1 cursor-pointer rounded-lg border-l-[3px] px-2 py-2 leading-relaxed transition-colors ${
-                    seleccionado
-                      ? "border-amber-500 bg-[#ffe4b3] text-black dark:border-purple-300 dark:bg-[#693BCC] dark:text-white"
-                      : "border-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800/60"
-                  }`}
+                  className={`animate-slide-in-bottom mb-1 cursor-pointer rounded-lg border-l-[3px] px-2 py-2 leading-relaxed transition-colors ${fondo}`}
                 >
                   {/*
                     El número va EN LÍNEA con el texto, sin columna propia: una
@@ -358,12 +385,27 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                     lado del número lo resuelve el CSS del marcado, no el layout.
                   */}
                   <span className={`mr-1.5 select-none text-xs font-bold tabular-nums ${seleccionado ? "opacity-70" : "text-amber-600 dark:text-purple-300"}`}>{versiculo}</span>
+                  {tieneNota && (
+                    // Un punto y no un icono: va dentro del renglón del texto y
+                    // cualquier cosa más alta descuadraría la primera línea.
+                    <span
+                      title={t("NotasTiene")}
+                      aria-label={t("NotasTiene")}
+                      className="mr-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500 align-middle dark:bg-sky-400"
+                    ></span>
+                  )}
                   <span
                     className={`texto-biblico ${CLASES_STRONG} ${preferencia.morfologia ? "" : "sin-morfologia"} ${preferencia.glosa ? "" : "sin-glosa"} ${
                       String(versiculoTraduciendo) === String(versiculo) ? "traduciendo-skeleton" : ""
                     }`}
                     onClick={handleStrongClick}
-                    dangerouslySetInnerHTML={{ __html: normalizarMarcado(contenido) }}
+                    // El marcado de diferencias solo se aplica al versículo
+                    // SELECCIONADO. Pintar el capítulo entero llenaría el panel
+                    // de subrayados y la comparación se hace de un versículo a
+                    // la vez, que es como se lee.
+                    dangerouslySetInnerHTML={{
+                      __html: seleccionado && diferencias ? marcarDiferencias(normalizarMarcado(contenido), diferencias) : normalizarMarcado(contenido),
+                    }}
                   ></span>
                 </p>
               );

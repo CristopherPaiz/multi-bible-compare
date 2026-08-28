@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { BIBLE, SEARCH } from '@config/constants.js'
+import { BIBLE, CROSSREFS, OCCURRENCES, SEARCH } from '@config/constants.js'
 
 /**
  * Lista "1,34,75" -> [1, 34, 75].
@@ -65,6 +65,34 @@ export const strongParamsSchema = z.object({
     .transform((value) => value.toUpperCase())
 })
 export type StrongParams = z.infer<typeof strongParamsSchema>
+
+/**
+ * GET /api/crossrefs?book=43&chapter=3&verse=16
+ *
+ * No lleva `bibles`: una referencia cruzada es del texto biblico, no de una
+ * traduccion. "Juan 3:16 remite a Romanos 5:8" es igual de cierto en las 162
+ * versiones del catalogo.
+ */
+export const crossRefsQuerySchema = z.object({
+  book: bookId,
+  chapter: chapterNumber,
+  verse: verseNumber,
+  limit: z.coerce.number().int().min(1).max(CROSSREFS.MAX_LIMIT).default(CROSSREFS.DEFAULT_LIMIT)
+})
+export type CrossRefsQuery = z.infer<typeof crossRefsQuerySchema>
+
+/**
+ * GET /api/strongs/G26/occurrences?bible=75&page=1
+ *
+ * `bible` es opcional: sin ella la respuesta son solo referencias (barato),
+ * con ella se adjunta el texto de cada versiculo en esa version.
+ */
+export const occurrencesQuerySchema = z.object({
+  bible: z.coerce.number().int().positive().optional(),
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(OCCURRENCES.MAX_LIMIT).default(OCCURRENCES.DEFAULT_LIMIT)
+})
+export type OccurrencesQuery = z.infer<typeof occurrencesQuerySchema>
 
 export const biblesQuerySchema = z.object({
   language: z.string().trim().min(2).max(40).optional(),

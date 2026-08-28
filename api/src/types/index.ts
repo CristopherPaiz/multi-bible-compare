@@ -139,3 +139,54 @@ export interface HistoryEntry {
   verse: number | null
   createdAt: string
 }
+
+// ---------------------------------------------------------------------------
+// Anotaciones del usuario
+// ---------------------------------------------------------------------------
+
+export interface HighlightRecord {
+  bookId: number
+  chapter: number
+  verse: number
+  /** Nombre de color de la paleta cerrada, no un hex. Ver COLORES. */
+  color: string
+  updatedAt: string
+}
+
+export interface NoteRecord {
+  id: number
+  bookId: number
+  chapter: number
+  verse: number
+  body: string
+  createdAt: string
+  updatedAt: string
+}
+
+// ---------------------------------------------------------------------------
+// Aparato de estudio (referencias cruzadas y concordancia Strong)
+// ---------------------------------------------------------------------------
+
+/** Un destino de referencia cruzada. `end` solo viene cuando es un rango. */
+export interface CrossRefItem {
+  bookId: number
+  chapter: number
+  verse: number
+  end: { bookId: number; chapter: number; verse: number } | null
+  /**
+   * Votos del dataset original (TSK / openbible.info): cuanta gente considero
+   * buena la relacion. Sirve para ordenar, no es una medida de autoridad.
+   */
+  votes: number
+}
+
+/** Un versiculo donde aparece un codigo Strong. */
+export interface OccurrenceItem {
+  bookId: number
+  chapter: number
+  verse: number
+  /** Veces que el codigo aparece dentro de ESE versiculo. */
+  hits: number
+  /** Texto del versiculo. Solo viene si la consulta indico una version. */
+  text?: string
+}

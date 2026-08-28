@@ -162,3 +162,43 @@
 .texto-biblico > .salto-parrafo:first-child {
   display: none;
 }
+
+/* --- Comparación palabra a palabra -------------------------------------
+   `<mark>` trae de serie un fondo amarillo del navegador que aquí estorba: el
+   amarillo ya significa "resaltado del usuario". Se neutraliza y se usa un
+   subrayado, que marca la palabra sin competir con el fondo del versículo ni
+   con el del resaltado.
+
+   `propio`  = ninguna otra versión del mismo idioma usa esa palabra.
+   `parcial` = algunas sí y otras no.
+
+   El grosor los distingue mejor que el color: con tres colores de subrayado a
+   la vez encima de seis fondos posibles no se lee nada. */
+.texto-biblico mark.dif-propio,
+.texto-biblico mark.dif-parcial {
+  background-color: transparent;
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+
+.texto-biblico mark.dif-propio {
+  text-decoration-color: #dc2626;
+  text-decoration-thickness: 2px;
+  font-weight: 600;
+}
+
+.texto-biblico mark.dif-parcial {
+  text-decoration-color: #d97706;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+}
+
+.dark .texto-biblico mark.dif-propio {
+  text-decoration-color: #f87171;
+}
+
+.dark .texto-biblico mark.dif-parcial {
+  text-decoration-color: #fbbf24;
+}

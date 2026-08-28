@@ -54,6 +54,26 @@ export const decodeReference = (rowid: number): BibleReference => {
   return { bibleId, bookId, chapter, verse }
 }
 
+/**
+ * La misma referencia SIN el campo de version: `book*65536 + chapter*256 + verse`.
+ *
+ * Es lo que guardan `CrossRefs` y `StrongOccurrences`. Ahi el bible_id no pinta
+ * nada: que Juan 3:16 remita a Romanos 5:8, o que lleve el codigo G26, es del
+ * texto biblico y vale igual en las 162 versiones del catalogo. Incluirlo
+ * multiplicaria las filas por 162 sin anadir un solo dato.
+ *
+ * Coincide con `codificarRef` en src/utils/referencia.js, para que el cliente
+ * pueda construir y comparar estas claves sin pedirselas al servidor.
+ */
+export const packRef = (bookId: number, chapter: number, verse: number): number =>
+  bookId * 2 ** (CHAPTER_BITS + VERSE_BITS) + chapter * 2 ** VERSE_BITS + verse
+
+export const unpackRef = (value: number): { bookId: number; chapter: number; verse: number } => ({
+  bookId: Math.floor(value / 2 ** (CHAPTER_BITS + VERSE_BITS)),
+  chapter: Math.floor(value / 2 ** VERSE_BITS) % 2 ** CHAPTER_BITS,
+  verse: value % 2 ** VERSE_BITS
+})
+
 /** Rango [lo, hi] que cubre todos los versiculos de una version. */
 export const bibleRowidRange = (bibleId: number): { lo: number; hi: number } => {
   const span = 2 ** (BOOK_BITS + CHAPTER_BITS + VERSE_BITS)

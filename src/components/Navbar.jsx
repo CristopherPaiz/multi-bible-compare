@@ -58,6 +58,29 @@ const IconoLibro3D = ({ className }) => (
 
 IconoLibro3D.propTypes = { className: PropTypes.string };
 
+const IconoNotas = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    {/* Una hoja con la esquina doblada: distingue "lo que yo escribí" del
+        icono de libro, que ya se usa para el texto bíblico. */}
+    <path d="M5 3h9l5 5v13H5z" />
+    <path d="M14 3v5h5" />
+    <path d="M8.5 12.5h7" />
+    <path d="M8.5 16h4.5" />
+  </svg>
+);
+
+IconoNotas.propTypes = { className: PropTypes.string };
+
+const IconoAtlas = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M3 12h18" />
+    <path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18" />
+  </svg>
+);
+
+IconoAtlas.propTypes = { className: PropTypes.string };
+
 /**
  * Flecha de salto de capítulo en los extremos de la miga de pan.
  *
@@ -99,6 +122,8 @@ const RUTAS_PRINCIPALES = [
 ];
 
 const RUTAS_SECUNDARIAS = [
+  { to: "/notes", clave: "NotasTitulo", Icono: IconoNotas },
+  { to: "/atlas", clave: "AtlasTitulo", Icono: IconoAtlas },
   { to: "/3d", clave: "Biblia3D", Icono: IconoLibro3D },
   { to: "/account", clave: "Cuenta", Icono: IconoCuenta },
   { to: "/settings", clave: "Ajustes", Icono: IconoImagen(SETTING, "Ajustes") },
@@ -335,7 +360,7 @@ const Navbar = () => {
           Al confirmar biblias nuevas, capítulo y versículo se ponen a `null`, que
           no es `!== 0`: la miga quedaba visible con "NT · Capítulo :" y sin
           libro. Se exige que los tres datos existan. */}
-      {pathname === "/compare" && Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
+      {pathname.startsWith("/compare") && Boolean(versiculoSeleccionadoNumero && libroSeleccionado && capituloSeleccionadoNumero) && (
         <nav className="sticky top-0 z-10 flex w-full items-center gap-1 border-t border-black/10 bg-[#fbefda] px-2 py-2 dark:border-white/10 dark:bg-[#693BCC] sm:gap-2 sm:px-4 sm:py-3">
           <BotonCapitulo hacia="atras" disponible={Boolean(capituloAnterior)} etiqueta={t("CapituloAnterior")} onClick={() => irACapitulo(capituloAnterior)} />
           <ol className="flex min-w-0 flex-1 items-center justify-center gap-1.5 text-sm dark:text-white sm:gap-2 lg:text-xl">

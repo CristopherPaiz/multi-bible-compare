@@ -24,7 +24,7 @@ const idiomaDesdeRuta = (ruta) => {
 };
 
 const VerseWindow = ({ biblia }) => {
-  const { libroSeleccionado, capituloSeleccionadoNumero } = useContext(DataContext);
+  const { libroSeleccionado, capituloSeleccionadoNumero, registrarTexto } = useContext(DataContext);
   const [capituloSeleccionado, setCapituloSeleccionado] = useState({});
   const [cargando, setCargando] = useState(false);
   const { t } = useContext(LanguageContext);
@@ -72,7 +72,11 @@ const VerseWindow = ({ biblia }) => {
           chapter: chapterNum,
           signal: controller.signal,
         });
-        if (!cancelado) setCapituloSeleccionado(data);
+        if (cancelado) return;
+        setCapituloSeleccionado(data);
+        // El contexto junta los capítulos de todos los paneles: es lo que
+        // permite marcar qué palabra usa esta versión y las demás no.
+        registrarTexto(biblia, data);
       } catch (error) {
         if (cancelado || error?.name === "AbortError") return;
         const testamento = bookId <= LAST_OLD_TESTAMENT_BOOK ? t("AntiguoTestamento") : t("NuevoTestamento");
@@ -92,8 +96,7 @@ const VerseWindow = ({ biblia }) => {
     // todos sus versículos. Estaba en las dependencias y re-descargaba el
     // capítulo entero en cada clic, lo que además creaba un objeto nuevo y
     // borraba las traducciones hechas.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, t, fuente]);
+  }, [biblia, libroSeleccionado, capituloSeleccionadoNumero, t, fuente, registrarTexto]);
 
   return <VerseSingle texto={capituloSeleccionado} nombre={biblia} iso={idioma} cargando={cargando} bookId={Number(libroSeleccionado.split("book")[1])} />;
 };

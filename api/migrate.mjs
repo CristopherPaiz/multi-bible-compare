@@ -10,8 +10,14 @@
  *   node migrate.mjs schema           aplica el esquema a una base Turso vacia
  *   node migrate.mjs audio            sube los MP3 del diccionario a Scaleway
  *   node migrate.mjs audio --dry-run  muestra que subiria, sin subir
+ *   node migrate.mjs strongs-index    concordancia inversa Strong
+ *   node migrate.mjs crossrefs --file=<tsv>   referencias cruzadas (TSK)
  *   node migrate.mjs stats            estado de la base en Turso
  *   node migrate.mjs sql "<SQL>"      consulta directa contra Turso
+ *
+ * Los dos ultimos comandos de datos son OPCIONALES y no hace falta correrlos
+ * para que la app funcione: si sus tablas estan vacias, los paneles de
+ * referencias cruzadas y de concordancia lo dicen y el resto sigue igual.
  *
  * Requisitos: las variables de api/.env. Para `build` hacen falta los JSON en
  * ../src/assets (que es justo lo que se saca del repo tras migrar).
@@ -33,7 +39,7 @@
  */
 import { createClient } from '@libsql/client'
 import { S3Client, PutObjectCommand, ListObjectsV2Command, CreateBucketCommand, HeadBucketCommand, PutBucketCorsCommand, GetBucketCorsCommand } from '@aws-sdk/client-s3'
-import { gzipSync } from 'node:zlib'
+import { gzipSync, gunzipSync } from 'node:zlib'
 import { readFileSync, readdirSync, existsSync, statSync, mkdirSync, rmSync } from 'node:fs'
 import { join, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -101,6 +107,53 @@ const SCHEMA = [
     book_id INTEGER NOT NULL, chapter INTEGER NOT NULL, verse INTEGER,
     created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')))`,
   `CREATE INDEX IF NOT EXISTS idx_history_user ON UserHistory(user_id, created_at DESC)`,
+
+  // El resaltado es UNA fila por versiculo y usuario: un versiculo no puede
+  // tener dos colores a la vez, asi que la clave primaria compuesta hace que
+  // volver a pintarlo sea un REPLACE y no una fila duplicada.
+  `CREATE TABLE IF NOT EXISTS UserHighlights (
+    user_id INTEGER NOT NULL, book_id INTEGER NOT NULL, chapter INTEGER NOT NULL,
+    verse INTEGER NOT NULL, color TEXT NOT NULL,
+    updated_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+    PRIMARY KEY (user_id, book_id, chapter, verse))`,
+  `CREATE INDEX IF NOT EXISTS idx_highlights_user ON UserHighlights(user_id, book_id, chapter)`,
+
+  // Las notas SI pueden ser varias por versiculo (una por idea), asi que llevan
+  // id propio.
+  `CREATE TABLE IF NOT EXISTS UserNotes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL,
+    book_id INTEGER NOT NULL, chapter INTEGER NOT NULL, verse INTEGER NOT NULL,
+    body TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+    updated_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')))`,
+  `CREATE INDEX IF NOT EXISTS idx_notes_user ON UserNotes(user_id, updated_at DESC)`,
+  `CREATE INDEX IF NOT EXISTS idx_notes_ref ON UserNotes(user_id, book_id, chapter, verse)`,
+
+  // Referencias cruzadas (Treasury of Scripture Knowledge, dominio publico).
+  //
+  // `from_ref` y `to_ref` usan el mismo empaquetado que el rowid del indice
+  // FTS5 pero SIN el campo de version: book*65536 + chapter*256 + verse. La
+  // referencia cruzada no pertenece a ninguna traduccion, es del texto.
+  //
+  // `to_end` guarda el final cuando el destino es un rango (Gen 1:1-5). Va
+  // aparte y no como N filas porque el rango se cita entero.
+  `CREATE TABLE IF NOT EXISTS CrossRefs (
+    from_ref INTEGER NOT NULL, to_ref INTEGER NOT NULL, to_end INTEGER,
+    votes INTEGER NOT NULL DEFAULT 0)`,
+  // `votes DESC` dentro del indice: la consulta siempre pide las mejores
+  // referencias de un versiculo, asi que el orden sale del indice y no de un
+  // ORDER BY que tendria que materializar y ordenar todas.
+  `CREATE INDEX IF NOT EXISTS idx_crossrefs_from ON CrossRefs(from_ref, votes DESC)`,
+
+  // Concordancia inversa: donde aparece cada numero Strong.
+  //
+  // `ref` con el mismo empaquetado que CrossRefs. `hits` es cuantas veces sale
+  // el codigo EN ese versiculo (Gen 1:1 repite H430 varias veces en algunas
+  // ediciones), asi no hacen falta filas repetidas.
+  `CREATE TABLE IF NOT EXISTS StrongOccurrences (
+    code TEXT NOT NULL, ref INTEGER NOT NULL, hits INTEGER NOT NULL DEFAULT 1,
+    PRIMARY KEY (code, ref))`,
+  `CREATE INDEX IF NOT EXISTS idx_strongocc_code ON StrongOccurrences(code, ref)`,
 
   `CREATE TABLE IF NOT EXISTS ErrorLogs (
     id INTEGER PRIMARY KEY AUTOINCREMENT, endpoint TEXT, method TEXT, error_message TEXT,
@@ -705,6 +758,308 @@ const commandLink = async () => {
 }
 
 // ---------------------------------------------------------------------------
+// Referencias sin version: book*65536 + chapter*256 + verse
+// ---------------------------------------------------------------------------
+
+/**
+ * Igual que `encodeReference` pero sin el campo de version.
+ *
+ * Las referencias cruzadas y la concordancia Strong no pertenecen a ninguna
+ * traduccion: "Juan 3:16 remite a Romanos 5:8" es cierto en las 162 versiones.
+ * Meter el bible_id ahi multiplicaria las filas por 162 sin anadir informacion.
+ */
+const packRef = (bookId, chapter, verse) => bookId * 65536 + chapter * 256 + verse
+
+const unpackRef = (valor) => ({
+  bookId: Math.floor(valor / 65536),
+  chapter: Math.floor(valor / 256) % 256,
+  verse: valor % 256
+})
+
+/** Inserta en tandas. Turso corta las transacciones muy grandes. */
+const insertInBatches = async (client, sql, rows, { size = 500, label = '' } = {}) => {
+  let done = 0
+  for (let start = 0; start < rows.length; start += size) {
+    const slice = rows.slice(start, start + size)
+    await client.batch(
+      slice.map((args) => ({ sql, args })),
+      'write'
+    )
+    done += slice.length
+    process.stdout.write(`\r  ${label} ${num(done)} / ${num(rows.length)}   `)
+  }
+  process.stdout.write('\n')
+}
+
+// ---------------------------------------------------------------------------
+// strongs-index — concordancia inversa: donde aparece cada codigo Strong
+// ---------------------------------------------------------------------------
+
+/**
+ * El dato ya estaba en la base.
+ *
+ * El markup `<sup>NNNN </sup>` viaja INLINE dentro del `body` comprimido de
+ * cada capitulo (decision tomada al construir la base: separarlo ahorraba un
+ * 3-16% y rompia la alineacion palabra-Strong que necesita la UI). O sea que
+ * "donde mas aparece G26" no requiere datos nuevos, solo recorrer una vez las
+ * ediciones interlineales y anotar lo que ya dicen.
+ *
+ * Se usa UNA edicion por testamento, no las 162. Un mismo versiculo lleva los
+ * mismos numeros Strong en todas las interlineales; recorrerlas todas
+ * multiplicaria el trabajo para reescribir las mismas filas.
+ *
+ * El prefijo (H/G) sale del testamento y no del texto: el Antiguo esta en
+ * hebreo y el Nuevo en griego. Las ediciones griegas del AT (Septuaginta) son
+ * la excepcion, y por eso se puede forzar la fuente con --old / --new.
+ */
+const commandStrongIndex = async (args) => {
+  const client = turso()
+
+  const flag = (nombre) => {
+    const encontrado = args.find((part) => part.startsWith(`--${nombre}=`))
+    return encontrado ? Number(encontrado.split('=')[1]) : null
+  }
+
+  /** Version con Strong que mas capitulos tiene en ese testamento. */
+  const elegirFuente = async (testament) => {
+    const rango = testament === 'old' ? ['<=', LAST_OLD_TESTAMENT_BOOK] : ['>', LAST_OLD_TESTAMENT_BOOK]
+    const result = await client.execute({
+      sql: `SELECT c.bible_id AS id, COUNT(*) AS n
+              FROM Chapters c JOIN Bibles b ON b.id = c.bible_id
+             WHERE b.has_strongs = 1 AND c.book_id ${rango[0]} ?
+             GROUP BY c.bible_id ORDER BY n DESC LIMIT 1`,
+      args: [rango[1]]
+    })
+    return result.rows[0] ? Number(result.rows[0].id) : null
+  }
+
+  const fuentes = [
+    { testament: 'old', prefix: 'H', bibleId: flag('old') ?? (await elegirFuente('old')) },
+    { testament: 'new', prefix: 'G', bibleId: flag('new') ?? (await elegirFuente('new')) }
+  ]
+
+  const conteo = new Map()
+
+  for (const { testament, prefix, bibleId } of fuentes) {
+    if (!bibleId) {
+      console.log(`Sin edicion con Strong para el ${testament === 'old' ? 'Antiguo' : 'Nuevo'} Testamento; se omite.`)
+      continue
+    }
+
+    const nombre = (await client.execute({ sql: 'SELECT name FROM Bibles WHERE id = ?', args: [bibleId] })).rows[0]?.name
+    console.log(`${testament === 'old' ? 'AT' : 'NT'}: version ${bibleId} — ${nombre ?? '?'}`)
+
+    const comparador = testament === 'old' ? '<=' : '>'
+    const capitulos = await client.execute({
+      sql: `SELECT book_id, chapter, body FROM Chapters
+             WHERE bible_id = ? AND book_id ${comparador} ?
+             ORDER BY book_id, chapter`,
+      args: [bibleId, LAST_OLD_TESTAMENT_BOOK]
+    })
+
+    for (const fila of capitulos.rows) {
+      const bookId = Number(fila.book_id)
+      const chapter = Number(fila.chapter)
+      const body = fila.body instanceof ArrayBuffer ? Buffer.from(fila.body) : Buffer.from(fila.body.buffer ?? fila.body)
+      const versiculos = gunzipSync(body).toString('utf8').split(VERSE_SEPARATOR)
+
+      versiculos.forEach((texto, indice) => {
+        const ref = packRef(bookId, chapter, indice + 1)
+        for (const encontrado of texto.matchAll(/<sup>\s*(\d+)\s*<\/sup>/gi)) {
+          // `Number()` quita los ceros a la izquierda: en el markup unas veces
+          // es 0430 y otras 430, y el diccionario los guarda como H430.
+          const code = `${prefix}${Number(encontrado[1])}`
+          const clave = `${code}|${ref}`
+          conteo.set(clave, (conteo.get(clave) ?? 0) + 1)
+        }
+      })
+    }
+
+    console.log(`  ${num(capitulos.rows.length)} capitulos leidos.`)
+  }
+
+  if (conteo.size === 0) {
+    console.log('No se encontro ningun codigo Strong. Nada que escribir.')
+    return
+  }
+
+  const filas = [...conteo.entries()].map(([clave, hits]) => {
+    const [code, ref] = clave.split('|')
+    return [code, Number(ref), hits]
+  })
+
+  console.log(`\nEscribiendo ${num(filas.length)} apariciones...`)
+  await client.execute('DELETE FROM StrongOccurrences')
+  await insertInBatches(client, 'INSERT OR REPLACE INTO StrongOccurrences (code, ref, hits) VALUES (?, ?, ?)', filas, {
+    label: 'apariciones'
+  })
+
+  const codigos = new Set(filas.map((fila) => fila[0])).size
+  console.log(`Listo. ${num(codigos)} codigos distintos, ${num(filas.length)} versiculos-codigo.`)
+}
+
+// ---------------------------------------------------------------------------
+// crossrefs — importa el Treasury of Scripture Knowledge
+// ---------------------------------------------------------------------------
+
+/** Abreviaturas OSIS tal como las publica openbible.info. */
+const OSIS = {
+  Gen: 1, Exod: 2, Lev: 3, Num: 4, Deut: 5, Josh: 6, Judg: 7, Ruth: 8, '1Sam': 9, '2Sam': 10,
+  '1Kgs': 11, '2Kgs': 12, '1Chr': 13, '2Chr': 14, Ezra: 15, Neh: 16, Esth: 17, Job: 18, Ps: 19, Prov: 20,
+  Eccl: 21, Song: 22, Isa: 23, Jer: 24, Lam: 25, Ezek: 26, Dan: 27, Hos: 28, Joel: 29, Amos: 30,
+  Obad: 31, Jonah: 32, Mic: 33, Nah: 34, Hab: 35, Zeph: 36, Hag: 37, Zech: 38, Mal: 39, Matt: 40,
+  Mark: 41, Luke: 42, John: 43, Acts: 44, Rom: 45, '1Cor': 46, '2Cor': 47, Gal: 48, Eph: 49, Phil: 50,
+  Col: 51, '1Thess': 52, '2Thess': 53, '1Tim': 54, '2Tim': 55, Titus: 56, Phlm: 57, Heb: 58, Jas: 59, '1Pet': 60,
+  '2Pet': 61, '1John': 62, '2John': 63, '3John': 64, Jude: 65, Rev: 66
+}
+
+/** "Gen.1.1" -> ref empaquetada. `null` si el libro no es del canon de 66. */
+const parseOsis = (texto) => {
+  const partes = String(texto).trim().split('.')
+  if (partes.length !== 3) return null
+  const bookId = OSIS[partes[0]]
+  const chapter = Number(partes[1])
+  const verse = Number(partes[2])
+  if (!bookId || !Number.isFinite(chapter) || !Number.isFinite(verse)) return null
+  // El empaquetado da 8 bits por campo. Fuera de rango es dato corrupto.
+  if (chapter > 255 || verse > 255 || chapter < 1 || verse < 1) return null
+  return packRef(bookId, chapter, verse)
+}
+
+/**
+ * Carga el TSK (Treasury of Scripture Knowledge), dominio publico, publicado
+ * por openbible.info bajo CC-BY.
+ *
+ *   node migrate.mjs crossrefs --file=cross_references.txt
+ *   node migrate.mjs crossrefs --url=https://.../cross_references.txt
+ *
+ * El fichero es TSV: `From Verse<TAB>To Verse<TAB>Votes`, con cabecera. El
+ * destino puede ser un rango ("Gen.1.1-Gen.1.5").
+ *
+ * Se descartan las referencias con votos negativos: en el dataset original el
+ * voto negativo significa que los lectores marcaron la relacion como mala.
+ */
+const commandCrossRefs = async (args, dryRun) => {
+  const valorDe = (nombre) => args.find((part) => part.startsWith(`--${nombre}=`))?.split('=').slice(1).join('=')
+
+  const ruta = valorDe('file')
+  const url = valorDe('url')
+  const minimoVotos = Number(valorDe('min-votos') ?? 0)
+
+  if (!ruta && !url) {
+    console.error(`Falta la fuente de datos.
+
+  node migrate.mjs crossrefs --file=cross_references.txt
+  node migrate.mjs crossrefs --url=<url del TSV>
+
+El dataset es el Treasury of Scripture Knowledge de openbible.info
+(https://www.openbible.info/labs/cross-references/), CC-BY. Se descarga como
+ZIP; hay que descomprimirlo y pasar el .txt de dentro.`)
+    process.exit(1)
+  }
+
+  let crudo
+  if (ruta) {
+    const absoluta = resolve(process.cwd(), ruta)
+    if (!existsSync(absoluta)) {
+      console.error(`No existe el archivo: ${absoluta}`)
+      process.exit(1)
+    }
+    crudo = readFileSync(absoluta, 'utf8')
+  } else {
+    console.log(`Descargando ${url} ...`)
+    const respuesta = await fetch(url)
+    if (!respuesta.ok) {
+      console.error(`La descarga fallo: HTTP ${respuesta.status}`)
+      process.exit(1)
+    }
+    crudo = await respuesta.text()
+  }
+
+  const lineas = crudo.split(/\r?\n/)
+  const filas = []
+
+  // Se cuenta POR QUE se descarta cada linea, no solo cuantas. Si un dia el
+  // formato cambia, un solo numero no distingue "el dataset trae ruido normal"
+  // de "el parser dejo de entender el archivo".
+  const descartes = { votos: 0, origen: 0, destino: 0, formato: 0 }
+  let rangos = 0
+
+  for (const linea of lineas) {
+    if (!linea || linea.startsWith('From Verse')) continue
+    const [desde, hasta, votosCrudo] = linea.split('\t')
+    if (!desde || !hasta) {
+      descartes.formato++
+      continue
+    }
+
+    // Los votos negativos son relaciones que los lectores marcaron como malas.
+    const votos = Number(votosCrudo ?? 0)
+    if (!Number.isFinite(votos) || votos < minimoVotos) {
+      descartes.votos++
+      continue
+    }
+
+    const fromRef = parseOsis(desde)
+    if (fromRef === null) {
+      descartes.origen++
+      continue
+    }
+
+    // El destino puede ser "Gen.1.1" o el rango "Gen.1.1-Gen.1.5".
+    const [inicioCrudo, finCrudo] = hasta.split('-')
+    const toRef = parseOsis(inicioCrudo)
+    if (toRef === null) {
+      descartes.destino++
+      continue
+    }
+    const toEnd = finCrudo ? parseOsis(finCrudo) : null
+    if (toEnd !== null) rangos++
+
+    filas.push([fromRef, toRef, toEnd, votos])
+  }
+
+  if (filas.length === 0) {
+    console.error('No se pudo interpretar ninguna linea. ¿Es el TSV del TSK?')
+    process.exit(1)
+  }
+
+  const versiculos = new Set(filas.map((fila) => fila[0])).size
+  const total = Object.values(descartes).reduce((a, b) => a + b, 0)
+
+  console.log(`  Referencias validas : ${num(filas.length)}  (${num(rangos)} son rangos)`)
+  console.log(`  Versiculos de origen: ${num(versiculos)}`)
+  console.log(`  Descartadas         : ${num(total)}`)
+  console.log(`    voto < ${minimoVotos}         : ${num(descartes.votos)}`)
+  console.log(`    origen fuera canon: ${num(descartes.origen)}`)
+  console.log(`    destino fuera canon: ${num(descartes.destino)}`)
+  console.log(`    linea mal formada : ${num(descartes.formato)}`)
+
+  if (dryRun) {
+    console.log('\n--dry-run: no se escribio nada. Ejemplos:')
+    for (const [desde, hasta, fin, votos] of filas.slice(0, 5)) {
+      const d = unpackRef(desde)
+      const h = unpackRef(hasta)
+      const f = fin === null ? '' : `-${unpackRef(fin).verse}`
+      console.log(`  ${d.bookId}:${d.chapter}:${d.verse}  ->  ${h.bookId}:${h.chapter}:${h.verse}${f}  (${votos})`)
+    }
+    return
+  }
+
+  await escribirCrossRefs(filas)
+}
+
+const escribirCrossRefs = async (filas) => {
+  const client = turso()
+  await client.execute('DELETE FROM CrossRefs')
+  await insertInBatches(client, 'INSERT INTO CrossRefs (from_ref, to_ref, to_end, votes) VALUES (?, ?, ?, ?)', filas, {
+    label: 'referencias'
+  })
+  const versiculos = new Set(filas.map((fila) => fila[0])).size
+  console.log(`Listo. ${num(versiculos)} versiculos con referencias cruzadas.`)
+}
+
+// ---------------------------------------------------------------------------
 // stats / sql
 // ---------------------------------------------------------------------------
 
@@ -718,6 +1073,18 @@ const commandStats = async () => {
   const indexed = await scalar('SELECT COUNT(*) AS n FROM SearchIndex')
   const users = await scalar('SELECT COUNT(*) AS n FROM Users')
 
+  // Estas dos tablas se llenan con comandos aparte y pueden no existir todavia
+  // en una base que solo paso por `schema` de una version anterior.
+  const opcional = async (sql) => {
+    try {
+      return await scalar(sql)
+    } catch {
+      return { n: 0 }
+    }
+  }
+  const crossrefs = await opcional('SELECT COUNT(*) AS n FROM CrossRefs')
+  const occurrences = await opcional('SELECT COUNT(*) AS n FROM StrongOccurrences')
+
   console.log('')
   console.log('  BIBLIAN — estado en Turso')
   console.log('  ' + '-'.repeat(42))
@@ -726,6 +1093,8 @@ const commandStats = async () => {
   console.log(`  Texto (gzip)        : ${mb(chapters.bytes)}`)
   console.log(`  Entradas Strong     : ${num(strongs.n)}`)
   console.log(`  Versiculos indexados: ${num(indexed.n)}`)
+  console.log(`  Referencias cruzadas: ${num(crossrefs.n)}`)
+  console.log(`  Apariciones Strong  : ${num(occurrences.n)}`)
   console.log(`  Usuarios            : ${num(users.n)}`)
   console.log('  ' + '-'.repeat(42))
   console.log('  (no incluye el peso de indices ni del FTS5)\n')
@@ -761,6 +1130,8 @@ const run = {
   schema: () => commandSchema(),
   audio: () => commandAudio(rest.includes('--dry-run'), rest.includes('--create-bucket')),
   link: () => commandLink(),
+  'strongs-index': () => commandStrongIndex(rest),
+  crossrefs: () => commandCrossRefs(rest, rest.includes('--dry-run')),
   stats: () => commandStats(),
   sql: () => commandSql(rest.filter((part) => !part.startsWith('--')).join(' '))
 }[command]
@@ -775,6 +1146,12 @@ Uso: node migrate.mjs <comando>
   audio --dry-run  muestra que subiria, sin subir
   audio --create-bucket  crea el bucket si no existe
   link             enlaza Bibles.legacy_path con el nombre de carpeta
+  strongs-index    concordancia inversa Strong (donde aparece cada codigo)
+  strongs-index --old=<id> --new=<id>   fuerza que edicion se lee por testamento
+  crossrefs --file=<tsv>  importa el Treasury of Scripture Knowledge
+  crossrefs --url=<url>   igual, pero descargando el TSV
+  crossrefs --dry-run     analiza el archivo y NO escribe nada
+  crossrefs --min-votos=N descarta las referencias con menos de N votos
   stats            estado de la base en Turso
   sql "<SQL>"      consulta directa contra Turso
 `)

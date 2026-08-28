@@ -3,12 +3,15 @@ import { listBibles, listBooks } from '@controllers/bibles.controller.js'
 import { getChapters, getSingleChapter, getVerses } from '@controllers/chapters.controller.js'
 import { search } from '@controllers/search.controller.js'
 import { getStrong, getStrongAudio } from '@controllers/strongs.controller.js'
+import { getCrossRefs, getStrongOccurrences } from '@controllers/study.controller.js'
 import { validateQuery, validateParams } from '@middlewares/validate.middleware.js'
 import { asyncHandler } from '@middlewares/error.middleware.js'
 import {
   biblesQuerySchema,
   chapterParamsSchema,
   chaptersQuerySchema,
+  crossRefsQuerySchema,
+  occurrencesQuerySchema,
   searchQuerySchema,
   strongParamsSchema,
   versesQuerySchema
@@ -31,5 +34,16 @@ router.get('/search', validateQuery(searchQuerySchema), asyncHandler(search))
 // Diccionario Strong
 router.get('/strongs/:code', validateParams(strongParamsSchema), asyncHandler(getStrong))
 router.get('/strongs/:code/audio', validateParams(strongParamsSchema), asyncHandler(getStrongAudio))
+
+// Concordancia inversa: en que versiculos aparece el codigo.
+router.get(
+  '/strongs/:code/occurrences',
+  validateParams(strongParamsSchema),
+  validateQuery(occurrencesQuerySchema),
+  asyncHandler(getStrongOccurrences)
+)
+
+// Referencias cruzadas (Treasury of Scripture Knowledge)
+router.get('/crossrefs', validateQuery(crossRefsQuerySchema), asyncHandler(getCrossRefs))
 
 export default router

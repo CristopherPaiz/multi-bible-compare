@@ -6,10 +6,16 @@ import ListChapters from "../components/ListChapters";
 import ListVerses from "../components/ListVerses";
 import Verses from "../components/Verses";
 import History from "../components/History";
+import BarraEstudio from "../components/estudio/BarraEstudio";
+import { useSincronizarURL } from "../hooks/useSincronizarURL";
 
 const Compare = () => {
   const { bibliasSeleccionadas, libroSeleccionado, capituloSeleccionadoNumero, versiculoSeleccionadoNumero } =
     useContext(DataContext);
+
+  // La referencia leída viaja en la dirección: recargar o compartir el enlace
+  // abre el mismo pasaje con las mismas versiones.
+  useSincronizarURL();
 
   return (
     <div className="dark:text-white">
@@ -22,6 +28,9 @@ const Compare = () => {
         capituloSeleccionadoNumero !== 0 &&
         versiculoSeleccionadoNumero !== 0 && <Verses />}
       {versiculoSeleccionadoNumero === 0 && <History />}
+      {/* Va al final del documento y se pega abajo: es el sitio donde no tapa
+          el texto y sigue al alcance del pulgar en móvil. */}
+      <BarraEstudio />
     </div>
   );
 };

@@ -1,9 +1,11 @@
-import { createContext, useContext, useState, useEffect, useCallback } from "react";
+import { createContext, useContext, useState, useEffect, useCallback, useMemo, useRef } from "react";
 import PropTypes from "prop-types";
 import LanguageContext from "./LanguageContext";
 import { mapaDeLibro } from "../data/canon";
 import { getStrongBatch } from "../services/bibleSource";
 import { aTextoPlano, capituloATextoPlano } from "../utils/textoPlano";
+import { compararVersiculos } from "../utils/diffVersiones";
+import { versionDeTrabajo } from "../utils/versiones";
 
 const DataContext = createContext();
 
@@ -94,7 +96,10 @@ export const DataProvider = ({ children }) => {
   const [versiculoSeleccionado, setVersiculoSeleccionado] = useState(0);
   const [versiculoSeleccionadoNumero, setVersiculoSeleccionadoNumero] = useState(0);
   const [libros, setLibros] = useState({});
-  const { t } = useContext(LanguageContext);
+  // `idiomaNavegador` se usa para elegir la versión de trabajo por defecto: con
+  // la app en español, la previsualización debe salir en español y no en la
+  // interlineal griega que resulte estar primera en el catálogo.
+  const { t, idiomaNavegador } = useContext(LanguageContext);
   const [paginaInicio, setPaginaInicio] = useState("/");
   const [history, setHistory] = useState([]);
   const [modoCompacto, setModoCompacto] = useState(false);
@@ -157,6 +162,22 @@ export const DataProvider = ({ children }) => {
     setStrongPopup(null);
     strongFun(code);
   }, [strongFun]);
+
+  /*
+   * Concordancia inversa: en qué otros versículos aparece este mismo código.
+   *
+   * Vive aquí y no dentro del popup porque el popup es una burbuja pequeña
+   * anclada a la palabra, y una lista de apariciones es larga y se navega. Se
+   * abre como pantalla propia, igual que la definición completa.
+   */
+  const [concordanciaStrong, setConcordanciaStrong] = useState(null);
+
+  const abrirConcordancia = useCallback((code) => {
+    setStrongPopup(null);
+    setConcordanciaStrong(code);
+  }, []);
+
+  const cerrarConcordancia = useCallback(() => setConcordanciaStrong(null), []);
 
   //useStateModals
   //----------------------------------------------------
@@ -504,6 +525,120 @@ export const DataProvider = ({ children }) => {
 
 
 
+  /*
+   * -------------------------------------------------------------------------
+   * Comparación palabra a palabra
+   * -------------------------------------------------------------------------
+   * Cada `<VerseWindow>` descarga su capítulo por su cuenta, así que ninguno
+   * sabe qué dicen los demás. Para contrastar hace falta verlos juntos, y ese
+   * es el único sitio donde están todos: cada panel deja aquí su texto y aquí
+   * se calcula, una sola vez, qué palabra es propia de cada versión.
+   *
+   * Calcularlo en cada panel sería el mismo trabajo repetido N veces y con N
+   * respuestas que podrían no coincidir entre sí.
+   */
+  const [modoDiferencias, setModoDiferencias] = useState(() => {
+    try {
+      return localStorage.getItem("modoDiferencias") === "true";
+    } catch {
+      return false;
+    }
+  });
+
+  const alternarModoDiferencias = useCallback(() => {
+    setModoDiferencias((previo) => {
+      try {
+        localStorage.setItem("modoDiferencias", String(!previo));
+      } catch {
+        // Sin persistencia; aplica en esta sesión.
+      }
+      return !previo;
+    });
+  }, []);
+
+  const [textosPorBiblia, setTextosPorBiblia] = useState({});
+
+  /*
+   * El capítulo cargado se guarda en un ref ADEMÁS del estado.
+   *
+   * `registrarTexto` la llaman los paneles desde su efecto de carga. Si la
+   * función dependiera del estado para comparar, cambiaría de identidad en cada
+   * registro y volvería a disparar los efectos de todos los paneles: N paneles
+   * registrando provocarían N² ejecuciones. Con el ref la función es estable.
+   */
+  const textosRef = useRef({});
+
+  const registrarTexto = useCallback((biblia, capitulo) => {
+    const anterior = textosRef.current[biblia];
+    if (anterior === capitulo) return;
+    textosRef.current = { ...textosRef.current, [biblia]: capitulo };
+    setTextosPorBiblia(textosRef.current);
+  }, []);
+
+  // Al cambiar de pasaje lo cargado deja de valer: si no se limpia, el primer
+  // panel que responda se compararía contra los textos del capítulo anterior.
+  useEffect(() => {
+    textosRef.current = {};
+    setTextosPorBiblia({});
+  }, [libroSeleccionado, capituloSeleccionadoNumero]);
+
+  const diferenciasPorBiblia = useMemo(() => {
+    if (!modoDiferencias || !versiculoSeleccionadoNumero) return null;
+
+    const entradas = bibliasSeleccionadas
+      .map((biblia) => ({ biblia, texto: textosPorBiblia[biblia]?.[String(versiculoSeleccionadoNumero)] }))
+      .filter((entrada) => typeof entrada.texto === "string" && entrada.texto.trim() !== "");
+
+    // Con menos de dos textos no hay nada que contrastar.
+    if (entradas.length < 2) return null;
+
+    return compararVersiculos(entradas);
+  }, [modoDiferencias, versiculoSeleccionadoNumero, bibliasSeleccionadas, textosPorBiblia]);
+
+  /*
+   * -------------------------------------------------------------------------
+   * Versión de trabajo
+   * -------------------------------------------------------------------------
+   * Hay tres cosas que necesitan UNA sola versión aunque haya seis abiertas:
+   * la previsualización de las referencias cruzadas, la lectura en voz alta y
+   * la exportación. Las tres cogían `bibliasSeleccionadas[0]`, y ese "primero"
+   * es el orden del CATÁLOGO, no una preferencia del usuario: con una griega y
+   * una española abiertas mandaba la griega, y seguía mandando después de
+   * añadir la española porque el orden no había cambiado.
+   *
+   * Ahora hay una elección explícita, compartida por los tres paneles y con un
+   * valor por defecto que acierta solo (ver `versionDeTrabajo`). Se guarda
+   * porque es una preferencia de lectura, no algo que apetezca repetir en cada
+   * sesión.
+   */
+  const [versionPreferida, setVersionPreferidaEstado] = useState(() => {
+    try {
+      return localStorage.getItem("versionTrabajo") ?? null;
+    } catch {
+      return null;
+    }
+  });
+
+  const setVersionPreferida = useCallback((ruta) => {
+    setVersionPreferidaEstado(ruta);
+    try {
+      if (ruta) localStorage.setItem("versionTrabajo", ruta);
+      else localStorage.removeItem("versionTrabajo");
+    } catch {
+      // Sin persistencia; aplica en esta sesión.
+    }
+  }, []);
+
+  /*
+   * La preferencia guardada NO se usa a ciegas: si esa versión ya no está
+   * abierta, se cae al valor por defecto. Respetarla igualmente dejaría los
+   * paneles apuntando a un texto que el usuario ya cerró.
+   */
+  const versionTrabajo = useMemo(
+    () => versionDeTrabajo(bibliasSeleccionadas, versionPreferida, idiomaNavegador),
+    [bibliasSeleccionadas, versionPreferida, idiomaNavegador]
+  );
+
   const [compartir, setCompartir] = useState(false);
   const [textoCompartir, setTextoCompartir] = useState("");
   const [versiculoCompartir, setVersiculoCompartir] = useState("");
@@ -617,6 +752,16 @@ export const DataProvider = ({ children }) => {
         textoCompartirTraducido,
         versiculoCompartir,
         nombreBibliaCompartir,
+        // Versión de trabajo (referencias, audio y exportar)
+        versionTrabajo,
+        versionPreferida,
+        setVersionPreferida,
+        // Comparación palabra a palabra
+        modoDiferencias,
+        alternarModoDiferencias,
+        registrarTexto,
+        textosPorBiblia,
+        diferenciasPorBiblia,
         cambiarAnchoVentana,
         cambiarAltoVentana,
         anchoColumna,
@@ -628,6 +773,10 @@ export const DataProvider = ({ children }) => {
         mostrarStrongPopup,
         cerrarStrongPopup,
         abrirDefinicionStrong,
+        // Concordancia inversa
+        concordanciaStrong,
+        abrirConcordancia,
+        cerrarConcordancia,
         //return modals
         //------------
         modalLibros,

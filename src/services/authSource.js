@@ -65,3 +65,19 @@ export const agregarHistorial = ({ bibleIds, bookId, chapter, verse }) =>
   pedir("/api/user/history", { method: "POST", body: JSON.stringify({ bibleIds, bookId, chapter, verse }) });
 
 export const borrarHistorial = () => pedir("/api/user/history", { method: "DELETE" });
+
+// --- Resaltados y notas ----------------------------------------------------
+//
+// Los dos PUT mandan el conjunto COMPLETO, no la diferencia. El cliente guarda
+// en localStorage y funciona sin cuenta, así que el servidor no lleva la cuenta
+// de qué cambió: recibe el estado final y lo deja igual. Una petición resuelve
+// altas, ediciones y borrados, y no queda a medias si se cierra la pestaña.
+
+export const leerResaltados = () => pedir("/api/user/highlights");
+
+export const guardarResaltados = (highlights) =>
+  pedir("/api/user/highlights", { method: "PUT", body: JSON.stringify({ highlights }) });
+
+export const leerNotas = () => pedir("/api/user/notes");
+
+export const guardarNotas = (notes) => pedir("/api/user/notes", { method: "PUT", body: JSON.stringify({ notes }) });

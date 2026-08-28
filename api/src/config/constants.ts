@@ -88,6 +88,32 @@ export const HISTORY = {
   MAX_ENTRIES: 200
 } as const
 
+export const ANNOTATIONS = {
+  /**
+   * Topes por usuario. No son limites de producto sino de proteccion: el
+   * cliente manda el conjunto completo en cada sincronizacion, y sin tope una
+   * sola peticion podria intentar escribir cientos de miles de filas.
+   */
+  MAX_HIGHLIGHTS: 5000,
+  MAX_NOTES: 1000,
+  MAX_NOTE_LENGTH: 4000
+} as const
+
+export const CROSSREFS = {
+  DEFAULT_LIMIT: 25,
+  MAX_LIMIT: 100
+} as const
+
+export const OCCURRENCES = {
+  DEFAULT_LIMIT: 25,
+  /**
+   * Tope duro. Con `bible` en la consulta cada pagina descomprime un capitulo
+   * por versiculo devuelto, asi que el limite acota trabajo real de CPU, no
+   * solo el tamano de la respuesta.
+   */
+  MAX_LIMIT: 50
+} as const
+
 /** Cache larga para datos inmutables (un capitulo publicado no cambia). */
 export const CACHE_CONTROL = {
   IMMUTABLE: 'public, max-age=31536000, immutable',
