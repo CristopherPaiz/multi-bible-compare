@@ -25,7 +25,12 @@ const Verses = () => {
 
   return (
     <div className="mx-auto my-8 w-11/12 max-w-[1800px]">
-      {/* Solo se dibuja con cinco versiones o mas, y solo en movil. */}
+      {/*
+        No se le reserva sitio: el índice solo se asoma mientras se desplaza
+        rápido, y para entonces nadie está leyendo lo que tapa. Reservárselo
+        costaba 56 px de ancho de forma permanente —en un móvil, una sexta
+        parte de la línea— para un control que se ve tres segundos.
+      */}
       <IndiceBiblias />
 
       <div

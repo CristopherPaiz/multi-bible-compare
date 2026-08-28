@@ -33,8 +33,39 @@ import { nombreCortoVersion } from "../utils/exportar";
  * y hacia dónde.
  */
 
-/** A partir de cuántas versiones aparece la tira. */
+/** A partir de cuántas versiones tiene sentido el índice. */
 const MINIMO = 5;
+
+/*
+ * -----------------------------------------------------------------------------
+ * Cuándo se asoma
+ * -----------------------------------------------------------------------------
+ * Permanente no puede estar: va por encima del texto, y reservarle sitio
+ * costaba 56 px de ancho fijos —en un móvil, una sexta parte de la línea— para
+ * un control que casi nunca se usa.
+ *
+ * Así que aparece cuando hace falta y se va solo. "Hace falta" es una intención
+ * concreta: alguien que quiere RECORRER la página, no leerla. Eso se distingue
+ * por dos cosas a la vez, y las dos son necesarias:
+ *
+ *   - Velocidad. Leer y avanzar despacio no es buscar.
+ *   - Distancia recorrida en la misma ráfaga. Un golpe de dedo corto pero
+ *     brusco —pasar de un versículo al siguiente— es rápido y no es un viaje.
+ *
+ * Con una sola de las dos saldría cada vez que alguien pasa la página.
+ */
+
+/** px/ms. 0.9 son ~900 px/s: bastante más de lo que se desplaza leyendo. */
+const VELOCIDAD_MINIMA = 0.9;
+
+/** Recorrido acumulado en la ráfaga antes de darla por "viaje". */
+const DISTANCIA_MINIMA = 500;
+
+/** Un hueco mayor que esto entre dos eventos empieza una ráfaga nueva. */
+const PAUSA_MS = 250;
+
+/** Lo que sigue visible tras dejar de desplazar, para poder agarrarlo. */
+const OCULTAR_MS = 1400;
 
 const IndiceBiblias = () => {
   const { bibliasSeleccionadas } = useContext(DataContext);
@@ -42,7 +73,29 @@ const IndiceBiblias = () => {
 
   const [activo, setActivo] = useState(0);
   const [arrastrando, setArrastrando] = useState(false);
+  const [asomado, setAsomado] = useState(false);
   const tiraRef = useRef(null);
+
+  /** Estado de la ráfaga de desplazamiento en curso. */
+  const rafaga = useRef({ y: 0, t: 0, recorrido: 0 });
+  const temporizadorOcultar = useRef(0);
+
+  /*
+   * Mientras el dedo está en la tira NO se puede ocultar, y el propio arrastre
+   * genera desplazamiento que reiniciaría el temporizador en bucle. Se guarda
+   * en un ref porque lo consulta el manejador de scroll, que vive fuera del
+   * render.
+   */
+  const arrastrandoRef = useRef(false);
+
+  const asomar = useCallback(() => {
+    setAsomado(true);
+    clearTimeout(temporizadorOcultar.current);
+    if (arrastrandoRef.current) return;
+    temporizadorOcultar.current = setTimeout(() => setAsomado(false), OCULTAR_MS);
+  }, []);
+
+  useEffect(() => () => clearTimeout(temporizadorOcultar.current), []);
 
   const total = bibliasSeleccionadas.length;
   const visible = total >= MINIMO;
@@ -83,9 +136,41 @@ const IndiceBiblias = () => {
       setActivo(mejor);
     };
 
+    /*
+     * Además de recalcular la versión activa, cada evento mide la ráfaga.
+     *
+     * Va aquí y no en un oyente aparte porque `scroll` ya es el evento más
+     * ruidoso de la página: dos suscriptores harían el doble de trabajo por el
+     * mismo dato.
+     */
+    const medirRafaga = () => {
+      const ahora = performance.now();
+      const y = window.scrollY;
+
+      const dt = ahora - rafaga.current.t;
+      const dy = Math.abs(y - rafaga.current.y);
+
+      // Primer evento tras montar: no hay con qué comparar.
+      if (rafaga.current.t === 0) {
+        rafaga.current = { y, t: ahora, recorrido: 0 };
+        return;
+      }
+
+      // Un hueco largo significa que el usuario paró: lo que venga es un gesto
+      // nuevo y su recorrido empieza de cero.
+      const recorrido = dt > PAUSA_MS ? dy : rafaga.current.recorrido + dy;
+      rafaga.current = { y, t: ahora, recorrido };
+
+      if (dt <= 0) return;
+
+      const velocidad = dy / dt;
+      if (velocidad >= VELOCIDAD_MINIMA && recorrido >= DISTANCIA_MINIMA) asomar();
+    };
+
     // Un fotograma como mucho: `scroll` dispara decenas de veces por segundo y
     // cada pasada mide N cajas.
     const alDesplazar = () => {
+      medirRafaga();
       if (!pendiente) pendiente = requestAnimationFrame(medir);
     };
 
@@ -98,7 +183,7 @@ const IndiceBiblias = () => {
       window.removeEventListener("resize", alDesplazar);
       if (pendiente) cancelAnimationFrame(pendiente);
     };
-  }, [visible, total, panelDe]);
+  }, [visible, total, panelDe, asomar]);
 
   const irA = useCallback(
     (indice, suave) => {
@@ -132,7 +217,9 @@ const IndiceBiblias = () => {
 
   const alBajarPuntero = (evento) => {
     evento.currentTarget.setPointerCapture?.(evento.pointerId);
+    arrastrandoRef.current = true;
     setArrastrando(true);
+    asomar();
     const indice = indiceDesdeY(evento.clientY);
     setActivo(indice);
     vibrar();
@@ -148,7 +235,12 @@ const IndiceBiblias = () => {
     irA(indice, false);
   };
 
-  const alSoltarPuntero = () => setArrastrando(false);
+  const alSoltarPuntero = () => {
+    arrastrandoRef.current = false;
+    setArrastrando(false);
+    // Se reinicia la cuenta atras: al soltar vuelve a poder esconderse.
+    asomar();
+  };
 
   if (!visible) return null;
 
@@ -181,7 +273,18 @@ const IndiceBiblias = () => {
       onPointerCancel={alSoltarPuntero}
       role="navigation"
       aria-label={t("IndiceBiblias")}
-      className="fixed right-3 top-1/2 z-30 flex -translate-y-1/2 touch-none select-none items-center rounded-full border border-black/10 bg-white/85 py-2 shadow-lg backdrop-blur dark:border-white/10 dark:bg-neutral-900/85 sm:hidden"
+      /*
+        Se desvanece en vez de desmontarse: montarlo de golpe lo haría aparecer
+        a tirones a mitad de un desplazamiento rápido, que es justo cuando se
+        nota. `pointer-events-none` mientras está oculto para que no intercepte
+        toques destinados al texto que hay debajo.
+
+        El desplazamiento lateral acompaña al desvanecido: entra desde el borde,
+        que es de donde viene.
+      */
+      className={`fixed right-3 top-1/2 z-30 flex -translate-y-1/2 touch-none select-none items-center rounded-full border border-black/10 bg-white/85 py-2 shadow-lg backdrop-blur transition-[opacity,transform] duration-200 dark:border-white/10 dark:bg-neutral-900/85 sm:hidden ${
+        asomado ? "translate-x-0 opacity-100" : "pointer-events-none translate-x-4 opacity-0"
+      }`}
     >
       {/*
         Cada versión es una fila de 24 px de alto y 40 px de ancho. La barrita
