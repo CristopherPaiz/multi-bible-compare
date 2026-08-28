@@ -86,7 +86,14 @@ const VERSICULOS_POR_CAPITULO = [
 /** Último libro del Antiguo Testamento (Malaquías). */
 export const ULTIMO_LIBRO_AT = 39;
 
-const idDeClave = (clave) => Number(String(clave).replace("book", ""));
+/**
+ * `"book43"` -> `43`. El backend habla en ids numéricos y la UI en claves, así
+ * que la conversión hace falta en los dos sentidos al sincronizar.
+ */
+export const idDeClave = (clave) => Number(String(clave).replace("book", ""));
+
+/** `43` -> `"book43"`. El inverso de `idDeClave`. */
+export const claveDeId = (bookId) => `book${Number(bookId)}`;
 
 /** Cuántos capítulos tiene el libro, o 0 si el id se sale del canon. */
 export const totalCapitulos = (bookId) => VERSICULOS_POR_CAPITULO[bookId - 1]?.length ?? 0;

@@ -511,6 +511,32 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  /**
+   * Mete el historial del servidor en el que ya hay, sin perder ninguno.
+   *
+   * Lo llama `useSync` al iniciar sesión. Antes esa fusión se hacía escribiendo
+   * localStorage a espaldas de React, con dos fallos: la lista en pantalla se
+   * quedaba vieja hasta recargar, y el `slice(-40)` se quedaba con las ÚLTIMAS
+   * cuarenta entradas de un arreglo ordenado más-reciente-primero, o sea con
+   * las más viejas — tirando justo lo que el usuario acababa de leer.
+   *
+   * Aquí se delega en `normalizarHistorial`, que ya sabe agrupar por capítulo,
+   * unir los versículos vistos, quedarse con la visita más reciente y ordenar.
+   */
+  const fusionarHistorial = useCallback((entradas) => {
+    if (!Array.isArray(entradas) || entradas.length === 0) return;
+
+    setHistory((previo) => {
+      const lista = normalizarHistorial([...previo, ...entradas]).slice(0, MAX_HISTORIAL);
+      try {
+        localStorage.setItem("history", JSON.stringify(lista));
+      } catch {
+        // Safari privado: se mantiene en memoria durante la sesión.
+      }
+      return lista;
+    });
+  }, []);
+
   //Setear bibliasSeleecionadas, acpituloSeleccionadoNumero, libroSeleccionado, versiculoSeleccionadoNumero
   const setearHistorial = (data) => {
     setBibliasSeleccionadas(data.bibliasSeleccionadas);
@@ -818,6 +844,7 @@ export const DataProvider = ({ children }) => {
         history,
         eliminarElementoHistorial,
         limpiarHistorial,
+        fusionarHistorial,
         setearHistorial,
         setHistory,
         strong,

@@ -1,1 +1,24 @@
-/* /index.html 200
+# ============================================================================
+#  IMPORTANTE: el orden manda. Netlify aplica la PRIMERA regla que coincide,
+#  asi que el proxy del backend va ANTES del fallback de la SPA. Al reves,
+#  `/api/...` devolveria index.html.
+# ============================================================================
+
+# El backend se sirve bajo el MISMO origen que la app.
+#
+# Sin esto, la cookie de sesion es de tercera parte (la app en Netlify, la API
+# en sslip.io) y el navegador la descarta: Safari e ITP siempre, Brave igual,
+# Firefox la aisla y Chrome la esta eliminando. El sintoma era que el login
+# funcionaba —el usuario sale del cuerpo de la respuesta, no de la cookie— y al
+# recargar `/api/auth/me` salia sin cookie, devolvia 401 y la sesion se perdia.
+#
+# En local no se notaba: `localhost:5173` y `localhost:3000` son el MISMO sitio
+# (el puerto no cuenta para SameSite), asi que la cookie viajaba sin problema.
+#
+# Con el proxy el navegador solo ve el dominio de Netlify: la cookie pasa a ser
+# de primera parte y no depende de las politicas de terceros de cada navegador.
+# El token sigue en una cookie httpOnly, invisible para JS.
+/api/*  https://biblian-api-rasjz3-e671c7-109-123-255-138.sslip.io/api/:splat  200
+
+# Fallback de la SPA: cualquier ruta que no sea un archivo la resuelve el router.
+/*  /index.html  200

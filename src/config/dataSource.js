@@ -20,8 +20,21 @@ export const SOURCES = {
 
 const STORAGE_KEY = "dataSource";
 
-/** Backend desplegado. Se usa cuando la app NO corre en localhost. */
-const API_REMOTO = "https://biblian-api-rasjz3-e671c7-109-123-255-138.sslip.io";
+/**
+ * En producción el backend NO se llama por su dominio propio, sino por el mismo
+ * origen que sirve la app: `public/_redirects` tiene una regla de proxy que
+ * manda `/api/*` al backend real.
+ *
+ * Es lo que hace que la sesión sobreviva a un F5. Llamando al dominio de la API
+ * directamente, la cookie de sesión es de tercera parte y el navegador la tira
+ * (Safari e ITP siempre, Brave igual, Firefox la aísla). Bajo el mismo origen
+ * es de primera parte y no depende de la política de terceros de nadie.
+ *
+ * Cadena vacía = URLs relativas (`/api/bibles`), que es justo lo que se quiere.
+ * El dominio real vive UNA sola vez, en `_redirects`. Si algún día se despliega
+ * en un host sin reglas de proxy, se define `VITE_API_URL` y gana esa.
+ */
+const API_MISMO_ORIGEN = "";
 const API_LOCAL = "http://localhost:3000";
 
 const esLocalhost = () => {
@@ -34,12 +47,23 @@ const esLocalhost = () => {
  * Base del backend, en orden de prioridad:
  *   1. VITE_API_URL, si se definió en el build (gana siempre).
  *   2. localhost:3000, si la app se está sirviendo en local.
- *   3. el backend desplegado.
+ *   3. el mismo origen, resuelto por el proxy de `_redirects`.
  *
  * Así en desarrollo se apunta al API local sin configurar nada, y el build de
  * producción funciona aunque nadie haya puesto la variable.
  */
-export const API_URL = (import.meta.env.VITE_API_URL || (esLocalhost() ? API_LOCAL : API_REMOTO)).replace(/\/+$/, "");
+const apuntaALocalhost = (url) => /^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(:|\/|$)/i.test(url);
+
+/*
+ * `VITE_API_URL` se congela en el build, no en el arranque. Un `.env` local con
+ * `http://localhost:3000` —que es lo que dice `.env.example`— se queda pegado en
+ * el bundle si alguien compila desde su máquina en vez de en Netlify, y la app
+ * publicada termina pidiéndole datos al equipo de quien visita. Se descarta.
+ */
+const apiConfigurada = import.meta.env.VITE_API_URL || "";
+const apiValida = apiConfigurada && !(apuntaALocalhost(apiConfigurada) && !esLocalhost()) ? apiConfigurada : "";
+
+export const API_URL = (apiValida || (esLocalhost() ? API_LOCAL : API_MISMO_ORIGEN)).replace(/\/+$/, "");
 
 /** Rama del repo desde donde el CDN sirve los JSON originales. */
 export const CDN_URL = (

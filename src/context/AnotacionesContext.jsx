@@ -30,6 +30,13 @@ const CLAVE_RESALTADOS = "resaltados";
 const CLAVE_NOTAS = "notas";
 const RETARDO_SYNC_MS = 2500;
 
+/*
+ * El backend duerme. Si la fusión falla se reintenta con esperas crecientes en
+ * vez de rendirse: sin fusión no se puede empujar (ver abajo), así que
+ * rendirse dejaba las notas sin sincronizar hasta recargar la página.
+ */
+const ESPERAS_REINTENTO_MS = [3000, 8000, 20000];
+
 const leerLocal = (clave, porDefecto) => {
   try {
     const crudo = localStorage.getItem(clave);
@@ -52,7 +59,7 @@ const escribirLocal = (clave, valor) => {
 const claveVersiculo = (bookId, capitulo, versiculo) => String(codificarRef(bookId, capitulo, versiculo));
 
 export const AnotacionesProvider = ({ children }) => {
-  const { usuario, disponible } = useContext(AuthContext);
+  const { usuario, disponible, sesionIncierta } = useContext(AuthContext);
 
   /** `{ "2818320": "amarillo" }` — clave empaquetada -> color. */
   const [resaltados, setResaltados] = useState(() => leerLocal(CLAVE_RESALTADOS, {}));
@@ -63,68 +70,91 @@ export const AnotacionesProvider = ({ children }) => {
   useEffect(() => escribirLocal(CLAVE_RESALTADOS, resaltados), [resaltados]);
   useEffect(() => escribirLocal(CLAVE_NOTAS, notas), [notas]);
 
-  const hayCuenta = Boolean(usuario && disponible);
+  /*
+   * `sesionIncierta` = el backend no contestó a "¿quién soy?". No es lo mismo
+   * que no tener cuenta: mientras no se sepa, no se toca nada del servidor.
+   */
+  const hayCuenta = Boolean(usuario && disponible && !sesionIncierta);
 
   // --- Empuje al servidor, con retardo ------------------------------------
   //
   // El primer render tras cargar la sesión NO debe empujar: lo que hay en
   // memoria todavía no se ha fusionado con lo del servidor, y mandarlo
   // borraría en el servidor lo que este dispositivo aún no conoce.
+  //
+  // Esto es lo que hacía que iniciar sesión borrara notas. La bandera se ponía
+  // en un `finally`, o sea también cuando la fusión FALLABA. Con el backend
+  // dormido, el primer resaltado mandaba un PUT con solo lo local — y el PUT
+  // reemplaza el conjunto entero. Ahora solo se levanta si la fusión salió
+  // bien; si falla, se reintenta y no se empuja nada mientras tanto.
   const listoParaEmpujar = useRef(false);
 
   useEffect(() => {
     if (!hayCuenta) {
       listoParaEmpujar.current = false;
-      return;
+      return undefined;
     }
 
     let cancelado = false;
+    let temporizador = null;
 
     const fusionar = async () => {
-      try {
-        const [remotosResaltados, remotasNotas] = await Promise.all([leerResaltados(), leerNotas()]);
-        if (cancelado) return;
+      const [remotosResaltados, remotasNotas] = await Promise.all([leerResaltados(), leerNotas()]);
+      if (cancelado) return;
 
-        /*
-         * Unión, no reemplazo. Si el usuario resaltó versículos en el teléfono
-         * y otros en la laptop, se quedan todos. En el choque —el mismo
-         * versículo con dos colores— gana lo local: es lo que el usuario tiene
-         * delante y acaba de ver.
-         */
-        setResaltados((locales) => {
-          const fusion = {};
-          for (const item of remotosResaltados ?? []) {
-            fusion[claveVersiculo(item.bookId, item.chapter, item.verse)] = item.color;
-          }
-          return { ...fusion, ...locales };
-        });
+      /*
+       * Unión, no reemplazo. Si el usuario resaltó versículos en el teléfono
+       * y otros en la laptop, se quedan todos. En el choque —el mismo
+       * versículo con dos colores— gana lo local: es lo que el usuario tiene
+       * delante y acaba de ver.
+       */
+      setResaltados((locales) => {
+        const fusion = {};
+        for (const item of remotosResaltados ?? []) {
+          fusion[claveVersiculo(item.bookId, item.chapter, item.verse)] = item.color;
+        }
+        return { ...fusion, ...locales };
+      });
 
-        setNotas((locales) => {
-          const vistas = new Set(locales.map((nota) => `${nota.bookId}|${nota.capitulo}|${nota.versiculo}|${nota.texto}`));
-          const convertidas = (remotasNotas ?? [])
-            .map((nota) => ({
-              id: `srv-${nota.id}`,
-              bookId: nota.bookId,
-              capitulo: nota.chapter,
-              versiculo: nota.verse,
-              texto: nota.body,
-              creadoEn: nota.createdAt,
-              editadoEn: nota.updatedAt,
-            }))
-            .filter((nota) => !vistas.has(`${nota.bookId}|${nota.capitulo}|${nota.versiculo}|${nota.texto}`));
+      setNotas((locales) => {
+        const vistas = new Set(locales.map((nota) => `${nota.bookId}|${nota.capitulo}|${nota.versiculo}|${nota.texto}`));
+        const convertidas = (remotasNotas ?? [])
+          .map((nota) => ({
+            id: `srv-${nota.id}`,
+            bookId: nota.bookId,
+            capitulo: nota.chapter,
+            versiculo: nota.verse,
+            texto: nota.body,
+            creadoEn: nota.createdAt,
+            editadoEn: nota.updatedAt,
+          }))
+          .filter((nota) => !vistas.has(`${nota.bookId}|${nota.capitulo}|${nota.versiculo}|${nota.texto}`));
 
-          return [...locales, ...convertidas];
-        });
-      } catch {
-        // Sincronizar es un extra: si falla, todo sigue en localStorage.
-      } finally {
-        if (!cancelado) listoParaEmpujar.current = true;
-      }
+        return [...locales, ...convertidas];
+      });
     };
 
-    fusionar();
+    const intentar = (indice) => {
+      fusionar()
+        .then(() => {
+          if (cancelado) return;
+          listoParaEmpujar.current = true;
+        })
+        .catch(() => {
+          if (cancelado) return;
+          // Sin fusión confirmada NO se empuja: hacerlo borraría en el servidor
+          // lo que este dispositivo todavía no ha bajado.
+          const espera = ESPERAS_REINTENTO_MS[indice];
+          if (espera === undefined) return;
+          temporizador = setTimeout(() => intentar(indice + 1), espera);
+        });
+    };
+
+    intentar(0);
+
     return () => {
       cancelado = true;
+      clearTimeout(temporizador);
     };
   }, [hayCuenta]);
 

@@ -10,8 +10,7 @@ import ON from "../assets/badges/ON.webp";
 import ReadMore from "./ReadMore";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 import { useBloquearScroll } from "../hooks/useBloquearScroll";
-import { empujarFavoritos } from "../hooks/useSync";
-import AuthContext from "../context/AuthContext";
+import { favoritos as almacenFavoritos, useAlmacen } from "../services/almacenLocal";
 import {
   BIBLIAS,
   RECOMENDADAS,
@@ -121,9 +120,15 @@ const ListBooks = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
   const [selectedBooks, setSelectedBooks] = useState([]);
-  const [favoriteBooks, setFavoriteBooks] = useState([]);
+  /*
+   * Los favoritos NO se copian a estado local. Los lee el almacén compartido,
+   * que es el mismo que toca la sincronización al fusionar con el servidor. Con
+   * una copia aquí, esa fusión quedaba invisible hasta recargar y el siguiente
+   * clic la borraba (y la borraba también en el servidor, porque el PUT
+   * reemplaza la lista entera).
+   */
+  const favoriteBooks = useAlmacen(almacenFavoritos);
   const { t, idiomaNavegador } = useContext(LanguageContext);
-  const { usuario } = useContext(AuthContext);
   const { bibliasSeleccionadas, setBibliasSeleccionadas, setModalLibros, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero } =
     useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState("");
@@ -146,8 +151,6 @@ const ListBooks = () => {
     if (guardadas.length > 0 && (!bibliasSeleccionadas || bibliasSeleccionadas.length === 0)) {
       setBibliasSeleccionadas(guardadas);
     }
-    setFavoriteBooks(leerLista("favoriteBooks"));
-
     const guardadasSecciones = leerLista(CLAVE_SECCIONES);
     setSeccionesAbiertas(guardadasSecciones.length > 0 ? guardadasSecciones : [idiomaNavegador === "en" ? "english" : "spanish"]);
     // Solo al montar: después el idioma lo cambia el usuario y no debe reabrir
@@ -155,23 +158,26 @@ const ListBooks = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  /*
+   * Solo `selectedBooks`. Los favoritos los persiste su propio almacén en el
+   * momento de cambiarlos; escribirlos también desde aquí es lo que los
+   * machacaba, porque este efecto corre al montar con la lista todavía vacía.
+   */
   useEffect(() => {
     localStorage.setItem("selectedBooks", JSON.stringify(selectedBooks));
-    localStorage.setItem("favoriteBooks", JSON.stringify(favoriteBooks));
-  }, [selectedBooks, favoriteBooks]);
+  }, [selectedBooks]);
 
   useEffect(() => {
     localStorage.setItem(CLAVE_SECCIONES, JSON.stringify(seccionesAbiertas));
   }, [seccionesAbiertas]);
 
-  // Los favoritos se replican al servidor cuando hay sesión. Se hace aparte del
-  // efecto de arriba y con retardo para no disparar una petición por cada clic
-  // mientras el usuario va marcando varias versiones seguidas.
-  useEffect(() => {
-    if (!usuario) return;
-    const id = setTimeout(() => empujarFavoritos(favoriteBooks), 800);
-    return () => clearTimeout(id);
-  }, [favoriteBooks, usuario]);
+  /*
+   * El empuje al servidor ya NO vive aquí: lo hace `useSync`, suscrito al mismo
+   * almacén. Desde este componente era imposible saber si la fusión con el
+   * servidor ya había terminado, y el `PUT` de favoritos reemplaza la lista
+   * entera: al iniciar sesión salía con lo local y borraba lo del otro
+   * dispositivo antes de que la fusión llegara.
+   */
 
   useEffect(() => {
     if (!aviso) return;
@@ -223,7 +229,9 @@ const ListBooks = () => {
   };
 
   const handleFavoriteToggle = (ruta) => {
-    setFavoriteBooks((previas) => (previas.includes(ruta) ? previas.filter((libro) => libro !== ruta) : [...previas, ruta]));
+    almacenFavoritos.actualizar((previas) =>
+      previas.includes(ruta) ? previas.filter((libro) => libro !== ruta) : [...previas, ruta]
+    );
   };
 
   const handleConfirm = () => {
