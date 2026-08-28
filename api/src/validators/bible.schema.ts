@@ -94,6 +94,21 @@ export const occurrencesQuerySchema = z.object({
 })
 export type OccurrencesQuery = z.infer<typeof occurrencesQuerySchema>
 
+/**
+ * GET /api/strongs?q=amor&language=greek
+ *
+ * Busca DENTRO del diccionario. El cliente ya filtra por código, lema y
+ * transliteración con su índice local; lo que solo puede resolverse aquí es la
+ * definición, que no viaja al navegador.
+ */
+export const strongsSearchQuerySchema = z.object({
+  q: z.string().trim().min(SEARCH.MIN_QUERY_LENGTH, `Mínimo ${SEARCH.MIN_QUERY_LENGTH} caracteres.`).max(100),
+  language: z.enum(['greek', 'hebrew']).optional(),
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(SEARCH.MAX_LIMIT).default(SEARCH.DEFAULT_LIMIT)
+})
+export type StrongsSearchQuery = z.infer<typeof strongsSearchQuerySchema>
+
 export const biblesQuerySchema = z.object({
   language: z.string().trim().min(2).max(40).optional(),
   searchable: z

@@ -107,7 +107,13 @@ const IndiceBiblias = () => {
     [panelDe]
   );
 
-  /** Segmento sobre el que está el dedo, por su posición dentro de la tira. */
+  /**
+   * Segmento sobre el que está el dedo.
+   *
+   * Se mide contra la LISTA y no contra el contenedor: el contenedor lleva
+   * relleno para agrandar el área de toque, y contarlo desplazaría el cálculo
+   * medio segmento.
+   */
   const indiceDesdeY = (clientY) => {
     const caja = tiraRef.current?.getBoundingClientRect();
     if (!caja || caja.height === 0) return 0;
@@ -115,11 +121,21 @@ const IndiceBiblias = () => {
     return Math.min(total - 1, Math.max(0, Math.floor(proporcion * total)));
   };
 
+  /** Golpecito al cambiar de versión. En iOS no existe y se ignora solo. */
+  const vibrar = () => {
+    try {
+      navigator.vibrate?.(8);
+    } catch {
+      // Algunos navegadores lo exponen y lo prohíben; no es motivo para nada.
+    }
+  };
+
   const alBajarPuntero = (evento) => {
     evento.currentTarget.setPointerCapture?.(evento.pointerId);
     setArrastrando(true);
     const indice = indiceDesdeY(evento.clientY);
     setActivo(indice);
+    vibrar();
     irA(indice, true);
   };
 
@@ -128,6 +144,7 @@ const IndiceBiblias = () => {
     const indice = indiceDesdeY(evento.clientY);
     if (indice === activo) return;
     setActivo(indice);
+    vibrar();
     irA(indice, false);
   };
 
@@ -139,31 +156,49 @@ const IndiceBiblias = () => {
 
   return (
     /*
-      `sm:hidden` porque en escritorio los paneles van en varias columnas y casi
-      siempre caben: la tira sería un mando para un problema que allí no hay.
+      ---------------------------------------------------------------------
+      SEPARADA DEL BORDE A PROPÓSITO
+      ---------------------------------------------------------------------
+      Pegada a `right-0` la tira caía dentro de la franja del gesto de
+      retroceso de Android (unos 20dp desde cada borde). Ahí el sistema se
+      queda el toque ANTES de que llegue a la página: no era que el toque no
+      funcionara, es que nunca llegaba. `touch-action` no ayuda; eso lo
+      decide el sistema, no el navegador.
 
-      `touch-none` para que arrastrar sobre la tira NO desplace la página: si
-      no, el dedo movería las dos cosas a la vez y pelearían.
+      Con `right-3` el control arranca 12 px adentro y su cuerpo queda fuera
+      de la franja.
+
+      `sm:hidden` porque en escritorio los paneles van en varias columnas y
+      casi siempre caben: allí sería un mando para un problema que no hay.
+
+      `touch-none` para que arrastrar sobre la tira no desplace además la
+      página: el dedo movería las dos cosas a la vez y pelearían.
     */
     <div
-      ref={tiraRef}
       onPointerDown={alBajarPuntero}
       onPointerMove={alMoverPuntero}
       onPointerUp={alSoltarPuntero}
       onPointerCancel={alSoltarPuntero}
       role="navigation"
       aria-label={t("IndiceBiblias")}
-      className="fixed right-0 top-1/2 z-30 flex max-h-[45vh] w-8 -translate-y-1/2 touch-none select-none flex-col justify-center gap-1 py-2 pr-1 sm:hidden"
+      className="fixed right-3 top-1/2 z-30 flex -translate-y-1/2 touch-none select-none items-center rounded-full border border-black/10 bg-white/85 py-2 shadow-lg backdrop-blur dark:border-white/10 dark:bg-neutral-900/85 sm:hidden"
     >
-      {bibliasSeleccionadas.map((biblia, indice) => (
-        <span
-          key={biblia}
-          aria-hidden="true"
-          className={`ml-auto block rounded-full transition-all ${
-            indice === activo ? "h-4 w-2.5 bg-amber-500 dark:bg-purple-400" : "h-2.5 w-1.5 bg-neutral-400/60 dark:bg-neutral-500/60"
-          }`}
-        ></span>
-      ))}
+      {/*
+        Cada versión es una fila de 24 px de alto y 40 px de ancho. La barrita
+        que se ve es mucho menor, pero lo que hay que poder tocar es la fila:
+        antes el objetivo real medía 2 px de ancho.
+      */}
+      <div ref={tiraRef} className="flex w-10 flex-col">
+        {bibliasSeleccionadas.map((biblia, indice) => (
+          <span key={biblia} aria-hidden="true" className="flex h-6 items-center justify-center">
+            <span
+              className={`block rounded-full transition-all ${
+                indice === activo ? "h-2.5 w-6 bg-amber-500 dark:bg-purple-400" : "h-1.5 w-4 bg-neutral-400/70 dark:bg-neutral-500/70"
+              }`}
+            ></span>
+          </span>
+        ))}
+      </div>
 
       {/*
         La etiqueta solo aparece mientras se arrastra. Fija sería un cartel
@@ -171,7 +206,7 @@ const IndiceBiblias = () => {
         panel que tienes delante.
       */}
       {arrastrando && versionActiva && (
-        <span className="pointer-events-none absolute right-full top-1/2 mr-1 max-w-[60vw] -translate-y-1/2 truncate rounded-lg bg-neutral-900/90 px-2.5 py-1.5 text-xs font-semibold text-white shadow-lg dark:bg-neutral-100/95 dark:text-neutral-900">
+        <span className="pointer-events-none absolute right-full top-1/2 mr-2 max-w-[60vw] -translate-y-1/2 truncate rounded-lg bg-neutral-900/90 px-2.5 py-1.5 text-xs font-semibold text-white shadow-lg dark:bg-neutral-100/95 dark:text-neutral-900">
           {idiomaDeVersion(versionActiva)} · {nombreCortoVersion(versionActiva)}
         </span>
       )}

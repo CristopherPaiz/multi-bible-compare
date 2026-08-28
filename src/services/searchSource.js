@@ -43,6 +43,32 @@ export const buscar = async ({ q, bibles, book, page = 1, limit = 25, signal }) 
   return (await response.json()).data;
 };
 
+/**
+ * Busca dentro del diccionario Strong.
+ *
+ * El índice local del cliente (`IndexGreek.json`, `IndexHebrew.json`) solo trae
+ * código, lema y transliteración: son 900 KB y meter las definiciones lo
+ * multiplicaría. Así que buscar "amor" y que salga G26 solo puede resolverlo el
+ * backend, que sí tiene el texto.
+ *
+ * Devuelve lista vacía —no error— cuando la fuente es el CDN o cuando el
+ * administrador no ha construido el índice: es una función que no está, no un
+ * fallo, y quien llama puede seguir mostrando sus resultados locales.
+ */
+export const buscarStrongs = async ({ q, idioma, pagina = 1, limite = 25, signal }) => {
+  const vacio = { data: [], pagination: { page: 1, limit: limite, total: 0, totalPages: 1 } };
+
+  if (!estaDisponible() || String(q ?? "").trim().length < LARGO_MINIMO) return vacio;
+
+  const params = new URLSearchParams({ q, page: String(pagina), limit: String(limite) });
+  if (idioma) params.set("language", idioma);
+
+  const response = await fetch(`${API_URL}/api/strongs?${params}`, { signal });
+  if (!response.ok) return vacio;
+
+  return (await response.json()).data ?? vacio;
+};
+
 /** Catálogo de versiones para el selector. */
 export const listarBiblias = async ({ signal } = {}) => {
   const response = await fetch(`${API_URL}/api/bibles`, { signal });

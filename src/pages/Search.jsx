@@ -2,7 +2,7 @@ import { useContext, useEffect, useMemo, useRef, useState, useCallback } from "r
 import { useNavigate, useSearchParams } from "react-router-dom";
 import DataContext from "../context/DataContext";
 import LanguageContext from "../context/LanguageContext";
-import { buscar, listarBiblias, LARGO_MINIMO } from "../services/searchSource";
+import { buscar, buscarStrongs, listarBiblias, LARGO_MINIMO } from "../services/searchSource";
 import { getDataSource, onDataSourceChange, setDataSource, SOURCES } from "../config/dataSource";
 import { aTextoPlano } from "../utils/textoPlano";
 
@@ -21,6 +21,7 @@ const Search = () => {
     setVersiculoSeleccionadoNumero,
     bibliasSeleccionadas,
     setBibliasSeleccionadas,
+    strongFun,
   } = useContext(DataContext);
   const navigate = useNavigate();
 
@@ -47,6 +48,20 @@ const Search = () => {
       return null;
     }
   });
+  /*
+   * Qué se está buscando: el TEXTO BÍBLICO o el DICCIONARIO Strong.
+   *
+   * Son dos índices distintos y dos formas de resultado, pero una sola
+   * pregunta del usuario —dónde sale esta palabra— y un solo campo donde
+   * escribirla. Partirlo en dos pantallas obligaría a saber de antemano en cuál
+   * buscar, que es justo lo que no se sabe.
+   *
+   * El selector de versión y el filtro por libro solo se pintan en modo
+   * bíblico: el diccionario no tiene ni libros ni versiones.
+   */
+  const [modo, setModo] = useState("biblia");
+  const [resultadosStrong, setResultadosStrong] = useState(null);
+
   const [libroFiltro, setLibroFiltro] = useState("");
   const [catalogo, setCatalogo] = useState([]);
   const [resultados, setResultados] = useState(null);
@@ -131,7 +146,7 @@ const Search = () => {
 
   // Efecto de búsqueda principal
   useEffect(() => {
-    if (!disponible || termino.length < LARGO_MINIMO || !bibliaId) {
+    if (modo !== "biblia" || !disponible || termino.length < LARGO_MINIMO || !bibliaId) {
       setResultados(null);
       return;
     }
@@ -162,7 +177,43 @@ const Search = () => {
       .finally(() => setCargando(false));
 
     return () => controller.abort();
-  }, [termino, bibliaId, libroFiltro, pagina, disponible]);
+  }, [modo, termino, bibliaId, libroFiltro, pagina, disponible]);
+
+  /*
+   * Búsqueda en el diccionario Strong.
+   *
+   * Va aparte del efecto anterior y no dentro de un `if`: son dos peticiones a
+   * endpoints distintos, con su propia cancelación y su propia paginación.
+   * Mezcladas, cambiar de modo dejaría en pantalla los resultados del otro
+   * mientras llega la respuesta nueva.
+   */
+  useEffect(() => {
+    if (modo !== "strong" || !disponible || termino.length < LARGO_MINIMO) {
+      setResultadosStrong(null);
+      return;
+    }
+
+    const controller = new AbortController();
+    setCargando(true);
+    setError(null);
+
+    buscarStrongs({ q: termino, pagina, limite: POR_PAGINA, signal: controller.signal })
+      .then(setResultadosStrong)
+      .catch((fallo) => {
+        if (fallo?.name === "AbortError") return;
+        setError(fallo.message);
+        setResultadosStrong(null);
+      })
+      .finally(() => setCargando(false));
+
+    return () => controller.abort();
+  }, [modo, termino, pagina, disponible]);
+
+  // Al cambiar de modo se vuelve a la primera página: la 3 de un buscador no
+  // significa nada en el otro.
+  useEffect(() => {
+    setPagina(1);
+  }, [modo]);
 
   const bibliaSeleccionadaObj = useMemo(() => {
     return catalogo.find((b) => b.id === bibliaId) ?? null;
@@ -260,8 +311,32 @@ const Search = () => {
 
   return (
     <div className="animate-fade-in mx-auto mt-4 w-11/12 max-w-4xl pb-24">
+      {/* Qué se busca. Va lo primero porque decide qué significa todo lo demás
+          de la pantalla: en modo diccionario no hay versión ni libro. */}
+      <div role="tablist" className="mx-auto mb-4 flex max-w-sm gap-1 rounded-xl bg-black/5 p-1 dark:bg-white/10">
+        {[
+          ["biblia", "BuscarModoBiblia"],
+          ["strong", "BuscarModoStrong"],
+        ].map(([valor, clave]) => (
+          <button
+            key={valor}
+            type="button"
+            role="tab"
+            aria-selected={modo === valor}
+            onClick={() => setModo(valor)}
+            className={`flex-1 rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
+              modo === valor
+                ? "bg-white text-gray-900 shadow-sm dark:bg-neutral-800 dark:text-white"
+                : "text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+            }`}
+          >
+            {t(clave)}
+          </button>
+        ))}
+      </div>
+
       {/* Encabezado y configuración de versión bíblica */}
-      <div className="mb-6 rounded-2xl border border-gray-200 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent p-5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/70">
+      <div className={`mb-6 rounded-2xl border border-gray-200 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent p-5 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/70 ${modo === "strong" ? "hidden" : ""}`}>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <span className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
@@ -335,8 +410,8 @@ const Search = () => {
             )}
           </div>
 
-          {/* Filtro por Libro (Opcional) */}
-          <div className="min-w-[180px]">
+          {/* Filtro por Libro (Opcional). El diccionario no tiene libros. */}
+          <div className={`min-w-[180px] ${modo === "strong" ? "hidden" : ""}`}>
             <label htmlFor="filtro-libro-busqueda" className="sr-only">
               {t("BuscarFiltrarLibro")}
             </label>
@@ -383,7 +458,7 @@ const Search = () => {
       )}
 
       {/* Estado inicial / sugerencias cuando no hay búsqueda activa */}
-      {!cargando && (!resultados || termino.length < LARGO_MINIMO) && (
+      {!cargando && ((modo === "biblia" && !resultados) || (modo === "strong" && !resultadosStrong) || termino.length < LARGO_MINIMO) && (
         <div className="mt-8 rounded-2xl border border-dashed border-gray-300 bg-gray-50/50 p-8 text-center dark:border-neutral-800 dark:bg-neutral-900/40">
           <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -426,8 +501,77 @@ const Search = () => {
         </div>
       )}
 
+      {/*
+        Resultados del diccionario.
+        Al tocar uno se abre el modal de Strong, que es la ficha completa con
+        definición y audio: repetir aquí lo que ese modal ya hace mejor sería
+        mantener dos vistas del mismo dato.
+      */}
+      {!cargando && modo === "strong" && resultadosStrong && (
+        <div className="mt-6">
+          <div className="mb-3 flex items-center justify-between px-1">
+            <p className="text-xs font-medium text-gray-600 dark:text-gray-400">
+              {t("BuscarResultadosStrong", { total: resultadosStrong.pagination.total })}
+            </p>
+            {resultadosStrong.pagination.total > 0 && (
+              <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
+                {pagina} / {Math.max(1, resultadosStrong.pagination.totalPages)}
+              </span>
+            )}
+          </div>
+
+          {resultadosStrong.data.length === 0 ? (
+            <div className="rounded-2xl border border-dashed border-gray-300 p-8 text-center dark:border-neutral-800">
+              <p className="text-sm text-gray-600 dark:text-gray-400">{t("BuscarSinResultados", { termino })}</p>
+            </div>
+          ) : (
+            <ul className="flex flex-col gap-2">
+              {resultadosStrong.data.map((entrada) => (
+                <li key={entrada.code}>
+                  <button
+                    type="button"
+                    onClick={() => strongFun(entrada.code)}
+                    className="w-full rounded-xl border border-gray-200 bg-white p-3 text-left transition hover:border-amber-400 hover:bg-amber-50 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-amber-500/60 dark:hover:bg-amber-950/20"
+                  >
+                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                      <span className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-bold text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">{entrada.code}</span>
+                      <span className="text-base font-semibold text-gray-900 dark:text-white">{entrada.lemma}</span>
+                      {entrada.transliteration && <span className="text-sm italic text-gray-500 dark:text-gray-400">{entrada.transliteration}</span>}
+                    </div>
+                    {entrada.definition && (
+                      <p className="mt-1 line-clamp-2 text-sm text-gray-700 dark:text-gray-300">{aTextoPlano(entrada.definition)}</p>
+                    )}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {resultadosStrong.pagination.totalPages > 1 && (
+            <div className="mt-5 flex items-center justify-center gap-3">
+              <button
+                type="button"
+                onClick={() => setPagina((previo) => Math.max(1, previo - 1))}
+                disabled={pagina <= 1}
+                className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 disabled:opacity-40 dark:border-neutral-700 dark:text-gray-200"
+              >
+                {t("BuscarAnterior")}
+              </button>
+              <button
+                type="button"
+                onClick={() => setPagina((previo) => Math.min(resultadosStrong.pagination.totalPages, previo + 1))}
+                disabled={pagina >= resultadosStrong.pagination.totalPages}
+                className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 disabled:opacity-40 dark:border-neutral-700 dark:text-gray-200"
+              >
+                {t("BuscarSiguiente")}
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Lista de resultados */}
-      {!cargando && resultados && (
+      {!cargando && modo === "biblia" && resultados && (
         <div className="mt-6">
           <div className="mb-3 flex items-center justify-between px-1">
             <p className="text-xs font-medium text-gray-600 dark:text-gray-400">

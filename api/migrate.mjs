@@ -93,6 +93,18 @@ const SCHEMA = [
     pronunciation TEXT, definition TEXT, audio_key TEXT)`,
   `CREATE INDEX IF NOT EXISTS idx_strongs_lang_num ON Strongs(language, number)`,
 
+  // Busqueda dentro del diccionario: titulo, lema, transliteracion y
+  // DEFINICION.
+  //
+  // El indice local del cliente (IndexGreek.json / IndexHebrew.json) solo trae
+  // codigo, lema y transliteracion, asi que "buscar amor y que salga G26" no se
+  // puede resolver en el navegador: la definicion solo esta aqui.
+  //
+  // Mismo tokenizer que SearchIndex (`remove_diacritics 2`), que es lo que hace
+  // que "oracion" encuentre "oración" sin que el usuario ponga la tilde.
+  `CREATE VIRTUAL TABLE IF NOT EXISTS StrongsIndex USING fts5(
+    text, content='', tokenize="unicode61 remove_diacritics 2")`,
+
   `CREATE TABLE IF NOT EXISTS Users (
     id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT NOT NULL UNIQUE COLLATE NOCASE,
     email TEXT UNIQUE COLLATE NOCASE, password_hash TEXT NOT NULL,
@@ -899,6 +911,67 @@ const commandStrongIndex = async (args) => {
 }
 
 // ---------------------------------------------------------------------------
+// strongs-search — indice de busqueda del diccionario
+// ---------------------------------------------------------------------------
+
+/**
+ * Codigo Strong <-> rowid del indice.
+ *
+ * FTS5 contentless solo devuelve un rowid, asi que el rowid tiene que SER la
+ * clave. Los numeros llegan a 8850 en hebreo y 5624 en griego, de modo que
+ * separarlos por centenas de millar deja sitio de sobra y hace la vuelta
+ * trivial: la primera cifra dice el idioma.
+ */
+const STRONG_ESPACIO = 100000
+
+const codigoARowid = (code) => {
+  const idioma = code[0].toUpperCase() === 'G' ? 1 : 2
+  return idioma * STRONG_ESPACIO + Number(code.slice(1))
+}
+
+/**
+ * Llena `StrongsIndex` con lo que se puede buscar de cada entrada.
+ *
+ * Se indexan los cuatro campos juntos en un solo documento en vez de uno por
+ * columna: al usuario le da igual si "amor" salio del titulo o de la
+ * definicion, y una sola columna hace la consulta y el ranking mas simples.
+ */
+const commandStrongsSearch = async () => {
+  const client = turso()
+
+  const filas = await client.execute('SELECT code, title, lemma, transliteration, definition FROM Strongs')
+  console.log(`${num(filas.rows.length)} entradas del diccionario.`)
+
+  const documentos = []
+  let vacias = 0
+
+  for (const fila of filas.rows) {
+    const code = String(fila.code)
+    // El orden importa poco, pero el titulo primero ayuda a leer el indice al
+    // depurar con `sql "SELECT ..."`.
+    const texto = stripMarkup([fila.title, fila.transliteration, fila.lemma, fila.definition].filter(Boolean).join(' '))
+
+    if (!texto) {
+      vacias++
+      continue
+    }
+    documentos.push([codigoARowid(code), texto])
+  }
+
+  if (vacias > 0) console.log(`  ${num(vacias)} sin texto que indexar; se omiten.`)
+
+  console.log(`\nEscribiendo ${num(documentos.length)} documentos...`)
+  // `delete-all` es la orden propia de FTS5 para vaciar una tabla contentless;
+  // un DELETE normal necesitaria el contenido que esta tabla no guarda.
+  await client.execute(`INSERT INTO StrongsIndex(StrongsIndex) VALUES('delete-all')`)
+  await insertInBatches(client, 'INSERT INTO StrongsIndex(rowid, text) VALUES (?, ?)', documentos, {
+    label: 'entradas'
+  })
+
+  console.log(`Listo. ${num(documentos.length)} entradas buscables.`)
+}
+
+// ---------------------------------------------------------------------------
 // crossrefs — importa el Treasury of Scripture Knowledge
 // ---------------------------------------------------------------------------
 
@@ -1084,6 +1157,7 @@ const commandStats = async () => {
   }
   const crossrefs = await opcional('SELECT COUNT(*) AS n FROM CrossRefs')
   const occurrences = await opcional('SELECT COUNT(*) AS n FROM StrongOccurrences')
+  const strongsIndex = await opcional('SELECT COUNT(*) AS n FROM StrongsIndex')
 
   console.log('')
   console.log('  BIBLIAN — estado en Turso')
@@ -1095,6 +1169,7 @@ const commandStats = async () => {
   console.log(`  Versiculos indexados: ${num(indexed.n)}`)
   console.log(`  Referencias cruzadas: ${num(crossrefs.n)}`)
   console.log(`  Apariciones Strong  : ${num(occurrences.n)}`)
+  console.log(`  Strong buscables    : ${num(strongsIndex.n)}`)
   console.log(`  Usuarios            : ${num(users.n)}`)
   console.log('  ' + '-'.repeat(42))
   console.log('  (no incluye el peso de indices ni del FTS5)\n')
@@ -1131,6 +1206,7 @@ const run = {
   audio: () => commandAudio(rest.includes('--dry-run'), rest.includes('--create-bucket')),
   link: () => commandLink(),
   'strongs-index': () => commandStrongIndex(rest),
+  'strongs-search': () => commandStrongsSearch(),
   crossrefs: () => commandCrossRefs(rest, rest.includes('--dry-run')),
   stats: () => commandStats(),
   sql: () => commandSql(rest.filter((part) => !part.startsWith('--')).join(' '))
@@ -1148,6 +1224,7 @@ Uso: node migrate.mjs <comando>
   link             enlaza Bibles.legacy_path con el nombre de carpeta
   strongs-index    concordancia inversa Strong (donde aparece cada codigo)
   strongs-index --old=<id> --new=<id>   fuerza que edicion se lee por testamento
+  strongs-search   indice de busqueda del diccionario (titulo + definicion)
   crossrefs --file=<tsv>  importa el Treasury of Scripture Knowledge
   crossrefs --url=<url>   igual, pero descargando el TSV
   crossrefs --dry-run     analiza el archivo y NO escribe nada

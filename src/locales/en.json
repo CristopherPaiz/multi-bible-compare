@@ -473,5 +473,8 @@
   "AjustesGrande": "Large",
   "AjustesMarcadoAyuda": "Applies to every version. Each panel can override it from its own markup tab.",
   "AjustesRestablecerMarcado": "Reset the {total} version(s) with their own setting",
-  "IndiceBiblias": "Version index"
+  "IndiceBiblias": "Version index",
+  "BuscarModoBiblia": "In the Bible",
+  "BuscarModoStrong": "In Strong's",
+  "BuscarResultadosStrong": "{total} dictionary entrie(s)"
 }
