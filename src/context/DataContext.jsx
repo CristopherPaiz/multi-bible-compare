@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import LanguageContext from "./LanguageContext";
-import bibleData from "../assets/bibles/JSON_DATA/01. English - Amplified (2015).json";
+import { mapaDeLibro } from "../data/canon";
 import { getStrongBatch } from "../services/bibleSource";
 import { aTextoPlano, capituloATextoPlano } from "../utils/textoPlano";
 
@@ -328,16 +328,15 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => {
     if (!libroSeleccionado) return;
-    const findBookAndChapters = (bookNumber) => {
-      const bookKey = bookNumber;
+    const findBookAndChapters = (bookKey) => {
+      // El mapa { "1": [1..N], ... } se fabrica desde la tabla del canon. Antes
+      // salía de buscar la clave en un JSON de 91 KB que se limitaba a tener
+      // esas mismas listas escritas una por una.
+      const capitulos = mapaDeLibro(bookKey);
 
-      // Buscar el libro en el NewTestament y OldTestament
-      if (bibleData.NewTestament[bookKey]) {
+      if (capitulos) {
         setSubBook(bookKey);
-        setChapters(bibleData.NewTestament[bookKey]);
-      } else if (bibleData.OldTestament[bookKey]) {
-        setSubBook(bookKey);
-        setChapters(bibleData.OldTestament[bookKey]);
+        setChapters(capitulos);
       } else {
         // Si el libro no se encuentra, establecer "NotFound" en ambos estados
         setSubBook("NotFound");

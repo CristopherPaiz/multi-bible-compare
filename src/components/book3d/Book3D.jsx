@@ -42,6 +42,9 @@ const ANCHO_MAXIMO_HOJA = 470;
  */
 const MARGEN = { exterior: 0.1, lomo: 0.132, vertical: 0.072 };
 
+/** Duración del giro, en ms. La corta es para `prefers-reduced-motion`. */
+const GIRO = { normal: 520, reducido: 120 };
+
 /** Objeto estable: `HTMLFlipBook` está memoizado y un literal nuevo por render lo invalidaría. */
 const SIN_ESTILO = {};
 
@@ -71,6 +74,22 @@ const estiloContenido = (caja, izquierda) => ({
   fontSize: caja.cuerpo,
   lineHeight: 1.62,
 });
+
+/** `true` si el usuario pidió al sistema que se reduzca la animación. */
+const useMovimientoReducido = () => {
+  const [reducido, setReducido] = useState(() => Boolean(window.matchMedia?.("(prefers-reduced-motion: reduce)").matches));
+
+  useEffect(() => {
+    const consulta = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+    if (!consulta) return;
+
+    const alCambiar = (evento) => setReducido(evento.matches);
+    consulta.addEventListener("change", alCambiar);
+    return () => consulta.removeEventListener("change", alCambiar);
+  }, []);
+
+  return reducido;
+};
 
 /**
  * Una hoja.
@@ -196,41 +215,42 @@ const Libro = forwardRef(function Libro({ children, ...props }, ref) {
 
 Libro.propTypes = { children: PropTypes.node };
 
-const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mostrarStrong = false, onCambioHoja, onControles }) => {
-  /*
-   * El flujo completo. Solo lo usa el MEDIDOR: es el texto de corrido del que
-   * salen los cortes de página. Las hojas no lo pintan; cada una se queda con
-   * las piezas que le tocan (ver `hojas`).
-   */
-  const html = useMemo(() => piezas.join(""), [piezas]);
-
+const Book3D = ({
+  piezas = [],
+  libro,
+  destino,
+  titulo,
+  version,
+  idioma = "es",
+  mostrarStrong = false,
+  escalaTexto = 0,
+  haySiguiente = false,
+  hayAnterior = false,
+  onCambioHoja,
+  onControles,
+  onDesbordar,
+}) => {
   const escenaRef = useRef(null);
   const ventanaRef = useRef(null);
   const flipRef = useRef(null);
 
   const [libre, setLibre] = useState({ ancho: 0, alto: 0 });
   const [ventana, setVentana] = useState({ ancho: 0, alto: 0 });
-  // Índice de página de la librería (tapa incluida). Sirve para colocar el
-  // canto y la sombra, y para volver al mismo sitio cuando el libro se
-  // reconstruye al encadenar el capítulo siguiente.
-  const [pagina, setPagina] = useState(0);
 
   /*
-   * El libro no se monta hasta que las serifas web están cargadas.
+   * Página de la librería (tapa incluida). Sirve para colocar el canto y la
+   * sombra, y para volver al mismo sitio cuando el libro se reconstruye al
+   * encadenar el capítulo siguiente.
    *
-   * EB Garamond tiene otras métricas que la serifa de respaldo, así que la
-   * primera paginación (hecha con la de respaldo) da un número de hojas
-   * distinto del definitivo, y corregirlo después obliga a reconstruir el libro
-   * entero delante del usuario.
+   * Además del número admite dos avisos, `"inicio"` y `"final"`, que se
+   * resuelven más abajo. Al saltar al capítulo siguiente hay que caer en la
+   * PRIMERA hoja de texto y al retroceder al anterior en la ÚLTIMA, y ninguna
+   * de las dos se sabe aquí: dependen de una paginación que todavía no existe
+   * en el momento de pedir el salto.
    */
-  const [fuentesListas, setFuentesListas] = useState(() => !document.fonts?.ready);
-  useEffect(() => {
-    let vigente = true;
-    document.fonts?.ready.then(() => vigente && setFuentesListas(true));
-    return () => {
-      vigente = false;
-    };
-  }, []);
+  const [pagina, setPagina] = useState(0);
+
+  const movimientoReducido = useMovimientoReducido();
 
   const { ancho, alto, cabenDos } = useMemo(() => calcularDimensiones(libre.ancho, libre.alto), [libre]);
 
@@ -242,10 +262,12 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
       // El cuerpo de letra sigue al ancho de la hoja para que la medida de
       // línea se mantenga en torno a los 60-70 caracteres, que es donde el ojo
       // deja de perder el renglón. Los topes evitan que en pantallas muy
-      // grandes o muy chicas se vaya a un extremo ilegible.
-      cuerpo: Math.max(15, Math.min(21, Math.round(ancho * 0.043))),
+      // grandes o muy chicas se vaya a un extremo ilegible; `escalaTexto` es el
+      // ajuste manual del lector, que puede empujar más allá del tope de
+      // arriba porque quien lo sube sabe lo que quiere.
+      cuerpo: Math.max(13, Math.min(30, Math.round(ancho * 0.043) + escalaTexto)),
     }),
-    [ancho, alto]
+    [ancho, alto, escalaTexto]
   );
 
   // El área disponible se mide con ResizeObserver y no con `window.innerHeight`
@@ -272,6 +294,10 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
    * `font-size` o un `padding` del CSS, y cuando se desincroniza el síntoma es
    * texto cortado en el borde de la hoja. La sonda es una hoja real, oculta:
    * su `.hoja__ventana` ya trae el alto que sobra después de todo lo demás.
+   *
+   * Depende del nombre del libro porque el titulillo es lo único de la hoja
+   * cuyo alto puede cambiar solo: "Primera de Corintios" en una hoja estrecha
+   * se parte en dos renglones y le come una línea a la caja de texto.
    */
   useLayoutEffect(() => {
     const nodo = ventanaRef.current;
@@ -279,12 +305,34 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
 
     const { width, height } = nodo.getBoundingClientRect();
     setVentana((previo) => (previo.ancho === width && previo.alto === height ? previo : { ancho: width, alto: height }));
-  }, [ancho, alto, caja, html, mostrarStrong]);
+  }, [ancho, alto, caja, libro]);
 
-  const { cortes, altoContenido, marcas, medidorRef } = usePaginator(html, ventana.ancho, ventana.alto, `${caja.cuerpo}-${mostrarStrong}`);
+  /** Todo lo que cambia CÓMO se maqueta el texto, y por tanto invalida lo medido. */
+  const firmaMaqueta = `${caja.cuerpo}|${mostrarStrong}|${idioma}`;
+
+  const { cortes, altoContenido, marcas, medidorRef, listo: paginado } = usePaginator(piezas, ventana.ancho, ventana.alto, firmaMaqueta);
 
   const hojas = useMemo(() => {
-    if (!html || !ancho) return [];
+    if (!paginado || !ancho || !marcas.length) return [];
+
+    /*
+     * Qué piezas necesita cada hoja, memoizado por tramo.
+     *
+     * Hojas seguidas casi siempre necesitan el mismo tramo de capítulos, y
+     * pegar las piezas es copiar cadenas de varios KB. Sin esto, repaginar un
+     * capítulo encadenado rehace ochenta concatenaciones para producir dos o
+     * tres cadenas distintas.
+     */
+    const tramos = new Map();
+    const tramo = (desde, hasta) => {
+      const llave = `${desde}-${hasta}`;
+      let texto = tramos.get(llave);
+      if (texto === undefined) {
+        texto = piezas.slice(desde, hasta + 1).join("");
+        tramos.set(llave, texto);
+      }
+      return texto;
+    };
 
     /*
      * Un solo recorrido, hoja por hoja, arrastrando en qué capítulo vamos.
@@ -312,28 +360,22 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
       // la hoja donde empieza el capítulo.
       while (actual + 1 < marcas.length && marcas[actual + 1].top <= desplazamiento + 1) actual += 1;
 
-      /*
-       * Qué piezas necesita esta hoja y desde dónde.
-       *
-       * Los cortes se calcularon sobre el flujo completo, así que el
-       * desplazamiento es una distancia desde el principio de TODO. Si la hoja
-       * pinta solo un trozo, hay que rebajarlo hasta donde empieza la primera
-       * pieza que lleva; de ahí la resta con `marcas`.
-       *
-       * Sin marcas (aún no se ha medido, o hay un solo capítulo) se cae al
-       * flujo entero, que siempre es correcto aunque pese más.
-       */
+      // Hasta qué pieza asoma en esta hoja.
       let ultima = actual;
       while (ultima + 1 < marcas.length && marcas[ultima + 1].top < desplazamiento + altura) ultima += 1;
 
-      const trozo =
-        marcas.length < 2
-          ? { html, desplazamiento }
-          : { html: piezas.slice(actual, ultima + 1).join(""), desplazamiento: desplazamiento - marcas[actual].top };
-
-      return { ...trozo, folio: indice + 1, altura, capitulo: marcas[actual]?.capitulo ?? "" };
+      return {
+        html: tramo(actual, ultima),
+        // Los cortes se midieron sobre el flujo completo, así que son
+        // distancias desde el principio de TODO. La hoja solo pinta su tramo,
+        // que empieza en `marcas[actual].top`: hay que rebajarlo.
+        desplazamiento: desplazamiento - marcas[actual].top,
+        folio: indice + 1,
+        altura,
+        capitulo: marcas[actual].capitulo,
+      };
     });
-  }, [cortes, altoContenido, marcas, piezas, html, ancho]);
+  }, [cortes, altoContenido, marcas, piezas, ancho, paginado]);
 
   /*
    * Con `showCover`, la primera página va sola y la ÚLTIMA también, pero solo
@@ -352,28 +394,21 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
    * índice de la librería y el número de hoja que ve el usuario.
    */
   const preliminares = cabenDos ? 2 : 1;
+  const totalPaginas = hojasConRelleno.length + preliminares + 1;
 
   /*
-   * Firma del contenido del libro. Todo lo que define las hojas queda resumido
-   * aquí, y `cortes` resume la paginación entera.
+   * El aviso convertido en número, ahora que ya se sabe cuántas hojas hay.
    *
-   * Sirve para dos cosas a la vez, y las dos son obligatorias:
-   *
-   * 1. Es la `key` del libro. `react-pageflip` construye su `PageFlip` UNA sola
-   *    vez y luego ignora los cambios de `width`/`height`; remontarlo es la
-   *    única forma de reconfigurarlo.
-   *
-   * 2. Es lo que mantiene ESTABLE la lista de hijos. `page-flip` SACA los hijos
-   *    del div que React le dio y los mete en su propio `.stf__block`, y su
-   *    `updateItems` hace `innerHTML = ""` sobre ese bloque. A partir de ahí
-   *    React tiene fibras apuntando a nodos que ya no cuelgan de donde cree, y
-   *    la siguiente reconciliación revienta con `NotFoundError: The node to be
-   *    removed is not a child of this node`, tumbando la pantalla entera. Con
-   *    los hijos memoizados, `react-pageflip` no ve nunca una lista nueva y no
-   *    llama a `updateItems`; cuando el contenido cambia de verdad cambia la
-   *    firma y el libro se remonta limpio.
+   * Se resuelve aquí y no en el efecto que lo pidió porque `startPage` solo se
+   * lee al MONTAR la librería, y ese montaje ocurre —con la `key` de `firma`—
+   * en el mismo render en que aparece la paginación nueva. Guardado como aviso,
+   * el número correcto está listo justo a tiempo; calculado antes, habría sido
+   * siempre el del capítulo anterior.
    */
-  const firma = [ancho, alto, cabenDos, libro, version, idioma, mostrarStrong, caja.cuerpo, html.length, cortes.length, cortes[cortes.length - 1] ?? 0].join("|");
+  const paginaResuelta =
+    pagina === "inicio" ? preliminares : pagina === "final" ? Math.max(preliminares, preliminares + hojas.length - 1) : pagina;
+
+  const paginaActual = Math.max(0, Math.min(paginaResuelta, Math.max(0, totalPaginas - 1)));
 
   const paginas = useMemo(
     () => [
@@ -408,23 +443,53 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
   );
 
   /*
-   * Volver a la portada solo cuando el usuario cambia de sitio a propósito.
+   * Dónde abrir cuando el usuario cambia de sitio a propósito.
    *
-   * `ancla` es la referencia que eligió (versión, libro, capítulo de partida).
-   * Al encadenar el capítulo siguiente el texto crece y el libro se remonta,
-   * pero el ancla no se mueve, y la página guardada sigue siendo válida porque
-   * el texto nuevo se añade DETRÁS sin desplazar un solo renglón del anterior.
+   * `destino.ancla` es la referencia elegida (versión, libro, capítulo de
+   * partida); `destino.entrada` dice por dónde se llega. Al encadenar el
+   * capítulo siguiente el texto crece y el libro se remonta, pero el ancla no
+   * se mueve y la página guardada sigue valiendo, porque el texto nuevo se
+   * añade DETRÁS sin desplazar un solo renglón del anterior.
+   *
+   * Las dos van juntas en un objeto memoizado, y no como dos props, para que
+   * este efecto pueda depender de ambas sin dispararse de más: `entrada` nunca
+   * cambia sin que cambie el ancla.
    */
   useEffect(() => {
-    setPagina(0);
-  }, [ancla]);
+    setPagina(destino?.entrada === "inicio" ? "inicio" : destino?.entrada === "final" ? "final" : 0);
+  }, [destino]);
 
-  const pasar = useCallback((direccion) => {
-    const control = flipRef.current?.pageFlip?.();
-    if (!control) return;
-    if (direccion === "adelante") control.flipNext();
-    else control.flipPrev();
-  }, []);
+  /*
+   * Pasar hoja, y qué hacer cuando ya no quedan.
+   *
+   * Al llegar al final del texto encadenado, seguir adelante NO es quedarse
+   * mirando la contratapa: es el capítulo (o el libro) siguiente. Igual hacia
+   * atrás desde la portada. Solo se avisa si hay adónde ir; si no, se deja que
+   * la librería enseñe la tapa, que ahí sí es el final de verdad.
+   */
+  const pasar = useCallback(
+    (direccion) => {
+      const control = flipRef.current?.pageFlip?.();
+      if (!control) return;
+
+      if (direccion === "adelante") {
+        const enUltimaHoja = paginaActual >= preliminares + hojas.length - 1;
+        if (enUltimaHoja && haySiguiente) {
+          onDesbordar?.("adelante");
+          return;
+        }
+        control.flipNext();
+        return;
+      }
+
+      if (paginaActual <= 0 && hayAnterior) {
+        onDesbordar?.("atras");
+        return;
+      }
+      control.flipPrev();
+    },
+    [paginaActual, preliminares, hojas.length, haySiguiente, hayAnterior, onDesbordar]
+  );
 
   useEffect(() => {
     onControles?.(pasar);
@@ -433,12 +498,35 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
   // Se avisa del estado en cada cambio de página Y cada vez que se repagina:
   // el total cambia al encadenar capítulo, y la barra de abajo lo muestra.
   useEffect(() => {
-    const indice = Math.max(0, Math.min(hojas.length - 1, pagina - preliminares));
-    onCambioHoja?.({ total: hojas.length, actual: indice, capitulo: hojas[indice]?.capitulo ?? "" });
-  }, [hojas, pagina, preliminares, onCambioHoja]);
+    if (!hojas.length) return;
+    const indice = Math.max(0, Math.min(hojas.length - 1, paginaActual - preliminares));
+    onCambioHoja?.({ total: hojas.length, actual: indice, capitulo: hojas[indice]?.capitulo ?? "", enPortada: paginaActual <= 0 });
+  }, [hojas, paginaActual, preliminares, onCambioHoja]);
 
   const anchoBloque = cabenDos ? ancho * 2 : ancho;
-  const listo = Boolean(html && ancho && ventana.alto && fuentesListas);
+  const listo = Boolean(piezas.length && ancho && ventana.alto && paginado && hojas.length);
+
+  /*
+   * Firma del contenido del libro. Todo lo que define las hojas queda resumido
+   * aquí, y `cortes` resume la paginación entera.
+   *
+   * Sirve para dos cosas a la vez, y las dos son obligatorias:
+   *
+   * 1. Es la `key` del libro. `react-pageflip` construye su `PageFlip` UNA sola
+   *    vez y luego ignora los cambios de `width`/`height`; remontarlo es la
+   *    única forma de reconfigurarlo.
+   *
+   * 2. Es lo que mantiene ESTABLE la lista de hijos. `page-flip` SACA los hijos
+   *    del div que React le dio y los mete en su propio `.stf__block`, y su
+   *    `updateItems` hace `innerHTML = ""` sobre ese bloque. A partir de ahí
+   *    React tiene fibras apuntando a nodos que ya no cuelgan de donde cree, y
+   *    la siguiente reconciliación revienta con `NotFoundError: The node to be
+   *    removed is not a child of this node`, tumbando la pantalla entera. Con
+   *    los hijos memoizados, `react-pageflip` no ve nunca una lista nueva y no
+   *    llama a `updateItems`; cuando el contenido cambia de verdad cambia la
+   *    firma y el libro se remonta limpio.
+   */
+  const firma = [ancho, alto, cabenDos, libro, version, firmaMaqueta, piezas.length, cortes.length, cortes[cortes.length - 1] ?? 0].join("|");
 
   /*
    * Dónde está el cuerpo del libro dentro del bloque.
@@ -451,9 +539,8 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
    * Además, de un libro cerrado solo se ve UN canto: el opuesto al lomo. Los
    * dos a la vez solo existen con el libro abierto.
    */
-  const totalPaginas = hojasConRelleno.length + preliminares + 1;
-  const cerrado = cabenDos && pagina === 0;
-  const enContratapa = cabenDos && pagina >= totalPaginas - 1;
+  const cerrado = cabenDos && paginaActual === 0;
+  const enContratapa = cabenDos && paginaActual >= totalPaginas - 1;
 
   const cuerpo = {
     izquierda: cerrado ? ancho : 0,
@@ -463,7 +550,12 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
   return (
     <div ref={escenaRef} className="escena-libro flex-1 w-full overflow-hidden">
       {/* Sonda: una hoja real fuera de pantalla. Da el alto útil de la caja de
-          texto y, de paso, es el medidor de renglones del paginador. */}
+          texto y, de paso, es el medidor del paginador.
+
+          El div del medidor va VACÍO a propósito: su contenido lo pone y lo
+          quita `usePaginator` capítulo a capítulo con `innerHTML`. Antes React
+          pintaba aquí el flujo entero, o sea una segunda copia completa del
+          texto encadenado viva en el DOM todo el rato para no enseñarla nunca. */}
       {Boolean(ancho) && (
         <div className="hoja" style={{ position: "fixed", left: -99999, top: 0, width: ancho, height: alto, visibility: "hidden", pointerEvents: "none" }}>
           <div className="hoja__contenido" style={estiloContenido(caja, true)}>
@@ -472,12 +564,7 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
               <span>&nbsp;</span>
             </div>
             <div className="hoja__ventana" ref={ventanaRef}>
-              <div
-                ref={medidorRef}
-                lang={idioma}
-                className={`hoja__flujo texto-biblico ${mostrarStrong ? "" : "hoja__flujo--limpio"}`}
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+              <div ref={medidorRef} lang={idioma} className={`hoja__flujo texto-biblico ${mostrarStrong ? "" : "hoja__flujo--limpio"}`} />
             </div>
             <div className="hoja__folio">0</div>
           </div>
@@ -498,12 +585,12 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
             size="fixed"
             // El libro se remonta al encadenar capítulo; sin esto volvería a la
             // portada en mitad de la lectura.
-            startPage={Math.min(pagina, totalPaginas - 1)}
+            startPage={paginaActual}
             showCover
             usePortrait
             maxShadowOpacity={0.45}
-            flippingTime={720}
-            drawShadow
+            flippingTime={movimientoReducido ? GIRO.reducido : GIRO.normal}
+            drawShadow={!movimientoReducido}
             mobileScrollSupport={false}
             /*
              * `disableFlipByClick` NO se puede activar aquí, aunque suene a lo
@@ -528,8 +615,8 @@ const Book3D = ({ piezas = [], libro, ancla, titulo, version, idioma = "es", mos
              * a la izquierda atrás, a la derecha adelante. Es lo que hace
              * cualquier lector y es la forma natural de retroceder con el dedo.
              * A cambio se pierde seleccionar texto dentro del libro, porque la
-             * librería hace `preventDefault()` en `mousedown`; para copiar y
-             * compartir está la pantalla de comparación.
+             * librería hace `preventDefault()` en `mousedown`; para eso está el
+             * botón de copiar capítulo de la barra de arriba.
              */
             showPageCorners
             className="libro"
@@ -548,15 +635,26 @@ Book3D.propTypes = {
   /** Un HTML por capítulo encadenado, en orden. */
   piezas: PropTypes.arrayOf(PropTypes.string),
   libro: PropTypes.string,
-  /** Referencia elegida por el usuario. Al cambiar, el libro vuelve a la portada. */
-  ancla: PropTypes.string,
+  /**
+   * Dónde abrir: `ancla` es la referencia elegida y `entrada` por dónde se
+   * llega (`portada` al elegirla a mano, `inicio` al pasar al capítulo
+   * siguiente, `final` al retroceder al anterior).
+   */
+  destino: PropTypes.shape({ ancla: PropTypes.string, entrada: PropTypes.oneOf(["portada", "inicio", "final"]) }),
   titulo: PropTypes.string,
   version: PropTypes.string,
   idioma: PropTypes.string,
   mostrarStrong: PropTypes.bool,
+  /** Ajuste manual del cuerpo de letra, en px sobre el tamaño automático. */
+  escalaTexto: PropTypes.number,
+  /** Si hay capítulo al que seguir; sin él, el final del texto es el final. */
+  haySiguiente: PropTypes.bool,
+  hayAnterior: PropTypes.bool,
   onCambioHoja: PropTypes.func,
   /** Recibe la función para pasar hoja, y así la barra de abajo puede llamarla. */
   onControles: PropTypes.func,
+  /** Se llama al intentar pasar de la última hoja o de la portada. */
+  onDesbordar: PropTypes.func,
 };
 
 export default Book3D;

@@ -87,9 +87,20 @@ const capituloAProsa = (numero, versiculos, esPrimero, conAparato) => {
  * pieza suelta se maqueta EXACTAMENTE igual que dentro del flujo completo. Es
  * la condición de la que depende que los cortes de página sigan cuadrando.
  *
+ * Los capítulos que no dan texto (respuesta vacía, o con una forma que no es la
+ * esperada) NO salen en la lista. Antes salían como cadena vacía y no molestaba
+ * a nadie porque las piezas se pegaban en un solo flujo, pero ahora el
+ * paginador mide y guarda PIEZA A PIEZA: una cadena vacía no tiene renglones
+ * que medir, nunca entra en el mapa de medidas y el reparto se queda esperando
+ * eternamente por ella con el libro en blanco.
+ *
+ * Descartarlas aquí también mantiene alineados los índices de `piezas` con los
+ * de las marcas de capítulo, que es de lo que se vale cada hoja para saber qué
+ * trozo tiene que pintar.
+ *
  * @param {Array<{numero: string, versiculos: Record<string, string>}>} capitulos
  * @param {boolean} conAparato Si se conservan Strong, morfología y glosa.
- * @returns {string[]} Una pieza de HTML por capítulo, en orden.
+ * @returns {string[]} Una pieza de HTML por capítulo con texto, en orden.
  */
 export const capitulosAPiezas = (capitulos, conAparato = false) =>
-  capitulos.map(({ numero, versiculos }, indice) => capituloAProsa(numero, versiculos, indice === 0, conAparato));
+  capitulos.map(({ numero, versiculos }, indice) => capituloAProsa(numero, versiculos, indice === 0, conAparato)).filter(Boolean);

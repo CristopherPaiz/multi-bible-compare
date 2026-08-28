@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useId, useMemo, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import LanguageContext from "../../context/LanguageContext";
 import { BIBLIAS, ORDEN_IDIOMAS } from "../../data/biblias";
@@ -19,20 +19,119 @@ const normalizar = (texto) =>
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "");
 
+/** Qué puede recibir el foco dentro del panel. */
+const ENFOCABLES = 'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
 const Selector3D = ({ modo, abierto, onCerrar, onElegir, actual, libros = [], capitulos = [], versionActual }) => {
   const { t } = useContext(LanguageContext);
   const [busqueda, setBusqueda] = useState("");
 
+  const panelRef = useRef(null);
+  const buscadorRef = useRef(null);
+  /** El botón del elemento ya seleccionado, para dejarlo a la vista al abrir. */
+  const activoRef = useRef(null);
+
+  const tituloId = useId();
+
   useEffect(() => {
     if (!abierto) return;
     setBusqueda("");
+  }, [abierto, modo]);
+
+  /*
+   * Foco: entra al abrir y vuelve al salir.
+   *
+   * Sin esto el diálogo era invisible para el teclado y para un lector de
+   * pantalla: se abría, el foco se quedaba en el botón de la barra que hay
+   * DEBAJO del velo, y tabular recorría la pantalla tapada en vez del panel.
+   *
+   * El buscador solo se enfoca con puntero fino. En un móvil, enfocar un campo
+   * abre el teclado en pantalla, y el teclado se come media lista justo cuando
+   * lo que el usuario quiere es mirarla y tocar una opción.
+   */
+  useEffect(() => {
+    if (!abierto) return;
+
+    const previo = document.activeElement;
+    const punteroFino = window.matchMedia?.("(pointer: fine)").matches;
+
+    if (punteroFino && buscadorRef.current) buscadorRef.current.focus();
+    else panelRef.current?.focus();
+
+    // El capítulo 119 de Salmos está muy abajo en una cuadrícula de 150; sin
+    // esto había que buscarlo a mano cada vez que se abría el selector.
+    activoRef.current?.scrollIntoView({ block: "center" });
+
+    return () => {
+      if (previo instanceof HTMLElement) previo.focus();
+    };
+  }, [abierto, modo]);
+
+  /*
+   * Teclado del diálogo: Escape cierra y el tabulador no se escapa.
+   *
+   * El ciclo del tabulador se cierra a mano porque el panel es un `div` sobre
+   * un velo, no un `<dialog>` nativo: nada impide que el foco siga hasta los
+   * controles de la barra que quedan debajo.
+   */
+  useEffect(() => {
+    if (!abierto) return;
 
     const alTeclear = (evento) => {
-      if (evento.key === "Escape") onCerrar();
+      if (evento.key === "Escape") {
+        evento.preventDefault();
+        onCerrar();
+        return;
+      }
+
+      if (evento.key !== "Tab") return;
+
+      const dentro = panelRef.current?.querySelectorAll(ENFOCABLES);
+      if (!dentro?.length) return;
+
+      const primero = dentro[0];
+      const ultimo = dentro[dentro.length - 1];
+
+      if (evento.shiftKey && document.activeElement === primero) {
+        evento.preventDefault();
+        ultimo.focus();
+      } else if (!evento.shiftKey && document.activeElement === ultimo) {
+        evento.preventDefault();
+        primero.focus();
+      }
     };
+
     document.addEventListener("keydown", alTeclear);
     return () => document.removeEventListener("keydown", alTeclear);
-  }, [abierto, modo, onCerrar]);
+  }, [abierto, onCerrar]);
+
+  /*
+   * El botón "atrás" del sistema cierra el panel en vez de salirse del lector.
+   *
+   * En la app instalada esto era lo peor del selector: se abría la lista de
+   * versiones, el usuario hacía el gesto de volver —que en un móvil es el gesto
+   * de "cerrar esto"— y se salía de la pantalla entera.
+   *
+   * La entrada de historial se retira al cerrar por cualquier otro camino
+   * (Escape, la equis, elegir algo). El sello permite distinguir los dos casos:
+   * si se cerró por el gesto atrás, el navegador ya la quitó y no hay nada que
+   * deshacer; si sigue ahí, la quitamos nosotros para que el siguiente "atrás"
+   * del usuario no se gaste en una entrada fantasma.
+   */
+  useEffect(() => {
+    if (!abierto) return;
+
+    const sello = `selector3d-${Date.now()}`;
+    window.history.pushState({ selector3d: sello }, "");
+
+    const alVolver = () => onCerrar();
+    window.addEventListener("popstate", alVolver);
+
+    return () => {
+      window.removeEventListener("popstate", alVolver);
+      if (window.history.state?.selector3d === sello) window.history.back();
+    };
+  }, [abierto, onCerrar]);
 
   const traducirIdioma = useMemo(
     () => (idioma) =>
@@ -85,11 +184,18 @@ const Selector3D = ({ modo, abierto, onCerrar, onElegir, actual, libros = [], ca
   return (
     <div className="fixed inset-0 z-[600] flex items-end justify-center bg-black/60 sm:items-center" onMouseDown={onCerrar}>
       <div
-        className="animate-fade-in-up animate-duration-200 flex h-[80vh] w-full flex-col rounded-t-2xl bg-white shadow-2xl dark:bg-neutral-900 dark:text-white sm:h-[70vh] sm:max-w-2xl sm:rounded-2xl"
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={tituloId}
+        tabIndex={-1}
+        className="animate-fade-in-up animate-duration-200 flex h-[80vh] max-h-[92dvh] w-full flex-col rounded-t-2xl bg-white shadow-2xl outline-none dark:bg-neutral-900 dark:text-white sm:h-[70vh] sm:max-w-2xl sm:rounded-2xl"
         onMouseDown={(evento) => evento.stopPropagation()}
       >
         <header className="flex items-center gap-3 border-b border-black/10 px-4 py-3 dark:border-white/10">
-          <h2 className="flex-1 truncate text-base font-bold">{titulo}</h2>
+          <h2 id={tituloId} className="flex-1 truncate text-base font-bold">
+            {titulo}
+          </h2>
           <button
             type="button"
             onClick={onCerrar}
@@ -103,6 +209,7 @@ const Selector3D = ({ modo, abierto, onCerrar, onElegir, actual, libros = [], ca
         {modo !== "capitulo" && (
           <div className="px-4 pt-3">
             <input
+              ref={buscadorRef}
               type="search"
               value={busqueda}
               onChange={(evento) => setBusqueda(evento.target.value)}
@@ -112,7 +219,7 @@ const Selector3D = ({ modo, abierto, onCerrar, onElegir, actual, libros = [], ca
           </div>
         )}
 
-        <div className="flex-1 overflow-y-auto px-4 py-3">
+        <div className="flex-1 overflow-y-auto px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
           {modo === "version" &&
             (secciones.length === 0 ? (
               <p className="py-10 text-center text-sm opacity-70">{t("NoVersionesEncontradas")}</p>
@@ -126,19 +233,24 @@ const Selector3D = ({ modo, abierto, onCerrar, onElegir, actual, libros = [], ca
                     {seccion.nombre}
                   </h3>
                   <ul className="space-y-1">
-                    {seccion.versiones.map(([titulo, datos]) => (
-                      <li key={datos.ruta}>
-                        <button
-                          type="button"
-                          onClick={() => onElegir(datos.ruta)}
-                          className={`w-full rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-black/5 dark:hover:bg-white/10 ${
-                            versionActual === datos.ruta ? "bg-[#a97109]/15 font-semibold dark:bg-purple-500/25" : ""
-                          }`}
-                        >
-                          {titulo}
-                        </button>
-                      </li>
-                    ))}
+                    {seccion.versiones.map(([titulo, datos]) => {
+                      const esActual = versionActual === datos.ruta;
+                      return (
+                        <li key={datos.ruta}>
+                          <button
+                            ref={esActual ? activoRef : undefined}
+                            type="button"
+                            aria-current={esActual ? "true" : undefined}
+                            onClick={() => onElegir(datos.ruta)}
+                            className={`w-full rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-black/5 dark:hover:bg-white/10 ${
+                              esActual ? "bg-[#a97109]/15 font-semibold dark:bg-purple-500/25" : ""
+                            }`}
+                          >
+                            {titulo}
+                          </button>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </section>
               ))
@@ -146,37 +258,47 @@ const Selector3D = ({ modo, abierto, onCerrar, onElegir, actual, libros = [], ca
 
           {modo === "libro" && (
             <ul className="grid grid-cols-2 gap-1.5 sm:grid-cols-3">
-              {librosFiltrados.map(({ id, nombre }) => (
-                <li key={id}>
-                  <button
-                    type="button"
-                    onClick={() => onElegir(id)}
-                    className={`w-full truncate rounded-lg px-3 py-2.5 text-left text-sm transition-colors hover:bg-black/5 dark:hover:bg-white/10 ${
-                      actual === id ? "bg-[#a97109]/15 font-semibold dark:bg-purple-500/25" : ""
-                    }`}
-                  >
-                    {nombre}
-                  </button>
-                </li>
-              ))}
+              {librosFiltrados.map(({ id, nombre }) => {
+                const esActual = actual === id;
+                return (
+                  <li key={id}>
+                    <button
+                      ref={esActual ? activoRef : undefined}
+                      type="button"
+                      aria-current={esActual ? "true" : undefined}
+                      onClick={() => onElegir(id)}
+                      className={`w-full truncate rounded-lg px-3 py-2.5 text-left text-sm transition-colors hover:bg-black/5 dark:hover:bg-white/10 ${
+                        esActual ? "bg-[#a97109]/15 font-semibold dark:bg-purple-500/25" : ""
+                      }`}
+                    >
+                      {nombre}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           )}
 
           {modo === "capitulo" && (
             <ul className="grid grid-cols-5 gap-2 sm:grid-cols-8">
-              {capitulos.map((numero) => (
-                <li key={numero}>
-                  <button
-                    type="button"
-                    onClick={() => onElegir(numero)}
-                    className={`aspect-square w-full rounded-lg text-sm transition-colors hover:bg-black/5 dark:hover:bg-white/10 ${
-                      String(actual) === String(numero) ? "bg-[#a97109]/20 font-bold dark:bg-purple-500/30" : "bg-neutral-100 dark:bg-neutral-800"
-                    }`}
-                  >
-                    {numero}
-                  </button>
-                </li>
-              ))}
+              {capitulos.map((numero) => {
+                const esActual = String(actual) === String(numero);
+                return (
+                  <li key={numero}>
+                    <button
+                      ref={esActual ? activoRef : undefined}
+                      type="button"
+                      aria-current={esActual ? "true" : undefined}
+                      onClick={() => onElegir(numero)}
+                      className={`aspect-square w-full rounded-lg text-sm transition-colors hover:bg-black/5 dark:hover:bg-white/10 ${
+                        esActual ? "bg-[#a97109]/20 font-bold dark:bg-purple-500/30" : "bg-neutral-100 dark:bg-neutral-800"
+                      }`}
+                    >
+                      {numero}
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
