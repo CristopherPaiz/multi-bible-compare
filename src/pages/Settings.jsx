@@ -105,4 +105,14 @@ const Settings = () => {
             <button onClick={() => cambiarAltoVentana("2")} className={buttonClass(altoVentana === "2")}>
               Mediano
             </button>
-            <button onClick={() => cambiarAltoVentana("3")} className={b
+            <button onClick={() => cambiarAltoVentana("3")} className={buttonClass(altoVentana === "3")}>
+              Grande
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Settings;
