@@ -44,6 +44,20 @@ const IconoCuenta = ({ className }) => (
 
 IconoCuenta.propTypes = { className: PropTypes.string };
 
+const IconoLibro3D = ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    {/* Un libro abierto visto en perspectiva: las dos hojas se juntan en el
+        lomo y la de la derecha lleva una hoja levantada, que es lo que
+        distingue este icono del de "Comparar". */}
+    <path d="M12 6.5 4 4.2v13.1l8 2.3z" />
+    <path d="m12 6.5 8-2.3v13.1l-8 2.3z" />
+    <path d="M12 6.5v13.1" />
+    <path d="M15.4 8.9c1.9 1 2.6 2.9 2 4.9" opacity="0.55" />
+  </svg>
+);
+
+IconoLibro3D.propTypes = { className: PropTypes.string };
+
 /**
  * Flecha de salto de capítulo en los extremos de la miga de pan.
  *
@@ -85,6 +99,7 @@ const RUTAS_PRINCIPALES = [
 ];
 
 const RUTAS_SECUNDARIAS = [
+  { to: "/3d", clave: "Biblia3D", Icono: IconoLibro3D },
   { to: "/account", clave: "Cuenta", Icono: IconoCuenta },
   { to: "/settings", clave: "Ajustes", Icono: IconoImagen(SETTING, "Ajustes") },
   { to: "/about", clave: "Informacion", Icono: IconoImagen(INFO, "Info") },

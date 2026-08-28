@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { lazy, Suspense, useContext, useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
@@ -16,6 +16,13 @@ import StrongPopup from "./components/StrongPopup";
 import DataContext from "./context/DataContext";
 import ShareModal from "./components/ShareModal";
 import { preheat } from "./services/bibleSource";
+
+/*
+ * El lector 3D se carga aparte. Arrastra `react-pageflip` y su propia hoja de
+ * estilos, y es una pantalla a la que no entra quien solo viene a comparar
+ * versiones: metida en el bundle principal, todos pagarían su descarga.
+ */
+const Bible3D = lazy(() => import("./pages/Bible3D"));
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -72,6 +79,14 @@ const App = () => {
           <Route path="/settings" element={<Settings />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/search" element={<Search />} />
+          <Route
+            path="/3d"
+            element={
+              <Suspense fallback={null}>
+                <Bible3D />
+              </Suspense>
+            }
+          />
           <Route path="/account" element={<Account />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

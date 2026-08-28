@@ -10,6 +10,17 @@
     <meta name="apple-mobile-web-app-title" content="Biblian" />
     <link rel="apple-touch-icon" href="/bibleIcon.svg" />
     <link rel="manifest" href="/manifest.json" />
+    <!-- Serifas del lector 3D. `preconnect` porque son dos dominios distintos
+         (el CSS y los .woff2) y sin el aviso previo el handshake del segundo
+         no empieza hasta que termina de parsearse el primero.
+         `display=swap`: el texto se pinta con la serifa del sistema y cambia al
+         llegar la web; el paginador vuelve a medir con `document.fonts.ready`. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..600;1,400&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <meta name="application-name" content="Biblian" />
     <meta name="msapplication-TileImage" content="/bibleIcon.svg" />
     <meta name="description" content="Compare textos bíblicos de diferentes versiones de la Biblia." />
