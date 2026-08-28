@@ -155,8 +155,18 @@ const BarraEstudio = () => {
 
   return (
     <div className="sticky bottom-0 z-20 mt-4">
+      {/*
+        En móvil, panel y barra van de borde a borde y sin esquinas
+        redondeadas: pegados a los lados se leen como parte de la pantalla. Con
+        el `w-11/12` que tenían quedaban flotando encima de los paneles y del
+        MISMO ancho que ellos, así que parecían otra tarjeta más de la rejilla
+        en vez de las herramientas de todas.
+
+        En escritorio sí son una tarjeta centrada: ahí la rejilla llega a
+        1800px y una barra de ese ancho para seis botones sería absurda.
+      */}
       {panel && (
-        <div className="animate-slide-in-bottom mx-auto w-11/12 max-w-3xl rounded-t-2xl border border-b-0 border-neutral-200 bg-white p-4 shadow-lg dark:border-neutral-800 dark:bg-[#161519]">
+        <div className="animate-slide-in-bottom mx-auto w-full border-t border-neutral-200 bg-white p-4 shadow-lg dark:border-neutral-800 dark:bg-[#161519] sm:w-11/12 sm:max-w-3xl sm:rounded-t-2xl sm:border sm:border-b-0">
           <div className="mb-3 flex items-center justify-between gap-2">
             {/*
               El panel de referencias lleva la cita en el título porque su
@@ -224,7 +234,15 @@ const BarraEstudio = () => {
         </div>
       )}
 
-      <div className="mx-auto flex w-11/12 max-w-3xl items-center gap-1 rounded-t-2xl border border-b-0 border-black/10 bg-[#fbefda] px-2 py-2 shadow-lg dark:border-white/10 dark:bg-[#20123A] sm:gap-2 sm:px-3">
+      {/*
+        `max(0.5rem, safe-area-inset-bottom)`, igual que el selector 3D y el
+        modal de libros. Ahora que la barra llega al borde, en un iPhone
+        quedaría bajo la raya del gesto de inicio y los botones serían difíciles
+        de tocar. Con `max` y no `calc` el relleno normal NO se suma al de la
+        muesca: donde no hay muesca vale 0.5rem, y donde la hay vale lo que pida
+        el sistema, no las dos cosas.
+      */}
+      <div className="mx-auto flex w-full items-center gap-1 border-t border-black/10 bg-[#fbefda] px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] shadow-lg dark:border-white/10 dark:bg-[#20123A] sm:w-11/12 sm:max-w-3xl sm:gap-2 sm:rounded-t-2xl sm:border sm:border-b-0 sm:px-3 sm:pb-2">
         {/* La referencia no cabe en móvil junto a seis botones, y ya está en la
             miga de pan de arriba: aquí solo aparece cuando sobra sitio. */}
         <span className="hidden min-w-0 flex-1 truncate text-xs font-semibold text-neutral-700 dark:text-neutral-200 lg:block">{referencia}</span>
