@@ -25,7 +25,10 @@ const Verses = () => {
   return (
     <div className="mx-auto my-8 w-11/12 max-w-[1800px]">
       <div
-        className="grid items-stretch gap-4 sm:gap-5"
+        // Mas separacion VERTICAL que horizontal: en movil los paneles caen en
+        // una sola columna y sin aire entre ellos el final de uno y la cabecera
+        // del siguiente se leian como el mismo bloque.
+        className="grid items-stretch gap-x-4 gap-y-8 sm:gap-x-5 sm:gap-y-10"
         style={{ gridTemplateColumns: `repeat(auto-fill, minmax(min(100%, ${anchoColumna}px), 1fr))` }}
       >
         {bibliasSeleccionadas.map((biblia) => (

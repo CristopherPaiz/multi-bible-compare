@@ -2,9 +2,15 @@ import { useContext, useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import AnotacionesContext from "../../context/AnotacionesContext";
 import LanguageContext from "../../context/LanguageContext";
+import { COLORES, PUNTOS_COLOR } from "../../utils/paletaAnotaciones";
 
 /**
- * Notas del versículo abierto.
+ * Todo lo que se anota sobre un versículo: color y notas.
+ *
+ * Iban en dos botones separados de la barra. Son la misma acción —"marcar este
+ * versículo"— y separarlas obligaba a abrir un panel, cerrarlo y abrir otro
+ * para hacer las dos cosas, que es lo normal: se resalta y se escribe por qué.
+ * Juntos ocupan un botón en vez de dos y no hay que decidir cuál abrir.
  *
  * Varias notas por versículo y no una sola: un versículo estudiado dos veces
  * con seis meses de diferencia produce dos ideas distintas, y machacar la
@@ -13,9 +19,10 @@ import LanguageContext from "../../context/LanguageContext";
  */
 const PanelNotas = ({ bookId, capitulo, versiculo, referencia }) => {
   const { t } = useContext(LanguageContext);
-  const { notasDe, agregarNota, editarNota, eliminarNota } = useContext(AnotacionesContext);
+  const { notasDe, agregarNota, editarNota, eliminarNota, colorDe, alternarResaltado, quitarResaltado } = useContext(AnotacionesContext);
 
   const notas = notasDe(bookId, capitulo, versiculo);
+  const colorActual = colorDe(bookId, capitulo, versiculo);
 
   const [borrador, setBorrador] = useState("");
   const [editando, setEditando] = useState(null);
@@ -51,6 +58,33 @@ const PanelNotas = ({ bookId, capitulo, versiculo, referencia }) => {
   return (
     <div className="flex flex-col gap-3">
       <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">{referencia}</p>
+
+      {/* El color va primero: es de un toque y no hace falta escribir nada.
+          Lo lento —redactar la nota— queda debajo. */}
+      <div className="flex flex-wrap items-center gap-2">
+        {COLORES.map((color) => (
+          <button
+            key={color}
+            type="button"
+            onClick={() => alternarResaltado(bookId, capitulo, versiculo, color)}
+            title={t(`Color_${color}`)}
+            aria-label={t(`Color_${color}`)}
+            aria-pressed={colorActual === color}
+            className={`h-8 w-8 rounded-full transition-transform hover:scale-110 ${PUNTOS_COLOR[color]} ${
+              colorActual === color ? "ring-2 ring-neutral-900 ring-offset-2 dark:ring-white dark:ring-offset-[#161519]" : ""
+            }`}
+          ></button>
+        ))}
+        {colorActual && (
+          <button
+            type="button"
+            onClick={() => quitarResaltado(bookId, capitulo, versiculo)}
+            className="rounded-lg px-2 py-1.5 text-xs font-medium text-neutral-600 hover:bg-black/5 dark:text-neutral-300 dark:hover:bg-white/10"
+          >
+            {t("ResaltarQuitar")}
+          </button>
+        )}
+      </div>
 
       <div className="flex flex-col gap-2">
         <textarea

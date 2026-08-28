@@ -89,6 +89,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     libroSeleccionado,
     capituloSeleccionadoNumero,
     diferenciasPorBiblia,
+    claseTamanoTexto,
   } = useContext(DataContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
   const { colorDe, notasDe } = useContext(AnotacionesContext);
@@ -333,7 +334,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
         entero (miles de píxeles) en vez de quedarse en su alto fijo y hacer
         scroll dentro.
       */}
-      <div ref={containerRef} className={`no-scrollbarVerse relative overflow-y-auto px-3 py-3 ${esCapitulo ? tamanioVerseAlto : "h-fit"}`}>
+      <div ref={containerRef} className={`no-scrollbarVerse relative overflow-y-auto px-3 py-3 ${claseTamanoTexto} ${esCapitulo ? tamanioVerseAlto : "h-fit"}`}>
         {cargando && sinContenido ? (
           // Esqueleto mientras no hay nada que mostrar: primera carga y
           // cambio de capítulo (`VerseWindow` vacía el texto al empezar a

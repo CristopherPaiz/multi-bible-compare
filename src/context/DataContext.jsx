@@ -104,12 +104,44 @@ export const DataProvider = ({ children }) => {
   const [history, setHistory] = useState([]);
   const [modoCompacto, setModoCompacto] = useState(false);
 
-  // Preferencias de marcado interlineal (morfología y glosa), POR BIBLIA.
-  //
-  // Son por panel a propósito: alguien puede querer la morfología en la
-  // interlineal griega y no en la española que tiene al lado. Un interruptor
-  // global obligaba a decidir lo mismo para todas.
-  //
+  /*
+   * Marcado interlineal (morfología y glosa) en DOS niveles.
+   *
+   *   `marcadoGlobal`       lo que se ve por defecto en todas las versiones.
+   *   `preferenciasMarcado` la excepción de una versión concreta.
+   *
+   * Hacen falta los dos. El global responde a "no quiero ver códigos
+   * gramaticales en ningún sitio", que es una decisión que se toma una vez; el
+   * de por versión responde a "en la interlineal griega sí, en la española de
+   * al lado no", que es de la versión y no del usuario.
+   *
+   * Una versión con excepción guardada IGNORA el global mientras la tenga. Por
+   * eso existe `restablecerMarcado`: sin él, tocar una vez el marcado de una
+   * versión la dejaba sorda al ajuste general para siempre, sin manera de
+   * deshacerlo desde la interfaz.
+   */
+  const [marcadoGlobal, setMarcadoGlobal] = useState(() => {
+    try {
+      const crudo = localStorage.getItem("marcadoGlobal");
+      const valor = crudo ? JSON.parse(crudo) : null;
+      return valor && typeof valor === "object" ? { ...MARCADO_POR_DEFECTO, ...valor } : MARCADO_POR_DEFECTO;
+    } catch {
+      return MARCADO_POR_DEFECTO;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem("marcadoGlobal", JSON.stringify(marcadoGlobal));
+    } catch {
+      // Sin persistencia; aplica en esta sesión.
+    }
+  }, [marcadoGlobal]);
+
+  const alternarMarcadoGlobal = useCallback((tipo) => {
+    setMarcadoGlobal((previo) => ({ ...previo, [tipo]: !previo[tipo] }));
+  }, []);
+
   // Forma: { "034. Español - ...": { morfologia: false, glosa: true } }
   const [preferenciasMarcado, setPreferenciasMarcado] = useState(() => {
     try {
@@ -130,16 +162,25 @@ export const DataProvider = ({ children }) => {
   }, [preferenciasMarcado]);
 
   const leerMarcado = useCallback(
-    (biblia) => ({ ...MARCADO_POR_DEFECTO, ...(preferenciasMarcado[biblia] ?? {}) }),
-    [preferenciasMarcado]
+    (biblia) => ({ ...marcadoGlobal, ...(preferenciasMarcado[biblia] ?? {}) }),
+    [marcadoGlobal, preferenciasMarcado]
   );
 
-  const alternarMarcado = useCallback((biblia, tipo) => {
-    setPreferenciasMarcado((previo) => {
-      const actual = { ...MARCADO_POR_DEFECTO, ...(previo[biblia] ?? {}) };
-      return { ...previo, [biblia]: { ...actual, [tipo]: !actual[tipo] } };
-    });
-  }, []);
+  const alternarMarcado = useCallback(
+    (biblia, tipo) => {
+      setPreferenciasMarcado((previo) => {
+        const actual = { ...marcadoGlobal, ...(previo[biblia] ?? {}) };
+        return { ...previo, [biblia]: { ...actual, [tipo]: !actual[tipo] } };
+      });
+    },
+    [marcadoGlobal]
+  );
+
+  /** Cuántas versiones llevan una excepción guardada. */
+  const versionesConMarcadoPropio = Object.keys(preferenciasMarcado).length;
+
+  /** Borra todas las excepciones y devuelve el mando al ajuste global. */
+  const restablecerMarcado = useCallback(() => setPreferenciasMarcado({}), []);
 
   //STRONGS
   const [strong, strongFun] = useState([]);
@@ -670,6 +711,19 @@ export const DataProvider = ({ children }) => {
   const ANCHOS_COLUMNA = { 1: 300, 2: 440, 3: 680 };
   const ALTOS_PANEL = { 1: "h-[280px]", 2: "h-[420px]", 3: "h-[620px]" };
 
+  /*
+   * Tamaño del texto bíblico.
+   *
+   * Las clases van escritas enteras porque Tailwind analiza el código como
+   * TEXTO: una clase compuesta en tiempo de ejecución no llega al CSS generado
+   * y en producción el tamaño no cambiaría, aunque en desarrollo sí.
+   *
+   * Se aplica al CONTENEDOR y no a cada versículo: así el marcado interlineal
+   * (glosa, morfología), que hereda en `em`, escala en proporción en vez de
+   * quedarse fijo mientras el texto crece.
+   */
+  const TAMANOS_TEXTO = { 1: "text-[13px]", 2: "text-[15px]", 3: "text-[17px]", 4: "text-[20px]", 5: "text-[24px]" };
+
   const [anchoVentana, setAnchoVentana] = useState("1");
   const [altoVentana, setAltoVentana] = useState("1");
 
@@ -679,8 +733,38 @@ export const DataProvider = ({ children }) => {
    * en el código no le llegaba a nadie que ya hubiera abierto la app: seguía
    * leyendo las clases viejas de su navegador.
    */
+  const [tamanoTexto, setTamanoTexto] = useState("2");
+
   const anchoColumna = ANCHOS_COLUMNA[anchoVentana] ?? ANCHOS_COLUMNA[1];
   const tamanioVerseAlto = ALTOS_PANEL[altoVentana] ?? ALTOS_PANEL[1];
+  const claseTamanoTexto = TAMANOS_TEXTO[tamanoTexto] ?? TAMANOS_TEXTO[2];
+
+  /** Pasos disponibles, para que el panel no tenga que conocer el mapa. */
+  const TAMANOS_TEXTO_MAX = Object.keys(TAMANOS_TEXTO).length;
+
+  const cambiarTamanoTexto = (paso) => {
+    setTamanoTexto((previo) => {
+      const siguiente = Math.min(TAMANOS_TEXTO_MAX, Math.max(1, Number(previo) + paso));
+      const valor = String(siguiente);
+      try {
+        localStorage.setItem("tamanoTexto", valor);
+      } catch {
+        // Sin persistencia; aplica en esta sesión.
+      }
+      return valor;
+    });
+  };
+
+  useEffect(() => {
+    try {
+      const guardado = localStorage.getItem("tamanoTexto");
+      if (guardado && TAMANOS_TEXTO[guardado]) setTamanoTexto(guardado);
+    } catch {
+      // Sin persistencia.
+    }
+    // Solo al montar: después manda lo que elija el usuario.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const cambiarAnchoVentana = (tamanio) => {
     setAnchoVentana(ANCHOS_COLUMNA[tamanio] ? tamanio : "1");
@@ -745,6 +829,16 @@ export const DataProvider = ({ children }) => {
         setModoCompacto,
         leerMarcado,
         alternarMarcado,
+        // Marcado: global con excepciones por versión
+        marcadoGlobal,
+        alternarMarcadoGlobal,
+        versionesConMarcadoPropio,
+        restablecerMarcado,
+        // Tamaño del texto bíblico
+        tamanoTexto,
+        cambiarTamanoTexto,
+        claseTamanoTexto,
+        TAMANOS_TEXTO_MAX,
         setCompartir,
         compartir,
         setCompartirVerse,

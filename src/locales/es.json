@@ -389,7 +389,7 @@
   "ResaltarQuitar": "Quitar resaltado",
   "ResaltarAyuda": "El resaltado es del versículo: se ve en todas las versiones.",
   "Panel_resaltar": "Resaltar versículo",
-  "Panel_notas": "Notas",
+  "Panel_notas": "Resaltar y anotar",
   "Panel_referencias": "Referencias cruzadas",
   "Panel_audio": "Escuchar",
   "Panel_exportar": "Exportar",
@@ -460,5 +460,17 @@
   "AtlasTipo_ciudad": "Ciudad",
   "AtlasTipo_monte": "Monte",
   "AtlasTipo_agua": "Agua",
-  "AtlasTipo_region": "Región"
+  "AtlasTipo_region": "Región",
+  "AnotarTitulo": "Anotar",
+  "Panel_ajustes": "Ajustes de lectura",
+  "AjustesTamanoTexto": "Tamaño del texto",
+  "AjustesTextoMenor": "Texto más pequeño",
+  "AjustesTextoMayor": "Texto más grande",
+  "AjustesAncho": "Ancho de las columnas",
+  "AjustesAlto": "Alto de los paneles",
+  "AjustesPequeno": "Pequeño",
+  "AjustesMediano": "Mediano",
+  "AjustesGrande": "Grande",
+  "AjustesMarcadoAyuda": "Vale para todas las versiones. Cada panel puede llevar la contraria desde su propia pestaña de marcado.",
+  "AjustesRestablecerMarcado": "Restablecer las {total} versión(es) con ajuste propio"
 }

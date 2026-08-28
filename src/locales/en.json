@@ -389,7 +389,7 @@
   "ResaltarQuitar": "Remove highlight",
   "ResaltarAyuda": "Highlights belong to the verse: they show in every version.",
   "Panel_resaltar": "Highlight verse",
-  "Panel_notas": "Notes",
+  "Panel_notas": "Highlight & notes",
   "Panel_referencias": "Cross references",
   "Panel_audio": "Listen",
   "Panel_exportar": "Export",
@@ -460,5 +460,17 @@
   "AtlasTipo_ciudad": "City",
   "AtlasTipo_monte": "Mountain",
   "AtlasTipo_agua": "Water",
-  "AtlasTipo_region": "Region"
+  "AtlasTipo_region": "Region",
+  "AnotarTitulo": "Annotate",
+  "Panel_ajustes": "Reading settings",
+  "AjustesTamanoTexto": "Text size",
+  "AjustesTextoMenor": "Smaller text",
+  "AjustesTextoMayor": "Larger text",
+  "AjustesAncho": "Column width",
+  "AjustesAlto": "Panel height",
+  "AjustesPequeno": "Small",
+  "AjustesMediano": "Medium",
+  "AjustesGrande": "Large",
+  "AjustesMarcadoAyuda": "Applies to every version. Each panel can override it from its own markup tab.",
+  "AjustesRestablecerMarcado": "Reset the {total} version(s) with their own setting"
 }

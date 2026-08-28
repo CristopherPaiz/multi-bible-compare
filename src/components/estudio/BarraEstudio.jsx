@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import DataContext from "../../context/DataContext";
 import LanguageContext from "../../context/LanguageContext";
 import AnotacionesContext from "../../context/AnotacionesContext";
-import { COLORES, PUNTOS_COLOR } from "../../utils/paletaAnotaciones";
 import { formatearReferencia } from "../../utils/referencia";
 import { ISO_POR_IDIOMA, idiomaDeVersion } from "../../utils/versiones";
 import PanelNotas from "./PanelNotas";
 import PanelReferencias from "./PanelReferencias";
 import PanelAudio from "./PanelAudio";
 import PanelExportar from "./PanelExportar";
+import PanelAjustes from "./PanelAjustes";
 
 /**
  * Barra de estudio del versículo abierto.
@@ -25,14 +25,6 @@ import PanelExportar from "./PanelExportar";
  * pantalla completa taparía el versículo, que es justo lo que se está mirando
  * mientras se anota.
  */
-
-const IconoResaltar = ({ className }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
-    <path d="m9 11-6 6v3h3l6-6" />
-    <path d="m14.5 5.5 4 4" />
-    <path d="M21 3 12.5 11.5l-2-2L19 1z" />
-  </svg>
-);
 
 const IconoNota = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
@@ -75,15 +67,29 @@ const IconoDiferencias = ({ className }) => (
   </svg>
 );
 
+const IconoAjustes = ({ className }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    <path d="M4 6h10" />
+    <path d="M18 6h2" />
+    <path d="M4 12h4" />
+    <path d="M12 12h8" />
+    <path d="M4 18h10" />
+    <path d="M18 18h2" />
+    <circle cx="16" cy="6" r="2" />
+    <circle cx="10" cy="12" r="2" />
+    <circle cx="16" cy="18" r="2" />
+  </svg>
+);
+
 // Los seis iconos reciben la clase desde el llamador para poder cambiar de
 // tamaño entre móvil y escritorio sin duplicar el SVG.
 const CLASE = { className: PropTypes.string };
-IconoResaltar.propTypes = CLASE;
 IconoNota.propTypes = CLASE;
 IconoReferencias.propTypes = CLASE;
 IconoAudio.propTypes = CLASE;
 IconoExportar.propTypes = CLASE;
 IconoDiferencias.propTypes = CLASE;
+IconoAjustes.propTypes = CLASE;
 
 const BarraEstudio = () => {
   const { t } = useContext(LanguageContext);
@@ -95,7 +101,7 @@ const BarraEstudio = () => {
     modoDiferencias,
     alternarModoDiferencias,
   } = useContext(DataContext);
-  const { colorDe, alternarResaltado, quitarResaltado, notasDe } = useContext(AnotacionesContext);
+  const { colorDe, notasDe } = useContext(AnotacionesContext);
 
   const [panel, setPanel] = useState(null);
 
@@ -213,37 +219,6 @@ const BarraEstudio = () => {
           </div>
 
           <div className="max-h-[45vh] overflow-y-auto pr-1">
-            {panel === "resaltar" && (
-              <div className="flex flex-col gap-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">{referencia}</p>
-                <div className="flex flex-wrap items-center gap-2">
-                  {COLORES.map((color) => (
-                    <button
-                      key={color}
-                      type="button"
-                      onClick={() => alternarResaltado(bookId, capituloSeleccionadoNumero, versiculoSeleccionadoNumero, color)}
-                      title={t(`Color_${color}`)}
-                      aria-label={t(`Color_${color}`)}
-                      aria-pressed={colorActual === color}
-                      className={`h-9 w-9 rounded-full transition-transform hover:scale-110 ${PUNTOS_COLOR[color]} ${
-                        colorActual === color ? "ring-2 ring-neutral-900 ring-offset-2 dark:ring-white dark:ring-offset-[#161519]" : ""
-                      }`}
-                    ></button>
-                  ))}
-                  {colorActual && (
-                    <button
-                      type="button"
-                      onClick={() => quitarResaltado(bookId, capituloSeleccionadoNumero, versiculoSeleccionadoNumero)}
-                      className="ml-1 rounded-lg px-3 py-1.5 text-xs font-medium text-neutral-600 hover:bg-black/5 dark:text-neutral-300 dark:hover:bg-white/10"
-                    >
-                      {t("ResaltarQuitar")}
-                    </button>
-                  )}
-                </div>
-                <p className="text-[11px] text-neutral-400">{t("ResaltarAyuda")}</p>
-              </div>
-            )}
-
             {panel === "notas" && (
               <PanelNotas bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} referencia={referencia} />
             )}
@@ -253,6 +228,8 @@ const BarraEstudio = () => {
             {panel === "audio" && versionTrabajo && <PanelAudio biblia={versionTrabajo} iso={isoPrincipal} />}
 
             {panel === "exportar" && <PanelExportar bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} />}
+
+            {panel === "ajustes" && <PanelAjustes />}
           </div>
         </div>
       )}
@@ -274,14 +251,19 @@ const BarraEstudio = () => {
             reparten el ancho a partes iguales, así que el área de toque no
             depende de lo larga que sea la palabra. */}
         <div className="flex flex-1 items-stretch gap-0.5 lg:flex-none lg:justify-end lg:gap-2">
-          {boton("resaltar", IconoResaltar, t("Resaltar"), { activo: Boolean(colorActual) })}
-          {boton("notas", IconoNota, t("NotasTitulo"), { insignia: totalNotas })}
-          {boton("referencias", IconoReferencias, t("ReferenciasTitulo"))}
+          {/* Resaltar y anotar eran dos botones. Son la misma accion —marcar
+              este versiculo— y separarlas obligaba a abrir un panel, cerrarlo y
+              abrir otro para hacer lo normal: resaltar y escribir por que. */}
+          {/* Resaltar y anotar eran dos botones. Son la misma accion —marcar
+              este versiculo— y separarlas obligaba a abrir un panel, cerrarlo y
+              abrir otro para hacer lo normal: resaltar y escribir por que. */}
+          {boton("notas", IconoNota, t("AnotarTitulo"), { activo: Boolean(colorActual), insignia: totalNotas })}
           {boton("audio", IconoAudio, t("AudioTitulo"))}
-          {boton("exportar", IconoExportar, t("ExportarTitulo"))}
+          {boton("referencias", IconoReferencias, t("ReferenciasTitulo"))}
 
-          {/* Este no abre panel: es un interruptor. Se queda en la barra porque
-              es una forma de VER el versículo, no una acción sobre él. */}
+          {/* Este no abre panel: es un interruptor. Vive entre los demás y no
+              al final porque es una forma de VER el versículo, igual de
+              frecuente que abrir sus paralelos. */}
           <button
             type="button"
             onClick={alternarModoDiferencias}
@@ -295,6 +277,9 @@ const BarraEstudio = () => {
             <IconoDiferencias className="h-5 w-5 shrink-0" />
             <span className="w-full truncate text-center text-[9px] font-semibold leading-none sm:text-xs">{t("DiferenciasTitulo")}</span>
           </button>
+
+          {boton("exportar", IconoExportar, t("ExportarTitulo"))}
+          {boton("ajustes", IconoAjustes, t("Ajustes"))}
         </div>
       </div>
       </div>
