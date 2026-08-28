@@ -69,8 +69,7 @@ const CLASES_STRONG = [
  * antes cada uno traía su propio margen suelto (`mt-3 mr-3`, `mt-1 mr-1`), así
  * que ninguno quedaba alineado con el de al lado.
  */
-const BOTON_ICONO =
-  "relative grid h-8 w-8 shrink-0 place-items-center rounded-lg transition-colors hover:bg-black/5 disabled:opacity-40 dark:hover:bg-white/10";
+const BOTON_ICONO = "relative grid h-8 w-8 shrink-0 place-items-center rounded-lg transition-colors hover:bg-black/5 disabled:opacity-40 dark:hover:bg-white/10";
 
 /** "034. Español - Biblia ccc" -> { idioma: "Español", version: "Biblia cc" } */
 const partirNombre = (nombre) => {
@@ -303,7 +302,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
         cada encabezado mediría distinto y las cabeceras de la rejilla dejarían
         de alinearse entre sí. El nombre completo queda en el `title`.
       */}
-      <header className="flex items-center justify-between gap-2 border-b border-neutral-300 bg-neutral-100 px-3 py-2 dark:border-neutral-700 dark:bg-[#191820]">
+      <header className="flex items-center justify-between gap-2 border-b border-neutral-500 bg-neutral-200 px-3 py-2 dark:border-neutral-700 dark:bg-[#191820]">
         <div className="min-w-0">
           <p className="truncate text-[10px] font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">{idiomaEtiqueta}</p>
           <h2 title={version} className="truncate text-sm font-semibold text-neutral-900 dark:text-neutral-100">
@@ -314,11 +313,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
         {esCapitulo && (
           <div className="flex shrink-0 items-center gap-0.5">
             <MarkupTab biblia={nombre} tieneMorfologia={marcado.morfologia} tieneGlosa={marcado.glosa} />
-            <button
-              type="button"
-              className={BOTON_ICONO}
-              onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}
-            >
+            <button type="button" className={BOTON_ICONO} onClick={() => setCompartirVerse(texto, versiculoSeleccionadoNumero, nombre, traducciones[versiculoSeleccionadoNumero] ?? null)}>
               <img className="h-[18px] w-[18px] dark:invert" src={SHARE} alt="Share verse from Biblian" />
             </button>
             {/* El mismo botón traduce o revierte según el estado del versículo
@@ -406,11 +401,7 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
                   {tieneNota && (
                     // Un punto y no un icono: va dentro del renglón del texto y
                     // cualquier cosa más alta descuadraría la primera línea.
-                    <span
-                      title={t("NotasTiene")}
-                      aria-label={t("NotasTiene")}
-                      className="mr-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500 align-middle dark:bg-sky-400"
-                    ></span>
+                    <span title={t("NotasTiene")} aria-label={t("NotasTiene")} className="mr-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500 align-middle dark:bg-sky-400"></span>
                   )}
                   <span
                     className={`texto-biblico ${CLASES_STRONG} ${preferencia.morfologia ? "" : "sin-morfologia"} ${preferencia.glosa ? "" : "sin-glosa"} ${

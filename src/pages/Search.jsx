@@ -5,12 +5,13 @@ import LanguageContext from "../context/LanguageContext";
 import { buscar, buscarStrongs, listarBiblias, LARGO_MINIMO } from "../services/searchSource";
 import { getDataSource, onDataSourceChange, setDataSource, SOURCES } from "../config/dataSource";
 import { aTextoPlano } from "../utils/textoPlano";
+import { nombreIdioma, versionDeReferencia } from "../utils/versiones";
+import { sugerenciasAlAzar } from "../data/sugerencias";
 
 const POR_PAGINA = 25;
 const RETARDO_MS = 350;
 const CLAVE_STORAGE_BIBLIA = "biblia_busqueda_id";
 
-const SUGERENCIAS_RAPIDAS = ["amor", "paz", "fe", "esperanza", "gracia", "sabiduría", "luz"];
 
 const Search = () => {
   const { t, idiomaNavegador } = useContext(LanguageContext);
@@ -69,6 +70,21 @@ const Search = () => {
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState(null);
   const [copiadoId, setCopiadoId] = useState(null);
+
+  /*
+   * Semilla de las sugerencias.
+   *
+   * Se baraja al montar, al cambiar de idioma y al limpiar la búsqueda —los
+   * tres momentos en que el usuario vuelve a mirar la pantalla vacía—. Rebarajar
+   * en cada render las cambiaría mientras las lee.
+   */
+  const [semillaSugerencias, setSemillaSugerencias] = useState(0);
+
+  const sugerencias = useMemo(
+    () => sugerenciasAlAzar(idiomaNavegador, 7),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [idiomaNavegador, semillaSugerencias]
+  );
 
   const [fuente, setFuente] = useState(getDataSource);
   useEffect(() => onDataSourceChange(setFuente), []);
@@ -131,6 +147,39 @@ const Search = () => {
 
     return () => controller.abort();
   }, [disponible, bibliasSeleccionadas]);
+
+  /*
+   * Al CAMBIAR de idioma, la versión de referencia de ese idioma.
+   *
+   * Español → Reina-Valera 1960; inglés → King James. No es un juicio sobre
+   * cuál es mejor: son las que todo el mundo reconoce, y buscar "love" en una
+   * Biblia en español no devuelve nada, así que dejar la anterior convierte el
+   * cambio de idioma en un buscador roto.
+   *
+   * Solo al CAMBIAR, no al montar: la primera vez manda lo que el usuario
+   * eligiera la última vez, que sigue guardado. Por eso el `ref` con el idioma
+   * anterior — sin él, este efecto pisaría esa elección en cada visita.
+   */
+  const idiomaPrevio = useRef(idiomaNavegador);
+
+  useEffect(() => {
+    if (idiomaPrevio.current === idiomaNavegador) return;
+    idiomaPrevio.current = idiomaNavegador;
+
+    if (catalogo.length === 0) return;
+
+    const referencia = versionDeReferencia(catalogo, idiomaNavegador);
+    if (!referencia) return;
+
+    setBibliaId(referencia.id);
+    setPagina(1);
+    setSemillaSugerencias((previo) => previo + 1);
+    try {
+      localStorage.setItem(CLAVE_STORAGE_BIBLIA, String(referencia.id));
+    } catch {
+      // Sin persistencia; aplica en esta sesión.
+    }
+  }, [idiomaNavegador, catalogo]);
 
   // Manejo de cambio de versión con persistencia en localStorage
   const handleCambiarBiblia = useCallback((nuevoId) => {
@@ -215,14 +264,51 @@ const Search = () => {
     setPagina(1);
   }, [modo]);
 
+  /*
+   * El catálogo agrupado por idioma.
+   *
+   * Eran 162 versiones en una lista plana: para dar con una en inglés había que
+   * pasar por delante de las 76 en español, y sin ningún encabezado que dijera
+   * dónde empieza cada idioma. Con `<optgroup>` el desplegable nativo los
+   * separa, y en móvil la rueda del sistema los muestra con su título.
+   *
+   * El idioma de la interfaz va PRIMERO, y el resto por número de versiones.
+   * Quien tiene la app en español busca casi siempre en español; dejarlo en el
+   * orden del catálogo sería ordenar por un criterio que a nadie le sirve.
+   */
+  const catalogoPorIdioma = useMemo(() => {
+    const grupos = new Map();
+    for (const biblia of catalogo) {
+      const idioma = biblia.language || "—";
+      if (!grupos.has(idioma)) grupos.set(idioma, []);
+      grupos.get(idioma).push(biblia);
+    }
+
+    const propio = idiomaNavegador === "en" ? "English" : "Español";
+
+    return [...grupos.entries()]
+      .map(([idioma, versiones]) => ({ idioma, versiones }))
+      .sort((a, b) => {
+        if (a.idioma === propio) return -1;
+        if (b.idioma === propio) return 1;
+        return b.versiones.length - a.versiones.length;
+      });
+  }, [catalogo, idiomaNavegador]);
+
   const bibliaSeleccionadaObj = useMemo(() => {
     return catalogo.find((b) => b.id === bibliaId) ?? null;
   }, [catalogo, bibliaId]);
 
   const nombreBiblia = useMemo(() => {
     if (!bibliaSeleccionadaObj) return "";
-    return `${bibliaSeleccionadaObj.name} ${bibliaSeleccionadaObj.year ? `(${bibliaSeleccionadaObj.year})` : ""}`.trim();
-  }, [bibliaSeleccionadaObj]);
+    // Con el idioma delante: con 13 idiomas en el selector, el nombre solo no
+    // dice en cual se esta buscando.
+    const idioma = nombreIdioma(bibliaSeleccionadaObj.language, t);
+    const anio = bibliaSeleccionadaObj.year ? ` (${bibliaSeleccionadaObj.year})` : "";
+    return `${idioma} · ${bibliaSeleccionadaObj.name}${anio}`;
+    // `t` entra porque el nombre del idioma se traduce: sin ella, cambiar de
+    // idioma dejaba el encabezado con el nombre anterior hasta recargar.
+  }, [bibliaSeleccionadaObj, t]);
 
   const irAlVersiculo = useCallback(
     (hit) => {
@@ -272,6 +358,9 @@ const Search = () => {
   const limpiarBusqueda = () => {
     setTexto("");
     setTermino("");
+    // Otras palabras al volver a la pantalla vacía: si fueran las mismas, la
+    // segunda búsqueda parecería la misma pantalla que la primera.
+    setSemillaSugerencias((previo) => previo + 1);
     inputRef.current?.focus();
   };
 
@@ -361,10 +450,14 @@ const Search = () => {
               {catalogo.length === 0 ? (
                 <option value="">{t("Cargando")}</option>
               ) : (
-                catalogo.map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {b.name} {b.year ? `(${b.year})` : ""}
-                  </option>
+                catalogoPorIdioma.map(({ idioma, versiones }) => (
+                  <optgroup key={idioma} label={`${nombreIdioma(idioma, t)} (${versiones.length})`}>
+                    {versiones.map((b) => (
+                      <option key={b.id} value={b.id}>
+                        {b.name} {b.year ? `(${b.year})` : ""}
+                      </option>
+                    ))}
+                  </optgroup>
                 ))
               )}
             </select>
@@ -469,7 +562,7 @@ const Search = () => {
           <p className="mx-auto mt-1 max-w-md text-xs text-gray-600 dark:text-gray-400">{t("BuscarTip1")}</p>
 
           <div className="mt-5 flex flex-wrap justify-center gap-2">
-            {SUGERENCIAS_RAPIDAS.map((sug) => (
+            {sugerencias.map((sug) => (
               <button
                 key={sug}
                 onClick={() => setTexto(sug)}

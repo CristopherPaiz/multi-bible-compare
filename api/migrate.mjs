@@ -938,6 +938,85 @@ const commandStrongIndex = async (args) => {
 }
 
 // ---------------------------------------------------------------------------
+// search-index — indexa versiones que se cargaron sin pasar por `build`
+// ---------------------------------------------------------------------------
+
+/**
+ * Mete en `SearchIndex` las versiones que estan en `Chapters` pero no en el
+ * indice.
+ *
+ *   node migrate.mjs search-index               las que falten
+ *   node migrate.mjs search-index --bibles=151,152
+ *
+ * Existe porque `build` construye la base ENTERA desde los JSON, y las
+ * versiones que se anaden despues por otra via (sync-turso-bibles.mjs) llegan
+ * con su texto pero sin indexar. El resultado es la peor clase de fallo: la
+ * version aparece en el selector, se puede elegir, y la busqueda devuelve cero
+ * resultados siempre — sin decir por que.
+ *
+ * Solo indexa lo que NO tiene ninguna fila. Reindexar una version ya presente
+ * exige borrar primero, y en un indice `contentless` borrar necesita el texto
+ * original, que el indice no guarda: para eso esta el rebuild completo.
+ */
+const commandSearchIndex = async (args) => {
+  const client = turso()
+
+  const pedidas = args
+    .find((part) => part.startsWith('--bibles='))
+    ?.split('=')[1]
+    .split(',')
+    .map(Number)
+    .filter(Number.isFinite)
+
+  const yaIndexadas = new Set(
+    (await client.execute(`SELECT DISTINCT rowid / ${2 ** 24} AS id FROM SearchIndex`)).rows.map((fila) => Number(fila.id))
+  )
+
+  const candidatas = (await client.execute('SELECT id, name FROM Bibles ORDER BY id')).rows
+    .map((fila) => ({ id: Number(fila.id), name: String(fila.name) }))
+    .filter((biblia) => (pedidas ? pedidas.includes(biblia.id) : true))
+    .filter((biblia) => !yaIndexadas.has(biblia.id))
+
+  if (candidatas.length === 0) {
+    console.log('No hay versiones sin indexar.')
+    return
+  }
+
+  console.log(`${candidatas.length} version(es) sin indexar:`)
+  for (const biblia of candidatas) console.log(`  ${biblia.id}  ${biblia.name}`)
+  console.log('')
+
+  for (const biblia of candidatas) {
+    const capitulos = await client.execute({
+      sql: 'SELECT book_id, chapter, body FROM Chapters WHERE bible_id = ? ORDER BY book_id, chapter',
+      args: [biblia.id]
+    })
+
+    const documentos = []
+
+    for (const fila of capitulos.rows) {
+      const bookId = Number(fila.book_id)
+      const chapter = Number(fila.chapter)
+      const body = fila.body instanceof ArrayBuffer ? Buffer.from(fila.body) : Buffer.from(fila.body.buffer ?? fila.body)
+      const versiculos = gunzipSync(body).toString('utf8').split(VERSE_SEPARATOR)
+
+      versiculos.forEach((texto, indice) => {
+        const limpio = stripMarkup(texto)
+        // Los versiculos vacios existen (algunas versiones los traen), pero un
+        // documento sin terminos solo ocupa sitio en el indice.
+        if (!limpio) return
+        documentos.push([encodeReference(biblia.id, bookId, chapter, indice + 1), limpio])
+      })
+    }
+
+    console.log(`  ${biblia.id} ${biblia.name}: ${num(documentos.length)} versiculos`)
+    await insertInBatches(client, 'INSERT INTO SearchIndex(rowid, text) VALUES (?, ?)', documentos, { label: 'versiculos', size: 1000 })
+  }
+
+  console.log('\nListo.')
+}
+
+// ---------------------------------------------------------------------------
 // strongs-search — indice de busqueda del diccionario
 // ---------------------------------------------------------------------------
 
@@ -1390,6 +1469,7 @@ const run = {
   audio: () => commandAudio(rest.includes('--dry-run'), rest.includes('--create-bucket')),
   link: () => commandLink(),
   'strongs-index': () => commandStrongIndex(rest),
+  'search-index': () => commandSearchIndex(rest),
   'strongs-search': () => commandStrongsSearch(),
   'strongs-i18n': () => commandStrongsI18n(rest),
   crossrefs: () => commandCrossRefs(rest, rest.includes('--dry-run')),
@@ -1409,6 +1489,7 @@ Uso: node migrate.mjs <comando>
   link             enlaza Bibles.legacy_path con el nombre de carpeta
   strongs-index    concordancia inversa Strong (donde aparece cada codigo)
   strongs-index --old=<id> --new=<id>   fuerza que edicion se lee por testamento
+  search-index     indexa las versiones que se cargaron sin pasar por build
   strongs-search   indice de busqueda del diccionario (titulo + definicion)
   strongs-i18n --lang=es                        copia las definiciones en espanol
   strongs-i18n --lang=en --greek=<f> --hebrew=<f>  importa el Strong original

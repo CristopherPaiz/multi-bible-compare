@@ -133,15 +133,8 @@ const RUTAS_SECUNDARIAS = [
 const Navbar = () => {
   const { t, cambiarIdioma, idiomaNavegador } = useContext(LanguageContext);
   const { theme, changeTheme } = useContext(ThemeContext);
-  const {
-    versiculoSeleccionadoNumero,
-    libroSeleccionado,
-    capituloSeleccionadoNumero,
-    Chapters,
-    setCapituloSeleccionadoNumero,
-    setVersiculoSeleccionado,
-    setVersiculoSeleccionadoNumero,
-  } = useContext(DataContext);
+  const { versiculoSeleccionadoNumero, libroSeleccionado, capituloSeleccionadoNumero, Chapters, setCapituloSeleccionadoNumero, setVersiculoSeleccionado, setVersiculoSeleccionadoNumero } =
+    useContext(DataContext);
   const [menuAbierto, setMenuAbierto] = useState(false);
   const menuRef = useRef(null);
   const { pathname } = useLocation();
@@ -305,7 +298,6 @@ const Navbar = () => {
           >
             <img src={theme === "light" ? MOON : SUN} alt="" className="h-5 w-5 dark:invert" />
           </button>
-
         </div>
       </nav>
 
@@ -354,9 +346,9 @@ const Navbar = () => {
                   Desaparece cuando el menú está abierto (ya se ve lo que hay) y
                   cuando estás dentro de una de esas pantallas (ya llegaste).
                 */}
-                {!menuAbierto && !enSecundaria && (
+                {/* {!menuAbierto && !enSecundaria && (
                   <span className="absolute -right-1.5 -top-0.5 h-1.5 w-1.5 rounded-full bg-amber-600 dark:bg-amber-300" aria-hidden="true"></span>
-                )}
+                )} */}
               </span>
               <span className="flex w-full items-center justify-center gap-0.5 text-[11px] leading-tight">
                 <span className="truncate">{t("Menu")}</span>

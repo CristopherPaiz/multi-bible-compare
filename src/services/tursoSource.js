@@ -13,8 +13,15 @@
  */
 import { API_URL } from "../config/dataSource";
 
-/** El backend rechaza más de 20 versiones por consulta. */
-const MAX_PER_REQUEST = 20;
+/**
+ * Tope de versiones por consulta que acepta el backend
+ * (`BIBLE.MAX_VERSIONS_PER_QUERY` en api/src/config/constants.ts).
+ *
+ * Los dos números van a la par. Si este fuera mayor, el agrupador mandaría
+ * lotes que el validador rechaza con un 400 y los paneles se quedarían vacíos
+ * sin explicación; si fuera menor, se harían dos peticiones donde cabe una.
+ */
+const MAX_PER_REQUEST = 25;
 
 // ---------------------------------------------------------------------------
 // Catálogo: puente entre el nombre de carpeta que usa la UI y el id de Turso

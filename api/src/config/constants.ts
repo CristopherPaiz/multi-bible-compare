@@ -65,8 +65,18 @@ export const SYSTEM = {
 } as const
 
 export const BIBLE = {
-  /** Tope de versiones por consulta. La UI ya limita a 20 (MAX_SELECTIONS). */
-  MAX_VERSIONS_PER_QUERY: 20,
+  /**
+   * Tope de versiones por consulta.
+   *
+   * Va emparejado con `MAX_SELECTIONS` (src/components/ListBooks.jsx) y con
+   * `MAX_PER_REQUEST` (src/services/tursoSource.js): la UI no deja elegir mas
+   * de esas, y el agrupador no manda lotes mayores.
+   *
+   * Los tres numeros tienen que moverse juntos. Subir solo la UI deja lotes que
+   * este validador rechaza con un 400, y la pantalla se queda vacia sin decir
+   * por que.
+   */
+  MAX_VERSIONS_PER_QUERY: 25,
   TOTAL_BOOKS: 66,
   /** Ultimo libro del Antiguo Testamento. */
   LAST_OLD_TESTAMENT_BOOK: 39,

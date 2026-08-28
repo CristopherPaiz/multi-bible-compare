@@ -32,6 +32,91 @@ export const ISO_POR_IDIOMA = {
 export const isoDeVersion = (ruta) => ISO_POR_IDIOMA[idiomaDeVersion(ruta)] ?? "no";
 
 /**
+ * Nombre del idioma del catálogo -> clave de traducción.
+ *
+ * El catálogo guarda el idioma tal como aparece en el nombre de la carpeta, y
+ * ahí cada uno viene en su propia lengua: "Español", "English", "Deutsch",
+ * "Français". Eso vale como identificador pero no para enseñárselo a alguien
+ * que tiene la app en inglés y ve "Deutsch" en una lista donde todo lo demás
+ * está traducido.
+ *
+ * Las claves ya existían para el modal de versiones; aquí solo se conectan con
+ * la forma en que el backend nombra los idiomas.
+ */
+const CLAVE_IDIOMA = {
+  Español: "Espanol",
+  English: "Ingles",
+  Greek: "Griego",
+  Hebrew: "Hebreo",
+  Guatemala: "Guatemala",
+  Latin: "Latin",
+  Náhuatl: "Nahuatl",
+  Nahuatl: "Nahuatl",
+  Aramaic: "Arameo",
+  Esperanto: "Esperanto",
+  Português: "Portugues",
+  Français: "Frances",
+  Deutsch: "Aleman",
+  Italiano: "Italiano",
+};
+
+/**
+ * Nombre del idioma traducido. Si no se conoce, se devuelve tal cual: es
+ * preferible enseñar "Deutsch" que una clave sin traducir o un hueco.
+ *
+ * @param {string} idioma nombre como lo da el catálogo
+ * @param {Function} t    traductor del `LanguageContext`
+ */
+export const nombreIdioma = (idioma, t) => {
+  const clave = CLAVE_IDIOMA[idioma];
+  if (!clave || typeof t !== "function") return idioma;
+  const traducido = t(clave);
+  return traducido === clave ? idioma : traducido;
+};
+
+/**
+ * La versión de referencia de cada idioma de la interfaz.
+ *
+ * Son las dos traducciones que alguien espera por defecto en su idioma: la
+ * Reina-Valera 1960 en español y la King James en inglés. No es un juicio sobre
+ * cuál es mejor, es cuál reconoce todo el mundo.
+ *
+ * Se identifican por el nombre de carpeta y no por su id numérico porque ese
+ * nombre es el identificador que usa toda la app —vive en el localStorage de
+ * los usuarios y en la URL—, mientras que el id es interno de la base y podría
+ * cambiar al reconstruirla.
+ */
+export const VERSION_POR_IDIOMA = {
+  es: "75. Español - Reina Valera [RV60] (1960)",
+  en: "09. English - King James Version [KJV] (1611)",
+};
+
+/** Nombre del idioma del catálogo que corresponde a cada idioma de interfaz. */
+export const IDIOMA_CATALOGO = { es: "Español", en: "English" };
+
+/**
+ * La versión de referencia dentro de un catálogo del backend.
+ *
+ * Si no estuviera —una base recortada, un catálogo filtrado— se cae a la
+ * primera del idioma que toque en vez de devolver nada: para lo que se usa
+ * (elegir con qué versión buscar) cualquier versión del idioma correcto sirve
+ * más que ninguna.
+ *
+ * @param {Array} catalogo respuesta de `/api/bibles`
+ * @param {string} idiomaUI "es" | "en"
+ */
+export const versionDeReferencia = (catalogo, idiomaUI) => {
+  const lista = Array.isArray(catalogo) ? catalogo : [];
+  const ruta = VERSION_POR_IDIOMA[idiomaUI];
+
+  const exacta = ruta ? lista.find((biblia) => biblia.legacyPath === ruta) : null;
+  if (exacta) return exacta;
+
+  const idioma = IDIOMA_CATALOGO[idiomaUI];
+  return lista.find((biblia) => biblia.language === idioma) ?? null;
+};
+
+/**
  * Idiomas que son el TEXTO ORIGINAL, no una traducción.
  *
  * Importa para elegir por defecto: una interlineal griega o hebrea es lo que

@@ -22,7 +22,7 @@ import {
   ORDEN_IDIOMAS,
 } from "../data/biblias";
 
-const MAX_SELECTIONS = 20;
+const MAX_SELECTIONS = 25;
 const CLAVE_SECCIONES = "seccionesBibliasAbiertas";
 
 const FILTROS = ["todas", "favoritas", "seleccionadas", "recomendadas"];
