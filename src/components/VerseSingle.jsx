@@ -9,7 +9,7 @@ import AnotacionesContext from "../context/AnotacionesContext";
 import { CLASES_COLOR } from "../utils/paletaAnotaciones";
 import { codigoDeVersion } from "../utils/versiones";
 import { marcarDiferencias } from "../utils/diffVersiones";
-import TRANSLATE from "/translationBeta.png";
+import TRANSLATE from "/translation.png";
 import SHARE from "/share.png";
 
 /**
