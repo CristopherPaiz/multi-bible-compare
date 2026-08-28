@@ -105,6 +105,33 @@ const SCHEMA = [
   `CREATE VIRTUAL TABLE IF NOT EXISTS StrongsIndex USING fts5(
     text, content='', tokenize="unicode61 remove_diacritics 2")`,
 
+  /*
+   * Definiciones por idioma de LECTURA.
+   *
+   * Va aparte de `Strongs` y no como filas suyas con una etiqueta porque casi
+   * todo lo de esa tabla es el mismo dato en cualquier idioma: la palabra
+   * griega es la misma, y tambien su transliteracion, su pronunciacion, su
+   * numero y su audio. Duplicar 14,198 filas para cambiar UN campo seria
+   * guardar cinco copias de lo que no cambia.
+   *
+   * Ademas `Strongs.code` es clave primaria, asi que meter dos filas por codigo
+   * obligaria a reconstruir la tabla entera — cirugia sobre la unica tabla que
+   * lee todo el diccionario.
+   *
+   * Ojo con el nombre: `Strongs.language` es griego/hebreo, el idioma de la
+   * PALABRA. Aqui `lang` es es/en, el idioma de quien LEE. Son dos ejes
+   * distintos y por eso no comparten columna.
+   *
+   * `derivation` y `kjv_def` solo vienen en la fuente inglesa; el espanol trae
+   * todo junto en `definition`. Se guardan aparte por si algun dia la ficha
+   * quiere pintarlos con estilo propio.
+   */
+  `CREATE TABLE IF NOT EXISTS StrongsI18n (
+    code TEXT NOT NULL, lang TEXT NOT NULL, definition TEXT NOT NULL,
+    derivation TEXT, kjv_def TEXT,
+    PRIMARY KEY (code, lang))`,
+  `CREATE INDEX IF NOT EXISTS idx_strongs_i18n_lang ON StrongsI18n(lang)`,
+
   `CREATE TABLE IF NOT EXISTS Users (
     id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT NOT NULL UNIQUE COLLATE NOCASE,
     email TEXT UNIQUE COLLATE NOCASE, password_hash TEXT NOT NULL,
@@ -924,9 +951,30 @@ const commandStrongIndex = async (args) => {
  */
 const STRONG_ESPACIO = 100000
 
-const codigoARowid = (code) => {
-  const idioma = code[0].toUpperCase() === 'G' ? 1 : 2
-  return idioma * STRONG_ESPACIO + Number(code.slice(1))
+/** Hueco entre idiomas de lectura dentro del mismo indice. */
+const STRONG_ESPACIO_LANG = 1000000
+
+/** es = 1, en = 2. Cualquier otro se trata como espanol. */
+const codigoDeLang = (lang) => (lang === 'en' ? 2 : 1)
+
+/**
+ * rowid = lang * 1e6 + (G=1|H=2) * 1e5 + numero
+ *
+ * Dos ejes en un solo entero. Asi filtrar por idioma de lectura, por griego o
+ * hebreo, o por los dos a la vez, es un rango de rowid y no un JOIN contra una
+ * tabla que el indice contentless ni siquiera tiene.
+ *
+ * El maximo (2*1e6 + 2*1e5 + 8674) cabe de sobra en un entero de SQLite.
+ */
+const codigoARowid = (code, lang = 'es') => {
+  const original = code[0].toUpperCase() === 'G' ? 1 : 2
+  return codigoDeLang(lang) * STRONG_ESPACIO_LANG + original * STRONG_ESPACIO + Number(code.slice(1))
+}
+
+/** "H0777" / "h777" -> "H777". La fuente inglesa rellena con ceros. */
+const normalizarCodigoStrong = (crudo) => {
+  const m = /^([GHgh])0*(\d+)$/.exec(String(crudo).trim())
+  return m ? `${m[1].toUpperCase()}${Number(m[2])}` : null
 }
 
 /**
@@ -939,25 +987,41 @@ const codigoARowid = (code) => {
 const commandStrongsSearch = async () => {
   const client = turso()
 
-  const filas = await client.execute('SELECT code, title, lemma, transliteration, definition FROM Strongs')
-  console.log(`${num(filas.rows.length)} entradas del diccionario.`)
+  // Lo invariante (lema, transliteracion) sale de Strongs; la definicion, de
+  // la tabla por idioma. Asi cada idioma de lectura tiene su documento y el
+  // lema griego se puede buscar desde cualquiera de ellos.
+  const base = await client.execute('SELECT code, title, lemma, transliteration FROM Strongs')
+  const porCodigo = new Map(base.rows.map((fila) => [String(fila.code), fila]))
+
+  const traducciones = await client.execute('SELECT code, lang, definition, derivation, kjv_def FROM StrongsI18n')
+  console.log(`${num(base.rows.length)} entradas, ${num(traducciones.rows.length)} definiciones.`)
 
   const documentos = []
+  let huerfanas = 0
   let vacias = 0
 
-  for (const fila of filas.rows) {
+  for (const fila of traducciones.rows) {
     const code = String(fila.code)
-    // El orden importa poco, pero el titulo primero ayuda a leer el indice al
-    // depurar con `sql "SELECT ..."`.
-    const texto = stripMarkup([fila.title, fila.transliteration, fila.lemma, fila.definition].filter(Boolean).join(' '))
+    const lang = String(fila.lang)
+
+    const invariante = porCodigo.get(code)
+    if (!invariante) {
+      huerfanas++
+      continue
+    }
+
+    const texto = stripMarkup(
+      [invariante.title, invariante.transliteration, invariante.lemma, fila.definition, fila.derivation, fila.kjv_def].filter(Boolean).join(' ')
+    )
 
     if (!texto) {
       vacias++
       continue
     }
-    documentos.push([codigoARowid(code), texto])
+    documentos.push([codigoARowid(code, lang), texto])
   }
 
+  if (huerfanas > 0) console.log(`  ${num(huerfanas)} definiciones sin entrada en Strongs; se omiten.`)
   if (vacias > 0) console.log(`  ${num(vacias)} sin texto que indexar; se omiten.`)
 
   console.log(`\nEscribiendo ${num(documentos.length)} documentos...`)
@@ -965,10 +1029,128 @@ const commandStrongsSearch = async () => {
   // un DELETE normal necesitaria el contenido que esta tabla no guarda.
   await client.execute(`INSERT INTO StrongsIndex(StrongsIndex) VALUES('delete-all')`)
   await insertInBatches(client, 'INSERT INTO StrongsIndex(rowid, text) VALUES (?, ?)', documentos, {
-    label: 'entradas'
+    label: 'documentos'
   })
 
-  console.log(`Listo. ${num(documentos.length)} entradas buscables.`)
+  console.log(`Listo. ${num(documentos.length)} documentos buscables.`)
+}
+
+// ---------------------------------------------------------------------------
+// strongs-i18n — definiciones del diccionario por idioma de lectura
+// ---------------------------------------------------------------------------
+
+/**
+ * Extrae el objeto de un diccionario de openscriptures.
+ *
+ * Los ficheros son JavaScript (`var strongsGreekDictionary = {...};`), no JSON,
+ * asi que se recorta entre la primera llave y la ultima. Es fragil ante un
+ * cambio de formato, y por eso el comando comprueba cuantas entradas salieron
+ * antes de escribir nada.
+ */
+const leerDiccionarioOpenScriptures = (ruta) => {
+  const crudo = readFileSync(ruta, 'utf8')
+  const inicio = crudo.indexOf('{')
+  const fin = crudo.lastIndexOf('}')
+  if (inicio < 0 || fin < inicio) throw new Error(`No parece un diccionario de openscriptures: ${ruta}`)
+  return JSON.parse(crudo.slice(inicio, fin + 1))
+}
+
+/**
+ * Carga las definiciones de un idioma en `StrongsI18n`.
+ *
+ *   node migrate.mjs strongs-i18n --lang=es
+ *     Copia a la tabla las definiciones en espanol que ya viven en `Strongs`.
+ *     No las borra de ahi: se dejan para no romper nada que aun las lea.
+ *
+ *   node migrate.mjs strongs-i18n --lang=en --greek=<f.js> --hebrew=<f.js>
+ *     Importa el diccionario original de Strong (dominio publico) desde los
+ *     ficheros de openscriptures.
+ */
+const commandStrongsI18n = async (args) => {
+  const valorDe = (nombre) => args.find((part) => part.startsWith(`--${nombre}=`))?.split('=').slice(1).join('=')
+
+  const lang = valorDe('lang') ?? 'en'
+  const client = turso()
+
+  if (lang === 'es') {
+    const filas = await client.execute(`SELECT code, definition FROM Strongs WHERE definition IS NOT NULL AND TRIM(definition) <> ''`)
+    const documentos = filas.rows.map((fila) => [String(fila.code), 'es', String(fila.definition), null, null])
+
+    console.log(`Copiando ${num(documentos.length)} definiciones en espanol...`)
+    await client.execute(`DELETE FROM StrongsI18n WHERE lang = 'es'`)
+    await insertInBatches(client, 'INSERT INTO StrongsI18n (code, lang, definition, derivation, kjv_def) VALUES (?, ?, ?, ?, ?)', documentos, {
+      label: 'definiciones'
+    })
+    console.log(`Listo. ${num(documentos.length)} definiciones en espanol.`)
+    return
+  }
+
+  const rutaGriego = valorDe('greek')
+  const rutaHebreo = valorDe('hebrew')
+
+  if (!rutaGriego && !rutaHebreo) {
+    console.error(`Falta al menos un diccionario.
+
+  node migrate.mjs strongs-i18n --lang=en --greek=strongs-greek-dictionary.js --hebrew=strongs-hebrew-dictionary.js
+
+Los ficheros son de openscriptures (dominio publico):
+  https://raw.githubusercontent.com/openscriptures/strongs/master/greek/strongs-greek-dictionary.js
+  https://raw.githubusercontent.com/openscriptures/strongs/master/hebrew/strongs-hebrew-dictionary.js`)
+    process.exit(1)
+  }
+
+  // Solo se cargan definiciones de codigos que EXISTEN en Strongs: la tabla es
+  // una traduccion de lo que hay, no una via para colar entradas nuevas por la
+  // puerta de atras.
+  const conocidos = new Set((await client.execute('SELECT code FROM Strongs')).rows.map((fila) => String(fila.code)))
+
+  const documentos = []
+  let desconocidos = 0
+  let sinTexto = 0
+
+  for (const ruta of [rutaGriego, rutaHebreo].filter(Boolean)) {
+    const absoluta = resolve(process.cwd(), ruta)
+    if (!existsSync(absoluta)) {
+      console.error(`No existe el archivo: ${absoluta}`)
+      process.exit(1)
+    }
+
+    const diccionario = leerDiccionarioOpenScriptures(absoluta)
+    const entradas = Object.entries(diccionario)
+    console.log(`${ruta}: ${num(entradas.length)} entradas.`)
+
+    for (const [crudo, datos] of entradas) {
+      const code = normalizarCodigoStrong(crudo)
+      if (!code || !conocidos.has(code)) {
+        desconocidos++
+        continue
+      }
+
+      const definicion = String(datos.strongs_def ?? '').trim()
+      if (!definicion) {
+        sinTexto++
+        continue
+      }
+
+      documentos.push([code, lang, definicion, datos.derivation ?? null, datos.kjv_def ?? null])
+    }
+  }
+
+  if (desconocidos > 0) console.log(`  ${num(desconocidos)} codigos que no estan en Strongs; se omiten.`)
+  if (sinTexto > 0) console.log(`  ${num(sinTexto)} sin definicion; se omiten.`)
+
+  if (documentos.length === 0) {
+    console.error('No se pudo leer ninguna definicion. ¿Son los ficheros correctos?')
+    process.exit(1)
+  }
+
+  console.log(`\nEscribiendo ${num(documentos.length)} definiciones en "${lang}"...`)
+  await client.execute({ sql: 'DELETE FROM StrongsI18n WHERE lang = ?', args: [lang] })
+  await insertInBatches(client, 'INSERT INTO StrongsI18n (code, lang, definition, derivation, kjv_def) VALUES (?, ?, ?, ?, ?)', documentos, {
+    label: 'definiciones'
+  })
+
+  console.log(`Listo. ${num(documentos.length)} definiciones en "${lang}".`)
 }
 
 // ---------------------------------------------------------------------------
@@ -1158,6 +1340,7 @@ const commandStats = async () => {
   const crossrefs = await opcional('SELECT COUNT(*) AS n FROM CrossRefs')
   const occurrences = await opcional('SELECT COUNT(*) AS n FROM StrongOccurrences')
   const strongsIndex = await opcional('SELECT COUNT(*) AS n FROM StrongsIndex')
+  const i18n = await opcional("SELECT GROUP_CONCAT(lang || '=' || n) AS n FROM (SELECT lang, COUNT(*) AS n FROM StrongsI18n GROUP BY lang)")
 
   console.log('')
   console.log('  BIBLIAN — estado en Turso')
@@ -1170,6 +1353,7 @@ const commandStats = async () => {
   console.log(`  Referencias cruzadas: ${num(crossrefs.n)}`)
   console.log(`  Apariciones Strong  : ${num(occurrences.n)}`)
   console.log(`  Strong buscables    : ${num(strongsIndex.n)}`)
+  console.log(`  Definiciones idioma : ${i18n.n ?? "—"}`)
   console.log(`  Usuarios            : ${num(users.n)}`)
   console.log('  ' + '-'.repeat(42))
   console.log('  (no incluye el peso de indices ni del FTS5)\n')
@@ -1207,6 +1391,7 @@ const run = {
   link: () => commandLink(),
   'strongs-index': () => commandStrongIndex(rest),
   'strongs-search': () => commandStrongsSearch(),
+  'strongs-i18n': () => commandStrongsI18n(rest),
   crossrefs: () => commandCrossRefs(rest, rest.includes('--dry-run')),
   stats: () => commandStats(),
   sql: () => commandSql(rest.filter((part) => !part.startsWith('--')).join(' '))
@@ -1225,6 +1410,8 @@ Uso: node migrate.mjs <comando>
   strongs-index    concordancia inversa Strong (donde aparece cada codigo)
   strongs-index --old=<id> --new=<id>   fuerza que edicion se lee por testamento
   strongs-search   indice de busqueda del diccionario (titulo + definicion)
+  strongs-i18n --lang=es                        copia las definiciones en espanol
+  strongs-i18n --lang=en --greek=<f> --hebrew=<f>  importa el Strong original
   crossrefs --file=<tsv>  importa el Treasury of Scripture Knowledge
   crossrefs --url=<url>   igual, pero descargando el TSV
   crossrefs --dry-run     analiza el archivo y NO escribe nada

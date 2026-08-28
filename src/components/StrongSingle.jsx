@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState, useMemo } from "react";
 import DataContext from "../context/DataContext";
 import { getStrongAudioUrl } from "../services/bibleSource";
 import ThemeContext from "../context/ThemeContext";
+import LanguageContext from "../context/LanguageContext";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 
 const processText = (html, strongFun) => {
@@ -45,6 +46,10 @@ const escapeHTML = (str) => str.replace(/[&<>"'/]/g, (char) => ({ "&": "&amp;", 
 
 const StrongSingle = () => {
   const { strongData, cargandoStrong, strong, strongFun, setModalStrong } = useContext(DataContext);
+  // Este componente no usaba el traductor: todos sus textos estaban escritos en
+  // español dentro del JSX, así que la ficha seguía en español con la interfaz
+  // puesta en inglés.
+  const { t, idiomaNavegador } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
   const [strongIndividual, setStrongIndividual] = useState(null);
   const [audio, setAudio] = useState(null);
@@ -221,8 +226,8 @@ const StrongSingle = () => {
           </span>
         </div>
 
-        <p className="text-base font-semibold text-white tracking-wide">Cargando definición...</p>
-        <p className="mt-1 text-xs text-gray-400">Consultando diccionario Strong</p>
+        <p className="text-base font-semibold text-white tracking-wide">{t("StrongCargandoDefinicion")}</p>
+        <p className="mt-1 text-xs text-gray-400">{t("StrongConsultando")}</p>
       </div>
     </div>
   );
@@ -261,13 +266,13 @@ const StrongSingle = () => {
               >
                 {strongIndividual.pl} {strongIndividual.ti ? `(${strongIndividual.ti})` : ""}
               </h2>
-              <p className="font-base text-lg mt-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Pronunciación:</p>
+              <p className="font-base text-lg mt-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">{t("StrongPronunciacion")}:</p>
               <p className="font-thin text-lg mb-2 animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">
                 <strong className="font-bold text-xl mt-1">{strongIndividual.ps}</strong>
                 {cargandoAudio ? (
                   <span
                     className="relative ml-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/80 text-white select-none shadow-sm cursor-wait"
-                    title="Cargando audio..."
+                    title={t("CargandoAudio")}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -291,7 +296,7 @@ const StrongSingle = () => {
                   <button
                     onClick={toggleAudio}
                     className="ml-2 w-6 h-6 text-center flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 active:scale-95 text-white outline-none transition shadow-sm select-none"
-                    title={isPlaying ? "Detener audio" : "Reproducir audio"}
+                    title={isPlaying ? t("DetenerPronunciacion") : t("ReproducirPronunciacion")}
                   >
                     {isPlaying ? (
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -320,7 +325,16 @@ const StrongSingle = () => {
                   </button>
                 ) : null}
               </p>
-              <p className="font-base text-lg animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">Definición:</p>
+              <p className="font-base text-lg animate-slide-in-top animate-duration-100 animate-delay-200 flex items-center">{t("StrongDefinicion")}:</p>
+              {/*
+                21 entradas del diccionario original no traen texto en inglés.
+                El backend las sirve en español y lo dice en `dfLang`; sin este
+                aviso el lector en inglés vería un párrafo en otro idioma sin
+                explicación y lo tomaría por un fallo.
+              */}
+              {strongIndividual.dfLang && strongIndividual.dfLang !== idiomaNavegador && (
+                <p className="mb-1 text-xs italic opacity-70">{t("StrongSinTraducir")}</p>
+              )}
               <div className="mb-8">
                 {React.Children.map(processedHtml, (child) => {
                   if (child.props.className === "Slink") {
@@ -360,10 +374,10 @@ const StrongSingle = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       </div>
-      <h3 className="text-lg font-bold">Definición no disponible</h3>
+      <h3 className="text-lg font-bold">{t("DefinicionNoDisponible")}</h3>
       <p className="mt-1 font-mono text-sm font-semibold text-amber-600 dark:text-amber-400">{strong}</p>
       <p className="mt-2 text-xs text-gray-600 dark:text-gray-400">
-        Este número no se encuentra en el índice de la concordancia clásica de James Strong (H1–H8674 / G1–G5624).
+        {t("StrongFueraDeIndice")}
       </p>
       <button
         onClick={() => {

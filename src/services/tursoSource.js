@@ -155,8 +155,11 @@ export const getChapter = async ({ legacyPath, bookId, chapter }) => {
  * porque el CDN servía lotes de 150 entradas. Aquí solo hace falta una, pero se
  * devuelve envuelta en arreglo para no tocar `StrongSingle`.
  */
-export const getStrongBatch = async ({ code, signal }) => {
-  const response = await fetch(`${API_URL}/api/strongs/${code}`, { signal });
+export const getStrongBatch = async ({ code, lang, signal }) => {
+  // `lang` es el idioma de LECTURA de la definición (es/en), no el de la
+  // palabra: el griego sigue siendo griego se lea desde donde se lea.
+  const params = lang ? `?lang=${lang}` : "";
+  const response = await fetch(`${API_URL}/api/strongs/${code}${params}`, { signal });
   if (!response.ok) throw new Error(`API respondió ${response.status}`);
 
   const entry = (await response.json()).data;
@@ -170,6 +173,10 @@ export const getStrongBatch = async ({ code, signal }) => {
       pl: entry.transliteration,
       ps: entry.pronunciation,
       df: entry.definition,
+      // Idioma en que llegó de verdad la definición. Puede no ser el pedido: si
+      // falta la traducción se sirve la española, y la ficha lo avisa en vez de
+      // dar por hecho que el usuario lee lo que pidió.
+      dfLang: entry.definitionLang,
       audioUrl: entry.audioUrl,
     },
   ];

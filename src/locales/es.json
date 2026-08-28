@@ -476,5 +476,11 @@
   "IndiceBiblias": "Índice de versiones",
   "BuscarModoBiblia": "En la Biblia",
   "BuscarModoStrong": "En los Strong",
-  "BuscarResultadosStrong": "{total} entrada(s) del diccionario"
+  "BuscarResultadosStrong": "{total} entrada(s) del diccionario",
+  "StrongPronunciacion": "Pronunciación",
+  "StrongDefinicion": "Definición",
+  "StrongCargandoDefinicion": "Cargando definición...",
+  "StrongConsultando": "Consultando diccionario Strong",
+  "StrongFueraDeIndice": "Este número no se encuentra en el índice de la concordancia clásica de James Strong (H1–H8674 / G1–G5624).",
+  "StrongSinTraducir": "Esta entrada no está traducida; se muestra en español."
 }

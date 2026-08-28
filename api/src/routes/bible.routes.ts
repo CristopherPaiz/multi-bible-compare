@@ -14,6 +14,7 @@ import {
   occurrencesQuerySchema,
   searchQuerySchema,
   strongParamsSchema,
+  strongQuerySchema,
   strongsSearchQuerySchema,
   versesQuerySchema
 } from '@validators/bible.schema.js'
@@ -36,7 +37,7 @@ router.get('/search', validateQuery(searchQuerySchema), asyncHandler(search))
 // La busqueda va ANTES que /strongs/:code: son rutas distintas (una sin
 // parametro), pero declararla primero deja claro que no compiten.
 router.get('/strongs', validateQuery(strongsSearchQuerySchema), asyncHandler(searchStrongs))
-router.get('/strongs/:code', validateParams(strongParamsSchema), asyncHandler(getStrong))
+router.get('/strongs/:code', validateParams(strongParamsSchema), validateQuery(strongQuerySchema), asyncHandler(getStrong))
 router.get('/strongs/:code/audio', validateParams(strongParamsSchema), asyncHandler(getStrongAudio))
 
 // Concordancia inversa: en que versiculos aparece el codigo.

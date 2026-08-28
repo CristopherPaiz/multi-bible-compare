@@ -123,6 +123,17 @@ export interface StrongEntry {
   pronunciation: string | null
   title: string | null
   definition: string | null
+  /**
+   * Idioma en que viene la definicion servida.
+   *
+   * Puede NO ser el que se pidio: si falta la traduccion se responde en
+   * espanol, y el cliente necesita saberlo para poder avisar en vez de dar por
+   * hecho que lo que ve es lo que pidio.
+   */
+  definitionLang: 'es' | 'en'
+  /** Solo la fuente inglesa las trae por separado; en espanol van dentro de `definition`. */
+  derivation?: string | null
+  kjvDef?: string | null
   /** URL publica directa al mp3. `null` si no hay audio o falta configurar storage. */
   audioUrl: string | null
 }

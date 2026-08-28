@@ -55,13 +55,15 @@ export const buscar = async ({ q, bibles, book, page = 1, limit = 25, signal }) 
  * administrador no ha construido el índice: es una función que no está, no un
  * fallo, y quien llama puede seguir mostrando sus resultados locales.
  */
-export const buscarStrongs = async ({ q, idioma, pagina = 1, limite = 25, signal }) => {
+export const buscarStrongs = async ({ q, idioma, lang, pagina = 1, limite = 25, signal }) => {
   const vacio = { data: [], pagination: { page: 1, limit: limite, total: 0, totalPages: 1 } };
 
   if (!estaDisponible() || String(q ?? "").trim().length < LARGO_MINIMO) return vacio;
 
   const params = new URLSearchParams({ q, page: String(pagina), limit: String(limite) });
   if (idioma) params.set("language", idioma);
+  // Idioma de la definición en que se busca y que se devuelve.
+  if (lang) params.set("lang", lang);
 
   const response = await fetch(`${API_URL}/api/strongs?${params}`, { signal });
   if (!response.ok) return vacio;

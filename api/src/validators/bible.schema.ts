@@ -101,9 +101,22 @@ export type OccurrencesQuery = z.infer<typeof occurrencesQuerySchema>
  * transliteración con su índice local; lo que solo puede resolverse aquí es la
  * definición, que no viaja al navegador.
  */
+/**
+ * Idioma de LECTURA de la definicion. No confundir con griego/hebreo, que es
+ * el idioma de la palabra: son dos ejes distintos.
+ *
+ * Por defecto espanol, que es el unico que estaba antes de existir esta
+ * columna: asi un cliente viejo que no manda nada sigue viendo lo de siempre.
+ */
+export const strongLangSchema = z.enum(['es', 'en']).default('es')
+
+export const strongQuerySchema = z.object({ lang: strongLangSchema })
+export type StrongQuery = z.infer<typeof strongQuerySchema>
+
 export const strongsSearchQuerySchema = z.object({
   q: z.string().trim().min(SEARCH.MIN_QUERY_LENGTH, `Mínimo ${SEARCH.MIN_QUERY_LENGTH} caracteres.`).max(100),
   language: z.enum(['greek', 'hebrew']).optional(),
+  lang: strongLangSchema,
   page: z.coerce.number().int().min(1).default(1),
   limit: z.coerce.number().int().min(1).max(SEARCH.MAX_LIMIT).default(SEARCH.DEFAULT_LIMIT)
 })

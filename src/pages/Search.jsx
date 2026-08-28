@@ -13,7 +13,7 @@ const CLAVE_STORAGE_BIBLIA = "biblia_busqueda_id";
 const SUGERENCIAS_RAPIDAS = ["amor", "paz", "fe", "esperanza", "gracia", "sabiduría", "luz"];
 
 const Search = () => {
-  const { t } = useContext(LanguageContext);
+  const { t, idiomaNavegador } = useContext(LanguageContext);
   const {
     libros,
     setLibroSeleccionado,
@@ -197,7 +197,7 @@ const Search = () => {
     setCargando(true);
     setError(null);
 
-    buscarStrongs({ q: termino, pagina, limite: POR_PAGINA, signal: controller.signal })
+    buscarStrongs({ q: termino, lang: idiomaNavegador, pagina, limite: POR_PAGINA, signal: controller.signal })
       .then(setResultadosStrong)
       .catch((fallo) => {
         if (fallo?.name === "AbortError") return;
@@ -207,7 +207,7 @@ const Search = () => {
       .finally(() => setCargando(false));
 
     return () => controller.abort();
-  }, [modo, termino, pagina, disponible]);
+  }, [modo, termino, pagina, disponible, idiomaNavegador]);
 
   // Al cambiar de modo se vuelve a la primera página: la 3 de un buscador no
   // significa nada en el otro.

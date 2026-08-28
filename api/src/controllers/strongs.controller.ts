@@ -5,7 +5,7 @@ import { HttpError } from '@middlewares/error.middleware.js'
 import { sendSuccess } from '@utils/response.helper.js'
 import { buildPublicUrl, STORAGE_PREFIXES } from '@config/storage.config.js'
 import { CACHE_CONTROL, HTTP_STATUS, MESSAGES } from '@config/constants.js'
-import { StrongParams, StrongsSearchQuery } from '@validators/bible.schema.js'
+import { StrongParams, StrongQuery, StrongsSearchQuery } from '@validators/bible.schema.js'
 import { StrongEntry } from '@apptypes/index.js'
 
 /**
@@ -22,9 +22,20 @@ const resolveAudioUrl = (language: string, audioKey: string | null): string | nu
   return buildPublicUrl(`${prefix}/${audioKey}`)
 }
 
-/** GET /api/strongs/:code  — ej. /api/strongs/G2424 */
+/**
+ * GET /api/strongs/:code?lang=es|en  — ej. /api/strongs/G2424?lang=en
+ *
+ * La palabra (lema, transliteracion, pronunciacion, audio) sale de `Strongs`,
+ * porque es la misma se lea en el idioma que se lea. Solo la DEFINICION viene
+ * de `StrongsI18n`.
+ *
+ * Si el idioma pedido no tiene esa entrada, se responde en espanol y se dice en
+ * `definitionLang`. Devolver la ficha sin definicion seria peor: la palabra ya
+ * es util, y el cliente puede avisar de que el texto no esta traducido.
+ */
 export const getStrong = async (_req: Request, res: Response): Promise<void> => {
   const { code } = validated<StrongParams>(res, 'params')
+  const { lang } = validated<StrongQuery>(res, 'query')
 
   const row = await queryOne(
     `SELECT code, language, number, title, lemma, transliteration, pronunciation, definition, audio_key
@@ -36,6 +47,25 @@ export const getStrong = async (_req: Request, res: Response): Promise<void> => 
     throw new HttpError(HTTP_STATUS.NOT_FOUND, MESSAGES.STRONGS.NOT_FOUND)
   }
 
+  /*
+   * Se piden las DOS de golpe (la del idioma y la de respaldo) en una sola
+   * consulta: pedir primero una y, si falla, la otra, seria un segundo viaje a
+   * la base justo en el caso en que el usuario ya esta esperando.
+   *
+   * La tabla puede no existir todavia si no se ha corrido `strongs-i18n`; en
+   * ese caso se usa la definicion que `Strongs` sigue teniendo.
+   */
+  let traducciones: Awaited<ReturnType<typeof query>> = []
+  try {
+    traducciones = await query('SELECT lang, definition, derivation, kjv_def FROM StrongsI18n WHERE code = ? AND lang IN (?, ?)', [code, lang, 'es'])
+  } catch (error) {
+    if (!(error instanceof Error && /no such table/i.test(error.message))) throw error
+  }
+
+  const pedida = traducciones.find((fila) => String(fila.lang) === lang)
+  const respaldo = traducciones.find((fila) => String(fila.lang) === 'es')
+  const elegida = pedida ?? respaldo
+
   const language = String(row.language) === 'greek' ? 'greek' : 'hebrew'
   const audioKey = row.audio_key === null ? null : String(row.audio_key)
 
@@ -46,7 +76,10 @@ export const getStrong = async (_req: Request, res: Response): Promise<void> => 
     lemma: row.lemma === null ? null : String(row.lemma),
     transliteration: row.transliteration === null ? null : String(row.transliteration),
     pronunciation: row.pronunciation === null ? null : String(row.pronunciation),
-    definition: row.definition === null ? null : String(row.definition),
+    definition: elegida ? String(elegida.definition) : row.definition === null ? null : String(row.definition),
+    definitionLang: pedida ? lang : 'es',
+    derivation: elegida?.derivation === null || elegida?.derivation === undefined ? null : String(elegida.derivation),
+    kjvDef: elegida?.kjv_def === null || elegida?.kjv_def === undefined ? null : String(elegida.kjv_def),
     title: row.title === null ? null : String(row.title),
     audioUrl: resolveAudioUrl(language, audioKey)
   }
@@ -84,14 +117,35 @@ export const getStrongAudio = async (_req: Request, res: Response): Promise<void
 /**
  * Codigo Strong <-> rowid del indice de busqueda.
  *
- * Debe coincidir con `codigoARowid` en migrate.mjs. FTS5 contentless solo
- * devuelve un rowid, asi que el rowid ES la clave: la primera cifra dice el
- * idioma y el resto es el numero.
+ * Debe coincidir con `codigoARowid` en migrate.mjs:
+ *
+ *     rowid = idiomaLectura * 1e6 + (G=1|H=2) * 1e5 + numero
+ *
+ * Dos ejes en un entero. FTS5 contentless solo devuelve un rowid, asi que el
+ * rowid ES la clave: no hay tabla contra la que hacer JOIN.
  */
 const STRONG_ESPACIO = 100000
+const STRONG_ESPACIO_LANG = 1000000
 
-const rowidACodigo = (rowid: number): string =>
-  `${Math.floor(rowid / STRONG_ESPACIO) === 1 ? 'G' : 'H'}${rowid % STRONG_ESPACIO}`
+/** Se descarta el idioma de lectura: el codigo es el mismo en todos. */
+const rowidACodigo = (rowid: number): string => {
+  const sinIdioma = rowid % STRONG_ESPACIO_LANG
+  return `${Math.floor(sinIdioma / STRONG_ESPACIO) === 1 ? 'G' : 'H'}${sinIdioma % STRONG_ESPACIO}`
+}
+
+/**
+ * Rango [desde, hasta) que cubre un idioma de lectura y, si se indica, solo su
+ * parte griega o hebrea.
+ *
+ * Filtrar por rango es lo que hace que las dos dimensiones salgan gratis: sin
+ * el empaquetado haria falta una tabla auxiliar que el indice no tiene.
+ */
+const rangoRowid = (lang: 'es' | 'en', original?: 'greek' | 'hebrew'): [number, number] => {
+  const base = (lang === 'en' ? 2 : 1) * STRONG_ESPACIO_LANG
+  if (!original) return [base, base + STRONG_ESPACIO_LANG]
+  const desde = base + (original === 'greek' ? 1 : 2) * STRONG_ESPACIO
+  return [desde, desde + STRONG_ESPACIO]
+}
 
 /**
  * Convierte lo escrito en una consulta FTS5 segura.
@@ -125,7 +179,7 @@ const aExpresionFts = (crudo: string): string => {
  * roto, y la UI puede decirlo.
  */
 export const searchStrongs = async (_req: Request, res: Response): Promise<void> => {
-  const { q, language, page, limit } = validated<StrongsSearchQuery>(res, 'query')
+  const { q, language, lang, page, limit } = validated<StrongsSearchQuery>(res, 'query')
 
   const expresion = aExpresionFts(q)
   if (!expresion) {
@@ -134,13 +188,13 @@ export const searchStrongs = async (_req: Request, res: Response): Promise<void>
   }
 
   /*
-   * El filtro por idioma es un rango de rowid, no un JOIN: como la primera
-   * cifra del rowid codifica el idioma, todas las entradas griegas caen en
-   * [100000, 200000) y las hebreas en [200000, 300000).
+   * El rango SIEMPRE acota el idioma de lectura, aunque no se filtre por
+   * griego/hebreo: sin eso, buscar "amor" devolveria la misma entrada dos
+   * veces, una por cada idioma en que esta indexada.
    */
-  const rango = language ? (language === 'greek' ? [STRONG_ESPACIO, 2 * STRONG_ESPACIO] : [2 * STRONG_ESPACIO, 3 * STRONG_ESPACIO]) : null
-  const filtro = rango ? 'AND rowid >= ? AND rowid < ?' : ''
-  const argsRango = rango ?? []
+  const [desde, hasta] = rangoRowid(lang, language)
+  const filtro = 'AND rowid >= ? AND rowid < ?'
+  const argsRango = [desde, hasta]
 
   let total: number
   let filas
@@ -176,10 +230,20 @@ export const searchStrongs = async (_req: Request, res: Response): Promise<void>
     return
   }
 
+  /*
+   * La definicion se saca de la tabla por idioma con un LEFT JOIN, y se cae a
+   * la de `Strongs` cuando falta. Un INNER JOIN escondería resultados que el
+   * indice SI encontro, que es la peor forma de fallar: el contador diria 40 y
+   * la lista mostraria 37.
+   */
   const entradas = await query(
-    `SELECT code, language, number, title, lemma, transliteration, pronunciation, definition
-       FROM Strongs WHERE code IN (${placeholders(codigos.length)})`,
-    codigos
+    `SELECT s.code, s.language, s.number, s.title, s.lemma, s.transliteration, s.pronunciation,
+            COALESCE(i.definition, s.definition) AS definition,
+            CASE WHEN i.definition IS NULL THEN 'es' ELSE ? END AS definition_lang
+       FROM Strongs s
+       LEFT JOIN StrongsI18n i ON i.code = s.code AND i.lang = ?
+      WHERE s.code IN (${placeholders(codigos.length)})`,
+    [lang, lang, ...codigos]
   )
 
   // Se devuelve en el orden del RANKING de FTS5, no en el que SQLite entregue
@@ -198,6 +262,9 @@ export const searchStrongs = async (_req: Request, res: Response): Promise<void>
       transliteration: fila.transliteration === null ? null : String(fila.transliteration),
       pronunciation: fila.pronunciation === null ? null : String(fila.pronunciation),
       definition: fila.definition === null ? null : String(fila.definition),
+      // Puede no coincidir con lo pedido: 21 entradas del diccionario original
+      // no traen texto y se sirven en español.
+      definitionLang: String(fila.definition_lang) === 'en' ? ('en' as const) : ('es' as const),
       audioUrl: null
     }))
 

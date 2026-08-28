@@ -544,7 +544,9 @@ export const DataProvider = ({ children }) => {
         // La fuente decide de dónde sale: el CDN sirve lotes de 150 entradas y
         // Turso una sola, pero ambas devuelven un arreglo y StrongSingle busca
         // dentro por id. Así este componente no sabe cuál está activa.
-        const data = await getStrongBatch({ code: strong, signal: controller.signal });
+        // El diccionario se pide en el idioma de la interfaz; si esa entrada
+        // no está traducida, el backend responde en español y lo indica.
+        const data = await getStrongBatch({ code: strong, lang: idiomaNavegador, signal: controller.signal });
         if (!cancelado) setStrongData(Array.isArray(data) ? data : []);
       } catch (error) {
         if (!cancelado && error?.name !== "AbortError") {
@@ -562,7 +564,7 @@ export const DataProvider = ({ children }) => {
       cancelado = true;
       controller.abort();
     };
-  }, [strong]);
+  }, [strong, idiomaNavegador]);
 
 
 

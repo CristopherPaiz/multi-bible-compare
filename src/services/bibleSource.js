@@ -51,7 +51,7 @@ export const getChapter = ({ legacyPath, bookId, chapter, signal }) =>
   withFallback("getChapter", { legacyPath, bookId, chapter, signal });
 
 /** Arreglo de entradas Strong; la UI busca dentro por `id`. */
-export const getStrongBatch = ({ code, signal }) => withFallback("getStrongBatch", { code, signal });
+export const getStrongBatch = ({ code, lang, signal }) => withFallback("getStrongBatch", { code, lang, signal });
 
 /**
  * Precalienta la fuente activa. Sin efecto en el CDN (no hay servidor que
