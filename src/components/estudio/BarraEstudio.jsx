@@ -130,6 +130,17 @@ const BarraEstudio = () => {
 
   const alternarPanel = (id) => setPanel((previo) => (previo === id ? null : id));
 
+  /*
+   * En móvil el icono va SIEMPRE con su nombre debajo.
+   *
+   * Antes la etiqueta era `hidden sm:inline`, así que en el teléfono quedaban
+   * seis dibujos sin una palabra: no hay forma de saber qué hace un icono de
+   * cadena o uno de flecha hasta pulsarlo, y pulsar para averiguarlo es
+   * justamente lo que no se debería tener que hacer.
+   *
+   * Es además el mismo patrón que la barra de pestañas de arriba —icono encima,
+   * texto debajo—, así que no hay que aprender dos gramáticas distintas.
+   */
   const boton = (id, Icono, etiqueta, { activo = false, insignia = null } = {}) => (
     <button
       type="button"
@@ -137,24 +148,36 @@ const BarraEstudio = () => {
       title={etiqueta}
       aria-label={etiqueta}
       aria-expanded={panel === id}
-      className={`relative grid h-10 w-10 shrink-0 place-items-center rounded-xl transition-colors sm:h-9 sm:w-auto sm:gap-1.5 sm:px-3 ${
+      className={`relative flex min-w-0 flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-0.5 py-1 transition-colors sm:h-9 sm:flex-none sm:flex-row sm:gap-1.5 sm:px-3 sm:py-0 ${
         panel === id || activo
           ? "bg-amber-500 text-white dark:bg-purple-600"
           : "text-neutral-700 hover:bg-black/10 dark:text-neutral-200 dark:hover:bg-white/10"
       }`}
     >
-      <span className="flex items-center gap-1.5">
-        <Icono className="h-5 w-5" />
-        <span className="hidden text-xs font-semibold sm:inline">{etiqueta}</span>
-      </span>
+      <Icono className="h-5 w-5 shrink-0" />
+      {/* `truncate` y no un texto más corto: en una pantalla estrecha se
+          recorta el final, que sigue siendo más informativo que nada. */}
+      <span className="w-full truncate text-center text-[9px] font-semibold leading-none sm:text-xs">{etiqueta}</span>
       {insignia !== null && insignia > 0 && (
-        <span className="absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-sky-500 px-1 text-[10px] font-bold text-white">{insignia}</span>
+        <span className="absolute right-0 top-0 grid h-4 min-w-4 place-items-center rounded-full bg-sky-500 px-1 text-[10px] font-bold text-white">{insignia}</span>
       )}
     </button>
   );
 
   return (
-    <div className="sticky bottom-0 z-20 mt-4">
+    <>
+      {/*
+        Reserva el sitio que la barra ya no ocupa en el flujo.
+
+        La barra era `sticky bottom-0`, y un elemento pegajoso solo se ancla
+        cuando HAY algo que desplazar: con una sola versión abierta la página es
+        más corta que la pantalla, no hay scroll, y la barra se quedaba flotando
+        a media altura. `fixed` la ancla siempre, pero la saca del flujo, así
+        que hace falta este hueco para que el último versículo no quede debajo.
+      */}
+      <div className="h-[calc(4rem+env(safe-area-inset-bottom))]" aria-hidden="true"></div>
+
+      <div className="fixed inset-x-0 bottom-0 z-20">
       {/*
         En móvil, panel y barra van de borde a borde y sin esquinas
         redondeadas: pegados a los lados se leen como parte de la pantalla. Con
@@ -247,7 +270,10 @@ const BarraEstudio = () => {
             miga de pan de arriba: aquí solo aparece cuando sobra sitio. */}
         <span className="hidden min-w-0 flex-1 truncate text-xs font-semibold text-neutral-700 dark:text-neutral-200 lg:block">{referencia}</span>
 
-        <div className="flex flex-1 items-center justify-around gap-1 lg:flex-none lg:justify-end lg:gap-2">
+        {/* `items-stretch` y cada botón con `flex-1`: en móvil los seis se
+            reparten el ancho a partes iguales, así que el área de toque no
+            depende de lo larga que sea la palabra. */}
+        <div className="flex flex-1 items-stretch gap-0.5 lg:flex-none lg:justify-end lg:gap-2">
           {boton("resaltar", IconoResaltar, t("Resaltar"), { activo: Boolean(colorActual) })}
           {boton("notas", IconoNota, t("NotasTitulo"), { insignia: totalNotas })}
           {boton("referencias", IconoReferencias, t("ReferenciasTitulo"))}
@@ -262,18 +288,17 @@ const BarraEstudio = () => {
             title={t("DiferenciasTitulo")}
             aria-label={t("DiferenciasTitulo")}
             aria-pressed={modoDiferencias}
-            className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl transition-colors sm:h-9 sm:w-auto sm:px-3 ${
+            className={`flex min-w-0 flex-1 flex-col items-center justify-center gap-0.5 rounded-xl px-0.5 py-1 transition-colors sm:h-9 sm:flex-none sm:flex-row sm:gap-1.5 sm:px-3 sm:py-0 ${
               modoDiferencias ? "bg-amber-500 text-white dark:bg-purple-600" : "text-neutral-700 hover:bg-black/10 dark:text-neutral-200 dark:hover:bg-white/10"
             }`}
           >
-            <span className="flex items-center gap-1.5">
-              <IconoDiferencias className="h-5 w-5" />
-              <span className="hidden text-xs font-semibold sm:inline">{t("DiferenciasTitulo")}</span>
-            </span>
+            <IconoDiferencias className="h-5 w-5 shrink-0" />
+            <span className="w-full truncate text-center text-[9px] font-semibold leading-none sm:text-xs">{t("DiferenciasTitulo")}</span>
           </button>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
