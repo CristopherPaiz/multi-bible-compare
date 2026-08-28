@@ -435,11 +435,11 @@
   "ExportarCapituloDesc": "The whole chapter as Markdown.",
   "DiferenciasTitulo": "Differences",
   "AtlasTitulo": "Atlas",
-  "AtlasIntro": "Where and when what you are reading happened. Tap a place for its coordinates, or a reference to open the passage.",
+  "AtlasIntro": "Where and when what you are reading happened. Pinch or drag the map; tap a reference to open the passage.",
   "AtlasTodas": "All periods",
   "AtlasCronologia": "Timeline",
   "AtlasMapaAlt": "Schematic map of the biblical world",
-  "AtlasNotaMapa": "Schematic map: positions are real, coastlines are not drawn. Works offline.",
+  "AtlasNotaMapa": "Coastlines from Natural Earth (public domain). Works offline: the map ships inside the app.",
   "AtlasNotaFechas": "Conventional dates. Those marked “c.” are approximate and debated among scholars.",
   "AtlasUbicacionIncierta": "Disputed location",
   "ConcordanciaTitulo": "Where it appears",
@@ -452,5 +452,13 @@
   "ReferenciasVerEn": "Show in",
   "ExportarDesde": "From",
   "AudioLeer": "Read",
-  "Panel_referencias_de": "Cross references for {ref}"
+  "Panel_referencias_de": "Cross references for {ref}",
+  "AtlasPestanaMapa": "Map",
+  "AtlasAcercar": "Zoom in",
+  "AtlasAlejar": "Zoom out",
+  "AtlasReiniciar": "Fit all",
+  "AtlasTipo_ciudad": "City",
+  "AtlasTipo_monte": "Mountain",
+  "AtlasTipo_agua": "Water",
+  "AtlasTipo_region": "Region"
 }

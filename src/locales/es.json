@@ -435,11 +435,11 @@
   "ExportarCapituloDesc": "El capítulo completo en Markdown.",
   "DiferenciasTitulo": "Diferencias",
   "AtlasTitulo": "Atlas",
-  "AtlasIntro": "Dónde y cuándo ocurrió lo que estás leyendo. Toca un lugar para ver sus coordenadas, o una referencia para abrir el pasaje.",
+  "AtlasIntro": "Dónde y cuándo ocurrió lo que estás leyendo. Pellizca o arrastra el mapa; toca una referencia para abrir el pasaje.",
   "AtlasTodas": "Todas las épocas",
   "AtlasCronologia": "Cronología",
   "AtlasMapaAlt": "Mapa esquemático del mundo bíblico",
-  "AtlasNotaMapa": "Mapa esquemático: las posiciones son reales, las costas no se dibujan. Funciona sin conexión.",
+  "AtlasNotaMapa": "Costas de Natural Earth (dominio público). Funciona sin conexión: el mapa viaja dentro de la app.",
   "AtlasNotaFechas": "Fechas convencionales. Las marcadas con «c.» son aproximadas y se discuten entre especialistas.",
   "AtlasUbicacionIncierta": "Ubicación discutida",
   "ConcordanciaTitulo": "Dónde aparece",
@@ -452,5 +452,13 @@
   "ReferenciasVerEn": "Ver en",
   "ExportarDesde": "Desde",
   "AudioLeer": "Leer",
-  "Panel_referencias_de": "Referencias cruzadas de {ref}"
+  "Panel_referencias_de": "Referencias cruzadas de {ref}",
+  "AtlasPestanaMapa": "Mapa",
+  "AtlasAcercar": "Acercar",
+  "AtlasAlejar": "Alejar",
+  "AtlasReiniciar": "Ver todo",
+  "AtlasTipo_ciudad": "Ciudad",
+  "AtlasTipo_monte": "Monte",
+  "AtlasTipo_agua": "Agua",
+  "AtlasTipo_region": "Región"
 }
