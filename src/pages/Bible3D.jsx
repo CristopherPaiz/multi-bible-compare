@@ -301,6 +301,32 @@ const Bible3D = () => {
 
   const piezas = useMemo(() => capitulosAPiezas(cargados, mostrarStrong), [cargados, mostrarStrong]);
 
+  /*
+   * Si esta versión trae aparato crítico: Strong (`<sup>`), morfología (`<m>`)
+   * o glosa (`<n>`).
+   *
+   * Se mira el TEXTO que llegó, no `CARACTERISTICAS_POR_BIBLIA`. Los metadatos
+   * describen la versión entera, y el aparato no siempre está en todo el
+   * volumen: hay ediciones que lo traen solo en el Nuevo Testamento. Mirando lo
+   * que de verdad se está leyendo, el botón acierta también en esos libros. Es
+   * lo mismo que hace `VerseSingle` para decidir si enseña la pestaña de glosa.
+   *
+   * `some` sobre `some` corta en cuanto encuentra uno, así que en una versión
+   * con Strong se resuelve en el primer versículo del primer capítulo, no
+   * recorriendo los veintiún capítulos encadenados.
+   */
+  const hayAparato = useMemo(
+    () => cargados.some(({ versiculos }) => Object.values(versiculos).some((verso) => /<(sup|m|n)\b/i.test(verso))),
+    [cargados]
+  );
+
+  // Al saltar a una versión sin aparato, el interruptor se apaga. Si se quedara
+  // encendido a escondidas, volver a una que sí lo tiene la abriría con los
+  // números puestos sin que nadie los haya pedido.
+  useEffect(() => {
+    if (!hayAparato) setMostrarStrong(false);
+  }, [hayAparato]);
+
   const nombreLibro = libros[`book${referencia.bookId}`] ?? "";
   const tituloVersion = TITULO_POR_RUTA[version] ?? version;
   const idioma = idiomaDesdeRuta(version);
@@ -345,9 +371,11 @@ const Bible3D = () => {
 
         <div className="flex-1" />
 
-        <Boton onClick={() => setMostrarStrong((previo) => !previo)} activo={mostrarStrong} titulo="Strong">
-          {"H/G"}
-        </Boton>
+        {hayAparato && (
+          <Boton onClick={() => setMostrarStrong((previo) => !previo)} activo={mostrarStrong} titulo={t("Libro3D_Aparato")}>
+            {"H/G"}
+          </Boton>
+        )}
       </header>
 
       <main className="relative flex flex-1 flex-col overflow-hidden">
