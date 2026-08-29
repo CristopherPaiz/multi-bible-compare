@@ -16,8 +16,6 @@ const MARCADO_POR_DEFECTO = { morfologia: false, glosa: true };
 
 const MAX_HISTORIAL = 40;
 
-const claveReferencia = (item) => `${item.libroSeleccionado}:${item.capituloSeleccionadoNumero}`;
-
 /**
  * Normaliza y agrupa entradas históricas por Libro + Capítulo,
  * consolidando todos los versículos visitados en ese capítulo.

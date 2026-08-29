@@ -1,9 +1,10 @@
-import { useContext, useEffect, useRef } from "react";
+import { useCallback, useContext, useEffect, useRef } from "react";
 import AuthContext from "../context/AuthContext";
 import DataContext from "../context/DataContext";
 import { getCatalogMaps } from "../services/tursoSource";
 import { agregarHistorial, guardarFavoritos, leerFavoritos, leerHistorial } from "../services/authSource";
 import { favoritos as almacenFavoritos } from "../services/almacenLocal";
+import { fusionarListas, guardarBase, huellaDeLista, leerBase } from "../services/fusion";
 import { claveDeId, idDeClave } from "../data/canon";
 
 /**
@@ -23,12 +24,25 @@ import { claveDeId, idDeClave } from "../data/canon";
  * De ahí las tres fases. Mientras no se llegue a "listo" no sale ni un PUT:
  *
  *   quieto      no hay sesión, o no se sabe si la hay.
- *   fusionando  bajando del servidor y uniendo con lo local.
- *   listo       fusión confirmada. A partir de aquí sí se puede empujar.
+ *   fusionando  bajando del servidor y fusionando con lo local.
+ *   listo       fusión confirmada. A partir de aquí sí se puede sincronizar.
  *
  * Y si la fusión FALLA no se pasa a "listo": se reintenta. Antes se marcaba
  * listo pasara lo que pasara, así que con el backend dormido el primer clic
  * mandaba solo lo local y vaciaba el servidor.
+ *
+ * ---------------------------------------------------------------------------
+ * Favoritos: fusión a TRES bandas, no unión
+ * ---------------------------------------------------------------------------
+ * Bajar y unir tampoco basta. La unión no sabe distinguir "esta versión falta
+ * porque la desmarqué" de "falta porque este dispositivo nunca la vio", así que
+ * desmarcar un favorito no se propagaba nunca: el otro dispositivo lo volvía a
+ * subir. Cada cambio dispara ahora un ciclo completo contra la BASE guardada.
+ * Ver `services/fusion.js`.
+ *
+ * El HISTORIAL se queda con el trato simple —añadir y nunca quitar— porque su
+ * endpoint es un POST por entrada, no un reemplazo: dos dispositivos no pueden
+ * pisarse, y una entrada de historial de más no le cuesta nada a nadie.
  */
 
 const FASE = { QUIETO: "quieto", FUSIONANDO: "fusionando", LISTO: "listo" };
@@ -43,13 +57,19 @@ const RETARDO_EMPUJE_MS = 800;
 const ESPERAS_REINTENTO_MS = [3000, 8000, 20000];
 
 /**
- * Tope de entradas de historial que se suben de golpe al iniciar sesión.
+ * Tope de entradas de historial que se suben de golpe.
  *
- * El endpoint es de una en una y el limitador global permite 300 peticiones por
- * media hora. Subir las 40 de un tirón se come un octavo del presupuesto del
- * usuario para nada: las más viejas ya no le interesan a nadie.
+ * El caso que manda es este: alguien lee un rato en el móvil SIN cuenta y
+ * después inicia sesión. Todo lo que leyó como invitado está solo en ese
+ * teléfono, y el inicio de sesión es la única oportunidad de subirlo.
+ *
+ * Estaba en 15 para no gastar peticiones, y era demasiado tacaño: quien hubiera
+ * leído treinta capítulos de invitado perdía quince en cuanto cambiara de
+ * teléfono. El historial local está topado en 40 (`MAX_HISTORIAL`), el
+ * limitador permite 300 peticiones por media hora y esto pasa una vez por
+ * sesión: cuarenta caben de sobra.
  */
-const MAX_HISTORIAL_A_SUBIR = 15;
+const MAX_HISTORIAL_A_SUBIR = 40;
 
 /** Identidad de una entrada de historial: el capítulo, que es como se agrupa. */
 const claveHistorial = (entrada) => `${entrada.libroSeleccionado}:${entrada.capituloSeleccionadoNumero}`;
@@ -85,6 +105,46 @@ export const useSync = () => {
   /** Capítulos que el servidor ya tiene. Evita repetir POSTs en cada visita. */
   const subidos = useRef(new Set());
 
+  /** Huella de la lista que se dejó sincronizada, para no encadenar ciclos. */
+  const ultimaHuellaFavoritos = useRef(null);
+
+  const usuarioId = usuario?.id ?? null;
+
+  /**
+   * Ciclo completo de favoritos: BAJAR -> FUSIONAR A TRES BANDAS -> ESCRIBIR
+   * AQUÍ -> SUBIR.
+   *
+   * La fusión va contra la BASE —la lista que el servidor tenía la última vez
+   * que este dispositivo sincronizó— y no contra la unión. Sin base no se puede
+   * distinguir "esta versión falta porque la desmarqué" de "falta porque este
+   * dispositivo nunca la vio", así que desmarcar un favorito no se propagaba: el
+   * otro dispositivo lo volvía a subir. Ver `fusion.js`.
+   */
+  const sincronizarFavoritos = useCallback(async () => {
+    if (!usuarioId) return;
+
+    const { byLegacyPath, byId } = await getCatalogMaps();
+
+    const remotosIds = await leerFavoritos();
+    const remotas = remotosIds.map((id) => byId.get(id)?.legacyPath).filter(Boolean);
+
+    const fusionadas = fusionarListas({
+      base: leerBase("favoritos", usuarioId) ?? [],
+      local: almacenFavoritos.leer(),
+      remoto: remotas,
+    });
+
+    almacenFavoritos.escribir(fusionadas);
+    ultimaHuellaFavoritos.current = huellaDeLista(fusionadas);
+
+    await guardarFavoritos(fusionadas.map((ruta) => byLegacyPath.get(ruta)).filter(Boolean));
+
+    // La base solo se mueve si el PUT salió bien: adelantarla dejaría al
+    // dispositivo creyendo que el servidor tiene algo que nunca llegó, y en el
+    // ciclo siguiente esa diferencia se leería como un borrado ajeno.
+    guardarBase("favoritos", usuarioId, fusionadas);
+  }, [usuarioId]);
+
   // --- Fase 1: bajar y fusionar -------------------------------------------
   useEffect(() => {
     // `sesionIncierta` = no se pudo preguntar quién soy. No es "sin sesión": no
@@ -106,25 +166,7 @@ export const useSync = () => {
     const fusionar = async () => {
       const { byLegacyPath, byId } = await getCatalogMaps();
 
-      // --- Favoritos: unión, nunca reemplazo ---
-      //
-      // Si el usuario marcó unos en el teléfono y otros en la laptop, se quedan
-      // todos. La unión se escribe en el almacén compartido, así que la lista
-      // en pantalla se actualiza sola: no hay copia en el estado de nadie que
-      // pueda quedarse vieja y volver a pisarla.
-      const localesAntes = almacenFavoritos.leer();
-      const remotosIds = await leerFavoritos();
-      if (cancelado) return;
-
-      const remotasRutas = remotosIds.map((id) => byId.get(id)?.legacyPath).filter(Boolean);
-      const union = almacenFavoritos.fusionar(remotasRutas);
-
-      // Solo se sube si la unión aporta algo que el servidor no tenga.
-      const faltanEnServidor = union.length !== remotasRutas.length || localesAntes.some((r) => !remotasRutas.includes(r));
-      if (faltanEnServidor) {
-        const ids = union.map((ruta) => byLegacyPath.get(ruta)).filter(Boolean);
-        await guardarFavoritos(ids);
-      }
+      await sincronizarFavoritos();
       if (cancelado) return;
 
       // --- Historial: baja, fusiona y sube lo que falte ---
@@ -178,13 +220,17 @@ export const useSync = () => {
        */
       if (fase.current !== FASE.LISTO) usuarioFusionado.current = null;
     };
-  }, [usuario, disponible, sesionIncierta, fusionarHistorial]);
+  }, [usuario, disponible, sesionIncierta, fusionarHistorial, sincronizarFavoritos]);
 
-  // --- Fase 2: empujar los cambios de favoritos ---------------------------
+  // --- Fase 2: sincronizar los cambios de favoritos -----------------------
   //
   // Se escucha el almacén en vez de recibir avisos desde `ListBooks`: así da
-  // igual desde dónde se marque un favorito, y el empuje queda bloqueado
-  // mientras la fusión no haya terminado.
+  // igual desde dónde se marque un favorito.
+  //
+  // Cada cambio dispara un CICLO COMPLETO, no un empuje: `PUT /favorites`
+  // reemplaza la lista entera en el servidor, así que subir la local a ciegas
+  // borraba lo que el otro dispositivo hubiera marcado desde el inicio de
+  // sesión.
   useEffect(() => {
     if (!usuario || !disponible) return undefined;
 
@@ -192,9 +238,16 @@ export const useSync = () => {
 
     const alCambiar = () => {
       if (fase.current !== FASE.LISTO) return;
+      // La escritura que hace la propia sincronización también avisa: sin este
+      // corte, cada ciclo encadenaría el siguiente.
+      if (huellaDeLista(almacenFavoritos.leer()) === ultimaHuellaFavoritos.current) return;
+
       clearTimeout(temporizador);
       temporizador = setTimeout(() => {
-        empujarFavoritos(almacenFavoritos.leer());
+        sincronizarFavoritos().catch(() => {
+          // El favorito ya está guardado en el almacén local; el servidor es la
+          // copia. El próximo cambio (o el próximo inicio de sesión) reintenta.
+        });
       }, RETARDO_EMPUJE_MS);
     };
 
@@ -203,28 +256,46 @@ export const useSync = () => {
       clearTimeout(temporizador);
       cancelarSuscripcion();
     };
-  }, [usuario, disponible]);
+  }, [usuario, disponible, sincronizarFavoritos]);
 
-  // --- Fase 3: empujar cada capítulo nuevo del historial -------------------
+  // --- Fase 3: subir los capítulos nuevos del historial -------------------
+  //
+  // El historial NO usa fusión a tres bandas y no le hace falta: su endpoint es
+  // un POST por entrada, no un PUT que reemplaza. Dos dispositivos no pueden
+  // pisarse, el servidor poda solo, y una entrada de más no le cuesta nada a
+  // nadie. Aquí basta con no repetir lo ya subido.
   useEffect(() => {
     if (!usuario || !disponible || fase.current !== FASE.LISTO) return undefined;
 
-    const nueva = history.find((entrada) => !subidos.current.has(claveHistorial(entrada)));
-    if (!nueva) return undefined;
+    const pendientes = history.filter((entrada) => !subidos.current.has(claveHistorial(entrada)));
+    if (pendientes.length === 0) return undefined;
 
     let cancelado = false;
+
     // Mismo retardo que los favoritos: recorrer capítulos seguidos no debe
     // disparar una petición por cada uno.
     const temporizador = setTimeout(async () => {
-      if (cancelado) return;
-      // Se marca antes de la petición: si falla, no se reintenta en bucle. El
-      // capítulo se subirá en la próxima sesión, que para un historial basta.
-      subidos.current.add(claveHistorial(nueva));
-      try {
-        const { byLegacyPath } = await getCatalogMaps();
-        await empujarEntradaHistorial(nueva, byLegacyPath);
-      } catch {
-        // El historial local ya quedó guardado; el servidor es la copia.
+      const { byLegacyPath } = await getCatalogMaps().catch(() => ({ byLegacyPath: null }));
+      if (cancelado || !byLegacyPath) return;
+
+      /*
+       * Se drena la lista ENTERA, no solo la primera.
+       *
+       * Antes se subía una por cambio de historial, así que una cola de veinte
+       * capítulos pendientes necesitaba veinte capítulos MÁS de lectura para
+       * vaciarse. Con la cola llena tras iniciar sesión —lo normal si se estuvo
+       * leyendo sin cuenta— eso significaba que casi nada llegaba al servidor.
+       */
+      for (const entrada of pendientes.slice(0, MAX_HISTORIAL_A_SUBIR)) {
+        if (cancelado) return;
+        // Se marca ANTES de la petición: si falla, no se reintenta en bucle. El
+        // capítulo se subirá en la próxima sesión, que para un historial basta.
+        subidos.current.add(claveHistorial(entrada));
+        try {
+          await empujarEntradaHistorial(entrada, byLegacyPath);
+        } catch {
+          // El historial local ya quedó guardado; el servidor es la copia.
+        }
       }
     }, RETARDO_EMPUJE_MS);
 
@@ -260,22 +331,3 @@ const empujarEntradaHistorial = (entrada, byLegacyPath) => {
   });
 };
 
-/**
- * Empuja los favoritos al servidor.
- *
- * Ya no la llama nadie de fuera: `ListBooks` la usaba y ese era el problema
- * —desde un componente no hay forma de saber si la fusión terminó, y el PUT
- * reemplaza la lista entera—. Ahora solo la dispara la fase 2, que sí lo sabe.
- *
- * El error se traga a propósito: el favorito ya quedó guardado en el almacén
- * local y el servidor es solo la copia.
- */
-const empujarFavoritos = async (rutas) => {
-  try {
-    const { byLegacyPath } = await getCatalogMaps();
-    const ids = rutas.map((ruta) => byLegacyPath.get(ruta)).filter(Boolean);
-    await guardarFavoritos(ids);
-  } catch {
-    // Silencioso a propósito.
-  }
-};

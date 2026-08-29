@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Tabs from "./Tabs";
-import { useContext, useRef, useEffect, useState, useMemo } from "react";
+import { useContext, useRef, useEffect, useState, useMemo, useCallback } from "react";
 import LanguageContext from "../context/LanguageContext";
 import DataContext from "../context/DataContext";
 import { useBloquearScroll } from "../hooks/useBloquearScroll";
@@ -42,10 +42,15 @@ const ModalStrong = ({ isOpen, onClose, anchorRect }) => {
     }
   }, [isOpen]);
 
-  const handleCerrarConAnimacion = () => {
+  /*
+   * `useCallback` para poder entrar como dependencia del efecto de abajo sin
+   * volver a suscribir el oyente de teclado en cada render. Se cierra con
+   * retardo para que la animacion de salida termine antes de desmontar.
+   */
+  const handleCerrarConAnimacion = useCallback(() => {
     setIsAnimating(false);
     setTimeout(onClose, 240);
-  };
+  }, [onClose]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -55,7 +60,7 @@ const ModalStrong = ({ isOpen, onClose, anchorRect }) => {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, modalStrong]);
+  }, [isOpen, modalStrong, handleCerrarConAnimacion]);
 
   if (!isRendered) return null;
 

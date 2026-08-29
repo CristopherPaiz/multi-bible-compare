@@ -36,7 +36,7 @@ const mismasEntradas = (a, b) => a.length === b.length && a.every((valor, indice
 
 /**
  * @param {string} clave Nombre en localStorage.
- * @returns almacén con `leer`, `escribir`, `actualizar`, `fusionar`, `suscribir`.
+ * @returns almacén con `leer`, `escribir`, `actualizar`, `suscribir`.
  */
 export const crearAlmacenLista = (clave) => {
   /*
@@ -69,9 +69,6 @@ export const crearAlmacenLista = (clave) => {
 
   const actualizar = (transformar) => escribir(transformar(instantanea));
 
-  /** Unión conservando el orden: primero lo que ya había, luego lo nuevo. */
-  const fusionar = (entrantes) => escribir([...new Set([...instantanea, ...(entrantes ?? [])])]);
-
   const suscribir = (oyente) => {
     oyentes.add(oyente);
     return () => {
@@ -91,7 +88,7 @@ export const crearAlmacenLista = (clave) => {
     });
   }
 
-  return { clave, leer, escribir, actualizar, fusionar, suscribir };
+  return { clave, leer, escribir, actualizar, suscribir };
 };
 
 /** Suscribe un componente al almacén. Se re-renderiza cuando la lista cambia. */
