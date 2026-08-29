@@ -1,4 +1,4 @@
-import { forwardRef, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { forwardRef, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import PropTypes from "prop-types";
 import HTMLFlipBook from "react-pageflip";
 import { usePaginator } from "./usePaginator";
@@ -42,11 +42,88 @@ const ANCHO_MAXIMO_HOJA = 470;
  */
 const MARGEN = { exterior: 0.1, lomo: 0.132, vertical: 0.072 };
 
-/** Duración del giro, en ms. La corta es para `prefers-reduced-motion`. */
-const GIRO = { normal: 520, reducido: 120 };
+/**
+ * Duración del giro, en ms. La corta es para `prefers-reduced-motion`.
+ *
+ * 420 y no 520: es el único número que separa "pasar hoja" de "esperar a que
+ * pase la hoja". Sigue siendo un giro con cuerpo —por debajo de ~300 el papel
+ * deja de leerse como papel— pero encadenar varias ya no se hace largo.
+ */
+const GIRO = { normal: 420, reducido: 120 };
+
+/**
+ * Cuántos giros se guardan si el lector va más deprisa que la animación.
+ *
+ * `page-flip` IGNORA `flipNext()` mientras hay un giro en marcha: no encola ni
+ * avisa, simplemente no pasa nada. Pulsando cinco veces seguidas se pasaba una
+ * hoja, y eso es justo lo que se siente como que el libro va lento — no lo está,
+ * es que se están tirando las pulsaciones.
+ *
+ * El tope es bajo a propósito: guardar veinte convertiría un manotazo en medio
+ * minuto de animación de la que ya no se puede salir.
+ */
+const MAX_GIROS_EN_COLA = 3;
 
 /** Objeto estable: `HTMLFlipBook` está memoizado y un literal nuevo por render lo invalidaría. */
 const SIN_ESTILO = {};
+
+/**
+ * Cuántas hojas a cada lado de la actual llevan su texto puesto.
+ *
+ * Cuatro cubre de sobra lo que se puede llegar a ver: en apaisado se ven dos
+ * hojas y durante el giro asoma la siguiente, y el arrastre desde la esquina no
+ * alcanza más allá de la contigua. El resto son hojas vacías con su titulillo y
+ * su folio.
+ */
+const RADIO_VENTANA = 4;
+
+/**
+ * Qué hojas tienen que materializar su texto.
+ *
+ * ---------------------------------------------------------------------------
+ * Por qué esto no puede ser una prop normal
+ * ---------------------------------------------------------------------------
+ * `page-flip` SACA los hijos del div que React le dio y los mete en su propio
+ * `.stf__block`, y su `updateItems` hace `innerHTML = ""` sobre ese bloque. Por
+ * eso la lista de páginas está memoizada: en cuanto la librería ve una lista
+ * nueva llama a `updateItems` y la siguiente reconciliación de React revienta
+ * con `NotFoundError`.
+ *
+ * O sea que no se puede pasar "qué hoja es la actual" hacia abajo: cambiar una
+ * prop de las hojas cambia la lista. La salida es que cada hoja se SUSCRIBA a
+ * este almacén: la lista de elementos no se toca nunca, y `useSyncExternalStore`
+ * solo re-renderiza aquellas cuyo booleano cambió —dos o tres por giro, no las
+ * ochenta.
+ *
+ * ---------------------------------------------------------------------------
+ * Por qué hace falta
+ * ---------------------------------------------------------------------------
+ * Cada hoja lleva `dangerouslySetInnerHTML` con el capítulo entero que asoma en
+ * ella, recortado por `overflow`. Con doce capítulos encadenados eso son unas
+ * ochenta hojas, cada una con su copia completa de un capítulo: decenas de
+ * miles de nodos. `page-flip` esconde las que no se ven con `display: none`, así
+ * que no cuestan pintado —pero sí cuestan construirlas, y el libro se reconstruye
+ * entero cada vez que se encadena un capítulo. Justo mientras se pasa hoja.
+ */
+const crearVentana = () => {
+  let rango = { desde: -1, hasta: -1 };
+  const oyentes = new Set();
+
+  return {
+    fijar(desde, hasta) {
+      if (desde === rango.desde && hasta === rango.hasta) return;
+      rango = { desde, hasta };
+      for (const oyente of oyentes) oyente();
+    },
+    contiene: (indice) => indice >= rango.desde && indice <= rango.hasta,
+    suscribir(oyente) {
+      oyentes.add(oyente);
+      return () => {
+        oyentes.delete(oyente);
+      };
+    },
+  };
+};
 
 const calcularDimensiones = (anchoLibre, altoLibre) => {
   const cabenDos = anchoLibre >= ANCHO_MINIMO_HOJA * 2;
@@ -99,7 +176,22 @@ const useMovimientoReducido = () => {
  * componente de función sin `forwardRef` se traga esa ref, la librería recibe
  * una lista vacía de hojas y el libro se queda en blanco sin dar ningún error.
  */
-const Hoja = forwardRef(function Hoja({ html, desplazamiento, altura, folio, libro, capitulo, caja, izquierda, mostrarStrong, idioma }, ref) {
+const Hoja = forwardRef(function Hoja(
+  { html, desplazamiento, altura, folio, libro, capitulo, caja, izquierda, mostrarStrong, idioma, ventana, indice },
+  ref
+) {
+  /*
+   * El texto solo se materializa si la hoja está cerca de la que se está
+   * mirando. La suscripción devuelve un booleano, así que React descarta el
+   * re-render de las hojas cuya respuesta no cambió: un giro re-renderiza dos o
+   * tres, no la ochenta.
+   *
+   * El armazón (titulillo, recorte con su alto, folio) se pinta siempre: es lo
+   * que hace que la hoja vacía mida y pese lo mismo que la llena, y que al
+   * entrar en la ventana el texto aparezca sin mover nada.
+   */
+  const visible = useSyncExternalStore(ventana.suscribir, () => ventana.contiene(indice));
+
   return (
     <div className={`hoja ${izquierda ? "hoja--izq" : "hoja--der"}`} ref={ref} data-density="soft">
       <div className="hoja__contenido" style={estiloContenido(caja, izquierda)}>
@@ -109,12 +201,14 @@ const Hoja = forwardRef(function Hoja({ html, desplazamiento, altura, folio, lib
         </div>
         <div className="hoja__ventana">
           <div className="hoja__recorte" style={{ height: altura }}>
-            <div
-              lang={idioma}
-              className={`hoja__flujo texto-biblico ${mostrarStrong ? "" : "hoja__flujo--limpio"}`}
-              style={{ marginTop: -desplazamiento }}
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            {visible && (
+              <div
+                lang={idioma}
+                className={`hoja__flujo texto-biblico ${mostrarStrong ? "" : "hoja__flujo--limpio"}`}
+                style={{ marginTop: -desplazamiento }}
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            )}
           </div>
         </div>
         <div className="hoja__folio">{folio}</div>
@@ -134,6 +228,9 @@ Hoja.propTypes = {
   izquierda: PropTypes.bool,
   mostrarStrong: PropTypes.bool,
   idioma: PropTypes.string,
+  /** Almacén de qué hojas materializan su texto. Estable durante toda la vida del libro. */
+  ventana: PropTypes.object.isRequired,
+  indice: PropTypes.number.isRequired,
 };
 
 /** Tapa. Se marca `hard` para que gire rígida y ocupe una página entera. */
@@ -234,6 +331,9 @@ const Book3D = ({
   const ventanaRef = useRef(null);
   const flipRef = useRef(null);
 
+  /** Giros pedidos mientras el libro estaba girando. Positivo = adelante. */
+  const cola = useRef(0);
+
   const [libre, setLibre] = useState({ ancho: 0, alto: 0 });
   const [ventana, setVentana] = useState({ ancho: 0, alto: 0 });
 
@@ -251,6 +351,9 @@ const Book3D = ({
   const [pagina, setPagina] = useState(0);
 
   const movimientoReducido = useMovimientoReducido();
+
+  /** Estable durante toda la vida del componente: las hojas se suscriben a ella. */
+  const ventanaHojas = useMemo(crearVentana, []);
 
   const { ancho, alto, cabenDos } = useMemo(() => calcularDimensiones(libre.ancho, libre.alto), [libre]);
 
@@ -434,13 +537,28 @@ const Book3D = ({
             izquierda={cabenDos && (indice + preliminares) % 2 === 1}
             mostrarStrong={mostrarStrong}
             idioma={idioma}
+            ventana={ventanaHojas}
+            indice={indice}
           />
         )
       ),
       <Tapa key="contratapa" titulo={titulo} version={version} />,
     ],
-    [hojasConRelleno, libro, caja, titulo, version, idioma, mostrarStrong, cabenDos, preliminares]
+    [hojasConRelleno, libro, caja, titulo, version, idioma, mostrarStrong, cabenDos, preliminares, ventanaHojas]
   );
+
+  /*
+   * La ventana sigue a la página actual.
+   *
+   * `useLayoutEffect` y no `useEffect`: si se ajustara después de pintar, el
+   * primer fotograma tras remontar el libro saldría con las hojas vacías y el
+   * texto entraría de golpe justo después. Aquí se coloca antes de que se vea
+   * nada.
+   */
+  useLayoutEffect(() => {
+    const centro = paginaActual - preliminares;
+    ventanaHojas.fijar(centro - RADIO_VENTANA, centro + RADIO_VENTANA);
+  }, [ventanaHojas, paginaActual, preliminares]);
 
   /*
    * Dónde abrir cuando el usuario cambia de sitio a propósito.
@@ -472,6 +590,18 @@ const Book3D = ({
       const control = flipRef.current?.pageFlip?.();
       if (!control) return;
 
+      /*
+       * Girando: se apunta la intención y se atiende al terminar.
+       *
+       * Los sentidos opuestos se restan, que es lo que uno espera: adelante y
+       * atrás seguidos dejan el libro donde estaba en vez de encolar dos giros.
+       */
+      if (control.getState?.() !== "read") {
+        const paso = direccion === "adelante" ? 1 : -1;
+        cola.current = Math.max(-MAX_GIROS_EN_COLA, Math.min(MAX_GIROS_EN_COLA, cola.current + paso));
+        return;
+      }
+
       if (direccion === "adelante") {
         const enUltimaHoja = paginaActual >= preliminares + hojas.length - 1;
         if (enUltimaHoja && haySiguiente) {
@@ -494,6 +624,43 @@ const Book3D = ({
   useEffect(() => {
     onControles?.(pasar);
   }, [onControles, pasar]);
+
+  /*
+   * El `pasar` de AHORA, para el giro encolado.
+   *
+   * El de la clausura de `alTerminarGiro` lleva dentro el `paginaActual` que
+   * había cuando empezó el giro, o sea uno atrasado. Con él, el último giro de
+   * la cola al final del texto comparaba contra la hoja equivocada y se quedaba
+   * mirando la contratapa en vez de saltar al capítulo siguiente.
+   */
+  const pasarActual = useRef(pasar);
+  pasarActual.current = pasar;
+
+  /*
+   * Se vacía la cola al terminar cada giro.
+   *
+   * Se drena de uno en uno y volviendo a pasar por `pasar` —en vez de saltar
+   * directo con `turnToPage`— para que los giros encolados hereden lo mismo que
+   * los normales: al llegar a la última hoja, el último de la cola salta al
+   * capítulo siguiente en vez de estrellarse contra la contratapa.
+   *
+   * El `requestAnimationFrame` es porque `onFlip` se emite en el mismo tick en
+   * que la librería vuelve a `read`: encadenar ahí mismo puede colarse antes de
+   * que termine de asentar su estado. De paso, para entonces React ya aplicó el
+   * `setPagina` y `pasarActual` apunta al `pasar` correcto.
+   *
+   * Estable (`[]`): es la `onFlip` de la librería, y una función nueva por
+   * render la haría re-renderizar en cada giro sin necesidad.
+   */
+  const alTerminarGiro = useCallback((evento) => {
+    setPagina(evento.data);
+    if (cola.current === 0) return;
+
+    const direccion = cola.current > 0 ? "adelante" : "atras";
+    cola.current -= cola.current > 0 ? 1 : -1;
+    requestAnimationFrame(() => pasarActual.current(direccion));
+  }, []);
+
 
   // Se avisa del estado en cada cambio de página Y cada vez que se repagina:
   // el total cambia al encadenar capítulo, y la barra de abajo lo muestra.
@@ -527,6 +694,14 @@ const Book3D = ({
    *    firma y el libro se remonta limpio.
    */
   const firma = [ancho, alto, cabenDos, libro, version, firmaMaqueta, piezas.length, cortes.length, cortes[cortes.length - 1] ?? 0].join("|");
+
+  // Cambiar de capítulo o de tamaño remonta el libro; una cola de giros de la
+  // maqueta anterior ya no significa nada. Va DESPUÉS de `firma`: declarada más
+  // arriba, el efecto la leía dentro de su zona muerta temporal y reventaba con
+  // un ReferenceError en cada render.
+  useEffect(() => {
+    cola.current = 0;
+  }, [firma]);
 
   /*
    * Dónde está el cuerpo del libro dentro del bloque.
@@ -621,7 +796,7 @@ const Book3D = ({
             showPageCorners
             className="libro"
             style={SIN_ESTILO}
-            onFlip={(evento) => setPagina(evento.data)}
+            onFlip={alTerminarGiro}
           >
             {paginas}
           </Libro>

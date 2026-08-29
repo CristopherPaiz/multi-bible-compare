@@ -153,6 +153,19 @@ const useFuentesListas = () => {
 };
 
 /**
+ * ¿Es `a` el principio de `b`?
+ *
+ * Encadenar el capítulo siguiente AÑADE una pieza al final y no toca ninguna de
+ * las anteriores. Eso hace que el reparto viejo siga siendo válido para todo lo
+ * que ya estaba —la garantía la da el `clear: both` de cada pieza— y es lo que
+ * permite seguir enseñando el libro mientras se mide lo nuevo.
+ *
+ * Cambiar de capítulo, de versión o de libro NO produce un prefijo, así que ahí
+ * el reparto viejo se descarta como debe ser.
+ */
+const esPrefijo = (a, b) => a.length <= b.length && a.every((pieza, indice) => pieza === b[indice]);
+
+/**
  * @param {string[]} piezas   Un HTML por capítulo, en orden (ver `prosa.js`).
  * @param {number} ancho      Ancho útil de la caja de texto, en px.
  * @param {number} altoUtil   Alto útil de la caja de texto, en px.
@@ -185,11 +198,34 @@ export const usePaginator = (piezas, ancho, altoUtil, firma) => {
 
   const clave = `${firma}|${ancho}`;
 
+  /*
+   * El último reparto COMPLETO, con las piezas de las que salió.
+   *
+   * Es lo que se sigue enseñando mientras se mide un capítulo recién encadenado.
+   * Sin esto, `usePaginator` devolvía `listo: false` en cuanto faltaba una
+   * medida, `Book3D` desmontaba el libro entero por su `listo &&`, y al volver
+   * lo remontaba: el libro DESAPARECÍA de la pantalla durante la medición. Eso
+   * es el parpadeo, y como el encadenado se dispara justo cuando el lector se
+   * acerca al final, ocurría exactamente mientras se pasaba hoja deprisa.
+   */
+  const ultimoBueno = useRef({ clave: null, altoUtil: 0, piezas: [], cortes: [0], altoContenido: 0, marcas: [] });
+
+  /*
+   * `medido` se lee de una ref y NO es dependencia del efecto.
+   *
+   * Como dependencia, cada medición disparaba el efecto otra vez —el objeto es
+   * nuevo— para salir por la comprobación de "ya está todo": una pasada de más
+   * por ronda, cada una recorriendo el conjunto de piezas.
+   */
+  const medidoRef = useRef(medido);
+  medidoRef.current = medido;
+
   useLayoutEffect(() => {
     const medidor = medidorRef.current;
-    if (!medidor || !fuentes || ancho <= 0 || altoUtil <= 0 || !piezas.length) return;
+    if (!medidor || !fuentes || ancho <= 0 || altoUtil <= 0 || !piezas.length) return undefined;
 
-    const vigente = medido.firma === clave ? medido.mapa : null;
+    const guardado = medidoRef.current;
+    const vigente = guardado.firma === clave ? guardado.mapa : null;
 
     /*
      * El mapa se REHACE con las piezas de ahora, en vez de irle añadiendo las
@@ -208,13 +244,42 @@ export const usePaginator = (piezas, ancho, altoUtil, firma) => {
      * efecto midiendo en bucle.
      */
     const unicas = new Set(piezas);
-    if (vigente && vigente.size === unicas.size && [...unicas].every((pieza) => vigente.has(pieza))) return;
+    if (vigente && vigente.size === unicas.size && [...unicas].every((pieza) => vigente.has(pieza))) return undefined;
 
-    const mapa = new Map();
-    for (const pieza of unicas) mapa.set(pieza, vigente?.get(pieza) ?? medirPieza(medidor, pieza));
+    const medir = () => {
+      const mapa = new Map();
+      for (const pieza of unicas) mapa.set(pieza, vigente?.get(pieza) ?? medirPieza(medidor, pieza));
 
-    setMedido({ firma: clave, mapa });
-  }, [piezas, clave, ancho, altoUtil, fuentes, medido]);
+      // El medidor se queda con el HTML de la última pieza puesto. Vaciarlo
+      // ahorra tener una copia de un capítulo entero viva en el DOM sin que
+      // nadie la vaya a mirar.
+      medidor.innerHTML = "";
+
+      setMedido({ firma: clave, mapa });
+    };
+
+    /*
+     * Medir es caro: `innerHTML`, recorrer todos los nodos de texto y pedir
+     * `getClientRects()` en cada uno. Dentro de `useLayoutEffect` eso bloquea
+     * ANTES de pintar, o sea que se come fotogramas justo mientras gira la hoja.
+     *
+     * Si el reparto anterior sigue sirviendo —encadenar solo añade al final— no
+     * hay ninguna prisa: se deja pintar primero y se mide después. Si no sirve
+     * (primer capitulo, cambio de cuerpo de letra) hay que medir ya, porque no
+     * hay nada que enseñar mientras tanto.
+     */
+    const respaldo = ultimoBueno.current;
+    const hayRespaldo =
+      respaldo.clave === clave && respaldo.altoUtil === altoUtil && respaldo.marcas.length > 0 && esPrefijo(respaldo.piezas, piezas);
+
+    if (!hayRespaldo) {
+      medir();
+      return undefined;
+    }
+
+    const id = setTimeout(medir, 0);
+    return () => clearTimeout(id);
+  }, [piezas, clave, ancho, altoUtil, fuentes]);
 
   /*
    * El reparto completo, armado en JS a partir de lo ya medido.
@@ -227,9 +292,22 @@ export const usePaginator = (piezas, ancho, altoUtil, firma) => {
     const mapa = medido.firma === clave ? medido.mapa : null;
     const medidas = piezas.map((pieza) => mapa?.get(pieza));
 
-    // Mientras falte alguna pieza por medir, el reparto anterior es mentira: se
-    // devuelve vacío y el libro espera un fotograma más.
     if (!medidas.length || medidas.some((medida) => !medida)) {
+      const respaldo = ultimoBueno.current;
+
+      // Falta medir algo. Si lo que falta es solo lo recién encadenado, el
+      // reparto anterior sigue describiendo bien todo lo que hay en pantalla:
+      // se devuelve tal cual y el lector no se entera de nada.
+      if (respaldo.clave === clave && respaldo.altoUtil === altoUtil && respaldo.marcas.length > 0 && esPrefijo(respaldo.piezas, piezas)) {
+        return {
+          cortes: respaldo.cortes,
+          altoContenido: respaldo.altoContenido,
+          marcas: respaldo.marcas,
+          medidorRef,
+          listo: true,
+        };
+      }
+
       return { cortes: [0], altoContenido: 0, marcas: [], medidorRef, listo: false };
     }
 
@@ -250,7 +328,10 @@ export const usePaginator = (piezas, ancho, altoUtil, firma) => {
     // no es contenido y no debe generar hoja.
     const ultima = medidas[medidas.length - 1];
     const altoContenido = desplazamiento - ultima.alto + ultima.altoTexto;
+    const cortes = calcularCortes(renglones, altoUtil);
 
-    return { cortes: calcularCortes(renglones, altoUtil), altoContenido, marcas, medidorRef, listo: true };
+    ultimoBueno.current = { clave, altoUtil, piezas, cortes, altoContenido, marcas };
+
+    return { cortes, altoContenido, marcas, medidorRef, listo: true };
   }, [piezas, altoUtil, medido, clave]);
 };
