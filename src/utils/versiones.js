@@ -12,6 +12,21 @@
  */
 import { BIBLIAS } from "../data/biblias";
 
+/**
+ * Cuántas versiones se pueden comparar a la vez.
+ *
+ * Vive aquí y no en `ListBooks` porque ya no manda solo el modal: la búsqueda
+ * también puede añadir una versión, y necesita saber si queda sitio o hay que
+ * pedirle al usuario a cuál reemplaza.
+ *
+ * El número no es estético. Es el tope que acepta el backend en una sola
+ * consulta (`BIBLE.MAX_VERSIONS_PER_QUERY` en `api/src/config/constants.ts`), y
+ * el mismo que usa el agrupador de `tursoSource` para partir los lotes. Los
+ * tres van a la par: subirlo aquí sin subirlo allá hace que el validador
+ * conteste 400 y los paneles se queden vacíos sin explicación.
+ */
+export const MAX_VERSIONES_COMPARADAS = 25;
+
 /** "001. Español - Biblia al día (1989)" -> "Español" */
 export const idiomaDeVersion = (ruta) => String(ruta ?? "").split(". ")[1]?.split(" -")[0]?.trim() ?? "";
 

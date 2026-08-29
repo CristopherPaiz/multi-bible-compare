@@ -35,3 +35,68 @@
     scrollbar-width: none;
   }
 }
+
+/*
+ * Destello del panel de una versión.
+ *
+ * Lo usa la llegada desde Buscar: el resultado salía de UNA versión y la
+ * pantalla de destino enseña todas las abiertas, así que hace falta señalar
+ * cuál. Se desplaza a la vista y parpadea una vez.
+ *
+ * El anillo se anima con `box-shadow` y no con `border`: el borde forma parte
+ * del flujo y animarlo movería el contenido de la tarjeta un píxel arriba y
+ * abajo durante el destello. La sombra se pinta fuera de la caja y no empuja
+ * nada.
+ *
+ * `prefers-reduced-motion`: quien pidió menos movimiento igual necesita ver
+ * cuál es el panel, así que el aviso no desaparece — se queda el anillo fijo un
+ * momento en vez de latir.
+ */
+@keyframes destelloPanel {
+  0% {
+    box-shadow: 0 0 0 0 rgb(245 158 11 / 0);
+  }
+  15% {
+    box-shadow: 0 0 0 4px rgb(245 158 11 / 0.85), 0 0 22px 6px rgb(245 158 11 / 0.45);
+  }
+  55% {
+    box-shadow: 0 0 0 4px rgb(245 158 11 / 0.5), 0 0 18px 4px rgb(245 158 11 / 0.25);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(245 158 11 / 0);
+  }
+}
+
+@keyframes destelloPanelOscuro {
+  0% {
+    box-shadow: 0 0 0 0 rgb(192 132 252 / 0);
+  }
+  15% {
+    box-shadow: 0 0 0 4px rgb(192 132 252 / 0.9), 0 0 22px 6px rgb(192 132 252 / 0.5);
+  }
+  55% {
+    box-shadow: 0 0 0 4px rgb(192 132 252 / 0.55), 0 0 18px 4px rgb(192 132 252 / 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(192 132 252 / 0);
+  }
+}
+
+.panel-destacado {
+  animation: destelloPanel 1.8s ease-out 2;
+}
+
+.dark .panel-destacado {
+  animation: destelloPanelOscuro 1.8s ease-out 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel-destacado,
+  .dark .panel-destacado {
+    animation: none;
+    box-shadow: 0 0 0 4px rgb(245 158 11 / 0.8);
+  }
+  .dark .panel-destacado {
+    box-shadow: 0 0 0 4px rgb(192 132 252 / 0.85);
+  }
+}

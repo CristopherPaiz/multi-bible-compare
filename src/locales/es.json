@@ -452,7 +452,7 @@
   "AudioVozSistema": "Voz del sistema",
   "AudioVelocidad": "Velocidad",
   "AudioNoDisponible": "Este dispositivo no tiene voces de lectura instaladas.",
-  "AudioAviso": "Lee la primera versión seleccionada, desde el versículo actual.",
+  "AudioAviso": "Lee la versión de trabajo desde el versículo actual. Cambiar la voz o la velocidad reinicia el versículo en curso.",
   "ExportarTitulo": "Exportar",
   "ExportarCita": "Copiar cita",
   "ExportarCitaDesc": "El versículo entrecomillado con su referencia.",
@@ -509,5 +509,15 @@
   "StrongCargandoDefinicion": "Cargando definición...",
   "StrongConsultando": "Consultando diccionario Strong",
   "StrongFueraDeIndice": "Este número no se encuentra en el índice de la concordancia clásica de James Strong (H1–H8674 / G1–G5624).",
-  "StrongSinTraducir": "Esta entrada no está traducida; se muestra en español."
+  "StrongSinTraducir": "Esta entrada no está traducida; se muestra en español.",
+  "VersionAusenteTitulo": "Esa versión no está abierta",
+  "VersionAusenteTexto": "El resultado viene de {version}, que no está entre las versiones que estás comparando.",
+  "VersionAusenteAgregar": "Añadirla a la comparación",
+  "VersionAusenteSolo": "Ver solo esta versión",
+  "VersionAusenteSoloAyuda": "Cierra las demás y deja únicamente esta.",
+  "VersionAusenteAgregarAyuda": "Se abre junto a las {n} que ya tienes.",
+  "VersionAusenteLleno": "Ya tienes el máximo de {max} versiones abiertas. Elige a cuál reemplaza:",
+  "VersionAusenteReemplazar": "Reemplazar",
+  "VersionAusenteVolver": "Volver",
+  "VersionAusenteCancelar": "Cancelar"
 }

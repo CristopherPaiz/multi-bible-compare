@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import AnotacionesContext from "../../context/AnotacionesContext";
 import LanguageContext from "../../context/LanguageContext";
@@ -19,21 +19,26 @@ import { COLORES, PUNTOS_COLOR } from "../../utils/paletaAnotaciones";
  */
 const PanelNotas = ({ bookId, capitulo, versiculo, referencia }) => {
   const { t } = useContext(LanguageContext);
-  const { notasDe, agregarNota, editarNota, eliminarNota, colorDe, alternarResaltado, quitarResaltado } = useContext(AnotacionesContext);
+  const { notasDe, agregarNota, editarNota, eliminarNota, colorDe, alternarResaltado, quitarResaltado, borradorDe, guardarBorrador } =
+    useContext(AnotacionesContext);
 
   const notas = notasDe(bookId, capitulo, versiculo);
   const colorActual = colorDe(bookId, capitulo, versiculo);
 
-  const [borrador, setBorrador] = useState("");
-  const [editando, setEditando] = useState(null);
+  /*
+   * El borrador NO es estado de este componente.
+   *
+   * Lo era, y por eso se perdía: el panel se desmonta al cerrar la barra, al
+   * cambiar de capítulo y al salir de la pantalla, y con él se iba lo que el
+   * usuario estuviera escribiendo. Ahora vive en `AnotacionesContext`, indexado
+   * por versículo, así que cambiar de pasaje sigue mostrando el borrador que
+   * corresponda —y volver, el que se había dejado a medias.
+   */
+  const { texto: borrador, editando } = borradorDe(bookId, capitulo, versiculo);
+
   const areaRef = useRef(null);
 
-  // Al cambiar de versículo el borrador deja de tener sentido: era para otro
-  // pasaje y guardarlo aquí lo pondría en el equivocado.
-  useEffect(() => {
-    setBorrador("");
-    setEditando(null);
-  }, [bookId, capitulo, versiculo]);
+  const escribir = (texto, idEditando = editando) => guardarBorrador(bookId, capitulo, versiculo, { texto, editando: idEditando });
 
   useEffect(() => {
     areaRef.current?.focus();
@@ -46,14 +51,10 @@ const PanelNotas = ({ bookId, capitulo, versiculo, referencia }) => {
     if (editando) editarNota(editando, texto);
     else agregarNota(bookId, capitulo, versiculo, texto);
 
-    setBorrador("");
-    setEditando(null);
+    escribir("", null);
   };
 
-  const empezarEdicion = (nota) => {
-    setEditando(nota.id);
-    setBorrador(nota.texto);
-  };
+  const empezarEdicion = (nota) => escribir(nota.texto, nota.id);
 
   return (
     <div className="flex flex-col gap-3">
@@ -90,7 +91,7 @@ const PanelNotas = ({ bookId, capitulo, versiculo, referencia }) => {
         <textarea
           ref={areaRef}
           value={borrador}
-          onChange={(evento) => setBorrador(evento.target.value)}
+          onChange={(evento) => escribir(evento.target.value)}
           onKeyDown={(evento) => {
             // Ctrl+Enter guarda: Enter a secas tiene que seguir haciendo salto
             // de línea, que en una nota de estudio se usa constantemente.
@@ -110,10 +111,7 @@ const PanelNotas = ({ bookId, capitulo, versiculo, referencia }) => {
             {editando && (
               <button
                 type="button"
-                onClick={() => {
-                  setEditando(null);
-                  setBorrador("");
-                }}
+                onClick={() => escribir("", null)}
                 className="rounded-lg px-3 py-1.5 text-xs font-medium text-neutral-600 hover:bg-black/5 dark:text-neutral-300 dark:hover:bg-white/10"
               >
                 {t("Cancelar")}

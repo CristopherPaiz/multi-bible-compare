@@ -97,9 +97,40 @@ export const useLectorVoz = ({ capitulo, iso = "es", desde = 1 } = {}) => {
   const colaRef = useRef([]);
   const detenidoRef = useRef(false);
 
+  /** El versículo que está sonando, para poder reanudarlo con otros ajustes. */
+  const actualRef = useRef(null);
+
+  /*
+   * ---------------------------------------------------------------------------
+   * Los ajustes se leen de un ref, no del cierre
+   * ---------------------------------------------------------------------------
+   * Cada versículo se encadena con `enunciado.onend = () => hablarSiguiente()`.
+   * Ese manejador CONGELA la versión de `hablarSiguiente` que existía cuando se
+   * creó el enunciado, y con ella los valores de `velocidad`, `iso`, `voces` y
+   * `vozElegida` de aquel render.
+   *
+   * Por eso pulsar 2x no hacía nada: React sí creaba un `hablarSiguiente` nuevo
+   * con la velocidad nueva, pero nadie lo llamaba. La cadena seguía siendo la
+   * vieja y arrastraba el 1x hasta el final del capítulo. El comentario del
+   * panel prometía que "cada versículo se encola con los ajustes que hubiera al
+   * empezarlo", y eso es justo lo que NO pasaba.
+   *
+   * Con un ref, la cadena lee siempre el valor de ahora.
+   */
+  const ajustesRef = useRef({ velocidad, iso, voces, vozElegida });
+  ajustesRef.current = { velocidad, iso, voces, vozElegida };
+
+  /*
+   * `cancel()` dispara el `onend` del enunciado que estaba sonando. Sin esta
+   * bandera, cancelar para reiniciar con otra velocidad haría que ese `onend`
+   * avanzara al versículo siguiente y se saltara uno.
+   */
+  const ignorarFinRef = useRef(false);
+
   const detener = useCallback(() => {
     detenidoRef.current = true;
     colaRef.current = [];
+    actualRef.current = null;
     if (typeof window !== "undefined" && window.speechSynthesis) window.speechSynthesis.cancel();
     setLeyendo(false);
     setVersiculoActual(null);
@@ -112,29 +143,81 @@ export const useLectorVoz = ({ capitulo, iso = "es", desde = 1 } = {}) => {
    */
   useEffect(() => detener, [detener]);
 
+  /*
+   * Estable a propósito (`[]`): es la función que se encadena a sí misma desde
+   * `onend`, así que si cambiara de identidad la cadena quedaría apuntando a una
+   * versión vieja. Todo lo variable entra por `ajustesRef`.
+   */
   const hablarSiguiente = useCallback(() => {
     if (detenidoRef.current) return;
 
     const siguiente = colaRef.current.shift();
     if (!siguiente) {
+      actualRef.current = null;
       setLeyendo(false);
       setVersiculoActual(null);
       return;
     }
 
-    const enunciado = new SpeechSynthesisUtterance(siguiente.texto);
-    enunciado.rate = velocidad;
-    enunciado.lang = iso;
+    actualRef.current = siguiente;
 
-    const voz = voces.find((item) => item.name === vozElegida);
+    const { velocidad: rate, iso: lang, voces: disponibles, vozElegida: nombreVoz } = ajustesRef.current;
+
+    const enunciado = new SpeechSynthesisUtterance(siguiente.texto);
+    enunciado.rate = rate;
+    enunciado.lang = lang;
+
+    const voz = disponibles.find((item) => item.name === nombreVoz);
     if (voz) enunciado.voice = voz;
 
     enunciado.onstart = () => setVersiculoActual(siguiente.numero);
-    enunciado.onend = () => hablarSiguiente();
-    enunciado.onerror = () => hablarSiguiente();
+    enunciado.onend = () => {
+      if (ignorarFinRef.current) return;
+      hablarSiguiente();
+    };
+    enunciado.onerror = () => {
+      if (ignorarFinRef.current) return;
+      hablarSiguiente();
+    };
 
     window.speechSynthesis.speak(enunciado);
-  }, [velocidad, iso, voces, vozElegida]);
+  }, []);
+
+  /**
+   * Vuelve a decir el versículo en curso con los ajustes de ahora.
+   *
+   * La Web Speech API no deja cambiarle la velocidad ni la voz a algo que ya
+   * está sonando: `rate` se lee al arrancar el enunciado y a partir de ahí es
+   * de solo lectura de hecho. La única forma de que 2x se note YA es cortar y
+   * volver a empezar ese versículo.
+   *
+   * Se reinicia el versículo entero y no se intenta seguir donde iba: la API no
+   * dice por qué palabra va —`onboundary` no lo dan todas las voces— y volver
+   * al principio de un versículo es un salto que se entiende; quedarse mudo
+   * medio segundo y continuar a destiempo, no.
+   */
+  const reiniciarActual = useCallback(() => {
+    const actual = actualRef.current;
+    if (!actual || detenidoRef.current) return;
+
+    ignorarFinRef.current = true;
+    window.speechSynthesis.cancel();
+
+    // Se devuelve al frente de la cola y se arranca de nuevo.
+    colaRef.current = [actual, ...colaRef.current];
+
+    /*
+     * `cancel()` es asíncrono en Chrome: hablar en el mismo tick puede caer
+     * dentro de la propia cancelación y quedarse en silencio. Un salto al
+     * siguiente turno de eventos basta, y de paso deja pasar el `onend` que hay
+     * que ignorar antes de volver a bajar la bandera.
+     */
+    setTimeout(() => {
+      ignorarFinRef.current = false;
+      if (detenidoRef.current) return;
+      hablarSiguiente();
+    }, 0);
+  }, [hablarSiguiente]);
 
   /**
    * Encola el capítulo desde `desde` y arranca.
@@ -155,9 +238,34 @@ export const useLectorVoz = ({ capitulo, iso = "es", desde = 1 } = {}) => {
 
     if (colaRef.current.length === 0) return;
 
+    actualRef.current = null;
     setLeyendo(true);
     hablarSiguiente();
   }, [disponible, capitulo, desde, hablarSiguiente]);
+
+  /*
+   * Cambiar la velocidad o la voz mientras se lee se aplica AL MOMENTO.
+   *
+   * Es lo que espera cualquiera que pulsa 2x: si el efecto se pospusiera al
+   * versículo siguiente, el botón parecería roto durante los diez segundos que
+   * dura el actual — que es exactamente cómo se comportaba.
+   *
+   * No corre en el primer render ni con la lectura parada: ahí no hay nada que
+   * reiniciar y `reproducir` ya cogerá los valores nuevos.
+   */
+  const primeraVez = useRef(true);
+
+  useEffect(() => {
+    if (primeraVez.current) {
+      primeraVez.current = false;
+      return;
+    }
+    if (!leyendo) return;
+    reiniciarActual();
+    // `leyendo` NO entra como dependencia: solo debe dispararlo un cambio de
+    // ajuste, no el propio arranque de la lectura.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [velocidad, vozElegida]);
 
   const pausar = useCallback(() => {
     if (!window.speechSynthesis?.speaking) return;

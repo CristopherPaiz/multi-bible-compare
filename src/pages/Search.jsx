@@ -5,7 +5,8 @@ import LanguageContext from "../context/LanguageContext";
 import { buscar, buscarStrongs, listarBiblias, LARGO_MINIMO } from "../services/searchSource";
 import { getDataSource, onDataSourceChange, setDataSource, SOURCES } from "../config/dataSource";
 import { aTextoPlano } from "../utils/textoPlano";
-import { nombreIdioma, versionDeReferencia } from "../utils/versiones";
+import { MAX_VERSIONES_COMPARADAS, nombreIdioma, versionDeReferencia } from "../utils/versiones";
+import ModalVersionAusente from "../components/ModalVersionAusente";
 import { sugerenciasAlAzar } from "../data/sugerencias";
 
 const POR_PAGINA = 25;
@@ -22,6 +23,7 @@ const Search = () => {
     setVersiculoSeleccionadoNumero,
     bibliasSeleccionadas,
     setBibliasSeleccionadas,
+    destacarVersion,
     strongFun,
   } = useContext(DataContext);
   const navigate = useNavigate();
@@ -310,30 +312,96 @@ const Search = () => {
     // idioma dejaba el encabezado con el nombre anterior hasta recargar.
   }, [bibliaSeleccionadaObj, t]);
 
-  const irAlVersiculo = useCallback(
-    (hit) => {
-      const bibliaHit = catalogo.find((b) => b.id === hit.bibleId);
-      const rutaBiblia = bibliaHit?.legacyPath;
+  /*
+   * ---------------------------------------------------------------------------
+   * De un resultado al pasaje
+   * ---------------------------------------------------------------------------
+   * El resultado sale de UNA versión, pero Comparar enseña todas las abiertas.
+   * Hay dos casos y no se pueden tratar igual:
+   *
+   *   - La versión YA está abierta. Se navega y se destaca su panel: sin eso,
+   *     con seis columnas enseñando el mismo versículo, no hay forma de saber
+   *     cuál dio el resultado.
+   *
+   *   - La versión NO está abierta. Antes se colaba al principio de la lista sin
+   *     avisar, lo que cambiaba solo una comparación que el usuario había
+   *     montado a mano —y con el tope lleno, empujaba fuera a otra en silencio.
+   *     Ahora se pregunta (ver `ModalVersionAusente`).
+   */
 
-      if (rutaBiblia) {
-        setBibliasSeleccionadas((previas) => {
-          if (!Array.isArray(previas) || previas.length === 0) {
-            return [rutaBiblia];
-          }
-          if (!previas.includes(rutaBiblia)) {
-            return [rutaBiblia, ...previas];
-          }
-          return previas;
-        });
-      }
+  /** Resultado en espera de que el usuario decida qué hacer con su versión. */
+  const [versionPendiente, setVersionPendiente] = useState(null);
+
+  const abrirEnComparar = useCallback(
+    (hit, rutaBiblia, seleccionNueva) => {
+      if (seleccionNueva) setBibliasSeleccionadas(seleccionNueva);
 
       setLibroSeleccionado(`book${hit.bookId}`);
       setCapituloSeleccionadoNumero(Number(hit.chapter));
       setVersiculoSeleccionadoNumero(Number(hit.verse));
+
+      // La señal se pide ANTES de navegar: el panel se monta ya sabiendo que le
+      // toca desplazarse y destellar, sin un fotograma quieto por medio.
+      destacarVersion(rutaBiblia ?? null);
       navigate("/compare");
     },
-    [catalogo, navigate, setBibliasSeleccionadas, setLibroSeleccionado, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero]
+    [navigate, destacarVersion, setBibliasSeleccionadas, setLibroSeleccionado, setCapituloSeleccionadoNumero, setVersiculoSeleccionadoNumero]
   );
+
+  const irAlVersiculo = useCallback(
+    (hit) => {
+      const rutaBiblia = catalogo.find((b) => b.id === hit.bibleId)?.legacyPath ?? null;
+      const abiertas = Array.isArray(bibliasSeleccionadas) ? bibliasSeleccionadas : [];
+
+      // Sin versión reconocible se navega igual: el pasaje importa más que
+      // señalar la columna, y preguntar por algo que no se sabe nombrar sería
+      // peor que no preguntar.
+      if (!rutaBiblia) {
+        abrirEnComparar(hit, null);
+        return;
+      }
+
+      // Sin nada abierto no hay comparación que romper ni a quién reemplazar.
+      if (abiertas.length === 0) {
+        abrirEnComparar(hit, rutaBiblia, [rutaBiblia]);
+        return;
+      }
+
+      if (abiertas.includes(rutaBiblia)) {
+        abrirEnComparar(hit, rutaBiblia);
+        return;
+      }
+
+      setVersionPendiente({ hit, ruta: rutaBiblia });
+    },
+    [catalogo, bibliasSeleccionadas, abrirEnComparar]
+  );
+
+  /** Añade la versión pendiente, reemplazando a `rutaFuera` si el tope está lleno. */
+  const resolverAgregando = useCallback(
+    (rutaFuera) => {
+      if (!versionPendiente) return;
+      const { hit, ruta } = versionPendiente;
+      const abiertas = Array.isArray(bibliasSeleccionadas) ? bibliasSeleccionadas : [];
+
+      const base = rutaFuera ? abiertas.filter((item) => item !== rutaFuera) : abiertas;
+      // El corte es una red de seguridad: si el tope llegara lleno sin haber
+      // pasado por la pantalla de reemplazo, se recorta en vez de mandar al
+      // backend una consulta que va a rechazar con un 400.
+      const nueva = [...base, ruta].slice(0, MAX_VERSIONES_COMPARADAS);
+
+      setVersionPendiente(null);
+      abrirEnComparar(hit, ruta, nueva);
+    },
+    [versionPendiente, bibliasSeleccionadas, abrirEnComparar]
+  );
+
+  const resolverSoloEsta = useCallback(() => {
+    if (!versionPendiente) return;
+    const { hit, ruta } = versionPendiente;
+    setVersionPendiente(null);
+    abrirEnComparar(hit, ruta, [ruta]);
+  }, [versionPendiente, abrirEnComparar]);
 
   const copiarVersiculo = useCallback(
     async (evento, hit) => {
@@ -400,6 +468,18 @@ const Search = () => {
 
   return (
     <div className="animate-fade-in mx-auto mt-4 w-11/12 max-w-4xl pb-24">
+      {/* La decisión sobre la versión del resultado. Solo aparece cuando esa
+          versión no está entre las abiertas; ver `ModalVersionAusente`. */}
+      {versionPendiente && (
+        <ModalVersionAusente
+          version={versionPendiente.ruta}
+          seleccionadas={bibliasSeleccionadas}
+          onCancelar={() => setVersionPendiente(null)}
+          onSoloEsta={resolverSoloEsta}
+          onAgregar={resolverAgregando}
+        />
+      )}
+
       {/* Qué se busca. Va lo primero porque decide qué significa todo lo demás
           de la pantalla: en modo diccionario no hay versión ni libro. */}
       <div role="tablist" className="mx-auto mb-4 flex max-w-sm gap-1 rounded-xl bg-black/5 p-1 dark:bg-white/10">

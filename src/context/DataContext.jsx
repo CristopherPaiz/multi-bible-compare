@@ -537,6 +537,45 @@ export const DataProvider = ({ children }) => {
     });
   }, []);
 
+  /*
+   * ---------------------------------------------------------------------------
+   * "Esta es la versión que buscabas"
+   * ---------------------------------------------------------------------------
+   * Al llegar a Comparar desde la búsqueda, el resultado salía de UNA versión
+   * concreta, pero la pantalla de destino enseña todas las abiertas. Con seis
+   * paneles delante y el mismo versículo en los seis, no hay forma de saber cuál
+   * es el que dio el resultado: el usuario buscó en la Biblia del Oso y aterriza
+   * mirando la RV60.
+   *
+   * `versionDestacada` es la respuesta: el panel de esa versión se desplaza a la
+   * vista y da un destello. Se apaga solo —es una señal, no un estado— porque
+   * dejarlo encendido convertiría el aviso en decoración permanente.
+   */
+  const [versionDestacada, setVersionDestacada] = useState(null);
+  const temporizadorDestello = useRef(null);
+
+  /**
+   * Marca (o desmarca) la versión a señalar.
+   *
+   * Quien la apaga es el propio panel, cuando ya ha destellado: el capítulo se
+   * pide por red, y con el backend dormido pueden pasar treinta segundos entre
+   * la navegación y el primer píxel de texto. Un temporizador corto lanzado
+   * desde aquí habría apagado la señal antes de que hubiera panel al que
+   * señalar, y el usuario no vería nada.
+   *
+   * El temporizador que queda es solo una red: si el panel nunca llega a
+   * montarse —la versión no está abierta, la petición falla— la marca no se
+   * queda pegada para la próxima navegación.
+   */
+  const destacarVersion = useCallback((ruta) => {
+    clearTimeout(temporizadorDestello.current);
+    setVersionDestacada(ruta ?? null);
+    if (!ruta) return;
+    temporizadorDestello.current = setTimeout(() => setVersionDestacada(null), 30000);
+  }, []);
+
+  useEffect(() => () => clearTimeout(temporizadorDestello.current), []);
+
   //Setear bibliasSeleecionadas, acpituloSeleccionadoNumero, libroSeleccionado, versiculoSeleccionadoNumero
   const setearHistorial = (data) => {
     setBibliasSeleccionadas(data.bibliasSeleccionadas);
@@ -846,6 +885,9 @@ export const DataProvider = ({ children }) => {
         limpiarHistorial,
         fusionarHistorial,
         setearHistorial,
+        // Señal de "esta es la versión que buscabas" al llegar desde Buscar
+        versionDestacada,
+        destacarVersion,
         setHistory,
         strong,
         strongFun,

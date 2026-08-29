@@ -11,6 +11,7 @@ import ReadMore from "./ReadMore";
 import { useHistoryBlocker } from "../hooks/useHistoryBlocker";
 import { useBloquearScroll } from "../hooks/useBloquearScroll";
 import { favoritos as almacenFavoritos, useAlmacen } from "../services/almacenLocal";
+import { MAX_VERSIONES_COMPARADAS as MAX_SELECTIONS } from "../utils/versiones";
 import {
   BIBLIAS,
   RECOMENDADAS,
@@ -21,7 +22,7 @@ import {
   ORDEN_IDIOMAS,
 } from "../data/biblias";
 
-const MAX_SELECTIONS = 25;
+
 const CLAVE_SECCIONES = "seccionesBibliasAbiertas";
 
 const FILTROS = ["todas", "favoritas", "seleccionadas", "recomendadas"];
@@ -146,8 +147,6 @@ const ListBooks = () => {
 
   useEffect(() => {
     const guardadas = leerLista("selectedBooks");
-    const iniciales = guardadas.length > 0 ? guardadas : (bibliasSeleccionadas?.length > 0 ? bibliasSeleccionadas : []);
-    setSelectedBooks(iniciales);
     if (guardadas.length > 0 && (!bibliasSeleccionadas || bibliasSeleccionadas.length === 0)) {
       setBibliasSeleccionadas(guardadas);
     }
@@ -159,13 +158,25 @@ const ListBooks = () => {
   }, []);
 
   /*
-   * Solo `selectedBooks`. Los favoritos los persiste su propio almacén en el
-   * momento de cambiarlos; escribirlos también desde aquí es lo que los
-   * machacaba, porque este efecto corre al montar con la lista todavía vacía.
+   * ---------------------------------------------------------------------------
+   * `selectedBooks` es el BORRADOR del modal, no la selección de verdad
+   * ---------------------------------------------------------------------------
+   * Antes se leía de `localStorage` al montar y se volvía a escribir en cada
+   * marca. Eso lo convertía en un segundo dueño de la clave `selectedBooks`, que
+   * ya persiste `DataContext` desde `bibliasSeleccionadas` — y los dos se
+   * pisaban: al llegar desde Buscar con una versión añadida, este componente
+   * montaba, escribía su copia vieja encima y la versión desaparecía al
+   * recargar. El mismo problema que tenían los favoritos.
+   *
+   * Ahora el borrador se rellena al ABRIR el modal, desde la selección real, y
+   * no se persiste: cancelar descarta, confirmar aplica. Que es lo que un
+   * borrador debería haber hecho siempre.
    */
   useEffect(() => {
-    localStorage.setItem("selectedBooks", JSON.stringify(selectedBooks));
-  }, [selectedBooks]);
+    if (isModalOpen) setSelectedBooks(bibliasSeleccionadas ?? []);
+    // Solo al abrir: mientras está abierto manda lo que el usuario marca.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isModalOpen]);
 
   useEffect(() => {
     localStorage.setItem(CLAVE_SECCIONES, JSON.stringify(seccionesAbiertas));

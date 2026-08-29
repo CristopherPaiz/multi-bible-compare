@@ -90,6 +90,8 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     capituloSeleccionadoNumero,
     diferenciasPorBiblia,
     claseTamanoTexto,
+    versionDestacada,
+    destacarVersion,
   } = useContext(DataContext);
   const { idiomaNavegador, t } = useContext(LanguageContext);
   const { colorDe, notasDe } = useContext(AnotacionesContext);
@@ -269,6 +271,45 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
     }
   };
 
+  /*
+   * ------------------------------------------------------------------------
+   * "Esta es la versión que buscabas"
+   * ------------------------------------------------------------------------
+   * Al llegar desde Buscar, este panel puede ser el que dio el resultado. Se
+   * desplaza a la vista y destella una vez.
+   *
+   * Se espera a que el texto esté cargado: con el esqueleto puesto el panel
+   * mide otra cosa, y centrarlo entonces deja el sitio equivocado en cuanto
+   * llega el capítulo y la tarjeta crece.
+   */
+  const articuloRef = useRef(null);
+  const destacado = versionDestacada === nombre;
+
+  useEffect(() => {
+    if (!destacado || cargando) return undefined;
+
+    // Un fotograma de margen: el navegador tiene que haber pintado el texto
+    // para que `scrollIntoView` mida la altura definitiva.
+    const fotograma = requestAnimationFrame(() => {
+      articuloRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+    });
+
+    /*
+     * La señal la apaga el panel, no quien la encendió: hasta aquí no se sabía
+     * cuándo iba a existir esta tarjeta —el capítulo viaja por red— y apagarla
+     * a ciegas desde la búsqueda dejaba el destello sin ver cuando el backend
+     * tardaba en despertar.
+     *
+     * 3.8s = las dos pasadas de la animación (1.8s cada una) con margen.
+     */
+    const apagar = setTimeout(() => destacarVersion(null), 3800);
+
+    return () => {
+      cancelAnimationFrame(fotograma);
+      clearTimeout(apagar);
+    };
+  }, [destacado, cargando, destacarVersion]);
+
   /** Descarta la traducción de este versículo y deja el original. */
   const revertirTraduccion = () => {
     setTraducciones((previo) => {
@@ -294,8 +335,11 @@ const VerseSingle = ({ texto, nombre, iso, cargando = false, bookId }) => {
       lo que separa es aclarar el borde.
     */
     <article
+      ref={articuloRef}
       data-panel={codigoDeVersion(nombre) ?? ""}
-      className="flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-md transition-shadow hover:shadow-lg dark:border-neutral-700 dark:bg-[#0d0d10]"
+      className={`flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-md transition-shadow hover:shadow-lg dark:border-neutral-700 dark:bg-[#0d0d10] ${
+        destacado ? "panel-destacado" : ""
+      }`}
     >
       {/*
         El nombre de la versión se trunca a una línea a propósito: si envolviera,

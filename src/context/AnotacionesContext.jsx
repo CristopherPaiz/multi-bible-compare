@@ -28,6 +28,7 @@ const AnotacionesContext = createContext();
 
 const CLAVE_RESALTADOS = "resaltados";
 const CLAVE_NOTAS = "notas";
+const CLAVE_BORRADORES = "borradoresNotas";
 const RETARDO_SYNC_MS = 2500;
 
 /*
@@ -67,8 +68,27 @@ export const AnotacionesProvider = ({ children }) => {
   /** `[{ id, bookId, capitulo, versiculo, texto, creadoEn, editadoEn }]` */
   const [notas, setNotas] = useState(() => leerLocal(CLAVE_NOTAS, []));
 
+  /*
+   * ---------------------------------------------------------------------------
+   * Notas a medio escribir
+   * ---------------------------------------------------------------------------
+   * `{ "2818320": { texto, editando } }` — lo tecleado en el panel de notas y
+   * todavía sin guardar, por versículo.
+   *
+   * Vivía en el estado de `PanelNotas`, así que se perdía en cuanto el panel se
+   * desmontaba: cerrar la barra, cambiar de capítulo o irse a otra pantalla
+   * borraba lo escrito sin avisar. Un borrador es de las poquísimas cosas de la
+   * app que el usuario NO puede regenerar; perderlo no es un detalle.
+   *
+   * Se guarda en localStorage y NO se manda al servidor: es una nota a medias,
+   * no una nota. Se sube cuando el usuario la guarda, que es cuando decide que
+   * existe.
+   */
+  const [borradores, setBorradores] = useState(() => leerLocal(CLAVE_BORRADORES, {}));
+
   useEffect(() => escribirLocal(CLAVE_RESALTADOS, resaltados), [resaltados]);
   useEffect(() => escribirLocal(CLAVE_NOTAS, notas), [notas]);
+  useEffect(() => escribirLocal(CLAVE_BORRADORES, borradores), [borradores]);
 
   /*
    * `sesionIncierta` = el backend no contestó a "¿quién soy?". No es lo mismo
@@ -255,6 +275,49 @@ export const AnotacionesProvider = ({ children }) => {
     setNotas((previo) => previo.filter((nota) => nota.id !== id));
   }, []);
 
+  // --- Borradores ----------------------------------------------------------
+
+  /**
+   * Lo que hay a medio escribir para un versículo.
+   *
+   * `editando` se valida contra las notas actuales: si la nota que se estaba
+   * editando ya no existe —se borró desde la pantalla de Notas, o llegó así de
+   * otro dispositivo— el borrador se degrada a nota nueva en vez de intentar
+   * actualizar un id fantasma.
+   */
+  const borradorDe = useCallback(
+    (bookId, capitulo, versiculo) => {
+      const guardado = borradores[claveVersiculo(bookId, capitulo, versiculo)];
+      if (!guardado) return { texto: "", editando: null };
+
+      const editando = guardado.editando && notas.some((nota) => nota.id === guardado.editando) ? guardado.editando : null;
+      return { texto: guardado.texto ?? "", editando };
+    },
+    [borradores, notas]
+  );
+
+  /** Guarda (o limpia) el borrador de un versículo. */
+  const guardarBorrador = useCallback((bookId, capitulo, versiculo, { texto, editando }) => {
+    const clave = claveVersiculo(bookId, capitulo, versiculo);
+    const limpio = String(texto ?? "");
+
+    setBorradores((previo) => {
+      const anterior = previo[clave];
+
+      // Un borrador vacío y sin edición en curso no es nada: se quita para que
+      // el objeto no acumule una entrada por cada versículo visitado.
+      if (limpio.trim() === "" && !editando) {
+        if (!anterior) return previo;
+        const copia = { ...previo };
+        delete copia[clave];
+        return copia;
+      }
+
+      if (anterior?.texto === limpio && (anterior?.editando ?? null) === (editando ?? null)) return previo;
+      return { ...previo, [clave]: { texto: limpio, editando: editando ?? null } };
+    });
+  }, []);
+
   /** Versículos con algo puesto, para el índice de la página de notas. */
   const versiculosAnotados = useMemo(() => {
     const mapa = new Map();
@@ -285,10 +348,26 @@ export const AnotacionesProvider = ({ children }) => {
       agregarNota,
       editarNota,
       eliminarNota,
+      borradorDe,
+      guardarBorrador,
       versiculosAnotados,
       sincronizando: hayCuenta,
     }),
-    [resaltados, notas, colorDe, alternarResaltado, quitarResaltado, notasDe, agregarNota, editarNota, eliminarNota, versiculosAnotados, hayCuenta]
+    [
+      resaltados,
+      notas,
+      colorDe,
+      alternarResaltado,
+      quitarResaltado,
+      notasDe,
+      agregarNota,
+      editarNota,
+      eliminarNota,
+      borradorDe,
+      guardarBorrador,
+      versiculosAnotados,
+      hayCuenta,
+    ]
   );
 
   return <AnotacionesContext.Provider value={valor}>{children}</AnotacionesContext.Provider>;

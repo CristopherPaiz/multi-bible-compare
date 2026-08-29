@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import DataContext from "../../context/DataContext";
 import LanguageContext from "../../context/LanguageContext";
@@ -103,24 +103,66 @@ const BarraEstudio = () => {
   } = useContext(DataContext);
   const { colorDe, notasDe } = useContext(AnotacionesContext);
 
+  /** El panel VISIBLE. `null` = solo se ve la barra. */
   const [panel, setPanel] = useState(null);
+
+  /*
+   * El último panel que se abrió, que sigue MONTADO aunque esté oculto.
+   *
+   * Cerrar desmontaba el panel, y con él se iba su estado: la posición del
+   * scroll de las referencias, la voz a medio leer, el reproductor. Ahora se
+   * esconde con `hidden` en vez de desmontarse, así que reabrirlo devuelve la
+   * misma pantalla que se dejó y no una recién nacida.
+   *
+   * (Lo escrito en el panel de notas se conserva aparte, en
+   * `AnotacionesContext`: eso tiene que sobrevivir incluso al desmontaje.)
+   */
+  const [montado, setMontado] = useState(null);
+
+  /** Envuelve panel + barra: define qué cuenta como "fuera". */
+  const contenedorRef = useRef(null);
 
   const bookId = Number(String(libroSeleccionado ?? "").split("book")[1]);
   const hayVersiculo = Boolean(bookId && capituloSeleccionadoNumero && versiculoSeleccionadoNumero);
 
   // Al cambiar de pasaje se cierra lo que hubiera abierto: el panel de notas de
   // Juan 3:16 no debe quedarse visible cuando ya se está en Romanos 5.
+  //
+  // Aquí sí se DESMONTA (`montado` a null) y no solo se oculta: el contenido de
+  // los paneles es del capítulo anterior. El de audio, además, se quedaría
+  // leyendo en voz alta un capítulo que ya nadie tiene delante.
   useEffect(() => {
     setPanel(null);
+    setMontado(null);
   }, [libroSeleccionado, capituloSeleccionadoNumero]);
 
   useEffect(() => {
-    if (!panel) return;
+    if (!panel) return undefined;
+
     const alPulsarEscape = (evento) => {
       if (evento.key === "Escape") setPanel(null);
     };
+
+    /*
+     * Tocar fuera cierra.
+     *
+     * `pointerdown` y no `click`: el clic llega después y es el que alterna el
+     * panel desde los botones de la barra, así que escuchar `click` cerraría y
+     * volvería a abrir en el mismo gesto. Con `pointerdown`, lo que pase dentro
+     * del contenedor ni siquiera se considera.
+     *
+     * Cerrar NO pierde nada: el panel se oculta, no se desmonta.
+     */
+    const alTocarFuera = (evento) => {
+      if (contenedorRef.current && !contenedorRef.current.contains(evento.target)) setPanel(null);
+    };
+
     document.addEventListener("keydown", alPulsarEscape);
-    return () => document.removeEventListener("keydown", alPulsarEscape);
+    document.addEventListener("pointerdown", alTocarFuera);
+    return () => {
+      document.removeEventListener("keydown", alPulsarEscape);
+      document.removeEventListener("pointerdown", alTocarFuera);
+    };
   }, [panel]);
 
   if (!hayVersiculo) return null;
@@ -134,7 +176,16 @@ const BarraEstudio = () => {
   // tuviera el número de carpeta más bajo.
   const isoPrincipal = ISO_POR_IDIOMA[idiomaDeVersion(versionTrabajo)] ?? "es";
 
-  const alternarPanel = (id) => setPanel((previo) => (previo === id ? null : id));
+  const alternarPanel = (id) => {
+    // Cerrar deja `montado` como está: es lo que permite volver a abrirlo con
+    // todo su estado en su sitio.
+    if (panel === id) {
+      setPanel(null);
+      return;
+    }
+    setPanel(id);
+    setMontado(id);
+  };
 
   /*
    * En móvil el icono va SIEMPRE con su nombre debajo.
@@ -183,7 +234,7 @@ const BarraEstudio = () => {
       */}
       <div className="h-[calc(4rem+env(safe-area-inset-bottom))]" aria-hidden="true"></div>
 
-      <div className="fixed inset-x-0 bottom-0 z-20">
+      <div ref={contenedorRef} className="fixed inset-x-0 bottom-0 z-20">
       {/*
         En móvil, panel y barra van de borde a borde y sin esquinas
         redondeadas: pegados a los lados se leen como parte de la pantalla. Con
@@ -194,8 +245,22 @@ const BarraEstudio = () => {
         En escritorio sí son una tarjeta centrada: ahí la rejilla llega a
         1800px y una barra de ese ancho para seis botones sería absurda.
       */}
-      {panel && (
-        <div className="animate-slide-in-bottom mx-auto w-full border-t border-neutral-200 bg-white p-4 shadow-lg dark:border-neutral-800 dark:bg-[#161519] sm:w-11/12 sm:max-w-3xl sm:rounded-t-2xl sm:border sm:border-b-0">
+      {/*
+        Montado mientras `montado` tenga algo; VISIBLE solo mientras `panel` lo
+        tenga. `hidden` en vez de desmontar es lo que hace que cerrar no cueste
+        nada: el estado del panel sigue vivo detrás.
+
+        La clase de entrada se pone y se quita con la visibilidad a propósito:
+        quitar y volver a poner una clase de animación la reinicia, así que el
+        panel vuelve a subir cada vez que se abre, no solo la primera.
+      */}
+      {montado && (
+        <div
+          hidden={!panel}
+          className={`mx-auto w-full border-t border-neutral-200 bg-white p-4 shadow-lg dark:border-neutral-800 dark:bg-[#161519] sm:w-11/12 sm:max-w-3xl sm:rounded-t-2xl sm:border sm:border-b-0 ${
+            panel ? "animate-slide-in-bottom" : ""
+          }`}
+        >
           <div className="mb-3 flex items-center justify-between gap-2">
             {/*
               El panel de referencias lleva la cita en el título porque su
@@ -204,7 +269,7 @@ const BarraEstudio = () => {
               paneles hablan del versículo abierto, que está en la miga de pan.
             */}
             <h2 className="min-w-0 truncate text-sm font-bold text-neutral-900 dark:text-neutral-100">
-              {panel === "referencias" ? t("Panel_referencias_de", { ref: referencia }) : t(`Panel_${panel}`)}
+              {montado === "referencias" ? t("Panel_referencias_de", { ref: referencia }) : t(`Panel_${montado}`)}
             </h2>
             <button
               type="button"
@@ -219,17 +284,17 @@ const BarraEstudio = () => {
           </div>
 
           <div className="max-h-[45vh] overflow-y-auto pr-1">
-            {panel === "notas" && (
+            {montado === "notas" && (
               <PanelNotas bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} referencia={referencia} />
             )}
 
-            {panel === "referencias" && <PanelReferencias bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} />}
+            {montado === "referencias" && <PanelReferencias bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} />}
 
-            {panel === "audio" && versionTrabajo && <PanelAudio biblia={versionTrabajo} iso={isoPrincipal} />}
+            {montado === "audio" && versionTrabajo && <PanelAudio biblia={versionTrabajo} iso={isoPrincipal} />}
 
-            {panel === "exportar" && <PanelExportar bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} />}
+            {montado === "exportar" && <PanelExportar bookId={bookId} capitulo={capituloSeleccionadoNumero} versiculo={versiculoSeleccionadoNumero} />}
 
-            {panel === "ajustes" && <PanelAjustes />}
+            {montado === "ajustes" && <PanelAjustes />}
           </div>
         </div>
       )}

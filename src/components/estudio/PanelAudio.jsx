@@ -115,8 +115,10 @@ const PanelAudio = ({ biblia, iso }) => {
         </div>
       </div>
 
-      {/* El cambio de voz o velocidad no interrumpe lo que suena: cada
-          versículo se encola con los ajustes que hubiera al empezarlo. */}
+      {/* Cambiar la voz o la velocidad mientras se lee reinicia el versículo en
+          curso con los ajustes nuevos: la Web Speech API no deja cambiárselos a
+          un enunciado que ya está sonando, así que la única forma de que 2×
+          suene a 2× es volver a empezar ese versículo. Ver `reiniciarActual`. */}
       <p className="text-[11px] text-neutral-400">{t("AudioAviso")}</p>
     </div>
   );

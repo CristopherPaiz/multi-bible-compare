@@ -452,7 +452,7 @@
   "AudioVozSistema": "System voice",
   "AudioVelocidad": "Speed",
   "AudioNoDisponible": "This device has no speech voices installed.",
-  "AudioAviso": "Reads the first selected version, starting at the current verse.",
+  "AudioAviso": "Reads the working version starting at the current verse. Changing voice or speed restarts the current verse.",
   "ExportarTitulo": "Export",
   "ExportarCita": "Copy quote",
   "ExportarCitaDesc": "The verse in quotes with its reference.",
@@ -509,5 +509,15 @@
   "StrongCargandoDefinicion": "Loading definition…",
   "StrongConsultando": "Querying Strong dictionary",
   "StrongFueraDeIndice": "This number is not in the index of James Strong's classic concordance (H1–H8674 / G1–G5624).",
-  "StrongSinTraducir": "This entry is not translated; showing the Spanish text."
+  "StrongSinTraducir": "This entry is not translated; showing the Spanish text.",
+  "VersionAusenteTitulo": "That version isn't open",
+  "VersionAusenteTexto": "This result comes from {version}, which is not among the versions you are comparing.",
+  "VersionAusenteAgregar": "Add it to the comparison",
+  "VersionAusenteSolo": "Show only this version",
+  "VersionAusenteSoloAyuda": "Closes the others and leaves only this one.",
+  "VersionAusenteAgregarAyuda": "It opens next to the {n} you already have.",
+  "VersionAusenteLleno": "You already have the maximum of {max} versions open. Choose which one it replaces:",
+  "VersionAusenteReemplazar": "Replace",
+  "VersionAusenteVolver": "Back",
+  "VersionAusenteCancelar": "Cancel"
 }
