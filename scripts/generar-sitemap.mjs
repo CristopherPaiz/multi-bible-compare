@@ -15,7 +15,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { SITE_URL, alternativasDeIdioma } from "../src/config/sitio.js";
+import { SITE_URL, alternativasDeIdioma, urlAbsoluta } from "../src/config/sitio.js";
 import { rutasDeCapitulos, rutasEstaticas } from "../src/utils/seo.js";
 
 const SALIDA = path.resolve(process.argv[2] ?? "dist");
@@ -37,7 +37,9 @@ const entrada = ({ ruta, prioridad, frecuencia }) => {
     .map(({ hreflang, href }) => `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${escaparXml(href)}" />`)
     .join("\n");
 
-  const url = ruta === "/" ? `${SITE_URL}/` : `${SITE_URL}${ruta}`;
+  // `urlAbsoluta` y no concatenar a mano: es quien pone la barra final, que es
+  // la forma que Netlify sirve con 200 en vez de redirigir.
+  const url = urlAbsoluta(ruta);
 
   return [
     "  <url>",

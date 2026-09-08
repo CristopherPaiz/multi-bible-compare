@@ -39,8 +39,20 @@ export default defineConfig({
         // Borra los precaches de builds viejos en vez de acumularlos.
         cleanupOutdatedCaches: true,
         globPatterns: ["**/*.{js,css,html,ico,png,svg,webp,woff2}"],
-        // El backend nunca debe caer en el fallback a index.html.
-        navigateFallbackDenylist: [/^\/api\//],
+        /*
+         * Que NO debe resolverse con el shell de la SPA.
+         *
+         * El service worker atiende toda peticion de navegacion devolviendo
+         * `index.html`. Eso esta bien para las rutas de la app, pero escribir
+         * `/robots.txt` o `/sitemap.xml` en la barra de direcciones TAMBIEN es
+         * una navegacion: al usuario con el SW instalado le llegaba la app en
+         * vez del archivo, la app no reconocia la ruta y le enseñaba su pagina
+         * de "no encontrada". Parecia un 404 del servidor y no lo era.
+         *
+         * `\.[^/]+$` = cualquier ruta cuyo ultimo tramo tenga punto, o sea un
+         * archivo con extension. Ninguna ruta de la app tiene punto.
+         */
+        navigateFallbackDenylist: [/^\/api\//, /\.[^/]+$/],
       },
     }),
     react(),

@@ -91,7 +91,23 @@ al buscador habrían sido mentira, porque la app abría en el idioma guardado.
 a `/404.html` **con estado 404**. Antes cualquier dirección inventada respondía
 200 (soft 404) y el buscador la registraba como una página más.
 
-### 8. Otros
+### 8. Barra final en todas las URLs
+
+Cada página se escribe como `dist/compare/gen/1/index.html`, y ante eso Netlify
+responde a `/compare/gen/1` con un **301** hacia `/compare/gen/1/`. Por eso las
+canónicas, el sitemap, los `hreflang` y los enlaces del HTML estático declaran
+la forma **con barra**: es la que responde 200 sin rebotar. Sin esto, las 1195
+URLs del sitemap eran todas redirecciones.
+
+### 9. El service worker no secuestra los archivos
+
+`navigateFallbackDenylist` incluye `/\.[^/]+$/`. El SW atiende toda petición de
+*navegación* devolviendo el shell de la SPA, y escribir `/robots.txt` en la
+barra de direcciones también es una navegación: quien tuviera el SW instalado
+recibía la app en vez del archivo, la app no reconocía la ruta y enseñaba su
+página de "no encontrada". Parecía un 404 del servidor y no lo era.
+
+### 10. Otros
 
 - `public/robots.txt`: bloquea `/api/`, `/account`, `/settings`, `/history` y
   `/notes` — pantallas de estado del usuario que gastan presupuesto de rastreo.

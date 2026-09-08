@@ -106,16 +106,26 @@ const leerCapitulo = (bookId, capitulo) => {
  */
 const CONTENEDOR = "max-w-[850px] mx-auto px-5 py-10 dark:text-white";
 
+/*
+ * Los enlaces del HTML estatico llevan barra final.
+ *
+ * Es la forma que Netlify sirve directamente; sin ella responde un 301 hacia
+ * la version con barra. Da igual para un humano —el navegador la sigue sola—
+ * pero un rastreador que recorre el indice de 66 libros desde 1189 paginas
+ * acumula miles de saltos que no llevan a ningun sitio nuevo.
+ */
+const conBarra = (ruta) => `${String(ruta).replace(/\/+$/, "")}/`;
+
 const listaDeEnlaces = (enlaces) =>
   `<ul class="flex flex-wrap gap-1.5 mt-3">${enlaces
-    .map(({ href, texto }) => `<li><a class="inline-block text-xs px-2.5 py-1 rounded-md border border-black/10 dark:border-white/15 bg-black/5 dark:bg-white/10" href="${escapar(href)}">${escapar(texto)}</a></li>`)
+    .map(({ href, texto }) => `<li><a class="inline-block text-xs px-2.5 py-1 rounded-md border border-black/10 dark:border-white/15 bg-black/5 dark:bg-white/10" href="${escapar(conBarra(href))}">${escapar(texto)}</a></li>`)
     .join("")}</ul>`;
 
 const enlacesDeLibros = () => listaDeEnlaces(LIBROS.map((libro) => ({ href: `/compare/${libro.slug}/1`, texto: nombreDeLibro(libro.id, IDIOMA) })));
 
 const migasHtml = (elementos) =>
   `<nav aria-label="Ruta" class="text-xs opacity-70 mb-4">${elementos
-    .map((elemento, indice) => (elemento.href ? `<a href="${escapar(elemento.href)}">${escapar(elemento.texto)}</a>` : `<span>${escapar(elemento.texto)}</span>`) + (indice < elementos.length - 1 ? " › " : ""))
+    .map((elemento, indice) => (elemento.href ? `<a href="${escapar(conBarra(elemento.href))}">${escapar(elemento.texto)}</a>` : `<span>${escapar(elemento.texto)}</span>`) + (indice < elementos.length - 1 ? " › " : ""))
     .join("")}</nav>`;
 
 const cuerpoGenerico = (metadatos, extra = "") => `
@@ -130,7 +140,7 @@ const cuerpoPortada = (metadatos) => `
         <h1 class="text-4xl font-bold mb-2">${SITE_NAME}</h1>
         <h2 class="text-xl font-semibold mb-3">${escapar(metadatos.h1)}</h2>
         <p class="opacity-80">${escapar(metadatos.description)}</p>
-        <p class="mt-4"><a class="underline font-semibold" href="/compare">Comparar versiones de la Biblia</a></p>
+        <p class="mt-4"><a class="underline font-semibold" href="/compare/">Comparar versiones de la Biblia</a></p>
         <nav aria-label="Secciones" class="mt-6">
           ${listaDeEnlaces([
             { href: "/search", texto: "Buscar en la Biblia" },
@@ -167,7 +177,7 @@ const cuerpoCapitulo = (metadatos, libro, capitulo, versiculos, extra = "") => {
   const texto = versiculos
     .map(
       ({ numero, texto: contenido }) =>
-        `<li id="v${numero}" class="mb-2"><a href="/compare/${libro.slug}/${capitulo}/${numero}" class="font-bold text-xs align-super opacity-60 mr-1">${numero}</a>${escapar(contenido)}</li>`
+        `<li id="v${numero}" class="mb-2"><a href="/compare/${libro.slug}/${capitulo}/${numero}/" class="font-bold text-xs align-super opacity-60 mr-1">${numero}</a>${escapar(contenido)}</li>`
     )
     .join("\n          ");
 

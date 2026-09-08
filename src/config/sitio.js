@@ -59,10 +59,22 @@ export const OG_IMAGE_ANCHO = 1200;
 
 export const OG_IMAGE_ALTO = 630;
 
-/** Convierte una ruta interna (`/compare/gen/1`) en URL absoluta. */
+/**
+ * Convierte una ruta interna (`/compare/gen/1`) en URL absoluta, CON barra
+ * final.
+ *
+ * La barra no es cosmetica. Cada pagina prerenderizada se escribe como
+ * `dist/compare/gen/1/index.html`, y ante eso Netlify responde a
+ * `/compare/gen/1` con un **301 hacia `/compare/gen/1/`**. Si la canonica y el
+ * sitemap anunciaran la version sin barra, las 1195 URLs declaradas serian
+ * redirecciones: el rastreador gasta dos peticiones por pagina y la direccion
+ * que decimos que es la buena no es la que acaba sirviendo el servidor.
+ *
+ * Asi que se declara la forma que responde 200 sin rebotar.
+ */
 export const urlAbsoluta = (ruta = "/") => {
   if (!ruta || ruta === "/") return `${SITE_URL}/`;
-  return `${SITE_URL}/${String(ruta).replace(/^\/+/, "")}`;
+  return `${SITE_URL}/${String(ruta).replace(/^\/+/, "").replace(/\/+$/, "")}/`;
 };
 
 /**
