@@ -20,6 +20,7 @@ import PaletaComandos from "./components/PaletaComandos";
 import ConcordanciaStrong from "./components/ConcordanciaStrong";
 import { preheat } from "./services/bibleSource";
 import { useMemoriaScroll } from "./hooks/useMemoriaScroll";
+import Seo from "./components/Seo";
 
 /*
  * El lector 3D se carga aparte. Arrastra `react-pageflip` y su propia hoja de
@@ -91,6 +92,10 @@ const App = () => {
       <StrongPopup />
       <div className="backgroundPattern w-full h-full fixed -z-50" style={styles}></div>
       <BrowserRouter>
+        {/* Reescribe el <head> en cada navegacion: la SPA no vuelve a pedir el
+            documento y sin esto todas las rutas comparten los metadatos de la
+            pagina por la que se entro. */}
+        <Seo />
         <Navbar />
         {/* Recuerda la altura de cada pasaje para el botón "atrás". */}
         <MemoriaScroll />

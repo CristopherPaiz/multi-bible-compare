@@ -2,14 +2,79 @@
 <html lang="es" id="theme-style">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/bibleIcon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblian - Compare Biblical Text</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" id="theme-color" content="#FDD07A" />
-    <meta name="apple-mobile-web-app-title" content="Biblian" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <!-- "light" y no "light dark": el tema lo decide la app (clase `dark` en
+         <html>, ver ThemeContext), no el sistema operativo. Con "light dark" el
+         navegador toma el color de texto por defecto del esquema preferido del
+         SO, asi que alguien con el SO en oscuro y la app en claro veia texto
+         blanco sobre fondo blanco. ThemeContext actualiza este valor al cambiar
+         de tema. -->
+    <meta name="color-scheme" content="light" />
+
+    <!--
+      Todo lo que hay entre estos dos marcadores lo REESCRIBE
+      `scripts/prerender.mjs` para cada una de las ~1250 rutas del sitio: lo que
+      queda aquí es lo que ve quien pide una dirección que no se prerenderizó.
+
+      No se toca a mano sin mirar `src/utils/seo.js`: esa es la fuente de la
+      verdad, y este bloque es su versión de la portada escrita a mano.
+    -->
+    <!-- SEO:INICIO -->
+    <title>Biblia en línea — Compara 150+ versiones lado a lado | Biblian</title>
+    <meta
+      name="description"
+      content="Lee la Biblia gratis y compara 150+ versiones a la vez: Reina Valera 1960, NVI, LBLA, Textual, interlineal griego y hebreo, con diccionario Strong. Sin registro y sin anuncios." data-seo />
+    <meta
+      name="keywords"
+      content="biblia, biblia en línea, biblia online gratis, comparar biblias, versiones de la biblia, reina valera 1960, biblia interlineal, diccionario strong, concordancia strong, biblia griega, biblia hebrea, septuaginta, leer la biblia" data-seo />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" data-seo />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" data-seo />
+    <link rel="canonical" href="https://biblian.netlify.app/" data-seo />
+
+    <link rel="alternate" hreflang="es" href="https://biblian.netlify.app/?lng=es" data-seo />
+    <link rel="alternate" hreflang="en" href="https://biblian.netlify.app/?lng=en" data-seo />
+    <link rel="alternate" hreflang="x-default" href="https://biblian.netlify.app/" data-seo />
+
+    <meta property="og:type" content="website" data-seo />
+    <meta property="og:site_name" content="Biblian" data-seo />
+    <meta property="og:title" content="Biblia en línea — Compara 150+ versiones lado a lado | Biblian" data-seo />
+    <meta
+      property="og:description"
+      content="Lee la Biblia gratis y compara 150+ versiones a la vez: Reina Valera 1960, NVI, LBLA, Textual, interlineal griego y hebreo, con diccionario Strong. Sin registro y sin anuncios." data-seo />
+    <meta property="og:url" content="https://biblian.netlify.app/" data-seo />
+    <meta property="og:image" content="https://biblian.netlify.app/og-image.png" data-seo />
+    <meta property="og:image:width" content="1200" data-seo />
+    <meta property="og:image:height" content="630" data-seo />
+    <meta property="og:image:alt" content="Biblia en línea: compara versiones lado a lado" data-seo />
+    <meta property="og:locale" content="es_ES" data-seo />
+    <meta property="og:locale:alternate" content="en_US" data-seo />
+
+    <meta name="twitter:card" content="summary_large_image" data-seo />
+    <meta name="twitter:title" content="Biblia en línea — Compara 150+ versiones lado a lado | Biblian" data-seo />
+    <meta name="twitter:description" content="Compara 150+ versiones de la Biblia lado a lado, con diccionario Strong e interlineal griego y hebreo. Gratis, sin registro." data-seo />
+    <meta name="twitter:image" content="https://biblian.netlify.app/og-image.png" data-seo />
+    <meta name="twitter:image:alt" content="Biblia en línea: compara versiones lado a lado" data-seo />
+    <!-- SEO:FIN -->
+
+    <meta name="author" content="Cristopher Paiz" />
+    <meta name="google" content="notranslate" />
+    <!-- Se pega aquí el código de Search Console cuando se verifique el dominio.
+         Ver `SEO.md`, sección "Puesta en marcha". -->
+    <!-- <meta name="google-site-verification" content="" /> -->
+
+    <!-- PWA / iOS -->
+    <link rel="icon" type="image/svg+xml" href="/bibleIcon.svg" />
     <link rel="apple-touch-icon" href="/bibleIcon.svg" />
     <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Biblian" />
+    <meta name="application-name" content="Biblian" />
+    <meta name="msapplication-TileImage" content="/bibleIcon.svg" />
+    <meta name="theme-color" id="theme-color" content="#FDD07A" />
+
     <!-- Serifas del lector 3D. `preconnect` porque son dos dominios distintos
          (el CSS y los .woff2) y sin el aviso previo el handshake del segundo
          no empieza hasta que termina de parsearse el primero.
@@ -21,17 +86,50 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..600;1,400&family=Cormorant+Garamond:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <meta name="application-name" content="Biblian" />
-    <meta name="msapplication-TileImage" content="/bibleIcon.svg" />
-    <meta name="description" content="Compare textos bíblicos de diferentes versiones de la Biblia." />
-    <meta name="keywords" content="Comparar biblias, diccionario strong, diccionario hebre, diccicionario griego, interlineal, biblia griega" />
-    <meta name="author" content="Cristopher Paiz" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="google" content="notranslate" />
+
+    <!-- El JSON-LD también lo reescribe el prerenderizador por ruta; este es el
+         grafo de la portada. -->
+    <!-- SEO:JSONLD:INICIO -->
+    <script type="application/ld+json" data-seo>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://biblian.netlify.app/#organization",
+            "name": "Biblian",
+            "url": "https://biblian.netlify.app/",
+            "logo": { "@type": "ImageObject", "url": "https://biblian.netlify.app/bibleIcon.svg" },
+            "sameAs": ["https://github.com/CristopherPaiz/multi-bible-compare"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://biblian.netlify.app/#website",
+            "url": "https://biblian.netlify.app/",
+            "name": "Biblian",
+            "alternateName": "Compara versiones de la Biblia en línea",
+            "inLanguage": ["es", "en"],
+            "publisher": { "@id": "https://biblian.netlify.app/#organization" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": { "@type": "EntryPoint", "urlTemplate": "https://biblian.netlify.app/search?q={search_term_string}" },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
+    <!-- SEO:JSONLD:FIN -->
   </head>
   <body class="bg-white dark:bg-neutral-700">
+    <!-- SEO:CUERPO:INICIO -->
     <div id="root"></div>
+    <!-- SEO:CUERPO:FIN -->
+    <noscript>
+      <p style="padding: 1rem; font-family: system-ui">
+        Biblian necesita JavaScript para comparar versiones de la Biblia. Actívalo para leer, buscar y consultar el diccionario Strong.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

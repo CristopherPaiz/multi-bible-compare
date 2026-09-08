@@ -2,6 +2,7 @@ import { useContext, useState, useMemo } from "react";
 import LanguageContext from "../context/LanguageContext";
 import { BEBLIA_INFO, BIBLIAS_ATRIBUCION } from "../data/colaboradores";
 import { CARACTERISTICAS_POR_BIBLIA, MAPA_CARACTERISTICAS } from "../data/biblias";
+import PreguntasFrecuentes from "../components/PreguntasFrecuentes";
 
 const About = () => {
   const { t } = useContext(LanguageContext);
@@ -277,6 +278,10 @@ const About = () => {
             )}
           </div>
         </div>
+
+        {/* El <head> de esta ruta declara un FAQPage con estas mismas
+            preguntas; Google exige que lo marcado esté visible. */}
+        <PreguntasFrecuentes />
       </article>
     </div>
   );

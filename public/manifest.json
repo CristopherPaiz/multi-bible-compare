@@ -1,0 +1,65 @@
+{
+  "id": "/",
+  "name": "Biblian — Biblia en línea y comparador de versiones",
+  "short_name": "Biblian",
+  "description": "Lee la Biblia gratis y compara 150+ versiones lado a lado, con diccionario Strong hebreo y griego, búsqueda de texto completo, notas y lectura sin conexión.",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#FDD07A",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["books", "education", "reference", "lifestyle"],
+  "icons": [
+    {
+      "src": "/bibleIcon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/bibleIcon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Comparación de versiones de la Biblia lado a lado"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Comparar versiones",
+      "short_name": "Comparar",
+      "url": "/compare",
+      "description": "Abre el comparador de versiones de la Biblia"
+    },
+    {
+      "name": "Buscar en la Biblia",
+      "short_name": "Buscar",
+      "url": "/search",
+      "description": "Busca una palabra o frase en el texto bíblico"
+    },
+    {
+      "name": "Notas y subrayados",
+      "short_name": "Notas",
+      "url": "/notes",
+      "description": "Tus notas y versículos marcados"
+    }
+  ]
+}

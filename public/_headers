@@ -16,3 +16,26 @@
 # URL. Se puede cachear para siempre sin riesgo de servir algo viejo.
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# El sitemap y robots.txt los regenera cada build: si el CDN los guarda una
+# semana, Search Console sigue leyendo el mapa de la version anterior.
+/sitemap*.xml
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: application/xml; charset=utf-8
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Las paginas prerenderizadas son HTML: mismo trato que index.html.
+/compare/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Cabeceras de seguridad. No cambian el ranking por si solas, pero un sitio que
+# se puede meter en un <iframe> ajeno o al que el navegador le adivina el tipo
+# de contenido es un sitio que se puede suplantar, y eso si acaba costando
+# reputacion de dominio.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains

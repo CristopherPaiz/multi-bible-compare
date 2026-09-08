@@ -17,6 +17,22 @@ export const LanguageProvider = ({ children }) => {
 
     let idiomaInicial = localStorage.getItem("idioma");
 
+    /*
+     * `?lng=en` manda sobre lo guardado.
+     *
+     * Es lo que hace que los `hreflang` del <head> sean ciertos: si la version
+     * en ingles anunciada al buscador abriera la app en el idioma que tenga
+     * guardado quien entra, las dos direcciones servirian la misma pagina y el
+     * anuncio seria falso. Ademas es la forma de compartir un enlace en un
+     * idioma concreto. Se persiste para que la eleccion sobreviva a la
+     * navegacion posterior, que ya no lleva el parametro.
+     */
+    const idiomaPedido = new URLSearchParams(window.location.search).get("lng");
+    if (idiomaPedido && lenguajes.includes(idiomaPedido)) {
+      idiomaInicial = idiomaPedido;
+      localStorage.setItem("idioma", idiomaPedido);
+    }
+
     if (!lenguajes.includes(idiomaInicial)) {
       idiomaInicial = "es";
     }

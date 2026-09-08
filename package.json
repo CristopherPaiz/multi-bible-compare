@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run seo",
+    "seo": "npm run sitemap && npm run prerender",
+    "sitemap": "node scripts/generar-sitemap.mjs",
+    "prerender": "node scripts/prerender.mjs",
+    "og": "node scripts/generar-og.mjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

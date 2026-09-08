@@ -1,0 +1,21 @@
+# Biblian — https://biblian.netlify.app
+#
+# Se permite todo el contenido de lectura. Lo bloqueado no es secreto: son
+# pantallas de estado del usuario (su cuenta, sus notas, su historial) y el
+# proxy del backend. Indexarlas gasta presupuesto de rastreo en páginas que
+# para un visitante nuevo están vacías, y en el caso de /api devuelve JSON.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /account
+Disallow: /settings
+Disallow: /history
+Disallow: /notes
+
+# El parámetro solo elige el idioma de la interfaz; el contenido es el mismo y
+# las alternativas ya se declaran con hreflang. Se deja rastreable para que las
+# URLs anunciadas en hreflang no apunten a algo bloqueado.
+Allow: /*?lng=
+
+Sitemap: https://biblian.netlify.app/sitemap.xml
